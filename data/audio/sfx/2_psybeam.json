@@ -1,0 +1,55 @@
+{
+  "name": "SFX_PSYBEAM",
+  "title": "Psybeam",
+  "kind": "sfx",
+  "bank": 2,
+  "id": 207,
+  "label": "SFX_Psybeam",
+  "channels": [
+    {
+      "channel": 5,
+      "label": "SFX_Psybeam_Ch5",
+      "entry": 0,
+      "bytes": 23,
+      "labels": {"SFX_Psybeam_Ch5": 0},
+      "commands": [
+        {"op": "duty_cycle_pattern", "pattern": [2, 2, 0, 1]},
+        {"op": "square_note", "length": 10, "volume": 15, "fade": 1, "frequency": 1600},
+        {"op": "square_note", "length": 10, "volume": 15, "fade": 3, "frequency": 1664},
+        {"op": "square_note", "length": 10, "volume": 15, "fade": 2, "frequency": 1568},
+        {"op": "sound_loop", "count": 4, "target": 0},
+        {"op": "square_note", "length": 10, "volume": 15, "fade": 1, "frequency": 1600},
+        {"op": "sound_ret"}
+      ]
+    },
+    {
+      "channel": 6,
+      "label": "SFX_Psybeam_Ch6",
+      "entry": 0,
+      "bytes": 23,
+      "labels": {"SFX_Psybeam_Ch6": 0},
+      "commands": [
+        {"op": "duty_cycle_pattern", "pattern": [2, 3, 0, 3]},
+        {"op": "square_note", "length": 10, "volume": 15, "fade": 3, "frequency": 1393},
+        {"op": "square_note", "length": 7, "volume": 14, "fade": 3, "frequency": 1329},
+        {"op": "square_note", "length": 10, "volume": 15, "fade": 1, "frequency": 1361},
+        {"op": "sound_loop", "count": 4, "target": 0},
+        {"op": "square_note", "length": 10, "volume": 15, "fade": 1, "frequency": 1393},
+        {"op": "sound_ret"}
+      ]
+    },
+    {
+      "channel": 8,
+      "label": "SFX_Psybeam_Ch8",
+      "entry": 0,
+      "bytes": 11,
+      "labels": {"SFX_Psybeam_Ch8": 0},
+      "commands": [
+        {"op": "noise_note", "length": 2, "volume": 13, "fade": 1, "value": 74},
+        {"op": "noise_note", "length": 2, "volume": 13, "fade": 2, "value": 42},
+        {"op": "sound_loop", "count": 21, "target": 0},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

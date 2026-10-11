@@ -1,0 +1,43 @@
+{
+ "id": 93,
+ "const": "VERMILION_PIDGEY_HOUSE",
+ "name": "VermilionPidgeyHouse",
+ "displayName": "VERMILION CITY",
+ "width": 4,
+ "height": 4,
+ "tileset": "HOUSE",
+ "tilesetId": 8,
+ "tilesetFile": "data/tilesets/House.json",
+ "isOutside": false,
+ "borderBlock": 10,
+ "blocks": [4, 14, 5, 9, 15, 1, 2, 15, 15, 12, 13, 15, 6, 11, 15, 7],
+ "connections": {},
+ "warps": [
+  {"x": 2, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 5, "destWarpIndex": 4},
+  {"x": 3, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 5, "destWarpIndex": 4}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "VERMILIONPIDGEYHOUSE_YOUNGSTER", "x": 5, "y": 3, "sprite": "SPRITE_YOUNGSTER", "spriteId": 4, "movement": "STAY", "rangeOrDirection": "LEFT", "rangeOrDirectionValue": 210, "behavior": "face_left", "textId": "TEXT_VERMILIONPIDGEYHOUSE_YOUNGSTER", "textIndex": 1},
+  {"index": 2, "const": "VERMILIONPIDGEYHOUSE_PIDGEY", "x": 3, "y": 5, "sprite": "SPRITE_BIRD", "spriteId": 9, "movement": "WALK", "rangeOrDirection": "LEFT_RIGHT", "rangeOrDirectionValue": 2, "behavior": "walk_left_right", "textId": "TEXT_VERMILIONPIDGEYHOUSE_PIDGEY", "textIndex": 2},
+  {"index": 3, "const": "VERMILIONPIDGEYHOUSE_LETTER", "x": 4, "y": 3, "sprite": "SPRITE_PAPER", "spriteId": 64, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_VERMILIONPIDGEYHOUSE_LETTER", "textIndex": 3}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_VERMILION",
+ "wild": null,
+ "townMap": {"x": 10, "y": 9, "group": "VERMILION_CITY"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/VermilionPidgeyHouse.json",
+ "textPointers": "VermilionPidgeyHouse_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/VermilionPidgeyHouse.asm",
+  "objects": "data/maps/objects/VermilionPidgeyHouse.asm",
+  "blocks": "maps/ViridianNicknameHouse.blk",
+  "script": "scripts/VermilionPidgeyHouse.asm"
+ },
+ "lastMapCandidates": ["VERMILION_CITY"],
+ "palette": {"pal": "PAL_VERMILION", "rule": "lastMap", "viaLastMap": "VERMILION_CITY"}
+}

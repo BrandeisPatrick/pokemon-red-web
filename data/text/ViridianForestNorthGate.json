@@ -1,0 +1,58 @@
+{
+ "map": "ViridianForestNorthGate",
+ "const": "VIRIDIAN_FOREST_NORTH_GATE",
+ "textPointerTables": [
+  {
+   "label": "ViridianForestNorthGate_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_VIRIDIANFORESTNORTHGATE_SUPER_NERD", "label": "ViridianForestNorthGateSuperNerdText", "kind": "text", "handler": "text"},
+    {"id": 2, "const": "TEXT_VIRIDIANFORESTNORTHGATE_GRAMPS", "label": "ViridianForestNorthGateGrampsText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "ViridianForestNorthGateSuperNerdText": {
+   "kind": "text",
+   "src": "scripts/ViridianForestNorthGate.asm:10",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianForestNorthGateSuperNerdText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianForestNorthGateGrampsText": {
+   "kind": "text",
+   "src": "scripts/ViridianForestNorthGate.asm:14",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianForestNorthGateGrampsText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_ViridianForestNorthGateSuperNerdText": {
+   "kind": "text",
+   "src": "text/ViridianForestNorthGate.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Many POKéMON live"},
+    {"cmd": "line", "str": "only in forests "},
+    {"cmd": "cont", "str": "and caves."},
+    {"cmd": "para", "str": "You need to look"},
+    {"cmd": "line", "str": "everywhere to get"},
+    {"cmd": "cont", "str": "different kinds!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianForestNorthGateGrampsText": {
+   "kind": "text",
+   "src": "text/ViridianForestNorthGate.asm:12",
+   "commands": [
+    {"cmd": "text", "str": "Have you noticed"},
+    {"cmd": "line", "str": "the bushes on the"},
+    {"cmd": "cont", "str": "roadside?"},
+    {"cmd": "para", "str": "They can be cut"},
+    {"cmd": "line", "str": "down by a special"},
+    {"cmd": "cont", "str": "POKéMON move."},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

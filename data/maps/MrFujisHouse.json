@@ -1,0 +1,50 @@
+{
+ "id": 149,
+ "const": "MR_FUJIS_HOUSE",
+ "name": "MrFujisHouse",
+ "displayName": "LAVENDER TOWN",
+ "width": 4,
+ "height": 4,
+ "tileset": "HOUSE",
+ "tilesetId": 8,
+ "tilesetFile": "data/tilesets/House.json",
+ "isOutside": false,
+ "borderBlock": 10,
+ "blocks": [4, 14, 5, 9, 15, 1, 2, 15, 15, 12, 13, 15, 6, 11, 15, 7],
+ "connections": {},
+ "warps": [
+  {"x": 2, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 3, "destWarpIndex": 2},
+  {"x": 3, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 3, "destWarpIndex": 2}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "MRFUJISHOUSE_SUPER_NERD", "x": 3, "y": 5, "sprite": "SPRITE_SUPER_NERD", "spriteId": 12, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_MRFUJISHOUSE_SUPER_NERD", "textIndex": 1},
+  {"index": 2, "const": "MRFUJISHOUSE_LITTLE_GIRL", "x": 6, "y": 3, "sprite": "SPRITE_LITTLE_GIRL", "spriteId": 8, "movement": "STAY", "rangeOrDirection": "DOWN", "rangeOrDirectionValue": 208, "behavior": "face_down", "textId": "TEXT_MRFUJISHOUSE_LITTLE_GIRL", "textIndex": 2},
+  {"index": 3, "const": "MRFUJISHOUSE_PSYDUCK", "x": 6, "y": 4, "sprite": "SPRITE_MONSTER", "spriteId": 5, "movement": "STAY", "rangeOrDirection": "UP", "rangeOrDirectionValue": 209, "behavior": "face_up", "textId": "TEXT_MRFUJISHOUSE_PSYDUCK", "textIndex": 3},
+  {"index": 4, "const": "MRFUJISHOUSE_NIDORINO", "x": 1, "y": 3, "sprite": "SPRITE_MONSTER", "spriteId": 5, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_MRFUJISHOUSE_NIDORINO", "textIndex": 4},
+  {"index": 5, "const": "MRFUJISHOUSE_MR_FUJI", "x": 3, "y": 1, "sprite": "SPRITE_MR_FUJI", "spriteId": 22, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_MRFUJISHOUSE_MR_FUJI", "textIndex": 5, "toggleIndex": 68, "toggleConst": "TOGGLE_MR_FUJIS_HOUSE_MR_FUJI", "startsHidden": true},
+  {"index": 6, "const": "MRFUJISHOUSE_POKEDEX", "x": 3, "y": 3, "sprite": "SPRITE_POKEDEX", "spriteId": 65, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_MRFUJISHOUSE_POKEDEX", "textIndex": 6}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [
+  {"x": 0, "y": 1, "routine": "PrintMagazinesText", "arg": "SPRITE_FACING_DOWN", "argValue": 0, "kind": "event"},
+  {"x": 1, "y": 1, "routine": "PrintMagazinesText", "arg": "SPRITE_FACING_DOWN", "argValue": 0, "kind": "event"},
+  {"x": 7, "y": 1, "routine": "PrintMagazinesText", "arg": "SPRITE_FACING_DOWN", "argValue": 0, "kind": "event"}
+ ],
+ "spriteSet": null,
+ "music": "MUSIC_LAVENDER",
+ "wild": null,
+ "townMap": {"x": 14, "y": 5, "group": "LAVENDER_TOWN_2"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/MrFujisHouse.json",
+ "textPointers": "MrFujisHouse_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/MrFujisHouse.asm",
+  "objects": "data/maps/objects/MrFujisHouse.asm",
+  "blocks": "maps/ViridianNicknameHouse.blk",
+  "script": "scripts/MrFujisHouse.asm"
+ },
+ "lastMapCandidates": ["LAVENDER_TOWN"],
+ "palette": {"pal": "PAL_LAVENDER", "rule": "lastMap", "viaLastMap": "LAVENDER_TOWN"}
+}

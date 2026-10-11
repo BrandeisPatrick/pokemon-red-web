@@ -1,0 +1,42 @@
+{
+ "id": 74,
+ "const": "UNDERGROUND_PATH_ROUTE_6",
+ "name": "UndergroundPathRoute6",
+ "displayName": "ROUTE 6",
+ "width": 4,
+ "height": 4,
+ "tileset": "GATE",
+ "tilesetId": 12,
+ "tilesetFile": "data/tilesets/Gate.json",
+ "isOutside": false,
+ "borderBlock": 10,
+ "blocks": [6, 3, 3, 7, 17, 21, 20, 16, 8, 0, 5, 9, 14, 15, 12, 13],
+ "connections": {},
+ "warps": [
+  {"x": 3, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 4, "destWarpIndex": 3},
+  {"x": 4, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 4, "destWarpIndex": 3},
+  {"x": 4, "y": 4, "destMap": "UNDERGROUND_PATH_NORTH_SOUTH", "destMapId": 119, "destMapName": "UndergroundPathNorthSouth", "destWarp": 2, "destWarpIndex": 1}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "UNDERGROUNDPATHROUTE6_GIRL", "x": 2, "y": 3, "sprite": "SPRITE_GIRL", "spriteId": 13, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_UNDERGROUNDPATHROUTE6_GIRL", "textIndex": 1}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_CITIES1",
+ "wild": null,
+ "townMap": {"x": 10, "y": 6, "group": "ROUTE_6"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": ["ROUTE_6"],
+ "textFile": "data/text/UndergroundPathRoute6.json",
+ "textPointers": "UndergroundPathRoute6_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/UndergroundPathRoute6.asm",
+  "objects": "data/maps/objects/UndergroundPathRoute6.asm",
+  "blocks": "maps/UndergroundPathRoute5.blk",
+  "script": "scripts/UndergroundPathRoute6.asm"
+ },
+ "lastMapCandidates": ["ROUTE_6"],
+ "palette": {"pal": "PAL_ROUTE", "rule": "lastMap", "viaLastMap": "ROUTE_6"}
+}

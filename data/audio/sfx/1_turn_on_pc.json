@@ -1,0 +1,31 @@
+{
+  "name": "SFX_TURN_ON_PC",
+  "title": "Turn On PC",
+  "kind": "sfx",
+  "bank": 1,
+  "id": 153,
+  "label": "SFX_Turn_On_PC_1",
+  "channels": [
+    {
+      "channel": 5,
+      "label": "SFX_Turn_On_PC_1_Ch5",
+      "entry": 0,
+      "bytes": 43,
+      "labels": {"SFX_Turn_On_PC_1_Ch5": 0},
+      "commands": [
+        {"op": "duty_cycle", "duty": 2},
+        {"op": "square_note", "length": 15, "volume": 15, "fade": 2, "frequency": 1984},
+        {"op": "square_note", "length": 15, "volume": 0, "fade": 0, "frequency": 0},
+        {"op": "square_note", "length": 3, "volume": 10, "fade": 1, "frequency": 1920},
+        {"op": "square_note", "length": 3, "volume": 10, "fade": 1, "frequency": 1792},
+        {"op": "square_note", "length": 3, "volume": 10, "fade": 1, "frequency": 1856},
+        {"op": "square_note", "length": 3, "volume": 10, "fade": 1, "frequency": 1792},
+        {"op": "square_note", "length": 3, "volume": 10, "fade": 1, "frequency": 1920},
+        {"op": "square_note", "length": 3, "volume": 10, "fade": 1, "frequency": 1792},
+        {"op": "square_note", "length": 3, "volume": 10, "fade": 1, "frequency": 1984},
+        {"op": "square_note", "length": 8, "volume": 10, "fade": 1, "frequency": 1792},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

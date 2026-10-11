@@ -1,0 +1,106 @@
+{
+ "map": "CeruleanTrashedHouse",
+ "const": "CERULEAN_TRASHED_HOUSE",
+ "textPointerTables": [
+  {
+   "label": "CeruleanTrashedHouse_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_CERULEANTRASHEDHOUSE_FISHING_GURU", "label": "CeruleanTrashedHouseFishingGuruText", "kind": "asm", "handler": "asm"},
+    {"id": 2, "const": "TEXT_CERULEANTRASHEDHOUSE_GIRL", "label": "CeruleanTrashedHouseGirlText", "kind": "text", "handler": "text"},
+    {"id": 3, "const": "TEXT_CERULEANTRASHEDHOUSE_WALL_HOLE", "label": "CeruleanTrashedHouseWallHoleText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "CeruleanTrashedHouseFishingGuruText": {
+   "kind": "asm",
+   "src": "scripts/CeruleanTrashedHouse.asm:12",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["CeruleanTrashedHouseFishingGuruText.WhatsLostIsLostText", "CeruleanTrashedHouseFishingGuruText.TheyStoleATMText"]
+  },
+  "CeruleanTrashedHouseFishingGuruText.TheyStoleATMText": {
+   "kind": "text",
+   "src": "scripts/CeruleanTrashedHouse.asm:27",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanTrashedHouseFishingGuruTheyStoleATMText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeruleanTrashedHouseFishingGuruText.WhatsLostIsLostText": {
+   "kind": "text",
+   "src": "scripts/CeruleanTrashedHouse.asm:31",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanTrashedHouseFishingGuruWhatsLostIsLostText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeruleanTrashedHouseGirlText": {
+   "kind": "text",
+   "src": "scripts/CeruleanTrashedHouse.asm:35",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanTrashedHouseGirlText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeruleanTrashedHouseWallHoleText": {
+   "kind": "text",
+   "src": "scripts/CeruleanTrashedHouse.asm:39",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanTrashedHouseWallHoleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_CeruleanTrashedHouseFishingGuruTheyStoleATMText": {
+   "kind": "text",
+   "src": "text/CeruleanTrashedHouse.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Those miserable"},
+    {"cmd": "line", "str": "ROCKETs!"},
+    {"cmd": "para", "str": "Look what they"},
+    {"cmd": "line", "str": "did here!"},
+    {"cmd": "para", "str": "They stole a TM"},
+    {"cmd": "line", "str": "for teaching"},
+    {"cmd": "cont", "str": "POKéMON how to"},
+    {"cmd": "cont", "str": "DIG holes!"},
+    {"cmd": "para", "str": "That cost me a"},
+    {"cmd": "line", "str": "bundle, it did!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeruleanTrashedHouseFishingGuruWhatsLostIsLostText": {
+   "kind": "text",
+   "src": "text/CeruleanTrashedHouse.asm:18",
+   "commands": [
+    {"cmd": "text", "str": "I figure what's"},
+    {"cmd": "line", "str": "lost is lost!"},
+    {"cmd": "para", "str": "I decided to teach"},
+    {"cmd": "line", "str": "DIGLETT how to"},
+    {"cmd": "cont", "str": "DIG without a TM!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeruleanTrashedHouseGirlText": {
+   "kind": "text",
+   "src": "text/CeruleanTrashedHouse.asm:27",
+   "commands": [
+    {"cmd": "text", "str": "TEAM ROCKET must"},
+    {"cmd": "line", "str": "be trying to DIG"},
+    {"cmd": "cont", "str": "their way into no"},
+    {"cmd": "cont", "str": "good!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeruleanTrashedHouseWallHoleText": {
+   "kind": "text",
+   "src": "text/CeruleanTrashedHouse.asm:34",
+   "commands": [
+    {"cmd": "text", "str": "TEAM ROCKET left"},
+    {"cmd": "line", "str": "a way out!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

@@ -1,0 +1,41 @@
+{
+ "id": 118,
+ "const": "HALL_OF_FAME",
+ "name": "HallOfFame",
+ "displayName": "POKéMON LEAGUE",
+ "width": 5,
+ "height": 4,
+ "tileset": "GYM",
+ "tilesetId": 7,
+ "tilesetFile": "data/tilesets/Gym.json",
+ "isOutside": false,
+ "borderBlock": 3,
+ "blocks": [20, 20, 101, 20, 20, 24, 24, 55, 24, 24, 24, 24, 24, 24, 24, 24, 24, 108, 24, 24],
+ "connections": {},
+ "warps": [
+  {"x": 4, "y": 7, "destMap": "CHAMPIONS_ROOM", "destMapId": 120, "destMapName": "ChampionsRoom", "destWarp": 3, "destWarpIndex": 2},
+  {"x": 5, "y": 7, "destMap": "CHAMPIONS_ROOM", "destMapId": 120, "destMapName": "ChampionsRoom", "destWarp": 4, "destWarpIndex": 3}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "HALLOFFAME_OAK", "x": 5, "y": 2, "sprite": "SPRITE_OAK", "spriteId": 3, "movement": "STAY", "rangeOrDirection": "DOWN", "rangeOrDirectionValue": 208, "behavior": "face_down", "textId": "TEXT_HALLOFFAME_OAK", "textIndex": 1}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_PALLET_TOWN",
+ "wild": null,
+ "townMap": {"x": 0, "y": 2, "group": "POKEMON_LEAGUE"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/HallOfFame.json",
+ "textPointers": "HallOfFame_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/HallOfFame.asm",
+  "objects": "data/maps/objects/HallOfFame.asm",
+  "blocks": "maps/HallOfFame.blk",
+  "script": "scripts/HallOfFame.asm"
+ },
+ "lastMapCandidates": ["INDIGO_PLATEAU"],
+ "palette": {"pal": "PAL_INDIGO", "rule": "lastMap", "viaLastMap": "INDIGO_PLATEAU"}
+}

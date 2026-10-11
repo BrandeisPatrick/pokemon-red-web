@@ -1,0 +1,43 @@
+{
+ "id": 42,
+ "const": "VIRIDIAN_MART",
+ "name": "ViridianMart",
+ "displayName": "VIRIDIAN CITY",
+ "width": 4,
+ "height": 4,
+ "tileset": "MART",
+ "tilesetId": 2,
+ "tilesetFile": "data/tilesets/Mart.json",
+ "isOutside": false,
+ "borderBlock": 0,
+ "blocks": [18, 19, 19, 9, 22, 15, 20, 20, 24, 25, 21, 21, 23, 26, 11, 15],
+ "connections": {},
+ "warps": [
+  {"x": 3, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 2, "destWarpIndex": 1},
+  {"x": 4, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 2, "destWarpIndex": 1}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "VIRIDIANMART_CLERK", "x": 0, "y": 5, "sprite": "SPRITE_CLERK", "spriteId": 38, "movement": "STAY", "rangeOrDirection": "RIGHT", "rangeOrDirectionValue": 211, "behavior": "face_right", "textId": "TEXT_VIRIDIANMART_CLERK", "textIndex": 1},
+  {"index": 2, "const": "VIRIDIANMART_YOUNGSTER", "x": 5, "y": 5, "sprite": "SPRITE_YOUNGSTER", "spriteId": 4, "movement": "WALK", "rangeOrDirection": "UP_DOWN", "rangeOrDirectionValue": 1, "behavior": "walk_up_down", "textId": "TEXT_VIRIDIANMART_YOUNGSTER", "textIndex": 2},
+  {"index": 3, "const": "VIRIDIANMART_COOLTRAINER_M", "x": 3, "y": 3, "sprite": "SPRITE_COOLTRAINER_M", "spriteId": 7, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_VIRIDIANMART_COOLTRAINER_M", "textIndex": 3}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_POKECENTER",
+ "wild": null,
+ "townMap": {"x": 2, "y": 8, "group": "VIRIDIAN_CITY"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/ViridianMart.json",
+ "textPointers": "ViridianMart_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/ViridianMart.asm",
+  "objects": "data/maps/objects/ViridianMart.asm",
+  "blocks": "maps/ViridianMart.blk",
+  "script": "scripts/ViridianMart.asm"
+ },
+ "lastMapCandidates": ["VIRIDIAN_CITY"],
+ "palette": {"pal": "PAL_VIRIDIAN", "rule": "lastMap", "viaLastMap": "VIRIDIAN_CITY"}
+}

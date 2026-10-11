@@ -1,0 +1,66 @@
+{
+ "note": "All effect lists from data/battle/*.asm, in their original order, with how engine/battle/core.asm uses them (order of checks inside ExecutePlayerMove/ExecuteEnemyMove: ResidualEffects1 -> SpecialEffectsCont -> SetDamageEffects -> damage -> MoveHitTest -> ResidualEffects2 -> apply damage -> AlwaysHappenSideEffects -> (target alive) -> not in SpecialEffects).",
+ "lists": {
+  "ResidualEffects1": {
+   "file": "data/battle/residual_effects_1.asm",
+   "entries": [
+    "CONVERSION_EFFECT", "HAZE_EFFECT", "SWITCH_AND_TELEPORT_EFFECT", "MIST_EFFECT", "FOCUS_ENERGY_EFFECT",
+    "CONFUSION_EFFECT", "HEAL_EFFECT", "TRANSFORM_EFFECT", "LIGHT_SCREEN_EFFECT", "REFLECT_EFFECT",
+    "POISON_EFFECT", "PARALYZE_EFFECT", "SUBSTITUTE_EFFECT", "MIMIC_EFFECT", "LEECH_SEED_EFFECT",
+    "SPLASH_EFFECT"
+   ],
+   "usage": "ExecutePlayerMove/ExecuteEnemyMove (engine/battle/core.asm): right after the PP is decremented, a move whose effect is in this list jumps straight to its effect handler, skipping crit test, damage calculation and the accuracy check (handlers that need an accuracy check call MoveHitTest themselves)."
+  },
+  "SpecialEffectsCont": {
+   "file": "data/battle/special_effects.asm",
+   "entries": ["THRASH_PETAL_DANCE_EFFECT", "TRAPPING_EFFECT"],
+   "usage": "Second half of SpecialEffects. Checked right after ResidualEffects1: the effect handler (Thrash/Petal Dance, trapping moves) runs BEFORE damage calculation and execution then continues normally."
+  },
+  "SetDamageEffects": {
+   "file": "data/battle/set_damage_effects.asm",
+   "entries": ["SUPER_FANG_EFFECT", "SPECIAL_DAMAGE_EFFECT"],
+   "usage": "PlayerCalcMoveDamage: these effects skip CriticalHitTest / GetDamageVars / CalculateDamage / AdjustDamageForMoveType / RandomizeDamage and go straight to MoveHitTest; the damage is set later in ApplyAttackToEnemy/PlayerPokemon (level, 20, 40, Psywave, half HP)."
+  },
+  "ResidualEffects2": {
+   "file": "data/battle/residual_effects_2.asm",
+   "entries": [
+    "EFFECT_01", "ATTACK_UP1_EFFECT", "DEFENSE_UP1_EFFECT", "SPEED_UP1_EFFECT", "SPECIAL_UP1_EFFECT",
+    "ACCURACY_UP1_EFFECT", "EVASION_UP1_EFFECT", "ATTACK_DOWN1_EFFECT", "DEFENSE_DOWN1_EFFECT",
+    "SPEED_DOWN1_EFFECT", "SPECIAL_DOWN1_EFFECT", "ACCURACY_DOWN1_EFFECT", "EVASION_DOWN1_EFFECT",
+    "BIDE_EFFECT", "SLEEP_EFFECT", "ATTACK_UP2_EFFECT", "DEFENSE_UP2_EFFECT", "SPEED_UP2_EFFECT",
+    "SPECIAL_UP2_EFFECT", "ACCURACY_UP2_EFFECT", "EVASION_UP2_EFFECT", "ATTACK_DOWN2_EFFECT",
+    "DEFENSE_DOWN2_EFFECT", "SPEED_DOWN2_EFFECT", "SPECIAL_DOWN2_EFFECT", "ACCURACY_DOWN2_EFFECT",
+    "EVASION_DOWN2_EFFECT"
+   ],
+   "usage": "MirrorMoveCheck (after the move animation): effects in this list jump to their handler and end the turn (stat changes, sleep, Bide); handlers do their own MoveHitTest."
+  },
+  "AlwaysHappenSideEffects": {
+   "file": "data/battle/always_happen_effects.asm",
+   "entries": [
+    "DRAIN_HP_EFFECT", "EXPLODE_EFFECT", "DREAM_EATER_EFFECT", "PAY_DAY_EFFECT", "TWO_TO_FIVE_ATTACKS_EFFECT",
+    "EFFECT_1E", "ATTACK_TWICE_EFFECT", "RECOIL_EFFECT", "TWINEEDLE_EFFECT", "RAGE_EFFECT"
+   ],
+   "usage": "After damage is applied (or after a missed Explosion): these handlers run even if the target fainted - drain, explode, Dream Eater, Pay Day, multi-hit counters, recoil, Twineedle, Rage."
+  },
+  "SpecialEffects": {
+   "file": "data/battle/special_effects.asm",
+   "entries": [
+    "DRAIN_HP_EFFECT", "EXPLODE_EFFECT", "DREAM_EATER_EFFECT", "PAY_DAY_EFFECT", "SWIFT_EFFECT",
+    "TWO_TO_FIVE_ATTACKS_EFFECT", "EFFECT_1E", "CHARGE_EFFECT", "SUPER_FANG_EFFECT", "SPECIAL_DAMAGE_EFFECT",
+    "FLY_EFFECT", "ATTACK_TWICE_EFFECT", "JUMP_KICK_EFFECT", "RECOIL_EFFECT", "THRASH_PETAL_DANCE_EFFECT",
+    "TRAPPING_EFFECT"
+   ],
+   "usage": "End of the turn (.executeOtherEffects, only if the target did not faint): effects NOT in SpecialEffects (and not handled earlier) run now - i.e. the ordinary side effects (poison/burn/freeze/paralyze/flinch/stat-down chances, Hyper Beam recharge, Twineedle's poison)."
+  },
+  "HighCriticalMoves": {
+   "file": "data/battle/critical_hit_moves.asm",
+   "entries": ["KARATE_CHOP", "RAZOR_LEAF", "CRABHAMMER", "SLASH"],
+   "usage": "CriticalHitTest: moves in this list use (base speed / 2) * 8 instead of / 2 (capped at 255) as the crit threshold."
+  },
+  "UnusedHighCriticalMoves": {
+   "file": "data/battle/unused_critical_hit_moves.asm",
+   "entries": ["KARATE_CHOP", "RAZOR_LEAF", "CRABHAMMER", "SLASH"],
+   "usage": "Unreferenced duplicate of HighCriticalMoves (INCLUDEd before CriticalHitTest but never read)."
+  }
+ }
+}

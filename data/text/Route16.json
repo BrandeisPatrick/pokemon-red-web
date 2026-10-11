@@ -1,0 +1,469 @@
+{
+ "map": "Route16",
+ "const": "ROUTE_16",
+ "textPointerTables": [
+  {
+   "label": "Route16_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_ROUTE16_BIKER1", "label": "Route16Biker1Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route16TrainerHeader0"},
+    {"id": 2, "const": "TEXT_ROUTE16_BIKER2", "label": "Route16Biker2Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route16TrainerHeader1"},
+    {"id": 3, "const": "TEXT_ROUTE16_BIKER3", "label": "Route16Biker3Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route16TrainerHeader2"},
+    {"id": 4, "const": "TEXT_ROUTE16_BIKER4", "label": "Route16Biker4Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route16TrainerHeader3"},
+    {"id": 5, "const": "TEXT_ROUTE16_BIKER5", "label": "Route16Biker5Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route16TrainerHeader4"},
+    {"id": 6, "const": "TEXT_ROUTE16_BIKER6", "label": "Route16Biker6Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route16TrainerHeader5"},
+    {"id": 7, "const": "TEXT_ROUTE16_SNORLAX", "label": "Route16SnorlaxText", "kind": "text", "handler": "text"},
+    {"id": 8, "const": "TEXT_ROUTE16_CYCLING_ROAD_SIGN", "label": "Route16CyclingRoadSignText", "kind": "text", "handler": "text"},
+    {"id": 9, "const": "TEXT_ROUTE16_SIGN", "label": "Route16SignText", "kind": "text", "handler": "text"},
+    {"id": 10, "const": "TEXT_ROUTE16_SNORLAX_WOKE_UP", "label": "Route16SnorlaxWokeUpText", "kind": "text", "handler": "text"},
+    {"id": 11, "const": "TEXT_ROUTE16_SNORLAX_RETURNED_TO_MOUNTAINS", "label": "Route16SnorlaxReturnedToMountainsText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "Route16Biker1Text": {
+   "kind": "asm",
+   "src": "scripts/Route16.asm:96",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route16TrainerHeader0"
+  },
+  "Route16Biker1BattleText": {
+   "kind": "text",
+   "src": "scripts/Route16.asm:102",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route16Biker1BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route16Biker1EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route16.asm:106",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route16Biker1EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route16Biker1AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route16.asm:110",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route16Biker1AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route16Biker2Text": {
+   "kind": "asm",
+   "src": "scripts/Route16.asm:114",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route16TrainerHeader1"
+  },
+  "Route16Biker2BattleText": {
+   "kind": "text",
+   "src": "scripts/Route16.asm:120",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route16Biker2BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route16Biker2EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route16.asm:124",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route16Biker2EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route16Biker2AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route16.asm:128",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route16Biker2AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route16Biker3Text": {
+   "kind": "asm",
+   "src": "scripts/Route16.asm:132",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route16TrainerHeader2"
+  },
+  "Route16Biker3BattleText": {
+   "kind": "text",
+   "src": "scripts/Route16.asm:138",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route16Biker3BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route16Biker3EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route16.asm:142",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route16Biker3EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route16Biker3AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route16.asm:146",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route16Biker3AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route16Biker4Text": {
+   "kind": "asm",
+   "src": "scripts/Route16.asm:150",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route16TrainerHeader3"
+  },
+  "Route16biker4BattleText": {
+   "kind": "text",
+   "src": "scripts/Route16.asm:156",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route16biker4BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route16Biker4EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route16.asm:160",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route16Biker4EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route16Biker4AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route16.asm:164",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route16Biker4AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route16Biker5Text": {
+   "kind": "asm",
+   "src": "scripts/Route16.asm:168",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route16TrainerHeader4"
+  },
+  "Route16Biker5BattleText": {
+   "kind": "text",
+   "src": "scripts/Route16.asm:174",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route16Biker5BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route16Biker5EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route16.asm:178",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route16Biker5EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route16Biker5AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route16.asm:182",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route16Biker5AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route16Biker6Text": {
+   "kind": "asm",
+   "src": "scripts/Route16.asm:186",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route16TrainerHeader5"
+  },
+  "Route16Biker6BattleText": {
+   "kind": "text",
+   "src": "scripts/Route16.asm:192",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route16Biker6BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route16Biker6EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route16.asm:196",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route16Biker6EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route16Biker6AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route16.asm:200",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route16Biker6AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route16SnorlaxText": {
+   "kind": "text",
+   "src": "scripts/Route16.asm:204",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route16Text7"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route16SnorlaxWokeUpText": {
+   "kind": "text",
+   "src": "scripts/Route16.asm:208",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route16SnorlaxWokeUpText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route16SnorlaxReturnedToMountainsText": {
+   "kind": "text",
+   "src": "scripts/Route16.asm:212",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route16SnorlaxReturnedToMountainsText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route16CyclingRoadSignText": {
+   "kind": "text",
+   "src": "scripts/Route16.asm:216",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route16CyclingRoadSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route16SignText": {
+   "kind": "text",
+   "src": "scripts/Route16.asm:220",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route16SignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_Route16Biker1BattleText": {
+   "kind": "text",
+   "src": "text/Route16.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "What do you want?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route16Biker1EndBattleText": {
+   "kind": "text",
+   "src": "text/Route16.asm:6",
+   "commands": [
+    {"cmd": "text", "str": "Don't you"},
+    {"cmd": "line", "str": "dare laugh!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route16Biker1AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route16.asm:11",
+   "commands": [
+    {"cmd": "text", "str": "We like just"},
+    {"cmd": "line", "str": "hanging here,"},
+    {"cmd": "cont", "str": "what's it to you?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route16Biker2BattleText": {
+   "kind": "text",
+   "src": "text/Route16.asm:17",
+   "commands": [
+    {"cmd": "text", "str": "Nice BIKE!"},
+    {"cmd": "line", "str": "Hand it over!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route16Biker2EndBattleText": {
+   "kind": "text",
+   "src": "text/Route16.asm:22",
+   "commands": [
+    {"cmd": "text", "str": "Knock"},
+    {"cmd": "line", "str": "out!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route16Biker2AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route16.asm:27",
+   "commands": [
+    {"cmd": "text", "str": "Forget it, who"},
+    {"cmd": "line", "str": "needs your BIKE!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route16Biker3BattleText": {
+   "kind": "text",
+   "src": "text/Route16.asm:32",
+   "commands": [
+    {"cmd": "text", "str": "Come out and play,"},
+    {"cmd": "line", "str": "little mouse!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route16Biker3EndBattleText": {
+   "kind": "text",
+   "src": "text/Route16.asm:37",
+   "commands": [
+    {"cmd": "text", "str": "You"},
+    {"cmd": "line", "str": "little rat!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route16Biker3AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route16.asm:42",
+   "commands": [
+    {"cmd": "text", "str": "I hate losing!"},
+    {"cmd": "line", "str": "Get away from me!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route16biker4BattleText": {
+   "kind": "text",
+   "src": "text/Route16.asm:47",
+   "commands": [
+    {"cmd": "text", "str": "Hey, you just"},
+    {"cmd": "line", "str": "bumped me!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route16Biker4EndBattleText": {
+   "kind": "text",
+   "src": "text/Route16.asm:52",
+   "commands": [
+    {"cmd": "text", "str": "Kaboom!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route16Biker4AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route16.asm:56",
+   "commands": [
+    {"cmd": "text", "str": "You can also get"},
+    {"cmd": "line", "str": "to FUCHSIA from"},
+    {"cmd": "cont", "str": "VERMILION using a"},
+    {"cmd": "cont", "str": "coastal road."},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route16Biker5BattleText": {
+   "kind": "text",
+   "src": "text/Route16.asm:63",
+   "commands": [
+    {"cmd": "text", "str": "I'm feeling"},
+    {"cmd": "line", "str": "hungry and mean!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route16Biker5EndBattleText": {
+   "kind": "text",
+   "src": "text/Route16.asm:68",
+   "commands": [
+    {"cmd": "text", "str": "Bad,"},
+    {"cmd": "line", "str": "bad, bad!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route16Biker5AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route16.asm:73",
+   "commands": [
+    {"cmd": "text", "str": "I like my POKéMON"},
+    {"cmd": "line", "str": "ferocious! They"},
+    {"cmd": "cont", "str": "tear up enemies!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route16Biker6BattleText": {
+   "kind": "text",
+   "src": "text/Route16.asm:79",
+   "commands": [
+    {"cmd": "text", "str": "Sure, I'll go!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route16Biker6EndBattleText": {
+   "kind": "text",
+   "src": "text/Route16.asm:83",
+   "commands": [
+    {"cmd": "text", "str": "Don't make"},
+    {"cmd": "line", "str": "me mad!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route16Biker6AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route16.asm:88",
+   "commands": [
+    {"cmd": "text", "str": "I like harassing"},
+    {"cmd": "line", "str": "people with my"},
+    {"cmd": "cont", "str": "vicious POKéMON!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route16Text7": {
+   "kind": "text",
+   "src": "text/Route16.asm:94",
+   "commands": [
+    {"cmd": "text", "str": "A sleeping POKéMON"},
+    {"cmd": "line", "str": "blocks the way!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route16SnorlaxWokeUpText": {
+   "kind": "text",
+   "src": "text/Route16.asm:99",
+   "commands": [
+    {"cmd": "text", "str": "SNORLAX woke up!"},
+    {"cmd": "para", "str": "It attacked in a"},
+    {"cmd": "line", "str": "grumpy rage!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route16SnorlaxReturnedToMountainsText": {
+   "kind": "text",
+   "src": "text/Route16.asm:106",
+   "commands": [
+    {"cmd": "text", "str": "With a big yawn,"},
+    {"cmd": "line", "str": "SNORLAX returned"},
+    {"cmd": "cont", "str": "to the mountains!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route16CyclingRoadSignText": {
+   "kind": "text",
+   "src": "text/Route16.asm:112",
+   "commands": [
+    {"cmd": "text", "str": "Enjoy the slope!"},
+    {"cmd": "line", "str": "CYCLING ROAD"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route16SignText": {
+   "kind": "text",
+   "src": "text/Route16.asm:117",
+   "commands": [
+    {"cmd": "text", "str": "ROUTE 16"},
+    {"cmd": "line", "str": "CELADON CITY -"},
+    {"cmd": "cont", "str": "FUCHSIA CITY"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

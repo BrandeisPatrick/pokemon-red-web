@@ -1,0 +1,23 @@
+{
+  "name": "SFX_BATTLE_16",
+  "title": "Battle 16",
+  "kind": "sfx",
+  "bank": 2,
+  "id": 172,
+  "label": "SFX_Battle_16",
+  "channels": [
+    {
+      "channel": 8,
+      "label": "SFX_Battle_16_Ch8",
+      "entry": 0,
+      "bytes": 10,
+      "labels": {"SFX_Battle_16_Ch8": 0},
+      "commands": [
+        {"op": "noise_note", "length": 1, "volume": 9, "fade": 4, "value": 35},
+        {"op": "noise_note", "length": 1, "volume": 11, "fade": 4, "value": 34},
+        {"op": "noise_note", "length": 8, "volume": 15, "fade": 1, "value": 68},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

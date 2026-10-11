@@ -1,0 +1,23 @@
+{
+  "name": "SFX_SLOTS_REWARD",
+  "title": "Slots Reward",
+  "kind": "sfx",
+  "bank": 3,
+  "id": 191,
+  "label": "SFX_Slots_Reward",
+  "channels": [
+    {
+      "channel": 5,
+      "label": "SFX_Slots_Reward_Ch5",
+      "entry": 0,
+      "bytes": 11,
+      "labels": {"SFX_Slots_Reward_Ch5": 0},
+      "commands": [
+        {"op": "duty_cycle", "duty": 2},
+        {"op": "square_note", "length": 2, "volume": 15, "fade": 1, "frequency": 1792},
+        {"op": "square_note", "length": 8, "volume": 8, "fade": 1, "frequency": 2016},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

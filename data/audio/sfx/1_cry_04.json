@@ -1,0 +1,62 @@
+{
+  "name": "SFX_CRY_04",
+  "title": "Cry 04",
+  "kind": "sfx",
+  "bank": 1,
+  "id": 32,
+  "label": "SFX_Cry04_1",
+  "channels": [
+    {
+      "channel": 5,
+      "label": "SFX_Cry04_1_Ch5",
+      "entry": 0,
+      "bytes": 31,
+      "labels": {"SFX_Cry04_1_Ch5": 0},
+      "commands": [
+        {"op": "duty_cycle_pattern", "pattern": [3, 3, 0, 0]},
+        {"op": "square_note", "length": 4, "volume": 15, "fade": 7, "frequency": 1696},
+        {"op": "square_note", "length": 8, "volume": 14, "fade": 6, "frequency": 1700},
+        {"op": "square_note", "length": 4, "volume": 13, "fade": 6, "frequency": 1696},
+        {"op": "square_note", "length": 12, "volume": 13, "fade": 3, "frequency": 1568},
+        {"op": "square_note", "length": 8, "volume": 12, "fade": 3, "frequency": 1572},
+        {"op": "square_note", "length": 4, "volume": 12, "fade": 2, "frequency": 1568},
+        {"op": "square_note", "length": 8, "volume": 11, "fade": 1, "frequency": 1552},
+        {"op": "sound_ret"}
+      ]
+    },
+    {
+      "channel": 6,
+      "label": "SFX_Cry04_1_Ch6",
+      "entry": 0,
+      "bytes": 31,
+      "labels": {"SFX_Cry04_1_Ch6": 0},
+      "commands": [
+        {"op": "duty_cycle_pattern", "pattern": [1, 1, 2, 2]},
+        {"op": "square_note", "length": 4, "volume": 14, "fade": 7, "frequency": 1537},
+        {"op": "square_note", "length": 8, "volume": 13, "fade": 6, "frequency": 1539},
+        {"op": "square_note", "length": 4, "volume": 12, "fade": 6, "frequency": 1537},
+        {"op": "square_note", "length": 12, "volume": 12, "fade": 3, "frequency": 1409},
+        {"op": "square_note", "length": 8, "volume": 11, "fade": 3, "frequency": 1411},
+        {"op": "square_note", "length": 4, "volume": 11, "fade": 2, "frequency": 1410},
+        {"op": "square_note", "length": 8, "volume": 10, "fade": 1, "frequency": 1393},
+        {"op": "sound_ret"}
+      ]
+    },
+    {
+      "channel": 8,
+      "label": "SFX_Cry04_1_Ch8",
+      "entry": 0,
+      "bytes": 19,
+      "labels": {"SFX_Cry04_1_Ch8": 0},
+      "commands": [
+        {"op": "noise_note", "length": 7, "volume": 13, "fade": 6, "value": 92},
+        {"op": "noise_note", "length": 8, "volume": 14, "fade": 6, "value": 76},
+        {"op": "noise_note", "length": 4, "volume": 13, "fade": 4, "value": 92},
+        {"op": "noise_note", "length": 4, "volume": 13, "fade": 4, "value": 76},
+        {"op": "noise_note", "length": 7, "volume": 12, "fade": 3, "value": 76},
+        {"op": "noise_note", "length": 8, "volume": 10, "fade": 1, "value": 92},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

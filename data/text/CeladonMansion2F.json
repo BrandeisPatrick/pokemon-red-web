@@ -1,0 +1,32 @@
+{
+ "map": "CeladonMansion2F",
+ "const": "CELADON_MANSION_2F",
+ "textPointerTables": [
+  {
+   "label": "CeladonMansion2F_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_CELADONMANSION2F_MEETING_ROOM_SIGN", "label": "CeladonMansion2FMeetingRoomSignText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "CeladonMansion2FMeetingRoomSignText": {
+   "kind": "text",
+   "src": "scripts/CeladonMansion2F.asm:10",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonMansion2FMeetingRoomSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_CeladonMansion2FMeetingRoomSignText": {
+   "kind": "text",
+   "src": "text/CeladonMansion2F.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "GAME FREAK"},
+    {"cmd": "line", "str": "Meeting Room"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

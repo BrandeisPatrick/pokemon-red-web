@@ -1,0 +1,27 @@
+{
+  "name": "SFX_BATTLE_26",
+  "title": "Battle 26",
+  "kind": "sfx",
+  "bank": 2,
+  "id": 190,
+  "label": "SFX_Battle_26",
+  "channels": [
+    {
+      "channel": 8,
+      "label": "SFX_Battle_26_Ch8",
+      "entry": 0,
+      "bytes": 22,
+      "labels": {"SFX_Battle_26_Ch8": 0},
+      "commands": [
+        {"op": "noise_note", "length": 10, "volume": 15, "fade": -7, "value": 80},
+        {"op": "noise_note", "length": 15, "volume": 15, "fade": -7, "value": 81},
+        {"op": "noise_note", "length": 8, "volume": 15, "fade": 2, "value": 81},
+        {"op": "noise_note", "length": 6, "volume": 15, "fade": -7, "value": 82},
+        {"op": "noise_note", "length": 6, "volume": 15, "fade": -7, "value": 83},
+        {"op": "noise_note", "length": 8, "volume": 15, "fade": -7, "value": 84},
+        {"op": "noise_note", "length": 15, "volume": 15, "fade": 2, "value": 84},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

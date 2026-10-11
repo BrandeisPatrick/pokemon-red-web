@@ -1,0 +1,33 @@
+{
+ "map": "Route7",
+ "const": "ROUTE_7",
+ "textPointerTables": [
+  {
+   "label": "Route7_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_ROUTE7_UNDERGROUND_PATH_SIGN", "label": "Route7UndergroundPathSignText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "Route7UndergroundPathSignText": {
+   "kind": "text",
+   "src": "scripts/Route7.asm:9",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route7UndergroundPathSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_Route7UndergroundPathSignText": {
+   "kind": "text",
+   "src": "text/Route7.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "UNDERGROUND PATH"},
+    {"cmd": "line", "str": "CELADON CITY -"},
+    {"cmd": "cont", "str": "LAVENDER TOWN"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

@@ -1,0 +1,758 @@
+{
+ "map": "ViridianGym",
+ "const": "VIRIDIAN_GYM",
+ "textPointerTables": [
+  {
+   "label": "ViridianGym_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_VIRIDIANGYM_GIOVANNI", "label": "ViridianGymGiovanniText", "kind": "asm", "handler": "asm"},
+    {"id": 2, "const": "TEXT_VIRIDIANGYM_COOLTRAINER_M1", "label": "ViridianGymCooltrainerM1Text", "kind": "asm", "handler": "trainer", "trainerHeader": "ViridianGymTrainerHeader0"},
+    {"id": 3, "const": "TEXT_VIRIDIANGYM_HIKER1", "label": "ViridianGymHiker1Text", "kind": "asm", "handler": "trainer", "trainerHeader": "ViridianGymTrainerHeader1"},
+    {"id": 4, "const": "TEXT_VIRIDIANGYM_ROCKER1", "label": "ViridianGymRocker1Text", "kind": "asm", "handler": "trainer", "trainerHeader": "ViridianGymTrainerHeader2"},
+    {"id": 5, "const": "TEXT_VIRIDIANGYM_HIKER2", "label": "ViridianGymHiker2Text", "kind": "asm", "handler": "trainer", "trainerHeader": "ViridianGymTrainerHeader3"},
+    {"id": 6, "const": "TEXT_VIRIDIANGYM_COOLTRAINER_M2", "label": "ViridianGymCooltrainerM2Text", "kind": "asm", "handler": "trainer", "trainerHeader": "ViridianGymTrainerHeader4"},
+    {"id": 7, "const": "TEXT_VIRIDIANGYM_HIKER3", "label": "ViridianGymHiker3Text", "kind": "asm", "handler": "trainer", "trainerHeader": "ViridianGymTrainerHeader5"},
+    {"id": 8, "const": "TEXT_VIRIDIANGYM_ROCKER2", "label": "ViridianGymRocker2Text", "kind": "asm", "handler": "trainer", "trainerHeader": "ViridianGymTrainerHeader6"},
+    {"id": 9, "const": "TEXT_VIRIDIANGYM_COOLTRAINER_M3", "label": "ViridianGymCooltrainerM3Text", "kind": "asm", "handler": "trainer", "trainerHeader": "ViridianGymTrainerHeader7"},
+    {"id": 10, "const": "TEXT_VIRIDIANGYM_GYM_GUIDE", "label": "ViridianGymGymGuideText", "kind": "asm", "handler": "asm"},
+    {"id": 11, "const": "TEXT_VIRIDIANGYM_REVIVE", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 12, "const": "TEXT_VIRIDIANGYM_GIOVANNI_EARTH_BADGE_INFO", "label": "ViridianGymGiovanniEarthBadgeInfoText", "kind": "text", "handler": "text"},
+    {"id": 13, "const": "TEXT_VIRIDIANGYM_GIOVANNI_RECEIVED_TM27", "label": "ViridianGymGiovanniReceivedTM27Text", "kind": "text", "handler": "text"},
+    {"id": 14, "const": "TEXT_VIRIDIANGYM_GIOVANNI_TM27_NO_ROOM", "label": "ViridianGymGiovanniTM27NoRoomText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "PickUpItemText": {
+   "kind": "asm",
+   "src": "home/overworld_text.asm:29",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "ViridianGym_Script.CityName": {
+   "kind": "string",
+   "src": "scripts/ViridianGym.asm:14",
+   "commands": [
+    {"cmd": "str", "str": "VIRIDIAN CITY"}
+   ]
+  },
+  "ViridianGym_Script.LeaderName": {
+   "kind": "string",
+   "src": "scripts/ViridianGym.asm:17",
+   "commands": [
+    {"cmd": "str", "str": "GIOVANNI"}
+   ]
+  },
+  "ViridianGymGiovanniText": {
+   "kind": "asm",
+   "src": "scripts/ViridianGym.asm:208",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["ViridianGymGiovanniText.PostBattleAdviceText", "ViridianGymGiovanniText.PreBattleText", "ViridianGymGiovanniText.ReceivedEarthBadgeText"]
+  },
+  "ViridianGymGiovanniText.PreBattleText": {
+   "kind": "text",
+   "src": "scripts/ViridianGym.asm:250",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianGymGiovanniPreBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianGymGiovanniText.ReceivedEarthBadgeText": {
+   "kind": "text",
+   "src": "scripts/ViridianGym.asm:254",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianGymGiovanniReceivedEarthBadgeText"},
+    {"cmd": "sound", "sound": "sound_level_up"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianGymGiovanniText.PostBattleAdviceText": {
+   "kind": "text",
+   "src": "scripts/ViridianGym.asm:259",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianGymGiovanniPostBattleAdviceText"},
+    {"cmd": "text_waitbutton"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianGymGiovanniEarthBadgeInfoText": {
+   "kind": "text",
+   "src": "scripts/ViridianGym.asm:264",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianGymGiovanniEarthBadgeInfoText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianGymGiovanniReceivedTM27Text": {
+   "kind": "text",
+   "src": "scripts/ViridianGym.asm:268",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianGymGiovanniReceivedTM27Text"},
+    {"cmd": "sound", "sound": "sound_get_item_1"},
+    {"cmd": "text_far", "label": "_ViridianGymGiovanniTM27ExplanationText"},
+    {"cmd": "text_end"}
+   ],
+   "continuesInto": ["ViridianGymGiovanniTM27ExplanationText"]
+  },
+  "ViridianGymGiovanniTM27ExplanationText": {
+   "kind": "text",
+   "src": "scripts/ViridianGym.asm:272",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianGymGiovanniTM27ExplanationText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianGymGiovanniTM27NoRoomText": {
+   "kind": "text",
+   "src": "scripts/ViridianGym.asm:276",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianGymGiovanniTM27NoRoomText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianGymCooltrainerM1Text": {
+   "kind": "asm",
+   "src": "scripts/ViridianGym.asm:280",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "ViridianGymTrainerHeader0"
+  },
+  "ViridianGymCooltrainerM1BattleText": {
+   "kind": "text",
+   "src": "scripts/ViridianGym.asm:286",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianGymCooltrainerM1BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianGymCooltrainerM1EndBattleText": {
+   "kind": "text",
+   "src": "scripts/ViridianGym.asm:290",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianGymCooltrainerM1EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianGymCooltrainerM1AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/ViridianGym.asm:294",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianGymCooltrainerM1AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianGymHiker1Text": {
+   "kind": "asm",
+   "src": "scripts/ViridianGym.asm:298",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "ViridianGymTrainerHeader1"
+  },
+  "ViridianGymHiker1BattleText": {
+   "kind": "text",
+   "src": "scripts/ViridianGym.asm:304",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianGymHiker1BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianGymHiker1EndBattleText": {
+   "kind": "text",
+   "src": "scripts/ViridianGym.asm:308",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianGymHiker1EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianGymHiker1AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/ViridianGym.asm:312",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianGymHiker1AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianGymRocker1Text": {
+   "kind": "asm",
+   "src": "scripts/ViridianGym.asm:316",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "ViridianGymTrainerHeader2"
+  },
+  "ViridianGymRocker1BattleText": {
+   "kind": "text",
+   "src": "scripts/ViridianGym.asm:322",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianGymRocker1BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianGymRocker1EndBattleText": {
+   "kind": "text",
+   "src": "scripts/ViridianGym.asm:326",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianGymRocker1EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianGymRocker1AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/ViridianGym.asm:330",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianGymRocker1AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianGymHiker2Text": {
+   "kind": "asm",
+   "src": "scripts/ViridianGym.asm:334",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "ViridianGymTrainerHeader3"
+  },
+  "ViridianGymHiker2BattleText": {
+   "kind": "text",
+   "src": "scripts/ViridianGym.asm:340",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianGymHiker2BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianGymHiker2EndBattleText": {
+   "kind": "text",
+   "src": "scripts/ViridianGym.asm:344",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianGymHiker2EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianGymHiker2AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/ViridianGym.asm:348",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianGymHiker2AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianGymCooltrainerM2Text": {
+   "kind": "asm",
+   "src": "scripts/ViridianGym.asm:352",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "ViridianGymTrainerHeader4"
+  },
+  "ViridianGymCooltrainerM2BattleText": {
+   "kind": "text",
+   "src": "scripts/ViridianGym.asm:358",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianGymCooltrainerM2BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianGymCooltrainerM2EndBattleText": {
+   "kind": "text",
+   "src": "scripts/ViridianGym.asm:362",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianGymCooltrainerM2EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianGymCooltrainerM2AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/ViridianGym.asm:366",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianGymCooltrainerM2AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianGymHiker3Text": {
+   "kind": "asm",
+   "src": "scripts/ViridianGym.asm:370",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "ViridianGymTrainerHeader5"
+  },
+  "ViridianGymHiker3BattleText": {
+   "kind": "text",
+   "src": "scripts/ViridianGym.asm:376",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianGymHiker3BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianGymHiker3EndBattleText": {
+   "kind": "text",
+   "src": "scripts/ViridianGym.asm:380",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianGymHiker3EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianGymHiker3AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/ViridianGym.asm:384",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianGymHiker3AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianGymRocker2Text": {
+   "kind": "asm",
+   "src": "scripts/ViridianGym.asm:388",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "ViridianGymTrainerHeader6"
+  },
+  "ViridianGymRocker2BattleText": {
+   "kind": "text",
+   "src": "scripts/ViridianGym.asm:394",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianGymRocker2BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianGymRocker2EndBattleText": {
+   "kind": "text",
+   "src": "scripts/ViridianGym.asm:398",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianGymRocker2EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianGymRocker2AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/ViridianGym.asm:402",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianGymRocker2AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianGymCooltrainerM3Text": {
+   "kind": "asm",
+   "src": "scripts/ViridianGym.asm:406",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "ViridianGymTrainerHeader7"
+  },
+  "ViridianGymCooltrainerM3BattleText": {
+   "kind": "text",
+   "src": "scripts/ViridianGym.asm:412",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianGymCooltrainerM3BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianGymCooltrainerM3EndBattleText": {
+   "kind": "text",
+   "src": "scripts/ViridianGym.asm:416",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianGymCooltrainerM3EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianGymCooltrainerM3AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/ViridianGym.asm:420",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianGymCooltrainerM3AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianGymGymGuideText": {
+   "kind": "asm",
+   "src": "scripts/ViridianGym.asm:424",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["ViridianGymGuidePreBattleText", "ViridianGymGuidePostBattleText"]
+  },
+  "ViridianGymGuidePreBattleText": {
+   "kind": "text",
+   "src": "scripts/ViridianGym.asm:437",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianGymGuidePreBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianGymGuidePostBattleText": {
+   "kind": "text",
+   "src": "scripts/ViridianGym.asm:441",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianGymGuidePostBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_ViridianGymGiovanniPreBattleText": {
+   "kind": "text",
+   "src": "text/ViridianGym.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Fwahahaha! This is"},
+    {"cmd": "line", "str": "my hideout!"},
+    {"cmd": "para", "str": "I planned to"},
+    {"cmd": "line", "str": "resurrect TEAM"},
+    {"cmd": "cont", "str": "ROCKET here!"},
+    {"cmd": "para", "str": "But, you have"},
+    {"cmd": "line", "str": "caught me again!"},
+    {"cmd": "cont", "str": "So be it! This"},
+    {"cmd": "cont", "str": "time, I'm not"},
+    {"cmd": "cont", "str": "holding back!"},
+    {"cmd": "para", "str": "Once more, you"},
+    {"cmd": "line", "str": "shall face"},
+    {"cmd": "cont", "str": "GIOVANNI, the"},
+    {"cmd": "cont", "str": "greatest trainer!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianGymGiovanniReceivedEarthBadgeText": {
+   "kind": "text",
+   "src": "text/ViridianGym.asm:22",
+   "commands": [
+    {"cmd": "text", "str": "Ha!"},
+    {"cmd": "line", "str": "That was a truly"},
+    {"cmd": "cont", "str": "intense fight!"},
+    {"cmd": "cont", "str": "You have won!"},
+    {"cmd": "cont", "str": "As proof, here is"},
+    {"cmd": "cont", "str": "the EARTHBADGE!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_ViridianGymGiovanniPostBattleAdviceText": {
+   "kind": "text",
+   "src": "text/ViridianGym.asm:31",
+   "commands": [
+    {"cmd": "text", "str": "Having lost, I"},
+    {"cmd": "line", "str": "cannot face my"},
+    {"cmd": "cont", "str": "underlings!"},
+    {"cmd": "cont", "str": "TEAM ROCKET is"},
+    {"cmd": "cont", "str": "finished forever!"},
+    {"cmd": "para", "str": "I will dedicate my"},
+    {"cmd": "line", "str": "life to the study"},
+    {"cmd": "cont", "str": "of POKéMON!"},
+    {"cmd": "para", "str": "Let us meet again"},
+    {"cmd": "line", "str": "some day!"},
+    {"cmd": "cont", "str": "Farewell!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_ViridianGymGiovanniEarthBadgeInfoText": {
+   "kind": "text",
+   "src": "text/ViridianGym.asm:47",
+   "commands": [
+    {"cmd": "text", "str": "The EARTHBADGE"},
+    {"cmd": "line", "str": "makes POKéMON of"},
+    {"cmd": "cont", "str": "any level obey!"},
+    {"cmd": "para", "str": "It is evidence of"},
+    {"cmd": "line", "str": "your mastery as a"},
+    {"cmd": "cont", "str": "POKéMON trainer!"},
+    {"cmd": "para", "str": "With it, you can"},
+    {"cmd": "line", "str": "enter the POKéMON"},
+    {"cmd": "cont", "str": "LEAGUE!"},
+    {"cmd": "para", "str": "It is my gift for"},
+    {"cmd": "line", "str": "your POKéMON"},
+    {"cmd": "cont", "str": "LEAGUE challenge!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianGymGiovanniReceivedTM27Text": {
+   "kind": "text",
+   "src": "text/ViridianGym.asm:65",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} received"},
+    {"cmd": "line", "str": "TM27!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_ViridianGymGiovanniTM27ExplanationText": {
+   "kind": "text",
+   "src": "text/ViridianGym.asm:70",
+   "commands": [
+    {"cmd": "text", "str": ""},
+    {"cmd": "para", "str": "TM27 is FISSURE!"},
+    {"cmd": "line", "str": "It will take out"},
+    {"cmd": "cont", "str": "POKéMON with just"},
+    {"cmd": "cont", "str": "one hit!"},
+    {"cmd": "para", "str": "I made it when I"},
+    {"cmd": "line", "str": "ran the GYM here,"},
+    {"cmd": "cont", "str": "too long ago..."},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianGymGiovanniTM27NoRoomText": {
+   "kind": "text",
+   "src": "text/ViridianGym.asm:83",
+   "commands": [
+    {"cmd": "text", "str": "You do not have"},
+    {"cmd": "line", "str": "space for this!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianGymCooltrainerM1BattleText": {
+   "kind": "text",
+   "src": "text/ViridianGym.asm:88",
+   "commands": [
+    {"cmd": "text", "str": "Heh! You must be"},
+    {"cmd": "line", "str": "running out of"},
+    {"cmd": "cont", "str": "steam by now!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianGymCooltrainerM1EndBattleText": {
+   "kind": "text",
+   "src": "text/ViridianGym.asm:94",
+   "commands": [
+    {"cmd": "text", "str": "I"},
+    {"cmd": "line", "str": "ran out of gas!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_ViridianGymCooltrainerM1AfterBattleText": {
+   "kind": "text",
+   "src": "text/ViridianGym.asm:99",
+   "commands": [
+    {"cmd": "text", "str": "You need power to"},
+    {"cmd": "line", "str": "keep up with our"},
+    {"cmd": "cont", "str": "GYM LEADER!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianGymHiker1BattleText": {
+   "kind": "text",
+   "src": "text/ViridianGym.asm:105",
+   "commands": [
+    {"cmd": "text", "str": "Rrrroar! I'm"},
+    {"cmd": "line", "str": "working myself"},
+    {"cmd": "cont", "str": "into a rage!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianGymHiker1EndBattleText": {
+   "kind": "text",
+   "src": "text/ViridianGym.asm:111",
+   "commands": [
+    {"cmd": "text", "str": "Wargh!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_ViridianGymHiker1AfterBattleText": {
+   "kind": "text",
+   "src": "text/ViridianGym.asm:115",
+   "commands": [
+    {"cmd": "text", "str": "I'm still not"},
+    {"cmd": "line", "str": "worthy!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianGymRocker1BattleText": {
+   "kind": "text",
+   "src": "text/ViridianGym.asm:120",
+   "commands": [
+    {"cmd": "text", "str": "POKéMON and I, we"},
+    {"cmd": "line", "str": "make wonderful"},
+    {"cmd": "cont", "str": "music together!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianGymRocker1EndBattleText": {
+   "kind": "text",
+   "src": "text/ViridianGym.asm:126",
+   "commands": [
+    {"cmd": "text", "str": "You are in"},
+    {"cmd": "line", "str": "perfect harmony!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_ViridianGymRocker1AfterBattleText": {
+   "kind": "text",
+   "src": "text/ViridianGym.asm:131",
+   "commands": [
+    {"cmd": "text", "str": "Do you know the"},
+    {"cmd": "line", "str": "identity of our"},
+    {"cmd": "cont", "str": "GYM LEADER?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianGymHiker2BattleText": {
+   "kind": "text",
+   "src": "text/ViridianGym.asm:137",
+   "commands": [
+    {"cmd": "text", "str": "Karate is the"},
+    {"cmd": "line", "str": "ultimate form of"},
+    {"cmd": "cont", "str": "martial arts!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianGymHiker2EndBattleText": {
+   "kind": "text",
+   "src": "text/ViridianGym.asm:143",
+   "commands": [
+    {"cmd": "text", "str": "Atcho!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_ViridianGymHiker2AfterBattleText": {
+   "kind": "text",
+   "src": "text/ViridianGym.asm:147",
+   "commands": [
+    {"cmd": "text", "str": "If my POKéMON"},
+    {"cmd": "line", "str": "were as good at"},
+    {"cmd": "cont", "str": "Karate as I..."},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianGymCooltrainerM2BattleText": {
+   "kind": "text",
+   "src": "text/ViridianGym.asm:153",
+   "commands": [
+    {"cmd": "text", "str": "The truly talented"},
+    {"cmd": "line", "str": "win with style!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianGymCooltrainerM2EndBattleText": {
+   "kind": "text",
+   "src": "text/ViridianGym.asm:158",
+   "commands": [
+    {"cmd": "text", "str": "I"},
+    {"cmd": "line", "str": "lost my grip!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_ViridianGymCooltrainerM2AfterBattleText": {
+   "kind": "text",
+   "src": "text/ViridianGym.asm:163",
+   "commands": [
+    {"cmd": "text", "str": "The LEADER will"},
+    {"cmd": "line", "str": "scold me!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianGymHiker3BattleText": {
+   "kind": "text",
+   "src": "text/ViridianGym.asm:168",
+   "commands": [
+    {"cmd": "text", "str": "I'm the KARATE"},
+    {"cmd": "line", "str": "KING! Your fate"},
+    {"cmd": "cont", "str": "rests with me!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianGymHiker3EndBattleText": {
+   "kind": "text",
+   "src": "text/ViridianGym.asm:174",
+   "commands": [
+    {"cmd": "text", "str": "Ayah!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_ViridianGymHiker3AfterBattleText": {
+   "kind": "text",
+   "src": "text/ViridianGym.asm:178",
+   "commands": [
+    {"cmd": "text", "str": "POKéMON LEAGUE?"},
+    {"cmd": "line", "str": "You? Don't get"},
+    {"cmd": "cont", "str": "cocky!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianGymRocker2BattleText": {
+   "kind": "text",
+   "src": "text/ViridianGym.asm:184",
+   "commands": [
+    {"cmd": "text", "str": "Your POKéMON will"},
+    {"cmd": "line", "str": "cower at the"},
+    {"cmd": "cont", "str": "crack of my whip!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianGymRocker2EndBattleText": {
+   "kind": "text",
+   "src": "text/ViridianGym.asm:190",
+   "commands": [
+    {"cmd": "text", "str": "Yowch!"},
+    {"cmd": "line", "str": "Whiplash!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_ViridianGymRocker2AfterBattleText": {
+   "kind": "text",
+   "src": "text/ViridianGym.asm:195",
+   "commands": [
+    {"cmd": "text", "str": "Wait! I was just"},
+    {"cmd": "line", "str": "careless!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianGymCooltrainerM3BattleText": {
+   "kind": "text",
+   "src": "text/ViridianGym.asm:200",
+   "commands": [
+    {"cmd": "text", "str": "VIRIDIAN GYM was"},
+    {"cmd": "line", "str": "closed for a long"},
+    {"cmd": "cont", "str": "time, but now our"},
+    {"cmd": "cont", "str": "LEADER is back!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianGymCooltrainerM3EndBattleText": {
+   "kind": "text",
+   "src": "text/ViridianGym.asm:207",
+   "commands": [
+    {"cmd": "text", "str": "I"},
+    {"cmd": "line", "str": "was beaten?"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_ViridianGymCooltrainerM3AfterBattleText": {
+   "kind": "text",
+   "src": "text/ViridianGym.asm:212",
+   "commands": [
+    {"cmd": "text", "str": "You can go onto"},
+    {"cmd": "line", "str": "POKéMON LEAGUE"},
+    {"cmd": "cont", "str": "only by defeating"},
+    {"cmd": "cont", "str": "our GYM LEADER!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianGymGuidePreBattleText": {
+   "kind": "text",
+   "src": "text/ViridianGym.asm:219",
+   "commands": [
+    {"cmd": "text", "str": "Yo! Champ in"},
+    {"cmd": "line", "str": "making!"},
+    {"cmd": "para", "str": "Even I don't know"},
+    {"cmd": "line", "str": "VIRIDIAN LEADER's"},
+    {"cmd": "cont", "str": "identity!"},
+    {"cmd": "para", "str": "This will be the"},
+    {"cmd": "line", "str": "toughest of all"},
+    {"cmd": "cont", "str": "the GYM LEADERs!"},
+    {"cmd": "para", "str": "I heard that the"},
+    {"cmd": "line", "str": "trainers here"},
+    {"cmd": "cont", "str": "like ground-type"},
+    {"cmd": "cont", "str": "POKéMON!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianGymGuidePostBattleText": {
+   "kind": "text",
+   "src": "text/ViridianGym.asm:237",
+   "commands": [
+    {"cmd": "text", "str": "Blow me away!"},
+    {"cmd": "line", "str": "GIOVANNI was the"},
+    {"cmd": "cont", "str": "GYM LEADER here?"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

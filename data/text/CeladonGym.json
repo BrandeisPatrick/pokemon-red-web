@@ -1,0 +1,636 @@
+{
+ "map": "CeladonGym",
+ "const": "CELADON_GYM",
+ "textPointerTables": [
+  {
+   "label": "CeladonGym_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_CELADONGYM_ERIKA", "label": "CeladonGymErikaText", "kind": "asm", "handler": "asm"},
+    {"id": 2, "const": "TEXT_CELADONGYM_COOLTRAINER_F1", "label": "CeladonGymCooltrainerF1Text", "kind": "asm", "handler": "trainer", "trainerHeader": "CeladonGymTrainerHeader0"},
+    {"id": 3, "const": "TEXT_CELADONGYM_BEAUTY1", "label": "CeladonGymBeauty1Text", "kind": "asm", "handler": "trainer", "trainerHeader": "CeladonGymTrainerHeader1"},
+    {"id": 4, "const": "TEXT_CELADONGYM_COOLTRAINER_F2", "label": "CeladonGymCooltrainerF2Text", "kind": "asm", "handler": "trainer", "trainerHeader": "CeladonGymTrainerHeader2"},
+    {"id": 5, "const": "TEXT_CELADONGYM_BEAUTY2", "label": "CeladonGymBeauty2Text", "kind": "asm", "handler": "trainer", "trainerHeader": "CeladonGymTrainerHeader3"},
+    {"id": 6, "const": "TEXT_CELADONGYM_COOLTRAINER_F3", "label": "CeladonGymCooltrainerF3Text", "kind": "asm", "handler": "trainer", "trainerHeader": "CeladonGymTrainerHeader4"},
+    {"id": 7, "const": "TEXT_CELADONGYM_BEAUTY3", "label": "CeladonGymBeauty3Text", "kind": "asm", "handler": "trainer", "trainerHeader": "CeladonGymTrainerHeader5"},
+    {"id": 8, "const": "TEXT_CELADONGYM_COOLTRAINER_F4", "label": "CeladonGymCooltrainerF4Text", "kind": "asm", "handler": "trainer", "trainerHeader": "CeladonGymTrainerHeader6"},
+    {"id": 9, "const": "TEXT_CELADONGYM_RAINBOWBADGE_INFO", "label": "CeladonGymRainbowBadgeInfoText", "kind": "text", "handler": "text"},
+    {"id": 10, "const": "TEXT_CELADONGYM_RECEIVED_TM21", "label": "CeladonGymReceivedTM21Text", "kind": "text", "handler": "text"},
+    {"id": 11, "const": "TEXT_CELADONGYM_TM21_NO_ROOM", "label": "CeladonGymTM21NoRoomText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "CeladonGym_Script.CityName": {
+   "kind": "string",
+   "src": "scripts/CeladonGym.asm:20",
+   "commands": [
+    {"cmd": "str", "str": "CELADON CITY"}
+   ]
+  },
+  "CeladonGym_Script.LeaderName": {
+   "kind": "string",
+   "src": "scripts/CeladonGym.asm:23",
+   "commands": [
+    {"cmd": "str", "str": "ERIKA"}
+   ]
+  },
+  "CeladonGymErikaText": {
+   "kind": "asm",
+   "src": "scripts/CeladonGym.asm:107",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["CeladonGymErikaText.PostBattleAdviceText", "CeladonGymErikaText.PreBattleText", "CeladonGymErikaText.ReceivedRainbowBadgeText"]
+  },
+  "CeladonGymErikaText.PreBattleText": {
+   "kind": "text",
+   "src": "scripts/CeladonGym.asm:141",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonGymErikaPreBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonGymErikaText.ReceivedRainbowBadgeText": {
+   "kind": "text",
+   "src": "scripts/CeladonGym.asm:145",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonGymErikaReceivedRainbowBadgeText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonGymErikaText.PostBattleAdviceText": {
+   "kind": "text",
+   "src": "scripts/CeladonGym.asm:149",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonGymErikaPostBattleAdviceText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonGymRainbowBadgeInfoText": {
+   "kind": "text",
+   "src": "scripts/CeladonGym.asm:153",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonGymRainbowBadgeInfoText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonGymReceivedTM21Text": {
+   "kind": "text",
+   "src": "scripts/CeladonGym.asm:157",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonGymReceivedTM21Text"},
+    {"cmd": "sound", "sound": "sound_get_item_1"},
+    {"cmd": "text_far", "label": "_TM21ExplanationText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonGymTM21NoRoomText": {
+   "kind": "text",
+   "src": "scripts/CeladonGym.asm:163",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonGymTM21NoRoomText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonGymCooltrainerF1Text": {
+   "kind": "asm",
+   "src": "scripts/CeladonGym.asm:167",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "CeladonGymTrainerHeader0"
+  },
+  "CeladonGymBattleText2": {
+   "kind": "text",
+   "src": "scripts/CeladonGym.asm:173",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonGymBattleText2"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonGymEndBattleText2": {
+   "kind": "text",
+   "src": "scripts/CeladonGym.asm:177",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonGymEndBattleText2"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonGymAfterBattleText2": {
+   "kind": "text",
+   "src": "scripts/CeladonGym.asm:181",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonGymAfterBattleText2"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonGymBeauty1Text": {
+   "kind": "asm",
+   "src": "scripts/CeladonGym.asm:185",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "CeladonGymTrainerHeader1"
+  },
+  "CeladonGymBattleText3": {
+   "kind": "text",
+   "src": "scripts/CeladonGym.asm:191",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonGymBattleText3"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonGymEndBattleText3": {
+   "kind": "text",
+   "src": "scripts/CeladonGym.asm:195",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonGymEndBattleText3"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonGymAfterBattleText3": {
+   "kind": "text",
+   "src": "scripts/CeladonGym.asm:199",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonGymAfterBattleText3"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonGymCooltrainerF2Text": {
+   "kind": "asm",
+   "src": "scripts/CeladonGym.asm:203",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "CeladonGymTrainerHeader2"
+  },
+  "CeladonGymBattleText4": {
+   "kind": "text",
+   "src": "scripts/CeladonGym.asm:209",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonGymBattleText4"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonGymEndBattleText4": {
+   "kind": "text",
+   "src": "scripts/CeladonGym.asm:213",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonGymEndBattleText4"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonGymAfterBattleText4": {
+   "kind": "text",
+   "src": "scripts/CeladonGym.asm:217",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonGymAfterBattleText4"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonGymBeauty2Text": {
+   "kind": "asm",
+   "src": "scripts/CeladonGym.asm:221",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "CeladonGymTrainerHeader3"
+  },
+  "CeladonGymBattleText5": {
+   "kind": "text",
+   "src": "scripts/CeladonGym.asm:227",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonGymBattleText5"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonGymEndBattleText5": {
+   "kind": "text",
+   "src": "scripts/CeladonGym.asm:231",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonGymEndBattleText5"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonGymAfterBattleText5": {
+   "kind": "text",
+   "src": "scripts/CeladonGym.asm:235",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonGymAfterBattleText5"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonGymCooltrainerF3Text": {
+   "kind": "asm",
+   "src": "scripts/CeladonGym.asm:239",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "CeladonGymTrainerHeader4"
+  },
+  "CeladonGymBattleText6": {
+   "kind": "text",
+   "src": "scripts/CeladonGym.asm:245",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonGymBattleText6"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonGymEndBattleText6": {
+   "kind": "text",
+   "src": "scripts/CeladonGym.asm:249",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonGymEndBattleText6"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonGymAfterBattleText6": {
+   "kind": "text",
+   "src": "scripts/CeladonGym.asm:253",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonGymAfterBattleText6"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonGymBeauty3Text": {
+   "kind": "asm",
+   "src": "scripts/CeladonGym.asm:257",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "CeladonGymTrainerHeader5"
+  },
+  "CeladonGymBattleText7": {
+   "kind": "text",
+   "src": "scripts/CeladonGym.asm:263",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonGymBattleText7"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonGymEndBattleText7": {
+   "kind": "text",
+   "src": "scripts/CeladonGym.asm:267",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonGymEndBattleText7"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonGymAfterBattleText7": {
+   "kind": "text",
+   "src": "scripts/CeladonGym.asm:271",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonGymAfterBattleText7"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonGymCooltrainerF4Text": {
+   "kind": "asm",
+   "src": "scripts/CeladonGym.asm:275",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "CeladonGymTrainerHeader6"
+  },
+  "CeladonGymBattleText8": {
+   "kind": "text",
+   "src": "scripts/CeladonGym.asm:281",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonGymBattleText8"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonGymEndBattleText8": {
+   "kind": "text",
+   "src": "scripts/CeladonGym.asm:285",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonGymEndBattleText8"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonGymAfterBattleText8": {
+   "kind": "text",
+   "src": "scripts/CeladonGym.asm:289",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonGymAfterBattleText8"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_CeladonGymErikaPreBattleText": {
+   "kind": "text",
+   "src": "text/CeladonGym.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Hello. Lovely"},
+    {"cmd": "line", "str": "weather isn't it?"},
+    {"cmd": "cont", "str": "It's so pleasant."},
+    {"cmd": "para", "str": "...Oh dear..."},
+    {"cmd": "line", "str": "I must have dozed"},
+    {"cmd": "cont", "str": "off. Welcome."},
+    {"cmd": "para", "str": "My name is ERIKA."},
+    {"cmd": "line", "str": "I am the LEADER"},
+    {"cmd": "cont", "str": "of CELADON GYM."},
+    {"cmd": "para", "str": "I teach the art of"},
+    {"cmd": "line", "str": "flower arranging."},
+    {"cmd": "cont", "str": "My POKéMON are of"},
+    {"cmd": "cont", "str": "the grass-type."},
+    {"cmd": "para", "str": "Oh, I'm sorry, I"},
+    {"cmd": "line", "str": "had no idea that"},
+    {"cmd": "cont", "str": "you wished to"},
+    {"cmd": "cont", "str": "challenge me."},
+    {"cmd": "para", "str": "Very well, but I"},
+    {"cmd": "line", "str": "shall not lose."},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonGymErikaReceivedRainbowBadgeText": {
+   "kind": "text",
+   "src": "text/CeladonGym.asm:29",
+   "commands": [
+    {"cmd": "text", "str": "Oh!"},
+    {"cmd": "line", "str": "I concede defeat."},
+    {"cmd": "para", "str": "You are remarkably"},
+    {"cmd": "line", "str": "strong."},
+    {"cmd": "para", "str": "I must confer you"},
+    {"cmd": "line", "str": "the RAINBOWBADGE."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_CeladonGymErikaPostBattleAdviceText": {
+   "kind": "text",
+   "src": "text/CeladonGym.asm:40",
+   "commands": [
+    {"cmd": "text", "str": "You are cataloging"},
+    {"cmd": "line", "str": "POKéMON? I must"},
+    {"cmd": "cont", "str": "say I'm impressed."},
+    {"cmd": "para", "str": "I would never"},
+    {"cmd": "line", "str": "collect POKéMON"},
+    {"cmd": "cont", "str": "if they were"},
+    {"cmd": "cont", "str": "unattractive."},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonGymRainbowBadgeInfoText": {
+   "kind": "text",
+   "src": "text/CeladonGym.asm:51",
+   "commands": [
+    {"cmd": "text", "str": "The RAINBOWBADGE"},
+    {"cmd": "line", "str": "will make POKéMON"},
+    {"cmd": "cont", "str": "up to L50 obey."},
+    {"cmd": "para", "str": "It also allows"},
+    {"cmd": "line", "str": "POKéMON to use"},
+    {"cmd": "cont", "str": "STRENGTH in and"},
+    {"cmd": "cont", "str": "out of battle."},
+    {"cmd": "para", "str": "Please also take"},
+    {"cmd": "line", "str": "this with you."},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonGymReceivedTM21Text": {
+   "kind": "text",
+   "src": "text/CeladonGym.asm:65",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} received"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_TM21ExplanationText": {
+   "kind": "text",
+   "src": "text/CeladonGym.asm:72",
+   "commands": [
+    {"cmd": "text", "str": ""},
+    {"cmd": "para", "str": "TM21 contains"},
+    {"cmd": "line", "str": "MEGA DRAIN."},
+    {"cmd": "para", "str": "Half the damage"},
+    {"cmd": "line", "str": "it inflicts is"},
+    {"cmd": "cont", "str": "drained to heal"},
+    {"cmd": "cont", "str": "your POKéMON!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonGymTM21NoRoomText": {
+   "kind": "text",
+   "src": "text/CeladonGym.asm:84",
+   "commands": [
+    {"cmd": "text", "str": "You should make"},
+    {"cmd": "line", "str": "room for this."},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonGymBattleText2": {
+   "kind": "text",
+   "src": "text/CeladonGym.asm:89",
+   "commands": [
+    {"cmd": "text", "str": "Hey!"},
+    {"cmd": "para", "str": "You are not"},
+    {"cmd": "line", "str": "allowed in here!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonGymEndBattleText2": {
+   "kind": "text",
+   "src": "text/CeladonGym.asm:96",
+   "commands": [
+    {"cmd": "text", "str": "You're"},
+    {"cmd": "line", "str": "too rough!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_CeladonGymAfterBattleText2": {
+   "kind": "text",
+   "src": "text/CeladonGym.asm:101",
+   "commands": [
+    {"cmd": "text", "str": "Bleaah!"},
+    {"cmd": "line", "str": "I hope ERIKA"},
+    {"cmd": "cont", "str": "wipes you out!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonGymBattleText3": {
+   "kind": "text",
+   "src": "text/CeladonGym.asm:107",
+   "commands": [
+    {"cmd": "text", "str": "I was getting"},
+    {"cmd": "line", "str": "bored."},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonGymEndBattleText3": {
+   "kind": "text",
+   "src": "text/CeladonGym.asm:112",
+   "commands": [
+    {"cmd": "text", "str": "My"},
+    {"cmd": "line", "str": "makeup!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_CeladonGymAfterBattleText3": {
+   "kind": "text",
+   "src": "text/CeladonGym.asm:117",
+   "commands": [
+    {"cmd": "text", "str": "Grass-type POKéMON"},
+    {"cmd": "line", "str": "are tough against"},
+    {"cmd": "cont", "str": "the water-type!"},
+    {"cmd": "para", "str": "They also have an"},
+    {"cmd": "line", "str": "edge on rock and"},
+    {"cmd": "cont", "str": "ground POKéMON!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonGymBattleText4": {
+   "kind": "text",
+   "src": "text/CeladonGym.asm:127",
+   "commands": [
+    {"cmd": "text", "str": "Aren't you the"},
+    {"cmd": "line", "str": "peeping Tom?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonGymEndBattleText4": {
+   "kind": "text",
+   "src": "text/CeladonGym.asm:132",
+   "commands": [
+    {"cmd": "text", "str": "I'm"},
+    {"cmd": "line", "str": "in shock!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_CeladonGymAfterBattleText4": {
+   "kind": "text",
+   "src": "text/CeladonGym.asm:137",
+   "commands": [
+    {"cmd": "text", "str": "Oh, you weren't"},
+    {"cmd": "line", "str": "peeping? We get a"},
+    {"cmd": "cont", "str": "lot of gawkers!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonGymBattleText5": {
+   "kind": "text",
+   "src": "text/CeladonGym.asm:143",
+   "commands": [
+    {"cmd": "text", "str": "Look at my grass"},
+    {"cmd": "line", "str": "POKéMON!"},
+    {"cmd": "para", "str": "They're so easy"},
+    {"cmd": "line", "str": "to raise!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonGymEndBattleText5": {
+   "kind": "text",
+   "src": "text/CeladonGym.asm:151",
+   "commands": [
+    {"cmd": "text", "str": "No!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_CeladonGymAfterBattleText5": {
+   "kind": "text",
+   "src": "text/CeladonGym.asm:155",
+   "commands": [
+    {"cmd": "text", "str": "We only use grass-"},
+    {"cmd": "line", "str": "type POKéMON at"},
+    {"cmd": "cont", "str": "our GYM!"},
+    {"cmd": "para", "str": "We also use them"},
+    {"cmd": "line", "str": "for making flower"},
+    {"cmd": "cont", "str": "arrangements!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonGymBattleText6": {
+   "kind": "text",
+   "src": "text/CeladonGym.asm:165",
+   "commands": [
+    {"cmd": "text", "str": "Don't bring any"},
+    {"cmd": "line", "str": "bugs or fire"},
+    {"cmd": "cont", "str": "POKéMON in here!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonGymEndBattleText6": {
+   "kind": "text",
+   "src": "text/CeladonGym.asm:171",
+   "commands": [
+    {"cmd": "text", "str": "Oh!"},
+    {"cmd": "line", "str": "You!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_CeladonGymAfterBattleText6": {
+   "kind": "text",
+   "src": "text/CeladonGym.asm:176",
+   "commands": [
+    {"cmd": "text", "str": "Our LEADER, ERIKA,"},
+    {"cmd": "line", "str": "might be quiet,"},
+    {"cmd": "cont", "str": "but she's also"},
+    {"cmd": "cont", "str": "very skilled!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonGymBattleText7": {
+   "kind": "text",
+   "src": "text/CeladonGym.asm:183",
+   "commands": [
+    {"cmd": "text", "str": "Pleased to meet"},
+    {"cmd": "line", "str": "you. My hobby is"},
+    {"cmd": "cont", "str": "POKéMON training."},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonGymEndBattleText7": {
+   "kind": "text",
+   "src": "text/CeladonGym.asm:189",
+   "commands": [
+    {"cmd": "text", "str": "Oh!"},
+    {"cmd": "line", "str": "Splendid!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_CeladonGymAfterBattleText7": {
+   "kind": "text",
+   "src": "text/CeladonGym.asm:194",
+   "commands": [
+    {"cmd": "text", "str": "I have a blind"},
+    {"cmd": "line", "str": "date coming up."},
+    {"cmd": "cont", "str": "I have to learn"},
+    {"cmd": "cont", "str": "to be polite."},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonGymBattleText8": {
+   "kind": "text",
+   "src": "text/CeladonGym.asm:201",
+   "commands": [
+    {"cmd": "text", "str": "Welcome to"},
+    {"cmd": "line", "str": "CELADON GYM!"},
+    {"cmd": "para", "str": "You better not"},
+    {"cmd": "line", "str": "underestimate"},
+    {"cmd": "cont", "str": "girl power!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonGymEndBattleText8": {
+   "kind": "text",
+   "src": "text/CeladonGym.asm:210",
+   "commands": [
+    {"cmd": "text", "str": "Oh!"},
+    {"cmd": "line", "str": "Beaten!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_CeladonGymAfterBattleText8": {
+   "kind": "text",
+   "src": "text/CeladonGym.asm:215",
+   "commands": [
+    {"cmd": "text", "str": "I didn't bring my"},
+    {"cmd": "line", "str": "best POKéMON!"},
+    {"cmd": "para", "str": "Wait 'til next"},
+    {"cmd": "line", "str": "time!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

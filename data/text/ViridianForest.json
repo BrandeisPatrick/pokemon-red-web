@@ -1,0 +1,379 @@
+{
+ "map": "ViridianForest",
+ "const": "VIRIDIAN_FOREST",
+ "textPointerTables": [
+  {
+   "label": "ViridianForest_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_VIRIDIANFOREST_YOUNGSTER1", "label": "ViridianForestYoungster1Text", "kind": "text", "handler": "text"},
+    {"id": 2, "const": "TEXT_VIRIDIANFOREST_YOUNGSTER2", "label": "ViridianForestYoungster2Text", "kind": "asm", "handler": "trainer", "trainerHeader": "ViridianForestTrainerHeader0"},
+    {"id": 3, "const": "TEXT_VIRIDIANFOREST_YOUNGSTER3", "label": "ViridianForestYoungster3Text", "kind": "asm", "handler": "trainer", "trainerHeader": "ViridianForestTrainerHeader1"},
+    {"id": 4, "const": "TEXT_VIRIDIANFOREST_YOUNGSTER4", "label": "ViridianForestYoungster4Text", "kind": "asm", "handler": "trainer", "trainerHeader": "ViridianForestTrainerHeader2"},
+    {"id": 5, "const": "TEXT_VIRIDIANFOREST_ANTIDOTE", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 6, "const": "TEXT_VIRIDIANFOREST_POTION", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 7, "const": "TEXT_VIRIDIANFOREST_POKE_BALL", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 8, "const": "TEXT_VIRIDIANFOREST_YOUNGSTER5", "label": "ViridianForestYoungster5Text", "kind": "text", "handler": "text"},
+    {"id": 9, "const": "TEXT_VIRIDIANFOREST_TRAINER_TIPS1", "label": "ViridianForestTrainerTips1Text", "kind": "text", "handler": "text"},
+    {"id": 10, "const": "TEXT_VIRIDIANFOREST_USE_ANTIDOTE_SIGN", "label": "ViridianForestUseAntidoteSignText", "kind": "text", "handler": "text"},
+    {"id": 11, "const": "TEXT_VIRIDIANFOREST_TRAINER_TIPS2", "label": "ViridianForestTrainerTips2Text", "kind": "text", "handler": "text"},
+    {"id": 12, "const": "TEXT_VIRIDIANFOREST_TRAINER_TIPS3", "label": "ViridianForestTrainerTips3Text", "kind": "text", "handler": "text"},
+    {"id": 13, "const": "TEXT_VIRIDIANFOREST_TRAINER_TIPS4", "label": "ViridianForestTrainerTips4Text", "kind": "text", "handler": "text"},
+    {"id": 14, "const": "TEXT_VIRIDIANFOREST_LEAVING_SIGN", "label": "ViridianForestLeavingSignText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "PickUpItemText": {
+   "kind": "asm",
+   "src": "home/overworld_text.asm:29",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "ViridianForestYoungster1Text": {
+   "kind": "text",
+   "src": "scripts/ViridianForest.asm:44",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianForestYoungster1Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianForestYoungster2Text": {
+   "kind": "asm",
+   "src": "scripts/ViridianForest.asm:48",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "ViridianForestTrainerHeader0"
+  },
+  "ViridianForestYoungster3Text": {
+   "kind": "asm",
+   "src": "scripts/ViridianForest.asm:54",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "ViridianForestTrainerHeader1"
+  },
+  "ViridianForestYoungster4Text": {
+   "kind": "asm",
+   "src": "scripts/ViridianForest.asm:60",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "ViridianForestTrainerHeader2"
+  },
+  "ViridianForestYoungster2BattleText": {
+   "kind": "text",
+   "src": "scripts/ViridianForest.asm:66",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianForestYoungster2BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianForestYoungster2EndBattleText": {
+   "kind": "text",
+   "src": "scripts/ViridianForest.asm:70",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianForestYoungster2EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianForestYoungster2AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/ViridianForest.asm:74",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianForestYoungster2AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianForestYoungster3BattleText": {
+   "kind": "text",
+   "src": "scripts/ViridianForest.asm:78",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianForestYoungster3BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianForestYoungster3EndBattleText": {
+   "kind": "text",
+   "src": "scripts/ViridianForest.asm:82",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianForestYoungster3EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianForestYoungster3AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/ViridianForest.asm:86",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianForestYoungster3AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianForestYoungster4BattleText": {
+   "kind": "text",
+   "src": "scripts/ViridianForest.asm:90",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianForestYoungster4BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianForestYoungster4EndBattleText": {
+   "kind": "text",
+   "src": "scripts/ViridianForest.asm:94",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianForestYoungster4EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianForestYoungster4AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/ViridianForest.asm:98",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianForestYoungster4AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianForestYoungster5Text": {
+   "kind": "text",
+   "src": "scripts/ViridianForest.asm:102",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianForestYoungster5Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianForestTrainerTips1Text": {
+   "kind": "text",
+   "src": "scripts/ViridianForest.asm:106",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianForestTrainerTips1Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianForestUseAntidoteSignText": {
+   "kind": "text",
+   "src": "scripts/ViridianForest.asm:110",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianForestUseAntidoteSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianForestTrainerTips2Text": {
+   "kind": "text",
+   "src": "scripts/ViridianForest.asm:114",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianForestTrainerTips2Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianForestTrainerTips3Text": {
+   "kind": "text",
+   "src": "scripts/ViridianForest.asm:118",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianForestTrainerTips3Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianForestTrainerTips4Text": {
+   "kind": "text",
+   "src": "scripts/ViridianForest.asm:122",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianForestTrainerTips4Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianForestLeavingSignText": {
+   "kind": "text",
+   "src": "scripts/ViridianForest.asm:126",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianForestLeavingSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_ViridianForestYoungster1Text": {
+   "kind": "text",
+   "src": "text/ViridianForest.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "I came here with"},
+    {"cmd": "line", "str": "some friends!"},
+    {"cmd": "para", "str": "They're out for"},
+    {"cmd": "line", "str": "POKéMON fights!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianForestYoungster2BattleText": {
+   "kind": "text",
+   "src": "text/ViridianForest.asm:10",
+   "commands": [
+    {"cmd": "text", "str": "Hey! You have"},
+    {"cmd": "line", "str": "POKéMON! Come on!"},
+    {"cmd": "cont", "str": "Let's battle'em!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianForestYoungster2EndBattleText": {
+   "kind": "text",
+   "src": "text/ViridianForest.asm:16",
+   "commands": [
+    {"cmd": "text", "str": "No!"},
+    {"cmd": "line", "str": "CATERPIE can't"},
+    {"cmd": "cont", "str": "cut it!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_ViridianForestYoungster2AfterBattleText": {
+   "kind": "text",
+   "src": "text/ViridianForest.asm:22",
+   "commands": [
+    {"cmd": "text", "str": "Ssh! You'll scare"},
+    {"cmd": "line", "str": "the bugs away!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianForestYoungster3BattleText": {
+   "kind": "text",
+   "src": "text/ViridianForest.asm:27",
+   "commands": [
+    {"cmd": "text", "str": "Yo! You can't jam"},
+    {"cmd": "line", "str": "out if you're a"},
+    {"cmd": "cont", "str": "POKéMON trainer!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianForestYoungster3EndBattleText": {
+   "kind": "text",
+   "src": "text/ViridianForest.asm:33",
+   "commands": [
+    {"cmd": "text", "str": "Huh?"},
+    {"cmd": "line", "str": "I ran out of"},
+    {"cmd": "cont", "str": "POKéMON!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_ViridianForestYoungster3AfterBattleText": {
+   "kind": "text",
+   "src": "text/ViridianForest.asm:39",
+   "commands": [
+    {"cmd": "text", "str": "Darn! I'm going"},
+    {"cmd": "line", "str": "to catch some"},
+    {"cmd": "cont", "str": "stronger ones!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianForestYoungster4BattleText": {
+   "kind": "text",
+   "src": "text/ViridianForest.asm:45",
+   "commands": [
+    {"cmd": "text", "str": "Hey, wait up!"},
+    {"cmd": "line", "str": "What's the hurry?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianForestYoungster4EndBattleText": {
+   "kind": "text",
+   "src": "text/ViridianForest.asm:50",
+   "commands": [
+    {"cmd": "text", "str": "I"},
+    {"cmd": "line", "str": "give! You're good"},
+    {"cmd": "cont", "str": "at this!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_ViridianForestYoungster4AfterBattleText": {
+   "kind": "text",
+   "src": "text/ViridianForest.asm:56",
+   "commands": [
+    {"cmd": "text", "str": "Sometimes, you"},
+    {"cmd": "line", "str": "can find stuff on"},
+    {"cmd": "cont", "str": "the ground!"},
+    {"cmd": "para", "str": "I'm looking for"},
+    {"cmd": "line", "str": "the stuff I"},
+    {"cmd": "cont", "str": "dropped!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianForestYoungster5Text": {
+   "kind": "text",
+   "src": "text/ViridianForest.asm:66",
+   "commands": [
+    {"cmd": "text", "str": "I ran out of POKé"},
+    {"cmd": "line", "str": "BALLs to catch"},
+    {"cmd": "cont", "str": "POKéMON with!"},
+    {"cmd": "para", "str": "You should carry"},
+    {"cmd": "line", "str": "extras!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianForestTrainerTips1Text": {
+   "kind": "text",
+   "src": "text/ViridianForest.asm:75",
+   "commands": [
+    {"cmd": "text", "str": "TRAINER TIPS"},
+    {"cmd": "para", "str": "If you want to"},
+    {"cmd": "line", "str": "avoid battles,"},
+    {"cmd": "cont", "str": "stay away from"},
+    {"cmd": "cont", "str": "grassy areas!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianForestUseAntidoteSignText": {
+   "kind": "text",
+   "src": "text/ViridianForest.asm:84",
+   "commands": [
+    {"cmd": "text", "str": "For poison, use"},
+    {"cmd": "line", "str": "ANTIDOTE! Get it"},
+    {"cmd": "cont", "str": "at POKéMON MARTs!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianForestTrainerTips2Text": {
+   "kind": "text",
+   "src": "text/ViridianForest.asm:90",
+   "commands": [
+    {"cmd": "text", "str": "TRAINER TIPS"},
+    {"cmd": "para", "str": "Contact PROF.OAK"},
+    {"cmd": "line", "str": "via PC to get"},
+    {"cmd": "cont", "str": "your POKéDEX"},
+    {"cmd": "cont", "str": "evaluated!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianForestTrainerTips3Text": {
+   "kind": "text",
+   "src": "text/ViridianForest.asm:99",
+   "commands": [
+    {"cmd": "text", "str": "TRAINER TIPS"},
+    {"cmd": "para", "str": "No stealing of"},
+    {"cmd": "line", "str": "POKéMON from"},
+    {"cmd": "cont", "str": "other trainers!"},
+    {"cmd": "cont", "str": "Catch only wild"},
+    {"cmd": "cont", "str": "POKéMON!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianForestTrainerTips4Text": {
+   "kind": "text",
+   "src": "text/ViridianForest.asm:109",
+   "commands": [
+    {"cmd": "text", "str": "TRAINER TIPS"},
+    {"cmd": "para", "str": "Weaken POKéMON"},
+    {"cmd": "line", "str": "before attempting"},
+    {"cmd": "cont", "str": "capture!"},
+    {"cmd": "para", "str": "When healthy,"},
+    {"cmd": "line", "str": "they may escape!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianForestLeavingSignText": {
+   "kind": "text",
+   "src": "text/ViridianForest.asm:120",
+   "commands": [
+    {"cmd": "text", "str": "LEAVING"},
+    {"cmd": "line", "str": "VIRIDIAN FOREST"},
+    {"cmd": "cont", "str": "PEWTER CITY AHEAD"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

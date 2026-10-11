@@ -1,0 +1,427 @@
+{
+ "map": "FightingDojo",
+ "const": "FIGHTING_DOJO",
+ "textPointerTables": [
+  {
+   "label": "FightingDojo_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_FIGHTINGDOJO_KARATE_MASTER", "label": "FightingDojoKarateMasterText", "kind": "asm", "handler": "asm"},
+    {"id": 2, "const": "TEXT_FIGHTINGDOJO_BLACKBELT1", "label": "FightingDojoBlackbelt1Text", "kind": "asm", "handler": "trainer", "trainerHeader": "FightingDojoTrainerHeader0"},
+    {"id": 3, "const": "TEXT_FIGHTINGDOJO_BLACKBELT2", "label": "FightingDojoBlackbelt2Text", "kind": "asm", "handler": "trainer", "trainerHeader": "FightingDojoTrainerHeader1"},
+    {"id": 4, "const": "TEXT_FIGHTINGDOJO_BLACKBELT3", "label": "FightingDojoBlackbelt3Text", "kind": "asm", "handler": "trainer", "trainerHeader": "FightingDojoTrainerHeader2"},
+    {"id": 5, "const": "TEXT_FIGHTINGDOJO_BLACKBELT4", "label": "FightingDojoBlackbelt4Text", "kind": "asm", "handler": "trainer", "trainerHeader": "FightingDojoTrainerHeader3"},
+    {"id": 6, "const": "TEXT_FIGHTINGDOJO_HITMONLEE_POKE_BALL", "label": "FightingDojoHitmonleePokeBallText", "kind": "asm", "handler": "asm"},
+    {"id": 7, "const": "TEXT_FIGHTINGDOJO_HITMONCHAN_POKE_BALL", "label": "FightingDojoHitmonchanPokeBallText", "kind": "asm", "handler": "asm"},
+    {"id": 8, "const": "TEXT_FIGHTINGDOJO_KARATE_MASTER_I_WILL_GIVE_YOU_A_POKEMON", "label": "FightingDojoKarateMasterText.IWillGiveYouAPokemonText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "FightingDojoKarateMasterText": {
+   "kind": "asm",
+   "src": "scripts/FightingDojo.asm:107",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["FightingDojoKarateMasterText.Text", "FightingDojoKarateMasterText.DefeatedText", "FightingDojoKarateMasterText.StayAndTrainWithUsText", "FightingDojoKarateMasterText.IWillGiveYouAPokemonText"]
+  },
+  "FightingDojoKarateMasterText.Text": {
+   "kind": "text",
+   "src": "scripts/FightingDojo.asm:139",
+   "commands": [
+    {"cmd": "text_far", "label": "_FightingDojoKarateMasterText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FightingDojoKarateMasterText.DefeatedText": {
+   "kind": "text",
+   "src": "scripts/FightingDojo.asm:143",
+   "commands": [
+    {"cmd": "text_far", "label": "_FightingDojoKarateMasterDefeatedText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FightingDojoKarateMasterText.IWillGiveYouAPokemonText": {
+   "kind": "text",
+   "src": "scripts/FightingDojo.asm:147",
+   "commands": [
+    {"cmd": "text_far", "label": "_FightingDojoKarateMasterIWillGiveYouAPokemonText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FightingDojoKarateMasterText.StayAndTrainWithUsText": {
+   "kind": "text",
+   "src": "scripts/FightingDojo.asm:151",
+   "commands": [
+    {"cmd": "text_far", "label": "_FightingDojoKarateMasterStayAndTrainWithUsText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FightingDojoBlackbelt1Text": {
+   "kind": "asm",
+   "src": "scripts/FightingDojo.asm:155",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "FightingDojoTrainerHeader0"
+  },
+  "FightingDojoBlackbelt1BattleText": {
+   "kind": "text",
+   "src": "scripts/FightingDojo.asm:161",
+   "commands": [
+    {"cmd": "text_far", "label": "_FightingDojoBlackbelt1BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FightingDojoBlackbelt1EndBattleText": {
+   "kind": "text",
+   "src": "scripts/FightingDojo.asm:165",
+   "commands": [
+    {"cmd": "text_far", "label": "_FightingDojoBlackbelt1EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FightingDojoBlackbelt1AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/FightingDojo.asm:169",
+   "commands": [
+    {"cmd": "text_far", "label": "_FightingDojoBlackbelt1AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FightingDojoBlackbelt2Text": {
+   "kind": "asm",
+   "src": "scripts/FightingDojo.asm:173",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "FightingDojoTrainerHeader1"
+  },
+  "FightingDojoBlackbelt2BattleText": {
+   "kind": "text",
+   "src": "scripts/FightingDojo.asm:179",
+   "commands": [
+    {"cmd": "text_far", "label": "_FightingDojoBlackbelt2BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FightingDojoBlackbelt2EndBattleText": {
+   "kind": "text",
+   "src": "scripts/FightingDojo.asm:183",
+   "commands": [
+    {"cmd": "text_far", "label": "_FightingDojoBlackbelt2EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FightingDojoBlackbelt2AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/FightingDojo.asm:187",
+   "commands": [
+    {"cmd": "text_far", "label": "_FightingDojoBlackbelt2AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FightingDojoBlackbelt3Text": {
+   "kind": "asm",
+   "src": "scripts/FightingDojo.asm:191",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "FightingDojoTrainerHeader2"
+  },
+  "FightingDojoBlackbelt3BattleText": {
+   "kind": "text",
+   "src": "scripts/FightingDojo.asm:197",
+   "commands": [
+    {"cmd": "text_far", "label": "_FightingDojoBlackbelt3BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FightingDojoBlackbelt3EndBattleText": {
+   "kind": "text",
+   "src": "scripts/FightingDojo.asm:201",
+   "commands": [
+    {"cmd": "text_far", "label": "_FightingDojoBlackbelt3EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FightingDojoBlackbelt3AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/FightingDojo.asm:205",
+   "commands": [
+    {"cmd": "text_far", "label": "_FightingDojoBlackbelt3AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FightingDojoBlackbelt4Text": {
+   "kind": "asm",
+   "src": "scripts/FightingDojo.asm:209",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "FightingDojoTrainerHeader3"
+  },
+  "FightingDojoBlackbelt4BattleText": {
+   "kind": "text",
+   "src": "scripts/FightingDojo.asm:215",
+   "commands": [
+    {"cmd": "text_far", "label": "_FightingDojoBlackbelt4BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FightingDojoBlackbelt4EndBattleText": {
+   "kind": "text",
+   "src": "scripts/FightingDojo.asm:219",
+   "commands": [
+    {"cmd": "text_far", "label": "_FightingDojoBlackbelt4EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FightingDojoBlackbelt4AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/FightingDojo.asm:223",
+   "commands": [
+    {"cmd": "text_far", "label": "_FightingDojoBlackbelt4AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FightingDojoHitmonleePokeBallText": {
+   "kind": "asm",
+   "src": "scripts/FightingDojo.asm:227",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["FightingDojoBetterNotGetGreedyText", "FightingDojoHitmonleePokeBallText.Text"]
+  },
+  "FightingDojoHitmonleePokeBallText.Text": {
+   "kind": "text",
+   "src": "scripts/FightingDojo.asm:257",
+   "commands": [
+    {"cmd": "text_far", "label": "_FightingDojoHitmonleePokeBallText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FightingDojoHitmonchanPokeBallText": {
+   "kind": "asm",
+   "src": "scripts/FightingDojo.asm:261",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["FightingDojoBetterNotGetGreedyText", "FightingDojoHitmonchanPokeBallText.Text"]
+  },
+  "FightingDojoHitmonchanPokeBallText.Text": {
+   "kind": "text",
+   "src": "scripts/FightingDojo.asm:291",
+   "commands": [
+    {"cmd": "text_far", "label": "_FightingDojoHitmonchanPokeBallText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FightingDojoBetterNotGetGreedyText": {
+   "kind": "text",
+   "src": "scripts/FightingDojo.asm:295",
+   "commands": [
+    {"cmd": "text_far", "label": "_FightingDojoBetterNotGetGreedyText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_FightingDojoKarateMasterText": {
+   "kind": "text",
+   "src": "text/FightingDojo.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Grunt!"},
+    {"cmd": "para", "str": "I am the KARATE"},
+    {"cmd": "line", "str": "MASTER! I am the"},
+    {"cmd": "cont", "str": "LEADER here!"},
+    {"cmd": "para", "str": "You wish to"},
+    {"cmd": "line", "str": "challenge us?"},
+    {"cmd": "cont", "str": "Expect no mercy!"},
+    {"cmd": "para", "str": "Fwaaa!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_FightingDojoKarateMasterDefeatedText": {
+   "kind": "text",
+   "src": "text/FightingDojo.asm:16",
+   "commands": [
+    {"cmd": "text", "str": "Hwa!"},
+    {"cmd": "line", "str": "Arrgh! Beaten!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_FightingDojoKarateMasterIWillGiveYouAPokemonText": {
+   "kind": "text",
+   "src": "text/FightingDojo.asm:21",
+   "commands": [
+    {"cmd": "text", "str": "Indeed, I have"},
+    {"cmd": "line", "str": "lost!"},
+    {"cmd": "para", "str": "But, I beseech"},
+    {"cmd": "line", "str": "you, do not take"},
+    {"cmd": "cont", "str": "our emblem as"},
+    {"cmd": "cont", "str": "your trophy!"},
+    {"cmd": "para", "str": "In return, I will"},
+    {"cmd": "line", "str": "give you a prized"},
+    {"cmd": "cont", "str": "fighting POKéMON!"},
+    {"cmd": "para", "str": "Choose whichever"},
+    {"cmd": "line", "str": "one you like!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_FightingDojoKarateMasterStayAndTrainWithUsText": {
+   "kind": "text",
+   "src": "text/FightingDojo.asm:38",
+   "commands": [
+    {"cmd": "text", "str": "Ho!"},
+    {"cmd": "para", "str": "Stay and train at"},
+    {"cmd": "line", "str": "Karate with us!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_FightingDojoBlackbelt1BattleText": {
+   "kind": "text",
+   "src": "text/FightingDojo.asm:45",
+   "commands": [
+    {"cmd": "text", "str": "Hoargh! Take your"},
+    {"cmd": "line", "str": "shoes off!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_FightingDojoBlackbelt1EndBattleText": {
+   "kind": "text",
+   "src": "text/FightingDojo.asm:50",
+   "commands": [
+    {"cmd": "text", "str": "I give"},
+    {"cmd": "line", "str": "up!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_FightingDojoBlackbelt1AfterBattleText": {
+   "kind": "text",
+   "src": "text/FightingDojo.asm:55",
+   "commands": [
+    {"cmd": "text", "str": "You wait 'til you"},
+    {"cmd": "line", "str": "see our Master!"},
+    {"cmd": "para", "str": "I'm a small fry"},
+    {"cmd": "line", "str": "compared to him!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_FightingDojoBlackbelt2BattleText": {
+   "kind": "text",
+   "src": "text/FightingDojo.asm:63",
+   "commands": [
+    {"cmd": "text", "str": "I hear you're"},
+    {"cmd": "line", "str": "good! Show me!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_FightingDojoBlackbelt2EndBattleText": {
+   "kind": "text",
+   "src": "text/FightingDojo.asm:68",
+   "commands": [
+    {"cmd": "text", "str": "Judge!"},
+    {"cmd": "line", "str": "1 point!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_FightingDojoBlackbelt2AfterBattleText": {
+   "kind": "text",
+   "src": "text/FightingDojo.asm:73",
+   "commands": [
+    {"cmd": "text", "str": "Our Master is a"},
+    {"cmd": "line", "str": "pro fighter!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_FightingDojoBlackbelt3BattleText": {
+   "kind": "text",
+   "src": "text/FightingDojo.asm:78",
+   "commands": [
+    {"cmd": "text", "str": "Nothing tough"},
+    {"cmd": "line", "str": "frightens me!"},
+    {"cmd": "para", "str": "I break boulders"},
+    {"cmd": "line", "str": "for training!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_FightingDojoBlackbelt3EndBattleText": {
+   "kind": "text",
+   "src": "text/FightingDojo.asm:86",
+   "commands": [
+    {"cmd": "text", "str": "Yow!"},
+    {"cmd": "line", "str": "Stubbed fingers!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_FightingDojoBlackbelt3AfterBattleText": {
+   "kind": "text",
+   "src": "text/FightingDojo.asm:91",
+   "commands": [
+    {"cmd": "text", "str": "The only thing"},
+    {"cmd": "line", "str": "that frightens us"},
+    {"cmd": "cont", "str": "is psychic power!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_FightingDojoBlackbelt4BattleText": {
+   "kind": "text",
+   "src": "text/FightingDojo.asm:97",
+   "commands": [
+    {"cmd": "text", "str": "Hoohah!"},
+    {"cmd": "para", "str": "You're trespassing"},
+    {"cmd": "line", "str": "in our FIGHTING"},
+    {"cmd": "cont", "str": "DOJO!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_FightingDojoBlackbelt4EndBattleText": {
+   "kind": "text",
+   "src": "text/FightingDojo.asm:105",
+   "commands": [
+    {"cmd": "text", "str": "Oof!"},
+    {"cmd": "line", "str": "I give up!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_FightingDojoBlackbelt4AfterBattleText": {
+   "kind": "text",
+   "src": "text/FightingDojo.asm:110",
+   "commands": [
+    {"cmd": "text", "str": "The prime fighters"},
+    {"cmd": "line", "str": "across the land"},
+    {"cmd": "cont", "str": "train here."},
+    {"cmd": "done"}
+   ]
+  },
+  "_FightingDojoHitmonleePokeBallText": {
+   "kind": "text",
+   "src": "text/FightingDojo.asm:116",
+   "commands": [
+    {"cmd": "text", "str": "You want the"},
+    {"cmd": "line", "str": "hard kicking"},
+    {"cmd": "cont", "str": "HITMONLEE?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_FightingDojoHitmonchanPokeBallText": {
+   "kind": "text",
+   "src": "text/FightingDojo.asm:122",
+   "commands": [
+    {"cmd": "text", "str": "You want the"},
+    {"cmd": "line", "str": "piston punching"},
+    {"cmd": "cont", "str": "HITMONCHAN?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_FightingDojoBetterNotGetGreedyText": {
+   "kind": "text",
+   "src": "text/FightingDojo.asm:128",
+   "commands": [
+    {"cmd": "text", "str": "Better not get"},
+    {"cmd": "line", "str": "greedy..."},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

@@ -1,0 +1,8 @@
+{
+ "map": "UndergroundPathNorthSouth",
+ "const": "UNDERGROUND_PATH_NORTH_SOUTH",
+ "textPointerTables": [
+  {"label": "UndergroundPathNorthSouth_TextPointers", "primary": true, "entries": []}
+ ],
+ "texts": {}
+}

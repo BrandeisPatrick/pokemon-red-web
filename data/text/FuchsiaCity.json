@@ -1,0 +1,448 @@
+{
+ "map": "FuchsiaCity",
+ "const": "FUCHSIA_CITY",
+ "textPointerTables": [
+  {
+   "label": "FuchsiaCity_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_FUCHSIACITY_YOUNGSTER1", "label": "FuchsiaCityYoungster1Text", "kind": "text", "handler": "text"},
+    {"id": 2, "const": "TEXT_FUCHSIACITY_GAMBLER", "label": "FuchsiaCityGamblerText", "kind": "text", "handler": "text"},
+    {"id": 3, "const": "TEXT_FUCHSIACITY_ERIK", "label": "FuchsiaCityErikText", "kind": "text", "handler": "text"},
+    {"id": 4, "const": "TEXT_FUCHSIACITY_YOUNGSTER2", "label": "FuchsiaCityYoungster2Text", "kind": "text", "handler": "text"},
+    {"id": 5, "const": "TEXT_FUCHSIACITY_CHANSEY", "label": "FuchsiaCityPokemonText", "kind": "text", "handler": "text"},
+    {"id": 6, "const": "TEXT_FUCHSIACITY_VOLTORB", "label": "FuchsiaCityPokemonText", "kind": "text", "handler": "text"},
+    {"id": 7, "const": "TEXT_FUCHSIACITY_KANGASKHAN", "label": "FuchsiaCityPokemonText", "kind": "text", "handler": "text"},
+    {"id": 8, "const": "TEXT_FUCHSIACITY_SLOWPOKE", "label": "FuchsiaCityPokemonText", "kind": "text", "handler": "text"},
+    {"id": 9, "const": "TEXT_FUCHSIACITY_LAPRAS", "label": "FuchsiaCityPokemonText", "kind": "text", "handler": "text"},
+    {"id": 10, "const": "TEXT_FUCHSIACITY_FOSSIL", "label": "FuchsiaCityPokemonText", "kind": "text", "handler": "text"},
+    {"id": 11, "const": "TEXT_FUCHSIACITY_SIGN1", "label": "FuchsiaCitySignText", "kind": "text", "handler": "text"},
+    {"id": 12, "const": "TEXT_FUCHSIACITY_SIGN2", "label": "FuchsiaCitySignText", "kind": "text", "handler": "text"},
+    {"id": 13, "const": "TEXT_FUCHSIACITY_SAFARI_GAME_SIGN", "label": "FuchsiaCitySafariGameSignText", "kind": "text", "handler": "text"},
+    {"id": 14, "const": "TEXT_FUCHSIACITY_MART_SIGN", "label": "MartSignText", "kind": "text", "handler": "text"},
+    {"id": 15, "const": "TEXT_FUCHSIACITY_POKECENTER_SIGN", "label": "PokeCenterSignText", "kind": "text", "handler": "text"},
+    {"id": 16, "const": "TEXT_FUCHSIACITY_WARDENS_HOME_SIGN", "label": "FuchsiaCityWardensHomeSignText", "kind": "text", "handler": "text"},
+    {"id": 17, "const": "TEXT_FUCHSIACITY_SAFARI_ZONE_SIGN", "label": "FuchsiaCitySafariZoneSignText", "kind": "text", "handler": "text"},
+    {"id": 18, "const": "TEXT_FUCHSIACITY_GYM_SIGN", "label": "FuchsiaCityGymSignText", "kind": "text", "handler": "text"},
+    {"id": 19, "const": "TEXT_FUCHSIACITY_CHANSEY_SIGN", "label": "FuchsiaCityChanseySignText", "kind": "asm", "handler": "asm"},
+    {"id": 20, "const": "TEXT_FUCHSIACITY_VOLTORB_SIGN", "label": "FuchsiaCityVoltorbSignText", "kind": "asm", "handler": "asm"},
+    {"id": 21, "const": "TEXT_FUCHSIACITY_KANGASKHAN_SIGN", "label": "FuchsiaCityKangaskhanSignText", "kind": "asm", "handler": "asm"},
+    {"id": 22, "const": "TEXT_FUCHSIACITY_SLOWPOKE_SIGN", "label": "FuchsiaCitySlowpokeSignText", "kind": "asm", "handler": "asm"},
+    {"id": 23, "const": "TEXT_FUCHSIACITY_LAPRAS_SIGN", "label": "FuchsiaCityLaprasSignText", "kind": "asm", "handler": "asm"},
+    {"id": 24, "const": "TEXT_FUCHSIACITY_FOSSIL_SIGN", "label": "FuchsiaCityFossilSignText", "kind": "asm", "handler": "asm"}
+   ]
+  }
+ ],
+ "texts": {
+  "_MartSignText": {
+   "kind": "text",
+   "src": "data/text/text_1.asm:50",
+   "commands": [
+    {"cmd": "text", "str": "All your item"},
+    {"cmd": "line", "str": "needs fulfilled!"},
+    {"cmd": "cont", "str": "POKéMON MART"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokeCenterSignText": {
+   "kind": "text",
+   "src": "data/text/text_1.asm:56",
+   "commands": [
+    {"cmd": "text", "str": "Heal Your POKéMON!"},
+    {"cmd": "line", "str": "POKéMON CENTER"},
+    {"cmd": "done"}
+   ]
+  },
+  "MartSignText": {
+   "kind": "text",
+   "src": "home/overworld_text.asm:21",
+   "commands": [
+    {"cmd": "text_far", "label": "_MartSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokeCenterSignText": {
+   "kind": "text",
+   "src": "home/overworld_text.asm:25",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokeCenterSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FuchsiaCityYoungster1Text": {
+   "kind": "text",
+   "src": "scripts/FuchsiaCity.asm:32",
+   "commands": [
+    {"cmd": "text_far", "label": "_FuchsiaCityYoungster1Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FuchsiaCityGamblerText": {
+   "kind": "text",
+   "src": "scripts/FuchsiaCity.asm:36",
+   "commands": [
+    {"cmd": "text_far", "label": "_FuchsiaCityGamblerText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FuchsiaCityErikText": {
+   "kind": "text",
+   "src": "scripts/FuchsiaCity.asm:40",
+   "commands": [
+    {"cmd": "text_far", "label": "_FuchsiaCityErikText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FuchsiaCityYoungster2Text": {
+   "kind": "text",
+   "src": "scripts/FuchsiaCity.asm:44",
+   "commands": [
+    {"cmd": "text_far", "label": "_FuchsiaCityYoungster2Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FuchsiaCityPokemonText": {
+   "kind": "text",
+   "src": "scripts/FuchsiaCity.asm:48",
+   "commands": [
+    {"cmd": "text_far", "label": "_FuchsiaCityPokemonText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FuchsiaCitySignText": {
+   "kind": "text",
+   "src": "scripts/FuchsiaCity.asm:52",
+   "commands": [
+    {"cmd": "text_far", "label": "_FuchsiaCitySignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FuchsiaCitySafariGameSignText": {
+   "kind": "text",
+   "src": "scripts/FuchsiaCity.asm:56",
+   "commands": [
+    {"cmd": "text_far", "label": "_FuchsiaCitySafariGameSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FuchsiaCityWardensHomeSignText": {
+   "kind": "text",
+   "src": "scripts/FuchsiaCity.asm:60",
+   "commands": [
+    {"cmd": "text_far", "label": "_FuchsiaCityWardensHomeSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FuchsiaCitySafariZoneSignText": {
+   "kind": "text",
+   "src": "scripts/FuchsiaCity.asm:64",
+   "commands": [
+    {"cmd": "text_far", "label": "_FuchsiaCitySafariZoneSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FuchsiaCityGymSignText": {
+   "kind": "text",
+   "src": "scripts/FuchsiaCity.asm:68",
+   "commands": [
+    {"cmd": "text_far", "label": "_FuchsiaCityGymSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FuchsiaCityChanseySignText": {
+   "kind": "asm",
+   "src": "scripts/FuchsiaCity.asm:72",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["FuchsiaCityChanseySignText.Text"]
+  },
+  "FuchsiaCityChanseySignText.Text": {
+   "kind": "text",
+   "src": "scripts/FuchsiaCity.asm:80",
+   "commands": [
+    {"cmd": "text_far", "label": "_FuchsiaCityChanseySignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FuchsiaCityVoltorbSignText": {
+   "kind": "asm",
+   "src": "scripts/FuchsiaCity.asm:84",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["FuchsiaCityVoltorbSignText.Text"]
+  },
+  "FuchsiaCityVoltorbSignText.Text": {
+   "kind": "text",
+   "src": "scripts/FuchsiaCity.asm:92",
+   "commands": [
+    {"cmd": "text_far", "label": "_FuchsiaCityVoltorbSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FuchsiaCityKangaskhanSignText": {
+   "kind": "asm",
+   "src": "scripts/FuchsiaCity.asm:96",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["FuchsiaCityKangaskhanSignText.Text"]
+  },
+  "FuchsiaCityKangaskhanSignText.Text": {
+   "kind": "text",
+   "src": "scripts/FuchsiaCity.asm:104",
+   "commands": [
+    {"cmd": "text_far", "label": "_FuchsiaCityKangaskhanSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FuchsiaCitySlowpokeSignText": {
+   "kind": "asm",
+   "src": "scripts/FuchsiaCity.asm:108",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["FuchsiaCitySlowpokeSignText.Text"]
+  },
+  "FuchsiaCitySlowpokeSignText.Text": {
+   "kind": "text",
+   "src": "scripts/FuchsiaCity.asm:116",
+   "commands": [
+    {"cmd": "text_far", "label": "_FuchsiaCitySlowpokeSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FuchsiaCityLaprasSignText": {
+   "kind": "asm",
+   "src": "scripts/FuchsiaCity.asm:120",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["FuchsiaCityLaprasSignText.Text"]
+  },
+  "FuchsiaCityLaprasSignText.Text": {
+   "kind": "text",
+   "src": "scripts/FuchsiaCity.asm:128",
+   "commands": [
+    {"cmd": "text_far", "label": "_FuchsiaCityLaprasSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FuchsiaCityFossilSignText": {
+   "kind": "asm",
+   "src": "scripts/FuchsiaCity.asm:132",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["FuchsiaCityFossilSignText.UndeterminedText", "FuchsiaCityFossilSignText.OmanyteText", "FuchsiaCityFossilSignText.KabutoText"]
+  },
+  "FuchsiaCityFossilSignText.OmanyteText": {
+   "kind": "text",
+   "src": "scripts/FuchsiaCity.asm:155",
+   "commands": [
+    {"cmd": "text_far", "label": "_FuchsiaCityFossilSignOmanyteText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FuchsiaCityFossilSignText.KabutoText": {
+   "kind": "text",
+   "src": "scripts/FuchsiaCity.asm:159",
+   "commands": [
+    {"cmd": "text_far", "label": "_FuchsiaCityFossilSignKabutoText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FuchsiaCityFossilSignText.UndeterminedText": {
+   "kind": "text",
+   "src": "scripts/FuchsiaCity.asm:163",
+   "commands": [
+    {"cmd": "text_far", "label": "_FuchsiaCityFossilSignUndeterminedText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_FuchsiaCityYoungster1Text": {
+   "kind": "text",
+   "src": "text/FuchsiaCity.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Did you try the"},
+    {"cmd": "line", "str": "SAFARI GAME? Some"},
+    {"cmd": "cont", "str": "POKéMON can only"},
+    {"cmd": "cont", "str": "be caught there."},
+    {"cmd": "done"}
+   ]
+  },
+  "_FuchsiaCityGamblerText": {
+   "kind": "text",
+   "src": "text/FuchsiaCity.asm:9",
+   "commands": [
+    {"cmd": "text", "str": "SAFARI ZONE has a"},
+    {"cmd": "line", "str": "zoo in front of"},
+    {"cmd": "cont", "str": "the entrance."},
+    {"cmd": "para", "str": "Out back is the"},
+    {"cmd": "line", "str": "SAFARI GAME for"},
+    {"cmd": "cont", "str": "catching POKéMON."},
+    {"cmd": "done"}
+   ]
+  },
+  "_FuchsiaCityErikText": {
+   "kind": "text",
+   "src": "text/FuchsiaCity.asm:19",
+   "commands": [
+    {"cmd": "text", "str": "ERIK: Where's"},
+    {"cmd": "line", "str": "SARA? I said I'd"},
+    {"cmd": "cont", "str": "meet her here."},
+    {"cmd": "done"}
+   ]
+  },
+  "_FuchsiaCityYoungster2Text": {
+   "kind": "text",
+   "src": "text/FuchsiaCity.asm:25",
+   "commands": [
+    {"cmd": "text", "str": "That item ball in"},
+    {"cmd": "line", "str": "there is really a"},
+    {"cmd": "cont", "str": "POKéMON."},
+    {"cmd": "done"}
+   ]
+  },
+  "_FuchsiaCityPokemonText": {
+   "kind": "text",
+   "src": "text/FuchsiaCity.asm:31",
+   "commands": [
+    {"cmd": "text", "str": "!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_FuchsiaCitySignText": {
+   "kind": "text",
+   "src": "text/FuchsiaCity.asm:35",
+   "commands": [
+    {"cmd": "text", "str": "FUCHSIA CITY"},
+    {"cmd": "line", "str": "Behold! It's"},
+    {"cmd": "cont", "str": "Passion Pink!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_FuchsiaCitySafariGameSignText": {
+   "kind": "text",
+   "src": "text/FuchsiaCity.asm:41",
+   "commands": [
+    {"cmd": "text", "str": "SAFARI GAME"},
+    {"cmd": "line", "str": "POKéMON-U-CATCH!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_FuchsiaCityWardensHomeSignText": {
+   "kind": "text",
+   "src": "text/FuchsiaCity.asm:46",
+   "commands": [
+    {"cmd": "text", "str": "SAFARI ZONE"},
+    {"cmd": "line", "str": "WARDEN's HOME"},
+    {"cmd": "done"}
+   ]
+  },
+  "_FuchsiaCitySafariZoneSignText": {
+   "kind": "text",
+   "src": "text/FuchsiaCity.asm:51",
+   "commands": [
+    {"cmd": "text", "str": "POKéMON PARADISE"},
+    {"cmd": "line", "str": "SAFARI ZONE"},
+    {"cmd": "done"}
+   ]
+  },
+  "_FuchsiaCityGymSignText": {
+   "kind": "text",
+   "src": "text/FuchsiaCity.asm:56",
+   "commands": [
+    {"cmd": "text", "str": "FUCHSIA CITY"},
+    {"cmd": "line", "str": "POKéMON GYM"},
+    {"cmd": "cont", "str": "LEADER: KOGA"},
+    {"cmd": "para", "str": "The Poisonous"},
+    {"cmd": "line", "str": "Ninja Master"},
+    {"cmd": "done"}
+   ]
+  },
+  "_FuchsiaCityChanseySignText": {
+   "kind": "text",
+   "src": "text/FuchsiaCity.asm:65",
+   "commands": [
+    {"cmd": "text", "str": "Name: CHANSEY"},
+    {"cmd": "para", "str": "Catching one is"},
+    {"cmd": "line", "str": "all up to chance."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_FuchsiaCityVoltorbSignText": {
+   "kind": "text",
+   "src": "text/FuchsiaCity.asm:72",
+   "commands": [
+    {"cmd": "text", "str": "Name: VOLTORB"},
+    {"cmd": "para", "str": "The very image of"},
+    {"cmd": "line", "str": "a POKé BALL."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_FuchsiaCityKangaskhanSignText": {
+   "kind": "text",
+   "src": "text/FuchsiaCity.asm:79",
+   "commands": [
+    {"cmd": "text", "str": "Name: KANGASKHAN"},
+    {"cmd": "para", "str": "A maternal POKéMON"},
+    {"cmd": "line", "str": "that raises its"},
+    {"cmd": "cont", "str": "young in a pouch"},
+    {"cmd": "cont", "str": "on its belly."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_FuchsiaCitySlowpokeSignText": {
+   "kind": "text",
+   "src": "text/FuchsiaCity.asm:88",
+   "commands": [
+    {"cmd": "text", "str": "Name: SLOWPOKE"},
+    {"cmd": "para", "str": "Friendly and very"},
+    {"cmd": "line", "str": "slow moving."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_FuchsiaCityLaprasSignText": {
+   "kind": "text",
+   "src": "text/FuchsiaCity.asm:95",
+   "commands": [
+    {"cmd": "text", "str": "Name: LAPRAS"},
+    {"cmd": "para", "str": "A.K.A. the king"},
+    {"cmd": "line", "str": "of the seas."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_FuchsiaCityFossilSignOmanyteText": {
+   "kind": "text",
+   "src": "text/FuchsiaCity.asm:102",
+   "commands": [
+    {"cmd": "text", "str": "Name: OMANYTE"},
+    {"cmd": "para", "str": "A POKéMON that"},
+    {"cmd": "line", "str": "was resurrected"},
+    {"cmd": "cont", "str": "from a fossil."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_FuchsiaCityFossilSignKabutoText": {
+   "kind": "text",
+   "src": "text/FuchsiaCity.asm:110",
+   "commands": [
+    {"cmd": "text", "str": "Name: KABUTO"},
+    {"cmd": "para", "str": "A POKéMON that"},
+    {"cmd": "line", "str": "was resurrected"},
+    {"cmd": "cont", "str": "from a fossil."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_FuchsiaCityFossilSignUndeterminedText": {
+   "kind": "text",
+   "src": "text/FuchsiaCity.asm:118",
+   "commands": [
+    {"cmd": "text", "str": "..."},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

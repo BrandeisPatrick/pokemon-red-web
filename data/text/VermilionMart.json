@@ -1,0 +1,70 @@
+{
+ "map": "VermilionMart",
+ "const": "VERMILION_MART",
+ "textPointerTables": [
+  {
+   "label": "VermilionMart_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_VERMILIONMART_CLERK", "label": "VermilionMartClerkText", "kind": "script", "handler": "script_mart"},
+    {"id": 2, "const": "TEXT_VERMILIONMART_COOLTRAINER_M", "label": "VermilionMartCooltrainerMText", "kind": "text", "handler": "text"},
+    {"id": 3, "const": "TEXT_VERMILIONMART_COOLTRAINER_F", "label": "VermilionMartCooltrainerFText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "VermilionMartClerkText": {
+   "kind": "script",
+   "src": "data/items/marts.asm:17",
+   "commands": [
+    {"cmd": "script", "script": "script_mart", "items": ["POKE_BALL", "SUPER_POTION", "ICE_HEAL", "AWAKENING", "PARLYZ_HEAL", "REPEL"]}
+   ]
+  },
+  "VermilionMartCooltrainerMText": {
+   "kind": "text",
+   "src": "scripts/VermilionMart.asm:11",
+   "commands": [
+    {"cmd": "text_far", "label": "_VermilionMartCooltrainerMText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VermilionMartCooltrainerFText": {
+   "kind": "text",
+   "src": "scripts/VermilionMart.asm:15",
+   "commands": [
+    {"cmd": "text_far", "label": "_VermilionMartCooltrainerFText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_VermilionMartCooltrainerMText": {
+   "kind": "text",
+   "src": "text/VermilionMart.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "There are evil"},
+    {"cmd": "line", "str": "people who will"},
+    {"cmd": "cont", "str": "use POKéMON for"},
+    {"cmd": "cont", "str": "criminal acts."},
+    {"cmd": "para", "str": "TEAM ROCKET"},
+    {"cmd": "line", "str": "traffics in rare"},
+    {"cmd": "cont", "str": "POKéMON."},
+    {"cmd": "para", "str": "They also abandon"},
+    {"cmd": "line", "str": "POKéMON that they"},
+    {"cmd": "cont", "str": "consider not to"},
+    {"cmd": "cont", "str": "be popular or"},
+    {"cmd": "cont", "str": "useful."},
+    {"cmd": "done"}
+   ]
+  },
+  "_VermilionMartCooltrainerFText": {
+   "kind": "text",
+   "src": "text/VermilionMart.asm:19",
+   "commands": [
+    {"cmd": "text", "str": "I think POKéMON"},
+    {"cmd": "line", "str": "can be good or"},
+    {"cmd": "cont", "str": "evil. It depends"},
+    {"cmd": "cont", "str": "on the trainer."},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

@@ -1,0 +1,43 @@
+{
+ "id": 152,
+ "const": "FUCHSIA_MART",
+ "name": "FuchsiaMart",
+ "displayName": "FUCHSIA CITY",
+ "width": 4,
+ "height": 4,
+ "tileset": "MART",
+ "tilesetId": 2,
+ "tilesetFile": "data/tilesets/Mart.json",
+ "isOutside": false,
+ "borderBlock": 0,
+ "blocks": [18, 19, 19, 9, 22, 15, 20, 20, 24, 25, 21, 21, 23, 26, 11, 15],
+ "connections": {},
+ "warps": [
+  {"x": 3, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 1, "destWarpIndex": 0},
+  {"x": 4, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 1, "destWarpIndex": 0}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "FUCHSIAMART_CLERK", "x": 0, "y": 5, "sprite": "SPRITE_CLERK", "spriteId": 38, "movement": "STAY", "rangeOrDirection": "RIGHT", "rangeOrDirectionValue": 211, "behavior": "face_right", "textId": "TEXT_FUCHSIAMART_CLERK", "textIndex": 1},
+  {"index": 2, "const": "FUCHSIAMART_MIDDLE_AGED_MAN", "x": 4, "y": 2, "sprite": "SPRITE_MIDDLE_AGED_MAN", "spriteId": 10, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_FUCHSIAMART_MIDDLE_AGED_MAN", "textIndex": 2},
+  {"index": 3, "const": "FUCHSIAMART_COOLTRAINER_F", "x": 6, "y": 5, "sprite": "SPRITE_COOLTRAINER_F", "spriteId": 6, "movement": "WALK", "rangeOrDirection": "UP_DOWN", "rangeOrDirectionValue": 1, "behavior": "walk_up_down", "textId": "TEXT_FUCHSIAMART_COOLTRAINER_F", "textIndex": 3}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_POKECENTER",
+ "wild": null,
+ "townMap": {"x": 8, "y": 13, "group": "FUCHSIA_CITY"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/FuchsiaMart.json",
+ "textPointers": "FuchsiaMart_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/FuchsiaMart.asm",
+  "objects": "data/maps/objects/FuchsiaMart.asm",
+  "blocks": "maps/FuchsiaMart.blk",
+  "script": "scripts/FuchsiaMart.asm"
+ },
+ "lastMapCandidates": ["FUCHSIA_CITY"],
+ "palette": {"pal": "PAL_FUCHSIA", "rule": "lastMap", "viaLastMap": "FUCHSIA_CITY"}
+}

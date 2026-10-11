@@ -1,0 +1,23 @@
+{
+  "name": "SFX_INTRO_RAISE",
+  "title": "Intro Raise",
+  "kind": "sfx",
+  "bank": 3,
+  "id": 187,
+  "label": "SFX_Intro_Raise",
+  "channels": [
+    {
+      "channel": 8,
+      "label": "SFX_Intro_Raise_Ch8",
+      "entry": 0,
+      "bytes": 10,
+      "labels": {"SFX_Intro_Raise_Ch8": 0},
+      "commands": [
+        {"op": "noise_note", "length": 2, "volume": 6, "fade": -7, "value": 33},
+        {"op": "noise_note", "length": 2, "volume": 10, "fade": -7, "value": 49},
+        {"op": "noise_note", "length": 15, "volume": 15, "fade": 2, "value": 65},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

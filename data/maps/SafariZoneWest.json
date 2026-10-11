@@ -1,0 +1,57 @@
+{
+ "id": 219,
+ "const": "SAFARI_ZONE_WEST",
+ "name": "SafariZoneWest",
+ "displayName": "SAFARI ZONE",
+ "width": 15,
+ "height": 13,
+ "tileset": "FOREST",
+ "tilesetId": 3,
+ "tilesetFile": "data/tilesets/Forest.json",
+ "isOutside": false,
+ "borderBlock": 0,
+ "blocks": [2, 27, 27, 2, 124, 124, 124, 124, 124, 2, 88, 2, 2, 88, 2, 43, 25, 28, 42, 27, 27, 27, 27, 51, 27, 27, 27, 127, 41, 126, 43, 27, 27, 42, 27, 46, 27, 27, 27, 41, 27, 27, 127, 33, 126, 43, 27, 27, 27, 27, 60, 61, 61, 62, 41, 27, 27, 127, 41, 126, 43, 46, 27, 27, 27, 68, 69, 63, 66, 27, 41, 41, 127, 27, 126, 126, 92, 81, 81, 82, 25, 28, 64, 66, 27, 27, 27, 127, 27, 126, 126, 90, 45, 45, 91, 27, 33, 64, 66, 27, 27, 27, 127, 41, 126, 2, 27, 27, 27, 27, 27, 27, 64, 75, 61, 61, 62, 27, 27, 126, 127, 27, 60, 61, 61, 61, 61, 74, 67, 69, 83, 70, 27, 44, 126, 127, 35, 68, 71, 69, 69, 69, 69, 70, 27, 27, 27, 27, 27, 126, 127, 1, 1, 1, 1, 1, 1, 1, 1, 127, 44, 27, 44, 27, 126, 127, 27, 37, 1, 1, 36, 37, 36, 27, 127, 27, 27, 33, 27, 87, 2, 125, 125, 125, 125, 124, 124, 124, 125, 124, 124, 125, 125, 125, 125],
+ "connections": {},
+ "warps": [
+  {"x": 20, "y": 0, "destMap": "SAFARI_ZONE_NORTH", "destMapId": 218, "destMapName": "SafariZoneNorth", "destWarp": 1, "destWarpIndex": 0},
+  {"x": 21, "y": 0, "destMap": "SAFARI_ZONE_NORTH", "destMapId": 218, "destMapName": "SafariZoneNorth", "destWarp": 2, "destWarpIndex": 1},
+  {"x": 26, "y": 0, "destMap": "SAFARI_ZONE_NORTH", "destMapId": 218, "destMapName": "SafariZoneNorth", "destWarp": 3, "destWarpIndex": 2},
+  {"x": 27, "y": 0, "destMap": "SAFARI_ZONE_NORTH", "destMapId": 218, "destMapName": "SafariZoneNorth", "destWarp": 4, "destWarpIndex": 3},
+  {"x": 29, "y": 22, "destMap": "SAFARI_ZONE_CENTER", "destMapId": 220, "destMapName": "SafariZoneCenter", "destWarp": 3, "destWarpIndex": 2},
+  {"x": 29, "y": 23, "destMap": "SAFARI_ZONE_CENTER", "destMapId": 220, "destMapName": "SafariZoneCenter", "destWarp": 4, "destWarpIndex": 3},
+  {"x": 3, "y": 3, "destMap": "SAFARI_ZONE_SECRET_HOUSE", "destMapId": 222, "destMapName": "SafariZoneSecretHouse", "destWarp": 1, "destWarpIndex": 0},
+  {"x": 11, "y": 11, "destMap": "SAFARI_ZONE_WEST_REST_HOUSE", "destMapId": 223, "destMapName": "SafariZoneWestRestHouse", "destWarp": 1, "destWarpIndex": 0}
+ ],
+ "bgEvents": [
+  {"x": 12, "y": 12, "textId": "TEXT_SAFARIZONEWEST_REST_HOUSE_SIGN", "textIndex": 5},
+  {"x": 17, "y": 3, "textId": "TEXT_SAFARIZONEWEST_FIND_WARDENS_TEETH_SIGN", "textIndex": 6},
+  {"x": 26, "y": 4, "textId": "TEXT_SAFARIZONEWEST_TRAINER_TIPS", "textIndex": 7},
+  {"x": 24, "y": 22, "textId": "TEXT_SAFARIZONEWEST_SIGN", "textIndex": 8}
+ ],
+ "objectEvents": [
+  {"index": 1, "const": "SAFARIZONEWEST_MAX_POTION", "x": 8, "y": 20, "sprite": "SPRITE_POKE_BALL", "spriteId": 61, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_SAFARIZONEWEST_MAX_POTION", "textIndex": 1, "item": "MAX_POTION", "itemId": 17, "toggleIndex": 201, "toggleConst": "TOGGLE_SAFARI_ZONE_WEST_ITEM_1", "startsHidden": false},
+  {"index": 2, "const": "SAFARIZONEWEST_TM_DOUBLE_TEAM", "x": 9, "y": 7, "sprite": "SPRITE_POKE_BALL", "spriteId": 61, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_SAFARIZONEWEST_TM_DOUBLE_TEAM", "textIndex": 2, "item": "TM_DOUBLE_TEAM", "itemId": 232, "toggleIndex": 202, "toggleConst": "TOGGLE_SAFARI_ZONE_WEST_ITEM_2", "startsHidden": false},
+  {"index": 3, "const": "SAFARIZONEWEST_MAX_REVIVE", "x": 18, "y": 18, "sprite": "SPRITE_POKE_BALL", "spriteId": 61, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_SAFARIZONEWEST_MAX_REVIVE", "textIndex": 3, "item": "MAX_REVIVE", "itemId": 54, "toggleIndex": 203, "toggleConst": "TOGGLE_SAFARI_ZONE_WEST_ITEM_3", "startsHidden": false},
+  {"index": 4, "const": "SAFARIZONEWEST_GOLD_TEETH", "x": 19, "y": 7, "sprite": "SPRITE_POKE_BALL", "spriteId": 61, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_SAFARIZONEWEST_GOLD_TEETH", "textIndex": 4, "item": "GOLD_TEETH", "itemId": 64, "toggleIndex": 204, "toggleConst": "TOGGLE_SAFARI_ZONE_WEST_ITEM_4", "startsHidden": false}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [
+  {"x": 6, "y": 5, "routine": "HiddenItems", "arg": "REVIVE", "argValue": 53, "kind": "item", "item": "REVIVE", "flagIndex": 17}
+ ],
+ "spriteSet": null,
+ "music": "MUSIC_SAFARI_ZONE",
+ "wild": {"label": "SafariZoneWestWildMons", "file": "SafariZoneWest"},
+ "townMap": {"x": 8, "y": 12, "group": "SAFARI_ZONE_2"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/SafariZoneWest.json",
+ "textPointers": "SafariZoneWest_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/SafariZoneWest.asm",
+  "objects": "data/maps/objects/SafariZoneWest.asm",
+  "blocks": "maps/SafariZoneWest.blk",
+  "script": "scripts/SafariZoneWest.asm"
+ },
+ "lastMapCandidates": ["FUCHSIA_CITY"],
+ "palette": {"pal": "PAL_FUCHSIA", "rule": "lastMap", "viaLastMap": "FUCHSIA_CITY"}
+}

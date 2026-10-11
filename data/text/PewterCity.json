@@ -1,0 +1,392 @@
+{
+ "map": "PewterCity",
+ "const": "PEWTER_CITY",
+ "textPointerTables": [
+  {
+   "label": "PewterCity_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_PEWTERCITY_COOLTRAINER_F", "label": "PewterCityCooltrainerFText", "kind": "text", "handler": "text"},
+    {"id": 2, "const": "TEXT_PEWTERCITY_COOLTRAINER_M", "label": "PewterCityCooltrainerMText", "kind": "text", "handler": "text"},
+    {"id": 3, "const": "TEXT_PEWTERCITY_SUPER_NERD1", "label": "PewterCitySuperNerd1Text", "kind": "asm", "handler": "asm"},
+    {"id": 4, "const": "TEXT_PEWTERCITY_SUPER_NERD2", "label": "PewterCitySuperNerd2Text", "kind": "asm", "handler": "asm"},
+    {"id": 5, "const": "TEXT_PEWTERCITY_YOUNGSTER", "label": "PewterCityYoungsterText", "kind": "asm", "handler": "asm"},
+    {"id": 6, "const": "TEXT_PEWTERCITY_TRAINER_TIPS", "label": "PewterCityTrainerTipsText", "kind": "text", "handler": "text"},
+    {"id": 7, "const": "TEXT_PEWTERCITY_POLICE_NOTICE_SIGN", "label": "PewterCityPoliceNoticeSignText", "kind": "text", "handler": "text"},
+    {"id": 8, "const": "TEXT_PEWTERCITY_MART_SIGN", "label": "MartSignText", "kind": "text", "handler": "text"},
+    {"id": 9, "const": "TEXT_PEWTERCITY_POKECENTER_SIGN", "label": "PokeCenterSignText", "kind": "text", "handler": "text"},
+    {"id": 10, "const": "TEXT_PEWTERCITY_MUSEUM_SIGN", "label": "PewterCityMuseumSignText", "kind": "text", "handler": "text"},
+    {"id": 11, "const": "TEXT_PEWTERCITY_GYM_SIGN", "label": "PewterCityGymSignText", "kind": "text", "handler": "text"},
+    {"id": 12, "const": "TEXT_PEWTERCITY_SIGN", "label": "PewterCitySignText", "kind": "text", "handler": "text"},
+    {"id": 13, "const": "TEXT_PEWTERCITY_SUPER_NERD1_ITS_RIGHT_HERE", "label": "PewterCitySuperNerd1ItsRightHereText", "kind": "text", "handler": "text"},
+    {"id": 14, "const": "TEXT_PEWTERCITY_YOUNGSTER_GO_TAKE_ON_BROCK", "label": "PewterCityYoungsterGoTakeOnBrockText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "_MartSignText": {
+   "kind": "text",
+   "src": "data/text/text_1.asm:50",
+   "commands": [
+    {"cmd": "text", "str": "All your item"},
+    {"cmd": "line", "str": "needs fulfilled!"},
+    {"cmd": "cont", "str": "POKéMON MART"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokeCenterSignText": {
+   "kind": "text",
+   "src": "data/text/text_1.asm:56",
+   "commands": [
+    {"cmd": "text", "str": "Heal Your POKéMON!"},
+    {"cmd": "line", "str": "POKéMON CENTER"},
+    {"cmd": "done"}
+   ]
+  },
+  "MartSignText": {
+   "kind": "text",
+   "src": "home/overworld_text.asm:21",
+   "commands": [
+    {"cmd": "text_far", "label": "_MartSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokeCenterSignText": {
+   "kind": "text",
+   "src": "home/overworld_text.asm:25",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokeCenterSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PewterCityCooltrainerFText": {
+   "kind": "text",
+   "src": "scripts/PewterCity.asm:202",
+   "commands": [
+    {"cmd": "text_far", "label": "_PewterCityCooltrainerFText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PewterCityCooltrainerMText": {
+   "kind": "text",
+   "src": "scripts/PewterCity.asm:206",
+   "commands": [
+    {"cmd": "text_far", "label": "_PewterCityCooltrainerMText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PewterCitySuperNerd1Text": {
+   "kind": "asm",
+   "src": "scripts/PewterCity.asm:210",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["PewterCitySuperNerd1Text.DidYouCheckOutMuseumText", "PewterCitySuperNerd1Text.WerentThoseFossilsAmazingText", "PewterCitySuperNerd1Text.YouHaveToGoText"]
+  },
+  "PewterCitySuperNerd1Text.DidYouCheckOutMuseumText": {
+   "kind": "text",
+   "src": "scripts/PewterCity.asm:240",
+   "commands": [
+    {"cmd": "text_far", "label": "_PewterCitySuperNerd1DidYouCheckOutMuseumText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PewterCitySuperNerd1Text.WerentThoseFossilsAmazingText": {
+   "kind": "text",
+   "src": "scripts/PewterCity.asm:244",
+   "commands": [
+    {"cmd": "text_far", "label": "_PewterCitySuperNerd1WerentThoseFossilsAmazingText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PewterCitySuperNerd1Text.YouHaveToGoText": {
+   "kind": "text",
+   "src": "scripts/PewterCity.asm:248",
+   "commands": [
+    {"cmd": "text_far", "label": "_PewterCitySuperNerd1YouHaveToGoText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PewterCitySuperNerd1ItsRightHereText": {
+   "kind": "text",
+   "src": "scripts/PewterCity.asm:252",
+   "commands": [
+    {"cmd": "text_far", "label": "_PewterCitySuperNerd1ItsRightHereText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PewterCitySuperNerd2Text": {
+   "kind": "asm",
+   "src": "scripts/PewterCity.asm:256",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["PewterCitySuperNerd2Text.DoYouKnowWhatImDoingText", "PewterCitySuperNerd2Text.ThatsRightText", "PewterCitySuperNerd2Text.ImSprayingRepelText"]
+  },
+  "PewterCitySuperNerd2Text.DoYouKnowWhatImDoingText": {
+   "kind": "text",
+   "src": "scripts/PewterCity.asm:273",
+   "commands": [
+    {"cmd": "text_far", "label": "_PewterCitySuperNerd2DoYouKnowWhatImDoingText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PewterCitySuperNerd2Text.ThatsRightText": {
+   "kind": "text",
+   "src": "scripts/PewterCity.asm:277",
+   "commands": [
+    {"cmd": "text_far", "label": "_PewterCitySuperNerd2ThatsRightText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PewterCitySuperNerd2Text.ImSprayingRepelText": {
+   "kind": "text",
+   "src": "scripts/PewterCity.asm:281",
+   "commands": [
+    {"cmd": "text_far", "label": "_PewterCitySuperNerd2ImSprayingRepelText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PewterCityYoungsterText": {
+   "kind": "asm",
+   "src": "scripts/PewterCity.asm:285",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["PewterCityYoungsterText.YoureATrainerFollowMeText"]
+  },
+  "PewterCityYoungsterText.YoureATrainerFollowMeText": {
+   "kind": "text",
+   "src": "scripts/PewterCity.asm:303",
+   "commands": [
+    {"cmd": "text_far", "label": "_PewterCityYoungsterYoureATrainerFollowMeText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PewterCityYoungsterGoTakeOnBrockText": {
+   "kind": "text",
+   "src": "scripts/PewterCity.asm:307",
+   "commands": [
+    {"cmd": "text_far", "label": "_PewterCityYoungsterGoTakeOnBrockText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PewterCityTrainerTipsText": {
+   "kind": "text",
+   "src": "scripts/PewterCity.asm:311",
+   "commands": [
+    {"cmd": "text_far", "label": "_PewterCityTrainerTipsText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PewterCityPoliceNoticeSignText": {
+   "kind": "text",
+   "src": "scripts/PewterCity.asm:315",
+   "commands": [
+    {"cmd": "text_far", "label": "_PewterCityPoliceNoticeSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PewterCityMuseumSignText": {
+   "kind": "text",
+   "src": "scripts/PewterCity.asm:319",
+   "commands": [
+    {"cmd": "text_far", "label": "_PewterCityMuseumSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PewterCityGymSignText": {
+   "kind": "text",
+   "src": "scripts/PewterCity.asm:323",
+   "commands": [
+    {"cmd": "text_far", "label": "_PewterCityGymSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PewterCitySignText": {
+   "kind": "text",
+   "src": "scripts/PewterCity.asm:327",
+   "commands": [
+    {"cmd": "text_far", "label": "_PewterCitySignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_PewterCityCooltrainerFText": {
+   "kind": "text",
+   "src": "text/PewterCity.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "It's rumored that"},
+    {"cmd": "line", "str": "CLEFAIRYs came"},
+    {"cmd": "cont", "str": "from the moon!"},
+    {"cmd": "para", "str": "They appeared "},
+    {"cmd": "line", "str": "after MOON STONE"},
+    {"cmd": "cont", "str": "fell on MT.MOON."},
+    {"cmd": "done"}
+   ]
+  },
+  "_PewterCityCooltrainerMText": {
+   "kind": "text",
+   "src": "text/PewterCity.asm:12",
+   "commands": [
+    {"cmd": "text", "str": "There aren't many"},
+    {"cmd": "line", "str": "serious POKéMON"},
+    {"cmd": "cont", "str": "trainers here!"},
+    {"cmd": "para", "str": "They're all like"},
+    {"cmd": "line", "str": "BUG CATCHERs,"},
+    {"cmd": "cont", "str": "but PEWTER GYM's"},
+    {"cmd": "cont", "str": "BROCK is totally"},
+    {"cmd": "cont", "str": "into it!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PewterCitySuperNerd1DidYouCheckOutMuseumText": {
+   "kind": "text",
+   "src": "text/PewterCity.asm:24",
+   "commands": [
+    {"cmd": "text", "str": "Did you check out"},
+    {"cmd": "line", "str": "the MUSEUM?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PewterCitySuperNerd1WerentThoseFossilsAmazingText": {
+   "kind": "text",
+   "src": "text/PewterCity.asm:29",
+   "commands": [
+    {"cmd": "text", "str": "Weren't those"},
+    {"cmd": "line", "str": "fossils from MT."},
+    {"cmd": "cont", "str": "MOON amazing?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PewterCitySuperNerd1YouHaveToGoText": {
+   "kind": "text",
+   "src": "text/PewterCity.asm:35",
+   "commands": [
+    {"cmd": "text", "str": "Really?"},
+    {"cmd": "line", "str": "You absolutely"},
+    {"cmd": "cont", "str": "have to go!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PewterCitySuperNerd1ItsRightHereText": {
+   "kind": "text",
+   "src": "text/PewterCity.asm:41",
+   "commands": [
+    {"cmd": "text", "str": "It's right here!"},
+    {"cmd": "line", "str": "You have to pay"},
+    {"cmd": "cont", "str": "to get in, but"},
+    {"cmd": "cont", "str": "it's worth it!"},
+    {"cmd": "cont", "str": "See you around!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PewterCitySuperNerd2DoYouKnowWhatImDoingText": {
+   "kind": "text",
+   "src": "text/PewterCity.asm:49",
+   "commands": [
+    {"cmd": "text", "str": "Psssst!"},
+    {"cmd": "line", "str": "Do you know what"},
+    {"cmd": "cont", "str": "I'm doing?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PewterCitySuperNerd2ThatsRightText": {
+   "kind": "text",
+   "src": "text/PewterCity.asm:55",
+   "commands": [
+    {"cmd": "text", "str": "That's right!"},
+    {"cmd": "line", "str": "It's hard work!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PewterCitySuperNerd2ImSprayingRepelText": {
+   "kind": "text",
+   "src": "text/PewterCity.asm:60",
+   "commands": [
+    {"cmd": "text", "str": "I'm spraying REPEL"},
+    {"cmd": "line", "str": "to keep POKéMON"},
+    {"cmd": "cont", "str": "out of my garden!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PewterCityYoungsterYoureATrainerFollowMeText": {
+   "kind": "text",
+   "src": "text/PewterCity.asm:66",
+   "commands": [
+    {"cmd": "text", "str": "You're a trainer"},
+    {"cmd": "line", "str": "right? BROCK's"},
+    {"cmd": "cont", "str": "looking for new"},
+    {"cmd": "cont", "str": "challengers!"},
+    {"cmd": "cont", "str": "Follow me!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PewterCityYoungsterGoTakeOnBrockText": {
+   "kind": "text",
+   "src": "text/PewterCity.asm:74",
+   "commands": [
+    {"cmd": "text", "str": "If you have the"},
+    {"cmd": "line", "str": "right stuff, go"},
+    {"cmd": "cont", "str": "take on BROCK!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PewterCityTrainerTipsText": {
+   "kind": "text",
+   "src": "text/PewterCity.asm:80",
+   "commands": [
+    {"cmd": "text", "str": "TRAINER TIPS"},
+    {"cmd": "para", "str": "Any POKéMON that"},
+    {"cmd": "line", "str": "takes part in"},
+    {"cmd": "cont", "str": "battle, however"},
+    {"cmd": "cont", "str": "short, earns EXP!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PewterCityPoliceNoticeSignText": {
+   "kind": "text",
+   "src": "text/PewterCity.asm:89",
+   "commands": [
+    {"cmd": "text", "str": "NOTICE!"},
+    {"cmd": "para", "str": "Thieves have been"},
+    {"cmd": "line", "str": "stealing POKéMON"},
+    {"cmd": "cont", "str": "fossils at MT."},
+    {"cmd": "cont", "str": "MOON! Please call"},
+    {"cmd": "cont", "str": "PEWTER POLICE"},
+    {"cmd": "cont", "str": "with any info!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PewterCityMuseumSignText": {
+   "kind": "text",
+   "src": "text/PewterCity.asm:100",
+   "commands": [
+    {"cmd": "text", "str": "PEWTER MUSEUM"},
+    {"cmd": "line", "str": "OF SCIENCE"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PewterCityGymSignText": {
+   "kind": "text",
+   "src": "text/PewterCity.asm:105",
+   "commands": [
+    {"cmd": "text", "str": "PEWTER CITY"},
+    {"cmd": "line", "str": "POKéMON GYM"},
+    {"cmd": "cont", "str": "LEADER: BROCK"},
+    {"cmd": "para", "str": "The Rock Solid"},
+    {"cmd": "line", "str": "POKéMON Trainer!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PewterCitySignText": {
+   "kind": "text",
+   "src": "text/PewterCity.asm:114",
+   "commands": [
+    {"cmd": "text", "str": "PEWTER CITY"},
+    {"cmd": "line", "str": "A Stone Gray"},
+    {"cmd": "cont", "str": "City"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

@@ -1,0 +1,85 @@
+{
+ "id": 8,
+ "const": "CINNABAR_ISLAND",
+ "name": "CinnabarIsland",
+ "displayName": "CINNABAR ISLAND",
+ "width": 10,
+ "height": 9,
+ "tileset": "OVERWORLD",
+ "tilesetId": 0,
+ "tilesetFile": "data/tilesets/Overworld.json",
+ "isOutside": true,
+ "borderBlock": 67,
+ "blocks": [24, 100, 32, 13, 33, 123, 123, 12, 13, 14, 24, 100, 55, 58, 126, 123, 121, 16, 17, 18, 24, 100, 123, 123, 121, 123, 123, 123, 123, 123, 24, 100, 32, 13, 33, 123, 123, 123, 123, 123, 24, 100, 55, 58, 126, 32, 33, 32, 33, 123, 24, 100, 123, 123, 121, 124, 114, 124, 115, 123, 24, 45, 30, 123, 123, 123, 123, 123, 123, 123, 24, 67, 45, 31, 31, 31, 31, 31, 31, 31, 20, 107, 107, 107, 107, 107, 107, 107, 107, 107],
+ "connections": {
+  "north": {
+   "map": "ROUTE_21",
+   "mapId": 32,
+   "mapName": "Route21",
+   "offset": 0,
+   "dx": 0,
+   "dy": -45,
+   "copyRect": {"x": 0, "y": 42, "w": 10, "h": 3},
+   "onEnter": {"newY": 89, "xAdd": 0},
+   "macro": {
+    "stripSrc": 420,
+    "stripDest": 3,
+    "stripLength": 10,
+    "connectedWidth": 10,
+    "yAlign": 89,
+    "xAlign": 0,
+    "viewPointer": 721
+   }
+  },
+  "east": {
+   "map": "ROUTE_20",
+   "mapId": 31,
+   "mapName": "Route20",
+   "offset": 0,
+   "dx": 10,
+   "dy": 0,
+   "copyRect": {"x": 0, "y": 0, "w": 3, "h": 9},
+   "onEnter": {"newX": 0, "yAdd": 0},
+   "macro": {"stripSrc": 0, "stripDest": 61, "stripLength": 9, "connectedWidth": 50, "yAlign": 0, "xAlign": 0, "viewPointer": 57}
+  }
+ },
+ "warps": [
+  {"x": 6, "y": 3, "destMap": "POKEMON_MANSION_1F", "destMapId": 165, "destMapName": "PokemonMansion1F", "destWarp": 2, "destWarpIndex": 1},
+  {"x": 18, "y": 3, "destMap": "CINNABAR_GYM", "destMapId": 166, "destMapName": "CinnabarGym", "destWarp": 1, "destWarpIndex": 0},
+  {"x": 6, "y": 9, "destMap": "CINNABAR_LAB", "destMapId": 167, "destMapName": "CinnabarLab", "destWarp": 1, "destWarpIndex": 0},
+  {"x": 11, "y": 11, "destMap": "CINNABAR_POKECENTER", "destMapId": 171, "destMapName": "CinnabarPokecenter", "destWarp": 1, "destWarpIndex": 0},
+  {"x": 15, "y": 11, "destMap": "CINNABAR_MART", "destMapId": 172, "destMapName": "CinnabarMart", "destWarp": 1, "destWarpIndex": 0}
+ ],
+ "bgEvents": [
+  {"x": 9, "y": 5, "textId": "TEXT_CINNABARISLAND_SIGN", "textIndex": 3},
+  {"x": 16, "y": 11, "textId": "TEXT_CINNABARISLAND_MART_SIGN", "textIndex": 4},
+  {"x": 12, "y": 11, "textId": "TEXT_CINNABARISLAND_POKECENTER_SIGN", "textIndex": 5},
+  {"x": 9, "y": 11, "textId": "TEXT_CINNABARISLAND_POKEMONLAB_SIGN", "textIndex": 6},
+  {"x": 13, "y": 3, "textId": "TEXT_CINNABARISLAND_GYM_SIGN", "textIndex": 7}
+ ],
+ "objectEvents": [
+  {"index": 1, "const": "CINNABARISLAND_GIRL", "x": 12, "y": 5, "sprite": "SPRITE_GIRL", "spriteId": 13, "movement": "WALK", "rangeOrDirection": "LEFT_RIGHT", "rangeOrDirectionValue": 2, "behavior": "walk_left_right", "textId": "TEXT_CINNABARISLAND_GIRL", "textIndex": 1},
+  {"index": 2, "const": "CINNABARISLAND_GAMBLER", "x": 14, "y": 6, "sprite": "SPRITE_GAMBLER", "spriteId": 11, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_CINNABARISLAND_GAMBLER", "textIndex": 2}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": {
+  "type": "fixed",
+  "set": "SPRITESET_PALLET_VIRIDIAN",
+  "sprites": ["SPRITE_BLUE", "SPRITE_YOUNGSTER", "SPRITE_GIRL", "SPRITE_FISHER", "SPRITE_COOLTRAINER_M", "SPRITE_GAMBLER", "SPRITE_SEEL", "SPRITE_OAK", "SPRITE_SWIMMER", "SPRITE_POKE_BALL", "SPRITE_GAMBLER_ASLEEP"]
+ },
+ "music": "MUSIC_CINNABAR",
+ "wild": null,
+ "townMap": {"x": 2, "y": 15, "group": null},
+ "extraWarpCheck": "warpTileInFront",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/CinnabarIsland.json",
+ "textPointers": "CinnabarIsland_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/CinnabarIsland.asm",
+  "objects": "data/maps/objects/CinnabarIsland.asm",
+  "blocks": "maps/CinnabarIsland.blk",
+  "script": "scripts/CinnabarIsland.asm"
+ },
+ "palette": {"pal": "PAL_CINNABAR", "rule": "town"}
+}

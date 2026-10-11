@@ -1,0 +1,22 @@
+{
+  "name": "SFX_BATTLE_22",
+  "title": "Battle 22",
+  "kind": "sfx",
+  "bank": 2,
+  "id": 185,
+  "label": "SFX_Battle_22",
+  "channels": [
+    {
+      "channel": 8,
+      "label": "SFX_Battle_22_Ch8",
+      "entry": 0,
+      "bytes": 7,
+      "labels": {"SFX_Battle_22_Ch8": 0},
+      "commands": [
+        {"op": "noise_note", "length": 2, "volume": 13, "fade": 2, "value": 50},
+        {"op": "noise_note", "length": 15, "volume": 15, "fade": 2, "value": 67},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

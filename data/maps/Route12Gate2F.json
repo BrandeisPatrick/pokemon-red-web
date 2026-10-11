@@ -1,0 +1,43 @@
+{
+ "id": 195,
+ "const": "ROUTE_12_GATE_2F",
+ "name": "Route12Gate2F",
+ "displayName": "ROUTE 12",
+ "width": 4,
+ "height": 4,
+ "tileset": "GATE",
+ "tilesetId": 12,
+ "tilesetFile": "data/tilesets/Gate.json",
+ "isOutside": false,
+ "borderBlock": 10,
+ "blocks": [52, 51, 51, 53, 54, 0, 0, 55, 56, 59, 56, 59, 58, 0, 0, 57],
+ "connections": {},
+ "warps": [
+  {"x": 7, "y": 7, "destMap": "ROUTE_12_GATE_1F", "destMapId": 87, "destMapName": "Route12Gate1F", "destWarp": 5, "destWarpIndex": 4}
+ ],
+ "bgEvents": [
+  {"x": 1, "y": 2, "textId": "TEXT_ROUTE12GATE2F_LEFT_BINOCULARS", "textIndex": 2},
+  {"x": 6, "y": 2, "textId": "TEXT_ROUTE12GATE2F_RIGHT_BINOCULARS", "textIndex": 3}
+ ],
+ "objectEvents": [
+  {"index": 1, "const": "ROUTE12GATE2F_BRUNETTE_GIRL", "x": 3, "y": 4, "sprite": "SPRITE_BRUNETTE_GIRL", "spriteId": 29, "movement": "WALK", "rangeOrDirection": "UP_DOWN", "rangeOrDirectionValue": 1, "behavior": "walk_up_down", "textId": "TEXT_ROUTE12GATE2F_BRUNETTE_GIRL", "textIndex": 1}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_CITIES1",
+ "wild": null,
+ "townMap": {"x": 14, "y": 7, "group": "ROUTE_12_3"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/Route12Gate2F.json",
+ "textPointers": "Route12Gate2F_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/Route12Gate2F.asm",
+  "objects": "data/maps/objects/Route12Gate2F.asm",
+  "blocks": "maps/Route11Gate2F.blk",
+  "script": "scripts/Route12Gate2F.asm"
+ },
+ "lastMapCandidates": ["ROUTE_12"],
+ "palette": {"pal": "PAL_ROUTE", "rule": "lastMap", "viaLastMap": "ROUTE_12"}
+}

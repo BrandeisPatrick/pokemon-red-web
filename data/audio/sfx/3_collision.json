@@ -1,0 +1,24 @@
+{
+  "name": "SFX_COLLISION",
+  "title": "Collision",
+  "kind": "sfx",
+  "bank": 3,
+  "id": 180,
+  "label": "SFX_Collision_3",
+  "channels": [
+    {
+      "channel": 5,
+      "label": "SFX_Collision_3_Ch5",
+      "entry": 0,
+      "bytes": 11,
+      "labels": {"SFX_Collision_3_Ch5": 0},
+      "commands": [
+        {"op": "duty_cycle", "duty": 2},
+        {"op": "pitch_sweep", "length": 5, "change": -2},
+        {"op": "square_note", "length": 15, "volume": 15, "fade": 1, "frequency": 768},
+        {"op": "pitch_sweep", "length": 0, "change": 8},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+ "map": "RocketHideoutB2F",
+ "const": "ROCKET_HIDEOUT_B2F",
+ "textPointerTables": [
+  {
+   "label": "RocketHideoutB2F_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_ROCKETHIDEOUTB2F_ROCKET", "label": "RocketHideoutB2FRocketText", "kind": "asm", "handler": "trainer", "trainerHeader": "RocketHideout2TrainerHeader0"},
+    {"id": 2, "const": "TEXT_ROCKETHIDEOUTB2F_MOON_STONE", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 3, "const": "TEXT_ROCKETHIDEOUTB2F_NUGGET", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 4, "const": "TEXT_ROCKETHIDEOUTB2F_TM_HORN_DRILL", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 5, "const": "TEXT_ROCKETHIDEOUTB2F_SUPER_POTION", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"}
+   ]
+  }
+ ],
+ "texts": {
+  "PickUpItemText": {
+   "kind": "asm",
+   "src": "home/overworld_text.asm:29",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "RocketHideoutB2FRocketText": {
+   "kind": "asm",
+   "src": "scripts/RocketHideoutB2F.asm:288",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "RocketHideout2TrainerHeader0"
+  },
+  "RocketHideoutB2FRocketBattleText": {
+   "kind": "text",
+   "src": "scripts/RocketHideoutB2F.asm:294",
+   "commands": [
+    {"cmd": "text_far", "label": "_RocketHideoutB2FRocketBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "RocketHideoutB2FRocketEndBattleText": {
+   "kind": "text",
+   "src": "scripts/RocketHideoutB2F.asm:298",
+   "commands": [
+    {"cmd": "text_far", "label": "_RocketHideoutB2FRocketEndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "RocketHideoutB2FRocketAfterBattleText": {
+   "kind": "text",
+   "src": "scripts/RocketHideoutB2F.asm:302",
+   "commands": [
+    {"cmd": "text_far", "label": "_RocketHideoutB2FRocketAfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_RocketHideoutB2FRocketBattleText": {
+   "kind": "text",
+   "src": "text/RocketHideoutB2F.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "BOSS said you can"},
+    {"cmd": "line", "str": "see GHOSTs with"},
+    {"cmd": "cont", "str": "the SILPH SCOPE!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_RocketHideoutB2FRocketEndBattleText": {
+   "kind": "text",
+   "src": "text/RocketHideoutB2F.asm:8",
+   "commands": [
+    {"cmd": "text", "str": "I"},
+    {"cmd": "line", "str": "surrender!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_RocketHideoutB2FRocketAfterBattleText": {
+   "kind": "text",
+   "src": "text/RocketHideoutB2F.asm:13",
+   "commands": [
+    {"cmd": "text", "str": "The TEAM ROCKET"},
+    {"cmd": "line", "str": "HQ has 4 basement"},
+    {"cmd": "cont", "str": "floors. Can you"},
+    {"cmd": "cont", "str": "reach the BOSS?"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

@@ -1,0 +1,74 @@
+{
+ "map": "CeladonChiefHouse",
+ "const": "CELADON_CHIEF_HOUSE",
+ "textPointerTables": [
+  {
+   "label": "CeladonChiefHouse_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_CELADONCHIEFHOUSE_CHIEF", "label": "CeladonChiefHouseChiefText", "kind": "text", "handler": "text"},
+    {"id": 2, "const": "TEXT_CELADONCHIEFHOUSE_ROCKET", "label": "CeladonChiefHouseRocketText", "kind": "text", "handler": "text"},
+    {"id": 3, "const": "TEXT_CELADONCHIEFHOUSE_SAILOR", "label": "CeladonChiefHouseSailorText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "CeladonChiefHouseChiefText": {
+   "kind": "text",
+   "src": "scripts/CeladonChiefHouse.asm:12",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonChiefHouseChiefText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonChiefHouseRocketText": {
+   "kind": "text",
+   "src": "scripts/CeladonChiefHouse.asm:16",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonChiefHouseRocketText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonChiefHouseSailorText": {
+   "kind": "text",
+   "src": "scripts/CeladonChiefHouse.asm:20",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonChiefHouseSailorText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_CeladonChiefHouseChiefText": {
+   "kind": "text",
+   "src": "text/CeladonChiefHouse.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Hehehe! The slots"},
+    {"cmd": "line", "str": "just reel in the"},
+    {"cmd": "cont", "str": "dough, big time!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonChiefHouseRocketText": {
+   "kind": "text",
+   "src": "text/CeladonChiefHouse.asm:8",
+   "commands": [
+    {"cmd": "text", "str": "CHIEF!"},
+    {"cmd": "para", "str": "We just shipped"},
+    {"cmd": "line", "str": "2000 POKéMON as"},
+    {"cmd": "cont", "str": "slot prizes!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonChiefHouseSailorText": {
+   "kind": "text",
+   "src": "text/CeladonChiefHouse.asm:16",
+   "commands": [
+    {"cmd": "text", "str": "Don't touch the"},
+    {"cmd": "line", "str": "poster at the"},
+    {"cmd": "cont", "str": "GAME CORNER!"},
+    {"cmd": "para", "str": "There's no secret"},
+    {"cmd": "line", "str": "switch behind it!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

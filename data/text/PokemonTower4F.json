@@ -1,0 +1,205 @@
+{
+ "map": "PokemonTower4F",
+ "const": "POKEMON_TOWER_4F",
+ "textPointerTables": [
+  {
+   "label": "PokemonTower4F_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_POKEMONTOWER4F_CHANNELER1", "label": "PokemonTower4FChanneler1Text", "kind": "asm", "handler": "trainer", "trainerHeader": "PokemonTower4TrainerHeader0"},
+    {"id": 2, "const": "TEXT_POKEMONTOWER4F_CHANNELER2", "label": "PokemonTower4FChanneler2Text", "kind": "asm", "handler": "trainer", "trainerHeader": "PokemonTower4TrainerHeader1"},
+    {"id": 3, "const": "TEXT_POKEMONTOWER4F_CHANNELER3", "label": "PokemonTower4FChanneler3Text", "kind": "asm", "handler": "trainer", "trainerHeader": "PokemonTower4TrainerHeader2"},
+    {"id": 4, "const": "TEXT_POKEMONTOWER4F_ELIXER", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 5, "const": "TEXT_POKEMONTOWER4F_AWAKENING", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 6, "const": "TEXT_POKEMONTOWER4F_HP_UP", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"}
+   ]
+  }
+ ],
+ "texts": {
+  "PickUpItemText": {
+   "kind": "asm",
+   "src": "home/overworld_text.asm:29",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "PokemonTower4FChanneler1Text": {
+   "kind": "asm",
+   "src": "scripts/PokemonTower4F.asm:36",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "PokemonTower4TrainerHeader0"
+  },
+  "PokemonTower4FChanneler2Text": {
+   "kind": "asm",
+   "src": "scripts/PokemonTower4F.asm:42",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "PokemonTower4TrainerHeader1"
+  },
+  "PokemonTower4FChanneler3Text": {
+   "kind": "asm",
+   "src": "scripts/PokemonTower4F.asm:48",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "PokemonTower4TrainerHeader2"
+  },
+  "PokemonTower4FChanneler1BattleText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower4F.asm:54",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower4FChanneler1BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower4FChanneler1EndBattleText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower4F.asm:58",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower4FChanneler1EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower4FChanneler1AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower4F.asm:62",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower4FChanneler1AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower4FChanneler2BattleText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower4F.asm:66",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower4FChanneler2BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower4FChanneler2EndBattleText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower4F.asm:70",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower4FChanneler2EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower4FChanneler2AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower4F.asm:74",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower4FChanneler2AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower4FChanneler3BattleText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower4F.asm:78",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower4FChanneler3BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower4FChanneler3EndBattleText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower4F.asm:82",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower4FChanneler3EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower4FChanneler3AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower4F.asm:86",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower4FChanneler3AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_PokemonTower4FChanneler1BattleText": {
+   "kind": "text",
+   "src": "text/PokemonTower4F.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "GHOST! No!"},
+    {"cmd": "line", "str": "Kwaaah!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonTower4FChanneler1EndBattleText": {
+   "kind": "text",
+   "src": "text/PokemonTower4F.asm:7",
+   "commands": [
+    {"cmd": "text", "str": "Where"},
+    {"cmd": "line", "str": "is the GHOST?"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_PokemonTower4FChanneler1AfterBattleText": {
+   "kind": "text",
+   "src": "text/PokemonTower4F.asm:12",
+   "commands": [
+    {"cmd": "text", "str": "I must have been"},
+    {"cmd": "line", "str": "dreaming..."},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonTower4FChanneler2BattleText": {
+   "kind": "text",
+   "src": "text/PokemonTower4F.asm:17",
+   "commands": [
+    {"cmd": "text", "str": "Be cursed with"},
+    {"cmd": "line", "str": "me! Kwaaah!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonTower4FChanneler2EndBattleText": {
+   "kind": "text",
+   "src": "text/PokemonTower4F.asm:22",
+   "commands": [
+    {"cmd": "text", "str": "What!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_PokemonTower4FChanneler2AfterBattleText": {
+   "kind": "text",
+   "src": "text/PokemonTower4F.asm:26",
+   "commands": [
+    {"cmd": "text", "str": "We can't crack"},
+    {"cmd": "line", "str": "the identity of"},
+    {"cmd": "cont", "str": "the GHOSTs."},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonTower4FChanneler3BattleText": {
+   "kind": "text",
+   "src": "text/PokemonTower4F.asm:32",
+   "commands": [
+    {"cmd": "text", "str": "Huhuhu..."},
+    {"cmd": "line", "str": "Beat me not!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonTower4FChanneler3EndBattleText": {
+   "kind": "text",
+   "src": "text/PokemonTower4F.asm:37",
+   "commands": [
+    {"cmd": "text", "str": "Huh?"},
+    {"cmd": "line", "str": "Who? What?"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_PokemonTower4FChanneler3AfterBattleText": {
+   "kind": "text",
+   "src": "text/PokemonTower4F.asm:42",
+   "commands": [
+    {"cmd": "text", "str": "May the departed"},
+    {"cmd": "line", "str": "souls of POKéMON"},
+    {"cmd": "cont", "str": "rest in peace..."},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

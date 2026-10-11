@@ -1,0 +1,287 @@
+{
+ "map": "RocketHideoutB4F",
+ "const": "ROCKET_HIDEOUT_B4F",
+ "textPointerTables": [
+  {
+   "label": "RocketHideoutB4F_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_ROCKETHIDEOUTB4F_GIOVANNI", "label": "RocketHideoutB4FGiovanniText", "kind": "asm", "handler": "asm"},
+    {"id": 2, "const": "TEXT_ROCKETHIDEOUTB4F_ROCKET1", "label": "RocketHideoutB4FRocket1Text", "kind": "asm", "handler": "trainer", "trainerHeader": "RocketHideout4TrainerHeader0"},
+    {"id": 3, "const": "TEXT_ROCKETHIDEOUTB4F_ROCKET2", "label": "RocketHideoutB4FRocket2Text", "kind": "asm", "handler": "trainer", "trainerHeader": "RocketHideout4TrainerHeader1"},
+    {"id": 4, "const": "TEXT_ROCKETHIDEOUTB4F_ROCKET3", "label": "RocketHideoutB4FRocket3Text", "kind": "asm", "handler": "trainer", "trainerHeader": "RocketHideout4TrainerHeader2"},
+    {"id": 5, "const": "TEXT_ROCKETHIDEOUTB4F_HP_UP", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 6, "const": "TEXT_ROCKETHIDEOUTB4F_TM_RAZOR_WIND", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 7, "const": "TEXT_ROCKETHIDEOUTB4F_IRON", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 8, "const": "TEXT_ROCKETHIDEOUTB4F_SILPH_SCOPE", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 9, "const": "TEXT_ROCKETHIDEOUTB4F_LIFT_KEY", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 10, "const": "TEXT_ROCKETHIDEOUTB4F_GIOVANNI_HOPE_WE_MEET_AGAIN", "label": "RocketHideoutB4FGiovanniHopeWeMeetAgainText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "PickUpItemText": {
+   "kind": "asm",
+   "src": "home/overworld_text.asm:29",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "RocketHideoutB4FGiovanniText": {
+   "kind": "asm",
+   "src": "scripts/RocketHideoutB4F.asm:100",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["RocketHideoutB4FGiovanniText.ImpressedYouGotHereText", "RocketHideoutB4FGiovanniText.WhatCannotBeText", "RocketHideoutB4FGiovanniHopeWeMeetAgainText"]
+  },
+  "RocketHideoutB4FGiovanniText.ImpressedYouGotHereText": {
+   "kind": "text",
+   "src": "scripts/RocketHideoutB4F.asm:128",
+   "commands": [
+    {"cmd": "text_far", "label": "_RocketHideoutB4FGiovanniImpressedYouGotHereText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "RocketHideoutB4FGiovanniText.WhatCannotBeText": {
+   "kind": "text",
+   "src": "scripts/RocketHideoutB4F.asm:132",
+   "commands": [
+    {"cmd": "text_far", "label": "_RocketHideoutB4FGiovanniWhatCannotBeText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "RocketHideoutB4FGiovanniHopeWeMeetAgainText": {
+   "kind": "text",
+   "src": "scripts/RocketHideoutB4F.asm:136",
+   "commands": [
+    {"cmd": "text_far", "label": "_RocketHideoutB4FGiovanniHopeWeMeetAgainText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "RocketHideoutB4FRocket1Text": {
+   "kind": "asm",
+   "src": "scripts/RocketHideoutB4F.asm:140",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "RocketHideout4TrainerHeader0"
+  },
+  "RocketHideoutB4FRocket1BattleText": {
+   "kind": "text",
+   "src": "scripts/RocketHideoutB4F.asm:146",
+   "commands": [
+    {"cmd": "text_far", "label": "_RocketHideoutB4FRocket1BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "RocketHideoutB4FRocket1EndBattleText": {
+   "kind": "text",
+   "src": "scripts/RocketHideoutB4F.asm:150",
+   "commands": [
+    {"cmd": "text_far", "label": "_RocketHideoutB4FRocket1EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "RocketHideoutB4FRocket1AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/RocketHideoutB4F.asm:154",
+   "commands": [
+    {"cmd": "text_far", "label": "_RocketHideoutB4FRocket1AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "RocketHideoutB4FRocket2Text": {
+   "kind": "asm",
+   "src": "scripts/RocketHideoutB4F.asm:158",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "RocketHideout4TrainerHeader1"
+  },
+  "RocketHideoutB4FRocket2BattleText": {
+   "kind": "text",
+   "src": "scripts/RocketHideoutB4F.asm:164",
+   "commands": [
+    {"cmd": "text_far", "label": "_RocketHideoutB4FRocket2BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "RocketHideoutB4FRocket2EndBattleText": {
+   "kind": "text",
+   "src": "scripts/RocketHideoutB4F.asm:168",
+   "commands": [
+    {"cmd": "text_far", "label": "_RocketHideoutB4FRocket2EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "RocketHideoutB4FRocket2AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/RocketHideoutB4F.asm:172",
+   "commands": [
+    {"cmd": "text_far", "label": "_RocketHideoutB4FRocket2AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "RocketHideoutB4FRocket3Text": {
+   "kind": "asm",
+   "src": "scripts/RocketHideoutB4F.asm:176",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "RocketHideout4TrainerHeader2"
+  },
+  "RocketHideoutB4FRocket3BattleText": {
+   "kind": "text",
+   "src": "scripts/RocketHideoutB4F.asm:182",
+   "commands": [
+    {"cmd": "text_far", "label": "_RocketHideoutB4FRocket3BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "RocketHideoutB4FRocket3EndBattleText": {
+   "kind": "text",
+   "src": "scripts/RocketHideoutB4F.asm:186",
+   "commands": [
+    {"cmd": "text_far", "label": "_RocketHideoutB4FRocket3EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "RocketHideoutB4FRocket3AfterBattleText": {
+   "kind": "asm",
+   "src": "scripts/RocketHideoutB4F.asm:190",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["RocketHideoutB4FRocket3AfterBattleText.Text"]
+  },
+  "RocketHideoutB4FRocket3AfterBattleText.Text": {
+   "kind": "text",
+   "src": "scripts/RocketHideoutB4F.asm:202",
+   "commands": [
+    {"cmd": "text_far", "label": "_RocketHideoutB4FRocket3AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_RocketHideoutB4FGiovanniImpressedYouGotHereText": {
+   "kind": "text",
+   "src": "text/RocketHideoutB4F.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "So! I must say, I"},
+    {"cmd": "line", "str": "am impressed you"},
+    {"cmd": "cont", "str": "got here!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_RocketHideoutB4FGiovanniWhatCannotBeText": {
+   "kind": "text",
+   "src": "text/RocketHideoutB4F.asm:8",
+   "commands": [
+    {"cmd": "text", "str": "WHAT!"},
+    {"cmd": "line", "str": "This cannot be!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_RocketHideoutB4FGiovanniHopeWeMeetAgainText": {
+   "kind": "text",
+   "src": "text/RocketHideoutB4F.asm:13",
+   "commands": [
+    {"cmd": "text", "str": "I see that you"},
+    {"cmd": "line", "str": "raise POKéMON"},
+    {"cmd": "cont", "str": "with utmost care."},
+    {"cmd": "para", "str": "A child like you"},
+    {"cmd": "line", "str": "would never"},
+    {"cmd": "cont", "str": "understand what I"},
+    {"cmd": "cont", "str": "hope to achieve."},
+    {"cmd": "para", "str": "I shall step"},
+    {"cmd": "line", "str": "aside this time!"},
+    {"cmd": "para", "str": "I hope we meet"},
+    {"cmd": "line", "str": "again..."},
+    {"cmd": "done"}
+   ]
+  },
+  "_RocketHideoutB4FRocket1BattleText": {
+   "kind": "text",
+   "src": "text/RocketHideoutB4F.asm:30",
+   "commands": [
+    {"cmd": "text", "str": "I know you! You"},
+    {"cmd": "line", "str": "ruined our plans"},
+    {"cmd": "cont", "str": "at MT.MOON!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_RocketHideoutB4FRocket1EndBattleText": {
+   "kind": "text",
+   "src": "text/RocketHideoutB4F.asm:36",
+   "commands": [
+    {"cmd": "text", "str": "Burned"},
+    {"cmd": "line", "str": "again!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_RocketHideoutB4FRocket1AfterBattleText": {
+   "kind": "text",
+   "src": "text/RocketHideoutB4F.asm:41",
+   "commands": [
+    {"cmd": "text", "str": "Do you have"},
+    {"cmd": "line", "str": "something against"},
+    {"cmd": "cont", "str": "TEAM ROCKET?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_RocketHideoutB4FRocket2BattleText": {
+   "kind": "text",
+   "src": "text/RocketHideoutB4F.asm:47",
+   "commands": [
+    {"cmd": "text", "str": "How can you not"},
+    {"cmd": "line", "str": "see the beauty of"},
+    {"cmd": "cont", "str": "our evil?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_RocketHideoutB4FRocket2EndBattleText": {
+   "kind": "text",
+   "src": "text/RocketHideoutB4F.asm:53",
+   "commands": [
+    {"cmd": "text", "str": "Ayaya!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_RocketHideoutB4FRocket2AfterBattleText": {
+   "kind": "text",
+   "src": "text/RocketHideoutB4F.asm:57",
+   "commands": [
+    {"cmd": "text", "str": "BOSS! I'm sorry I"},
+    {"cmd": "line", "str": "failed you!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_RocketHideoutB4FRocket3BattleText": {
+   "kind": "text",
+   "src": "text/RocketHideoutB4F.asm:62",
+   "commands": [
+    {"cmd": "text", "str": "The elevator"},
+    {"cmd": "line", "str": "doesn't work? Who"},
+    {"cmd": "cont", "str": "has the LIFT KEY?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_RocketHideoutB4FRocket3EndBattleText": {
+   "kind": "text",
+   "src": "text/RocketHideoutB4F.asm:68",
+   "commands": [
+    {"cmd": "text", "str": "No!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_RocketHideoutB4FRocket3AfterBattleText": {
+   "kind": "text",
+   "src": "text/RocketHideoutB4F.asm:72",
+   "commands": [
+    {"cmd": "text", "str": "Oh no! I dropped"},
+    {"cmd": "line", "str": "the LIFT KEY!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

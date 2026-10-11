@@ -1,0 +1,130 @@
+{
+ "map": "PowerPlant",
+ "const": "POWER_PLANT",
+ "textPointerTables": [
+  {
+   "label": "PowerPlant_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_POWERPLANT_VOLTORB1", "label": "PowerPlantVoltorb1Text", "kind": "asm", "handler": "asm"},
+    {"id": 2, "const": "TEXT_POWERPLANT_VOLTORB2", "label": "PowerPlantVoltorb2Text", "kind": "asm", "handler": "asm"},
+    {"id": 3, "const": "TEXT_POWERPLANT_VOLTORB3", "label": "PowerPlantVoltorb3Text", "kind": "asm", "handler": "asm"},
+    {"id": 4, "const": "TEXT_POWERPLANT_ELECTRODE1", "label": "PowerPlantElectrode1Text", "kind": "asm", "handler": "asm"},
+    {"id": 5, "const": "TEXT_POWERPLANT_VOLTORB4", "label": "PowerPlantVoltorb4Text", "kind": "asm", "handler": "asm"},
+    {"id": 6, "const": "TEXT_POWERPLANT_VOLTORB5", "label": "PowerPlantVoltorb5Text", "kind": "asm", "handler": "asm"},
+    {"id": 7, "const": "TEXT_POWERPLANT_ELECTRODE2", "label": "PowerPlantElectrode2Text", "kind": "asm", "handler": "asm"},
+    {"id": 8, "const": "TEXT_POWERPLANT_VOLTORB6", "label": "PowerPlantVoltorb6Text", "kind": "asm", "handler": "asm"},
+    {"id": 9, "const": "TEXT_POWERPLANT_ZAPDOS", "label": "PowerPlantZapdosText", "kind": "asm", "handler": "asm"},
+    {"id": 10, "const": "TEXT_POWERPLANT_CARBOS", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 11, "const": "TEXT_POWERPLANT_HP_UP", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 12, "const": "TEXT_POWERPLANT_RARE_CANDY", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 13, "const": "TEXT_POWERPLANT_TM_THUNDER", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 14, "const": "TEXT_POWERPLANT_TM_REFLECT", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"}
+   ]
+  }
+ ],
+ "texts": {
+  "PickUpItemText": {
+   "kind": "asm",
+   "src": "home/overworld_text.asm:29",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "PowerPlantVoltorb1Text": {
+   "kind": "asm",
+   "src": "scripts/PowerPlant.asm:62",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "PowerPlantVoltorb2Text": {
+   "kind": "asm",
+   "src": "scripts/PowerPlant.asm:67",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "PowerPlantVoltorb3Text": {
+   "kind": "asm",
+   "src": "scripts/PowerPlant.asm:72",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "PowerPlantElectrode1Text": {
+   "kind": "asm",
+   "src": "scripts/PowerPlant.asm:77",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "PowerPlantVoltorb4Text": {
+   "kind": "asm",
+   "src": "scripts/PowerPlant.asm:82",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "PowerPlantVoltorb5Text": {
+   "kind": "asm",
+   "src": "scripts/PowerPlant.asm:87",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "PowerPlantElectrode2Text": {
+   "kind": "asm",
+   "src": "scripts/PowerPlant.asm:92",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "PowerPlantVoltorb6Text": {
+   "kind": "asm",
+   "src": "scripts/PowerPlant.asm:97",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "PowerPlantZapdosText": {
+   "kind": "asm",
+   "src": "scripts/PowerPlant.asm:102",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "PowerPlantVoltorbBattleText": {
+   "kind": "text",
+   "src": "scripts/PowerPlant.asm:107",
+   "commands": [
+    {"cmd": "text_far", "label": "_PowerPlantVoltorbBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PowerPlantZapdosBattleText": {
+   "kind": "text",
+   "src": "scripts/PowerPlant.asm:111",
+   "commands": [
+    {"cmd": "text_far", "label": "_PowerPlantZapdosBattleText"},
+    {"cmd": "text_asm"}
+   ]
+  },
+  "_PowerPlantVoltorbBattleText": {
+   "kind": "text",
+   "src": "text/PowerPlant.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Bzzzt!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PowerPlantZapdosBattleText": {
+   "kind": "text",
+   "src": "text/PowerPlant.asm:6",
+   "commands": [
+    {"cmd": "text", "str": "Gyaoo!"},
+    {"cmd": "text_end"}
+   ]
+  }
+ }
+}

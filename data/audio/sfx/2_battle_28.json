@@ -1,0 +1,51 @@
+{
+  "name": "SFX_BATTLE_28",
+  "title": "Battle 28",
+  "kind": "sfx",
+  "bank": 2,
+  "id": 194,
+  "label": "SFX_Battle_28",
+  "channels": [
+    {
+      "channel": 5,
+      "label": "SFX_Battle_28_Ch5",
+      "entry": 0,
+      "bytes": 15,
+      "labels": {"SFX_Battle_28_Ch5": 0},
+      "commands": [
+        {"op": "duty_cycle", "duty": 0},
+        {"op": "square_note", "length": 0, "volume": 15, "fade": 1, "frequency": 1984},
+        {"op": "square_note", "length": 0, "volume": 15, "fade": 1, "frequency": 1792},
+        {"op": "sound_loop", "count": 12, "target": 0},
+        {"op": "sound_ret"}
+      ]
+    },
+    {
+      "channel": 6,
+      "label": "SFX_Battle_28_Ch6",
+      "entry": 0,
+      "bytes": 15,
+      "labels": {"SFX_Battle_28_Ch6": 0},
+      "commands": [
+        {"op": "duty_cycle_pattern", "pattern": [2, 3, 0, 3]},
+        {"op": "square_note", "length": 0, "volume": 14, "fade": 1, "frequency": 1985},
+        {"op": "square_note", "length": 0, "volume": 14, "fade": 1, "frequency": 1793},
+        {"op": "sound_loop", "count": 12, "target": 0},
+        {"op": "sound_ret"}
+      ]
+    },
+    {
+      "channel": 8,
+      "label": "SFX_Battle_28_Ch8",
+      "entry": 0,
+      "bytes": 11,
+      "labels": {"SFX_Battle_28_Ch8": 0},
+      "commands": [
+        {"op": "noise_note", "length": 1, "volume": 13, "fade": 1, "value": 73},
+        {"op": "noise_note", "length": 1, "volume": 13, "fade": 1, "value": 41},
+        {"op": "sound_loop", "count": 6, "target": 0},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

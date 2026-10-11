@@ -1,0 +1,24 @@
+{
+ "map": "CeruleanCave1F",
+ "const": "CERULEAN_CAVE_1F",
+ "textPointerTables": [
+  {
+   "label": "CeruleanCave1F_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_CERULEANCAVE1F_FULL_RESTORE", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 2, "const": "TEXT_CERULEANCAVE1F_MAX_ELIXER", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 3, "const": "TEXT_CERULEANCAVE1F_NUGGET", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"}
+   ]
+  }
+ ],
+ "texts": {
+  "PickUpItemText": {
+   "kind": "asm",
+   "src": "home/overworld_text.asm:29",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  }
+ }
+}

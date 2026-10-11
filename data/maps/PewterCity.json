@@ -1,0 +1,92 @@
+{
+ "id": 2,
+ "const": "PEWTER_CITY",
+ "name": "PewterCity",
+ "displayName": "PEWTER CITY",
+ "width": 20,
+ "height": 18,
+ "tileset": "OVERWORLD",
+ "tilesetId": 0,
+ "tilesetFile": "data/tilesets/Overworld.json",
+ "isOutside": true,
+ "borderBlock": 10,
+ "blocks": [10, 10, 82, 82, 82, 82, 82, 82, 82, 82, 82, 82, 82, 82, 82, 82, 82, 111, 111, 111, 63, 59, 1, 116, 116, 12, 13, 13, 14, 32, 13, 33, 111, 111, 10, 116, 116, 110, 15, 15, 44, 41, 1, 116, 116, 117, 113, 113, 118, 124, 125, 126, 10, 52, 10, 116, 116, 110, 15, 15, 44, 41, 26, 47, 7, 55, 125, 58, 126, 26, 7, 7, 7, 66, 7, 47, 7, 66, 15, 15, 44, 41, 1, 1, 1, 1, 1, 8, 1, 1, 10, 10, 10, 10, 10, 10, 10, 110, 15, 15, 44, 41, 1, 116, 116, 116, 116, 116, 116, 1, 1, 1, 1, 1, 1, 1, 1, 62, 63, 63, 44, 41, 1, 1, 1, 1, 1, 1, 1, 1, 10, 10, 10, 10, 2, 3, 1, 40, 44, 44, 44, 41, 1, 10, 10, 1, 12, 13, 14, 1, 1, 32, 33, 1, 1, 1, 1, 36, 87, 87, 44, 41, 1, 10, 10, 8, 16, 17, 18, 1, 10, 124, 115, 10, 10, 10, 1, 1, 1, 1, 44, 41, 1, 1, 1, 1, 1, 1, 1, 27, 1, 1, 1, 1, 1, 1, 8, 1, 1, 1, 44, 41, 28, 111, 111, 28, 111, 111, 111, 27, 10, 10, 10, 10, 10, 10, 1, 62, 63, 63, 44, 41, 1, 1, 1, 1, 32, 33, 1, 1, 49, 119, 86, 119, 119, 49, 1, 40, 44, 44, 44, 41, 1, 10, 10, 10, 124, 114, 116, 1, 110, 116, 116, 116, 116, 109, 1, 36, 87, 87, 44, 41, 1, 1, 1, 1, 1, 1, 1, 1, 110, 116, 116, 116, 116, 109, 1, 77, 10, 10, 43, 37, 1, 2, 3, 116, 10, 10, 10, 8, 110, 7, 47, 7, 7, 109, 1, 77, 10, 10, 41, 19, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 77, 10, 10, 37, 81, 81, 81, 81, 81, 15, 15, 15, 1, 15, 15, 15, 81, 81, 81, 81, 81, 10, 10, 10, 10, 10, 10, 10, 10, 15, 15, 15, 1, 15, 15, 15, 10, 10, 10, 10, 10, 10, 10],
+ "connections": {
+  "south": {
+   "map": "ROUTE_2",
+   "mapId": 13,
+   "mapName": "Route2",
+   "offset": 5,
+   "dx": 5,
+   "dy": 18,
+   "copyRect": {"x": 0, "y": 0, "w": 10, "h": 3},
+   "onEnter": {"newY": 0, "xAdd": -10},
+   "macro": {
+    "stripSrc": 0,
+    "stripDest": 554,
+    "stripLength": 10,
+    "connectedWidth": 10,
+    "yAlign": 0,
+    "xAlign": -10,
+    "viewPointer": 17
+   }
+  },
+  "east": {
+   "map": "ROUTE_3",
+   "mapId": 14,
+   "mapName": "Route3",
+   "offset": 4,
+   "dx": 20,
+   "dy": 4,
+   "copyRect": {"x": 0, "y": 0, "w": 3, "h": 9},
+   "onEnter": {"newX": 0, "yAdd": -8},
+   "macro": {"stripSrc": 0, "stripDest": 205, "stripLength": 9, "connectedWidth": 35, "yAlign": -8, "xAlign": 0, "viewPointer": 42}
+  }
+ },
+ "warps": [
+  {"x": 14, "y": 7, "destMap": "MUSEUM_1F", "destMapId": 52, "destMapName": "Museum1F", "destWarp": 1, "destWarpIndex": 0},
+  {"x": 19, "y": 5, "destMap": "MUSEUM_1F", "destMapId": 52, "destMapName": "Museum1F", "destWarp": 3, "destWarpIndex": 2},
+  {"x": 16, "y": 17, "destMap": "PEWTER_GYM", "destMapId": 54, "destMapName": "PewterGym", "destWarp": 1, "destWarpIndex": 0},
+  {"x": 29, "y": 13, "destMap": "PEWTER_NIDORAN_HOUSE", "destMapId": 55, "destMapName": "PewterNidoranHouse", "destWarp": 1, "destWarpIndex": 0},
+  {"x": 23, "y": 17, "destMap": "PEWTER_MART", "destMapId": 56, "destMapName": "PewterMart", "destWarp": 1, "destWarpIndex": 0},
+  {"x": 7, "y": 29, "destMap": "PEWTER_SPEECH_HOUSE", "destMapId": 57, "destMapName": "PewterSpeechHouse", "destWarp": 1, "destWarpIndex": 0},
+  {"x": 13, "y": 25, "destMap": "PEWTER_POKECENTER", "destMapId": 58, "destMapName": "PewterPokecenter", "destWarp": 1, "destWarpIndex": 0}
+ ],
+ "bgEvents": [
+  {"x": 19, "y": 29, "textId": "TEXT_PEWTERCITY_TRAINER_TIPS", "textIndex": 6},
+  {"x": 33, "y": 19, "textId": "TEXT_PEWTERCITY_POLICE_NOTICE_SIGN", "textIndex": 7},
+  {"x": 24, "y": 17, "textId": "TEXT_PEWTERCITY_MART_SIGN", "textIndex": 8},
+  {"x": 14, "y": 25, "textId": "TEXT_PEWTERCITY_POKECENTER_SIGN", "textIndex": 9},
+  {"x": 15, "y": 9, "textId": "TEXT_PEWTERCITY_MUSEUM_SIGN", "textIndex": 10},
+  {"x": 11, "y": 17, "textId": "TEXT_PEWTERCITY_GYM_SIGN", "textIndex": 11},
+  {"x": 25, "y": 23, "textId": "TEXT_PEWTERCITY_SIGN", "textIndex": 12}
+ ],
+ "objectEvents": [
+  {"index": 1, "const": "PEWTERCITY_COOLTRAINER_F", "x": 8, "y": 15, "sprite": "SPRITE_COOLTRAINER_F", "spriteId": 6, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_PEWTERCITY_COOLTRAINER_F", "textIndex": 1},
+  {"index": 2, "const": "PEWTERCITY_COOLTRAINER_M", "x": 17, "y": 25, "sprite": "SPRITE_COOLTRAINER_M", "spriteId": 7, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_PEWTERCITY_COOLTRAINER_M", "textIndex": 2},
+  {"index": 3, "const": "PEWTERCITY_SUPER_NERD1", "x": 27, "y": 17, "sprite": "SPRITE_SUPER_NERD", "spriteId": 12, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_PEWTERCITY_SUPER_NERD1", "textIndex": 3, "toggleIndex": 3, "toggleConst": "TOGGLE_MUSEUM_GUY", "startsHidden": false},
+  {"index": 4, "const": "PEWTERCITY_SUPER_NERD2", "x": 26, "y": 25, "sprite": "SPRITE_SUPER_NERD", "spriteId": 12, "movement": "WALK", "rangeOrDirection": "LEFT_RIGHT", "rangeOrDirectionValue": 2, "behavior": "walk_left_right", "textId": "TEXT_PEWTERCITY_SUPER_NERD2", "textIndex": 4},
+  {"index": 5, "const": "PEWTERCITY_YOUNGSTER", "x": 35, "y": 16, "sprite": "SPRITE_YOUNGSTER", "spriteId": 4, "movement": "STAY", "rangeOrDirection": "DOWN", "rangeOrDirectionValue": 208, "behavior": "face_down", "textId": "TEXT_PEWTERCITY_YOUNGSTER", "textIndex": 5, "toggleIndex": 4, "toggleConst": "TOGGLE_GYM_GUY", "startsHidden": false}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": {
+  "type": "fixed",
+  "set": "SPRITESET_PEWTER_CERULEAN",
+  "sprites": ["SPRITE_YOUNGSTER", "SPRITE_ROCKET", "SPRITE_SUPER_NERD", "SPRITE_HIKER", "SPRITE_MONSTER", "SPRITE_BLUE", "SPRITE_GUARD", "SPRITE_COOLTRAINER_F", "SPRITE_COOLTRAINER_M", "SPRITE_POKE_BALL", "SPRITE_UNUSED_GAMBLER_ASLEEP_2"]
+ },
+ "music": "MUSIC_CITIES1",
+ "wild": null,
+ "townMap": {"x": 2, "y": 3, "group": null},
+ "extraWarpCheck": "warpTileInFront",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/PewterCity.json",
+ "textPointers": "PewterCity_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/PewterCity.asm",
+  "objects": "data/maps/objects/PewterCity.asm",
+  "blocks": "maps/PewterCity.blk",
+  "script": "scripts/PewterCity.asm"
+ },
+ "palette": {"pal": "PAL_PEWTER", "rule": "town"}
+}

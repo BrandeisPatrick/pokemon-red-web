@@ -1,0 +1,40 @@
+{
+  "name": "SFX_BATTLE_1E",
+  "title": "Battle 1E",
+  "kind": "sfx",
+  "bank": 2,
+  "id": 180,
+  "label": "SFX_Battle_1E",
+  "channels": [
+    {
+      "channel": 5,
+      "label": "SFX_Battle_1E_Ch5",
+      "entry": 0,
+      "bytes": 17,
+      "labels": {"SFX_Battle_1E_Ch5": 0},
+      "commands": [
+        {"op": "duty_cycle", "duty": 0},
+        {"op": "pitch_sweep", "length": 3, "change": -2},
+        {"op": "square_note", "length": 4, "volume": 15, "fade": 2, "frequency": 512},
+        {"op": "pitch_sweep", "length": 2, "change": 2},
+        {"op": "square_note", "length": 8, "volume": 14, "fade": 2, "frequency": 512},
+        {"op": "pitch_sweep", "length": 0, "change": 8},
+        {"op": "sound_ret"}
+      ]
+    },
+    {
+      "channel": 8,
+      "label": "SFX_Battle_1E_Ch8",
+      "entry": 0,
+      "bytes": 13,
+      "labels": {"SFX_Battle_1E_Ch8": 0},
+      "commands": [
+        {"op": "noise_note", "length": 0, "volume": 13, "fade": 1, "value": 66},
+        {"op": "noise_note", "length": 4, "volume": 10, "fade": 1, "value": 50},
+        {"op": "noise_note", "length": 0, "volume": 13, "fade": 1, "value": 34},
+        {"op": "noise_note", "length": 6, "volume": 10, "fade": 1, "value": 50},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

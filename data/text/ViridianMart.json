@@ -1,0 +1,126 @@
+{
+ "map": "ViridianMart",
+ "const": "VIRIDIAN_MART",
+ "textPointerTables": [
+  {
+   "label": "ViridianMart_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": null, "label": "ViridianMartClerkSayHiToOakText", "kind": "text", "handler": "text"},
+    {"id": 2, "const": null, "label": "ViridianMartYoungsterText", "kind": "text", "handler": "text"},
+    {"id": 3, "const": null, "label": "ViridianMartCooltrainerMText", "kind": "text", "handler": "text"},
+    {"id": 4, "const": "TEXT_VIRIDIANMART_CLERK_YOU_CAME_FROM_PALLET_TOWN", "label": "ViridianMartClerkYouCameFromPalletTownText", "kind": "text", "handler": "text"},
+    {"id": 5, "const": "TEXT_VIRIDIANMART_CLERK_PARCEL_QUEST", "label": "ViridianMartClerkParcelQuestText", "kind": "text", "handler": "text"}
+   ]
+  },
+  {
+   "label": "ViridianMart_TextPointers2",
+   "primary": false,
+   "entries": [
+    {"id": 1, "const": "TEXT_VIRIDIANMART_CLERK", "label": "ViridianMartClerkText", "kind": "script", "handler": "script_mart"},
+    {"id": 2, "const": "TEXT_VIRIDIANMART_YOUNGSTER", "label": "ViridianMartYoungsterText", "kind": "text", "handler": "text"},
+    {"id": 3, "const": "TEXT_VIRIDIANMART_COOLTRAINER_M", "label": "ViridianMartCooltrainerMText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "ViridianMartClerkText": {
+   "kind": "script",
+   "src": "data/items/marts.asm:5",
+   "commands": [
+    {"cmd": "script", "script": "script_mart", "items": ["POKE_BALL", "ANTIDOTE", "PARLYZ_HEAL", "BURN_HEAL"]}
+   ]
+  },
+  "ViridianMartClerkSayHiToOakText": {
+   "kind": "text",
+   "src": "scripts/ViridianMart.asm:81",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianMartClerkSayHiToOakText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianMartClerkYouCameFromPalletTownText": {
+   "kind": "text",
+   "src": "scripts/ViridianMart.asm:85",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianMartClerkYouCameFromPalletTownText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianMartClerkParcelQuestText": {
+   "kind": "text",
+   "src": "scripts/ViridianMart.asm:89",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianMartClerkParcelQuestText"},
+    {"cmd": "sound", "sound": "sound_get_key_item"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianMartYoungsterText": {
+   "kind": "text",
+   "src": "scripts/ViridianMart.asm:94",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianMartYoungsterText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianMartCooltrainerMText": {
+   "kind": "text",
+   "src": "scripts/ViridianMart.asm:98",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianMartCooltrainerMText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_ViridianMartClerkSayHiToOakText": {
+   "kind": "text",
+   "src": "text/ViridianMart.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Okay! Say hi to"},
+    {"cmd": "line", "str": "PROF.OAK for me!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianMartClerkYouCameFromPalletTownText": {
+   "kind": "text",
+   "src": "text/ViridianMart.asm:7",
+   "commands": [
+    {"cmd": "text", "str": "Hey! You came from"},
+    {"cmd": "line", "str": "PALLET TOWN?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianMartClerkParcelQuestText": {
+   "kind": "text",
+   "src": "text/ViridianMart.asm:12",
+   "commands": [
+    {"cmd": "text", "str": "You know PROF."},
+    {"cmd": "line", "str": "OAK, right?"},
+    {"cmd": "para", "str": "His order came in."},
+    {"cmd": "line", "str": "Will you take it"},
+    {"cmd": "cont", "str": "to him?"},
+    {"cmd": "para", "str": "{PLAYER} got"},
+    {"cmd": "line", "str": "OAK's PARCEL!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_ViridianMartYoungsterText": {
+   "kind": "text",
+   "src": "text/ViridianMart.asm:24",
+   "commands": [
+    {"cmd": "text", "str": "This shop sells"},
+    {"cmd": "line", "str": "many ANTIDOTEs."},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianMartCooltrainerMText": {
+   "kind": "text",
+   "src": "text/ViridianMart.asm:29",
+   "commands": [
+    {"cmd": "text", "str": "No! POTIONs are"},
+    {"cmd": "line", "str": "all sold out."},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

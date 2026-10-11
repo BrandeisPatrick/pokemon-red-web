@@ -1,0 +1,135 @@
+{
+ "map": "PokemonTower2F",
+ "const": "POKEMON_TOWER_2F",
+ "textPointerTables": [
+  {
+   "label": "PokemonTower2F_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_POKEMONTOWER2F_RIVAL", "label": "PokemonTower2FRivalText", "kind": "asm", "handler": "asm"},
+    {"id": 2, "const": "TEXT_POKEMONTOWER2F_CHANNELER", "label": "PokemonTower2FChannelerText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "PokemonTower2FRivalText": {
+   "kind": "asm",
+   "src": "scripts/PokemonTower2F.asm:136",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["PokemonTower2FRivalText.HowsYourDexText", "PokemonTower2FRivalText.WhatBringsYouHereText", "PokemonTower2FRivalText.DefeatedText", "PokemonTower2FRivalText.VictoryText"]
+  },
+  "PokemonTower2FRivalText.WhatBringsYouHereText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower2F.asm:177",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower2FRivalWhatBringsYouHereText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower2FRivalText.DefeatedText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower2F.asm:181",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower2FRivalDefeatedText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower2FRivalText.VictoryText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower2F.asm:185",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower2FRivalVictoryText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower2FRivalText.HowsYourDexText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower2F.asm:189",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower2FRivalHowsYourDexText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower2FChannelerText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower2F.asm:193",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower2FChannelerText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_PokemonTower2FRivalWhatBringsYouHereText": {
+   "kind": "text",
+   "src": "text/PokemonTower2F.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "{RIVAL}: Hey,"},
+    {"cmd": "line", "str": "{PLAYER}! What"},
+    {"cmd": "cont", "str": "brings you here?"},
+    {"cmd": "cont", "str": "Your POKéMON"},
+    {"cmd": "cont", "str": "don't look dead!"},
+    {"cmd": "para", "str": "I can at least"},
+    {"cmd": "line", "str": "make them faint!"},
+    {"cmd": "cont", "str": "Let's go, pal!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonTower2FRivalDefeatedText": {
+   "kind": "text",
+   "src": "text/PokemonTower2F.asm:14",
+   "commands": [
+    {"cmd": "text", "str": "What?"},
+    {"cmd": "line", "str": "You stinker!"},
+    {"cmd": "para", "str": "I took it easy on"},
+    {"cmd": "line", "str": "you too!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_PokemonTower2FRivalVictoryText": {
+   "kind": "text",
+   "src": "text/PokemonTower2F.asm:22",
+   "commands": [
+    {"cmd": "text", "str": "{RIVAL}: Well,"},
+    {"cmd": "line", "str": "look at all your"},
+    {"cmd": "cont", "str": "wimpy POKéMON!"},
+    {"cmd": "para", "str": "Toughen them up a"},
+    {"cmd": "line", "str": "bit more!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_PokemonTower2FRivalHowsYourDexText": {
+   "kind": "text",
+   "src": "text/PokemonTower2F.asm:31",
+   "commands": [
+    {"cmd": "text", "str": "How's your POKéDEX"},
+    {"cmd": "line", "str": "coming, pal?"},
+    {"cmd": "cont", "str": "I just caught a"},
+    {"cmd": "cont", "str": "CUBONE!"},
+    {"cmd": "para", "str": "I can't find the"},
+    {"cmd": "line", "str": "grown-up MAROWAK"},
+    {"cmd": "cont", "str": "yet!"},
+    {"cmd": "para", "str": "I doubt there are"},
+    {"cmd": "line", "str": "any left! Well, I"},
+    {"cmd": "cont", "str": "better get going!"},
+    {"cmd": "cont", "str": "I've got a lot to"},
+    {"cmd": "cont", "str": "accomplish, pal!"},
+    {"cmd": "para", "str": "Smell ya later!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonTower2FChannelerText": {
+   "kind": "text",
+   "src": "text/PokemonTower2F.asm:50",
+   "commands": [
+    {"cmd": "text", "str": "Even we could not"},
+    {"cmd": "line", "str": "identify the"},
+    {"cmd": "cont", "str": "wayward GHOSTs!"},
+    {"cmd": "para", "str": "A SILPH SCOPE"},
+    {"cmd": "line", "str": "might be able to"},
+    {"cmd": "cont", "str": "unmask them."},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

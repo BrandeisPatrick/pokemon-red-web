@@ -1,0 +1,80 @@
+{
+ "map": "SafariZoneEast",
+ "const": "SAFARI_ZONE_EAST",
+ "textPointerTables": [
+  {
+   "label": "SafariZoneEast_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_SAFARIZONEEAST_FULL_RESTORE", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 2, "const": "TEXT_SAFARIZONEEAST_MAX_RESTORE", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 3, "const": "TEXT_SAFARIZONEEAST_CARBOS", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 4, "const": "TEXT_SAFARIZONEEAST_TM_EGG_BOMB", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 5, "const": "TEXT_SAFARIZONEEAST_REST_HOUSE_SIGN", "label": "SafariZoneEastRestHouseSignText", "kind": "text", "handler": "text"},
+    {"id": 6, "const": "TEXT_SAFARIZONEEAST_TRAINER_TIPS", "label": "SafariZoneEastTrainerTipsText", "kind": "text", "handler": "text"},
+    {"id": 7, "const": "TEXT_SAFARIZONEEAST_SIGN", "label": "SafariZoneEastSignText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "PickUpItemText": {
+   "kind": "asm",
+   "src": "home/overworld_text.asm:29",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "SafariZoneEastRestHouseSignText": {
+   "kind": "text",
+   "src": "scripts/SafariZoneEast.asm:15",
+   "commands": [
+    {"cmd": "text_far", "label": "_SafariZoneEastRestHouseSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SafariZoneEastTrainerTipsText": {
+   "kind": "text",
+   "src": "scripts/SafariZoneEast.asm:19",
+   "commands": [
+    {"cmd": "text_far", "label": "_SafariZoneEastTrainerTipsText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SafariZoneEastSignText": {
+   "kind": "text",
+   "src": "scripts/SafariZoneEast.asm:23",
+   "commands": [
+    {"cmd": "text_far", "label": "_SafariZoneEastSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_SafariZoneEastRestHouseSignText": {
+   "kind": "text",
+   "src": "text/SafariZoneEast.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "REST HOUSE"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SafariZoneEastTrainerTipsText": {
+   "kind": "text",
+   "src": "text/SafariZoneEast.asm:6",
+   "commands": [
+    {"cmd": "text", "str": "TRAINER TIPS"},
+    {"cmd": "para", "str": "The remaining time"},
+    {"cmd": "line", "str": "declines only"},
+    {"cmd": "cont", "str": "while you walk!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SafariZoneEastSignText": {
+   "kind": "text",
+   "src": "text/SafariZoneEast.asm:14",
+   "commands": [
+    {"cmd": "text", "str": "CENTER AREA"},
+    {"cmd": "line", "str": "NORTH: AREA 2"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

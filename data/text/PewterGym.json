@@ -1,0 +1,385 @@
+{
+ "map": "PewterGym",
+ "const": "PEWTER_GYM",
+ "textPointerTables": [
+  {
+   "label": "PewterGym_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_PEWTERGYM_BROCK", "label": "PewterGymBrockText", "kind": "asm", "handler": "asm"},
+    {"id": 2, "const": "TEXT_PEWTERGYM_COOLTRAINER_M", "label": "PewterGymCooltrainerMText", "kind": "asm", "handler": "trainer", "trainerHeader": "PewterGymTrainerHeader0"},
+    {"id": 3, "const": "TEXT_PEWTERGYM_GYM_GUIDE", "label": "PewterGymGuideText", "kind": "asm", "handler": "asm"},
+    {"id": 4, "const": "TEXT_PEWTERGYM_BROCK_WAIT_TAKE_THIS", "label": "PewterGymBrockWaitTakeThisText", "kind": "text", "handler": "text"},
+    {"id": 5, "const": "TEXT_PEWTERGYM_RECEIVED_TM34", "label": "PewterGymReceivedTM34Text", "kind": "text", "handler": "text"},
+    {"id": 6, "const": "TEXT_PEWTERGYM_TM34_NO_ROOM", "label": "PewterGymTM34NoRoomText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "PewterGym_Script.CityName": {
+   "kind": "string",
+   "src": "scripts/PewterGym.asm:20",
+   "commands": [
+    {"cmd": "str", "str": "PEWTER CITY"}
+   ]
+  },
+  "PewterGym_Script.LeaderName": {
+   "kind": "string",
+   "src": "scripts/PewterGym.asm:23",
+   "commands": [
+    {"cmd": "str", "str": "BROCK"}
+   ]
+  },
+  "PewterGymBrockText": {
+   "kind": "asm",
+   "src": "scripts/PewterGym.asm:99",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["PewterGymBrockText.PostBattleAdviceText", "PewterGymBrockText.PreBattleText", "PewterGymBrockReceivedBoulderBadgeText"]
+  },
+  "PewterGymBrockText.PreBattleText": {
+   "kind": "text",
+   "src": "scripts/PewterGym.asm:135",
+   "commands": [
+    {"cmd": "text_far", "label": "_PewterGymBrockPreBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PewterGymBrockText.PostBattleAdviceText": {
+   "kind": "text",
+   "src": "scripts/PewterGym.asm:139",
+   "commands": [
+    {"cmd": "text_far", "label": "_PewterGymBrockPostBattleAdviceText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PewterGymBrockWaitTakeThisText": {
+   "kind": "text",
+   "src": "scripts/PewterGym.asm:143",
+   "commands": [
+    {"cmd": "text_far", "label": "_PewterGymBrockWaitTakeThisText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PewterGymReceivedTM34Text": {
+   "kind": "text",
+   "src": "scripts/PewterGym.asm:147",
+   "commands": [
+    {"cmd": "text_far", "label": "_PewterGymReceivedTM34Text"},
+    {"cmd": "sound", "sound": "sound_get_item_1"},
+    {"cmd": "text_far", "label": "_TM34ExplanationText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PewterGymTM34NoRoomText": {
+   "kind": "text",
+   "src": "scripts/PewterGym.asm:153",
+   "commands": [
+    {"cmd": "text_far", "label": "_PewterGymTM34NoRoomText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PewterGymBrockReceivedBoulderBadgeText": {
+   "kind": "text",
+   "src": "scripts/PewterGym.asm:157",
+   "commands": [
+    {"cmd": "text_far", "label": "_PewterGymBrockReceivedBoulderBadgeText"},
+    {"cmd": "sound", "sound": "sound_level_up"},
+    {"cmd": "text_far", "label": "_PewterGymBrockBoulderBadgeInfoText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PewterGymCooltrainerMText": {
+   "kind": "asm",
+   "src": "scripts/PewterGym.asm:163",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "PewterGymTrainerHeader0"
+  },
+  "PewterGymCooltrainerMBattleText": {
+   "kind": "text",
+   "src": "scripts/PewterGym.asm:169",
+   "commands": [
+    {"cmd": "text_far", "label": "_PewterGymCooltrainerMBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PewterGymCooltrainerMEndBattleText": {
+   "kind": "text",
+   "src": "scripts/PewterGym.asm:173",
+   "commands": [
+    {"cmd": "text_far", "label": "_PewterGymCooltrainerMEndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PewterGymCooltrainerMAfterBattleText": {
+   "kind": "text",
+   "src": "scripts/PewterGym.asm:177",
+   "commands": [
+    {"cmd": "text_far", "label": "_PewterGymCooltrainerMAfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PewterGymGuideText": {
+   "kind": "asm",
+   "src": "scripts/PewterGym.asm:181",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["PewterGymGuidePreAdviceText", "PewterGymGuideBeginAdviceText", "PewterGymGuideFreeServiceText", "PewterGymGuideAdviceText", "PewterGymGuidePostBattleText"]
+  },
+  "PewterGymGuidePreAdviceText": {
+   "kind": "text",
+   "src": "scripts/PewterGym.asm:208",
+   "commands": [
+    {"cmd": "text_far", "label": "_PewterGymGuidePreAdviceText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PewterGymGuideBeginAdviceText": {
+   "kind": "text",
+   "src": "scripts/PewterGym.asm:212",
+   "commands": [
+    {"cmd": "text_far", "label": "_PewterGymGuideBeginAdviceText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PewterGymGuideAdviceText": {
+   "kind": "text",
+   "src": "scripts/PewterGym.asm:216",
+   "commands": [
+    {"cmd": "text_far", "label": "_PewterGymGuideAdviceText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PewterGymGuideFreeServiceText": {
+   "kind": "text",
+   "src": "scripts/PewterGym.asm:220",
+   "commands": [
+    {"cmd": "text_far", "label": "_PewterGymGuideFreeServiceText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PewterGymGuidePostBattleText": {
+   "kind": "text",
+   "src": "scripts/PewterGym.asm:224",
+   "commands": [
+    {"cmd": "text_far", "label": "_PewterGymGuidePostBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_PewterGymBrockPreBattleText": {
+   "kind": "text",
+   "src": "text/PewterGym.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "I'm BROCK!"},
+    {"cmd": "line", "str": "I'm PEWTER's GYM"},
+    {"cmd": "cont", "str": "LEADER!"},
+    {"cmd": "para", "str": "I believe in rock"},
+    {"cmd": "line", "str": "hard defense and"},
+    {"cmd": "cont", "str": "determination!"},
+    {"cmd": "para", "str": "That's why my"},
+    {"cmd": "line", "str": "POKéMON are all"},
+    {"cmd": "cont", "str": "the rock-type!"},
+    {"cmd": "para", "str": "Do you still want"},
+    {"cmd": "line", "str": "to challenge me?"},
+    {"cmd": "cont", "str": "Fine then! Show"},
+    {"cmd": "cont", "str": "me your best!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PewterGymBrockPostBattleAdviceText": {
+   "kind": "text",
+   "src": "text/PewterGym_2.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "There are all"},
+    {"cmd": "line", "str": "kinds of trainers"},
+    {"cmd": "cont", "str": "in the world!"},
+    {"cmd": "para", "str": "You appear to be"},
+    {"cmd": "line", "str": "very gifted as a"},
+    {"cmd": "cont", "str": "POKéMON trainer!"},
+    {"cmd": "para", "str": "Go to the GYM in"},
+    {"cmd": "line", "str": "CERULEAN and test"},
+    {"cmd": "cont", "str": "your abilities!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PewterGymBrockWaitTakeThisText": {
+   "kind": "text",
+   "src": "text/PewterGym_2.asm:16",
+   "commands": [
+    {"cmd": "text", "str": "Wait! Take this"},
+    {"cmd": "line", "str": "with you!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PewterGymReceivedTM34Text": {
+   "kind": "text",
+   "src": "text/PewterGym_2.asm:21",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} received"},
+    {"cmd": "line", "str": "TM34!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_TM34ExplanationText": {
+   "kind": "text",
+   "src": "text/PewterGym_2.asm:26",
+   "commands": [
+    {"cmd": "text", "str": ""},
+    {"cmd": "para", "str": "A TM contains a"},
+    {"cmd": "line", "str": "technique that"},
+    {"cmd": "cont", "str": "can be taught to"},
+    {"cmd": "cont", "str": "POKéMON!"},
+    {"cmd": "para", "str": "A TM is good only"},
+    {"cmd": "line", "str": "once! So when you"},
+    {"cmd": "cont", "str": "use one to teach"},
+    {"cmd": "cont", "str": "a new technique,"},
+    {"cmd": "cont", "str": "pick the POKéMON"},
+    {"cmd": "cont", "str": "carefully!"},
+    {"cmd": "para", "str": "TM34 contains"},
+    {"cmd": "line", "str": "BIDE!"},
+    {"cmd": "para", "str": "Your POKéMON will"},
+    {"cmd": "line", "str": "absorb damage in"},
+    {"cmd": "cont", "str": "battle then pay"},
+    {"cmd": "cont", "str": "it back double!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PewterGymTM34NoRoomText": {
+   "kind": "text",
+   "src": "text/PewterGym_2.asm:50",
+   "commands": [
+    {"cmd": "text", "str": "You don't have"},
+    {"cmd": "line", "str": "room for this!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PewterGymBrockReceivedBoulderBadgeText": {
+   "kind": "text",
+   "src": "text/PewterGym_2.asm:55",
+   "commands": [
+    {"cmd": "text", "str": "I took"},
+    {"cmd": "line", "str": "you for granted."},
+    {"cmd": "para", "str": "As proof of your"},
+    {"cmd": "line", "str": "victory, here's"},
+    {"cmd": "cont", "str": "the BOULDERBADGE!"},
+    {"cmd": "para", "str": "{PLAYER} received"},
+    {"cmd": "line", "str": "the BOULDERBADGE!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_PewterGymBrockBoulderBadgeInfoText": {
+   "kind": "text",
+   "src": "text/PewterGym_2.asm:67",
+   "commands": [
+    {"cmd": "text", "str": ""},
+    {"cmd": "para", "str": "That's an official"},
+    {"cmd": "line", "str": "POKéMON LEAGUE"},
+    {"cmd": "cont", "str": "BADGE!"},
+    {"cmd": "para", "str": "Its bearer's"},
+    {"cmd": "line", "str": "POKéMON become"},
+    {"cmd": "cont", "str": "more powerful!"},
+    {"cmd": "para", "str": "The technique"},
+    {"cmd": "line", "str": "FLASH can now be"},
+    {"cmd": "cont", "str": "used any time!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_PewterGymCooltrainerMBattleText": {
+   "kind": "text",
+   "src": "text/PewterGym_2.asm:83",
+   "commands": [
+    {"cmd": "text", "str": "Stop right there,"},
+    {"cmd": "line", "str": "kid!"},
+    {"cmd": "para", "str": "You're still light"},
+    {"cmd": "line", "str": "years from facing"},
+    {"cmd": "cont", "str": "BROCK!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PewterGymCooltrainerMEndBattleText": {
+   "kind": "text",
+   "src": "text/PewterGym_2.asm:92",
+   "commands": [
+    {"cmd": "text", "str": "Darn!"},
+    {"cmd": "para", "str": "Light years isn't"},
+    {"cmd": "line", "str": "time! It measures"},
+    {"cmd": "cont", "str": "distance!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_PewterGymCooltrainerMAfterBattleText": {
+   "kind": "text",
+   "src": "text/PewterGym_2.asm:100",
+   "commands": [
+    {"cmd": "text", "str": "You're pretty hot,"},
+    {"cmd": "line", "str": "but not as hot"},
+    {"cmd": "cont", "str": "as BROCK!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PewterGymGuidePreAdviceText": {
+   "kind": "text",
+   "src": "text/PewterGym_2.asm:106",
+   "commands": [
+    {"cmd": "text", "str": "Hiya! I can tell"},
+    {"cmd": "line", "str": "you have what it"},
+    {"cmd": "cont", "str": "takes to become a"},
+    {"cmd": "cont", "str": "POKéMON champ!"},
+    {"cmd": "para", "str": "I'm no trainer,"},
+    {"cmd": "line", "str": "but I can tell"},
+    {"cmd": "cont", "str": "you how to win!"},
+    {"cmd": "para", "str": "Let me take you"},
+    {"cmd": "line", "str": "to the top!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PewterGymGuideBeginAdviceText": {
+   "kind": "text",
+   "src": "text/PewterGym_2.asm:120",
+   "commands": [
+    {"cmd": "text", "str": "All right! Let's"},
+    {"cmd": "line", "str": "get happening!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_PewterGymGuideAdviceText": {
+   "kind": "text",
+   "src": "text/PewterGym_2.asm:125",
+   "commands": [
+    {"cmd": "text", "str": "The 1st POKéMON"},
+    {"cmd": "line", "str": "out in a match is"},
+    {"cmd": "cont", "str": "at the top of the"},
+    {"cmd": "cont", "str": "POKéMON LIST!"},
+    {"cmd": "para", "str": "By changing the"},
+    {"cmd": "line", "str": "order of POKéMON,"},
+    {"cmd": "cont", "str": "matches could be"},
+    {"cmd": "cont", "str": "made easier!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PewterGymGuideFreeServiceText": {
+   "kind": "text",
+   "src": "text/PewterGym_2.asm:137",
+   "commands": [
+    {"cmd": "text", "str": "It's a free"},
+    {"cmd": "line", "str": "service! Let's"},
+    {"cmd": "cont", "str": "get happening!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_PewterGymGuidePostBattleText": {
+   "kind": "text",
+   "src": "text/PewterGym_2.asm:143",
+   "commands": [
+    {"cmd": "text", "str": "Just as I thought!"},
+    {"cmd": "line", "str": "You're POKéMON"},
+    {"cmd": "cont", "str": "champ material!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

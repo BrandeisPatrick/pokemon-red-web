@@ -1,0 +1,22 @@
+{
+  "name": "SFX_BATTLE_0E",
+  "title": "Battle 0E",
+  "kind": "sfx",
+  "bank": 2,
+  "id": 164,
+  "label": "SFX_Battle_0E",
+  "channels": [
+    {
+      "channel": 8,
+      "label": "SFX_Battle_0E_Ch8",
+      "entry": 0,
+      "bytes": 7,
+      "labels": {"SFX_Battle_0E_Ch8": 0},
+      "commands": [
+        {"op": "noise_note", "length": 15, "volume": 9, "fade": -7, "value": 35},
+        {"op": "noise_note", "length": 8, "volume": 15, "fade": 1, "value": 33},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

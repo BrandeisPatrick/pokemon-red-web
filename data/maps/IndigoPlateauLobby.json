@@ -1,0 +1,48 @@
+{
+ "id": 174,
+ "const": "INDIGO_PLATEAU_LOBBY",
+ "name": "IndigoPlateauLobby",
+ "displayName": "INDIGO PLATEAU",
+ "width": 8,
+ "height": 6,
+ "tileset": "MART",
+ "tilesetId": 2,
+ "tilesetFile": "data/tilesets/Mart.json",
+ "isOutside": false,
+ "borderBlock": 0,
+ "blocks": [19, 18, 12, 12, 13, 0, 0, 0, 22, 15, 30, 31, 31, 36, 36, 36, 24, 15, 32, 16, 1, 2, 13, 13, 23, 15, 33, 4, 5, 7, 34, 35, 29, 29, 15, 15, 15, 15, 15, 27, 25, 15, 15, 10, 11, 15, 14, 14],
+ "connections": {},
+ "warps": [
+  {"x": 7, "y": 11, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 1, "destWarpIndex": 0},
+  {"x": 8, "y": 11, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 2, "destWarpIndex": 1},
+  {"x": 8, "y": 0, "destMap": "LORELEIS_ROOM", "destMapId": 245, "destMapName": "LoreleisRoom", "destWarp": 1, "destWarpIndex": 0}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "INDIGOPLATEAULOBBY_NURSE", "x": 7, "y": 5, "sprite": "SPRITE_NURSE", "spriteId": 41, "movement": "STAY", "rangeOrDirection": "DOWN", "rangeOrDirectionValue": 208, "behavior": "face_down", "textId": "TEXT_INDIGOPLATEAULOBBY_NURSE", "textIndex": 1},
+  {"index": 2, "const": "INDIGOPLATEAULOBBY_GYM_GUIDE", "x": 4, "y": 9, "sprite": "SPRITE_GYM_GUIDE", "spriteId": 36, "movement": "STAY", "rangeOrDirection": "RIGHT", "rangeOrDirectionValue": 211, "behavior": "face_right", "textId": "TEXT_INDIGOPLATEAULOBBY_GYM_GUIDE", "textIndex": 2},
+  {"index": 3, "const": "INDIGOPLATEAULOBBY_COOLTRAINER_F", "x": 5, "y": 1, "sprite": "SPRITE_COOLTRAINER_F", "spriteId": 6, "movement": "STAY", "rangeOrDirection": "DOWN", "rangeOrDirectionValue": 208, "behavior": "face_down", "textId": "TEXT_INDIGOPLATEAULOBBY_COOLTRAINER_F", "textIndex": 3},
+  {"index": 4, "const": "INDIGOPLATEAULOBBY_CLERK", "x": 0, "y": 5, "sprite": "SPRITE_CLERK", "spriteId": 38, "movement": "STAY", "rangeOrDirection": "RIGHT", "rangeOrDirectionValue": 211, "behavior": "face_right", "textId": "TEXT_INDIGOPLATEAULOBBY_CLERK", "textIndex": 4},
+  {"index": 5, "const": "INDIGOPLATEAULOBBY_LINK_RECEPTIONIST", "x": 13, "y": 6, "sprite": "SPRITE_LINK_RECEPTIONIST", "spriteId": 42, "movement": "STAY", "rangeOrDirection": "DOWN", "rangeOrDirectionValue": 208, "behavior": "face_down", "textId": "TEXT_INDIGOPLATEAULOBBY_LINK_RECEPTIONIST", "textIndex": 5}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [
+  {"x": 15, "y": 7, "routine": "OpenPokemonCenterPC", "arg": "SPRITE_FACING_UP", "argValue": 4, "kind": "event"}
+ ],
+ "spriteSet": null,
+ "music": "MUSIC_INDIGO_PLATEAU",
+ "wild": null,
+ "townMap": {"x": 0, "y": 2, "group": "INDIGO_PLATEAU"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/IndigoPlateauLobby.json",
+ "textPointers": "IndigoPlateauLobby_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/IndigoPlateauLobby.asm",
+  "objects": "data/maps/objects/IndigoPlateauLobby.asm",
+  "blocks": "maps/IndigoPlateauLobby.blk",
+  "script": "scripts/IndigoPlateauLobby.asm"
+ },
+ "lastMapCandidates": ["INDIGO_PLATEAU"],
+ "palette": {"pal": "PAL_INDIGO", "rule": "lastMap", "viaLastMap": "INDIGO_PLATEAU"}
+}

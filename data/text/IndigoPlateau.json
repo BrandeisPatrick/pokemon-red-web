@@ -1,0 +1,8 @@
+{
+ "map": "IndigoPlateau",
+ "const": "INDIGO_PLATEAU",
+ "textPointerTables": [
+  {"label": "IndigoPlateau_TextPointers", "primary": true, "entries": []}
+ ],
+ "texts": {}
+}

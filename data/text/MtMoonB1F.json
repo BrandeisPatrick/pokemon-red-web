@@ -1,0 +1,31 @@
+{
+ "map": "MtMoonB1F",
+ "const": "MT_MOON_B1F",
+ "textPointerTables": [
+  {
+   "label": "MtMoonB1F_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_MTMOONB1F_UNUSED", "label": "MtMoonB1FUnusedText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "MtMoonB1FUnusedText": {
+   "kind": "text",
+   "src": "scripts/MtMoonB1F.asm:10",
+   "commands": [
+    {"cmd": "text_far", "label": "_MtMoonB1FUnusedText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_MtMoonB1FUnusedText": {
+   "kind": "text",
+   "src": "text/MtMoonB1F.asm:2",
+   "commands": [
+    {"cmd": "text", "str": ""},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": 175,
+ "const": "COPYCATS_HOUSE_1F",
+ "name": "CopycatsHouse1F",
+ "displayName": "SAFFRON CITY",
+ "width": 4,
+ "height": 4,
+ "tileset": "REDS_HOUSE_1",
+ "tilesetId": 1,
+ "tilesetFile": "data/tilesets/RedsHouse1.json",
+ "isOutside": false,
+ "borderBlock": 10,
+ "blocks": [4, 9, 5, 7, 15, 15, 15, 15, 15, 1, 2, 15, 15, 11, 15, 15],
+ "connections": {},
+ "warps": [
+  {"x": 2, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 1, "destWarpIndex": 0},
+  {"x": 3, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 1, "destWarpIndex": 0},
+  {"x": 7, "y": 1, "destMap": "COPYCATS_HOUSE_2F", "destMapId": 176, "destMapName": "CopycatsHouse2F", "destWarp": 1, "destWarpIndex": 0}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "COPYCATSHOUSE1F_MIDDLE_AGED_WOMAN", "x": 2, "y": 2, "sprite": "SPRITE_MIDDLE_AGED_WOMAN", "spriteId": 28, "movement": "STAY", "rangeOrDirection": "DOWN", "rangeOrDirectionValue": 208, "behavior": "face_down", "textId": "TEXT_COPYCATSHOUSE1F_MIDDLE_AGED_WOMAN", "textIndex": 1},
+  {"index": 2, "const": "COPYCATSHOUSE1F_MIDDLE_AGED_MAN", "x": 5, "y": 4, "sprite": "SPRITE_MIDDLE_AGED_MAN", "spriteId": 10, "movement": "STAY", "rangeOrDirection": "LEFT", "rangeOrDirectionValue": 210, "behavior": "face_left", "textId": "TEXT_COPYCATSHOUSE1F_MIDDLE_AGED_MAN", "textIndex": 2},
+  {"index": 3, "const": "COPYCATSHOUSE1F_CHANSEY", "x": 1, "y": 4, "sprite": "SPRITE_FAIRY", "spriteId": 56, "movement": "WALK", "rangeOrDirection": "UP_DOWN", "rangeOrDirectionValue": 1, "behavior": "walk_up_down", "textId": "TEXT_COPYCATSHOUSE1F_CHANSEY", "textIndex": 3}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_CITIES1",
+ "wild": null,
+ "townMap": {"x": 10, "y": 5, "group": "SAFFRON_CITY"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/CopycatsHouse1F.json",
+ "textPointers": "CopycatsHouse1F_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/CopycatsHouse1F.asm",
+  "objects": "data/maps/objects/CopycatsHouse1F.asm",
+  "blocks": "maps/CopycatsHouse1F.blk",
+  "script": "scripts/CopycatsHouse1F.asm"
+ },
+ "lastMapCandidates": ["SAFFRON_CITY"],
+ "palette": {"pal": "PAL_SAFFRON", "rule": "lastMap", "viaLastMap": "SAFFRON_CITY"}
+}

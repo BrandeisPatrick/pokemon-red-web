@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Intro Test Bench</title>
+<link rel="icon" href="data:,">
+<style>
+  :root {
+    --bg: #111418; --panel: #1b2026; --line: #2d353e; --text: #dde4ea; --muted: #8c97a3;
+    --accent: #9bbc0f; --accent-ink: #0f380f; --warn: #f0a050;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; min-height: 100%; background: var(--bg); color: var(--text); font: 14px/1.45 system-ui, sans-serif; }
+  main { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 16px; padding: 16px; min-height: 100vh; }
+  @media (max-width: 860px) { main { grid-template-columns: 1fr; } }
+  .stage { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; min-width: 0; }
+  #screen { display: block; image-rendering: pixelated; image-rendering: crisp-edges; background: #000; max-width: 100%; }
+  .status { font: 12px ui-monospace, monospace; color: var(--muted); }
+  aside { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 12px; display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+  h1 { font-size: 15px; margin: 0; color: #e8f8d8; }
+  h2 { font-size: 12px; margin: 0 0 6px; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+  button, select { background: #252c34; color: var(--text); border: 1px solid #3a4550; border-radius: 6px; padding: 5px 8px; font: inherit; cursor: pointer; text-align: left; }
+  button:hover, select:hover { border-color: var(--accent); }
+  button.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); font-weight: 600; }
+  label { display: flex; gap: 6px; align-items: center; color: var(--muted); }
+  .keys { font-size: 12px; color: var(--muted); }
+  .keys kbd { font: 11px ui-monospace, monospace; background: #0d1014; border: 1px solid #333c45; border-radius: 4px; padding: 0 4px; color: var(--text); }
+  #result { font: 13px ui-monospace, monospace; color: var(--accent); min-height: 1.4em; }
+  #log { font: 11px/1.4 ui-monospace, monospace; color: var(--muted); background: #0d1014; border: 1px solid var(--line); border-radius: 6px; padding: 6px; height: 220px; overflow: auto; white-space: pre-wrap; margin: 0; }
+  #log .hook { color: var(--accent); } #log .warn { color: var(--warn); }
+</style>
+</head>
+<body>
+<main>
+  <section class="stage">
+    <canvas id="screen" width="160" height="144" aria-label="Game Boy screen"></canvas>
+    <div class="status" id="status">loading…</div>
+    <div id="result"></div>
+  </section>
+  <aside>
+    <h1>Pokémon Red — start sequence</h1>
+    <div>
+      <h2>Jump to</h2>
+      <div class="grid" id="jumps"></div>
+    </div>
+    <div>
+      <h2>Stub hooks</h2>
+      <label><input type="checkbox" id="hasSave" checked> a save exists (CONTINUE)</label>
+      <label>palette <select id="palette"></select></label>
+      <div class="grid" style="margin-top:6px">
+        <button id="audioBtn">Start audio</button>
+        <button id="muteBtn">Mute</button>
+      </div>
+    </div>
+    <div class="keys">
+      <kbd>←↑→↓</kbd>/<kbd>WASD</kbd> D-pad · <kbd>Z</kbd>/<kbd>Enter</kbd> A · <kbd>X</kbd>/<kbd>Backspace</kbd> B ·
+      <kbd>Shift</kbd> Start · <kbd>Tab</kbd> Select · hold Up+Tab+X on the title for the clear-save dialog
+    </div>
+    <div>
+      <h2>Hook log</h2>
+      <pre id="log"></pre>
+    </div>
+  </aside>
+</main>
+<script type="module">
+import { FrameBuffer } from './src/engine/framebuffer.js';
+import { Palette, PALETTES } from './src/engine/palette.js';
+import { Input } from './src/engine/input.js';
+import { Rng } from './src/engine/rng.js';
+import { Loop } from './src/engine/loop.js';
+import { SceneStack } from './src/engine/scene.js';
+import { Assets } from './src/engine/assets.js';
+import { Font } from './src/engine/font.js';
+import { Sfx } from './src/engine/sfx.js';
+import { createIntroContext, startIntroAt, INTRO_SCENES } from './src/intro/index.js';
+import { loadIntroData, iconPic } from './src/intro/data.js';
+
+const $ = (id) => document.getElementById(id);
+const logEl = $('log');
+function log(msg, cls = '') {
+  const line = document.createElement('div');
+  if (cls) line.className = cls;
+  line.textContent = msg;
+  logEl.appendChild(line);
+  while (logEl.childNodes.length > 300) logEl.removeChild(logEl.firstChild);
+  logEl.scrollTop = logEl.scrollHeight;
+}
+
+// ------------------------------------------------------------------ engine services
+const canvas = $('screen');
+const fb = new FrameBuffer();
+fb.attachCanvas(canvas, { getViewport: () => ({ width: Math.min(window.innerWidth - 32, window.innerWidth > 860 ? window.innerWidth - 400 : 1e9), height: window.innerHeight - 110 }) });
+const palette = new Palette(PALETTES.dmg);
+const input = new Input().attach(window);
+const rng = new Rng();
+const assets = new Assets();
+const sfx = new Sfx();
+const game = { fb, input, palette, rng, assets, sfx, font: null, scenes: null, loop: null, options: {} };
+game.scenes = new SceneStack(game);
+window.game = game;
+
+// ------------------------------------------------------------------ audio (optional)
+let audio = null;
+let audioReady = false;
+async function startAudio() {
+  if (audioReady) return;
+  try {
+    const mod = await import('./src/audio/audio.js');
+    audio = audio || mod.createAudio({ volume: 0.6 });
+    await audio.init();
+    audioReady = true;
+    $('audioBtn').textContent = 'Audio on';
+    log('audio started');
+  } catch (e) {
+    log(`audio unavailable: ${e.message}`, 'warn');
+  }
+}
+for (const type of ['keydown', 'pointerdown']) window.addEventListener(type, () => { sfx.unlock(); startAudio(); }, { capture: true });
+$('audioBtn').onclick = () => startAudio();
+$('muteBtn').onclick = () => { if (audio) $('muteBtn').textContent = audio.mute() ? 'Unmute' : 'Mute'; };
+
+/** The hooks.audio object: forwards to src/audio when it runs, logs every call. */
+const audioHook = {
+  playMusic: (n) => { log(`music ${n}`); return audioReady ? audio.playMusic(n) : undefined; },
+  stopMusic: () => { log('stopMusic'); return audioReady ? audio.stopMusic() : undefined; },
+  fadeOutMusic: (f) => { log(`fadeOutMusic ${f}`); return audioReady ? audio.fadeOutMusic(f) : undefined; },
+  playSfx: (n) => { if (n !== 'SFX_PRESS_AB') log(`sfx ${n}`); if (audioReady) return audio.playSfx(n); if (n === 'SFX_PRESS_AB') sfx.play('press'); return undefined; },
+  playCry: (d) => { log(`cry #${d}`); return audioReady ? audio.playCry(d) : undefined; },
+  waitForSfx: () => (audioReady ? audio.waitForSfx() : undefined),
+};
+
+// ------------------------------------------------------------------ stub hooks
+const options = { textSpeed: 'mid', battleAnimations: true, battleStyle: 'shift' };
+const FAKE_SAVE = { playerName: 'RED', badges: 3, dexOwned: 42, playTimeFrames: ((12 * 60 + 7) * 60 + 30) * 60 };
+const hooks = {
+  audio: audioHook,
+  options,
+  saveInfo: () => ($('hasSave').checked ? FAKE_SAVE : null),
+  clearSave: () => { log('hooks.clearSave()', 'hook'); $('hasSave').checked = false; },
+  onNewGame: (names) => {
+    log(`hooks.onNewGame(${JSON.stringify(names)})`, 'hook');
+    $('result').textContent = `onNewGame → player ${names.playerName}, rival ${names.rivalName}`;
+  },
+  onContinue: () => {
+    log('hooks.onContinue()', 'hook');
+    $('result').textContent = 'onContinue →';
+  },
+};
+
+let ctx = null;
+let current = null;
+let jumpId = 0;
+function jump(id, params) {
+  const token = ++jumpId;
+  game.scenes.clear();
+  $('result').textContent = '';
+  startIntroAt(ctx, id, { params });
+  const top = game.scenes.top;
+  // options / naming opened on their own return to the main menu when they finish
+  // (unless another jump replaced them first)
+  if (id === 'options') top.finished.then(() => { if (token !== jumpId) return; log(`options = ${JSON.stringify(options)}`, 'hook'); jump('mainMenu'); });
+  if (id === 'naming') top.finished.then((name) => { if (token !== jumpId) return; log(`naming screen → ${JSON.stringify(name)}`, 'hook'); jump('mainMenu'); $('result').textContent = `naming screen returned ${JSON.stringify(name)}`; });
+}
+window.jump = jump;
+
+const JUMPS = [
+  ['Copyright', 'splash'], ['Game Freak', 'gamefreak'], ['Intro fight', 'fight'], ['Title', 'title'],
+  ['Main menu', 'mainMenu'], ['Options', 'options'], ["Oak's speech", 'oakSpeech'], ['Clear save', 'clearSave'],
+  ['Name: player', 'naming', { kind: 'player' }], ['Name: rival', 'naming', { kind: 'rival' }],
+  ['Nickname', 'naming:nick'], ['Box name', 'naming', { kind: 'box' }],
+];
+for (const [label, id, params] of JUMPS) {
+  const b = document.createElement('button');
+  b.textContent = label;
+  b.onclick = async () => {
+    if (id === 'naming:nick') {
+      const icon = await iconPic(ctx.data, 25);
+      jump('naming', { kind: 'nickname', speciesName: 'PIKACHU', icon, fallback: 'PIKACHU' });
+    } else jump(id, params);
+    b.blur();
+  };
+  $('jumps').appendChild(b);
+}
+for (const name of Object.keys(PALETTES)) {
+  const o = document.createElement('option');
+  o.value = o.textContent = name;
+  $('palette').appendChild(o);
+}
+$('palette').onchange = (e) => { palette.setColors(e.target.value); e.target.blur(); };
+
+/** Debug helper for the browser console: press a button for n frames. */
+window.press = (button, frames = 2) => { input.press(button); setTimeout(() => input.release(button), frames * 17); };
+
+// ------------------------------------------------------------------ boot
+async function boot() {
+  game.font = await Font.load(assets);
+  const data = await loadIntroData(assets);
+  ctx = createIntroContext(game, hooks, { data });
+  ctx.onScene = (s) => { current = s.id; log(`scene ${s.id} (frame ${game.loop ? game.loop.frame : 0})`); };
+  window.intro = ctx;
+  game.loop = new Loop({
+    update(frame) {
+      input.sample();
+      game.scenes.update(frame, input);
+    },
+    render(frame) {
+      fb.clear(0);
+      game.scenes.draw(fb);
+      fb.present(palette);
+      $('status').textContent = `scene ${current ?? '-'} · frame ${frame} · text speed ${options.textSpeed}, animations ${options.battleAnimations ? 'on' : 'off'}, style ${options.battleStyle}`;
+    },
+  });
+  jump('splash');
+  game.loop.start();
+  log(`ready: ${INTRO_SCENES.join(', ')}`);
+}
+boot().catch((err) => {
+  console.error('[intro-test] boot failed:', err);
+  $('status').textContent = `boot failed: ${err.message}`;
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+ "map": "SilphCoElevator",
+ "const": "SILPH_CO_ELEVATOR",
+ "textPointerTables": [
+  {
+   "label": "SilphCoElevator_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_SILPHCOELEVATOR_ELEVATOR", "label": "SilphCoElevatorElevatorText", "kind": "asm", "handler": "asm"}
+   ]
+  }
+ ],
+ "texts": {
+  "SilphCoElevatorElevatorText": {
+   "kind": "asm",
+   "src": "scripts/SilphCoElevator.asm:84",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  }
+ }
+}

@@ -1,0 +1,632 @@
+{
+ "map": "CeruleanCity",
+ "const": "CERULEAN_CITY",
+ "textPointerTables": [
+  {
+   "label": "CeruleanCity_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_CERULEANCITY_RIVAL", "label": "CeruleanCityRivalText", "kind": "asm", "handler": "asm"},
+    {"id": 2, "const": "TEXT_CERULEANCITY_ROCKET", "label": "CeruleanCityRocketText", "kind": "asm", "handler": "asm"},
+    {"id": 3, "const": "TEXT_CERULEANCITY_COOLTRAINER_M", "label": "CeruleanCityCooltrainerMText", "kind": "text", "handler": "text"},
+    {"id": 4, "const": "TEXT_CERULEANCITY_SUPER_NERD1", "label": "CeruleanCitySuperNerd1Text", "kind": "text", "handler": "text"},
+    {"id": 5, "const": "TEXT_CERULEANCITY_SUPER_NERD2", "label": "CeruleanCitySuperNerd2Text", "kind": "text", "handler": "text"},
+    {"id": 6, "const": "TEXT_CERULEANCITY_GUARD1", "label": "CeruleanCityGuardText", "kind": "text", "handler": "text"},
+    {"id": 7, "const": "TEXT_CERULEANCITY_COOLTRAINER_F1", "label": "CeruleanCityCooltrainerF1Text", "kind": "asm", "handler": "asm"},
+    {"id": 8, "const": "TEXT_CERULEANCITY_SLOWBRO", "label": "CeruleanCitySlowbroText", "kind": "asm", "handler": "asm"},
+    {"id": 9, "const": "TEXT_CERULEANCITY_COOLTRAINER_F2", "label": "CeruleanCityCooltrainerF2Text", "kind": "text", "handler": "text"},
+    {"id": 10, "const": "TEXT_CERULEANCITY_SUPER_NERD3", "label": "CeruleanCitySuperNerd3Text", "kind": "text", "handler": "text"},
+    {"id": 11, "const": "TEXT_CERULEANCITY_GUARD2", "label": "CeruleanCityGuardText", "kind": "text", "handler": "text"},
+    {"id": 12, "const": "TEXT_CERULEANCITY_SIGN", "label": "CeruleanCitySignText", "kind": "text", "handler": "text"},
+    {"id": 13, "const": "TEXT_CERULEANCITY_TRAINER_TIPS", "label": "CeruleanCityTrainerTipsText", "kind": "text", "handler": "text"},
+    {"id": 14, "const": "TEXT_CERULEANCITY_MART_SIGN", "label": "MartSignText", "kind": "text", "handler": "text"},
+    {"id": 15, "const": "TEXT_CERULEANCITY_POKECENTER_SIGN", "label": "PokeCenterSignText", "kind": "text", "handler": "text"},
+    {"id": 16, "const": "TEXT_CERULEANCITY_BIKESHOP_SIGN", "label": "CeruleanCityBikeShopSign", "kind": "text", "handler": "text"},
+    {"id": 17, "const": "TEXT_CERULEANCITY_GYM_SIGN", "label": "CeruleanCityGymSign", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "_MartSignText": {
+   "kind": "text",
+   "src": "data/text/text_1.asm:50",
+   "commands": [
+    {"cmd": "text", "str": "All your item"},
+    {"cmd": "line", "str": "needs fulfilled!"},
+    {"cmd": "cont", "str": "POKéMON MART"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokeCenterSignText": {
+   "kind": "text",
+   "src": "data/text/text_1.asm:56",
+   "commands": [
+    {"cmd": "text", "str": "Heal Your POKéMON!"},
+    {"cmd": "line", "str": "POKéMON CENTER"},
+    {"cmd": "done"}
+   ]
+  },
+  "MartSignText": {
+   "kind": "text",
+   "src": "home/overworld_text.asm:21",
+   "commands": [
+    {"cmd": "text_far", "label": "_MartSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokeCenterSignText": {
+   "kind": "text",
+   "src": "home/overworld_text.asm:25",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokeCenterSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeruleanCityRivalText": {
+   "kind": "asm",
+   "src": "scripts/CeruleanCity.asm:256",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["CeruleanCityRivalIWentToBillsText", "CeruleanCityRivalText.PreBattleText"]
+  },
+  "CeruleanCityRivalText.PreBattleText": {
+   "kind": "text",
+   "src": "scripts/CeruleanCity.asm:271",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanCityRivalPreBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeruleanCityRivalDefeatedText": {
+   "kind": "text",
+   "src": "scripts/CeruleanCity.asm:275",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanCityRivalDefeatedText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeruleanCityRivalVictoryText": {
+   "kind": "text",
+   "src": "scripts/CeruleanCity.asm:279",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanCityRivalVictoryText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeruleanCityRivalIWentToBillsText": {
+   "kind": "text",
+   "src": "scripts/CeruleanCity.asm:283",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanCityRivalIWentToBillsText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeruleanCityRocketText": {
+   "kind": "asm",
+   "src": "scripts/CeruleanCity.asm:287",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["CeruleanCityRocketText.Text", "CeruleanCityRocketText.IGiveUpText", "CeruleanCityRocketText.IllReturnTheTMText", "CeruleanCityRocketText.TM28NoRoomText", "CeruleanCityRocketText.ReceivedTM28Text"]
+  },
+  "CeruleanCityRocketText.Text": {
+   "kind": "text",
+   "src": "scripts/CeruleanCity.asm:324",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanCityRocketText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeruleanCityRocketText.ReceivedTM28Text": {
+   "kind": "text",
+   "src": "scripts/CeruleanCity.asm:328",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanCityRocketReceivedTM28Text"},
+    {"cmd": "sound", "sound": "sound_get_item_1"},
+    {"cmd": "text_far", "label": "_CeruleanCityRocketIBetterGetMovingText"},
+    {"cmd": "text_waitbutton"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeruleanCityRocketText.TM28NoRoomText": {
+   "kind": "text",
+   "src": "scripts/CeruleanCity.asm:335",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanCityRocketTM28NoRoomText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeruleanCityRocketText.IGiveUpText": {
+   "kind": "text",
+   "src": "scripts/CeruleanCity.asm:339",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanCityRocketIGiveUpText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeruleanCityRocketText.IllReturnTheTMText": {
+   "kind": "text",
+   "src": "scripts/CeruleanCity.asm:343",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanCityRocketIllReturnTheTMText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeruleanCityCooltrainerMText": {
+   "kind": "text",
+   "src": "scripts/CeruleanCity.asm:347",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanCityCooltrainerMText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeruleanCitySuperNerd1Text": {
+   "kind": "text",
+   "src": "scripts/CeruleanCity.asm:351",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanCitySuperNerd1Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeruleanCitySuperNerd2Text": {
+   "kind": "text",
+   "src": "scripts/CeruleanCity.asm:355",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanCitySuperNerd2Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeruleanCityGuardText": {
+   "kind": "text",
+   "src": "scripts/CeruleanCity.asm:359",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanCityGuardText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeruleanCityCooltrainerF1Text": {
+   "kind": "asm",
+   "src": "scripts/CeruleanCity.asm:363",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["CeruleanCityCooltrainerF1Text.SlowbroUseSonicboomText", "CeruleanCityCooltrainerF1Text.SlowbroPunchText", "CeruleanCityCooltrainerF1Text.SlowbroWithdrawText"]
+  },
+  "CeruleanCityCooltrainerF1Text.SlowbroUseSonicboomText": {
+   "kind": "text",
+   "src": "scripts/CeruleanCity.asm:384",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanCityCooltrainerF1SlowbroUseSonicboomText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeruleanCityCooltrainerF1Text.SlowbroPunchText": {
+   "kind": "text",
+   "src": "scripts/CeruleanCity.asm:388",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanCityCooltrainerF1SlowbroPunchText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeruleanCityCooltrainerF1Text.SlowbroWithdrawText": {
+   "kind": "text",
+   "src": "scripts/CeruleanCity.asm:392",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanCityCooltrainerF1SlowbroWithdrawText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeruleanCitySlowbroText": {
+   "kind": "asm",
+   "src": "scripts/CeruleanCity.asm:396",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["CeruleanCitySlowbroText.TookASnoozeText", "CeruleanCitySlowbroText.IsLoafingAroundText", "CeruleanCitySlowbroText.TurnedAwayText", "CeruleanCitySlowbroText.IgnoredOrdersText"]
+  },
+  "CeruleanCitySlowbroText.TookASnoozeText": {
+   "kind": "text",
+   "src": "scripts/CeruleanCity.asm:423",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanCitySlowbroTookASnoozeText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeruleanCitySlowbroText.IsLoafingAroundText": {
+   "kind": "text",
+   "src": "scripts/CeruleanCity.asm:427",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanCitySlowbroIsLoafingAroundText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeruleanCitySlowbroText.TurnedAwayText": {
+   "kind": "text",
+   "src": "scripts/CeruleanCity.asm:431",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanCitySlowbroTurnedAwayText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeruleanCitySlowbroText.IgnoredOrdersText": {
+   "kind": "text",
+   "src": "scripts/CeruleanCity.asm:435",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanCitySlowbroIgnoredOrdersText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeruleanCityCooltrainerF2Text": {
+   "kind": "text",
+   "src": "scripts/CeruleanCity.asm:439",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanCityCooltrainerF2Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeruleanCitySuperNerd3Text": {
+   "kind": "text",
+   "src": "scripts/CeruleanCity.asm:443",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanCitySuperNerd3Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeruleanCitySignText": {
+   "kind": "text",
+   "src": "scripts/CeruleanCity.asm:447",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanCitySignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeruleanCityTrainerTipsText": {
+   "kind": "text",
+   "src": "scripts/CeruleanCity.asm:451",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanCityTrainerTipsText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeruleanCityBikeShopSign": {
+   "kind": "text",
+   "src": "scripts/CeruleanCity.asm:455",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanCityBikeShopSign"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeruleanCityGymSign": {
+   "kind": "text",
+   "src": "scripts/CeruleanCity.asm:459",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanCityGymSign"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_CeruleanCityRivalPreBattleText": {
+   "kind": "text",
+   "src": "text/CeruleanCity.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "{RIVAL}: Yo!"},
+    {"cmd": "line", "str": "{PLAYER}!"},
+    {"cmd": "para", "str": "You're still"},
+    {"cmd": "line", "str": "struggling along"},
+    {"cmd": "cont", "str": "back here?"},
+    {"cmd": "para", "str": "I'm doing great!"},
+    {"cmd": "line", "str": "I caught a bunch"},
+    {"cmd": "cont", "str": "of strong and"},
+    {"cmd": "cont", "str": "smart POKéMON!"},
+    {"cmd": "para", "str": "Here, let me see"},
+    {"cmd": "line", "str": "what you caught,"},
+    {"cmd": "cont", "str": "{PLAYER}!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeruleanCityRivalDefeatedText": {
+   "kind": "text",
+   "src": "text/CeruleanCity.asm:20",
+   "commands": [
+    {"cmd": "text", "str": "Hey!"},
+    {"cmd": "line", "str": "Take it easy!"},
+    {"cmd": "cont", "str": "You won already!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_CeruleanCityRivalVictoryText": {
+   "kind": "text",
+   "src": "text/CeruleanCity.asm:26",
+   "commands": [
+    {"cmd": "text", "str": "Heh!"},
+    {"cmd": "line", "str": "You're no match"},
+    {"cmd": "cont", "str": "for my genius!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_CeruleanCityRivalIWentToBillsText": {
+   "kind": "text",
+   "src": "text/CeruleanCity.asm:32",
+   "commands": [
+    {"cmd": "text", "str": "{RIVAL}: Hey,"},
+    {"cmd": "line", "str": "guess what?"},
+    {"cmd": "para", "str": "I went to BILL's"},
+    {"cmd": "line", "str": "and got him to"},
+    {"cmd": "cont", "str": "show me his rare"},
+    {"cmd": "cont", "str": "POKéMON!"},
+    {"cmd": "para", "str": "That added a lot"},
+    {"cmd": "line", "str": "of pages to my"},
+    {"cmd": "cont", "str": "POKéDEX!"},
+    {"cmd": "para", "str": "After all, BILL's"},
+    {"cmd": "line", "str": "world famous as a"},
+    {"cmd": "cont", "str": "POKéMANIAC!"},
+    {"cmd": "para", "str": "He invented the"},
+    {"cmd": "line", "str": "POKéMON Storage"},
+    {"cmd": "cont", "str": "System on PC!"},
+    {"cmd": "para", "str": "Since you're using"},
+    {"cmd": "line", "str": "his system, go"},
+    {"cmd": "cont", "str": "thank him!"},
+    {"cmd": "para", "str": "Well, I better"},
+    {"cmd": "line", "str": "get rolling!"},
+    {"cmd": "cont", "str": "Smell ya later!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeruleanCityRocketText": {
+   "kind": "text",
+   "src": "text/CeruleanCity.asm:62",
+   "commands": [
+    {"cmd": "text", "str": "Hey! Stay out!"},
+    {"cmd": "line", "str": "It's not your"},
+    {"cmd": "cont", "str": "yard! Huh? Me?"},
+    {"cmd": "para", "str": "I'm an innocent"},
+    {"cmd": "line", "str": "bystander! Don't"},
+    {"cmd": "cont", "str": "you believe me?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeruleanCityRocketReceivedTM28Text": {
+   "kind": "text",
+   "src": "text/CeruleanCity.asm:72",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} recovered"},
+    {"cmd": "line", "str": "TM28!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_CeruleanCityRocketIBetterGetMovingText": {
+   "kind": "text",
+   "src": "text/CeruleanCity.asm:77",
+   "commands": [
+    {"cmd": "text", "str": ""},
+    {"cmd": "para", "str": "I better get"},
+    {"cmd": "line", "str": "moving! Bye!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_CeruleanCityRocketTM28NoRoomText": {
+   "kind": "text",
+   "src": "text/CeruleanCity.asm:84",
+   "commands": [
+    {"cmd": "text", "str": "Make room for"},
+    {"cmd": "line", "str": "this!"},
+    {"cmd": "para", "str": "I can't run until"},
+    {"cmd": "line", "str": "I give it to you!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeruleanCityRocketIGiveUpText": {
+   "kind": "text",
+   "src": "text/CeruleanCity.asm:92",
+   "commands": [
+    {"cmd": "text", "str": "Stop!"},
+    {"cmd": "line", "str": "I give up! I'll"},
+    {"cmd": "cont", "str": "leave quietly!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_CeruleanCityRocketIllReturnTheTMText": {
+   "kind": "text",
+   "src": "text/CeruleanCity.asm:98",
+   "commands": [
+    {"cmd": "text", "str": "OK! I'll return"},
+    {"cmd": "line", "str": "the TM I stole!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_CeruleanCityCooltrainerMText": {
+   "kind": "text",
+   "src": "text/CeruleanCity.asm:103",
+   "commands": [
+    {"cmd": "text", "str": "You're a trainer"},
+    {"cmd": "line", "str": "too? Collecting,"},
+    {"cmd": "cont", "str": "fighting, it's a"},
+    {"cmd": "cont", "str": "tough life."},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeruleanCitySuperNerd1Text": {
+   "kind": "text",
+   "src": "text/CeruleanCity.asm:110",
+   "commands": [
+    {"cmd": "text", "str": "That bush in"},
+    {"cmd": "line", "str": "front of the shop"},
+    {"cmd": "cont", "str": "is in the way."},
+    {"cmd": "para", "str": "There might be a"},
+    {"cmd": "line", "str": "way around."},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeruleanCitySuperNerd2Text": {
+   "kind": "text",
+   "src": "text/CeruleanCity.asm:119",
+   "commands": [
+    {"cmd": "text", "str": "You're making an"},
+    {"cmd": "line", "str": "encyclopedia on"},
+    {"cmd": "cont", "str": "POKéMON? That"},
+    {"cmd": "cont", "str": "sounds amusing."},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeruleanCityGuardText": {
+   "kind": "text",
+   "src": "text/CeruleanCity.asm:126",
+   "commands": [
+    {"cmd": "text", "str": "The people here"},
+    {"cmd": "line", "str": "were robbed."},
+    {"cmd": "para", "str": "It's obvious that"},
+    {"cmd": "line", "str": "TEAM ROCKET is"},
+    {"cmd": "cont", "str": "behind this most"},
+    {"cmd": "cont", "str": "heinous crime!"},
+    {"cmd": "para", "str": "Even our POLICE"},
+    {"cmd": "line", "str": "force has trouble"},
+    {"cmd": "cont", "str": "with the ROCKETs!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeruleanCityCooltrainerF1SlowbroUseSonicboomText": {
+   "kind": "text",
+   "src": "text/CeruleanCity.asm:140",
+   "commands": [
+    {"cmd": "text", "str": "OK! SLOWBRO!"},
+    {"cmd": "line", "str": "Use SONICBOOM!"},
+    {"cmd": "cont", "str": "Come on, SLOWBRO"},
+    {"cmd": "cont", "str": "pay attention!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeruleanCityCooltrainerF1SlowbroPunchText": {
+   "kind": "text",
+   "src": "text/CeruleanCity.asm:147",
+   "commands": [
+    {"cmd": "text", "str": "SLOWBRO punch!"},
+    {"cmd": "line", "str": "No! You blew it"},
+    {"cmd": "cont", "str": "again!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeruleanCityCooltrainerF1SlowbroWithdrawText": {
+   "kind": "text",
+   "src": "text/CeruleanCity.asm:153",
+   "commands": [
+    {"cmd": "text", "str": "SLOWBRO, WITHDRAW!"},
+    {"cmd": "line", "str": "No! That's wrong!"},
+    {"cmd": "para", "str": "It's so hard to"},
+    {"cmd": "line", "str": "control POKéMON!"},
+    {"cmd": "para", "str": "Your POKéMON's"},
+    {"cmd": "line", "str": "obedience depends"},
+    {"cmd": "cont", "str": "on your abilities"},
+    {"cmd": "cont", "str": "as a trainer!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeruleanCitySlowbroTookASnoozeText": {
+   "kind": "text",
+   "src": "text/CeruleanCity.asm:166",
+   "commands": [
+    {"cmd": "text", "str": "SLOWBRO took a"},
+    {"cmd": "line", "str": "snooze..."},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeruleanCitySlowbroIsLoafingAroundText": {
+   "kind": "text",
+   "src": "text/CeruleanCity.asm:171",
+   "commands": [
+    {"cmd": "text", "str": "SLOWBRO is"},
+    {"cmd": "line", "str": "loafing around..."},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeruleanCitySlowbroTurnedAwayText": {
+   "kind": "text",
+   "src": "text/CeruleanCity.asm:176",
+   "commands": [
+    {"cmd": "text", "str": "SLOWBRO turned"},
+    {"cmd": "line", "str": "away..."},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeruleanCitySlowbroIgnoredOrdersText": {
+   "kind": "text",
+   "src": "text/CeruleanCity.asm:181",
+   "commands": [
+    {"cmd": "text", "str": "SLOWBRO"},
+    {"cmd": "line", "str": "ignored orders..."},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeruleanCityCooltrainerF2Text": {
+   "kind": "text",
+   "src": "text/CeruleanCity.asm:186",
+   "commands": [
+    {"cmd": "text", "str": "I want a bright"},
+    {"cmd": "line", "str": "red BICYCLE!"},
+    {"cmd": "para", "str": "I'll keep it at"},
+    {"cmd": "line", "str": "home, so it won't"},
+    {"cmd": "cont", "str": "get dirty!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeruleanCitySuperNerd3Text": {
+   "kind": "text",
+   "src": "text/CeruleanCity.asm:195",
+   "commands": [
+    {"cmd": "text", "str": "This is CERULEAN"},
+    {"cmd": "line", "str": "CAVE! Horribly"},
+    {"cmd": "cont", "str": "strong POKéMON"},
+    {"cmd": "cont", "str": "live in there!"},
+    {"cmd": "para", "str": "The POKéMON LEAGUE"},
+    {"cmd": "line", "str": "champion is the"},
+    {"cmd": "cont", "str": "only person who"},
+    {"cmd": "cont", "str": "is allowed in!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeruleanCitySignText": {
+   "kind": "text",
+   "src": "text/CeruleanCity.asm:207",
+   "commands": [
+    {"cmd": "text", "str": "CERULEAN CITY"},
+    {"cmd": "line", "str": "A Mysterious,"},
+    {"cmd": "cont", "str": "Blue Aura"},
+    {"cmd": "cont", "str": "Surrounds It"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeruleanCityTrainerTipsText": {
+   "kind": "text",
+   "src": "text/CeruleanCity.asm:214",
+   "commands": [
+    {"cmd": "text", "str": "TRAINER TIPS"},
+    {"cmd": "para", "str": "Pressing B Button"},
+    {"cmd": "line", "str": "during evolution"},
+    {"cmd": "cont", "str": "cancels the whole"},
+    {"cmd": "cont", "str": "process."},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeruleanCityBikeShopSign": {
+   "kind": "text",
+   "src": "text/CeruleanCity.asm:223",
+   "commands": [
+    {"cmd": "text", "str": "Grass and caves"},
+    {"cmd": "line", "str": "handled easily!"},
+    {"cmd": "cont", "str": "BIKE SHOP"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeruleanCityGymSign": {
+   "kind": "text",
+   "src": "text/CeruleanCity.asm:229",
+   "commands": [
+    {"cmd": "text", "str": "CERULEAN CITY"},
+    {"cmd": "line", "str": "POKéMON GYM"},
+    {"cmd": "cont", "str": "LEADER: MISTY"},
+    {"cmd": "para", "str": "The Tomboyish"},
+    {"cmd": "line", "str": "Mermaid!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

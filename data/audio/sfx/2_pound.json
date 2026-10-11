@@ -1,0 +1,21 @@
+{
+  "name": "SFX_POUND",
+  "title": "Pound",
+  "kind": "sfx",
+  "bank": 2,
+  "id": 160,
+  "label": "SFX_Pound",
+  "channels": [
+    {
+      "channel": 8,
+      "label": "SFX_Pound_Ch8",
+      "entry": 0,
+      "bytes": 4,
+      "labels": {"SFX_Pound_Ch8": 0},
+      "commands": [
+        {"op": "noise_note", "length": 2, "volume": 10, "fade": 1, "value": 34},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

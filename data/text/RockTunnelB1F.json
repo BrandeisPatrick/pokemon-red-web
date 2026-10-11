@@ -1,0 +1,504 @@
+{
+ "map": "RockTunnelB1F",
+ "const": "ROCK_TUNNEL_B1F",
+ "textPointerTables": [
+  {
+   "label": "RockTunnelB1F_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_ROCKTUNNELB1F_COOLTRAINER_F1", "label": "RockTunnelB1FCooltrainerF1Text", "kind": "asm", "handler": "trainer", "trainerHeader": "RockTunnel2TrainerHeader0"},
+    {"id": 2, "const": "TEXT_ROCKTUNNELB1F_HIKER1", "label": "RockTunnelB1FHiker1Text", "kind": "asm", "handler": "trainer", "trainerHeader": "RockTunnel2TrainerHeader1"},
+    {"id": 3, "const": "TEXT_ROCKTUNNELB1F_SUPER_NERD1", "label": "RockTunnelB1FSuperNerd1Text", "kind": "asm", "handler": "trainer", "trainerHeader": "RockTunnel2TrainerHeader2"},
+    {"id": 4, "const": "TEXT_ROCKTUNNELB1F_SUPER_NERD2", "label": "RockTunnelB1FSuperNerd2Text", "kind": "asm", "handler": "trainer", "trainerHeader": "RockTunnel2TrainerHeader3"},
+    {"id": 5, "const": "TEXT_ROCKTUNNELB1F_HIKER2", "label": "RockTunnelB1FHiker2Text", "kind": "asm", "handler": "trainer", "trainerHeader": "RockTunnel2TrainerHeader4"},
+    {"id": 6, "const": "TEXT_ROCKTUNNELB1F_COOLTRAINER_F2", "label": "RockTunnelB1FCooltrainerF2Text", "kind": "asm", "handler": "trainer", "trainerHeader": "RockTunnel2TrainerHeader5"},
+    {"id": 7, "const": "TEXT_ROCKTUNNELB1F_HIKER3", "label": "RockTunnelB1FHiker3Text", "kind": "asm", "handler": "trainer", "trainerHeader": "RockTunnel2TrainerHeader6"},
+    {"id": 8, "const": "TEXT_ROCKTUNNELB1F_SUPER_NERD3", "label": "RockTunnelB1FSuperNerd3Text", "kind": "asm", "handler": "trainer", "trainerHeader": "RockTunnel2TrainerHeader7"}
+   ]
+  }
+ ],
+ "texts": {
+  "RockTunnelB1FCooltrainerF1Text": {
+   "kind": "asm",
+   "src": "scripts/RockTunnelB1F.asm:48",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "RockTunnel2TrainerHeader0"
+  },
+  "RockTunnelB1FHiker1Text": {
+   "kind": "asm",
+   "src": "scripts/RockTunnelB1F.asm:54",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "RockTunnel2TrainerHeader1"
+  },
+  "RockTunnelB1FSuperNerd1Text": {
+   "kind": "asm",
+   "src": "scripts/RockTunnelB1F.asm:60",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "RockTunnel2TrainerHeader2"
+  },
+  "RockTunnelB1FSuperNerd2Text": {
+   "kind": "asm",
+   "src": "scripts/RockTunnelB1F.asm:66",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "RockTunnel2TrainerHeader3"
+  },
+  "RockTunnelB1FHiker2Text": {
+   "kind": "asm",
+   "src": "scripts/RockTunnelB1F.asm:72",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "RockTunnel2TrainerHeader4"
+  },
+  "RockTunnelB1FCooltrainerF2Text": {
+   "kind": "asm",
+   "src": "scripts/RockTunnelB1F.asm:78",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "RockTunnel2TrainerHeader5"
+  },
+  "RockTunnelB1FHiker3Text": {
+   "kind": "asm",
+   "src": "scripts/RockTunnelB1F.asm:84",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "RockTunnel2TrainerHeader6"
+  },
+  "RockTunnelB1FSuperNerd3Text": {
+   "kind": "asm",
+   "src": "scripts/RockTunnelB1F.asm:90",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "RockTunnel2TrainerHeader7"
+  },
+  "RockTunnelB1FCooltrainerF1BattleText": {
+   "kind": "text",
+   "src": "scripts/RockTunnelB1F.asm:96",
+   "commands": [
+    {"cmd": "text_far", "label": "_RockTunnelB1FCooltrainerF1BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "RockTunnelB1FCooltrainerF1EndBattleText": {
+   "kind": "text",
+   "src": "scripts/RockTunnelB1F.asm:100",
+   "commands": [
+    {"cmd": "text_far", "label": "_RockTunnelB1FCooltrainerF1EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "RockTunnelB1FCooltrainerF1AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/RockTunnelB1F.asm:104",
+   "commands": [
+    {"cmd": "text_far", "label": "_RockTunnelB1FCooltrainerF1AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "RockTunnelB1FHiker1BattleText": {
+   "kind": "text",
+   "src": "scripts/RockTunnelB1F.asm:108",
+   "commands": [
+    {"cmd": "text_far", "label": "_RockTunnelB1FHiker1BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "RockTunnelB1FHiker1EndBattleText": {
+   "kind": "text",
+   "src": "scripts/RockTunnelB1F.asm:112",
+   "commands": [
+    {"cmd": "text_far", "label": "_RockTunnelB1FHiker1EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "RockTunnelB1FHiker1AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/RockTunnelB1F.asm:116",
+   "commands": [
+    {"cmd": "text_far", "label": "_RockTunnelB1FHiker1AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "RockTunnelB1FSuperNerd1BattleText": {
+   "kind": "text",
+   "src": "scripts/RockTunnelB1F.asm:120",
+   "commands": [
+    {"cmd": "text_far", "label": "_RockTunnelB1FSuperNerd1BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "RockTunnelB1FSuperNerd1EndBattleText": {
+   "kind": "text",
+   "src": "scripts/RockTunnelB1F.asm:124",
+   "commands": [
+    {"cmd": "text_far", "label": "_RockTunnelB1FSuperNerd1EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "RockTunnelB1FSuperNerd1AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/RockTunnelB1F.asm:128",
+   "commands": [
+    {"cmd": "text_far", "label": "_RockTunnelB1FSuperNerd1AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "RockTunnelB1FSuperNerd2BattleText": {
+   "kind": "text",
+   "src": "scripts/RockTunnelB1F.asm:132",
+   "commands": [
+    {"cmd": "text_far", "label": "_RockTunnelB1FSuperNerd2BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "RockTunnelB1FSuperNerd2EndBattleText": {
+   "kind": "text",
+   "src": "scripts/RockTunnelB1F.asm:136",
+   "commands": [
+    {"cmd": "text_far", "label": "_RockTunnelB1FSuperNerd2EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "RockTunnelB1FSuperNerd2AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/RockTunnelB1F.asm:140",
+   "commands": [
+    {"cmd": "text_far", "label": "_RockTunnelB1FSuperNerd2AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "RockTunnelB1FHiker2BattleText": {
+   "kind": "text",
+   "src": "scripts/RockTunnelB1F.asm:144",
+   "commands": [
+    {"cmd": "text_far", "label": "_RockTunnelB1FHiker2BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "RockTunnelB1FHiker2EndBattleText": {
+   "kind": "text",
+   "src": "scripts/RockTunnelB1F.asm:148",
+   "commands": [
+    {"cmd": "text_far", "label": "_RockTunnelB1FHiker2EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "RockTunnelB1FHiker2AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/RockTunnelB1F.asm:152",
+   "commands": [
+    {"cmd": "text_far", "label": "_RockTunnelB1FHiker2AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "RockTunnelB1FCooltrainerF2BattleText": {
+   "kind": "text",
+   "src": "scripts/RockTunnelB1F.asm:156",
+   "commands": [
+    {"cmd": "text_far", "label": "_RockTunnelB1FCooltrainerF2BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "RockTunnelB1FCooltrainerF2EndBattleText": {
+   "kind": "text",
+   "src": "scripts/RockTunnelB1F.asm:160",
+   "commands": [
+    {"cmd": "text_far", "label": "_RockTunnelB1FCooltrainerF2EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "RockTunnelB1FCooltrainerF2AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/RockTunnelB1F.asm:164",
+   "commands": [
+    {"cmd": "text_far", "label": "_RockTunnelB1FCooltrainerF2AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "RockTunnelB1FHiker3BattleText": {
+   "kind": "text",
+   "src": "scripts/RockTunnelB1F.asm:168",
+   "commands": [
+    {"cmd": "text_far", "label": "_RockTunnelB1FHiker3BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "RockTunnelB1FHiker3EndBattleText": {
+   "kind": "text",
+   "src": "scripts/RockTunnelB1F.asm:172",
+   "commands": [
+    {"cmd": "text_far", "label": "_RockTunnelB1FHiker3EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "RockTunnelB1FHiker3AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/RockTunnelB1F.asm:176",
+   "commands": [
+    {"cmd": "text_far", "label": "_RockTunnelB1FHiker3AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "RockTunnelB1FSuperNerd3BattleText": {
+   "kind": "text",
+   "src": "scripts/RockTunnelB1F.asm:180",
+   "commands": [
+    {"cmd": "text_far", "label": "_RockTunnelB1FSuperNerd3BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "RockTunnelB1FSuperNerd3EndBattleText": {
+   "kind": "text",
+   "src": "scripts/RockTunnelB1F.asm:184",
+   "commands": [
+    {"cmd": "text_far", "label": "_RockTunnelB1FSuperNerd3EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "RockTunnelB1FSuperNerd3AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/RockTunnelB1F.asm:188",
+   "commands": [
+    {"cmd": "text_far", "label": "_RockTunnelB1FSuperNerd3AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_RockTunnelB1FCooltrainerF1BattleText": {
+   "kind": "text",
+   "src": "text/RockTunnelB1F.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Hikers leave twigs"},
+    {"cmd": "line", "str": "as trail markers."},
+    {"cmd": "done"}
+   ]
+  },
+  "_RockTunnelB1FCooltrainerF1EndBattleText": {
+   "kind": "text",
+   "src": "text/RockTunnelB1F.asm:7",
+   "commands": [
+    {"cmd": "text", "str": "Ohhh!"},
+    {"cmd": "line", "str": "I did my best!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_RockTunnelB1FCooltrainerF1AfterBattleText": {
+   "kind": "text",
+   "src": "text/RockTunnelB1F.asm:12",
+   "commands": [
+    {"cmd": "text", "str": "I want to go "},
+    {"cmd": "line", "str": "home!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_RockTunnelB1FHiker1BattleText": {
+   "kind": "text",
+   "src": "text/RockTunnelB1F.asm:17",
+   "commands": [
+    {"cmd": "text", "str": "Hahaha! Can you"},
+    {"cmd": "line", "str": "beat my power?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_RockTunnelB1FHiker1EndBattleText": {
+   "kind": "text",
+   "src": "text/RockTunnelB1F.asm:22",
+   "commands": [
+    {"cmd": "text", "str": "Oops!"},
+    {"cmd": "line", "str": "Out-muscled!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_RockTunnelB1FHiker1AfterBattleText": {
+   "kind": "text",
+   "src": "text/RockTunnelB1F.asm:27",
+   "commands": [
+    {"cmd": "text", "str": "I go for power"},
+    {"cmd": "line", "str": "because I hate"},
+    {"cmd": "cont", "str": "thinking!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_RockTunnelB1FSuperNerd1BattleText": {
+   "kind": "text",
+   "src": "text/RockTunnelB1F.asm:33",
+   "commands": [
+    {"cmd": "text", "str": "You have a"},
+    {"cmd": "line", "str": "POKéDEX?"},
+    {"cmd": "cont", "str": "I want one too!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_RockTunnelB1FSuperNerd1EndBattleText": {
+   "kind": "text",
+   "src": "text/RockTunnelB1F.asm:39",
+   "commands": [
+    {"cmd": "text", "str": "Shoot!"},
+    {"cmd": "line", "str": "I'm so jealous!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_RockTunnelB1FSuperNerd1AfterBattleText": {
+   "kind": "text",
+   "src": "text/RockTunnelB1F.asm:44",
+   "commands": [
+    {"cmd": "text", "str": "When you finish"},
+    {"cmd": "line", "str": "your POKéDEX, can"},
+    {"cmd": "cont", "str": "I have it?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_RockTunnelB1FSuperNerd2BattleText": {
+   "kind": "text",
+   "src": "text/RockTunnelB1F.asm:50",
+   "commands": [
+    {"cmd": "text", "str": "Do you know about"},
+    {"cmd": "line", "str": "costume players?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_RockTunnelB1FSuperNerd2EndBattleText": {
+   "kind": "text",
+   "src": "text/RockTunnelB1F.asm:55",
+   "commands": [
+    {"cmd": "text", "str": "Well,"},
+    {"cmd": "line", "str": "that's that."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_RockTunnelB1FSuperNerd2AfterBattleText": {
+   "kind": "text",
+   "src": "text/RockTunnelB1F.asm:60",
+   "commands": [
+    {"cmd": "text", "str": "Costume players"},
+    {"cmd": "line", "str": "dress up as"},
+    {"cmd": "cont", "str": "POKéMON for fun."},
+    {"cmd": "done"}
+   ]
+  },
+  "_RockTunnelB1FHiker2BattleText": {
+   "kind": "text",
+   "src": "text/RockTunnelB1F.asm:66",
+   "commands": [
+    {"cmd": "text", "str": "My POKéMON"},
+    {"cmd": "line", "str": "techniques will"},
+    {"cmd": "cont", "str": "leave you crying!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_RockTunnelB1FHiker2EndBattleText": {
+   "kind": "text",
+   "src": "text/RockTunnelB1F.asm:72",
+   "commands": [
+    {"cmd": "text", "str": "I give!"},
+    {"cmd": "line", "str": "You're a better"},
+    {"cmd": "cont", "str": "technician!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_RockTunnelB1FHiker2AfterBattleText": {
+   "kind": "text",
+   "src": "text/RockTunnelB1F.asm:78",
+   "commands": [
+    {"cmd": "text", "str": "In mountains,"},
+    {"cmd": "line", "str": "you'll often find"},
+    {"cmd": "cont", "str": "rock-type POKéMON."},
+    {"cmd": "done"}
+   ]
+  },
+  "_RockTunnelB1FCooltrainerF2BattleText": {
+   "kind": "text",
+   "src": "text/RockTunnelB1F.asm:84",
+   "commands": [
+    {"cmd": "text", "str": "I don't often"},
+    {"cmd": "line", "str": "come here, but I"},
+    {"cmd": "cont", "str": "will fight you."},
+    {"cmd": "done"}
+   ]
+  },
+  "_RockTunnelB1FCooltrainerF2EndBattleText": {
+   "kind": "text",
+   "src": "text/RockTunnelB1F.asm:90",
+   "commands": [
+    {"cmd": "text", "str": "Oh!"},
+    {"cmd": "line", "str": "I lost!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_RockTunnelB1FCooltrainerF2AfterBattleText": {
+   "kind": "text",
+   "src": "text/RockTunnelB1F.asm:95",
+   "commands": [
+    {"cmd": "text", "str": "I like tiny"},
+    {"cmd": "line", "str": "POKéMON, big ones"},
+    {"cmd": "cont", "str": "are too scary!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_RockTunnelB1FHiker3BattleText": {
+   "kind": "text",
+   "src": "text/RockTunnelB1F.asm:101",
+   "commands": [
+    {"cmd": "text", "str": "Hit me with your"},
+    {"cmd": "line", "str": "best shot!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_RockTunnelB1FHiker3EndBattleText": {
+   "kind": "text",
+   "src": "text/RockTunnelB1F.asm:106",
+   "commands": [
+    {"cmd": "text", "str": "Fired"},
+    {"cmd": "line", "str": "away!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_RockTunnelB1FHiker3AfterBattleText": {
+   "kind": "text",
+   "src": "text/RockTunnelB1F_2.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "I'll raise my"},
+    {"cmd": "line", "str": "POKéMON to beat"},
+    {"cmd": "cont", "str": "yours, kid!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_RockTunnelB1FSuperNerd3BattleText": {
+   "kind": "text",
+   "src": "text/RockTunnelB1F_2.asm:8",
+   "commands": [
+    {"cmd": "text", "str": "I draw POKéMON"},
+    {"cmd": "line", "str": "when I'm home."},
+    {"cmd": "done"}
+   ]
+  },
+  "_RockTunnelB1FSuperNerd3EndBattleText": {
+   "kind": "text",
+   "src": "text/RockTunnelB1F_2.asm:13",
+   "commands": [
+    {"cmd": "text", "str": "Whew!"},
+    {"cmd": "line", "str": "I'm exhausted!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_RockTunnelB1FSuperNerd3AfterBattleText": {
+   "kind": "text",
+   "src": "text/RockTunnelB1F_2.asm:18",
+   "commands": [
+    {"cmd": "text", "str": "I'm an artist,"},
+    {"cmd": "line", "str": "not a fighter."},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

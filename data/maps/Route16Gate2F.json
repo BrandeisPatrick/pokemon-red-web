@@ -1,0 +1,44 @@
+{
+ "id": 187,
+ "const": "ROUTE_16_GATE_2F",
+ "name": "Route16Gate2F",
+ "displayName": "ROUTE 16",
+ "width": 4,
+ "height": 4,
+ "tileset": "GATE",
+ "tilesetId": 12,
+ "tilesetFile": "data/tilesets/Gate.json",
+ "isOutside": false,
+ "borderBlock": 10,
+ "blocks": [52, 51, 51, 53, 54, 0, 0, 55, 56, 59, 56, 59, 58, 0, 0, 57],
+ "connections": {},
+ "warps": [
+  {"x": 7, "y": 7, "destMap": "ROUTE_16_GATE_1F", "destMapId": 186, "destMapName": "Route16Gate1F", "destWarp": 9, "destWarpIndex": 8}
+ ],
+ "bgEvents": [
+  {"x": 1, "y": 2, "textId": "TEXT_ROUTE16GATE2F_LEFT_BINOCULARS", "textIndex": 3},
+  {"x": 6, "y": 2, "textId": "TEXT_ROUTE16GATE2F_RIGHT_BINOCULARS", "textIndex": 4}
+ ],
+ "objectEvents": [
+  {"index": 1, "const": "ROUTE16GATE2F_LITTLE_BOY", "x": 4, "y": 2, "sprite": "SPRITE_LITTLE_BOY", "spriteId": 53, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_ROUTE16GATE2F_LITTLE_BOY", "textIndex": 1},
+  {"index": 2, "const": "ROUTE16GATE2F_LITTLE_GIRL", "x": 2, "y": 5, "sprite": "SPRITE_LITTLE_GIRL", "spriteId": 8, "movement": "WALK", "rangeOrDirection": "LEFT_RIGHT", "rangeOrDirectionValue": 2, "behavior": "walk_left_right", "textId": "TEXT_ROUTE16GATE2F_LITTLE_GIRL", "textIndex": 2}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_CITIES1",
+ "wild": null,
+ "townMap": {"x": 4, "y": 5, "group": "ROUTE_16"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/Route16Gate2F.json",
+ "textPointers": "Route16Gate2F_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/Route16Gate2F.asm",
+  "objects": "data/maps/objects/Route16Gate2F.asm",
+  "blocks": "maps/Route11Gate2F.blk",
+  "script": "scripts/Route16Gate2F.asm"
+ },
+ "lastMapCandidates": ["ROUTE_16"],
+ "palette": {"pal": "PAL_ROUTE", "rule": "lastMap", "viaLastMap": "ROUTE_16"}
+}

@@ -1,0 +1,46 @@
+{
+ "id": 142,
+ "const": "POKEMON_TOWER_1F",
+ "name": "PokemonTower1F",
+ "displayName": "POKéMON TOWER",
+ "width": 10,
+ "height": 9,
+ "tileset": "CEMETERY",
+ "tilesetId": 15,
+ "tilesetFile": "data/tilesets/Cemetery.json",
+ "isOutside": false,
+ "borderBlock": 1,
+ "blocks": [1, 1, 1, 3, 10, 6, 7, 3, 1, 1, 1, 1, 16, 6, 14, 14, 14, 6, 8, 1, 1, 12, 57, 14, 14, 14, 14, 14, 32, 13, 1, 10, 14, 14, 14, 14, 14, 14, 14, 7, 1, 57, 14, 14, 14, 14, 14, 14, 14, 18, 1, 28, 14, 14, 14, 14, 14, 14, 14, 30, 1, 12, 14, 14, 14, 14, 37, 63, 63, 13, 1, 1, 20, 14, 14, 14, 37, 14, 11, 1, 1, 1, 1, 5, 28, 14, 30, 5, 1, 1],
+ "connections": {},
+ "warps": [
+  {"x": 10, "y": 17, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 2, "destWarpIndex": 1},
+  {"x": 11, "y": 17, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 2, "destWarpIndex": 1},
+  {"x": 18, "y": 9, "destMap": "POKEMON_TOWER_2F", "destMapId": 143, "destMapName": "PokemonTower2F", "destWarp": 2, "destWarpIndex": 1}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "POKEMONTOWER1F_RECEPTIONIST", "x": 15, "y": 13, "sprite": "SPRITE_LINK_RECEPTIONIST", "spriteId": 42, "movement": "STAY", "rangeOrDirection": "UP", "rangeOrDirectionValue": 209, "behavior": "face_up", "textId": "TEXT_POKEMONTOWER1F_RECEPTIONIST", "textIndex": 1},
+  {"index": 2, "const": "POKEMONTOWER1F_MIDDLE_AGED_WOMAN", "x": 6, "y": 8, "sprite": "SPRITE_MIDDLE_AGED_WOMAN", "spriteId": 28, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_POKEMONTOWER1F_MIDDLE_AGED_WOMAN", "textIndex": 2},
+  {"index": 3, "const": "POKEMONTOWER1F_BALDING_GUY", "x": 8, "y": 12, "sprite": "SPRITE_BALDING_GUY", "spriteId": 52, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_POKEMONTOWER1F_BALDING_GUY", "textIndex": 3},
+  {"index": 4, "const": "POKEMONTOWER1F_GIRL", "x": 13, "y": 7, "sprite": "SPRITE_GIRL", "spriteId": 13, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_POKEMONTOWER1F_GIRL", "textIndex": 4},
+  {"index": 5, "const": "POKEMONTOWER1F_CHANNELER", "x": 17, "y": 7, "sprite": "SPRITE_CHANNELER", "spriteId": 25, "movement": "STAY", "rangeOrDirection": "LEFT", "rangeOrDirectionValue": 210, "behavior": "face_left", "textId": "TEXT_POKEMONTOWER1F_CHANNELER", "textIndex": 5}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_POKEMON_TOWER",
+ "wild": {"label": "PokemonTower1FWildMons", "file": "PokemonTower1F"},
+ "townMap": {"x": 15, "y": 5, "group": "POKEMON_TOWER"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/PokemonTower1F.json",
+ "textPointers": "PokemonTower1F_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/PokemonTower1F.asm",
+  "objects": "data/maps/objects/PokemonTower1F.asm",
+  "blocks": "maps/PokemonTower1F.blk",
+  "script": "scripts/PokemonTower1F.asm"
+ },
+ "lastMapCandidates": ["LAVENDER_TOWN"],
+ "palette": {"pal": "PAL_GRAYMON", "rule": "cemeteryTileset"}
+}

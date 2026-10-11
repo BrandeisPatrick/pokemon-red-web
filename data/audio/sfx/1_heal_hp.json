@@ -1,0 +1,25 @@
+{
+  "name": "SFX_HEAL_HP",
+  "title": "Heal HP",
+  "kind": "sfx",
+  "bank": 1,
+  "id": 141,
+  "label": "SFX_Heal_HP_1",
+  "channels": [
+    {
+      "channel": 5,
+      "label": "SFX_Heal_HP_1_Ch5",
+      "entry": 0,
+      "bytes": 15,
+      "labels": {"SFX_Heal_HP_1_Ch5": 0},
+      "commands": [
+        {"op": "duty_cycle", "duty": 2},
+        {"op": "pitch_sweep", "length": 1, "change": 7},
+        {"op": "square_note", "length": 15, "volume": 15, "fade": 0, "frequency": 1264},
+        {"op": "square_note", "length": 15, "volume": 15, "fade": 2, "frequency": 1616},
+        {"op": "pitch_sweep", "length": 0, "change": 8},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

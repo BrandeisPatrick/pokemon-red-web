@@ -1,0 +1,47 @@
+{
+ "id": 171,
+ "const": "CINNABAR_POKECENTER",
+ "name": "CinnabarPokecenter",
+ "displayName": "CINNABAR ISLAND",
+ "width": 7,
+ "height": 4,
+ "tileset": "POKECENTER",
+ "tilesetId": 6,
+ "tilesetFile": "data/tilesets/Pokecenter.json",
+ "isOutside": false,
+ "borderBlock": 0,
+ "blocks": [32, 16, 1, 2, 12, 13, 13, 33, 4, 5, 7, 7, 34, 35, 8, 15, 15, 15, 15, 15, 27, 14, 10, 11, 14, 15, 15, 14],
+ "connections": {},
+ "warps": [
+  {"x": 3, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 4, "destWarpIndex": 3},
+  {"x": 4, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 4, "destWarpIndex": 3}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "CINNABARPOKECENTER_NURSE", "x": 3, "y": 1, "sprite": "SPRITE_NURSE", "spriteId": 41, "movement": "STAY", "rangeOrDirection": "DOWN", "rangeOrDirectionValue": 208, "behavior": "face_down", "textId": "TEXT_CINNABARPOKECENTER_NURSE", "textIndex": 1},
+  {"index": 2, "const": "CINNABARPOKECENTER_COOLTRAINER_F", "x": 9, "y": 4, "sprite": "SPRITE_COOLTRAINER_F", "spriteId": 6, "movement": "WALK", "rangeOrDirection": "ANY_DIR", "rangeOrDirectionValue": 0, "behavior": "walk_any", "textId": "TEXT_CINNABARPOKECENTER_COOLTRAINER_F", "textIndex": 2},
+  {"index": 3, "const": "CINNABARPOKECENTER_GENTLEMAN", "x": 2, "y": 6, "sprite": "SPRITE_GENTLEMAN", "spriteId": 16, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_CINNABARPOKECENTER_GENTLEMAN", "textIndex": 3},
+  {"index": 4, "const": "CINNABARPOKECENTER_LINK_RECEPTIONIST", "x": 11, "y": 2, "sprite": "SPRITE_LINK_RECEPTIONIST", "spriteId": 42, "movement": "STAY", "rangeOrDirection": "DOWN", "rangeOrDirectionValue": 208, "behavior": "face_down", "textId": "TEXT_CINNABARPOKECENTER_LINK_RECEPTIONIST", "textIndex": 4}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [
+  {"x": 0, "y": 4, "routine": "PrintBenchGuyText", "arg": "SPRITE_FACING_UP", "argValue": 4, "kind": "event"},
+  {"x": 13, "y": 3, "routine": "OpenPokemonCenterPC", "arg": "SPRITE_FACING_UP", "argValue": 4, "kind": "event"}
+ ],
+ "spriteSet": null,
+ "music": "MUSIC_POKECENTER",
+ "wild": null,
+ "townMap": {"x": 2, "y": 15, "group": "CINNABAR_ISLAND"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/CinnabarPokecenter.json",
+ "textPointers": "CinnabarPokecenter_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/CinnabarPokecenter.asm",
+  "objects": "data/maps/objects/CinnabarPokecenter.asm",
+  "blocks": "maps/FuchsiaPokecenter.blk",
+  "script": "scripts/CinnabarPokecenter.asm"
+ },
+ "lastMapCandidates": ["CINNABAR_ISLAND"],
+ "palette": {"pal": "PAL_CINNABAR", "rule": "lastMap", "viaLastMap": "CINNABAR_ISLAND"}
+}

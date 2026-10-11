@@ -1,0 +1,57 @@
+{
+  "name": "SFX_BATTLE_2E",
+  "title": "Battle 2E",
+  "kind": "sfx",
+  "bank": 2,
+  "id": 210,
+  "label": "SFX_Battle_2E",
+  "channels": [
+    {
+      "channel": 5,
+      "label": "SFX_Battle_2E_Ch5",
+      "entry": 0,
+      "bytes": 23,
+      "labels": {"SFX_Battle_2E_Ch5": 0},
+      "commands": [
+        {"op": "duty_cycle", "duty": 0},
+        {"op": "square_note", "length": 2, "volume": 15, "fade": 1, "frequency": 512},
+        {"op": "square_note", "length": 3, "volume": 15, "fade": 1, "frequency": 1792},
+        {"op": "square_note", "length": 4, "volume": 15, "fade": 1, "frequency": 1280},
+        {"op": "square_note", "length": 5, "volume": 15, "fade": 1, "frequency": 2032},
+        {"op": "sound_loop", "count": 8, "target": 0},
+        {"op": "sound_ret"}
+      ]
+    },
+    {
+      "channel": 6,
+      "label": "SFX_Battle_2E_Ch6",
+      "entry": 0,
+      "bytes": 23,
+      "labels": {"SFX_Battle_2E_Ch6": 0},
+      "commands": [
+        {"op": "duty_cycle_pattern", "pattern": [2, 3, 0, 3]},
+        {"op": "square_note", "length": 2, "volume": 14, "fade": 1, "frequency": 770},
+        {"op": "square_note", "length": 3, "volume": 14, "fade": 1, "frequency": 2034},
+        {"op": "square_note", "length": 4, "volume": 14, "fade": 1, "frequency": 1538},
+        {"op": "square_note", "length": 5, "volume": 14, "fade": 1, "frequency": 1794},
+        {"op": "sound_loop", "count": 8, "target": 0},
+        {"op": "sound_ret"}
+      ]
+    },
+    {
+      "channel": 8,
+      "label": "SFX_Battle_2E_Ch8",
+      "entry": 0,
+      "bytes": 17,
+      "labels": {"SFX_Battle_2E_Ch8": 0},
+      "commands": [
+        {"op": "noise_note", "length": 2, "volume": 13, "fade": 3, "value": 16},
+        {"op": "noise_note", "length": 3, "volume": 13, "fade": 3, "value": 17},
+        {"op": "noise_note", "length": 2, "volume": 13, "fade": 2, "value": 16},
+        {"op": "noise_note", "length": 5, "volume": 13, "fade": 2, "value": 18},
+        {"op": "sound_loop", "count": 9, "target": 0},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

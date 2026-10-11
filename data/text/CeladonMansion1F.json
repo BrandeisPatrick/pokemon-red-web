@@ -1,0 +1,105 @@
+{
+ "map": "CeladonMansion1F",
+ "const": "CELADON_MANSION_1F",
+ "textPointerTables": [
+  {
+   "label": "CeladonMansion1F_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_CELADONMANSION1F_MEOWTH", "label": "CeladonMansion1FMeowthText", "kind": "text", "handler": "text"},
+    {"id": 2, "const": "TEXT_CELADONMANSION1F_GRANNY", "label": "CeladonMansion1FGrannyText", "kind": "text", "handler": "text"},
+    {"id": 3, "const": "TEXT_CELADONMANSION1F_CLEFAIRY", "label": "CeladonMansion1FClefairyText", "kind": "text", "handler": "text"},
+    {"id": 4, "const": "TEXT_CELADONMANSION1F_NIDORANF", "label": "CeladonMansion1FNidoranFText", "kind": "text", "handler": "text"},
+    {"id": 5, "const": "TEXT_CELADONMANSION1F_MANAGERS_SUITE_SIGN", "label": "CeladonMansion1FManagersSuiteSignText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "CeladonMansion1FMeowthText": {
+   "kind": "text",
+   "src": "scripts/CeladonMansion1F.asm:17",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonMansion1FMeowthText"},
+    {"cmd": "text_asm"}
+   ]
+  },
+  "CeladonMansion1FGrannyText": {
+   "kind": "text",
+   "src": "scripts/CeladonMansion1F.asm:23",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonMansion1FGrannyText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonMansion1FClefairyText": {
+   "kind": "text",
+   "src": "scripts/CeladonMansion1F.asm:27",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonMansion1FClefairyText"},
+    {"cmd": "text_asm"}
+   ]
+  },
+  "CeladonMansion1FNidoranFText": {
+   "kind": "text",
+   "src": "scripts/CeladonMansion1F.asm:33",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonMansion1FNidoranFText"},
+    {"cmd": "text_asm"}
+   ]
+  },
+  "CeladonMansion1FManagersSuiteSignText": {
+   "kind": "text",
+   "src": "scripts/CeladonMansion1F.asm:39",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonMansion1FManagersSuiteSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_CeladonMansion1FMeowthText": {
+   "kind": "text",
+   "src": "text/CeladonMansion1F.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "MEOWTH: Meow!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_CeladonMansion1FGrannyText": {
+   "kind": "text",
+   "src": "text/CeladonMansion1F.asm:6",
+   "commands": [
+    {"cmd": "text", "str": "My dear POKéMON"},
+    {"cmd": "line", "str": "keep me company."},
+    {"cmd": "para", "str": "MEOWTH even brings"},
+    {"cmd": "line", "str": "money home!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonMansion1FClefairyText": {
+   "kind": "text",
+   "src": "text/CeladonMansion1F.asm:14",
+   "commands": [
+    {"cmd": "text", "str": "CLEFAIRY: Pi"},
+    {"cmd": "line", "str": "pippippi!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_CeladonMansion1FNidoranFText": {
+   "kind": "text",
+   "src": "text/CeladonMansion1F.asm:19",
+   "commands": [
+    {"cmd": "text", "str": "NIDORAN: Kya"},
+    {"cmd": "line", "str": "kyaoo!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_CeladonMansion1FManagersSuiteSignText": {
+   "kind": "text",
+   "src": "text/CeladonMansion1F.asm:24",
+   "commands": [
+    {"cmd": "text", "str": "CELADON MANSION"},
+    {"cmd": "line", "str": "Manager's Suite"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

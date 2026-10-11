@@ -1,0 +1,35 @@
+{
+  "name": "SFX_59",
+  "title": "59",
+  "kind": "sfx",
+  "bank": 3,
+  "id": 176,
+  "label": "SFX_59_3",
+  "channels": [
+    {
+      "channel": 5,
+      "label": "SFX_59_3_Ch5",
+      "entry": 0,
+      "bytes": 7,
+      "labels": {"SFX_59_3_Ch5": 0},
+      "commands": [
+        {"op": "duty_cycle", "duty": 2},
+        {"op": "square_note", "length": 4, "volume": 15, "fade": 1, "frequency": 1920},
+        {"op": "sound_ret"}
+      ]
+    },
+    {
+      "channel": 6,
+      "label": "SFX_59_3_Ch6",
+      "entry": 0,
+      "bytes": 11,
+      "labels": {"SFX_59_3_Ch6": 0},
+      "commands": [
+        {"op": "duty_cycle", "duty": 2},
+        {"op": "square_note", "length": 1, "volume": 0, "fade": 8, "frequency": 0},
+        {"op": "square_note", "length": 4, "volume": 10, "fade": 1, "frequency": 1889},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "SFX_PUSH_BOULDER",
+  "title": "Push Boulder",
+  "kind": "sfx",
+  "bank": 1,
+  "id": 168,
+  "label": "SFX_Push_Boulder_1",
+  "channels": [
+    {
+      "channel": 8,
+      "label": "SFX_Push_Boulder_1_Ch8",
+      "entry": 0,
+      "bytes": 25,
+      "labels": {"SFX_Push_Boulder_1_Ch8": 0},
+      "commands": [
+        {"op": "noise_note", "length": 4, "volume": 10, "fade": 2, "value": 35},
+        {"op": "noise_note", "length": 8, "volume": 15, "fade": 1, "value": 52},
+        {"op": "noise_note", "length": 15, "volume": 0, "fade": 0, "value": 0},
+        {"op": "noise_note", "length": 2, "volume": 15, "fade": 7, "value": 36},
+        {"op": "noise_note", "length": 2, "volume": 15, "fade": 7, "value": 52},
+        {"op": "noise_note", "length": 4, "volume": 15, "fade": 7, "value": 68},
+        {"op": "noise_note", "length": 8, "volume": 15, "fade": 4, "value": 85},
+        {"op": "noise_note", "length": 8, "volume": 15, "fade": 1, "value": 68},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

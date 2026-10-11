@@ -1,0 +1,46 @@
+{
+ "id": 132,
+ "const": "CELADON_MANSION_ROOF_HOUSE",
+ "name": "CeladonMansionRoofHouse",
+ "displayName": "CELADON CITY",
+ "width": 4,
+ "height": 4,
+ "tileset": "HOUSE",
+ "tilesetId": 8,
+ "tilesetFile": "data/tilesets/House.json",
+ "isOutside": false,
+ "borderBlock": 10,
+ "blocks": [5, 18, 19, 9, 15, 20, 21, 15, 15, 24, 25, 15, 6, 11, 15, 7],
+ "connections": {},
+ "warps": [
+  {"x": 2, "y": 7, "destMap": "CELADON_MANSION_ROOF", "destMapId": 131, "destMapName": "CeladonMansionRoof", "destWarp": 3, "destWarpIndex": 2},
+  {"x": 3, "y": 7, "destMap": "CELADON_MANSION_ROOF", "destMapId": 131, "destMapName": "CeladonMansionRoof", "destWarp": 3, "destWarpIndex": 2}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "CELADONMANSION_ROOF_HOUSE_HIKER", "x": 2, "y": 2, "sprite": "SPRITE_HIKER", "spriteId": 14, "movement": "STAY", "rangeOrDirection": "DOWN", "rangeOrDirectionValue": 208, "behavior": "face_down", "textId": "TEXT_CELADONMANSION_ROOF_HOUSE_HIKER", "textIndex": 1},
+  {"index": 2, "const": "CELADONMANSION_ROOF_HOUSE_EEVEE_POKEBALL", "x": 4, "y": 3, "sprite": "SPRITE_POKE_BALL", "spriteId": 61, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_CELADONMANSION_ROOF_HOUSE_EEVEE_POKEBALL", "textIndex": 2, "toggleIndex": 69, "toggleConst": "TOGGLE_CELADON_MANSION_EEVEE_GIFT", "startsHidden": false}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [
+  {"x": 3, "y": 0, "routine": "PrintBlackboardLinkCableText", "textPredef": "LinkCableHelp", "textPredefId": 52, "kind": "event"},
+  {"x": 4, "y": 0, "routine": "PrintBlackboardLinkCableText", "textPredef": "LinkCableHelp", "textPredefId": 52, "kind": "event"},
+  {"x": 3, "y": 4, "routine": "PrintNotebookText", "textPredef": "TMNotebook", "textPredefId": 53, "kind": "event"}
+ ],
+ "spriteSet": null,
+ "music": "MUSIC_CELADON",
+ "wild": null,
+ "townMap": {"x": 7, "y": 5, "group": "CELADON_CITY"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/CeladonMansionRoofHouse.json",
+ "textPointers": "CeladonMansionRoofHouse_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/CeladonMansionRoofHouse.asm",
+  "objects": "data/maps/objects/CeladonMansionRoofHouse.asm",
+  "blocks": "maps/ViridianSchoolHouse.blk",
+  "script": "scripts/CeladonMansionRoofHouse.asm"
+ },
+ "lastMapCandidates": ["CELADON_CITY"],
+ "palette": {"pal": "PAL_CELADON", "rule": "lastMap", "viaLastMap": "CELADON_CITY"}
+}

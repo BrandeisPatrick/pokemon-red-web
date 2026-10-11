@@ -1,0 +1,59 @@
+{
+ "map": "Route2",
+ "const": "ROUTE_2",
+ "textPointerTables": [
+  {
+   "label": "Route2_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_ROUTE2_MOON_STONE", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 2, "const": "TEXT_ROUTE2_HP_UP", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 3, "const": "TEXT_ROUTE2_SIGN", "label": "Route2SignText", "kind": "text", "handler": "text"},
+    {"id": 4, "const": "TEXT_ROUTE2_DIGLETTS_CAVE_SIGN", "label": "Route2DiglettsCaveSignText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "PickUpItemText": {
+   "kind": "asm",
+   "src": "home/overworld_text.asm:29",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "Route2SignText": {
+   "kind": "text",
+   "src": "scripts/Route2.asm:12",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route2SignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route2DiglettsCaveSignText": {
+   "kind": "text",
+   "src": "scripts/Route2.asm:16",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route2DiglettsCaveSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_Route2SignText": {
+   "kind": "text",
+   "src": "text/Route2.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "ROUTE 2"},
+    {"cmd": "line", "str": "VIRIDIAN CITY -"},
+    {"cmd": "cont", "str": "PEWTER CITY"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route2DiglettsCaveSignText": {
+   "kind": "text",
+   "src": "text/Route2.asm:8",
+   "commands": [
+    {"cmd": "text", "str": "DIGLETT's CAVE"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

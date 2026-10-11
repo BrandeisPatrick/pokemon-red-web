@@ -1,0 +1,251 @@
+{
+ "map": "ChampionsRoom",
+ "const": "CHAMPIONS_ROOM",
+ "textPointerTables": [
+  {
+   "label": "ChampionsRoom_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_CHAMPIONSROOM_RIVAL", "label": "ChampionsRoomRivalText", "kind": "asm", "handler": "asm"},
+    {"id": 2, "const": "TEXT_CHAMPIONSROOM_OAK", "label": "ChampionsRoomOakText", "kind": "text", "handler": "text"},
+    {"id": 3, "const": "TEXT_CHAMPIONSROOM_OAK_CONGRATULATES_PLAYER", "label": "ChampionsRoomOakCongratulatesPlayerText", "kind": "asm", "handler": "asm"},
+    {"id": 4, "const": "TEXT_CHAMPIONSROOM_OAK_DISAPPOINTED_WITH_RIVAL", "label": "ChampionsRoomOakDisappointedWithRivalText", "kind": "text", "handler": "text"},
+    {"id": 5, "const": "TEXT_CHAMPIONSROOM_OAK_COME_WITH_ME", "label": "ChampionsRoomOakComeWithMeText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "ChampionsRoomRivalText": {
+   "kind": "asm",
+   "src": "scripts/ChampionsRoom.asm:252",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["ChampionsRoomRivalText.IntroText", "ChampionsRoomRivalAfterBattleText"]
+  },
+  "ChampionsRoomRivalText.IntroText": {
+   "kind": "text",
+   "src": "scripts/ChampionsRoom.asm:262",
+   "commands": [
+    {"cmd": "text_far", "label": "_ChampionsRoomRivalIntroText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "RivalDefeatedText": {
+   "kind": "text",
+   "src": "scripts/ChampionsRoom.asm:266",
+   "commands": [
+    {"cmd": "text_far", "label": "_RivalDefeatedText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "RivalVictoryText": {
+   "kind": "text",
+   "src": "scripts/ChampionsRoom.asm:270",
+   "commands": [
+    {"cmd": "text_far", "label": "_RivalVictoryText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ChampionsRoomRivalAfterBattleText": {
+   "kind": "text",
+   "src": "scripts/ChampionsRoom.asm:274",
+   "commands": [
+    {"cmd": "text_far", "label": "_ChampionsRoomRivalAfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ChampionsRoomOakText": {
+   "kind": "text",
+   "src": "scripts/ChampionsRoom.asm:278",
+   "commands": [
+    {"cmd": "text_far", "label": "_ChampionsRoomOakText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ChampionsRoomOakCongratulatesPlayerText": {
+   "kind": "asm",
+   "src": "scripts/ChampionsRoom.asm:282",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["ChampionsRoomOakCongratulatesPlayerText.Text"]
+  },
+  "ChampionsRoomOakCongratulatesPlayerText.Text": {
+   "kind": "text",
+   "src": "scripts/ChampionsRoom.asm:291",
+   "commands": [
+    {"cmd": "text_far", "label": "_ChampionsRoomOakCongratulatesPlayerText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ChampionsRoomOakDisappointedWithRivalText": {
+   "kind": "text",
+   "src": "scripts/ChampionsRoom.asm:295",
+   "commands": [
+    {"cmd": "text_far", "label": "_ChampionsRoomOakDisappointedWithRivalText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ChampionsRoomOakComeWithMeText": {
+   "kind": "text",
+   "src": "scripts/ChampionsRoom.asm:299",
+   "commands": [
+    {"cmd": "text_far", "label": "_ChampionsRoomOakComeWithMeText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_ChampionsRoomRivalIntroText": {
+   "kind": "text",
+   "src": "text/ChampionsRoom.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "{RIVAL}: Hey!"},
+    {"cmd": "para", "str": "I was looking"},
+    {"cmd": "line", "str": "forward to seeing"},
+    {"cmd": "cont", "str": "you, {PLAYER}!"},
+    {"cmd": "para", "str": "My rival should"},
+    {"cmd": "line", "str": "be strong to keep"},
+    {"cmd": "cont", "str": "me sharp!"},
+    {"cmd": "para", "str": "While working on"},
+    {"cmd": "line", "str": "POKéDEX, I looked"},
+    {"cmd": "cont", "str": "all over for"},
+    {"cmd": "cont", "str": "powerful POKéMON!"},
+    {"cmd": "para", "str": "Not only that, I"},
+    {"cmd": "line", "str": "assembled teams"},
+    {"cmd": "cont", "str": "that would beat"},
+    {"cmd": "cont", "str": "any POKéMON type!"},
+    {"cmd": "para", "str": "And now!"},
+    {"cmd": "para", "str": "I'm the POKéMON"},
+    {"cmd": "line", "str": "LEAGUE champion!"},
+    {"cmd": "para", "str": "{PLAYER}! Do you"},
+    {"cmd": "line", "str": "know what that"},
+    {"cmd": "cont", "str": "means?"},
+    {"cmd": "para", "str": "I'll tell you!"},
+    {"cmd": "para", "str": "I am the most"},
+    {"cmd": "line", "str": "powerful trainer"},
+    {"cmd": "cont", "str": "in the world!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_RivalDefeatedText": {
+   "kind": "text",
+   "src": "text/ChampionsRoom.asm:39",
+   "commands": [
+    {"cmd": "text", "str": "NO!"},
+    {"cmd": "line", "str": "That can't be!"},
+    {"cmd": "cont", "str": "You beat my best!"},
+    {"cmd": "para", "str": "After all that"},
+    {"cmd": "line", "str": "work to become"},
+    {"cmd": "cont", "str": "LEAGUE champ?"},
+    {"cmd": "para", "str": "My reign is over"},
+    {"cmd": "line", "str": "already?"},
+    {"cmd": "cont", "str": "It's not fair!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_RivalVictoryText": {
+   "kind": "text",
+   "src": "text/ChampionsRoom.asm:53",
+   "commands": [
+    {"cmd": "text", "str": "Hahaha!"},
+    {"cmd": "line", "str": "I won, I won!"},
+    {"cmd": "para", "str": "I'm too good for"},
+    {"cmd": "line", "str": "you, {PLAYER}!"},
+    {"cmd": "para", "str": "You did well to"},
+    {"cmd": "line", "str": "even reach me,"},
+    {"cmd": "cont", "str": "{RIVAL}, the"},
+    {"cmd": "cont", "str": "POKéMON genius!"},
+    {"cmd": "para", "str": "Nice try, loser!"},
+    {"cmd": "line", "str": "Hahaha!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_ChampionsRoomRivalAfterBattleText": {
+   "kind": "text",
+   "src": "text/ChampionsRoom.asm:69",
+   "commands": [
+    {"cmd": "text", "str": "Why?"},
+    {"cmd": "line", "str": "Why did I lose?"},
+    {"cmd": "para", "str": "I never made any"},
+    {"cmd": "line", "str": "mistakes raising"},
+    {"cmd": "cont", "str": "my POKéMON..."},
+    {"cmd": "para", "str": "Darn it! You're"},
+    {"cmd": "line", "str": "the new POKéMON"},
+    {"cmd": "cont", "str": "LEAGUE champion!"},
+    {"cmd": "para", "str": "Although I don't"},
+    {"cmd": "line", "str": "like to admit it."},
+    {"cmd": "done"}
+   ]
+  },
+  "_ChampionsRoomOakText": {
+   "kind": "text",
+   "src": "text/ChampionsRoom.asm:85",
+   "commands": [
+    {"cmd": "text", "str": "OAK: {PLAYER}!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ChampionsRoomOakCongratulatesPlayerText": {
+   "kind": "text",
+   "src": "text/ChampionsRoom.asm:89",
+   "commands": [
+    {"cmd": "text", "str": "OAK: So, you won!"},
+    {"cmd": "line", "str": "Congratulations!"},
+    {"cmd": "cont", "str": "You're the new"},
+    {"cmd": "cont", "str": "POKéMON LEAGUE"},
+    {"cmd": "cont", "str": "champion!"},
+    {"cmd": "para", "str": "You've grown up so"},
+    {"cmd": "line", "str": "much since you"},
+    {"cmd": "cont", "str": "first left with"},
+    {"cmd": "cont", "str": ""},
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "para", "str": "{PLAYER}, you have"},
+    {"cmd": "line", "str": "come of age!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ChampionsRoomOakDisappointedWithRivalText": {
+   "kind": "text",
+   "src": "text/ChampionsRoom.asm:107",
+   "commands": [
+    {"cmd": "text", "str": "OAK: {RIVAL}! I'm"},
+    {"cmd": "line", "str": "disappointed!"},
+    {"cmd": "para", "str": "I came when I"},
+    {"cmd": "line", "str": "heard you beat"},
+    {"cmd": "cont", "str": "the ELITE FOUR!"},
+    {"cmd": "para", "str": "But, when I got"},
+    {"cmd": "line", "str": "here, you had"},
+    {"cmd": "cont", "str": "already lost!"},
+    {"cmd": "para", "str": "{RIVAL}! Do you"},
+    {"cmd": "line", "str": "understand why"},
+    {"cmd": "cont", "str": "you lost?"},
+    {"cmd": "para", "str": "You have forgotten"},
+    {"cmd": "line", "str": "to treat your"},
+    {"cmd": "cont", "str": "POKéMON with"},
+    {"cmd": "cont", "str": "trust and love!"},
+    {"cmd": "para", "str": "Without them, you"},
+    {"cmd": "line", "str": "will never become"},
+    {"cmd": "cont", "str": "a champ again!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ChampionsRoomOakComeWithMeText": {
+   "kind": "text",
+   "src": "text/ChampionsRoom.asm:133",
+   "commands": [
+    {"cmd": "text", "str": "OAK: {PLAYER}!"},
+    {"cmd": "para", "str": "You understand"},
+    {"cmd": "line", "str": "that your victory"},
+    {"cmd": "cont", "str": "was not just your"},
+    {"cmd": "cont", "str": "own doing!"},
+    {"cmd": "para", "str": "The bond you share"},
+    {"cmd": "line", "str": "with your POKéMON"},
+    {"cmd": "cont", "str": "is marvelous!"},
+    {"cmd": "para", "str": "{PLAYER}!"},
+    {"cmd": "line", "str": "Come with me!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

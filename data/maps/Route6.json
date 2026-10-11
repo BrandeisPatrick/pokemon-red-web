@@ -1,0 +1,249 @@
+{
+ "id": 17,
+ "const": "ROUTE_6",
+ "name": "Route6",
+ "displayName": "ROUTE 6",
+ "width": 10,
+ "height": 18,
+ "tileset": "OVERWORLD",
+ "tilesetId": 0,
+ "tilesetFile": "data/tilesets/Overworld.json",
+ "isOutside": true,
+ "borderBlock": 15,
+ "blocks": [116, 116, 116, 10, 77, 77, 10, 116, 116, 116, 81, 81, 81, 81, 32, 13, 33, 81, 81, 81, 116, 116, 116, 10, 104, 127, 105, 116, 116, 116, 7, 47, 7, 7, 55, 58, 126, 7, 47, 7, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 7, 7, 7, 47, 7, 7, 7, 7, 32, 33, 49, 49, 49, 49, 49, 49, 49, 49, 124, 126, 11, 11, 49, 11, 11, 11, 11, 49, 49, 8, 11, 11, 49, 11, 11, 11, 11, 11, 11, 11, 11, 11, 49, 11, 11, 11, 11, 11, 11, 11, 11, 11, 49, 49, 49, 49, 49, 49, 49, 11, 11, 11, 11, 11, 11, 11, 11, 11, 49, 11, 29, 31, 31, 31, 31, 31, 30, 11, 49, 11, 101, 67, 67, 67, 67, 67, 100, 11, 49, 11, 81, 99, 10, 10, 49, 49, 49, 49, 49, 11, 10, 77, 82, 82, 49, 10, 11, 11, 11, 11, 31, 31, 31, 106, 49, 98, 81, 81, 81, 81, 67, 67, 67, 25, 49, 78, 10, 10, 10, 10],
+ "connections": {
+  "north": {
+   "map": "SAFFRON_CITY",
+   "mapId": 10,
+   "mapName": "SaffronCity",
+   "offset": -5,
+   "dx": -5,
+   "dy": -18,
+   "copyRect": {"x": 2, "y": 15, "w": 16, "h": 3},
+   "onEnter": {"newY": 35, "xAdd": 10},
+   "macro": {
+    "stripSrc": 302,
+    "stripDest": 0,
+    "stripLength": 16,
+    "connectedWidth": 20,
+    "yAlign": 35,
+    "xAlign": 10,
+    "viewPointer": 469
+   }
+  },
+  "south": {
+   "map": "VERMILION_CITY",
+   "mapId": 5,
+   "mapName": "VermilionCity",
+   "offset": -5,
+   "dx": -5,
+   "dy": 18,
+   "copyRect": {"x": 2, "y": 0, "w": 16, "h": 3},
+   "onEnter": {"newY": 0, "xAdd": 10},
+   "macro": {"stripSrc": 2, "stripDest": 336, "stripLength": 16, "connectedWidth": 20, "yAlign": 0, "xAlign": 10, "viewPointer": 27}
+  }
+ },
+ "warps": [
+  {"x": 9, "y": 1, "destMap": "ROUTE_6_GATE", "destMapId": 73, "destMapName": "Route6Gate", "destWarp": 3, "destWarpIndex": 2},
+  {"x": 10, "y": 1, "destMap": "ROUTE_6_GATE", "destMapId": 73, "destMapName": "Route6Gate", "destWarp": 3, "destWarpIndex": 2},
+  {"x": 10, "y": 7, "destMap": "ROUTE_6_GATE", "destMapId": 73, "destMapName": "Route6Gate", "destWarp": 1, "destWarpIndex": 0},
+  {"x": 17, "y": 13, "destMap": "UNDERGROUND_PATH_ROUTE_6", "destMapId": 74, "destMapName": "UndergroundPathRoute6", "destWarp": 1, "destWarpIndex": 0}
+ ],
+ "bgEvents": [
+  {"x": 19, "y": 15, "textId": "TEXT_ROUTE6_UNDERGROUND_PATH_SIGN", "textIndex": 7}
+ ],
+ "objectEvents": [
+  {
+   "index": 1,
+   "const": "ROUTE6_COOLTRAINER_M1",
+   "x": 10,
+   "y": 21,
+   "sprite": "SPRITE_COOLTRAINER_M",
+   "spriteId": 7,
+   "movement": "STAY",
+   "rangeOrDirection": "RIGHT",
+   "rangeOrDirectionValue": 211,
+   "behavior": "face_right",
+   "textId": "TEXT_ROUTE6_COOLTRAINER_M1",
+   "textIndex": 1,
+   "trainer": {
+    "trainerClass": "OPP_JR_TRAINER_M",
+    "trainerClassId": 5,
+    "trainerPartyIndex": 4,
+    "header": "Route6TrainerHeader0",
+    "eventFlag": "EVENT_BEAT_ROUTE_6_TRAINER_0",
+    "eventFlagIndex": 1041,
+    "sightRange": 0,
+    "textBefore": "Route6CooltrainerM1BattleText",
+    "textEnd": "Route6CooltrainerM1EndBattleText",
+    "textAfter": "Route6CooltrainerAfterBattleText"
+   }
+  },
+  {
+   "index": 2,
+   "const": "ROUTE6_COOLTRAINER_F1",
+   "x": 11,
+   "y": 21,
+   "sprite": "SPRITE_COOLTRAINER_F",
+   "spriteId": 6,
+   "movement": "STAY",
+   "rangeOrDirection": "LEFT",
+   "rangeOrDirectionValue": 210,
+   "behavior": "face_left",
+   "textId": "TEXT_ROUTE6_COOLTRAINER_F1",
+   "textIndex": 2,
+   "trainer": {
+    "trainerClass": "OPP_JR_TRAINER_F",
+    "trainerClassId": 6,
+    "trainerPartyIndex": 2,
+    "header": "Route6TrainerHeader1",
+    "eventFlag": "EVENT_BEAT_ROUTE_6_TRAINER_1",
+    "eventFlagIndex": 1042,
+    "sightRange": 0,
+    "textBefore": "Route6CooltrainerF1BattleText",
+    "textEnd": "Route6CooltrainerF1EndBattleText",
+    "textAfter": "Route6CooltrainerAfterBattleText"
+   }
+  },
+  {
+   "index": 3,
+   "const": "ROUTE6_YOUNGSTER1",
+   "x": 0,
+   "y": 15,
+   "sprite": "SPRITE_YOUNGSTER",
+   "spriteId": 4,
+   "movement": "STAY",
+   "rangeOrDirection": "RIGHT",
+   "rangeOrDirectionValue": 211,
+   "behavior": "face_right",
+   "textId": "TEXT_ROUTE6_YOUNGSTER1",
+   "textIndex": 3,
+   "trainer": {
+    "trainerClass": "OPP_BUG_CATCHER",
+    "trainerClassId": 2,
+    "trainerPartyIndex": 10,
+    "header": "Route6TrainerHeader2",
+    "eventFlag": "EVENT_BEAT_ROUTE_6_TRAINER_2",
+    "eventFlagIndex": 1043,
+    "sightRange": 4,
+    "textBefore": "Route6Youngster1BattleText",
+    "textEnd": "Route6Youngster1EndBattleText",
+    "textAfter": "Route6Youngster1AfterBattleText"
+   }
+  },
+  {
+   "index": 4,
+   "const": "ROUTE6_COOLTRAINER_M2",
+   "x": 11,
+   "y": 31,
+   "sprite": "SPRITE_COOLTRAINER_M",
+   "spriteId": 7,
+   "movement": "STAY",
+   "rangeOrDirection": "LEFT",
+   "rangeOrDirectionValue": 210,
+   "behavior": "face_left",
+   "textId": "TEXT_ROUTE6_COOLTRAINER_M2",
+   "textIndex": 4,
+   "trainer": {
+    "trainerClass": "OPP_JR_TRAINER_M",
+    "trainerClassId": 5,
+    "trainerPartyIndex": 5,
+    "header": "Route6TrainerHeader3",
+    "eventFlag": "EVENT_BEAT_ROUTE_6_TRAINER_3",
+    "eventFlagIndex": 1044,
+    "sightRange": 3,
+    "textBefore": "Route6CooltrainerM2BattleText",
+    "textEnd": "Route6CooltrainerM2EndBattleText",
+    "textAfter": "Route6CooltrainerM2AfterBattleText"
+   }
+  },
+  {
+   "index": 5,
+   "const": "ROUTE6_COOLTRAINER_F2",
+   "x": 11,
+   "y": 30,
+   "sprite": "SPRITE_COOLTRAINER_F",
+   "spriteId": 6,
+   "movement": "STAY",
+   "rangeOrDirection": "LEFT",
+   "rangeOrDirectionValue": 210,
+   "behavior": "face_left",
+   "textId": "TEXT_ROUTE6_COOLTRAINER_F2",
+   "textIndex": 5,
+   "trainer": {
+    "trainerClass": "OPP_JR_TRAINER_F",
+    "trainerClassId": 6,
+    "trainerPartyIndex": 3,
+    "header": "Route6TrainerHeader4",
+    "eventFlag": "EVENT_BEAT_ROUTE_6_TRAINER_4",
+    "eventFlagIndex": 1045,
+    "sightRange": 3,
+    "textBefore": "Route6CooltrainerF2BattleText",
+    "textEnd": "Route6CooltrainerF2EndBattleText",
+    "textAfter": "Route6CooltrainerF2AfterBattleText"
+   }
+  },
+  {
+   "index": 6,
+   "const": "ROUTE6_YOUNGSTER2",
+   "x": 19,
+   "y": 26,
+   "sprite": "SPRITE_YOUNGSTER",
+   "spriteId": 4,
+   "movement": "STAY",
+   "rangeOrDirection": "LEFT",
+   "rangeOrDirectionValue": 210,
+   "behavior": "face_left",
+   "textId": "TEXT_ROUTE6_YOUNGSTER2",
+   "textIndex": 6,
+   "trainer": {
+    "trainerClass": "OPP_BUG_CATCHER",
+    "trainerClassId": 2,
+    "trainerPartyIndex": 11,
+    "header": "Route6TrainerHeader5",
+    "eventFlag": "EVENT_BEAT_ROUTE_6_TRAINER_5",
+    "eventFlagIndex": 1046,
+    "sightRange": 3,
+    "textBefore": "Route6Youngster2BattleText",
+    "textEnd": "Route6Youngster2EndBattleText",
+    "textAfter": "Route6Youngster2AfterBattleText"
+   }
+  }
+ ],
+ "trainerHeaders": [
+  {"header": "Route6TrainerHeader0", "list": "Route6TrainerHeaders", "objectIndex": 1, "eventFlag": "EVENT_BEAT_ROUTE_6_TRAINER_0", "sightRange": 0, "textBefore": "Route6CooltrainerM1BattleText", "textEnd": "Route6CooltrainerM1EndBattleText", "textAfter": "Route6CooltrainerAfterBattleText", "talkObject": 1},
+  {"header": "Route6TrainerHeader1", "list": "Route6TrainerHeaders", "objectIndex": 2, "eventFlag": "EVENT_BEAT_ROUTE_6_TRAINER_1", "sightRange": 0, "textBefore": "Route6CooltrainerF1BattleText", "textEnd": "Route6CooltrainerF1EndBattleText", "textAfter": "Route6CooltrainerAfterBattleText", "talkObject": 2},
+  {"header": "Route6TrainerHeader2", "list": "Route6TrainerHeaders", "objectIndex": 3, "eventFlag": "EVENT_BEAT_ROUTE_6_TRAINER_2", "sightRange": 4, "textBefore": "Route6Youngster1BattleText", "textEnd": "Route6Youngster1EndBattleText", "textAfter": "Route6Youngster1AfterBattleText", "talkObject": 3},
+  {"header": "Route6TrainerHeader3", "list": "Route6TrainerHeaders", "objectIndex": 4, "eventFlag": "EVENT_BEAT_ROUTE_6_TRAINER_3", "sightRange": 3, "textBefore": "Route6CooltrainerM2BattleText", "textEnd": "Route6CooltrainerM2EndBattleText", "textAfter": "Route6CooltrainerM2AfterBattleText", "talkObject": 4},
+  {"header": "Route6TrainerHeader4", "list": "Route6TrainerHeaders", "objectIndex": 5, "eventFlag": "EVENT_BEAT_ROUTE_6_TRAINER_4", "sightRange": 3, "textBefore": "Route6CooltrainerF2BattleText", "textEnd": "Route6CooltrainerF2EndBattleText", "textAfter": "Route6CooltrainerF2AfterBattleText", "talkObject": 5},
+  {"header": "Route6TrainerHeader5", "list": "Route6TrainerHeaders", "objectIndex": 6, "eventFlag": "EVENT_BEAT_ROUTE_6_TRAINER_5", "sightRange": 3, "textBefore": "Route6Youngster2BattleText", "textEnd": "Route6Youngster2EndBattleText", "textAfter": "Route6Youngster2AfterBattleText", "talkObject": 6}
+ ],
+ "hiddenObjects": [],
+ "spriteSet": {
+  "type": "split",
+  "split": "SPLITSET_ROUTE_6",
+  "axis": "NORTH_SOUTH",
+  "compare": "y",
+  "coord": 2,
+  "below": "SPRITESET_SAFFRON",
+  "atOrAbove": "SPRITESET_VERMILION",
+  "sets": {
+   "SPRITESET_SAFFRON": ["SPRITE_ROCKET", "SPRITE_SCIENTIST", "SPRITE_SILPH_WORKER_M", "SPRITE_SILPH_WORKER_F", "SPRITE_GENTLEMAN", "SPRITE_BIRD", "SPRITE_ROCKER", "SPRITE_COOLTRAINER_M", "SPRITE_MONSTER", "SPRITE_POKE_BALL", "SPRITE_UNUSED_GAMBLER_ASLEEP_2"],
+   "SPRITESET_VERMILION": ["SPRITE_BEAUTY", "SPRITE_SUPER_NERD", "SPRITE_YOUNGSTER", "SPRITE_GAMBLER", "SPRITE_MONSTER", "SPRITE_GUARD", "SPRITE_SAILOR", "SPRITE_COOLTRAINER_F", "SPRITE_COOLTRAINER_M", "SPRITE_POKE_BALL", "SPRITE_UNUSED_GAMBLER_ASLEEP_2"]
+  }
+ },
+ "music": "MUSIC_ROUTES3",
+ "wild": {"label": "Route6WildMons", "file": "Route6"},
+ "townMap": {"x": 10, "y": 8, "group": null},
+ "extraWarpCheck": "warpTileInFront",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/Route6.json",
+ "textPointers": "Route6_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/Route6.asm",
+  "objects": "data/maps/objects/Route6.asm",
+  "blocks": "maps/Route6.blk",
+  "script": "scripts/Route6.asm"
+ },
+ "palette": {"pal": "PAL_ROUTE", "rule": "route"}
+}

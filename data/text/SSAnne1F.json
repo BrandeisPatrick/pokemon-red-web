@@ -1,0 +1,59 @@
+{
+ "map": "SSAnne1F",
+ "const": "SS_ANNE_1F",
+ "textPointerTables": [
+  {
+   "label": "SSAnne1F_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_SSANNE1F_WAITER", "label": "SSAnne1FWaiterText", "kind": "text", "handler": "text"},
+    {"id": 2, "const": "TEXT_SSANNE1F_SAILOR", "label": "SSAnne1FSailorText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "SSAnne1FWaiterText": {
+   "kind": "text",
+   "src": "scripts/SSAnne1F.asm:11",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnne1FWaiterText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnne1FSailorText": {
+   "kind": "text",
+   "src": "scripts/SSAnne1F.asm:15",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnne1FSailorText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_SSAnne1FWaiterText": {
+   "kind": "text",
+   "src": "text/SSAnne1F.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Bonjour!"},
+    {"cmd": "line", "str": "I am le waiter on"},
+    {"cmd": "cont", "str": "this ship!"},
+    {"cmd": "para", "str": "I will be happy"},
+    {"cmd": "line", "str": "to serve you any-"},
+    {"cmd": "cont", "str": "thing you please!"},
+    {"cmd": "para", "str": "Ah! Le strong"},
+    {"cmd": "line", "str": "silent type!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SSAnne1FSailorText": {
+   "kind": "text",
+   "src": "text/SSAnne1F.asm:15",
+   "commands": [
+    {"cmd": "text", "str": "The passengers"},
+    {"cmd": "line", "str": "are restless!"},
+    {"cmd": "para", "str": "You might be"},
+    {"cmd": "line", "str": "challenged by the"},
+    {"cmd": "cont", "str": "more bored ones!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

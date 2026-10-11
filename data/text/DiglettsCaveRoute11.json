@@ -1,0 +1,35 @@
+{
+ "map": "DiglettsCaveRoute11",
+ "const": "DIGLETTS_CAVE_ROUTE_11",
+ "textPointerTables": [
+  {
+   "label": "DiglettsCaveRoute11_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_DIGLETTSCAVEROUTE11_GAMBLER", "label": "DiglettsCaveRoute11GamblerText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "DiglettsCaveRoute11GamblerText": {
+   "kind": "text",
+   "src": "scripts/DiglettsCaveRoute11.asm:12",
+   "commands": [
+    {"cmd": "text_far", "label": "_DiglettsCaveRoute11GamblerText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_DiglettsCaveRoute11GamblerText": {
+   "kind": "text",
+   "src": "text/DiglettsCaveRoute11.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "What a surprise!"},
+    {"cmd": "line", "str": "DIGLETTs dug this"},
+    {"cmd": "cont", "str": "long tunnel!"},
+    {"cmd": "para", "str": "It goes right to"},
+    {"cmd": "line", "str": "VIRIDIAN CITY!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

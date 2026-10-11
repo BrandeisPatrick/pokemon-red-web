@@ -1,0 +1,43 @@
+{
+ "id": 101,
+ "const": "SS_ANNE_CAPTAINS_ROOM",
+ "name": "SSAnneCaptainsRoom",
+ "displayName": "S.S.ANNE",
+ "width": 3,
+ "height": 4,
+ "tileset": "SHIP",
+ "tilesetId": 13,
+ "tilesetFile": "data/tilesets/Ship.json",
+ "isOutside": false,
+ "borderBlock": 12,
+ "blocks": [48, 49, 47, 50, 51, 7, 11, 11, 7, 46, 11, 11],
+ "connections": {},
+ "warps": [
+  {"x": 0, "y": 7, "destMap": "SS_ANNE_2F", "destMapId": 96, "destMapName": "SSAnne2F", "destWarp": 9, "destWarpIndex": 8}
+ ],
+ "bgEvents": [
+  {"x": 4, "y": 1, "textId": "TEXT_SSANNECAPTAINSROOM_TRASH", "textIndex": 2},
+  {"x": 1, "y": 2, "textId": "TEXT_SSANNECAPTAINSROOM_SEASICK_BOOK", "textIndex": 3}
+ ],
+ "objectEvents": [
+  {"index": 1, "const": "SSANNECAPTAINSROOM_CAPTAIN", "x": 4, "y": 2, "sprite": "SPRITE_CAPTAIN", "spriteId": 46, "movement": "STAY", "rangeOrDirection": "UP", "rangeOrDirectionValue": 209, "behavior": "face_up", "textId": "TEXT_SSANNECAPTAINSROOM_CAPTAIN", "textIndex": 1}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_SS_ANNE",
+ "wild": null,
+ "townMap": {"x": 9, "y": 10, "group": "SS_ANNE"},
+ "extraWarpCheck": "warpTileInFront",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/SSAnneCaptainsRoom.json",
+ "textPointers": "SSAnneCaptainsRoom_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/SSAnneCaptainsRoom.asm",
+  "objects": "data/maps/objects/SSAnneCaptainsRoom.asm",
+  "blocks": "maps/SSAnneCaptainsRoom.blk",
+  "script": "scripts/SSAnneCaptainsRoom.asm"
+ },
+ "lastMapCandidates": ["VERMILION_CITY"],
+ "palette": {"pal": "PAL_VERMILION", "rule": "lastMap", "viaLastMap": "VERMILION_CITY"}
+}

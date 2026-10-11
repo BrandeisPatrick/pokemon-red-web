@@ -1,0 +1,47 @@
+{
+ "id": 64,
+ "const": "CERULEAN_POKECENTER",
+ "name": "CeruleanPokecenter",
+ "displayName": "CERULEAN CITY",
+ "width": 7,
+ "height": 4,
+ "tileset": "POKECENTER",
+ "tilesetId": 6,
+ "tilesetFile": "data/tilesets/Pokecenter.json",
+ "isOutside": false,
+ "borderBlock": 0,
+ "blocks": [32, 16, 1, 2, 12, 13, 13, 33, 4, 5, 7, 7, 34, 35, 8, 15, 15, 15, 15, 15, 27, 14, 10, 11, 14, 15, 15, 14],
+ "connections": {},
+ "warps": [
+  {"x": 3, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 3, "destWarpIndex": 2},
+  {"x": 4, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 3, "destWarpIndex": 2}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "CERULEANPOKECENTER_NURSE", "x": 3, "y": 1, "sprite": "SPRITE_NURSE", "spriteId": 41, "movement": "STAY", "rangeOrDirection": "DOWN", "rangeOrDirectionValue": 208, "behavior": "face_down", "textId": "TEXT_CERULEANPOKECENTER_NURSE", "textIndex": 1},
+  {"index": 2, "const": "CERULEANPOKECENTER_SUPER_NERD", "x": 10, "y": 5, "sprite": "SPRITE_SUPER_NERD", "spriteId": 12, "movement": "WALK", "rangeOrDirection": "ANY_DIR", "rangeOrDirectionValue": 0, "behavior": "walk_any", "textId": "TEXT_CERULEANPOKECENTER_SUPER_NERD", "textIndex": 2},
+  {"index": 3, "const": "CERULEANPOKECENTER_GENTLEMAN", "x": 4, "y": 3, "sprite": "SPRITE_GENTLEMAN", "spriteId": 16, "movement": "STAY", "rangeOrDirection": "DOWN", "rangeOrDirectionValue": 208, "behavior": "face_down", "textId": "TEXT_CERULEANPOKECENTER_GENTLEMAN", "textIndex": 3},
+  {"index": 4, "const": "CERULEANPOKECENTER_LINK_RECEPTIONIST", "x": 11, "y": 2, "sprite": "SPRITE_LINK_RECEPTIONIST", "spriteId": 42, "movement": "STAY", "rangeOrDirection": "DOWN", "rangeOrDirectionValue": 208, "behavior": "face_down", "textId": "TEXT_CERULEANPOKECENTER_LINK_RECEPTIONIST", "textIndex": 4}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [
+  {"x": 0, "y": 4, "routine": "PrintBenchGuyText", "arg": "SPRITE_FACING_LEFT", "argValue": 8, "kind": "event"},
+  {"x": 13, "y": 3, "routine": "OpenPokemonCenterPC", "arg": "SPRITE_FACING_UP", "argValue": 4, "kind": "event"}
+ ],
+ "spriteSet": null,
+ "music": "MUSIC_POKECENTER",
+ "wild": null,
+ "townMap": {"x": 10, "y": 2, "group": "CERULEAN_CITY"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/CeruleanPokecenter.json",
+ "textPointers": "CeruleanPokecenter_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/CeruleanPokecenter.asm",
+  "objects": "data/maps/objects/CeruleanPokecenter.asm",
+  "blocks": "maps/CeruleanPokecenter.blk",
+  "script": "scripts/CeruleanPokecenter.asm"
+ },
+ "lastMapCandidates": ["CERULEAN_CITY"],
+ "palette": {"pal": "PAL_CERULEAN", "rule": "lastMap", "viaLastMap": "CERULEAN_CITY"}
+}

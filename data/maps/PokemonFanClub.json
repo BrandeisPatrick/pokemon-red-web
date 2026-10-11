@@ -1,0 +1,49 @@
+{
+ "id": 90,
+ "const": "POKEMON_FAN_CLUB",
+ "name": "PokemonFanClub",
+ "displayName": "VERMILION CITY",
+ "width": 4,
+ "height": 4,
+ "tileset": "INTERIOR",
+ "tilesetId": 16,
+ "tilesetFile": "data/tilesets/Interior.json",
+ "isOutside": false,
+ "borderBlock": 13,
+ "blocks": [23, 18, 19, 22, 25, 16, 17, 15, 24, 20, 21, 26, 3, 12, 3, 3],
+ "connections": {},
+ "warps": [
+  {"x": 2, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 2, "destWarpIndex": 1},
+  {"x": 3, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 2, "destWarpIndex": 1}
+ ],
+ "bgEvents": [
+  {"x": 1, "y": 0, "textId": "TEXT_POKEMONFANCLUB_SIGN_1", "textIndex": 7},
+  {"x": 6, "y": 0, "textId": "TEXT_POKEMONFANCLUB_SIGN_2", "textIndex": 8}
+ ],
+ "objectEvents": [
+  {"index": 1, "const": "POKEMONFANCLUB_PIKACHU_FAN", "x": 6, "y": 3, "sprite": "SPRITE_FISHER", "spriteId": 47, "movement": "STAY", "rangeOrDirection": "LEFT", "rangeOrDirectionValue": 210, "behavior": "face_left", "textId": "TEXT_POKEMONFANCLUB_PIKACHU_FAN", "textIndex": 1},
+  {"index": 2, "const": "POKEMONFANCLUB_SEEL_FAN", "x": 1, "y": 3, "sprite": "SPRITE_GIRL", "spriteId": 13, "movement": "STAY", "rangeOrDirection": "RIGHT", "rangeOrDirectionValue": 211, "behavior": "face_right", "textId": "TEXT_POKEMONFANCLUB_SEEL_FAN", "textIndex": 2},
+  {"index": 3, "const": "POKEMONFANCLUB_PIKACHU", "x": 6, "y": 4, "sprite": "SPRITE_FAIRY", "spriteId": 56, "movement": "STAY", "rangeOrDirection": "LEFT", "rangeOrDirectionValue": 210, "behavior": "face_left", "textId": "TEXT_POKEMONFANCLUB_PIKACHU", "textIndex": 3},
+  {"index": 4, "const": "POKEMONFANCLUB_SEEL", "x": 1, "y": 4, "sprite": "SPRITE_SEEL", "spriteId": 60, "movement": "STAY", "rangeOrDirection": "RIGHT", "rangeOrDirectionValue": 211, "behavior": "face_right", "textId": "TEXT_POKEMONFANCLUB_SEEL", "textIndex": 4},
+  {"index": 5, "const": "POKEMONFANCLUB_CHAIRMAN", "x": 3, "y": 1, "sprite": "SPRITE_GENTLEMAN", "spriteId": 16, "movement": "STAY", "rangeOrDirection": "DOWN", "rangeOrDirectionValue": 208, "behavior": "face_down", "textId": "TEXT_POKEMONFANCLUB_CHAIRMAN", "textIndex": 5},
+  {"index": 6, "const": "POKEMONFANCLUB_RECEPTIONIST", "x": 5, "y": 1, "sprite": "SPRITE_LINK_RECEPTIONIST", "spriteId": 42, "movement": "STAY", "rangeOrDirection": "DOWN", "rangeOrDirectionValue": 208, "behavior": "face_down", "textId": "TEXT_POKEMONFANCLUB_RECEPTIONIST", "textIndex": 6}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_VERMILION",
+ "wild": null,
+ "townMap": {"x": 10, "y": 9, "group": "VERMILION_CITY"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/PokemonFanClub.json",
+ "textPointers": "PokemonFanClub_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/PokemonFanClub.asm",
+  "objects": "data/maps/objects/PokemonFanClub.asm",
+  "blocks": "maps/PokemonFanClub.blk",
+  "script": "scripts/PokemonFanClub.asm"
+ },
+ "lastMapCandidates": ["VERMILION_CITY"],
+ "palette": {"pal": "PAL_VERMILION", "rule": "lastMap", "viaLastMap": "VERMILION_CITY"}
+}

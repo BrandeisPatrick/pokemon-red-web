@@ -1,0 +1,48 @@
+{
+ "map": "CeruleanCaveB1F",
+ "const": "CERULEAN_CAVE_B1F",
+ "textPointerTables": [
+  {
+   "label": "CeruleanCaveB1F_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_CERULEANCAVEB1F_MEWTWO", "label": "CeruleanCaveB1FMewtwoText", "kind": "asm", "handler": "trainer", "trainerHeader": "MewtwoTrainerHeader"},
+    {"id": 2, "const": "TEXT_CERULEANCAVEB1F_ULTRA_BALL", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 3, "const": "TEXT_CERULEANCAVEB1F_MAX_REVIVE", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"}
+   ]
+  }
+ ],
+ "texts": {
+  "PickUpItemText": {
+   "kind": "asm",
+   "src": "home/overworld_text.asm:29",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "CeruleanCaveB1FMewtwoText": {
+   "kind": "asm",
+   "src": "scripts/CeruleanCaveB1F.asm:29",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "MewtwoTrainerHeader"
+  },
+  "MewtwoBattleText": {
+   "kind": "text",
+   "src": "scripts/CeruleanCaveB1F.asm:35",
+   "commands": [
+    {"cmd": "text_far", "label": "_MewtwoBattleText"},
+    {"cmd": "text_asm"}
+   ]
+  },
+  "_MewtwoBattleText": {
+   "kind": "text",
+   "src": "text/CeruleanCaveB1F.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Mew!"},
+    {"cmd": "text_end"}
+   ]
+  }
+ }
+}

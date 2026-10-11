@@ -1,0 +1,28 @@
+{
+  "name": "SFX_SHRINK",
+  "title": "Shrink",
+  "kind": "sfx",
+  "bank": 3,
+  "id": 156,
+  "label": "SFX_Shrink_3",
+  "channels": [
+    {
+      "channel": 5,
+      "label": "SFX_Shrink_3_Ch5",
+      "entry": 0,
+      "bytes": 27,
+      "labels": {"SFX_Shrink_3_Ch5": 0},
+      "commands": [
+        {"op": "duty_cycle", "duty": 1},
+        {"op": "pitch_sweep", "length": 1, "change": 7},
+        {"op": "square_note", "length": 15, "volume": 13, "fade": 7, "frequency": 1536},
+        {"op": "square_note", "length": 15, "volume": 11, "fade": 7, "frequency": 1408},
+        {"op": "square_note", "length": 15, "volume": 8, "fade": 7, "frequency": 1280},
+        {"op": "square_note", "length": 15, "volume": 4, "fade": 7, "frequency": 1152},
+        {"op": "square_note", "length": 15, "volume": 1, "fade": 7, "frequency": 1024},
+        {"op": "pitch_sweep", "length": 0, "change": 8},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

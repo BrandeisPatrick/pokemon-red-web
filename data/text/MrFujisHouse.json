@@ -1,0 +1,264 @@
+{
+ "map": "MrFujisHouse",
+ "const": "MR_FUJIS_HOUSE",
+ "textPointerTables": [
+  {
+   "label": "MrFujisHouse_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_MRFUJISHOUSE_SUPER_NERD", "label": "MrFujisHouseSuperNerdText", "kind": "asm", "handler": "asm"},
+    {"id": 2, "const": "TEXT_MRFUJISHOUSE_LITTLE_GIRL", "label": "MrFujisHouseLittleGirlText", "kind": "asm", "handler": "asm"},
+    {"id": 3, "const": "TEXT_MRFUJISHOUSE_PSYDUCK", "label": "MrFujisHousePsyduckText", "kind": "text", "handler": "text"},
+    {"id": 4, "const": "TEXT_MRFUJISHOUSE_NIDORINO", "label": "MrFujisHouseNidorinoText", "kind": "text", "handler": "text"},
+    {"id": 5, "const": "TEXT_MRFUJISHOUSE_MR_FUJI", "label": "MrFujisHouseMrFujiText", "kind": "asm", "handler": "asm"},
+    {"id": 6, "const": "TEXT_MRFUJISHOUSE_POKEDEX", "label": "MrFujisHouseMrFujiPokedexText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "MrFujisHouseSuperNerdText": {
+   "kind": "asm",
+   "src": "scripts/MrFujisHouse.asm:15",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["MrFujisHouseSuperNerdText.MrFujiIsntHereText", "MrFujisHouseSuperNerdText.MrFujiHadBeenPrayingText"]
+  },
+  "MrFujisHouseSuperNerdText.MrFujiIsntHereText": {
+   "kind": "text",
+   "src": "scripts/MrFujisHouse.asm:28",
+   "commands": [
+    {"cmd": "text_far", "label": "_MrFujisHouseSuperNerdMrFujiIsntHereText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "MrFujisHouseSuperNerdText.MrFujiHadBeenPrayingText": {
+   "kind": "text",
+   "src": "scripts/MrFujisHouse.asm:32",
+   "commands": [
+    {"cmd": "text_far", "label": "_MrFujisHouseSuperNerdMrFujiHadBeenPrayingText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "MrFujisHouseLittleGirlText": {
+   "kind": "asm",
+   "src": "scripts/MrFujisHouse.asm:36",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["MrFujisHouseLittleGirlText.ThisIsMrFujisHouseText", "MrFujisHouseLittleGirlText.PokemonAreNiceToHugText"]
+  },
+  "MrFujisHouseLittleGirlText.ThisIsMrFujisHouseText": {
+   "kind": "text",
+   "src": "scripts/MrFujisHouse.asm:49",
+   "commands": [
+    {"cmd": "text_far", "label": "_MrFujisHouseLittleGirlThisIsMrFujisHouseText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "MrFujisHouseLittleGirlText.PokemonAreNiceToHugText": {
+   "kind": "text",
+   "src": "scripts/MrFujisHouse.asm:53",
+   "commands": [
+    {"cmd": "text_far", "label": "_MrFujisHouseLittleGirlPokemonAreNiceToHugText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "MrFujisHousePsyduckText": {
+   "kind": "text",
+   "src": "scripts/MrFujisHouse.asm:57",
+   "commands": [
+    {"cmd": "text_far", "label": "_MrFujisHousePsyduckText"},
+    {"cmd": "text_asm"}
+   ]
+  },
+  "MrFujisHouseNidorinoText": {
+   "kind": "text",
+   "src": "scripts/MrFujisHouse.asm:64",
+   "commands": [
+    {"cmd": "text_far", "label": "_MrFujisHouseNidorinoText"},
+    {"cmd": "text_asm"}
+   ]
+  },
+  "MrFujisHouseMrFujiText": {
+   "kind": "asm",
+   "src": "scripts/MrFujisHouse.asm:71",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["MrFujisHouseMrFujiText.IThinkThisMayHelpYourQuestText", "MrFujisHouseMrFujiText.ReceivedPokeFluteText", "MrFujisHouseMrFujiText.PokeFluteNoRoomText", "MrFujisHouseMrFujiText.HasMyFluteHelpedYouText"]
+  },
+  "MrFujisHouseMrFujiText.IThinkThisMayHelpYourQuestText": {
+   "kind": "text",
+   "src": "scripts/MrFujisHouse.asm:94",
+   "commands": [
+    {"cmd": "text_far", "label": "_MrFujisHouseMrFujiIThinkThisMayHelpYourQuestText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "MrFujisHouseMrFujiText.ReceivedPokeFluteText": {
+   "kind": "text",
+   "src": "scripts/MrFujisHouse.asm:98",
+   "commands": [
+    {"cmd": "text_far", "label": "_MrFujisHouseMrFujiReceivedPokeFluteText"},
+    {"cmd": "sound", "sound": "sound_get_key_item"},
+    {"cmd": "text_far", "label": "_MrFujisHouseMrFujiPokeFluteExplanationText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "MrFujisHouseMrFujiText.PokeFluteNoRoomText": {
+   "kind": "text",
+   "src": "scripts/MrFujisHouse.asm:104",
+   "commands": [
+    {"cmd": "text_far", "label": "_MrFujisHouseMrFujiPokeFluteNoRoomText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "MrFujisHouseMrFujiText.HasMyFluteHelpedYouText": {
+   "kind": "text",
+   "src": "scripts/MrFujisHouse.asm:108",
+   "commands": [
+    {"cmd": "text_far", "label": "_MrFujisHouseMrFujiHasMyFluteHelpedYouText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "MrFujisHouseMrFujiPokedexText": {
+   "kind": "text",
+   "src": "scripts/MrFujisHouse.asm:112",
+   "commands": [
+    {"cmd": "text_far", "label": "_MrFujisHouseMrFujiPokedexText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_MrFujisHouseSuperNerdMrFujiIsntHereText": {
+   "kind": "text",
+   "src": "text/MrFujisHouse.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "That's odd, MR.FUJI"},
+    {"cmd": "line", "str": "isn't here."},
+    {"cmd": "cont", "str": "Where'd he go?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_MrFujisHouseSuperNerdMrFujiHadBeenPrayingText": {
+   "kind": "text",
+   "src": "text/MrFujisHouse.asm:8",
+   "commands": [
+    {"cmd": "text", "str": "MR.FUJI had been"},
+    {"cmd": "line", "str": "praying alone for"},
+    {"cmd": "cont", "str": "CUBONE's mother."},
+    {"cmd": "done"}
+   ]
+  },
+  "_MrFujisHouseLittleGirlThisIsMrFujisHouseText": {
+   "kind": "text",
+   "src": "text/MrFujisHouse.asm:14",
+   "commands": [
+    {"cmd": "text", "str": "This is really"},
+    {"cmd": "line", "str": "MR.FUJI's house."},
+    {"cmd": "para", "str": "He's really kind!"},
+    {"cmd": "para", "str": "He looks after"},
+    {"cmd": "line", "str": "abandoned and"},
+    {"cmd": "cont", "str": "orphaned POKéMON!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_MrFujisHouseLittleGirlPokemonAreNiceToHugText": {
+   "kind": "text",
+   "src": "text/MrFujisHouse.asm:25",
+   "commands": [
+    {"cmd": "text", "str": "It's so warm!"},
+    {"cmd": "line", "str": "POKéMON are so"},
+    {"cmd": "cont", "str": "nice to hug!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_MrFujisHousePsyduckText": {
+   "kind": "text",
+   "src": "text/MrFujisHouse.asm:31",
+   "commands": [
+    {"cmd": "text", "str": "PSYDUCK: Gwappa!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_MrFujisHouseNidorinoText": {
+   "kind": "text",
+   "src": "text/MrFujisHouse.asm:35",
+   "commands": [
+    {"cmd": "text", "str": "NIDORINO: Gaoo!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_MrFujisHouseMrFujiIThinkThisMayHelpYourQuestText": {
+   "kind": "text",
+   "src": "text/MrFujisHouse.asm:39",
+   "commands": [
+    {"cmd": "text", "str": "MR.FUJI: {PLAYER}."},
+    {"cmd": "para", "str": "Your POKéDEX quest"},
+    {"cmd": "line", "str": "may fail without"},
+    {"cmd": "cont", "str": "love for your"},
+    {"cmd": "cont", "str": "POKéMON."},
+    {"cmd": "para", "str": "I think this may"},
+    {"cmd": "line", "str": "help your quest."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_MrFujisHouseMrFujiReceivedPokeFluteText": {
+   "kind": "text",
+   "src": "text/MrFujisHouse.asm:51",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} received"},
+    {"cmd": "line", "str": "a "},
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_MrFujisHouseMrFujiPokeFluteExplanationText": {
+   "kind": "text",
+   "src": "text/MrFujisHouse.asm:58",
+   "commands": [
+    {"cmd": "text", "str": ""},
+    {"cmd": "para", "str": "Upon hearing POKé"},
+    {"cmd": "line", "str": "FLUTE, sleeping"},
+    {"cmd": "cont", "str": "POKéMON will"},
+    {"cmd": "cont", "str": "spring awake."},
+    {"cmd": "para", "str": "It works on all"},
+    {"cmd": "line", "str": "sleeping POKéMON."},
+    {"cmd": "done"}
+   ]
+  },
+  "_MrFujisHouseMrFujiPokeFluteNoRoomText": {
+   "kind": "text",
+   "src": "text/MrFujisHouse.asm:70",
+   "commands": [
+    {"cmd": "text", "str": "You must make"},
+    {"cmd": "line", "str": "room for this!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_MrFujisHouseMrFujiHasMyFluteHelpedYouText": {
+   "kind": "text",
+   "src": "text/MrFujisHouse.asm:75",
+   "commands": [
+    {"cmd": "text", "str": "MR.FUJI: Has my"},
+    {"cmd": "line", "str": "FLUTE helped you?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_MrFujisHouseMrFujiPokedexText": {
+   "kind": "text",
+   "src": "text/MrFujisHouse.asm:80",
+   "commands": [
+    {"cmd": "text", "str": "POKéMON Monthly"},
+    {"cmd": "line", "str": "Grand Prize"},
+    {"cmd": "cont", "str": "Drawing!"},
+    {"cmd": "para", "str": "The application"},
+    {"cmd": "line", "str": "form is..."},
+    {"cmd": "para", "str": "Gone! It's been"},
+    {"cmd": "line", "str": "clipped out!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

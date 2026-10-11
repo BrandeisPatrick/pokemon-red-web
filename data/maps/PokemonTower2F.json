@@ -1,0 +1,42 @@
+{
+ "id": 143,
+ "const": "POKEMON_TOWER_2F",
+ "name": "PokemonTower2F",
+ "displayName": "POKéMON TOWER",
+ "width": 10,
+ "height": 9,
+ "tileset": "CEMETERY",
+ "tilesetId": 15,
+ "tilesetFile": "data/tilesets/Cemetery.json",
+ "isOutside": false,
+ "borderBlock": 1,
+ "blocks": [1, 1, 1, 3, 96, 91, 97, 3, 1, 1, 1, 1, 16, 91, 81, 14, 14, 6, 8, 1, 1, 12, 94, 76, 54, 14, 54, 54, 95, 13, 1, 10, 14, 54, 82, 76, 76, 54, 14, 7, 1, 21, 14, 82, 82, 14, 82, 82, 14, 22, 1, 28, 14, 54, 82, 14, 14, 54, 14, 30, 1, 12, 87, 82, 82, 82, 14, 79, 88, 13, 1, 1, 20, 29, 54, 54, 54, 29, 11, 1, 1, 1, 1, 5, 83, 86, 84, 5, 1, 1],
+ "connections": {},
+ "warps": [
+  {"x": 3, "y": 9, "destMap": "POKEMON_TOWER_3F", "destMapId": 144, "destMapName": "PokemonTower3F", "destWarp": 1, "destWarpIndex": 0},
+  {"x": 18, "y": 9, "destMap": "POKEMON_TOWER_1F", "destMapId": 142, "destMapName": "PokemonTower1F", "destWarp": 3, "destWarpIndex": 2}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "POKEMONTOWER2F_RIVAL", "x": 14, "y": 5, "sprite": "SPRITE_BLUE", "spriteId": 2, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_POKEMONTOWER2F_RIVAL", "textIndex": 1, "toggleIndex": 56, "toggleConst": "TOGGLE_POKEMON_TOWER_2F_RIVAL", "startsHidden": false},
+  {"index": 2, "const": "POKEMONTOWER2F_CHANNELER", "x": 3, "y": 7, "sprite": "SPRITE_CHANNELER", "spriteId": 25, "movement": "STAY", "rangeOrDirection": "RIGHT", "rangeOrDirectionValue": 211, "behavior": "face_right", "textId": "TEXT_POKEMONTOWER2F_CHANNELER", "textIndex": 2}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_POKEMON_TOWER",
+ "wild": {"label": "PokemonTower2FWildMons", "file": "PokemonTower2F"},
+ "townMap": {"x": 15, "y": 5, "group": "POKEMON_TOWER"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/PokemonTower2F.json",
+ "textPointers": "PokemonTower2F_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/PokemonTower2F.asm",
+  "objects": "data/maps/objects/PokemonTower2F.asm",
+  "blocks": "maps/PokemonTower2F.blk",
+  "script": "scripts/PokemonTower2F.asm"
+ },
+ "lastMapCandidates": ["LAVENDER_TOWN"],
+ "palette": {"pal": "PAL_GRAYMON", "rule": "cemeteryTileset"}
+}

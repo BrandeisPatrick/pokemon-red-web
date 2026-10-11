@@ -1,0 +1,44 @@
+{
+ "id": 37,
+ "const": "REDS_HOUSE_1F",
+ "name": "RedsHouse1F",
+ "displayName": "PALLET TOWN",
+ "width": 4,
+ "height": 4,
+ "tileset": "REDS_HOUSE_1",
+ "tilesetId": 1,
+ "tilesetFile": "data/tilesets/RedsHouse1.json",
+ "isOutside": false,
+ "borderBlock": 10,
+ "blocks": [4, 9, 5, 7, 15, 15, 15, 15, 15, 1, 2, 15, 15, 11, 15, 15],
+ "connections": {},
+ "warps": [
+  {"x": 2, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 1, "destWarpIndex": 0},
+  {"x": 3, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 1, "destWarpIndex": 0},
+  {"x": 7, "y": 1, "destMap": "REDS_HOUSE_2F", "destMapId": 38, "destMapName": "RedsHouse2F", "destWarp": 1, "destWarpIndex": 0}
+ ],
+ "bgEvents": [
+  {"x": 3, "y": 1, "textId": "TEXT_REDSHOUSE1F_TV", "textIndex": 2}
+ ],
+ "objectEvents": [
+  {"index": 1, "const": "REDSHOUSE1F_MOM", "x": 5, "y": 4, "sprite": "SPRITE_MOM", "spriteId": 51, "movement": "STAY", "rangeOrDirection": "LEFT", "rangeOrDirectionValue": 210, "behavior": "face_left", "textId": "TEXT_REDSHOUSE1F_MOM", "textIndex": 1}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_PALLET_TOWN",
+ "wild": null,
+ "townMap": {"x": 2, "y": 11, "group": "PALLET_TOWN"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/RedsHouse1F.json",
+ "textPointers": "RedsHouse1F_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/RedsHouse1F.asm",
+  "objects": "data/maps/objects/RedsHouse1F.asm",
+  "blocks": "maps/RedsHouse1F.blk",
+  "script": "scripts/RedsHouse1F.asm"
+ },
+ "lastMapCandidates": ["PALLET_TOWN"],
+ "palette": {"pal": "PAL_PALLET", "rule": "lastMap", "viaLastMap": "PALLET_TOWN"}
+}

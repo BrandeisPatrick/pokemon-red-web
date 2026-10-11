@@ -1,0 +1,159 @@
+{
+ "map": "Route4",
+ "const": "ROUTE_4",
+ "textPointerTables": [
+  {
+   "label": "Route4_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_ROUTE4_COOLTRAINER_F1", "label": "Route4CooltrainerF1Text", "kind": "text", "handler": "text"},
+    {"id": 2, "const": "TEXT_ROUTE4_COOLTRAINER_F2", "label": "Route4CooltrainerF2Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route4TrainerHeader0"},
+    {"id": 3, "const": "TEXT_ROUTE4_TM_WHIRLWIND", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 4, "const": "TEXT_ROUTE4_POKECENTER_SIGN", "label": "PokeCenterSignText", "kind": "text", "handler": "text"},
+    {"id": 5, "const": "TEXT_ROUTE4_MT_MOON_SIGN", "label": "Route4MtMoonSignText", "kind": "text", "handler": "text"},
+    {"id": 6, "const": "TEXT_ROUTE4_SIGN", "label": "Route4SignText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "_PokeCenterSignText": {
+   "kind": "text",
+   "src": "data/text/text_1.asm:56",
+   "commands": [
+    {"cmd": "text", "str": "Heal Your POKéMON!"},
+    {"cmd": "line", "str": "POKéMON CENTER"},
+    {"cmd": "done"}
+   ]
+  },
+  "PokeCenterSignText": {
+   "kind": "text",
+   "src": "home/overworld_text.asm:25",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokeCenterSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PickUpItemText": {
+   "kind": "asm",
+   "src": "home/overworld_text.asm:29",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "Route4CooltrainerF1Text": {
+   "kind": "text",
+   "src": "scripts/Route4.asm:32",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route4CooltrainerF1Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route4CooltrainerF2Text": {
+   "kind": "asm",
+   "src": "scripts/Route4.asm:36",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route4TrainerHeader0"
+  },
+  "Route4CooltrainerF2BattleText": {
+   "kind": "text",
+   "src": "scripts/Route4.asm:42",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route4CooltrainerF2BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route4CooltrainerF2EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route4.asm:46",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route4CooltrainerF2EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route4CooltrainerF2AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route4.asm:50",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route4CooltrainerF2AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route4MtMoonSignText": {
+   "kind": "text",
+   "src": "scripts/Route4.asm:54",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route4MtMoonSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route4SignText": {
+   "kind": "text",
+   "src": "scripts/Route4.asm:58",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route4SignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_Route4CooltrainerF1Text": {
+   "kind": "text",
+   "src": "text/Route4.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Ouch! I tripped"},
+    {"cmd": "line", "str": "over a rocky"},
+    {"cmd": "cont", "str": "POKéMON, GEODUDE!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route4CooltrainerF2BattleText": {
+   "kind": "text",
+   "src": "text/Route4.asm:8",
+   "commands": [
+    {"cmd": "text", "str": "I came to get my"},
+    {"cmd": "line", "str": "mushroom POKéMON!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route4CooltrainerF2EndBattleText": {
+   "kind": "text",
+   "src": "text/Route4.asm:13",
+   "commands": [
+    {"cmd": "text", "str": "Oh! My cute"},
+    {"cmd": "line", "str": "mushroom POKéMON!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route4CooltrainerF2AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route4.asm:18",
+   "commands": [
+    {"cmd": "text", "str": "There might not"},
+    {"cmd": "line", "str": "be any more"},
+    {"cmd": "cont", "str": "mushrooms here."},
+    {"cmd": "para", "str": "I think I got"},
+    {"cmd": "line", "str": "them all."},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route4MtMoonSignText": {
+   "kind": "text",
+   "src": "text/Route4.asm:27",
+   "commands": [
+    {"cmd": "text", "str": "MT.MOON"},
+    {"cmd": "line", "str": "Tunnel Entrance"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route4SignText": {
+   "kind": "text",
+   "src": "text/Route4.asm:32",
+   "commands": [
+    {"cmd": "text", "str": "ROUTE 4"},
+    {"cmd": "line", "str": "MT.MOON -"},
+    {"cmd": "cont", "str": "CERULEAN CITY"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

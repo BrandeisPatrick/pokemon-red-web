@@ -1,0 +1,96 @@
+{
+ "map": "LavenderMart",
+ "const": "LAVENDER_MART",
+ "textPointerTables": [
+  {
+   "label": "LavenderMart_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_LAVENDERMART_CLERK", "label": "LavenderMartClerkText", "kind": "script", "handler": "script_mart"},
+    {"id": 2, "const": "TEXT_LAVENDERMART_BALDING_GUY", "label": "LavenderMartBaldingGuyText", "kind": "text", "handler": "text"},
+    {"id": 3, "const": "TEXT_LAVENDERMART_COOLTRAINER_M", "label": "LavenderMartCooltrainerMText", "kind": "asm", "handler": "asm"}
+   ]
+  }
+ ],
+ "texts": {
+  "LavenderMartClerkText": {
+   "kind": "script",
+   "src": "data/items/marts.asm:20",
+   "commands": [
+    {"cmd": "script", "script": "script_mart", "items": ["GREAT_BALL", "SUPER_POTION", "REVIVE", "ESCAPE_ROPE", "SUPER_REPEL", "ANTIDOTE", "BURN_HEAL", "ICE_HEAL", "PARLYZ_HEAL"]}
+   ]
+  },
+  "LavenderMartBaldingGuyText": {
+   "kind": "text",
+   "src": "scripts/LavenderMart.asm:11",
+   "commands": [
+    {"cmd": "text_far", "label": "_LavenderMartBaldingGuyText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "LavenderMartCooltrainerMText": {
+   "kind": "asm",
+   "src": "scripts/LavenderMart.asm:15",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["LavenderMartCooltrainerMText.ReviveText", "LavenderMartCooltrainerMText.NuggetText"]
+  },
+  "LavenderMartCooltrainerMText.ReviveText": {
+   "kind": "text",
+   "src": "scripts/LavenderMart.asm:28",
+   "commands": [
+    {"cmd": "text_far", "label": "_LavenderMartCooltrainerMReviveText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "LavenderMartCooltrainerMText.NuggetText": {
+   "kind": "text",
+   "src": "scripts/LavenderMart.asm:32",
+   "commands": [
+    {"cmd": "text_far", "label": "_LavenderMartCooltrainerMNuggetText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_LavenderMartBaldingGuyText": {
+   "kind": "text",
+   "src": "text/LavenderMart.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "I'm searching for"},
+    {"cmd": "line", "str": "items that raise"},
+    {"cmd": "cont", "str": "the abilities of"},
+    {"cmd": "cont", "str": "POKéMON during a"},
+    {"cmd": "cont", "str": "single battle."},
+    {"cmd": "para", "str": "X ATTACK, X"},
+    {"cmd": "line", "str": "DEFEND, X SPEED"},
+    {"cmd": "cont", "str": "and X SPECIAL are"},
+    {"cmd": "cont", "str": "what I'm after."},
+    {"cmd": "para", "str": "Do you know where"},
+    {"cmd": "line", "str": "I can get them?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_LavenderMartCooltrainerMReviveText": {
+   "kind": "text",
+   "src": "text/LavenderMart.asm:18",
+   "commands": [
+    {"cmd": "text", "str": "You know REVIVE?"},
+    {"cmd": "line", "str": "It revives any"},
+    {"cmd": "cont", "str": "fainted POKéMON!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_LavenderMartCooltrainerMNuggetText": {
+   "kind": "text",
+   "src": "text/LavenderMart.asm:24",
+   "commands": [
+    {"cmd": "text", "str": "I found a NUGGET"},
+    {"cmd": "line", "str": "in the mountains."},
+    {"cmd": "para", "str": "I thought it was"},
+    {"cmd": "line", "str": "useless, but it"},
+    {"cmd": "cont", "str": "sold for ¥5000!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

@@ -1,0 +1,82 @@
+{
+ "map": "Route22Gate",
+ "const": "ROUTE_22_GATE",
+ "textPointerTables": [
+  {
+   "label": "Route22Gate_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_ROUTE22GATE_GUARD", "label": "Route22GateGuardText", "kind": "asm", "handler": "asm"}
+   ]
+  }
+ ],
+ "texts": {
+  "Route22GateGuardText": {
+   "kind": "asm",
+   "src": "scripts/Route22Gate.asm:62",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["Route22GateGuardNoBoulderbadgeText", "Route22GateGuardGoRightAheadText"]
+  },
+  "Route22GateGuardNoBoulderbadgeText": {
+   "kind": "text",
+   "src": "scripts/Route22Gate.asm:80",
+   "refs": ["Route22GateGuardICantLetYouPassText"],
+   "commands": [
+    {"cmd": "text_far", "label": "_Route22GateGuardNoBoulderbadgeText"},
+    {"cmd": "text_asm"}
+   ]
+  },
+  "Route22GateGuardICantLetYouPassText": {
+   "kind": "text",
+   "src": "scripts/Route22Gate.asm:89",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route22GateGuardICantLetYouPassText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route22GateGuardGoRightAheadText": {
+   "kind": "text",
+   "src": "scripts/Route22Gate.asm:93",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route22GateGuardGoRightAheadText"},
+    {"cmd": "sound", "sound": "sound_get_item_1"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_Route22GateGuardNoBoulderbadgeText": {
+   "kind": "text",
+   "src": "text/Route22Gate.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Only truly skilled"},
+    {"cmd": "line", "str": "trainers are"},
+    {"cmd": "cont", "str": "allowed through."},
+    {"cmd": "para", "str": "You don't have the"},
+    {"cmd": "line", "str": "BOULDERBADGE yet!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_Route22GateGuardICantLetYouPassText": {
+   "kind": "text",
+   "src": "text/Route22Gate.asm:11",
+   "commands": [
+    {"cmd": "text", "str": ""},
+    {"cmd": "para", "str": "The rules are"},
+    {"cmd": "line", "str": "rules. I can't"},
+    {"cmd": "cont", "str": "let you pass."},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route22GateGuardGoRightAheadText": {
+   "kind": "text",
+   "src": "text/Route22Gate.asm:19",
+   "commands": [
+    {"cmd": "text", "str": "Oh! That is the"},
+    {"cmd": "line", "str": "BOULDERBADGE!"},
+    {"cmd": "cont", "str": "Go right ahead!"},
+    {"cmd": "text_end"}
+   ]
+  }
+ }
+}

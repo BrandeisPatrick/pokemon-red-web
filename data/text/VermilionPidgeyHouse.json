@@ -1,0 +1,74 @@
+{
+ "map": "VermilionPidgeyHouse",
+ "const": "VERMILION_PIDGEY_HOUSE",
+ "textPointerTables": [
+  {
+   "label": "VermilionPidgeyHouse_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_VERMILIONPIDGEYHOUSE_YOUNGSTER", "label": "VermilionPidgeyHouseYoungsterText", "kind": "text", "handler": "text"},
+    {"id": 2, "const": "TEXT_VERMILIONPIDGEYHOUSE_PIDGEY", "label": "VermilionPidgeyHousePidgeyText", "kind": "text", "handler": "text"},
+    {"id": 3, "const": "TEXT_VERMILIONPIDGEYHOUSE_LETTER", "label": "VermilionPidgeyHouseLetterText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "VermilionPidgeyHouseYoungsterText": {
+   "kind": "text",
+   "src": "scripts/VermilionPidgeyHouse.asm:12",
+   "commands": [
+    {"cmd": "text_far", "label": "_VermilionPidgeyHouseYoungsterText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VermilionPidgeyHousePidgeyText": {
+   "kind": "text",
+   "src": "scripts/VermilionPidgeyHouse.asm:16",
+   "commands": [
+    {"cmd": "text_far", "label": "_VermilionPidgeyHousePidgeyText"},
+    {"cmd": "text_asm"}
+   ]
+  },
+  "VermilionPidgeyHouseLetterText": {
+   "kind": "text",
+   "src": "scripts/VermilionPidgeyHouse.asm:24",
+   "commands": [
+    {"cmd": "text_far", "label": "_VermilionPidgeyHouseLetterText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_VermilionPidgeyHouseYoungsterText": {
+   "kind": "text",
+   "src": "text/VermilionPidgeyHouse.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "I'm getting my"},
+    {"cmd": "line", "str": "PIDGEY to fly a"},
+    {"cmd": "cont", "str": "letter to SAFFRON"},
+    {"cmd": "cont", "str": "in the north!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_VermilionPidgeyHousePidgeyText": {
+   "kind": "text",
+   "src": "text/VermilionPidgeyHouse.asm:9",
+   "commands": [
+    {"cmd": "text", "str": "PIDGEY: Kurukkoo!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_VermilionPidgeyHouseLetterText": {
+   "kind": "text",
+   "src": "text/VermilionPidgeyHouse.asm:13",
+   "commands": [
+    {"cmd": "text", "str": "Dear PIPPI, I hope"},
+    {"cmd": "line", "str": "to see you soon."},
+    {"cmd": "para", "str": "I heard SAFFRON"},
+    {"cmd": "line", "str": "has problems with"},
+    {"cmd": "cont", "str": "TEAM ROCKET."},
+    {"cmd": "para", "str": "VERMILION appears"},
+    {"cmd": "line", "str": "to be safe."},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

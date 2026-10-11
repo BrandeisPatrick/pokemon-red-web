@@ -1,0 +1,44 @@
+{
+ "id": 44,
+ "const": "VIRIDIAN_NICKNAME_HOUSE",
+ "name": "ViridianNicknameHouse",
+ "displayName": "VIRIDIAN CITY",
+ "width": 4,
+ "height": 4,
+ "tileset": "HOUSE",
+ "tilesetId": 8,
+ "tilesetFile": "data/tilesets/House.json",
+ "isOutside": false,
+ "borderBlock": 10,
+ "blocks": [4, 14, 5, 9, 15, 1, 2, 15, 15, 12, 13, 15, 6, 11, 15, 7],
+ "connections": {},
+ "warps": [
+  {"x": 2, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 4, "destWarpIndex": 3},
+  {"x": 3, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 4, "destWarpIndex": 3}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "VIRIDIANNICKNAMEHOUSE_BALDING_GUY", "x": 5, "y": 3, "sprite": "SPRITE_BALDING_GUY", "spriteId": 52, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_VIRIDIANNICKNAMEHOUSE_BALDING_GUY", "textIndex": 1},
+  {"index": 2, "const": "VIRIDIANNICKNAMEHOUSE_LITTLE_GIRL", "x": 1, "y": 4, "sprite": "SPRITE_LITTLE_GIRL", "spriteId": 8, "movement": "WALK", "rangeOrDirection": "UP_DOWN", "rangeOrDirectionValue": 1, "behavior": "walk_up_down", "textId": "TEXT_VIRIDIANNICKNAMEHOUSE_LITTLE_GIRL", "textIndex": 2},
+  {"index": 3, "const": "VIRIDIANNICKNAMEHOUSE_SPEAROW", "x": 5, "y": 5, "sprite": "SPRITE_BIRD", "spriteId": 9, "movement": "WALK", "rangeOrDirection": "LEFT_RIGHT", "rangeOrDirectionValue": 2, "behavior": "walk_left_right", "textId": "TEXT_VIRIDIANNICKNAMEHOUSE_SPEAROW", "textIndex": 3},
+  {"index": 4, "const": "VIRIDIANNICKNAMEHOUSE_SPEARY_SIGN", "x": 4, "y": 0, "sprite": "SPRITE_CLIPBOARD", "spriteId": 66, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_VIRIDIANNICKNAMEHOUSE_SPEARY_SIGN", "textIndex": 4}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_CITIES1",
+ "wild": null,
+ "townMap": {"x": 2, "y": 8, "group": "VIRIDIAN_CITY"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/ViridianNicknameHouse.json",
+ "textPointers": "ViridianNicknameHouse_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/ViridianNicknameHouse.asm",
+  "objects": "data/maps/objects/ViridianNicknameHouse.asm",
+  "blocks": "maps/ViridianNicknameHouse.blk",
+  "script": "scripts/ViridianNicknameHouse.asm"
+ },
+ "lastMapCandidates": ["VIRIDIAN_CITY"],
+ "palette": {"pal": "PAL_VIRIDIAN", "rule": "lastMap", "viaLastMap": "VIRIDIAN_CITY"}
+}

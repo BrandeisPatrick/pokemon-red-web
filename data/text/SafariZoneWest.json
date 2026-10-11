@@ -1,0 +1,105 @@
+{
+ "map": "SafariZoneWest",
+ "const": "SAFARI_ZONE_WEST",
+ "textPointerTables": [
+  {
+   "label": "SafariZoneWest_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_SAFARIZONEWEST_MAX_POTION", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 2, "const": "TEXT_SAFARIZONEWEST_TM_DOUBLE_TEAM", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 3, "const": "TEXT_SAFARIZONEWEST_MAX_REVIVE", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 4, "const": "TEXT_SAFARIZONEWEST_GOLD_TEETH", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 5, "const": "TEXT_SAFARIZONEWEST_REST_HOUSE_SIGN", "label": "SafariZoneWestRestHouseSignText", "kind": "text", "handler": "text"},
+    {"id": 6, "const": "TEXT_SAFARIZONEWEST_FIND_WARDENS_TEETH_SIGN", "label": "SafariZoneWestFindWardensTeethSignText", "kind": "text", "handler": "text"},
+    {"id": 7, "const": "TEXT_SAFARIZONEWEST_TRAINER_TIPS", "label": "SafariZoneWestTrainerTipsText", "kind": "text", "handler": "text"},
+    {"id": 8, "const": "TEXT_SAFARIZONEWEST_SIGN", "label": "SafariZoneWestSignText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "PickUpItemText": {
+   "kind": "asm",
+   "src": "home/overworld_text.asm:29",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "SafariZoneWestRestHouseSignText": {
+   "kind": "text",
+   "src": "scripts/SafariZoneWest.asm:16",
+   "commands": [
+    {"cmd": "text_far", "label": "_SafariZoneWestRestHouseSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SafariZoneWestFindWardensTeethSignText": {
+   "kind": "text",
+   "src": "scripts/SafariZoneWest.asm:20",
+   "commands": [
+    {"cmd": "text_far", "label": "_SafariZoneWestFindWardensTeethSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SafariZoneWestTrainerTipsText": {
+   "kind": "text",
+   "src": "scripts/SafariZoneWest.asm:24",
+   "commands": [
+    {"cmd": "text_far", "label": "_SafariZoneWestTrainerTipsText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SafariZoneWestSignText": {
+   "kind": "text",
+   "src": "scripts/SafariZoneWest.asm:28",
+   "commands": [
+    {"cmd": "text_far", "label": "_SafariZoneWestSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_SafariZoneWestRestHouseSignText": {
+   "kind": "text",
+   "src": "text/SafariZoneWest.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "REST HOUSE"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SafariZoneWestFindWardensTeethSignText": {
+   "kind": "text",
+   "src": "text/SafariZoneWest.asm:6",
+   "commands": [
+    {"cmd": "text", "str": "REQUEST NOTICE"},
+    {"cmd": "para", "str": "Please find the"},
+    {"cmd": "line", "str": "SAFARI WARDEN's"},
+    {"cmd": "cont", "str": "lost GOLD TEETH."},
+    {"cmd": "cont", "str": "They're around"},
+    {"cmd": "cont", "str": "here somewhere."},
+    {"cmd": "para", "str": "Reward offered!"},
+    {"cmd": "line", "str": "Contact: WARDEN"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SafariZoneWestTrainerTipsText": {
+   "kind": "text",
+   "src": "text/SafariZoneWest.asm:19",
+   "commands": [
+    {"cmd": "text", "str": "TRAINER TIPS"},
+    {"cmd": "para", "str": "Zone Exploration"},
+    {"cmd": "line", "str": "Campaign!"},
+    {"cmd": "para", "str": "The Search for"},
+    {"cmd": "line", "str": "the SECRET HOUSE!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SafariZoneWestSignText": {
+   "kind": "text",
+   "src": "text/SafariZoneWest.asm:29",
+   "commands": [
+    {"cmd": "text", "str": "AREA 3"},
+    {"cmd": "line", "str": "EAST: CENTER AREA"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

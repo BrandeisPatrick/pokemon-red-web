@@ -1,0 +1,45 @@
+{
+ "id": 138,
+ "const": "CELADON_DINER",
+ "name": "CeladonDiner",
+ "displayName": "CELADON CITY",
+ "width": 5,
+ "height": 4,
+ "tileset": "LOBBY",
+ "tilesetId": 18,
+ "tilesetFile": "data/tilesets/Lobby.json",
+ "isOutside": false,
+ "borderBlock": 15,
+ "blocks": [44, 42, 46, 50, 48, 29, 32, 33, 20, 11, 45, 32, 33, 20, 11, 49, 40, 41, 21, 17],
+ "connections": {},
+ "warps": [
+  {"x": 3, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 11, "destWarpIndex": 10},
+  {"x": 4, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 11, "destWarpIndex": 10}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "CELADONDINER_COOK", "x": 8, "y": 5, "sprite": "SPRITE_COOK", "spriteId": 20, "movement": "WALK", "rangeOrDirection": "LEFT_RIGHT", "rangeOrDirectionValue": 2, "behavior": "walk_left_right", "textId": "TEXT_CELADONDINER_COOK", "textIndex": 1},
+  {"index": 2, "const": "CELADONDINER_MIDDLE_AGED_WOMAN", "x": 7, "y": 2, "sprite": "SPRITE_MIDDLE_AGED_WOMAN", "spriteId": 28, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_CELADONDINER_MIDDLE_AGED_WOMAN", "textIndex": 2},
+  {"index": 3, "const": "CELADONDINER_MIDDLE_AGED_MAN", "x": 1, "y": 4, "sprite": "SPRITE_MIDDLE_AGED_MAN", "spriteId": 10, "movement": "STAY", "rangeOrDirection": "DOWN", "rangeOrDirectionValue": 208, "behavior": "face_down", "textId": "TEXT_CELADONDINER_MIDDLE_AGED_MAN", "textIndex": 3},
+  {"index": 4, "const": "CELADONDINER_FISHER", "x": 5, "y": 3, "sprite": "SPRITE_FISHER", "spriteId": 47, "movement": "STAY", "rangeOrDirection": "RIGHT", "rangeOrDirectionValue": 211, "behavior": "face_right", "textId": "TEXT_CELADONDINER_FISHER", "textIndex": 4},
+  {"index": 5, "const": "CELADONDINER_GYM_GUIDE", "x": 0, "y": 1, "sprite": "SPRITE_GYM_GUIDE", "spriteId": 36, "movement": "STAY", "rangeOrDirection": "DOWN", "rangeOrDirectionValue": 208, "behavior": "face_down", "textId": "TEXT_CELADONDINER_GYM_GUIDE", "textIndex": 5}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_CELADON",
+ "wild": null,
+ "townMap": {"x": 7, "y": 5, "group": "CELADON_CITY"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/CeladonDiner.json",
+ "textPointers": "CeladonDiner_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/CeladonDiner.asm",
+  "objects": "data/maps/objects/CeladonDiner.asm",
+  "blocks": "maps/CeladonDiner.blk",
+  "script": "scripts/CeladonDiner.asm"
+ },
+ "lastMapCandidates": ["CELADON_CITY"],
+ "palette": {"pal": "PAL_CELADON", "rule": "lastMap", "viaLastMap": "CELADON_CITY"}
+}

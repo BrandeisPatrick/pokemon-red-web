@@ -1,0 +1,586 @@
+{
+ "map": "Route8",
+ "const": "ROUTE_8",
+ "textPointerTables": [
+  {
+   "label": "Route8_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_ROUTE8_SUPER_NERD1", "label": "Route8SuperNerd1Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route8TrainerHeader0"},
+    {"id": 2, "const": "TEXT_ROUTE8_GAMBLER1", "label": "Route8Gambler1Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route8TrainerHeader1"},
+    {"id": 3, "const": "TEXT_ROUTE8_SUPER_NERD2", "label": "Route8SuperNerd2Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route8TrainerHeader2"},
+    {"id": 4, "const": "TEXT_ROUTE8_COOLTRAINER_F1", "label": "Route8CooltrainerF1Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route8TrainerHeader3"},
+    {"id": 5, "const": "TEXT_ROUTE8_SUPER_NERD3", "label": "Route8SuperNerd3Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route8TrainerHeader4"},
+    {"id": 6, "const": "TEXT_ROUTE8_COOLTRAINER_F2", "label": "Route8CooltrainerF2Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route8TrainerHeader5"},
+    {"id": 7, "const": "TEXT_ROUTE8_COOLTRAINER_F3", "label": "Route8CooltrainerF3Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route8TrainerHeader6"},
+    {"id": 8, "const": "TEXT_ROUTE8_GAMBLER2", "label": "Route8Gambler2Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route8TrainerHeader7"},
+    {"id": 9, "const": "TEXT_ROUTE8_COOLTRAINER_F4", "label": "Route8CooltrainerF4Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route8TrainerHeader8"},
+    {"id": 10, "const": "TEXT_ROUTE8_UNDERGROUND_SIGN", "label": "Route8UndergroundSignText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "Route8SuperNerd1Text": {
+   "kind": "asm",
+   "src": "scripts/Route8.asm:52",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route8TrainerHeader0"
+  },
+  "Route8SuperNerd1BattleText": {
+   "kind": "text",
+   "src": "scripts/Route8.asm:58",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route8SuperNerd1BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route8SuperNerd1EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route8.asm:62",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route8SuperNerd1EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route8SuperNerd1AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route8.asm:66",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route8SuperNerd1AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route8Gambler1Text": {
+   "kind": "asm",
+   "src": "scripts/Route8.asm:70",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route8TrainerHeader1"
+  },
+  "Route8Gambler1BattleText": {
+   "kind": "text",
+   "src": "scripts/Route8.asm:76",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route8Gambler1BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route8Gambler1EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route8.asm:80",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route8Gambler1EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route8Gambler1AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route8.asm:84",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route8Gambler1AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route8SuperNerd2Text": {
+   "kind": "asm",
+   "src": "scripts/Route8.asm:88",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route8TrainerHeader2"
+  },
+  "Route8SuperNerd2BattleText": {
+   "kind": "text",
+   "src": "scripts/Route8.asm:94",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route8SuperNerd2BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route8SuperNerd2EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route8.asm:98",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route8SuperNerd2EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route8SuperNerd2AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route8.asm:102",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route8SuperNerd2AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route8CooltrainerF1Text": {
+   "kind": "asm",
+   "src": "scripts/Route8.asm:106",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route8TrainerHeader3"
+  },
+  "Route8CooltrainerF1BattleText": {
+   "kind": "text",
+   "src": "scripts/Route8.asm:112",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route8CooltrainerF1BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route8CooltrainerF1EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route8.asm:116",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route8CooltrainerF1EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route8CooltrainerF1AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route8.asm:120",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route8CooltrainerF1AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route8SuperNerd3Text": {
+   "kind": "asm",
+   "src": "scripts/Route8.asm:124",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route8TrainerHeader4"
+  },
+  "Route8SuperNerd3BattleText": {
+   "kind": "text",
+   "src": "scripts/Route8.asm:130",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route8SuperNerd3BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route8SuperNerd3EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route8.asm:134",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route8SuperNerd3EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route8SuperNerd3AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route8.asm:138",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route8SuperNerd3AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route8CooltrainerF2Text": {
+   "kind": "asm",
+   "src": "scripts/Route8.asm:142",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route8TrainerHeader5"
+  },
+  "Route8CooltrainerF2BattleText": {
+   "kind": "text",
+   "src": "scripts/Route8.asm:148",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route8CooltrainerF2BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route8CooltrainerF2EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route8.asm:152",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route8CooltrainerF2EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route8CooltrainerF2AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route8.asm:156",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route8CooltrainerF2AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route8CooltrainerF3Text": {
+   "kind": "asm",
+   "src": "scripts/Route8.asm:160",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route8TrainerHeader6"
+  },
+  "Route8CooltrainerF3BattleText": {
+   "kind": "text",
+   "src": "scripts/Route8.asm:166",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route8CooltrainerF3BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route8CooltrainerF3EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route8.asm:170",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route8CooltrainerF3EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route8CooltrainerF3AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route8.asm:174",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route8CooltrainerF3AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route8Gambler2Text": {
+   "kind": "asm",
+   "src": "scripts/Route8.asm:178",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route8TrainerHeader7"
+  },
+  "Route8Gambler2BattleText": {
+   "kind": "text",
+   "src": "scripts/Route8.asm:184",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route8Gambler2BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route8Gambler2EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route8.asm:188",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route8Gambler2EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route8Gambler2AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route8.asm:192",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route8Gambler2AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route8CooltrainerF4Text": {
+   "kind": "asm",
+   "src": "scripts/Route8.asm:196",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route8TrainerHeader8"
+  },
+  "Route8CooltrainerF4BattleText": {
+   "kind": "text",
+   "src": "scripts/Route8.asm:202",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route8CooltrainerF4BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route8CooltrainerF4EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route8.asm:206",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route8CooltrainerF4EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route8CooltrainerF4AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route8.asm:210",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route8CooltrainerF4AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route8UndergroundSignText": {
+   "kind": "text",
+   "src": "scripts/Route8.asm:214",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route8UndergroundSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_Route8SuperNerd1BattleText": {
+   "kind": "text",
+   "src": "text/Route8.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "You look good at"},
+    {"cmd": "line", "str": "POKéMON, but"},
+    {"cmd": "cont", "str": "how's your chem?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route8SuperNerd1EndBattleText": {
+   "kind": "text",
+   "src": "text/Route8.asm:8",
+   "commands": [
+    {"cmd": "text", "str": "Ow!"},
+    {"cmd": "line", "str": "Meltdown!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route8SuperNerd1AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route8.asm:13",
+   "commands": [
+    {"cmd": "text", "str": "I am better at"},
+    {"cmd": "line", "str": "school than this!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route8Gambler1BattleText": {
+   "kind": "text",
+   "src": "text/Route8.asm:18",
+   "commands": [
+    {"cmd": "text", "str": "All right! Let's"},
+    {"cmd": "line", "str": "roll the dice!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route8Gambler1EndBattleText": {
+   "kind": "text",
+   "src": "text/Route8.asm:23",
+   "commands": [
+    {"cmd": "text", "str": "Drat!"},
+    {"cmd": "line", "str": "Came up short!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route8Gambler1AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route8.asm:28",
+   "commands": [
+    {"cmd": "text", "str": "Lady Luck's not"},
+    {"cmd": "line", "str": "with me today!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route8SuperNerd2BattleText": {
+   "kind": "text",
+   "src": "text/Route8.asm:33",
+   "commands": [
+    {"cmd": "text", "str": "You need strategy"},
+    {"cmd": "line", "str": "to win at this!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route8SuperNerd2EndBattleText": {
+   "kind": "text",
+   "src": "text/Route8.asm:38",
+   "commands": [
+    {"cmd": "text", "str": "It's"},
+    {"cmd": "line", "str": "not logical!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route8SuperNerd2AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route8.asm:43",
+   "commands": [
+    {"cmd": "text", "str": "Go with GRIMER"},
+    {"cmd": "line", "str": "first...and..."},
+    {"cmd": "cont", "str": "...and...then..."},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route8CooltrainerF1BattleText": {
+   "kind": "text",
+   "src": "text/Route8.asm:49",
+   "commands": [
+    {"cmd": "text", "str": "I like NIDORAN, so"},
+    {"cmd": "line", "str": "I collect them!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route8CooltrainerF1EndBattleText": {
+   "kind": "text",
+   "src": "text/Route8.asm:54",
+   "commands": [
+    {"cmd": "text", "str": "Why? Why??"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route8CooltrainerF1AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route8.asm:58",
+   "commands": [
+    {"cmd": "text", "str": "When POKéMON grow"},
+    {"cmd": "line", "str": "up they get ugly!"},
+    {"cmd": "cont", "str": "They shouldn't"},
+    {"cmd": "cont", "str": "evolve!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route8SuperNerd3BattleText": {
+   "kind": "text",
+   "src": "text/Route8.asm:65",
+   "commands": [
+    {"cmd": "text", "str": "School is fun, but"},
+    {"cmd": "line", "str": "so are POKéMON."},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route8SuperNerd3EndBattleText": {
+   "kind": "text",
+   "src": "text/Route8.asm:70",
+   "commands": [
+    {"cmd": "text", "str": "I'll"},
+    {"cmd": "line", "str": "stay with school."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route8SuperNerd3AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route8.asm:75",
+   "commands": [
+    {"cmd": "text", "str": "We're stuck here"},
+    {"cmd": "line", "str": "because of the"},
+    {"cmd": "cont", "str": "gates at SAFFRON."},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route8CooltrainerF2BattleText": {
+   "kind": "text",
+   "src": "text/Route8.asm:81",
+   "commands": [
+    {"cmd": "text", "str": "MEOWTH is so cute,"},
+    {"cmd": "line", "str": "meow, meow, meow!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route8CooltrainerF2EndBattleText": {
+   "kind": "text",
+   "src": "text/Route8.asm:86",
+   "commands": [
+    {"cmd": "text", "str": "Meow!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route8CooltrainerF2AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route8.asm:90",
+   "commands": [
+    {"cmd": "text", "str": "I think PIDGEY"},
+    {"cmd": "line", "str": "and RATTATA"},
+    {"cmd": "cont", "str": "are cute too!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route8CooltrainerF3BattleText": {
+   "kind": "text",
+   "src": "text/Route8.asm:96",
+   "commands": [
+    {"cmd": "text", "str": "We must look"},
+    {"cmd": "line", "str": "silly standing"},
+    {"cmd": "cont", "str": "here like this!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route8CooltrainerF3EndBattleText": {
+   "kind": "text",
+   "src": "text/Route8.asm:102",
+   "commands": [
+    {"cmd": "text", "str": "Look what"},
+    {"cmd": "line", "str": "you did!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route8CooltrainerF3AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route8.asm:107",
+   "commands": [
+    {"cmd": "text", "str": "SAFFRON's gate"},
+    {"cmd": "line", "str": "keeper won't let"},
+    {"cmd": "cont", "str": "us through."},
+    {"cmd": "cont", "str": "He's so mean!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route8Gambler2BattleText": {
+   "kind": "text",
+   "src": "text/Route8.asm:114",
+   "commands": [
+    {"cmd": "text", "str": "I'm a rambling,"},
+    {"cmd": "line", "str": "gambling dude!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route8Gambler2EndBattleText": {
+   "kind": "text",
+   "src": "text/Route8.asm:119",
+   "commands": [
+    {"cmd": "text", "str": "Missed"},
+    {"cmd": "line", "str": "the big score!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route8Gambler2AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route8.asm:124",
+   "commands": [
+    {"cmd": "text", "str": "Gambling and"},
+    {"cmd": "line", "str": "POKéMON are like"},
+    {"cmd": "cont", "str": "eating peanuts!"},
+    {"cmd": "cont", "str": "Just can't stop!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route8CooltrainerF4BattleText": {
+   "kind": "text",
+   "src": "text/Route8.asm:131",
+   "commands": [
+    {"cmd": "text", "str": "What's a cute,"},
+    {"cmd": "line", "str": "round and fluffy"},
+    {"cmd": "cont", "str": "POKéMON?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route8CooltrainerF4EndBattleText": {
+   "kind": "text",
+   "src": "text/Route8.asm:137",
+   "commands": [
+    {"cmd": "text", "str": "Stop!"},
+    {"cmd": "para", "str": "Don't be so mean"},
+    {"cmd": "line", "str": "to my CLEFAIRY!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route8CooltrainerF4AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route8.asm:144",
+   "commands": [
+    {"cmd": "text", "str": "I heard that"},
+    {"cmd": "line", "str": "CLEFAIRY evolves"},
+    {"cmd": "cont", "str": "when it's exposed"},
+    {"cmd": "cont", "str": "to a MOON STONE."},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route8UndergroundSignText": {
+   "kind": "text",
+   "src": "text/Route8.asm:151",
+   "commands": [
+    {"cmd": "text", "str": "UNDERGROUND PATH"},
+    {"cmd": "line", "str": "CELADON CITY -"},
+    {"cmd": "cont", "str": "LAVENDER TOWN"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

@@ -1,0 +1,118 @@
+{
+ "map": "SafariZoneNorth",
+ "const": "SAFARI_ZONE_NORTH",
+ "textPointerTables": [
+  {
+   "label": "SafariZoneNorth_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_SAFARIZONENORTH_PROTEIN", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 2, "const": "TEXT_SAFARIZONENORTH_TM_SKULL_BASH", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 3, "const": "TEXT_SAFARIZONENORTH_REST_HOUSE_SIGN", "label": "SafariZoneNorthRestHouseSignText", "kind": "text", "handler": "text"},
+    {"id": 4, "const": "TEXT_SAFARIZONENORTH_TRAINER_TIPS_1", "label": "SafariZoneNorthTrainerTips1Text", "kind": "text", "handler": "text"},
+    {"id": 5, "const": "TEXT_SAFARIZONENORTH_SIGN", "label": "SafariZoneNorthSignText", "kind": "text", "handler": "text"},
+    {"id": 6, "const": "TEXT_SAFARIZONENORTH_TRAINER_TIPS_2", "label": "SafariZoneNorthTrainerTips2Text", "kind": "text", "handler": "text"},
+    {"id": 7, "const": "TEXT_SAFARIZONENORTH_TRAINER_TIPS_3", "label": "SafariZoneNorthTrainerTips3Text", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "PickUpItemText": {
+   "kind": "asm",
+   "src": "home/overworld_text.asm:29",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "SafariZoneNorthRestHouseSignText": {
+   "kind": "text",
+   "src": "scripts/SafariZoneNorth.asm:15",
+   "commands": [
+    {"cmd": "text_far", "label": "_SafariZoneNorthRestHouseSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SafariZoneNorthTrainerTips1Text": {
+   "kind": "text",
+   "src": "scripts/SafariZoneNorth.asm:19",
+   "commands": [
+    {"cmd": "text_far", "label": "_SafariZoneNorthTrainerTips1Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SafariZoneNorthSignText": {
+   "kind": "text",
+   "src": "scripts/SafariZoneNorth.asm:23",
+   "commands": [
+    {"cmd": "text_far", "label": "_SafariZoneNorthSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SafariZoneNorthTrainerTips2Text": {
+   "kind": "text",
+   "src": "scripts/SafariZoneNorth.asm:27",
+   "commands": [
+    {"cmd": "text_far", "label": "_SafariZoneNorthTrainerTips2Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SafariZoneNorthTrainerTips3Text": {
+   "kind": "text",
+   "src": "scripts/SafariZoneNorth.asm:31",
+   "commands": [
+    {"cmd": "text_far", "label": "_SafariZoneNorthTrainerTips3Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_SafariZoneNorthRestHouseSignText": {
+   "kind": "text",
+   "src": "text/SafariZoneNorth.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "REST HOUSE"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SafariZoneNorthTrainerTips1Text": {
+   "kind": "text",
+   "src": "text/SafariZoneNorth.asm:6",
+   "commands": [
+    {"cmd": "text", "str": "TRAINER TIPS"},
+    {"cmd": "para", "str": "The SECRET HOUSE"},
+    {"cmd": "line", "str": "is still ahead!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SafariZoneNorthSignText": {
+   "kind": "text",
+   "src": "text/SafariZoneNorth.asm:13",
+   "commands": [
+    {"cmd": "text", "str": "AREA 2"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SafariZoneNorthTrainerTips2Text": {
+   "kind": "text",
+   "src": "text/SafariZoneNorth.asm:17",
+   "commands": [
+    {"cmd": "text", "str": "TRAINER TIPS"},
+    {"cmd": "para", "str": "POKéMON hide in"},
+    {"cmd": "line", "str": "tall grass!"},
+    {"cmd": "para", "str": "Zigzag through"},
+    {"cmd": "line", "str": "grassy areas to"},
+    {"cmd": "cont", "str": "flush them out."},
+    {"cmd": "done"}
+   ]
+  },
+  "_SafariZoneNorthTrainerTips3Text": {
+   "kind": "text",
+   "src": "text/SafariZoneNorth.asm:28",
+   "commands": [
+    {"cmd": "text", "str": "TRAINER TIPS"},
+    {"cmd": "para", "str": "Win a free HM for"},
+    {"cmd": "line", "str": "finding the"},
+    {"cmd": "cont", "str": "SECRET HOUSE!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

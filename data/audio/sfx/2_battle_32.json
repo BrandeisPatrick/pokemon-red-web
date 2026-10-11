@@ -1,0 +1,36 @@
+{
+  "name": "SFX_BATTLE_32",
+  "title": "Battle 32",
+  "kind": "sfx",
+  "bank": 2,
+  "id": 221,
+  "label": "SFX_Battle_32",
+  "channels": [
+    {
+      "channel": 5,
+      "label": "SFX_Battle_32_Ch5",
+      "entry": 0,
+      "bytes": 11,
+      "labels": {"SFX_Battle_32_Ch5": 0},
+      "commands": [
+        {"op": "duty_cycle", "duty": 2},
+        {"op": "pitch_sweep", "length": 10, "change": -7},
+        {"op": "square_note", "length": 8, "volume": 15, "fade": 1, "frequency": 1792},
+        {"op": "pitch_sweep", "length": 0, "change": 8},
+        {"op": "sound_ret"}
+      ]
+    },
+    {
+      "channel": 6,
+      "label": "SFX_Battle_32_Ch6",
+      "entry": 0,
+      "bytes": 7,
+      "labels": {"SFX_Battle_32_Ch6": 0},
+      "commands": [
+        {"op": "duty_cycle", "duty": 3},
+        {"op": "square_note", "length": 8, "volume": 15, "fade": 1, "frequency": 1793},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

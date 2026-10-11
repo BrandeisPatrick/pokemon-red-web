@@ -1,0 +1,85 @@
+{
+ "map": "CeladonMart4F",
+ "const": "CELADON_MART_4F",
+ "textPointerTables": [
+  {
+   "label": "CeladonMart4F_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_CELADONMART4F_CLERK", "label": "CeladonMart4FClerkText", "kind": "script", "handler": "script_mart"},
+    {"id": 2, "const": "TEXT_CELADONMART4F_SUPER_NERD", "label": "CeladonMart4FSuperNerdText", "kind": "text", "handler": "text"},
+    {"id": 3, "const": "TEXT_CELADONMART4F_YOUNGSTER", "label": "CeladonMart4FYoungsterText", "kind": "text", "handler": "text"},
+    {"id": 4, "const": "TEXT_CELADONMART4F_CURRENT_FLOOR_SIGN", "label": "CeladonMart4FCurrentFloorSignText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "CeladonMart4FClerkText": {
+   "kind": "script",
+   "src": "data/items/marts.asm:29",
+   "commands": [
+    {"cmd": "script", "script": "script_mart", "items": ["POKE_DOLL", "FIRE_STONE", "THUNDER_STONE", "WATER_STONE", "LEAF_STONE"]}
+   ]
+  },
+  "CeladonMart4FSuperNerdText": {
+   "kind": "text",
+   "src": "scripts/CeladonMart4F.asm:12",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonMart4FSuperNerdText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonMart4FYoungsterText": {
+   "kind": "text",
+   "src": "scripts/CeladonMart4F.asm:16",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonMart4FYoungsterText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonMart4FCurrentFloorSignText": {
+   "kind": "text",
+   "src": "scripts/CeladonMart4F.asm:20",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonMart4FCurrentFloorSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_CeladonMart4FSuperNerdText": {
+   "kind": "text",
+   "src": "text/CeladonMart4F.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "I'm getting a"},
+    {"cmd": "line", "str": "POKé DOLL for my"},
+    {"cmd": "cont", "str": "girl friend!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonMart4FYoungsterText": {
+   "kind": "text",
+   "src": "text/CeladonMart4F.asm:8",
+   "commands": [
+    {"cmd": "text", "str": "I heard something"},
+    {"cmd": "line", "str": "useful."},
+    {"cmd": "para", "str": "You can run from"},
+    {"cmd": "line", "str": "wild POKéMON by"},
+    {"cmd": "cont", "str": "distracting them"},
+    {"cmd": "cont", "str": "with a POKé DOLL!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonMart4FCurrentFloorSignText": {
+   "kind": "text",
+   "src": "text/CeladonMart4F.asm:18",
+   "commands": [
+    {"cmd": "text", "str": "Express yourself"},
+    {"cmd": "line", "str": "with gifts!"},
+    {"cmd": "para", "str": "4F: WISEMAN GIFTS"},
+    {"cmd": "para", "str": "Evolution Special!"},
+    {"cmd": "line", "str": "Element STONEs on"},
+    {"cmd": "cont", "str": "sale now!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

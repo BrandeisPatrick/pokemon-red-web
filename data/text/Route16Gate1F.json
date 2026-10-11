@@ -1,0 +1,96 @@
+{
+ "map": "Route16Gate1F",
+ "const": "ROUTE_16_GATE_1F",
+ "textPointerTables": [
+  {
+   "label": "Route16Gate1F_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_ROUTE16GATE1F_GUARD", "label": "Route16Gate1FGuardText", "kind": "asm", "handler": "asm"},
+    {"id": 2, "const": "TEXT_ROUTE16GATE1F_GAMBLER", "label": "Route16Gate1FGamblerText", "kind": "text", "handler": "text"},
+    {"id": 3, "const": "TEXT_ROUTE16GATE1F_GUARD_WAIT_UP", "label": "Route16Gate1FGuardWaitUpText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "Route16Gate1FGuardText": {
+   "kind": "asm",
+   "src": "scripts/Route16Gate1F.asm:97",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["Route16Gate1FGuardText.CyclingRoadExplanationText", "Route16Gate1FGuardText.NoPedestriansAllowedText"]
+  },
+  "Route16Gate1FGuardText.NoPedestriansAllowedText": {
+   "kind": "text",
+   "src": "scripts/Route16Gate1F.asm:110",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route16Gate1FGuardNoPedestriansAllowedText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route16Gate1FGuardText.CyclingRoadExplanationText": {
+   "kind": "text",
+   "src": "scripts/Route16Gate1F.asm:114",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route16Gate1FGuardCyclingRoadExplanationText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route16Gate1FGuardWaitUpText": {
+   "kind": "text",
+   "src": "scripts/Route16Gate1F.asm:118",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route16Gate1FGuardWaitUpText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route16Gate1FGamblerText": {
+   "kind": "text",
+   "src": "scripts/Route16Gate1F.asm:122",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route16Gate1FGamblerText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_Route16Gate1FGuardNoPedestriansAllowedText": {
+   "kind": "text",
+   "src": "text/Route16Gate1F.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "No pedestrians"},
+    {"cmd": "line", "str": "are allowed on"},
+    {"cmd": "cont", "str": "CYCLING ROAD!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route16Gate1FGuardCyclingRoadExplanationText": {
+   "kind": "text",
+   "src": "text/Route16Gate1F.asm:8",
+   "commands": [
+    {"cmd": "text", "str": "CYCLING ROAD is a"},
+    {"cmd": "line", "str": "downhill course"},
+    {"cmd": "cont", "str": "by the sea. It's"},
+    {"cmd": "cont", "str": "a great ride."},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route16Gate1FGuardWaitUpText": {
+   "kind": "text",
+   "src": "text/Route16Gate1F.asm:15",
+   "commands": [
+    {"cmd": "text", "str": "Excuse me! Wait"},
+    {"cmd": "line", "str": "up please!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route16Gate1FGamblerText": {
+   "kind": "text",
+   "src": "text/Route16Gate1F.asm:20",
+   "commands": [
+    {"cmd": "text", "str": "How'd you get in?"},
+    {"cmd": "line", "str": "Good effort!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

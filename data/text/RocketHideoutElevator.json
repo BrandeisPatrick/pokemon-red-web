@@ -1,0 +1,41 @@
+{
+ "map": "RocketHideoutElevator",
+ "const": "ROCKET_HIDEOUT_ELEVATOR",
+ "textPointerTables": [
+  {
+   "label": "RocketHideoutElevator_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_ROCKETHIDEOUTELEVATOR", "label": "RocketHideoutElevatorText", "kind": "asm", "handler": "asm"}
+   ]
+  }
+ ],
+ "texts": {
+  "RocketHideoutElevatorText": {
+   "kind": "asm",
+   "src": "scripts/RocketHideoutElevator.asm:68",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["RocketHideoutElevatorText.AppearsToNeedKeyText"]
+  },
+  "RocketHideoutElevatorText.AppearsToNeedKeyText": {
+   "kind": "text",
+   "src": "scripts/RocketHideoutElevator.asm:83",
+   "commands": [
+    {"cmd": "text_far", "label": "_RocketHideoutElevatorAppearsToNeedKeyText"},
+    {"cmd": "text_waitbutton"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_RocketHideoutElevatorAppearsToNeedKeyText": {
+   "kind": "text",
+   "src": "text/RocketHideoutElevator.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "It appears to"},
+    {"cmd": "line", "str": "need a key."},
+    {"cmd": "text_end"}
+   ]
+  }
+ }
+}

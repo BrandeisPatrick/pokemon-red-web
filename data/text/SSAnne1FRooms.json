@@ -1,0 +1,382 @@
+{
+ "map": "SSAnne1FRooms",
+ "const": "SS_ANNE_1F_ROOMS",
+ "textPointerTables": [
+  {
+   "label": "SSAnne1FRooms_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_SSANNE1FROOMS_GENTLEMAN1", "label": "SSAnne1FRoomsGentleman1Text", "kind": "asm", "handler": "trainer", "trainerHeader": "SSAnne8TrainerHeader0"},
+    {"id": 2, "const": "TEXT_SSANNE1FROOMS_GENTLEMAN2", "label": "SSAnne1FRoomsGentleman2Text", "kind": "asm", "handler": "trainer", "trainerHeader": "SSAnne8TrainerHeader1"},
+    {"id": 3, "const": "TEXT_SSANNE1FROOMS_YOUNGSTER", "label": "SSAnne1FRoomsYoungsterText", "kind": "asm", "handler": "trainer", "trainerHeader": "SSAnne8TrainerHeader2"},
+    {"id": 4, "const": "TEXT_SSANNE1FROOMS_COOLTRAINER_F", "label": "SSAnne1FRoomsCooltrainerFText", "kind": "asm", "handler": "trainer", "trainerHeader": "SSAnne8TrainerHeader3"},
+    {"id": 5, "const": "TEXT_SSANNE1FROOMS_GIRL1", "label": "SSAnne1FRoomsGirl1Text", "kind": "text", "handler": "text"},
+    {"id": 6, "const": "TEXT_SSANNE1FROOMS_MIDDLE_AGED_MAN", "label": "SSAnne1FRoomsMiddleAgedManText", "kind": "text", "handler": "text"},
+    {"id": 7, "const": "TEXT_SSANNE1FROOMS_LITTLE_GIRL", "label": "SSAnne1FRoomsLittleGirlText", "kind": "text", "handler": "text"},
+    {"id": 8, "const": "TEXT_SSANNE1FROOMS_WIGGLYTUFF", "label": "SSAnne1FRoomsWigglytuffText", "kind": "text", "handler": "text"},
+    {"id": 9, "const": "TEXT_SSANNE1FROOMS_GIRL2", "label": "SSAnne1FRoomsGirl2Text", "kind": "text", "handler": "text"},
+    {"id": 10, "const": "TEXT_SSANNE1FROOMS_TM_BODY_SLAM", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 11, "const": "TEXT_SSANNE1FROOMS_GENTLEMAN3", "label": "SSAnne1FRoomsGentleman3Text", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "PickUpItemText": {
+   "kind": "asm",
+   "src": "home/overworld_text.asm:29",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "SSAnne1FRoomsGentleman1Text": {
+   "kind": "asm",
+   "src": "scripts/SSAnne1FRooms.asm:43",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "SSAnne8TrainerHeader0"
+  },
+  "SSAnne1FRoomsGentleman2Text": {
+   "kind": "asm",
+   "src": "scripts/SSAnne1FRooms.asm:49",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "SSAnne8TrainerHeader1"
+  },
+  "SSAnne1FRoomsYoungsterText": {
+   "kind": "asm",
+   "src": "scripts/SSAnne1FRooms.asm:55",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "SSAnne8TrainerHeader2"
+  },
+  "SSAnne1FRoomsCooltrainerFText": {
+   "kind": "asm",
+   "src": "scripts/SSAnne1FRooms.asm:61",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "SSAnne8TrainerHeader3"
+  },
+  "SSAnne1FRoomsWigglytuffText": {
+   "kind": "text",
+   "src": "scripts/SSAnne1FRooms.asm:67",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnne1FRoomsWigglytuffText"},
+    {"cmd": "text_asm"}
+   ]
+  },
+  "SSAnne1FRoomsGentleman1BattleText": {
+   "kind": "text",
+   "src": "scripts/SSAnne1FRooms.asm:74",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnne1FRoomsGentleman1BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnne1FRoomsGentleman1EndBattleText": {
+   "kind": "text",
+   "src": "scripts/SSAnne1FRooms.asm:78",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnne1FRoomsGentleman1EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnne1FRoomsGentleman1AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/SSAnne1FRooms.asm:82",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnne1FRoomsGentleman1AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnne1FRoomsGentleman2BattleText": {
+   "kind": "text",
+   "src": "scripts/SSAnne1FRooms.asm:86",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnne1FRoomsGentleman2BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnne1FRoomsGentleman2EndBattleText": {
+   "kind": "text",
+   "src": "scripts/SSAnne1FRooms.asm:90",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnne1FRoomsGentleman2EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnne1FRoomsGentleman2AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/SSAnne1FRooms.asm:94",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnne1FRoomsGentleman2AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnne1FRoomsYoungsterBattleText": {
+   "kind": "text",
+   "src": "scripts/SSAnne1FRooms.asm:98",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnne1FRoomsYoungsterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnne1FRoomsYoungsterEndBattleText": {
+   "kind": "text",
+   "src": "scripts/SSAnne1FRooms.asm:102",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnne1FRoomsYoungsterEndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnne1FRoomsYoungsterAfterBattleText": {
+   "kind": "text",
+   "src": "scripts/SSAnne1FRooms.asm:106",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnne1FRoomsYoungsterAfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnne1FRoomsCooltrainerFBattleText": {
+   "kind": "text",
+   "src": "scripts/SSAnne1FRooms.asm:110",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnne1FRoomsCooltrainerFBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnne1FRoomsCooltrainerFEndBattleText": {
+   "kind": "text",
+   "src": "scripts/SSAnne1FRooms.asm:114",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnne1FRoomsCooltrainerFEndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnne1FRoomsCooltrainerFAfterBattleText": {
+   "kind": "text",
+   "src": "scripts/SSAnne1FRooms.asm:118",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnne1FRoomsCooltrainerFAfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnne1FRoomsGirl1Text": {
+   "kind": "text",
+   "src": "scripts/SSAnne1FRooms.asm:122",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnne1FRoomsGirl1Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnne1FRoomsMiddleAgedManText": {
+   "kind": "text",
+   "src": "scripts/SSAnne1FRooms.asm:126",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnne1FRoomsMiddleAgedManText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnne1FRoomsLittleGirlText": {
+   "kind": "text",
+   "src": "scripts/SSAnne1FRooms.asm:130",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnne1FRoomsLittleGirlText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnne1FRoomsGirl2Text": {
+   "kind": "text",
+   "src": "scripts/SSAnne1FRooms.asm:134",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnne1FRoomsGirl2Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnne1FRoomsGentleman3Text": {
+   "kind": "text",
+   "src": "scripts/SSAnne1FRooms.asm:138",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnne1FRoomsGentleman3Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_SSAnne1FRoomsWigglytuffText": {
+   "kind": "text",
+   "src": "text/SSAnne1FRooms.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "WIGGLYTUFF: Puup"},
+    {"cmd": "line", "str": "pupuu!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_SSAnne1FRoomsGentleman1BattleText": {
+   "kind": "text",
+   "src": "text/SSAnne1FRooms.asm:7",
+   "commands": [
+    {"cmd": "text", "str": "I travel alone"},
+    {"cmd": "line", "str": "on my journeys!"},
+    {"cmd": "para", "str": "My POKéMON are my"},
+    {"cmd": "line", "str": "only friends!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SSAnne1FRoomsGentleman1EndBattleText": {
+   "kind": "text",
+   "src": "text/SSAnne1FRooms.asm:15",
+   "commands": [
+    {"cmd": "text", "str": "My, my"},
+    {"cmd": "line", "str": "friends..."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_SSAnne1FRoomsGentleman1AfterBattleText": {
+   "kind": "text",
+   "src": "text/SSAnne1FRooms.asm:20",
+   "commands": [
+    {"cmd": "text", "str": "You should be"},
+    {"cmd": "line", "str": "nice to friends!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SSAnne1FRoomsGentleman2BattleText": {
+   "kind": "text",
+   "src": "text/SSAnne1FRooms.asm:25",
+   "commands": [
+    {"cmd": "text", "str": "You pup! How dare"},
+    {"cmd": "line", "str": "you barge in!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SSAnne1FRoomsGentleman2EndBattleText": {
+   "kind": "text",
+   "src": "text/SSAnne1FRooms.asm:30",
+   "commands": [
+    {"cmd": "text", "str": "Humph!"},
+    {"cmd": "line", "str": "You rude child!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_SSAnne1FRoomsGentleman2AfterBattleText": {
+   "kind": "text",
+   "src": "text/SSAnne1FRooms.asm:35",
+   "commands": [
+    {"cmd": "text", "str": "I wish to be left"},
+    {"cmd": "line", "str": "alone! Get out!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SSAnne1FRoomsYoungsterBattleText": {
+   "kind": "text",
+   "src": "text/SSAnne1FRooms.asm:40",
+   "commands": [
+    {"cmd": "text", "str": "I love POKéMON!"},
+    {"cmd": "line", "str": "Do you?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SSAnne1FRoomsYoungsterEndBattleText": {
+   "kind": "text",
+   "src": "text/SSAnne1FRooms.asm:45",
+   "commands": [
+    {"cmd": "text", "str": "Wow! "},
+    {"cmd": "line", "str": "You're great!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_SSAnne1FRoomsYoungsterAfterBattleText": {
+   "kind": "text",
+   "src": "text/SSAnne1FRooms.asm:50",
+   "commands": [
+    {"cmd": "text", "str": "Let me be your"},
+    {"cmd": "line", "str": "friend, OK?"},
+    {"cmd": "para", "str": "Then we can trade"},
+    {"cmd": "line", "str": "POKéMON!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SSAnne1FRoomsCooltrainerFBattleText": {
+   "kind": "text",
+   "src": "text/SSAnne1FRooms.asm:58",
+   "commands": [
+    {"cmd": "text", "str": "I collected these"},
+    {"cmd": "line", "str": "POKéMON from all"},
+    {"cmd": "cont", "str": "around the world!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SSAnne1FRoomsCooltrainerFEndBattleText": {
+   "kind": "text",
+   "src": "text/SSAnne1FRooms.asm:64",
+   "commands": [
+    {"cmd": "text", "str": "Oh no!"},
+    {"cmd": "line", "str": "I went around the"},
+    {"cmd": "cont", "str": "world for these!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_SSAnne1FRoomsCooltrainerFAfterBattleText": {
+   "kind": "text",
+   "src": "text/SSAnne1FRooms.asm:70",
+   "commands": [
+    {"cmd": "text", "str": "You hurt my poor"},
+    {"cmd": "line", "str": "worldly POKéMON!"},
+    {"cmd": "para", "str": "I demand that you"},
+    {"cmd": "line", "str": "heal them at a"},
+    {"cmd": "cont", "str": "POKéMON CENTER!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SSAnne1FRoomsGirl1Text": {
+   "kind": "text",
+   "src": "text/SSAnne1FRooms.asm:79",
+   "commands": [
+    {"cmd": "text", "str": "Waiter, I would"},
+    {"cmd": "line", "str": "like a cherry pie"},
+    {"cmd": "cont", "str": "please!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SSAnne1FRoomsMiddleAgedManText": {
+   "kind": "text",
+   "src": "text/SSAnne1FRooms.asm:85",
+   "commands": [
+    {"cmd": "text", "str": "A cruise is so"},
+    {"cmd": "line", "str": "elegant yet cozy!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SSAnne1FRoomsLittleGirlText": {
+   "kind": "text",
+   "src": "text/SSAnne1FRooms.asm:90",
+   "commands": [
+    {"cmd": "text", "str": "I always travel"},
+    {"cmd": "line", "str": "with WIGGLYTUFF!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SSAnne1FRoomsGirl2Text": {
+   "kind": "text",
+   "src": "text/SSAnne1FRooms.asm:95",
+   "commands": [
+    {"cmd": "text", "str": "We are cruising"},
+    {"cmd": "line", "str": "around the world."},
+    {"cmd": "done"}
+   ]
+  },
+  "_SSAnne1FRoomsGentleman3Text": {
+   "kind": "text",
+   "src": "text/SSAnne1FRooms.asm:100",
+   "commands": [
+    {"cmd": "text", "str": "Ssh! I'm a GLOBAL"},
+    {"cmd": "line", "str": "POLICE agent!"},
+    {"cmd": "para", "str": "I'm on the trail"},
+    {"cmd": "line", "str": "of TEAM ROCKET!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

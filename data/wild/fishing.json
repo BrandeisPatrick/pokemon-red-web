@@ -1,0 +1,126 @@
+{
+ "note": "Transcribed from ItemUseOldRod/ItemUseGoodRod/ItemUseSuperRod + ReadSuperRodData (engine/items/item_effects.asm). Rods only work facing water and not while surfing. Good/Super Rod loop: r = Random(); if r bit0 = 1 -> no bite; else slot = (r >> 1) & 3, re-rolled (including the bit0 test) while slot >= count. Hence P(bite) = count/(count+4) and every listed mon is equally likely. Maps without a super-rod group: \"nothing here\".",
+ "oldRod": {"mons": [{"level": 5, "species": 129, "const": "MAGIKARP"}], "biteChance": "1/1"},
+ "goodRod": {
+  "mons": [{"level": 10, "species": 118, "const": "GOLDEEN"}, {"level": 10, "species": 60, "const": "POLIWAG"}],
+  "biteChance": "2/6"
+ },
+ "superRod": {
+  "groups": {
+   "Group1": {
+    "count": 2,
+    "mons": [{"level": 15, "species": 72, "const": "TENTACOOL"}, {"level": 15, "species": 60, "const": "POLIWAG"}],
+    "biteChance": "2/6"
+   },
+   "Group2": {
+    "count": 2,
+    "mons": [{"level": 15, "species": 118, "const": "GOLDEEN"}, {"level": 15, "species": 60, "const": "POLIWAG"}],
+    "biteChance": "2/6"
+   },
+   "Group3": {
+    "count": 3,
+    "mons": [
+     {"level": 15, "species": 54, "const": "PSYDUCK"},
+     {"level": 15, "species": 118, "const": "GOLDEEN"},
+     {"level": 15, "species": 98, "const": "KRABBY"}
+    ],
+    "biteChance": "3/7"
+   },
+   "Group4": {
+    "count": 2,
+    "mons": [{"level": 15, "species": 98, "const": "KRABBY"}, {"level": 15, "species": 90, "const": "SHELLDER"}],
+    "biteChance": "2/6"
+   },
+   "Group5": {
+    "count": 2,
+    "mons": [{"level": 23, "species": 61, "const": "POLIWHIRL"}, {"level": 15, "species": 79, "const": "SLOWPOKE"}],
+    "biteChance": "2/6"
+   },
+   "Group6": {
+    "count": 4,
+    "mons": [
+     {"level": 15, "species": 147, "const": "DRATINI"},
+     {"level": 15, "species": 98, "const": "KRABBY"},
+     {"level": 15, "species": 54, "const": "PSYDUCK"},
+     {"level": 15, "species": 79, "const": "SLOWPOKE"}
+    ],
+    "biteChance": "4/8"
+   },
+   "Group7": {
+    "count": 4,
+    "mons": [
+     {"level": 5, "species": 72, "const": "TENTACOOL"},
+     {"level": 15, "species": 98, "const": "KRABBY"},
+     {"level": 15, "species": 118, "const": "GOLDEEN"},
+     {"level": 15, "species": 129, "const": "MAGIKARP"}
+    ],
+    "biteChance": "4/8"
+   },
+   "Group8": {
+    "count": 4,
+    "mons": [
+     {"level": 15, "species": 120, "const": "STARYU"},
+     {"level": 15, "species": 116, "const": "HORSEA"},
+     {"level": 15, "species": 90, "const": "SHELLDER"},
+     {"level": 15, "species": 118, "const": "GOLDEEN"}
+    ],
+    "biteChance": "4/8"
+   },
+   "Group9": {
+    "count": 4,
+    "mons": [
+     {"level": 23, "species": 80, "const": "SLOWBRO"},
+     {"level": 23, "species": 119, "const": "SEAKING"},
+     {"level": 23, "species": 99, "const": "KINGLER"},
+     {"level": 23, "species": 117, "const": "SEADRA"}
+    ],
+    "biteChance": "4/8"
+   },
+   "Group10": {
+    "count": 4,
+    "mons": [
+     {"level": 23, "species": 119, "const": "SEAKING"},
+     {"level": 15, "species": 98, "const": "KRABBY"},
+     {"level": 15, "species": 118, "const": "GOLDEEN"},
+     {"level": 15, "species": 129, "const": "MAGIKARP"}
+    ],
+    "biteChance": "4/8"
+   }
+  },
+  "maps": {
+   "PALLET_TOWN": {"mapId": 0, "mapName": "PalletTown", "group": "Group1"},
+   "VIRIDIAN_CITY": {"mapId": 1, "mapName": "ViridianCity", "group": "Group1"},
+   "CERULEAN_CITY": {"mapId": 3, "mapName": "CeruleanCity", "group": "Group3"},
+   "VERMILION_CITY": {"mapId": 5, "mapName": "VermilionCity", "group": "Group4"},
+   "CELADON_CITY": {"mapId": 6, "mapName": "CeladonCity", "group": "Group5"},
+   "FUCHSIA_CITY": {"mapId": 7, "mapName": "FuchsiaCity", "group": "Group10"},
+   "CINNABAR_ISLAND": {"mapId": 8, "mapName": "CinnabarIsland", "group": "Group8"},
+   "ROUTE_4": {"mapId": 15, "mapName": "Route4", "group": "Group3"},
+   "ROUTE_6": {"mapId": 17, "mapName": "Route6", "group": "Group4"},
+   "ROUTE_10": {"mapId": 21, "mapName": "Route10", "group": "Group5"},
+   "ROUTE_11": {"mapId": 22, "mapName": "Route11", "group": "Group4"},
+   "ROUTE_12": {"mapId": 23, "mapName": "Route12", "group": "Group7"},
+   "ROUTE_13": {"mapId": 24, "mapName": "Route13", "group": "Group7"},
+   "ROUTE_17": {"mapId": 28, "mapName": "Route17", "group": "Group7"},
+   "ROUTE_18": {"mapId": 29, "mapName": "Route18", "group": "Group7"},
+   "ROUTE_19": {"mapId": 30, "mapName": "Route19", "group": "Group8"},
+   "ROUTE_20": {"mapId": 31, "mapName": "Route20", "group": "Group8"},
+   "ROUTE_21": {"mapId": 32, "mapName": "Route21", "group": "Group8"},
+   "ROUTE_22": {"mapId": 33, "mapName": "Route22", "group": "Group2"},
+   "ROUTE_23": {"mapId": 34, "mapName": "Route23", "group": "Group9"},
+   "ROUTE_24": {"mapId": 35, "mapName": "Route24", "group": "Group3"},
+   "ROUTE_25": {"mapId": 36, "mapName": "Route25", "group": "Group3"},
+   "CERULEAN_GYM": {"mapId": 65, "mapName": "CeruleanGym", "group": "Group3"},
+   "VERMILION_DOCK": {"mapId": 94, "mapName": "VermilionDock", "group": "Group4"},
+   "SEAFOAM_ISLANDS_B3F": {"mapId": 161, "mapName": "SeafoamIslandsB3F", "group": "Group8"},
+   "SEAFOAM_ISLANDS_B4F": {"mapId": 162, "mapName": "SeafoamIslandsB4F", "group": "Group8"},
+   "SAFARI_ZONE_EAST": {"mapId": 217, "mapName": "SafariZoneEast", "group": "Group6"},
+   "SAFARI_ZONE_NORTH": {"mapId": 218, "mapName": "SafariZoneNorth", "group": "Group6"},
+   "SAFARI_ZONE_WEST": {"mapId": 219, "mapName": "SafariZoneWest", "group": "Group6"},
+   "SAFARI_ZONE_CENTER": {"mapId": 220, "mapName": "SafariZoneCenter", "group": "Group6"},
+   "CERULEAN_CAVE_2F": {"mapId": 226, "mapName": "CeruleanCave2F", "group": "Group9"},
+   "CERULEAN_CAVE_B1F": {"mapId": 227, "mapName": "CeruleanCaveB1F", "group": "Group9"},
+   "CERULEAN_CAVE_1F": {"mapId": 228, "mapName": "CeruleanCave1F", "group": "Group9"}
+  }
+ }
+}

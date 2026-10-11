@@ -1,0 +1,70 @@
+{
+  "name": "SFX_POKEFLUTE_IN_BATTLE",
+  "title": "Pokeflute Ch 5",
+  "kind": "sfx",
+  "bank": 2,
+  "id": 154,
+  "label": "SFX_Pokeflute_Ch5",
+  "channels": [
+    {
+      "channel": 5,
+      "label": "SFX_Pokeflute_Ch5",
+      "entry": 0,
+      "bytes": 13,
+      "labels": {"SFX_Pokeflute_Ch5": 0, "SFX_Pokeflute_Ch6": 1},
+      "commands": [
+        {"op": "tempo", "tempo": 256},
+        {"op": "execute_music"},
+        {"op": "note_type", "speed": 8, "volume": 0, "fade": 0},
+        {"op": "rest", "length": 5},
+        {"op": "rest", "length": 7},
+        {"op": "rest", "length": 5},
+        {"op": "rest", "length": 5},
+        {"op": "rest", "length": 5},
+        {"op": "rest", "length": 5},
+        {"op": "sound_ret"}
+      ]
+    },
+    {
+      "channel": 6,
+      "label": "SFX_Pokeflute_Ch6",
+      "entry": 0,
+      "bytes": 10,
+      "labels": {"SFX_Pokeflute_Ch6": 0},
+      "commands": [
+        {"op": "execute_music"},
+        {"op": "note_type", "speed": 8, "volume": 0, "fade": 0},
+        {"op": "rest", "length": 5},
+        {"op": "rest", "length": 7},
+        {"op": "rest", "length": 5},
+        {"op": "rest", "length": 5},
+        {"op": "rest", "length": 5},
+        {"op": "rest", "length": 5},
+        {"op": "sound_ret"}
+      ]
+    },
+    {
+      "channel": 7,
+      "label": "SFX_Pokeflute_Ch7",
+      "entry": 0,
+      "bytes": 15,
+      "labels": {"SFX_Pokeflute_Ch7": 0},
+      "commands": [
+        {"op": "execute_music"},
+        {"op": "vibrato", "delay": 16, "depth": 1, "rate": 4},
+        {"op": "note_type", "speed": 8, "volume": 1, "wave": 0},
+        {"op": "octave", "octave": 5},
+        {"op": "note", "pitch": 4, "length": 3},
+        {"op": "note", "pitch": 5, "length": 3},
+        {"op": "note", "pitch": 7, "length": 7},
+        {"op": "note", "pitch": 9, "length": 3},
+        {"op": "note", "pitch": 7, "length": 3},
+        {"op": "octave", "octave": 6},
+        {"op": "note", "pitch": 0, "length": 13},
+        {"op": "sound_ret"}
+      ]
+    }
+  ],
+  "synthetic": true,
+  "playsAs": "SFX_CAUGHT_MON"
+}

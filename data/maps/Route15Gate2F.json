@@ -1,0 +1,44 @@
+{
+ "id": 185,
+ "const": "ROUTE_15_GATE_2F",
+ "name": "Route15Gate2F",
+ "displayName": "ROUTE 15",
+ "width": 4,
+ "height": 4,
+ "tileset": "GATE",
+ "tilesetId": 12,
+ "tilesetFile": "data/tilesets/Gate.json",
+ "isOutside": false,
+ "borderBlock": 10,
+ "blocks": [52, 51, 51, 53, 54, 0, 0, 55, 56, 59, 56, 59, 58, 0, 0, 57],
+ "connections": {},
+ "warps": [
+  {"x": 7, "y": 7, "destMap": "ROUTE_15_GATE_1F", "destMapId": 184, "destMapName": "Route15Gate1F", "destWarp": 5, "destWarpIndex": 4}
+ ],
+ "bgEvents": [
+  {"x": 6, "y": 2, "textId": "TEXT_ROUTE15GATE2F_BINOCULARS", "textIndex": 2}
+ ],
+ "objectEvents": [
+  {"index": 1, "const": "ROUTE15GATE2F_OAKS_AIDE", "x": 4, "y": 2, "sprite": "SPRITE_SCIENTIST", "spriteId": 32, "movement": "STAY", "rangeOrDirection": "DOWN", "rangeOrDirectionValue": 208, "behavior": "face_down", "textId": "TEXT_ROUTE15GATE2F_OAKS_AIDE", "textIndex": 1}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [
+  {"x": 1, "y": 2, "routine": "Route15GateLeftBinoculars", "arg": "SPRITE_FACING_UP", "argValue": 4, "kind": "event"}
+ ],
+ "spriteSet": null,
+ "music": "MUSIC_CITIES1",
+ "wild": null,
+ "townMap": {"x": 9, "y": 13, "group": "ROUTE_15"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/Route15Gate2F.json",
+ "textPointers": "Route15Gate2F_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/Route15Gate2F.asm",
+  "objects": "data/maps/objects/Route15Gate2F.asm",
+  "blocks": "maps/Route11Gate2F.blk",
+  "script": "scripts/Route15Gate2F.asm"
+ },
+ "lastMapCandidates": ["ROUTE_15"],
+ "palette": {"pal": "PAL_ROUTE", "rule": "lastMap", "viaLastMap": "ROUTE_15"}
+}

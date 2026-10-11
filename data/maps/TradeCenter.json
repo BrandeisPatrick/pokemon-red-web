@@ -1,0 +1,41 @@
+{
+ "id": 239,
+ "const": "TRADE_CENTER",
+ "name": "TradeCenter",
+ "displayName": "POKéMON LEAGUE",
+ "width": 5,
+ "height": 4,
+ "tileset": "CLUB",
+ "tilesetId": 21,
+ "tilesetFile": "data/tilesets/Club.json",
+ "isOutside": false,
+ "borderBlock": 14,
+ "blocks": [27, 30, 19, 30, 23, 10, 16, 31, 18, 10, 32, 33, 28, 34, 35, 10, 24, 25, 26, 10],
+ "connections": {},
+ "warps": [],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "TRADECENTER_OPPONENT", "x": 2, "y": 2, "sprite": "SPRITE_RED", "spriteId": 1, "movement": "STAY", "rangeOrDirection": "ANY_DIR", "rangeOrDirectionValue": 0, "behavior": "turn_randomly", "textId": "TEXT_TRADECENTER_OPPONENT", "textIndex": 1}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [
+  {"x": 5, "y": 4, "routine": "CableClubRightGameboy", "arg": "ANY_FACING", "argValue": 208, "kind": "event"},
+  {"x": 4, "y": 4, "routine": "CableClubLeftGameboy", "arg": "ANY_FACING", "argValue": 208, "kind": "event"}
+ ],
+ "spriteSet": null,
+ "music": "MUSIC_CELADON",
+ "wild": null,
+ "townMap": {"x": 0, "y": 2, "group": "POKEMON_LEAGUE_3"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/TradeCenter.json",
+ "textPointers": "TradeCenter_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/TradeCenter.asm",
+  "objects": "data/maps/objects/TradeCenter.asm",
+  "blocks": "maps/TradeCenter.blk",
+  "script": "scripts/TradeCenter.asm"
+ },
+ "lastMapCandidates": ["PALLET_TOWN"],
+ "palette": {"pal": "PAL_PALLET", "rule": "lastMap", "viaLastMap": "PALLET_TOWN"}
+}

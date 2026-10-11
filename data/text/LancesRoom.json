@@ -1,0 +1,112 @@
+{
+ "map": "LancesRoom",
+ "const": "LANCES_ROOM",
+ "textPointerTables": [
+  {
+   "label": "LancesRoom_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_LANCESROOM_LANCE", "label": "LancesRoomLanceText", "kind": "asm", "handler": "trainer", "trainerHeader": "LancesRoomTrainerHeader0"}
+   ]
+  }
+ ],
+ "texts": {
+  "LancesRoomLanceText": {
+   "kind": "asm",
+   "src": "scripts/LancesRoom.asm:140",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "LancesRoomTrainerHeader0"
+  },
+  "LancesRoomLanceBeforeBattleText": {
+   "kind": "text",
+   "src": "scripts/LancesRoom.asm:146",
+   "commands": [
+    {"cmd": "text_far", "label": "_LancesRoomLanceBeforeBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "LancesRoomLanceEndBattleText": {
+   "kind": "text",
+   "src": "scripts/LancesRoom.asm:150",
+   "commands": [
+    {"cmd": "text_far", "label": "_LancesRoomLanceEndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "LancesRoomLanceAfterBattleText": {
+   "kind": "text",
+   "src": "scripts/LancesRoom.asm:154",
+   "commands": [
+    {"cmd": "text_far", "label": "_LancesRoomLanceAfterBattleText"},
+    {"cmd": "text_asm"}
+   ]
+  },
+  "_LancesRoomLanceBeforeBattleText": {
+   "kind": "text",
+   "src": "text/LancesRoom.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Ah! I heard about"},
+    {"cmd": "line", "str": "you {PLAYER}!"},
+    {"cmd": "para", "str": "I lead the ELITE"},
+    {"cmd": "line", "str": "FOUR! You can"},
+    {"cmd": "cont", "str": "call me LANCE the"},
+    {"cmd": "cont", "str": "dragon trainer!"},
+    {"cmd": "para", "str": "You know that"},
+    {"cmd": "line", "str": "dragons are"},
+    {"cmd": "cont", "str": "mythical POKéMON!"},
+    {"cmd": "para", "str": "They're hard to"},
+    {"cmd": "line", "str": "catch and raise,"},
+    {"cmd": "cont", "str": "but their powers"},
+    {"cmd": "cont", "str": "are superior!"},
+    {"cmd": "para", "str": "They're virtually"},
+    {"cmd": "line", "str": "indestructible!"},
+    {"cmd": "para", "str": "Well, are you"},
+    {"cmd": "line", "str": "ready to lose?"},
+    {"cmd": "para", "str": "Your LEAGUE"},
+    {"cmd": "line", "str": "challenge ends"},
+    {"cmd": "cont", "str": "with me, {PLAYER}!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_LancesRoomLanceEndBattleText": {
+   "kind": "text",
+   "src": "text/LancesRoom.asm:31",
+   "commands": [
+    {"cmd": "text", "str": "That's it!"},
+    {"cmd": "para", "str": "I hate to admit"},
+    {"cmd": "line", "str": "it, but you are a"},
+    {"cmd": "cont", "str": "POKéMON master!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_LancesRoomLanceAfterBattleText": {
+   "kind": "text",
+   "src": "text/LancesRoom.asm:39",
+   "commands": [
+    {"cmd": "text", "str": "I still can't"},
+    {"cmd": "line", "str": "believe my"},
+    {"cmd": "cont", "str": "dragons lost to"},
+    {"cmd": "cont", "str": "you, {PLAYER}!"},
+    {"cmd": "para", "str": "You are now the"},
+    {"cmd": "line", "str": "POKéMON LEAGUE"},
+    {"cmd": "cont", "str": "champion!"},
+    {"cmd": "para", "str": "...Or, you would"},
+    {"cmd": "line", "str": "have been, but"},
+    {"cmd": "cont", "str": "you have one more"},
+    {"cmd": "cont", "str": "challenge ahead."},
+    {"cmd": "para", "str": "You have to face"},
+    {"cmd": "line", "str": "another trainer!"},
+    {"cmd": "cont", "str": "His name is..."},
+    {"cmd": "para", "str": "{RIVAL}!"},
+    {"cmd": "line", "str": "He beat the ELITE"},
+    {"cmd": "cont", "str": "FOUR before you!"},
+    {"cmd": "para", "str": "He is the real"},
+    {"cmd": "line", "str": "POKéMON LEAGUE"},
+    {"cmd": "cont", "str": "champion!"},
+    {"cmd": "text_end"}
+   ]
+  }
+ }
+}

@@ -1,0 +1,75 @@
+{
+ "map": "Route18Gate1F",
+ "const": "ROUTE_18_GATE_1F",
+ "textPointerTables": [
+  {
+   "label": "Route18Gate1F_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_ROUTE18GATE1F_GUARD", "label": "Route18Gate1FGuardText", "kind": "asm", "handler": "asm"},
+    {"id": 2, "const": "TEXT_ROUTE18GATE1F_GUARD_EXCUSE_ME", "label": "Route18Gate1FGuardExcuseMeText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "Route18Gate1FGuardText": {
+   "kind": "asm",
+   "src": "scripts/Route18Gate1F.asm:92",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["Route18Gate1FGuardText.CyclingRoadUphillText", "Route18Gate1FGuardText.YouNeedABicycleText"]
+  },
+  "Route18Gate1FGuardText.YouNeedABicycleText": {
+   "kind": "text",
+   "src": "scripts/Route18Gate1F.asm:105",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route18Gate1FGuardYouNeedABicycleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route18Gate1FGuardText.CyclingRoadUphillText": {
+   "kind": "text",
+   "src": "scripts/Route18Gate1F.asm:109",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route18Gate1FGuardCyclingRoadUphillText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route18Gate1FGuardExcuseMeText": {
+   "kind": "text",
+   "src": "scripts/Route18Gate1F.asm:113",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route18Gate1FGuardExcuseMeText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_Route18Gate1FGuardYouNeedABicycleText": {
+   "kind": "text",
+   "src": "text/Route18Gate1F.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "You need a BICYCLE"},
+    {"cmd": "line", "str": "for CYCLING ROAD!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route18Gate1FGuardCyclingRoadUphillText": {
+   "kind": "text",
+   "src": "text/Route18Gate1F.asm:7",
+   "commands": [
+    {"cmd": "text", "str": "CYCLING ROAD is"},
+    {"cmd": "line", "str": "all uphill from"},
+    {"cmd": "cont", "str": "here."},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route18Gate1FGuardExcuseMeText": {
+   "kind": "text",
+   "src": "text/Route18Gate1F.asm:13",
+   "commands": [
+    {"cmd": "text", "str": "Excuse me!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

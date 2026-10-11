@@ -1,0 +1,69 @@
+{
+ "map": "LavenderPokecenter",
+ "const": "LAVENDER_POKECENTER",
+ "textPointerTables": [
+  {
+   "label": "LavenderPokecenter_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_LAVENDERPOKECENTER_NURSE", "label": "LavenderPokecenterNurseText", "kind": "script", "handler": "script_pokecenter_nurse"},
+    {"id": 2, "const": "TEXT_LAVENDERPOKECENTER_GENTLEMAN", "label": "LavenderPokecenterGentlemanText", "kind": "text", "handler": "text"},
+    {"id": 3, "const": "TEXT_LAVENDERPOKECENTER_LITTLE_GIRL", "label": "LavenderPokecenterLittleGirlText", "kind": "text", "handler": "text"},
+    {"id": 4, "const": "TEXT_LAVENDERPOKECENTER_LINK_RECEPTIONIST", "label": "LavenderPokecenterLinkReceptionistText", "kind": "script", "handler": "script_cable_club_receptionist"}
+   ]
+  }
+ ],
+ "texts": {
+  "LavenderPokecenterLinkReceptionistText": {
+   "kind": "script",
+   "src": "scripts/LavenderPokecenter.asm:13",
+   "commands": [
+    {"cmd": "script", "script": "script_cable_club_receptionist"}
+   ]
+  },
+  "LavenderPokecenterNurseText": {
+   "kind": "script",
+   "src": "scripts/LavenderPokecenter.asm:16",
+   "commands": [
+    {"cmd": "script", "script": "script_pokecenter_nurse"}
+   ]
+  },
+  "LavenderPokecenterGentlemanText": {
+   "kind": "text",
+   "src": "scripts/LavenderPokecenter.asm:19",
+   "commands": [
+    {"cmd": "text_far", "label": "_LavenderPokecenterGentlemanText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "LavenderPokecenterLittleGirlText": {
+   "kind": "text",
+   "src": "scripts/LavenderPokecenter.asm:23",
+   "commands": [
+    {"cmd": "text_far", "label": "_LavenderPokecenterLittleGirlText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_LavenderPokecenterGentlemanText": {
+   "kind": "text",
+   "src": "text/LavenderPokecenter.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "TEAM ROCKET will"},
+    {"cmd": "line", "str": "do anything for"},
+    {"cmd": "cont", "str": "the sake of gold!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_LavenderPokecenterLittleGirlText": {
+   "kind": "text",
+   "src": "text/LavenderPokecenter.asm:8",
+   "commands": [
+    {"cmd": "text", "str": "I saw CUBONE's"},
+    {"cmd": "line", "str": "mother die trying"},
+    {"cmd": "cont", "str": "to escape from"},
+    {"cmd": "cont", "str": "TEAM ROCKET!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

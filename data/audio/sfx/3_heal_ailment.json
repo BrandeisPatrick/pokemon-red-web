@@ -1,0 +1,27 @@
+{
+  "name": "SFX_HEAL_AILMENT",
+  "title": "Heal Ailment",
+  "kind": "sfx",
+  "bank": 3,
+  "id": 142,
+  "label": "SFX_Heal_Ailment_3",
+  "channels": [
+    {
+      "channel": 5,
+      "label": "SFX_Heal_Ailment_3_Ch5",
+      "entry": 0,
+      "bytes": 21,
+      "labels": {"SFX_Heal_Ailment_3_Ch5": 0},
+      "commands": [
+        {"op": "duty_cycle", "duty": 2},
+        {"op": "pitch_sweep", "length": 1, "change": 4},
+        {"op": "square_note", "length": 4, "volume": 15, "fade": 2, "frequency": 1536},
+        {"op": "square_note", "length": 4, "volume": 15, "fade": 2, "frequency": 1536},
+        {"op": "pitch_sweep", "length": 1, "change": 7},
+        {"op": "square_note", "length": 15, "volume": 15, "fade": 2, "frequency": 1536},
+        {"op": "pitch_sweep", "length": 0, "change": 8},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

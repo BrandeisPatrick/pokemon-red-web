@@ -1,0 +1,25 @@
+{
+  "name": "SFX_BATTLE_25",
+  "title": "Battle 25",
+  "kind": "sfx",
+  "bank": 2,
+  "id": 189,
+  "label": "SFX_Battle_25",
+  "channels": [
+    {
+      "channel": 8,
+      "label": "SFX_Battle_25_Ch8",
+      "entry": 0,
+      "bytes": 16,
+      "labels": {"SFX_Battle_25_Ch8": 0},
+      "commands": [
+        {"op": "noise_note", "length": 15, "volume": 4, "fade": -7, "value": 65},
+        {"op": "noise_note", "length": 8, "volume": 8, "fade": -7, "value": 65},
+        {"op": "noise_note", "length": 8, "volume": 12, "fade": -7, "value": 65},
+        {"op": "noise_note", "length": 8, "volume": 15, "fade": 2, "value": 66},
+        {"op": "noise_note", "length": 15, "volume": 15, "fade": 2, "value": 65},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

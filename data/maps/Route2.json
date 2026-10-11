@@ -1,0 +1,91 @@
+{
+ "id": 13,
+ "const": "ROUTE_2",
+ "name": "Route2",
+ "displayName": "ROUTE 2",
+ "width": 10,
+ "height": 36,
+ "tileset": "OVERWORLD",
+ "tilesetId": 0,
+ "tilesetFile": "data/tilesets/Overworld.json",
+ "isOutside": true,
+ "borderBlock": 15,
+ "blocks": [15, 15, 15, 15, 1, 15, 15, 15, 15, 15, 11, 11, 11, 11, 1, 27, 49, 49, 49, 49, 11, 11, 11, 11, 1, 27, 49, 49, 49, 49, 11, 11, 11, 11, 1, 62, 63, 63, 59, 49, 49, 49, 49, 49, 49, 36, 6, 87, 37, 49, 108, 109, 50, 108, 108, 8, 49, 116, 116, 10, 10, 32, 33, 10, 10, 49, 49, 49, 49, 49, 82, 124, 126, 82, 82, 82, 82, 10, 10, 49, 85, 85, 85, 85, 15, 15, 15, 10, 10, 49, 26, 26, 26, 26, 15, 15, 15, 2, 3, 49, 11, 1, 11, 11, 15, 15, 15, 49, 49, 49, 15, 15, 15, 15, 15, 15, 15, 50, 108, 108, 15, 15, 15, 15, 15, 15, 15, 10, 10, 10, 15, 15, 15, 15, 15, 15, 15, 7, 47, 7, 15, 15, 15, 15, 15, 15, 15, 10, 10, 116, 15, 15, 15, 15, 15, 15, 15, 7, 47, 7, 15, 15, 15, 15, 15, 15, 15, 10, 10, 116, 15, 15, 15, 15, 15, 15, 15, 82, 10, 82, 15, 15, 15, 15, 15, 15, 15, 32, 13, 33, 108, 109, 50, 108, 108, 15, 15, 124, 125, 126, 10, 32, 33, 10, 10, 15, 15, 10, 10, 10, 82, 124, 126, 82, 82, 15, 15, 47, 7, 7, 85, 85, 85, 85, 85, 110, 10, 10, 10, 10, 26, 26, 26, 26, 1, 110, 10, 10, 116, 116, 116, 1, 11, 11, 11, 110, 7, 47, 7, 7, 116, 1, 11, 11, 11, 110, 10, 10, 10, 10, 116, 1, 10, 111, 111, 111, 52, 10, 10, 10, 116, 1, 110, 15, 15, 15, 109, 10, 10, 10, 116, 1, 10, 108, 108, 108, 109, 116, 10, 10, 116, 1, 49, 49, 49, 10, 109, 116, 116, 10, 15, 7, 7, 47, 26, 7, 52, 47, 7, 7, 15, 116, 116, 10, 49, 10, 109, 10, 10, 10, 15, 49, 8, 49, 49, 10, 109, 116, 116, 10, 15, 1, 116, 116, 49, 10, 109, 116, 116, 10, 15, 1, 1, 1, 1, 111, 52, 111, 111, 111, 15, 15, 15, 27, 1, 15, 15, 15, 15, 15],
+ "connections": {
+  "north": {
+   "map": "PEWTER_CITY",
+   "mapId": 2,
+   "mapName": "PewterCity",
+   "offset": -5,
+   "dx": -5,
+   "dy": -18,
+   "copyRect": {"x": 2, "y": 15, "w": 16, "h": 3},
+   "onEnter": {"newY": 35, "xAdd": 10},
+   "macro": {
+    "stripSrc": 302,
+    "stripDest": 0,
+    "stripLength": 16,
+    "connectedWidth": 20,
+    "yAlign": 35,
+    "xAlign": 10,
+    "viewPointer": 469
+   }
+  },
+  "south": {
+   "map": "VIRIDIAN_CITY",
+   "mapId": 1,
+   "mapName": "ViridianCity",
+   "offset": -5,
+   "dx": -5,
+   "dy": 36,
+   "copyRect": {"x": 2, "y": 0, "w": 16, "h": 3},
+   "onEnter": {"newY": 0, "xAdd": 10},
+   "macro": {"stripSrc": 2, "stripDest": 624, "stripLength": 16, "connectedWidth": 20, "yAlign": 0, "xAlign": 10, "viewPointer": 27}
+  }
+ },
+ "warps": [
+  {"x": 12, "y": 9, "destMap": "DIGLETTS_CAVE_ROUTE_2", "destMapId": 46, "destMapName": "DiglettsCaveRoute2", "destWarp": 1, "destWarpIndex": 0},
+  {"x": 3, "y": 11, "destMap": "VIRIDIAN_FOREST_NORTH_GATE", "destMapId": 47, "destMapName": "ViridianForestNorthGate", "destWarp": 2, "destWarpIndex": 1},
+  {"x": 15, "y": 19, "destMap": "ROUTE_2_TRADE_HOUSE", "destMapId": 48, "destMapName": "Route2TradeHouse", "destWarp": 1, "destWarpIndex": 0},
+  {"x": 16, "y": 35, "destMap": "ROUTE_2_GATE", "destMapId": 49, "destMapName": "Route2Gate", "destWarp": 2, "destWarpIndex": 1},
+  {"x": 15, "y": 39, "destMap": "ROUTE_2_GATE", "destMapId": 49, "destMapName": "Route2Gate", "destWarp": 3, "destWarpIndex": 2},
+  {"x": 3, "y": 43, "destMap": "VIRIDIAN_FOREST_SOUTH_GATE", "destMapId": 50, "destMapName": "ViridianForestSouthGate", "destWarp": 3, "destWarpIndex": 2}
+ ],
+ "bgEvents": [
+  {"x": 5, "y": 65, "textId": "TEXT_ROUTE2_SIGN", "textIndex": 3},
+  {"x": 11, "y": 11, "textId": "TEXT_ROUTE2_DIGLETTS_CAVE_SIGN", "textIndex": 4}
+ ],
+ "objectEvents": [
+  {"index": 1, "const": "ROUTE2_MOON_STONE", "x": 13, "y": 54, "sprite": "SPRITE_POKE_BALL", "spriteId": 61, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_ROUTE2_MOON_STONE", "textIndex": 1, "item": "MOON_STONE", "itemId": 10, "toggleIndex": 25, "toggleConst": "TOGGLE_ROUTE_2_ITEM_1", "startsHidden": false},
+  {"index": 2, "const": "ROUTE2_HP_UP", "x": 13, "y": 45, "sprite": "SPRITE_POKE_BALL", "spriteId": 61, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_ROUTE2_HP_UP", "textIndex": 2, "item": "HP_UP", "itemId": 35, "toggleIndex": 26, "toggleConst": "TOGGLE_ROUTE_2_ITEM_2", "startsHidden": false}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": {
+  "type": "split",
+  "split": "SPLITSET_ROUTE_2",
+  "axis": "NORTH_SOUTH",
+  "compare": "y",
+  "coord": 37,
+  "below": "SPRITESET_PEWTER_CERULEAN",
+  "atOrAbove": "SPRITESET_PALLET_VIRIDIAN",
+  "sets": {
+   "SPRITESET_PEWTER_CERULEAN": ["SPRITE_YOUNGSTER", "SPRITE_ROCKET", "SPRITE_SUPER_NERD", "SPRITE_HIKER", "SPRITE_MONSTER", "SPRITE_BLUE", "SPRITE_GUARD", "SPRITE_COOLTRAINER_F", "SPRITE_COOLTRAINER_M", "SPRITE_POKE_BALL", "SPRITE_UNUSED_GAMBLER_ASLEEP_2"],
+   "SPRITESET_PALLET_VIRIDIAN": ["SPRITE_BLUE", "SPRITE_YOUNGSTER", "SPRITE_GIRL", "SPRITE_FISHER", "SPRITE_COOLTRAINER_M", "SPRITE_GAMBLER", "SPRITE_SEEL", "SPRITE_OAK", "SPRITE_SWIMMER", "SPRITE_POKE_BALL", "SPRITE_GAMBLER_ASLEEP"]
+  }
+ },
+ "music": "MUSIC_ROUTES1",
+ "wild": {"label": "Route2WildMons", "file": "Route2"},
+ "townMap": {"x": 2, "y": 6, "group": null},
+ "extraWarpCheck": "warpTileInFront",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/Route2.json",
+ "textPointers": "Route2_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/Route2.asm",
+  "objects": "data/maps/objects/Route2.asm",
+  "blocks": "maps/Route2.blk",
+  "script": "scripts/Route2.asm"
+ },
+ "palette": {"pal": "PAL_ROUTE", "rule": "route"}
+}

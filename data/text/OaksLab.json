@@ -1,0 +1,1018 @@
+{
+ "map": "OaksLab",
+ "const": "OAKS_LAB",
+ "textPointerTables": [
+  {
+   "label": "OaksLab_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_OAKSLAB_RIVAL", "label": "OaksLabRivalText", "kind": "asm", "handler": "asm"},
+    {"id": 2, "const": "TEXT_OAKSLAB_CHARMANDER_POKE_BALL", "label": "OaksLabCharmanderPokeBallText", "kind": "asm", "handler": "asm"},
+    {"id": 3, "const": "TEXT_OAKSLAB_SQUIRTLE_POKE_BALL", "label": "OaksLabSquirtlePokeBallText", "kind": "asm", "handler": "asm"},
+    {"id": 4, "const": "TEXT_OAKSLAB_BULBASAUR_POKE_BALL", "label": "OaksLabBulbasaurPokeBallText", "kind": "asm", "handler": "asm"},
+    {"id": 5, "const": "TEXT_OAKSLAB_OAK1", "label": "OaksLabOak1Text", "kind": "asm", "handler": "asm"},
+    {"id": 6, "const": "TEXT_OAKSLAB_POKEDEX1", "label": "OaksLabPokedexText", "kind": "asm", "handler": "asm"},
+    {"id": 7, "const": "TEXT_OAKSLAB_POKEDEX2", "label": "OaksLabPokedexText", "kind": "asm", "handler": "asm"},
+    {"id": 8, "const": "TEXT_OAKSLAB_OAK2", "label": "OaksLabOak2Text", "kind": "text", "handler": "text"},
+    {"id": 9, "const": "TEXT_OAKSLAB_GIRL", "label": "OaksLabGirlText", "kind": "asm", "handler": "asm"},
+    {"id": 10, "const": "TEXT_OAKSLAB_SCIENTIST1", "label": "OaksLabScientistText", "kind": "asm", "handler": "asm"},
+    {"id": 11, "const": "TEXT_OAKSLAB_SCIENTIST2", "label": "OaksLabScientistText", "kind": "asm", "handler": "asm"},
+    {"id": 12, "const": "TEXT_OAKSLAB_OAK_DONT_GO_AWAY_YET", "label": "OaksLabOakDontGoAwayYetText", "kind": "asm", "handler": "asm"},
+    {"id": 13, "const": "TEXT_OAKSLAB_RIVAL_ILL_TAKE_THIS_ONE", "label": "OaksLabRivalIllTakeThisOneText", "kind": "asm", "handler": "asm"},
+    {"id": 14, "const": "TEXT_OAKSLAB_RIVAL_RECEIVED_MON", "label": "OaksLabRivalReceivedMonText", "kind": "asm", "handler": "asm"},
+    {"id": 15, "const": "TEXT_OAKSLAB_RIVAL_ILL_TAKE_YOU_ON", "label": "OaksLabRivalIllTakeYouOnText", "kind": "asm", "handler": "asm"},
+    {"id": 16, "const": "TEXT_OAKSLAB_RIVAL_SMELL_YOU_LATER", "label": "OaksLabRivalSmellYouLaterText", "kind": "asm", "handler": "asm"},
+    {"id": 17, "const": "TEXT_OAKSLAB_RIVAL_FED_UP_WITH_WAITING", "label": "OaksLabRivalFedUpWithWaitingText", "kind": "asm", "handler": "asm"},
+    {"id": 18, "const": "TEXT_OAKSLAB_OAK_CHOOSE_MON", "label": "OaksLabOakChooseMonText", "kind": "asm", "handler": "asm"},
+    {"id": 19, "const": "TEXT_OAKSLAB_RIVAL_WHAT_ABOUT_ME", "label": "OaksLabRivalWhatAboutMeText", "kind": "asm", "handler": "asm"},
+    {"id": 20, "const": "TEXT_OAKSLAB_OAK_BE_PATIENT", "label": "OaksLabOakBePatientText", "kind": "asm", "handler": "asm"},
+    {"id": 21, "const": "TEXT_OAKSLAB_RIVAL_GRAMPS", "label": "OaksLabRivalGrampsText", "kind": "text", "handler": "text"},
+    {"id": 22, "const": "TEXT_OAKSLAB_RIVAL_WHAT_DID_YOU_CALL_ME_FOR", "label": "OaksLabRivalWhatDidYouCallMeForText", "kind": "text", "handler": "text"},
+    {"id": 23, "const": "TEXT_OAKSLAB_OAK_I_HAVE_A_REQUEST", "label": "OaksLabOakIHaveARequestText", "kind": "text", "handler": "text"},
+    {"id": 24, "const": "TEXT_OAKSLAB_OAK_MY_INVENTION_POKEDEX", "label": "OaksLabOakMyInventionPokedexText", "kind": "text", "handler": "text"},
+    {"id": 25, "const": "TEXT_OAKSLAB_OAK_GOT_POKEDEX", "label": "OaksLabOakGotPokedexText", "kind": "text", "handler": "text"},
+    {"id": 26, "const": "TEXT_OAKSLAB_OAK_THAT_WAS_MY_DREAM", "label": "OaksLabOakThatWasMyDreamText", "kind": "text", "handler": "text"},
+    {"id": 27, "const": "TEXT_OAKSLAB_RIVAL_LEAVE_IT_ALL_TO_ME", "label": "OaksLabRivalLeaveItAllToMeText", "kind": "text", "handler": "text"}
+   ]
+  },
+  {
+   "label": "OaksLab_TextPointers2",
+   "primary": false,
+   "entries": [
+    {"id": 1, "const": null, "label": "OaksLabRivalText", "kind": "asm", "handler": "asm"},
+    {"id": 2, "const": null, "label": "OaksLabCharmanderPokeBallText", "kind": "asm", "handler": "asm"},
+    {"id": 3, "const": null, "label": "OaksLabSquirtlePokeBallText", "kind": "asm", "handler": "asm"},
+    {"id": 4, "const": null, "label": "OaksLabBulbasaurPokeBallText", "kind": "asm", "handler": "asm"},
+    {"id": 5, "const": null, "label": "OaksLabOak1Text", "kind": "asm", "handler": "asm"},
+    {"id": 6, "const": null, "label": "OaksLabPokedexText", "kind": "asm", "handler": "asm"},
+    {"id": 7, "const": null, "label": "OaksLabPokedexText", "kind": "asm", "handler": "asm"},
+    {"id": 8, "const": null, "label": "OaksLabOak2Text", "kind": "text", "handler": "text"},
+    {"id": 9, "const": null, "label": "OaksLabGirlText", "kind": "asm", "handler": "asm"},
+    {"id": 10, "const": null, "label": "OaksLabScientistText", "kind": "asm", "handler": "asm"},
+    {"id": 11, "const": null, "label": "OaksLabScientistText", "kind": "asm", "handler": "asm"}
+   ]
+  }
+ ],
+ "texts": {
+  "OaksLabRivalText": {
+   "kind": "asm",
+   "src": "scripts/OaksLab.asm:767",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["OaksLabRivalText.GrampsIsntAroundText", "OaksLabRivalText.GoAheadAndChooseText", "OaksLabRivalText.MyPokemonLooksStrongerText"]
+  },
+  "OaksLabRivalText.GrampsIsntAroundText": {
+   "kind": "text",
+   "src": "scripts/OaksLab.asm:786",
+   "commands": [
+    {"cmd": "text_far", "label": "_OaksLabRivalGrampsIsntAroundText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "OaksLabRivalText.GoAheadAndChooseText": {
+   "kind": "text",
+   "src": "scripts/OaksLab.asm:790",
+   "commands": [
+    {"cmd": "text_far", "label": "_OaksLabRivalGoAheadAndChooseText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "OaksLabRivalText.MyPokemonLooksStrongerText": {
+   "kind": "text",
+   "src": "scripts/OaksLab.asm:794",
+   "commands": [
+    {"cmd": "text_far", "label": "_OaksLabRivalMyPokemonLooksStrongerText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "OaksLabCharmanderPokeBallText": {
+   "kind": "asm",
+   "src": "scripts/OaksLab.asm:798",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "OaksLabSquirtlePokeBallText": {
+   "kind": "asm",
+   "src": "scripts/OaksLab.asm:808",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "OaksLabBulbasaurPokeBallText": {
+   "kind": "asm",
+   "src": "scripts/OaksLab.asm:818",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "OaksLabThoseArePokeBallsText": {
+   "kind": "text",
+   "src": "scripts/OaksLab.asm:840",
+   "commands": [
+    {"cmd": "text_far", "label": "_OaksLabThoseArePokeBallsText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "OaksLabYouWantCharmanderText.Text": {
+   "kind": "text",
+   "src": "scripts/OaksLab.asm:875",
+   "commands": [
+    {"cmd": "text_far", "label": "_OaksLabYouWantCharmanderText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "OaksLabYouWantSquirtleText.Text": {
+   "kind": "text",
+   "src": "scripts/OaksLab.asm:882",
+   "commands": [
+    {"cmd": "text_far", "label": "_OaksLabYouWantSquirtleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "OaksLabYouWantBulbasaurText.Text": {
+   "kind": "text",
+   "src": "scripts/OaksLab.asm:889",
+   "commands": [
+    {"cmd": "text_far", "label": "_OaksLabYouWantBulbasaurText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "OaksLabMonEnergeticText": {
+   "kind": "text",
+   "src": "scripts/OaksLab.asm:942",
+   "commands": [
+    {"cmd": "text_far", "label": "_OaksLabMonEnergeticText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "OaksLabReceivedMonText": {
+   "kind": "text",
+   "src": "scripts/OaksLab.asm:946",
+   "commands": [
+    {"cmd": "text_far", "label": "_OaksLabReceivedMonText"},
+    {"cmd": "sound", "sound": "sound_get_key_item"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "OaksLabLastMonText": {
+   "kind": "text",
+   "src": "scripts/OaksLab.asm:962",
+   "commands": [
+    {"cmd": "text_far", "label": "_OaksLabLastMonText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "OaksLabOak1Text": {
+   "kind": "asm",
+   "src": "scripts/OaksLab.asm:966",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["OaksLabOak1Text.HowIsYourPokedexComingText", "OaksLabOak1Text.WhichPokemonDoYouWantText", "OaksLabOak1Text.YourPokemonCanFightText", "OaksLabOak1Text.RaiseYourYoungPokemonText", "OaksLabOak1Text.DeliverParcelText", "OaksLabOak1Text.PokemonAroundTheWorldText", "OaksLabOak1Text.GivePokeballsText", "OaksLabOak1Text.ComeSeeMeSometimesText"]
+  },
+  "OaksLabOak1Text.WhichPokemonDoYouWantText": {
+   "kind": "text",
+   "src": "scripts/OaksLab.asm:1037",
+   "commands": [
+    {"cmd": "text_far", "label": "_OaksLabOak1WhichPokemonDoYouWantText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "OaksLabOak1Text.YourPokemonCanFightText": {
+   "kind": "text",
+   "src": "scripts/OaksLab.asm:1041",
+   "commands": [
+    {"cmd": "text_far", "label": "_OaksLabOak1YourPokemonCanFightText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "OaksLabOak1Text.RaiseYourYoungPokemonText": {
+   "kind": "text",
+   "src": "scripts/OaksLab.asm:1045",
+   "commands": [
+    {"cmd": "text_far", "label": "_OaksLabOak1RaiseYourYoungPokemonText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "OaksLabOak1Text.DeliverParcelText": {
+   "kind": "text",
+   "src": "scripts/OaksLab.asm:1049",
+   "commands": [
+    {"cmd": "text_far", "label": "_OaksLabOak1DeliverParcelText"},
+    {"cmd": "sound", "sound": "sound_get_key_item"},
+    {"cmd": "text_far", "label": "_OaksLabOak1ParcelThanksText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "OaksLabOak1Text.PokemonAroundTheWorldText": {
+   "kind": "text",
+   "src": "scripts/OaksLab.asm:1055",
+   "commands": [
+    {"cmd": "text_far", "label": "_OaksLabOak1PokemonAroundTheWorldText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "OaksLabOak1Text.GivePokeballsText": {
+   "kind": "text",
+   "src": "scripts/OaksLab.asm:1059",
+   "commands": [
+    {"cmd": "text_far", "label": "_OaksLabOak1ReceivedPokeballsText"},
+    {"cmd": "sound", "sound": "sound_get_key_item"},
+    {"cmd": "text_far", "label": "_OaksLabGivePokeballsExplanationText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "OaksLabOak1Text.ComeSeeMeSometimesText": {
+   "kind": "text",
+   "src": "scripts/OaksLab.asm:1065",
+   "commands": [
+    {"cmd": "text_far", "label": "_OaksLabOak1ComeSeeMeSometimesText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "OaksLabOak1Text.HowIsYourPokedexComingText": {
+   "kind": "text",
+   "src": "scripts/OaksLab.asm:1069",
+   "commands": [
+    {"cmd": "text_far", "label": "_OaksLabOak1HowIsYourPokedexComingText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "OaksLabPokedexText": {
+   "kind": "asm",
+   "src": "scripts/OaksLab.asm:1073",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["OaksLabPokedexText.Text"]
+  },
+  "OaksLabPokedexText.Text": {
+   "kind": "text",
+   "src": "scripts/OaksLab.asm:1079",
+   "commands": [
+    {"cmd": "text_far", "label": "_OaksLabPokedexText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "OaksLabOak2Text": {
+   "kind": "text",
+   "src": "scripts/OaksLab.asm:1083",
+   "commands": [
+    {"cmd": "text_far", "label": "_OaksLabOak2Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "OaksLabGirlText": {
+   "kind": "asm",
+   "src": "scripts/OaksLab.asm:1087",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["OaksLabGirlText.Text"]
+  },
+  "OaksLabGirlText.Text": {
+   "kind": "text",
+   "src": "scripts/OaksLab.asm:1093",
+   "commands": [
+    {"cmd": "text_far", "label": "_OaksLabGirlText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "OaksLabRivalFedUpWithWaitingText": {
+   "kind": "asm",
+   "src": "scripts/OaksLab.asm:1097",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["OaksLabRivalFedUpWithWaitingText.Text"]
+  },
+  "OaksLabRivalFedUpWithWaitingText.Text": {
+   "kind": "text",
+   "src": "scripts/OaksLab.asm:1103",
+   "commands": [
+    {"cmd": "text_far", "label": "_OaksLabRivalFedUpWithWaitingText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "OaksLabOakChooseMonText": {
+   "kind": "asm",
+   "src": "scripts/OaksLab.asm:1107",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["OaksLabOakChooseMonText.Text"]
+  },
+  "OaksLabOakChooseMonText.Text": {
+   "kind": "text",
+   "src": "scripts/OaksLab.asm:1113",
+   "commands": [
+    {"cmd": "text_far", "label": "_OaksLabOakChooseMonText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "OaksLabRivalWhatAboutMeText": {
+   "kind": "asm",
+   "src": "scripts/OaksLab.asm:1117",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["OaksLabRivalWhatAboutMeText.Text"]
+  },
+  "OaksLabRivalWhatAboutMeText.Text": {
+   "kind": "text",
+   "src": "scripts/OaksLab.asm:1123",
+   "commands": [
+    {"cmd": "text_far", "label": "_OaksLabRivalWhatAboutMeText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "OaksLabOakBePatientText": {
+   "kind": "asm",
+   "src": "scripts/OaksLab.asm:1127",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["OaksLabOakBePatientText.Text"]
+  },
+  "OaksLabOakBePatientText.Text": {
+   "kind": "text",
+   "src": "scripts/OaksLab.asm:1133",
+   "commands": [
+    {"cmd": "text_far", "label": "_OaksLabOakBePatientText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "OaksLabOakDontGoAwayYetText": {
+   "kind": "asm",
+   "src": "scripts/OaksLab.asm:1137",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["OaksLabOakDontGoAwayYetText.Text"]
+  },
+  "OaksLabOakDontGoAwayYetText.Text": {
+   "kind": "text",
+   "src": "scripts/OaksLab.asm:1143",
+   "commands": [
+    {"cmd": "text_far", "label": "_OaksLabOakDontGoAwayYetText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "OaksLabRivalIllTakeThisOneText": {
+   "kind": "asm",
+   "src": "scripts/OaksLab.asm:1147",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["OaksLabRivalIllTakeThisOneText.Text"]
+  },
+  "OaksLabRivalIllTakeThisOneText.Text": {
+   "kind": "text",
+   "src": "scripts/OaksLab.asm:1153",
+   "commands": [
+    {"cmd": "text_far", "label": "_OaksLabRivalIllTakeThisOneText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "OaksLabRivalReceivedMonText": {
+   "kind": "asm",
+   "src": "scripts/OaksLab.asm:1157",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["OaksLabRivalReceivedMonText.Text"]
+  },
+  "OaksLabRivalReceivedMonText.Text": {
+   "kind": "text",
+   "src": "scripts/OaksLab.asm:1163",
+   "commands": [
+    {"cmd": "text_far", "label": "_OaksLabRivalReceivedMonText"},
+    {"cmd": "sound", "sound": "sound_get_key_item"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "OaksLabRivalIllTakeYouOnText": {
+   "kind": "asm",
+   "src": "scripts/OaksLab.asm:1168",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["OaksLabRivalIllTakeYouOnText.Text"]
+  },
+  "OaksLabRivalIllTakeYouOnText.Text": {
+   "kind": "text",
+   "src": "scripts/OaksLab.asm:1174",
+   "commands": [
+    {"cmd": "text_far", "label": "_OaksLabRivalIllTakeYouOnText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "OaksLabRivalIPickedTheWrongPokemonText": {
+   "kind": "text",
+   "src": "scripts/OaksLab.asm:1178",
+   "commands": [
+    {"cmd": "text_far", "label": "_OaksLabRivalIPickedTheWrongPokemonText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "OaksLabRivalAmIGreatOrWhatText": {
+   "kind": "text",
+   "src": "scripts/OaksLab.asm:1182",
+   "commands": [
+    {"cmd": "text_far", "label": "_OaksLabRivalAmIGreatOrWhatText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "OaksLabRivalSmellYouLaterText": {
+   "kind": "asm",
+   "src": "scripts/OaksLab.asm:1186",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["OaksLabRivalSmellYouLaterText.Text"]
+  },
+  "OaksLabRivalSmellYouLaterText.Text": {
+   "kind": "text",
+   "src": "scripts/OaksLab.asm:1192",
+   "commands": [
+    {"cmd": "text_far", "label": "_OaksLabRivalSmellYouLaterText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "OaksLabRivalGrampsText": {
+   "kind": "text",
+   "src": "scripts/OaksLab.asm:1196",
+   "commands": [
+    {"cmd": "text_far", "label": "_OaksLabRivalGrampsText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "OaksLabRivalWhatDidYouCallMeForText": {
+   "kind": "text",
+   "src": "scripts/OaksLab.asm:1200",
+   "commands": [
+    {"cmd": "text_far", "label": "_OaksLabRivalWhatDidYouCallMeForText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "OaksLabOakIHaveARequestText": {
+   "kind": "text",
+   "src": "scripts/OaksLab.asm:1204",
+   "commands": [
+    {"cmd": "text_far", "label": "_OaksLabOakIHaveARequestText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "OaksLabOakMyInventionPokedexText": {
+   "kind": "text",
+   "src": "scripts/OaksLab.asm:1208",
+   "commands": [
+    {"cmd": "text_far", "label": "_OaksLabOakMyInventionPokedexText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "OaksLabOakGotPokedexText": {
+   "kind": "text",
+   "src": "scripts/OaksLab.asm:1212",
+   "commands": [
+    {"cmd": "text_far", "label": "_OaksLabOakGotPokedexText"},
+    {"cmd": "sound", "sound": "sound_get_key_item"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "OaksLabOakThatWasMyDreamText": {
+   "kind": "text",
+   "src": "scripts/OaksLab.asm:1217",
+   "commands": [
+    {"cmd": "text_far", "label": "_OaksLabOakThatWasMyDreamText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "OaksLabRivalLeaveItAllToMeText": {
+   "kind": "text",
+   "src": "scripts/OaksLab.asm:1221",
+   "commands": [
+    {"cmd": "text_far", "label": "_OaksLabRivalLeaveItAllToMeText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "OaksLabScientistText": {
+   "kind": "asm",
+   "src": "scripts/OaksLab.asm:1225",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["OaksLabScientistText.Text"]
+  },
+  "OaksLabScientistText.Text": {
+   "kind": "text",
+   "src": "scripts/OaksLab.asm:1231",
+   "commands": [
+    {"cmd": "text_far", "label": "_OaksLabScientistText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_OaksLabRivalGrampsIsntAroundText": {
+   "kind": "text",
+   "src": "text/OaksLab.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "{RIVAL}: Yo"},
+    {"cmd": "line", "str": "{PLAYER}! Gramps"},
+    {"cmd": "cont", "str": "isn't around!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_OaksLabRivalGoAheadAndChooseText": {
+   "kind": "text",
+   "src": "text/OaksLab.asm:8",
+   "commands": [
+    {"cmd": "text", "str": "{RIVAL}: Heh, I"},
+    {"cmd": "line", "str": "don't need to be"},
+    {"cmd": "cont", "str": "greedy like you!"},
+    {"cmd": "para", "str": "Go ahead and"},
+    {"cmd": "line", "str": "choose, {PLAYER}!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_OaksLabRivalMyPokemonLooksStrongerText": {
+   "kind": "text",
+   "src": "text/OaksLab.asm:17",
+   "commands": [
+    {"cmd": "text", "str": "{RIVAL}: My"},
+    {"cmd": "line", "str": "POKéMON looks a"},
+    {"cmd": "cont", "str": "lot stronger."},
+    {"cmd": "done"}
+   ]
+  },
+  "_OaksLabThoseArePokeBallsText": {
+   "kind": "text",
+   "src": "text/OaksLab.asm:23",
+   "commands": [
+    {"cmd": "text", "str": "Those are POKé"},
+    {"cmd": "line", "str": "BALLs. They"},
+    {"cmd": "cont", "str": "contain POKéMON!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_OaksLabYouWantCharmanderText": {
+   "kind": "text",
+   "src": "text/OaksLab.asm:29",
+   "commands": [
+    {"cmd": "text", "str": "So! You want the"},
+    {"cmd": "line", "str": "fire POKéMON,"},
+    {"cmd": "cont", "str": "CHARMANDER?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_OaksLabYouWantSquirtleText": {
+   "kind": "text",
+   "src": "text/OaksLab.asm:35",
+   "commands": [
+    {"cmd": "text", "str": "So! You want the"},
+    {"cmd": "line", "str": "water POKéMON,"},
+    {"cmd": "cont", "str": "SQUIRTLE?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_OaksLabYouWantBulbasaurText": {
+   "kind": "text",
+   "src": "text/OaksLab.asm:41",
+   "commands": [
+    {"cmd": "text", "str": "So! You want the"},
+    {"cmd": "line", "str": "plant POKéMON,"},
+    {"cmd": "cont", "str": "BULBASAUR?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_OaksLabMonEnergeticText": {
+   "kind": "text",
+   "src": "text/OaksLab.asm:47",
+   "commands": [
+    {"cmd": "text", "str": "This POKéMON is"},
+    {"cmd": "line", "str": "really energetic!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_OaksLabReceivedMonText": {
+   "kind": "text",
+   "src": "text/OaksLab.asm:52",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} received"},
+    {"cmd": "line", "str": "a "},
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_OaksLabLastMonText": {
+   "kind": "text",
+   "src": "text/OaksLab.asm:59",
+   "commands": [
+    {"cmd": "text", "str": "That's PROF.OAK's"},
+    {"cmd": "line", "str": "last POKéMON!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_OaksLabOak1WhichPokemonDoYouWantText": {
+   "kind": "text",
+   "src": "text/OaksLab.asm:64",
+   "commands": [
+    {"cmd": "text", "str": "OAK: Now, {PLAYER},"},
+    {"cmd": "line", "str": "which POKéMON do"},
+    {"cmd": "cont", "str": "you want?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_OaksLabOak1YourPokemonCanFightText": {
+   "kind": "text",
+   "src": "text/OaksLab.asm:70",
+   "commands": [
+    {"cmd": "text", "str": "OAK: If a wild"},
+    {"cmd": "line", "str": "POKéMON appears,"},
+    {"cmd": "cont", "str": "your POKéMON can"},
+    {"cmd": "cont", "str": "fight against it!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_OaksLabOak1RaiseYourYoungPokemonText": {
+   "kind": "text",
+   "src": "text/OaksLab.asm:77",
+   "commands": [
+    {"cmd": "text", "str": "OAK: {PLAYER},"},
+    {"cmd": "line", "str": "raise your young"},
+    {"cmd": "cont", "str": "POKéMON by making"},
+    {"cmd": "cont", "str": "it fight!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_OaksLabOak1DeliverParcelText": {
+   "kind": "text",
+   "src": "text/OaksLab.asm:84",
+   "commands": [
+    {"cmd": "text", "str": "OAK: Oh, {PLAYER}!"},
+    {"cmd": "para", "str": "How is my old"},
+    {"cmd": "line", "str": "POKéMON?"},
+    {"cmd": "para", "str": "Well, it seems to"},
+    {"cmd": "line", "str": "like you a lot."},
+    {"cmd": "para", "str": "You must be"},
+    {"cmd": "line", "str": "talented as a"},
+    {"cmd": "cont", "str": "POKéMON trainer!"},
+    {"cmd": "para", "str": "What? You have"},
+    {"cmd": "line", "str": "something for me?"},
+    {"cmd": "para", "str": "{PLAYER} delivered"},
+    {"cmd": "line", "str": "OAK's PARCEL."},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_OaksLabOak1ParcelThanksText": {
+   "kind": "text",
+   "src": "text/OaksLab.asm:104",
+   "commands": [
+    {"cmd": "text", "str": ""},
+    {"cmd": "para", "str": "Ah! This is the"},
+    {"cmd": "line", "str": "custom POKé BALL"},
+    {"cmd": "cont", "str": "I ordered!"},
+    {"cmd": "cont", "str": "Thank you!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_OaksLabOak1PokemonAroundTheWorldText": {
+   "kind": "text",
+   "src": "text/OaksLab.asm:113",
+   "commands": [
+    {"cmd": "text", "str": "POKéMON around the"},
+    {"cmd": "line", "str": "world wait for"},
+    {"cmd": "cont", "str": "you, {PLAYER}!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_OaksLabOak1ReceivedPokeballsText": {
+   "kind": "text",
+   "src": "text/OaksLab.asm:119",
+   "commands": [
+    {"cmd": "text", "str": "OAK: You can't get"},
+    {"cmd": "line", "str": "detailed data on"},
+    {"cmd": "cont", "str": "POKéMON by just"},
+    {"cmd": "cont", "str": "seeing them."},
+    {"cmd": "para", "str": "You must catch"},
+    {"cmd": "line", "str": "them! Use these"},
+    {"cmd": "cont", "str": "to capture wild"},
+    {"cmd": "cont", "str": "POKéMON."},
+    {"cmd": "para", "str": "{PLAYER} got 5"},
+    {"cmd": "line", "str": "POKé BALLs!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_OaksLabGivePokeballsExplanationText": {
+   "kind": "text",
+   "src": "text/OaksLab.asm:134",
+   "commands": [
+    {"cmd": "text", "str": ""},
+    {"cmd": "para", "str": "When a wild"},
+    {"cmd": "line", "str": "POKéMON appears,"},
+    {"cmd": "cont", "str": "it's fair game."},
+    {"cmd": "para", "str": "Just throw a POKé"},
+    {"cmd": "line", "str": "BALL at it and try"},
+    {"cmd": "line", "str": "to catch it!"},
+    {"cmd": "para", "str": "This won't always"},
+    {"cmd": "line", "str": "work, though."},
+    {"cmd": "para", "str": "A healthy POKéMON"},
+    {"cmd": "line", "str": "could escape. You"},
+    {"cmd": "cont", "str": "have to be lucky!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_OaksLabOak1ComeSeeMeSometimesText": {
+   "kind": "text",
+   "src": "text/OaksLab.asm:153",
+   "commands": [
+    {"cmd": "text", "str": "OAK: Come see me"},
+    {"cmd": "line", "str": "sometimes."},
+    {"cmd": "para", "str": "I want to know how"},
+    {"cmd": "line", "str": "your POKéDEX is"},
+    {"cmd": "cont", "str": "coming along."},
+    {"cmd": "done"}
+   ]
+  },
+  "_OaksLabOak1HowIsYourPokedexComingText": {
+   "kind": "text",
+   "src": "text/OaksLab.asm:162",
+   "commands": [
+    {"cmd": "text", "str": "OAK: Good to see "},
+    {"cmd": "line", "str": "you! How is your "},
+    {"cmd": "cont", "str": "POKéDEX coming? "},
+    {"cmd": "cont", "str": "Here, let me take"},
+    {"cmd": "cont", "str": "a look!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_OaksLabPokedexText": {
+   "kind": "text",
+   "src": "text/OaksLab.asm:170",
+   "commands": [
+    {"cmd": "text", "str": "It's encyclopedia-"},
+    {"cmd": "line", "str": "like, but the"},
+    {"cmd": "cont", "str": "pages are blank!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_OaksLabOak2Text": {
+   "kind": "text",
+   "src": "text/OaksLab.asm:176",
+   "commands": [
+    {"cmd": "text", "str": "?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_OaksLabGirlText": {
+   "kind": "text",
+   "src": "text/OaksLab.asm:180",
+   "commands": [
+    {"cmd": "text", "str": "PROF.OAK is the"},
+    {"cmd": "line", "str": "authority on"},
+    {"cmd": "cont", "str": "POKéMON!"},
+    {"cmd": "para", "str": "Many POKéMON"},
+    {"cmd": "line", "str": "trainers hold him"},
+    {"cmd": "cont", "str": "in high regard!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_OaksLabRivalFedUpWithWaitingText": {
+   "kind": "text",
+   "src": "text/OaksLab.asm:190",
+   "commands": [
+    {"cmd": "text", "str": "{RIVAL}: Gramps!"},
+    {"cmd": "line", "str": "I'm fed up with"},
+    {"cmd": "cont", "str": "waiting!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_OaksLabOakChooseMonText": {
+   "kind": "text",
+   "src": "text/OaksLab.asm:196",
+   "commands": [
+    {"cmd": "text", "str": "OAK: {RIVAL}?"},
+    {"cmd": "line", "str": "Let me think..."},
+    {"cmd": "para", "str": "Oh, that's right,"},
+    {"cmd": "line", "str": "I told you to"},
+    {"cmd": "cont", "str": "come! Just wait!"},
+    {"cmd": "para", "str": "Here, {PLAYER}!"},
+    {"cmd": "para", "str": "There are 3"},
+    {"cmd": "line", "str": "POKéMON here!"},
+    {"cmd": "para", "str": "Haha!"},
+    {"cmd": "para", "str": "They are inside"},
+    {"cmd": "line", "str": "the POKé BALLs."},
+    {"cmd": "para", "str": "When I was young,"},
+    {"cmd": "line", "str": "I was a serious"},
+    {"cmd": "cont", "str": "POKéMON trainer!"},
+    {"cmd": "para", "str": "In my old age, I"},
+    {"cmd": "line", "str": "have only 3 left,"},
+    {"cmd": "cont", "str": "but you can have"},
+    {"cmd": "cont", "str": "one! Choose!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_OaksLabRivalWhatAboutMeText": {
+   "kind": "text",
+   "src": "text/OaksLab.asm:224",
+   "commands": [
+    {"cmd": "text", "str": "{RIVAL}: Hey!"},
+    {"cmd": "line", "str": "Gramps! What"},
+    {"cmd": "cont", "str": "about me?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_OaksLabOakBePatientText": {
+   "kind": "text",
+   "src": "text/OaksLab.asm:230",
+   "commands": [
+    {"cmd": "text", "str": "OAK: Be patient!"},
+    {"cmd": "line", "str": "{RIVAL}, you can"},
+    {"cmd": "cont", "str": "have one too!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_OaksLabOakDontGoAwayYetText": {
+   "kind": "text",
+   "src": "text/OaksLab.asm:236",
+   "commands": [
+    {"cmd": "text", "str": "OAK: Hey! Don't go"},
+    {"cmd": "line", "str": "away yet!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_OaksLabRivalIllTakeThisOneText": {
+   "kind": "text",
+   "src": "text/OaksLab.asm:241",
+   "commands": [
+    {"cmd": "text", "str": "{RIVAL}: I'll take"},
+    {"cmd": "line", "str": "this one, then!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_OaksLabRivalReceivedMonText": {
+   "kind": "text",
+   "src": "text/OaksLab.asm:246",
+   "commands": [
+    {"cmd": "text", "str": "{RIVAL} received"},
+    {"cmd": "line", "str": "a "},
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_OaksLabRivalIllTakeYouOnText": {
+   "kind": "text",
+   "src": "text/OaksLab.asm:253",
+   "commands": [
+    {"cmd": "text", "str": "{RIVAL}: Wait"},
+    {"cmd": "line", "str": "{PLAYER}!"},
+    {"cmd": "cont", "str": "Let's check out"},
+    {"cmd": "cont", "str": "our POKéMON!"},
+    {"cmd": "para", "str": "Come on, I'll take"},
+    {"cmd": "line", "str": "you on!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_OaksLabRivalIPickedTheWrongPokemonText": {
+   "kind": "text",
+   "src": "text/OaksLab.asm:263",
+   "commands": [
+    {"cmd": "text", "str": "WHAT?"},
+    {"cmd": "line", "str": "Unbelievable!"},
+    {"cmd": "cont", "str": "I picked the"},
+    {"cmd": "cont", "str": "wrong POKéMON!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_OaksLabRivalAmIGreatOrWhatText": {
+   "kind": "text",
+   "src": "text/OaksLab.asm:270",
+   "commands": [
+    {"cmd": "text", "str": "{RIVAL}: Yeah! Am"},
+    {"cmd": "line", "str": "I great or what?"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_OaksLabRivalSmellYouLaterText": {
+   "kind": "text",
+   "src": "text/OaksLab.asm:275",
+   "commands": [
+    {"cmd": "text", "str": "{RIVAL}: Okay!"},
+    {"cmd": "line", "str": "I'll make my"},
+    {"cmd": "cont", "str": "POKéMON fight to"},
+    {"cmd": "cont", "str": "toughen it up!"},
+    {"cmd": "para", "str": "{PLAYER}! Gramps!"},
+    {"cmd": "line", "str": "Smell you later!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_OaksLabRivalGrampsText": {
+   "kind": "text",
+   "src": "text/OaksLab.asm:285",
+   "commands": [
+    {"cmd": "text", "str": "{RIVAL}: Gramps!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_OaksLabRivalWhatDidYouCallMeForText": {
+   "kind": "text",
+   "src": "text/OaksLab.asm:289",
+   "commands": [
+    {"cmd": "text", "str": "{RIVAL}: What did"},
+    {"cmd": "line", "str": "you call me for?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_OaksLabOakIHaveARequestText": {
+   "kind": "text",
+   "src": "text/OaksLab.asm:294",
+   "commands": [
+    {"cmd": "text", "str": "OAK: Oh right! I"},
+    {"cmd": "line", "str": "have a request"},
+    {"cmd": "cont", "str": "of you two."},
+    {"cmd": "done"}
+   ]
+  },
+  "_OaksLabOakMyInventionPokedexText": {
+   "kind": "text",
+   "src": "text/OaksLab.asm:300",
+   "commands": [
+    {"cmd": "text", "str": "On the desk there"},
+    {"cmd": "line", "str": "is my invention,"},
+    {"cmd": "cont", "str": "POKéDEX!"},
+    {"cmd": "para", "str": "It automatically"},
+    {"cmd": "line", "str": "records data on"},
+    {"cmd": "cont", "str": "POKéMON you've"},
+    {"cmd": "cont", "str": "seen or caught!"},
+    {"cmd": "para", "str": "It's a hi-tech"},
+    {"cmd": "line", "str": "encyclopedia!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_OaksLabOakGotPokedexText": {
+   "kind": "text",
+   "src": "text/OaksLab.asm:314",
+   "commands": [
+    {"cmd": "text", "str": "OAK: {PLAYER} and"},
+    {"cmd": "line", "str": "{RIVAL}! Take"},
+    {"cmd": "cont", "str": "these with you!"},
+    {"cmd": "para", "str": "{PLAYER} got"},
+    {"cmd": "line", "str": "POKéDEX from OAK!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_OaksLabOakThatWasMyDreamText": {
+   "kind": "text",
+   "src": "text/OaksLab.asm:323",
+   "commands": [
+    {"cmd": "text", "str": "To make a complete"},
+    {"cmd": "line", "str": "guide on all the"},
+    {"cmd": "cont", "str": "POKéMON in the"},
+    {"cmd": "cont", "str": "world..."},
+    {"cmd": "para", "str": "That was my dream!"},
+    {"cmd": "para", "str": "But, I'm too old!"},
+    {"cmd": "line", "str": "I can't do it!"},
+    {"cmd": "para", "str": "So, I want you two"},
+    {"cmd": "line", "str": "to fulfill my"},
+    {"cmd": "cont", "str": "dream for me!"},
+    {"cmd": "para", "str": "Get moving, you"},
+    {"cmd": "line", "str": "two!"},
+    {"cmd": "para", "str": "This is a great"},
+    {"cmd": "line", "str": "undertaking in"},
+    {"cmd": "cont", "str": "POKéMON history!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_OaksLabRivalLeaveItAllToMeText": {
+   "kind": "text",
+   "src": "text/OaksLab.asm:346",
+   "commands": [
+    {"cmd": "text", "str": "{RIVAL}: Alright"},
+    {"cmd": "line", "str": "Gramps! Leave it"},
+    {"cmd": "cont", "str": "all to me!"},
+    {"cmd": "para", "str": "{PLAYER}, I hate to"},
+    {"cmd": "line", "str": "say it, but I"},
+    {"cmd": "cont", "str": "don't need you!"},
+    {"cmd": "para", "str": "I know! I'll"},
+    {"cmd": "line", "str": "borrow a TOWN MAP"},
+    {"cmd": "cont", "str": "from my sis!"},
+    {"cmd": "para", "str": "I'll tell her not"},
+    {"cmd": "line", "str": "to lend you one,"},
+    {"cmd": "cont", "str": "{PLAYER}! Hahaha!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_OaksLabScientistText": {
+   "kind": "text",
+   "src": "text/OaksLab.asm:364",
+   "commands": [
+    {"cmd": "text", "str": "I study POKéMON as"},
+    {"cmd": "line", "str": "PROF.OAK's AIDE."},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

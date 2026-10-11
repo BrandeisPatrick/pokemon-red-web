@@ -1,0 +1,43 @@
+{
+  "name": "SFX_SAVE",
+  "title": "Save",
+  "kind": "sfx",
+  "bank": 3,
+  "id": 182,
+  "label": "SFX_Save_3",
+  "channels": [
+    {
+      "channel": 5,
+      "label": "SFX_Save_3_Ch5",
+      "entry": 0,
+      "bytes": 23,
+      "labels": {"SFX_Save_3_Ch5": 0},
+      "commands": [
+        {"op": "duty_cycle", "duty": 2},
+        {"op": "square_note", "length": 4, "volume": 15, "fade": 4, "frequency": 1792},
+        {"op": "square_note", "length": 3, "volume": 14, "fade": 4, "frequency": 1664},
+        {"op": "square_note", "length": 3, "volume": 14, "fade": 4, "frequency": 1728},
+        {"op": "square_note", "length": 3, "volume": 14, "fade": 4, "frequency": 1792},
+        {"op": "square_note", "length": 2, "volume": 14, "fade": 4, "frequency": 1952},
+        {"op": "sound_ret"}
+      ]
+    },
+    {
+      "channel": 6,
+      "label": "SFX_Save_3_Ch6",
+      "entry": 0,
+      "bytes": 27,
+      "labels": {"SFX_Save_3_Ch6": 0},
+      "commands": [
+        {"op": "duty_cycle", "duty": 2},
+        {"op": "square_note", "length": 4, "volume": 0, "fade": 8, "frequency": 0},
+        {"op": "square_note", "length": 3, "volume": 13, "fade": 4, "frequency": 1793},
+        {"op": "square_note", "length": 3, "volume": 12, "fade": 4, "frequency": 1665},
+        {"op": "square_note", "length": 3, "volume": 12, "fade": 4, "frequency": 1729},
+        {"op": "square_note", "length": 3, "volume": 12, "fade": 4, "frequency": 1793},
+        {"op": "square_note", "length": 2, "volume": 12, "fade": 4, "frequency": 1953},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

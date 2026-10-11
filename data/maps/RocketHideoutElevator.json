@@ -1,0 +1,41 @@
+{
+ "id": 203,
+ "const": "ROCKET_HIDEOUT_ELEVATOR",
+ "name": "RocketHideoutElevator",
+ "displayName": "ROCKET HQ",
+ "width": 3,
+ "height": 4,
+ "tileset": "LOBBY",
+ "tilesetId": 18,
+ "tilesetFile": "data/tilesets/Lobby.json",
+ "isOutside": false,
+ "borderBlock": 15,
+ "blocks": [68, 77, 71, 74, 76, 75, 74, 32, 75, 72, 70, 73],
+ "connections": {},
+ "warps": [
+  {"x": 2, "y": 1, "destMap": "ROCKET_HIDEOUT_B1F", "destMapId": 199, "destMapName": "RocketHideoutB1F", "destWarp": 3, "destWarpIndex": 2},
+  {"x": 3, "y": 1, "destMap": "ROCKET_HIDEOUT_B1F", "destMapId": 199, "destMapName": "RocketHideoutB1F", "destWarp": 5, "destWarpIndex": 4}
+ ],
+ "bgEvents": [
+  {"x": 1, "y": 1, "textId": "TEXT_ROCKETHIDEOUTELEVATOR", "textIndex": 1}
+ ],
+ "objectEvents": [],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_DUNGEON1",
+ "wild": null,
+ "townMap": {"x": 7, "y": 5, "group": "ROCKET_HQ"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/RocketHideoutElevator.json",
+ "textPointers": "RocketHideoutElevator_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/RocketHideoutElevator.asm",
+  "objects": "data/maps/objects/RocketHideoutElevator.asm",
+  "blocks": "maps/RocketHideoutElevator.blk",
+  "script": "scripts/RocketHideoutElevator.asm"
+ },
+ "lastMapCandidates": ["CELADON_CITY"],
+ "palette": {"pal": "PAL_CELADON", "rule": "lastMap", "viaLastMap": "CELADON_CITY"}
+}

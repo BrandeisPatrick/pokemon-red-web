@@ -1,0 +1,42 @@
+{
+ "id": 230,
+ "const": "CERULEAN_BADGE_HOUSE",
+ "name": "CeruleanBadgeHouse",
+ "displayName": "CERULEAN CITY",
+ "width": 4,
+ "height": 4,
+ "tileset": "SHIP",
+ "tilesetId": 13,
+ "tilesetFile": "data/tilesets/Ship.json",
+ "isOutside": false,
+ "borderBlock": 12,
+ "blocks": [61, 9, 61, 61, 11, 11, 7, 6, 11, 11, 11, 44, 11, 27, 11, 53],
+ "connections": {},
+ "warps": [
+  {"x": 2, "y": 0, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 10, "destWarpIndex": 9},
+  {"x": 2, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 9, "destWarpIndex": 8},
+  {"x": 3, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 9, "destWarpIndex": 8}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "CERULEANBADGEHOUSE_MIDDLE_AGED_MAN", "x": 5, "y": 3, "sprite": "SPRITE_MIDDLE_AGED_MAN", "spriteId": 10, "movement": "STAY", "rangeOrDirection": "RIGHT", "rangeOrDirectionValue": 211, "behavior": "face_right", "textId": "TEXT_CERULEANBADGEHOUSE_MIDDLE_AGED_MAN", "textIndex": 1}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_CITIES1",
+ "wild": null,
+ "townMap": {"x": 10, "y": 2, "group": "CERULEAN_CITY_3"},
+ "extraWarpCheck": "warpTileInFront",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/CeruleanBadgeHouse.json",
+ "textPointers": "CeruleanBadgeHouse_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/CeruleanBadgeHouse.asm",
+  "objects": "data/maps/objects/CeruleanBadgeHouse.asm",
+  "blocks": "maps/CeruleanBadgeHouse.blk",
+  "script": "scripts/CeruleanBadgeHouse.asm"
+ },
+ "lastMapCandidates": ["CERULEAN_CITY"],
+ "palette": {"pal": "PAL_CERULEAN", "rule": "lastMap", "viaLastMap": "CERULEAN_CITY"}
+}

@@ -1,0 +1,66 @@
+{
+ "map": "CeruleanMart",
+ "const": "CERULEAN_MART",
+ "textPointerTables": [
+  {
+   "label": "CeruleanMart_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_CERULEANMART_CLERK", "label": "CeruleanMartClerkText", "kind": "script", "handler": "script_mart"},
+    {"id": 2, "const": "TEXT_CERULEANMART_COOLTRAINER_M", "label": "CeruleanMartCooltrainerMText", "kind": "text", "handler": "text"},
+    {"id": 3, "const": "TEXT_CERULEANMART_COOLTRAINER_F", "label": "CeruleanMartCooltrainerFText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "CeruleanMartClerkText": {
+   "kind": "script",
+   "src": "data/items/marts.asm:11",
+   "commands": [
+    {"cmd": "script", "script": "script_mart", "items": ["POKE_BALL", "POTION", "REPEL", "ANTIDOTE", "BURN_HEAL", "AWAKENING", "PARLYZ_HEAL"]}
+   ]
+  },
+  "CeruleanMartCooltrainerMText": {
+   "kind": "text",
+   "src": "scripts/CeruleanMart.asm:11",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanMartCooltrainerMText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeruleanMartCooltrainerFText": {
+   "kind": "text",
+   "src": "scripts/CeruleanMart.asm:15",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanMartCooltrainerFText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_CeruleanMartCooltrainerMText": {
+   "kind": "text",
+   "src": "text/CeruleanMart.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Use REPEL to keep"},
+    {"cmd": "line", "str": "bugs and weak"},
+    {"cmd": "cont", "str": "POKéMON away."},
+    {"cmd": "para", "str": "Put your strongest"},
+    {"cmd": "line", "str": "POKéMON at the"},
+    {"cmd": "cont", "str": "top of the list"},
+    {"cmd": "cont", "str": "for best results!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeruleanMartCooltrainerFText": {
+   "kind": "text",
+   "src": "text/CeruleanMart.asm:13",
+   "commands": [
+    {"cmd": "text", "str": "Have you seen any"},
+    {"cmd": "line", "str": "RARE CANDY?"},
+    {"cmd": "para", "str": "It's supposed to"},
+    {"cmd": "line", "str": "make POKéMON go"},
+    {"cmd": "cont", "str": "up one level!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

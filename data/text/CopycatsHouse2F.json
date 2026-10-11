@@ -1,0 +1,262 @@
+{
+ "map": "CopycatsHouse2F",
+ "const": "COPYCATS_HOUSE_2F",
+ "textPointerTables": [
+  {
+   "label": "CopycatsHouse2F_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_COPYCATSHOUSE2F_COPYCAT", "label": "CopycatsHouse2FCopycatText", "kind": "asm", "handler": "asm"},
+    {"id": 2, "const": "TEXT_COPYCATSHOUSE2F_DODUO", "label": "CopycatsHouse2FDoduoText", "kind": "text", "handler": "text"},
+    {"id": 3, "const": "TEXT_COPYCATSHOUSE2F_MONSTER", "label": "CopycatsHouse2FRareDollText", "kind": "text", "handler": "text"},
+    {"id": 4, "const": "TEXT_COPYCATSHOUSE2F_BIRD", "label": "CopycatsHouse2FRareDollText", "kind": "text", "handler": "text"},
+    {"id": 5, "const": "TEXT_COPYCATSHOUSE2F_FAIRY", "label": "CopycatsHouse2FRareDollText", "kind": "text", "handler": "text"},
+    {"id": 6, "const": "TEXT_COPYCATSHOUSE2F_SNES", "label": "CopycatsHouse2FSNESText", "kind": "text", "handler": "text"},
+    {"id": 7, "const": "TEXT_COPYCATSHOUSE2F_PC", "label": "CopycatsHouse2FPCText", "kind": "asm", "handler": "asm"}
+   ]
+  }
+ ],
+ "texts": {
+  "CopycatsHouse2FCopycatText": {
+   "kind": "asm",
+   "src": "scripts/CopycatsHouse2F.asm:15",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["CopycatsHouse2FCopycatText.DoYouLikePokemonText", "CopycatsHouse2FCopycatText.TM31PreReceiveText", "CopycatsHouse2FCopycatText.ReceivedTM31Text", "CopycatsHouse2FCopycatText.TM31NoRoomText", "CopycatsHouse2FCopycatText.TM31Explanation2Text"]
+  },
+  "CopycatsHouse2FCopycatText.DoYouLikePokemonText": {
+   "kind": "text",
+   "src": "scripts/CopycatsHouse2F.asm:48",
+   "commands": [
+    {"cmd": "text_far", "label": "_CopycatsHouse2FCopycatDoYouLikePokemonText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CopycatsHouse2FCopycatText.TM31PreReceiveText": {
+   "kind": "text",
+   "src": "scripts/CopycatsHouse2F.asm:52",
+   "commands": [
+    {"cmd": "text_far", "label": "_CopycatsHouse2FCopycatTM31PreReceiveText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CopycatsHouse2FCopycatText.ReceivedTM31Text": {
+   "kind": "text",
+   "src": "scripts/CopycatsHouse2F.asm:56",
+   "commands": [
+    {"cmd": "text_far", "label": "_CopycatsHouse2FCopycatReceivedTM31Text"},
+    {"cmd": "sound", "sound": "sound_get_item_1"},
+    {"cmd": "text_far", "label": "_CopycatsHouse2FCopycatTM31Explanation1Text"},
+    {"cmd": "text_waitbutton"},
+    {"cmd": "text_end"}
+   ],
+   "continuesInto": ["CopycatsHouse2FCopycatText.TM31Explanation1Text"]
+  },
+  "CopycatsHouse2FCopycatText.TM31Explanation1Text": {
+   "kind": "text",
+   "src": "scripts/CopycatsHouse2F.asm:59",
+   "commands": [
+    {"cmd": "text_far", "label": "_CopycatsHouse2FCopycatTM31Explanation1Text"},
+    {"cmd": "text_waitbutton"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CopycatsHouse2FCopycatText.TM31Explanation2Text": {
+   "kind": "text",
+   "src": "scripts/CopycatsHouse2F.asm:64",
+   "commands": [
+    {"cmd": "text_far", "label": "_CopycatsHouse2FCopycatTM31Explanation2Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CopycatsHouse2FCopycatText.TM31NoRoomText": {
+   "kind": "text",
+   "src": "scripts/CopycatsHouse2F.asm:68",
+   "commands": [
+    {"cmd": "text_far", "label": "_CopycatsHouse2FCopycatTM31NoRoomText"},
+    {"cmd": "text_waitbutton"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CopycatsHouse2FDoduoText": {
+   "kind": "text",
+   "src": "scripts/CopycatsHouse2F.asm:73",
+   "commands": [
+    {"cmd": "text_far", "label": "_CopycatsHouse2FDoduoText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CopycatsHouse2FRareDollText": {
+   "kind": "text",
+   "src": "scripts/CopycatsHouse2F.asm:77",
+   "commands": [
+    {"cmd": "text_far", "label": "_CopycatsHouse2FRareDollText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CopycatsHouse2FSNESText": {
+   "kind": "text",
+   "src": "scripts/CopycatsHouse2F.asm:81",
+   "commands": [
+    {"cmd": "text_far", "label": "_CopycatsHouse2FSNESText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CopycatsHouse2FPCText": {
+   "kind": "asm",
+   "src": "scripts/CopycatsHouse2F.asm:85",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["CopycatsHouse2FPCText.CantSeeText", "CopycatsHouse2FPCText.MySecretsText"]
+  },
+  "CopycatsHouse2FPCText.MySecretsText": {
+   "kind": "text",
+   "src": "scripts/CopycatsHouse2F.asm:96",
+   "commands": [
+    {"cmd": "text_far", "label": "_CopycatsHouse2FPCMySecretsText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CopycatsHouse2FPCText.CantSeeText": {
+   "kind": "text",
+   "src": "scripts/CopycatsHouse2F.asm:100",
+   "commands": [
+    {"cmd": "text_far", "label": "_CopycatsHouse2FPCCantSeeText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_CopycatsHouse2FCopycatDoYouLikePokemonText": {
+   "kind": "text",
+   "src": "text/CopycatsHouse2F.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER}: Hi! Do"},
+    {"cmd": "line", "str": "you like POKéMON?"},
+    {"cmd": "para", "str": "{PLAYER}: Uh no, I"},
+    {"cmd": "line", "str": "just asked you."},
+    {"cmd": "para", "str": "{PLAYER}: Huh?"},
+    {"cmd": "line", "str": "You're strange!"},
+    {"cmd": "para", "str": "COPYCAT: Hmm?"},
+    {"cmd": "line", "str": "Quit mimicking?"},
+    {"cmd": "para", "str": "But, that's my"},
+    {"cmd": "line", "str": "favorite hobby!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_CopycatsHouse2FCopycatTM31PreReceiveText": {
+   "kind": "text",
+   "src": "text/CopycatsHouse2F.asm:19",
+   "commands": [
+    {"cmd": "text", "str": "Oh wow!"},
+    {"cmd": "line", "str": "A POKé DOLL!"},
+    {"cmd": "para", "str": "For me?"},
+    {"cmd": "line", "str": "Thank you!"},
+    {"cmd": "para", "str": "You can have"},
+    {"cmd": "line", "str": "this, then!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_CopycatsHouse2FCopycatReceivedTM31Text": {
+   "kind": "text",
+   "src": "text/CopycatsHouse2F.asm:30",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} received"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_CopycatsHouse2FCopycatTM31Explanation1Text": {
+   "kind": "text",
+   "src": "text/CopycatsHouse2F.asm:37",
+   "commands": [
+    {"cmd": "text", "str": ""},
+    {"cmd": "para", "str": "TM31 contains my"},
+    {"cmd": "line", "str": "favorite, MIMIC!"},
+    {"cmd": "para", "str": "Use it on a good"},
+    {"cmd": "line", "str": "POKéMON!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_CopycatsHouse2FCopycatTM31Explanation2Text": {
+   "kind": "text",
+   "src": "text/CopycatsHouse2F.asm:47",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER}: Hi!"},
+    {"cmd": "line", "str": "Thanks for TM31!"},
+    {"cmd": "para", "str": "{PLAYER}: Pardon?"},
+    {"cmd": "para", "str": "{PLAYER}: Is it"},
+    {"cmd": "line", "str": "that fun to mimic"},
+    {"cmd": "cont", "str": "my every move?"},
+    {"cmd": "para", "str": "COPYCAT: You bet!"},
+    {"cmd": "line", "str": "It's a scream!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CopycatsHouse2FCopycatTM31NoRoomText": {
+   "kind": "text",
+   "src": "text/CopycatsHouse2F.asm:61",
+   "commands": [
+    {"cmd": "text", "str": "Don't you want"},
+    {"cmd": "line", "str": "this?"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_CopycatsHouse2FDoduoText": {
+   "kind": "text",
+   "src": "text/CopycatsHouse2F.asm:66",
+   "commands": [
+    {"cmd": "text", "str": "DODUO: Giiih!"},
+    {"cmd": "para", "str": "MIRROR MIRROR ON"},
+    {"cmd": "line", "str": "THE WALL, WHO IS"},
+    {"cmd": "cont", "str": "THE FAIREST ONE"},
+    {"cmd": "cont", "str": "OF ALL?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CopycatsHouse2FRareDollText": {
+   "kind": "text",
+   "src": "text/CopycatsHouse2F.asm:75",
+   "commands": [
+    {"cmd": "text", "str": "This is a rare"},
+    {"cmd": "line", "str": "POKéMON! Huh?"},
+    {"cmd": "cont", "str": "It's only a doll!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CopycatsHouse2FSNESText": {
+   "kind": "text",
+   "src": "text/CopycatsHouse2F.asm:81",
+   "commands": [
+    {"cmd": "text", "str": "A game with MARIO"},
+    {"cmd": "line", "str": "wearing a bucket"},
+    {"cmd": "cont", "str": "on his head!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CopycatsHouse2FPCMySecretsText": {
+   "kind": "text",
+   "src": "text/CopycatsHouse2F.asm:87",
+   "commands": [
+    {"cmd": "text", "str": "..."},
+    {"cmd": "para", "str": "My Secrets!"},
+    {"cmd": "para", "str": "Skill: Mimicry!"},
+    {"cmd": "line", "str": "Hobby: Collecting"},
+    {"cmd": "cont", "str": "dolls!"},
+    {"cmd": "cont", "str": "Favorite POKéMON:"},
+    {"cmd": "cont", "str": "CLEFAIRY!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CopycatsHouse2FPCCantSeeText": {
+   "kind": "text",
+   "src": "text/CopycatsHouse2F.asm:99",
+   "commands": [
+    {"cmd": "text", "str": "Huh? Can't see!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

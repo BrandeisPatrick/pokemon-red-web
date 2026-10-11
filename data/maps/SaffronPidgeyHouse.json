@@ -1,0 +1,44 @@
+{
+ "id": 179,
+ "const": "SAFFRON_PIDGEY_HOUSE",
+ "name": "SaffronPidgeyHouse",
+ "displayName": "SAFFRON CITY",
+ "width": 4,
+ "height": 4,
+ "tileset": "HOUSE",
+ "tilesetId": 8,
+ "tilesetFile": "data/tilesets/House.json",
+ "isOutside": false,
+ "borderBlock": 10,
+ "blocks": [4, 14, 5, 9, 15, 1, 2, 15, 15, 12, 13, 15, 6, 11, 15, 7],
+ "connections": {},
+ "warps": [
+  {"x": 2, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 4, "destWarpIndex": 3},
+  {"x": 3, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 4, "destWarpIndex": 3}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "SAFFRONPIDGEYHOUSE_BRUNETTE_GIRL", "x": 2, "y": 3, "sprite": "SPRITE_BRUNETTE_GIRL", "spriteId": 29, "movement": "STAY", "rangeOrDirection": "RIGHT", "rangeOrDirectionValue": 211, "behavior": "face_right", "textId": "TEXT_SAFFRONPIDGEYHOUSE_BRUNETTE_GIRL", "textIndex": 1},
+  {"index": 2, "const": "SAFFRONPIDGEYHOUSE_PIDGEY", "x": 0, "y": 4, "sprite": "SPRITE_BIRD", "spriteId": 9, "movement": "WALK", "rangeOrDirection": "UP_DOWN", "rangeOrDirectionValue": 1, "behavior": "walk_up_down", "textId": "TEXT_SAFFRONPIDGEYHOUSE_PIDGEY", "textIndex": 2},
+  {"index": 3, "const": "SAFFRONPIDGEYHOUSE_YOUNGSTER", "x": 4, "y": 1, "sprite": "SPRITE_YOUNGSTER", "spriteId": 4, "movement": "STAY", "rangeOrDirection": "DOWN", "rangeOrDirectionValue": 208, "behavior": "face_down", "textId": "TEXT_SAFFRONPIDGEYHOUSE_YOUNGSTER", "textIndex": 3},
+  {"index": 4, "const": "SAFFRONPIDGEYHOUSE_PAPER", "x": 3, "y": 3, "sprite": "SPRITE_PAPER", "spriteId": 64, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_SAFFRONPIDGEYHOUSE_PAPER", "textIndex": 4}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_CITIES1",
+ "wild": null,
+ "townMap": {"x": 10, "y": 5, "group": "SAFFRON_CITY"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/SaffronPidgeyHouse.json",
+ "textPointers": "SaffronPidgeyHouse_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/SaffronPidgeyHouse.asm",
+  "objects": "data/maps/objects/SaffronPidgeyHouse.asm",
+  "blocks": "maps/ViridianNicknameHouse.blk",
+  "script": "scripts/SaffronPidgeyHouse.asm"
+ },
+ "lastMapCandidates": ["SAFFRON_CITY"],
+ "palette": {"pal": "PAL_SAFFRON", "rule": "lastMap", "viaLastMap": "SAFFRON_CITY"}
+}

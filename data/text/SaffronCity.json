@@ -1,0 +1,495 @@
+{
+ "map": "SaffronCity",
+ "const": "SAFFRON_CITY",
+ "textPointerTables": [
+  {
+   "label": "SaffronCity_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_SAFFRONCITY_ROCKET1", "label": "SaffronCityRocket1Text", "kind": "text", "handler": "text"},
+    {"id": 2, "const": "TEXT_SAFFRONCITY_ROCKET2", "label": "SaffronCityRocket2Text", "kind": "text", "handler": "text"},
+    {"id": 3, "const": "TEXT_SAFFRONCITY_ROCKET3", "label": "SaffronCityRocket3Text", "kind": "text", "handler": "text"},
+    {"id": 4, "const": "TEXT_SAFFRONCITY_ROCKET4", "label": "SaffronCityRocket4Text", "kind": "text", "handler": "text"},
+    {"id": 5, "const": "TEXT_SAFFRONCITY_ROCKET5", "label": "SaffronCityRocket5Text", "kind": "text", "handler": "text"},
+    {"id": 6, "const": "TEXT_SAFFRONCITY_ROCKET6", "label": "SaffronCityRocket6Text", "kind": "text", "handler": "text"},
+    {"id": 7, "const": "TEXT_SAFFRONCITY_ROCKET7", "label": "SaffronCityRocket7Text", "kind": "text", "handler": "text"},
+    {"id": 8, "const": "TEXT_SAFFRONCITY_SCIENTIST", "label": "SaffronCityScientistText", "kind": "text", "handler": "text"},
+    {"id": 9, "const": "TEXT_SAFFRONCITY_SILPH_WORKER_M", "label": "SaffronCitySilphWorkerMText", "kind": "text", "handler": "text"},
+    {"id": 10, "const": "TEXT_SAFFRONCITY_SILPH_WORKER_F", "label": "SaffronCitySilphWorkerFText", "kind": "text", "handler": "text"},
+    {"id": 11, "const": "TEXT_SAFFRONCITY_GENTLEMAN", "label": "SaffronCityGentlemanText", "kind": "text", "handler": "text"},
+    {"id": 12, "const": "TEXT_SAFFRONCITY_PIDGEOT", "label": "SaffronCityPidgeotText", "kind": "text", "handler": "text"},
+    {"id": 13, "const": "TEXT_SAFFRONCITY_ROCKER", "label": "SaffronCityRockerText", "kind": "text", "handler": "text"},
+    {"id": 14, "const": "TEXT_SAFFRONCITY_ROCKET8", "label": "SaffronCityRocket8Text", "kind": "text", "handler": "text"},
+    {"id": 15, "const": "TEXT_SAFFRONCITY_ROCKET9", "label": "SaffronCityRocket9Text", "kind": "text", "handler": "text"},
+    {"id": 16, "const": "TEXT_SAFFRONCITY_SIGN", "label": "SaffronCitySignText", "kind": "text", "handler": "text"},
+    {"id": 17, "const": "TEXT_SAFFRONCITY_FIGHTING_DOJO_SIGN", "label": "SaffronCityFightingDojoSignText", "kind": "text", "handler": "text"},
+    {"id": 18, "const": "TEXT_SAFFRONCITY_GYM_SIGN", "label": "SaffronCityGymSignText", "kind": "text", "handler": "text"},
+    {"id": 19, "const": "TEXT_SAFFRONCITY_MART_SIGN", "label": "MartSignText", "kind": "text", "handler": "text"},
+    {"id": 20, "const": "TEXT_SAFFRONCITY_TRAINER_TIPS1", "label": "SaffronCityTrainerTips1Text", "kind": "text", "handler": "text"},
+    {"id": 21, "const": "TEXT_SAFFRONCITY_TRAINER_TIPS2", "label": "SaffronCityTrainerTips2Text", "kind": "text", "handler": "text"},
+    {"id": 22, "const": "TEXT_SAFFRONCITY_SILPH_CO_SIGN", "label": "SaffronCitySilphCoSignText", "kind": "text", "handler": "text"},
+    {"id": 23, "const": "TEXT_SAFFRONCITY_POKECENTER_SIGN", "label": "PokeCenterSignText", "kind": "text", "handler": "text"},
+    {"id": 24, "const": "TEXT_SAFFRONCITY_MR_PSYCHICS_HOUSE_SIGN", "label": "SaffronCityMrPsychicsHouseSignText", "kind": "text", "handler": "text"},
+    {"id": 25, "const": "TEXT_SAFFRONCITY_SILPH_CO_LATEST_PRODUCT_SIGN", "label": "SaffronCitySilphCoLatestProductSignText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "_MartSignText": {
+   "kind": "text",
+   "src": "data/text/text_1.asm:50",
+   "commands": [
+    {"cmd": "text", "str": "All your item"},
+    {"cmd": "line", "str": "needs fulfilled!"},
+    {"cmd": "cont", "str": "POKéMON MART"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokeCenterSignText": {
+   "kind": "text",
+   "src": "data/text/text_1.asm:56",
+   "commands": [
+    {"cmd": "text", "str": "Heal Your POKéMON!"},
+    {"cmd": "line", "str": "POKéMON CENTER"},
+    {"cmd": "done"}
+   ]
+  },
+  "MartSignText": {
+   "kind": "text",
+   "src": "home/overworld_text.asm:21",
+   "commands": [
+    {"cmd": "text_far", "label": "_MartSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokeCenterSignText": {
+   "kind": "text",
+   "src": "home/overworld_text.asm:25",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokeCenterSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronCityRocket1Text": {
+   "kind": "text",
+   "src": "scripts/SaffronCity.asm:33",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronCityRocket1Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronCityRocket2Text": {
+   "kind": "text",
+   "src": "scripts/SaffronCity.asm:37",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronCityRocket2Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronCityRocket3Text": {
+   "kind": "text",
+   "src": "scripts/SaffronCity.asm:41",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronCityRocket3Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronCityRocket4Text": {
+   "kind": "text",
+   "src": "scripts/SaffronCity.asm:45",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronCityRocket4Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronCityRocket5Text": {
+   "kind": "text",
+   "src": "scripts/SaffronCity.asm:49",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronCityRocket5Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronCityRocket6Text": {
+   "kind": "text",
+   "src": "scripts/SaffronCity.asm:53",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronCityRocket6Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronCityRocket7Text": {
+   "kind": "text",
+   "src": "scripts/SaffronCity.asm:57",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronCityRocket7Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronCityScientistText": {
+   "kind": "text",
+   "src": "scripts/SaffronCity.asm:61",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronCityScientistText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronCitySilphWorkerMText": {
+   "kind": "text",
+   "src": "scripts/SaffronCity.asm:65",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronCitySilphWorkerMText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronCitySilphWorkerFText": {
+   "kind": "text",
+   "src": "scripts/SaffronCity.asm:69",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronCitySilphWorkerFText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronCityGentlemanText": {
+   "kind": "text",
+   "src": "scripts/SaffronCity.asm:73",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronCityGentlemanText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronCityPidgeotText": {
+   "kind": "text",
+   "src": "scripts/SaffronCity.asm:77",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronCityPidgeotText"},
+    {"cmd": "sound", "sound": "sound_cry_pidgeot"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronCityRockerText": {
+   "kind": "text",
+   "src": "scripts/SaffronCity.asm:82",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronCityRockerText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronCityRocket8Text": {
+   "kind": "text",
+   "src": "scripts/SaffronCity.asm:86",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronCityRocket8Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronCityRocket9Text": {
+   "kind": "text",
+   "src": "scripts/SaffronCity.asm:90",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronCityRocket9Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronCitySignText": {
+   "kind": "text",
+   "src": "scripts/SaffronCity.asm:94",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronCitySignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronCityFightingDojoSignText": {
+   "kind": "text",
+   "src": "scripts/SaffronCity.asm:98",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronCityFightingDojoSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronCityGymSignText": {
+   "kind": "text",
+   "src": "scripts/SaffronCity.asm:102",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronCityGymSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronCityTrainerTips1Text": {
+   "kind": "text",
+   "src": "scripts/SaffronCity.asm:106",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronCityTrainerTips1Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronCityTrainerTips2Text": {
+   "kind": "text",
+   "src": "scripts/SaffronCity.asm:110",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronCityTrainerTips2Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronCitySilphCoSignText": {
+   "kind": "text",
+   "src": "scripts/SaffronCity.asm:114",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronCitySilphCoSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronCityMrPsychicsHouseSignText": {
+   "kind": "text",
+   "src": "scripts/SaffronCity.asm:118",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronCityMrPsychicsHouseSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronCitySilphCoLatestProductSignText": {
+   "kind": "text",
+   "src": "scripts/SaffronCity.asm:122",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronCitySilphCoLatestProductSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_SaffronCityRocket1Text": {
+   "kind": "text",
+   "src": "text/SaffronCity.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "What do you want?"},
+    {"cmd": "line", "str": "Get lost!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SaffronCityRocket2Text": {
+   "kind": "text",
+   "src": "text/SaffronCity.asm:7",
+   "commands": [
+    {"cmd": "text", "str": "BOSS said he'll"},
+    {"cmd": "line", "str": "take this town!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SaffronCityRocket3Text": {
+   "kind": "text",
+   "src": "text/SaffronCity.asm:12",
+   "commands": [
+    {"cmd": "text", "str": "Get out of the"},
+    {"cmd": "line", "str": "way!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SaffronCityRocket4Text": {
+   "kind": "text",
+   "src": "text/SaffronCity.asm:17",
+   "commands": [
+    {"cmd": "text", "str": "SAFFRON belongs"},
+    {"cmd": "line", "str": "to TEAM ROCKET!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SaffronCityRocket5Text": {
+   "kind": "text",
+   "src": "text/SaffronCity.asm:22",
+   "commands": [
+    {"cmd": "text", "str": "Being evil makes"},
+    {"cmd": "line", "str": "me feel so alive!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SaffronCityRocket6Text": {
+   "kind": "text",
+   "src": "text/SaffronCity.asm:27",
+   "commands": [
+    {"cmd": "text", "str": "Ow! Watch where"},
+    {"cmd": "line", "str": "you're walking!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SaffronCityRocket7Text": {
+   "kind": "text",
+   "src": "text/SaffronCity.asm:32",
+   "commands": [
+    {"cmd": "text", "str": "With SILPH under"},
+    {"cmd": "line", "str": "control, we can"},
+    {"cmd": "cont", "str": "exploit POKéMON"},
+    {"cmd": "cont", "str": "around the world!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SaffronCityScientistText": {
+   "kind": "text",
+   "src": "text/SaffronCity.asm:39",
+   "commands": [
+    {"cmd": "text", "str": "You beat TEAM"},
+    {"cmd": "line", "str": "ROCKET all alone?"},
+    {"cmd": "cont", "str": "That's amazing!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SaffronCitySilphWorkerMText": {
+   "kind": "text",
+   "src": "text/SaffronCity.asm:45",
+   "commands": [
+    {"cmd": "text", "str": "Yeah! TEAM ROCKET"},
+    {"cmd": "line", "str": "is gone!"},
+    {"cmd": "cont", "str": "It's safe to go"},
+    {"cmd": "cont", "str": "out again!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SaffronCitySilphWorkerFText": {
+   "kind": "text",
+   "src": "text/SaffronCity.asm:52",
+   "commands": [
+    {"cmd": "text", "str": "People should be"},
+    {"cmd": "line", "str": "flocking back to"},
+    {"cmd": "cont", "str": "SAFFRON now."},
+    {"cmd": "done"}
+   ]
+  },
+  "_SaffronCityGentlemanText": {
+   "kind": "text",
+   "src": "text/SaffronCity.asm:58",
+   "commands": [
+    {"cmd": "text", "str": "I flew here on my"},
+    {"cmd": "line", "str": "PIDGEOT when I"},
+    {"cmd": "cont", "str": "read about SILPH."},
+    {"cmd": "para", "str": "It's already over?"},
+    {"cmd": "line", "str": "I missed the"},
+    {"cmd": "cont", "str": "media action."},
+    {"cmd": "done"}
+   ]
+  },
+  "_SaffronCityPidgeotText": {
+   "kind": "text",
+   "src": "text/SaffronCity.asm:68",
+   "commands": [
+    {"cmd": "text", "str": "PIDGEOT: Bi bibii!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_SaffronCityRockerText": {
+   "kind": "text",
+   "src": "text/SaffronCity.asm:72",
+   "commands": [
+    {"cmd": "text", "str": "I saw ROCKET"},
+    {"cmd": "line", "str": "BOSS escaping"},
+    {"cmd": "cont", "str": "SILPH's building."},
+    {"cmd": "done"}
+   ]
+  },
+  "_SaffronCityRocket8Text": {
+   "kind": "text",
+   "src": "text/SaffronCity.asm:78",
+   "commands": [
+    {"cmd": "text", "str": "I'm a security"},
+    {"cmd": "line", "str": "guard."},
+    {"cmd": "para", "str": "Suspicious kids I"},
+    {"cmd": "line", "str": "don't allow in!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SaffronCityRocket9Text": {
+   "kind": "text",
+   "src": "text/SaffronCity.asm:86",
+   "commands": [
+    {"cmd": "text", "str": "..."},
+    {"cmd": "line", "str": "Snore..."},
+    {"cmd": "para", "str": "Hah! He's taking"},
+    {"cmd": "line", "str": "a snooze!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SaffronCitySignText": {
+   "kind": "text",
+   "src": "text/SaffronCity.asm:94",
+   "commands": [
+    {"cmd": "text", "str": "SAFFRON CITY"},
+    {"cmd": "line", "str": "Shining, Golden"},
+    {"cmd": "cont", "str": "Land of Commerce"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SaffronCityFightingDojoSignText": {
+   "kind": "text",
+   "src": "text/SaffronCity.asm:100",
+   "commands": [
+    {"cmd": "text", "str": "FIGHTING DOJO"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SaffronCityGymSignText": {
+   "kind": "text",
+   "src": "text/SaffronCity.asm:104",
+   "commands": [
+    {"cmd": "text", "str": "SAFFRON CITY"},
+    {"cmd": "line", "str": "POKéMON GYM"},
+    {"cmd": "cont", "str": "LEADER: SABRINA"},
+    {"cmd": "para", "str": "The Master of"},
+    {"cmd": "line", "str": "Psychic POKéMON!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SaffronCityTrainerTips1Text": {
+   "kind": "text",
+   "src": "text/SaffronCity.asm:113",
+   "commands": [
+    {"cmd": "text", "str": "TRAINER TIPS"},
+    {"cmd": "para", "str": "FULL HEAL cures"},
+    {"cmd": "line", "str": "all ailments like"},
+    {"cmd": "cont", "str": "sleep and burns."},
+    {"cmd": "para", "str": "It costs a bit"},
+    {"cmd": "line", "str": "more, but it's"},
+    {"cmd": "cont", "str": "more convenient."},
+    {"cmd": "done"}
+   ]
+  },
+  "_SaffronCityTrainerTips2Text": {
+   "kind": "text",
+   "src": "text/SaffronCity.asm:125",
+   "commands": [
+    {"cmd": "text", "str": "TRAINER TIPS"},
+    {"cmd": "para", "str": "New GREAT BALL"},
+    {"cmd": "line", "str": "offers improved"},
+    {"cmd": "cont", "str": "capture rates."},
+    {"cmd": "para", "str": "Try it on those"},
+    {"cmd": "line", "str": "hard-to-catch"},
+    {"cmd": "cont", "str": "POKéMON."},
+    {"cmd": "done"}
+   ]
+  },
+  "_SaffronCitySilphCoSignText": {
+   "kind": "text",
+   "src": "text/SaffronCity.asm:137",
+   "commands": [
+    {"cmd": "text", "str": "SILPH CO."},
+    {"cmd": "line", "str": "OFFICE BUILDING"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SaffronCityMrPsychicsHouseSignText": {
+   "kind": "text",
+   "src": "text/SaffronCity.asm:142",
+   "commands": [
+    {"cmd": "text", "str": "MR.PSYCHIC's"},
+    {"cmd": "line", "str": "HOUSE"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SaffronCitySilphCoLatestProductSignText": {
+   "kind": "text",
+   "src": "text/SaffronCity.asm:147",
+   "commands": [
+    {"cmd": "text", "str": "SILPH's latest"},
+    {"cmd": "line", "str": "product!"},
+    {"cmd": "para", "str": "Release to be"},
+    {"cmd": "line", "str": "determined..."},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

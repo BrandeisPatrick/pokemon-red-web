@@ -1,0 +1,625 @@
+{
+ "map": "FuchsiaGym",
+ "const": "FUCHSIA_GYM",
+ "textPointerTables": [
+  {
+   "label": "FuchsiaGym_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_FUCHSIAGYM_KOGA", "label": "FuchsiaGymKogaText", "kind": "asm", "handler": "asm"},
+    {"id": 2, "const": "TEXT_FUCHSIAGYM_ROCKER1", "label": "FuchsiaGymRocker1Text", "kind": "asm", "handler": "trainer", "trainerHeader": "FuchsiaGymTrainerHeader0"},
+    {"id": 3, "const": "TEXT_FUCHSIAGYM_ROCKER2", "label": "FuchsiaGymRocker2Text", "kind": "asm", "handler": "trainer", "trainerHeader": "FuchsiaGymTrainerHeader1"},
+    {"id": 4, "const": "TEXT_FUCHSIAGYM_ROCKER3", "label": "FuchsiaGymRocker3Text", "kind": "asm", "handler": "trainer", "trainerHeader": "FuchsiaGymTrainerHeader2"},
+    {"id": 5, "const": "TEXT_FUCHSIAGYM_ROCKER4", "label": "FuchsiaGymRocker4Text", "kind": "asm", "handler": "trainer", "trainerHeader": "FuchsiaGymTrainerHeader3"},
+    {"id": 6, "const": "TEXT_FUCHSIAGYM_ROCKER5", "label": "FuchsiaGymRocker5Text", "kind": "asm", "handler": "trainer", "trainerHeader": "FuchsiaGymTrainerHeader4"},
+    {"id": 7, "const": "TEXT_FUCHSIAGYM_ROCKER6", "label": "FuchsiaGymRocker6Text", "kind": "asm", "handler": "trainer", "trainerHeader": "FuchsiaGymTrainerHeader5"},
+    {"id": 8, "const": "TEXT_FUCHSIAGYM_GYM_GUIDE", "label": "FuchsiaGymGymGuideText", "kind": "asm", "handler": "asm"},
+    {"id": 9, "const": "TEXT_FUCHSIAGYM_KOGA_SOUL_BADGE_INFO", "label": "FuchsiaGymKogaSoulBadgeInfoText", "kind": "text", "handler": "text"},
+    {"id": 10, "const": "TEXT_FUCHSIAGYM_KOGA_RECEIVED_TM06", "label": "FuchsiaGymKogaReceivedTM06Text", "kind": "text", "handler": "text"},
+    {"id": 11, "const": "TEXT_FUCHSIAGYM_KOGA_TM06_NO_ROOM", "label": "FuchsiaGymKogaTM06NoRoomText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "FuchsiaGym_Script.CityName": {
+   "kind": "string",
+   "src": "scripts/FuchsiaGym.asm:22",
+   "commands": [
+    {"cmd": "str", "str": "FUCHSIA CITY"}
+   ]
+  },
+  "FuchsiaGym_Script.LeaderName": {
+   "kind": "string",
+   "src": "scripts/FuchsiaGym.asm:25",
+   "commands": [
+    {"cmd": "str", "str": "KOGA"}
+   ]
+  },
+  "FuchsiaGymKogaText": {
+   "kind": "asm",
+   "src": "scripts/FuchsiaGym.asm:107",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["FuchsiaGymKogaText.PostBattleAdviceText", "FuchsiaGymKogaText.BeforeBattleText", "FuchsiaGymKogaText.ReceivedSoulBadgeText"]
+  },
+  "FuchsiaGymKogaText.BeforeBattleText": {
+   "kind": "text",
+   "src": "scripts/FuchsiaGym.asm:142",
+   "commands": [
+    {"cmd": "text_far", "label": "_FuchsiaGymKogaBeforeBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FuchsiaGymKogaText.ReceivedSoulBadgeText": {
+   "kind": "text",
+   "src": "scripts/FuchsiaGym.asm:146",
+   "commands": [
+    {"cmd": "text_far", "label": "_FuchsiaGymKogaReceivedSoulBadgeText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FuchsiaGymKogaText.PostBattleAdviceText": {
+   "kind": "text",
+   "src": "scripts/FuchsiaGym.asm:150",
+   "commands": [
+    {"cmd": "text_far", "label": "_FuchsiaGymKogaPostBattleAdviceText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FuchsiaGymKogaSoulBadgeInfoText": {
+   "kind": "text",
+   "src": "scripts/FuchsiaGym.asm:154",
+   "commands": [
+    {"cmd": "text_far", "label": "_FuchsiaGymKogaSoulBadgeInfoText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FuchsiaGymKogaReceivedTM06Text": {
+   "kind": "text",
+   "src": "scripts/FuchsiaGym.asm:158",
+   "commands": [
+    {"cmd": "text_far", "label": "_FuchsiaGymKogaReceivedTM06Text"},
+    {"cmd": "sound", "sound": "sound_get_key_item"},
+    {"cmd": "text_far", "label": "_FuchsiaGymKogaTM06ExplanationText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FuchsiaGymKogaTM06NoRoomText": {
+   "kind": "text",
+   "src": "scripts/FuchsiaGym.asm:164",
+   "commands": [
+    {"cmd": "text_far", "label": "_FuchsiaGymKogaTM06NoRoomText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FuchsiaGymRocker1Text": {
+   "kind": "asm",
+   "src": "scripts/FuchsiaGym.asm:168",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "FuchsiaGymTrainerHeader0"
+  },
+  "FuchsiaGymRocker1BattleText": {
+   "kind": "text",
+   "src": "scripts/FuchsiaGym.asm:174",
+   "commands": [
+    {"cmd": "text_far", "label": "_FuchsiaGymRocker1BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FuchsiaGymRocker1EndBattleText": {
+   "kind": "text",
+   "src": "scripts/FuchsiaGym.asm:178",
+   "commands": [
+    {"cmd": "text_far", "label": "_FuchsiaGymRocker1EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FuchsiaGymRocker1AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/FuchsiaGym.asm:182",
+   "commands": [
+    {"cmd": "text_far", "label": "_FuchsiaGymRocker1AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FuchsiaGymRocker2Text": {
+   "kind": "asm",
+   "src": "scripts/FuchsiaGym.asm:186",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "FuchsiaGymTrainerHeader1"
+  },
+  "FuchsiaGymRocker2BattleText": {
+   "kind": "text",
+   "src": "scripts/FuchsiaGym.asm:192",
+   "commands": [
+    {"cmd": "text_far", "label": "_FuchsiaGymRocker2BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FuchsiaGymRocker2EndBattleText": {
+   "kind": "text",
+   "src": "scripts/FuchsiaGym.asm:196",
+   "commands": [
+    {"cmd": "text_far", "label": "_FuchsiaGymRocker2EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FuchsiaGymRocker2AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/FuchsiaGym.asm:200",
+   "commands": [
+    {"cmd": "text_far", "label": "_FuchsiaGymRocker2AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FuchsiaGymRocker3Text": {
+   "kind": "asm",
+   "src": "scripts/FuchsiaGym.asm:204",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "FuchsiaGymTrainerHeader2"
+  },
+  "FuchsiaGymRocker3BattleText": {
+   "kind": "text",
+   "src": "scripts/FuchsiaGym.asm:210",
+   "commands": [
+    {"cmd": "text_far", "label": "_FuchsiaGymRocker3BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FuchsiaGymRocker3EndBattleText": {
+   "kind": "text",
+   "src": "scripts/FuchsiaGym.asm:214",
+   "commands": [
+    {"cmd": "text_far", "label": "_FuchsiaGymRocker3EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FuchsiaGymRocker3AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/FuchsiaGym.asm:218",
+   "commands": [
+    {"cmd": "text_far", "label": "_FuchsiaGymRocker3AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FuchsiaGymRocker4Text": {
+   "kind": "asm",
+   "src": "scripts/FuchsiaGym.asm:222",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "FuchsiaGymTrainerHeader3"
+  },
+  "FuchsiaGymRocker4BattleText": {
+   "kind": "text",
+   "src": "scripts/FuchsiaGym.asm:228",
+   "commands": [
+    {"cmd": "text_far", "label": "_FuchsiaGymRocker4BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FuchsiaGymRocker4EndBattleText": {
+   "kind": "text",
+   "src": "scripts/FuchsiaGym.asm:232",
+   "commands": [
+    {"cmd": "text_far", "label": "_FuchsiaGymRocker4EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FuchsiaGymRocker4AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/FuchsiaGym.asm:236",
+   "commands": [
+    {"cmd": "text_far", "label": "_FuchsiaGymRocker4AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FuchsiaGymRocker5Text": {
+   "kind": "asm",
+   "src": "scripts/FuchsiaGym.asm:240",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "FuchsiaGymTrainerHeader4"
+  },
+  "FuchsiaGymRocker5BattleText": {
+   "kind": "text",
+   "src": "scripts/FuchsiaGym.asm:246",
+   "commands": [
+    {"cmd": "text_far", "label": "_FuchsiaGymRocker5BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FuchsiaGymRocker5EndBattleText": {
+   "kind": "text",
+   "src": "scripts/FuchsiaGym.asm:250",
+   "commands": [
+    {"cmd": "text_far", "label": "_FuchsiaGymRocker5EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FuchsiaGymRocker5AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/FuchsiaGym.asm:254",
+   "commands": [
+    {"cmd": "text_far", "label": "_FuchsiaGymRocker5AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FuchsiaGymRocker6Text": {
+   "kind": "asm",
+   "src": "scripts/FuchsiaGym.asm:258",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "FuchsiaGymTrainerHeader5"
+  },
+  "FuchsiaGymRocker6BattleText": {
+   "kind": "text",
+   "src": "scripts/FuchsiaGym.asm:264",
+   "commands": [
+    {"cmd": "text_far", "label": "_FuchsiaGymRocker6BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FuchsiaGymRocker6EndBattleText": {
+   "kind": "text",
+   "src": "scripts/FuchsiaGym.asm:268",
+   "commands": [
+    {"cmd": "text_far", "label": "_FuchsiaGymRocker6EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FuchsiaGymRocker6AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/FuchsiaGym.asm:272",
+   "commands": [
+    {"cmd": "text_far", "label": "_FuchsiaGymRocker6AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FuchsiaGymGymGuideText": {
+   "kind": "asm",
+   "src": "scripts/FuchsiaGym.asm:276",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["FuchsiaGymGymGuideText.BeatKogaText", "FuchsiaGymGymGuideText.ChampInMakingText"]
+  },
+  "FuchsiaGymGymGuideText.ChampInMakingText": {
+   "kind": "text",
+   "src": "scripts/FuchsiaGym.asm:286",
+   "commands": [
+    {"cmd": "text_far", "label": "_FuchsiaGymGymGuideChampInMakingText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FuchsiaGymGymGuideText.BeatKogaText": {
+   "kind": "text",
+   "src": "scripts/FuchsiaGym.asm:290",
+   "commands": [
+    {"cmd": "text_far", "label": "_FuchsiaGymGymGuideBeatKogaText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_FuchsiaGymKogaBeforeBattleText": {
+   "kind": "text",
+   "src": "text/FuchsiaGym.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "KOGA: Fwahahaha!"},
+    {"cmd": "para", "str": "A mere child like"},
+    {"cmd": "line", "str": "you dares to"},
+    {"cmd": "cont", "str": "challenge me?"},
+    {"cmd": "para", "str": "Very well, I"},
+    {"cmd": "line", "str": "shall show you"},
+    {"cmd": "cont", "str": "true terror as a"},
+    {"cmd": "cont", "str": "ninja master!"},
+    {"cmd": "para", "str": "You shall feel"},
+    {"cmd": "line", "str": "the despair of"},
+    {"cmd": "cont", "str": "poison and sleep"},
+    {"cmd": "cont", "str": "techniques!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_FuchsiaGymKogaReceivedSoulBadgeText": {
+   "kind": "text",
+   "src": "text/FuchsiaGym.asm:20",
+   "commands": [
+    {"cmd": "text", "str": "Humph!"},
+    {"cmd": "line", "str": "You have proven"},
+    {"cmd": "cont", "str": "your worth!"},
+    {"cmd": "para", "str": "Here! Take the"},
+    {"cmd": "line", "str": "SOULBADGE!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_FuchsiaGymKogaPostBattleAdviceText": {
+   "kind": "text",
+   "src": "text/FuchsiaGym_2.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "When afflicted by"},
+    {"cmd": "line", "str": "TOXIC, POKéMON"},
+    {"cmd": "cont", "str": "suffer more and"},
+    {"cmd": "cont", "str": "more as battle"},
+    {"cmd": "cont", "str": "progresses!"},
+    {"cmd": "para", "str": "It will surely"},
+    {"cmd": "line", "str": "terrorize foes!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_FuchsiaGymKogaSoulBadgeInfoText": {
+   "kind": "text",
+   "src": "text/FuchsiaGym_2.asm:13",
+   "commands": [
+    {"cmd": "text", "str": "Now that you have"},
+    {"cmd": "line", "str": "the SOULBADGE,"},
+    {"cmd": "cont", "str": "the DEFENSE of"},
+    {"cmd": "cont", "str": "your POKéMON"},
+    {"cmd": "cont", "str": "increases!"},
+    {"cmd": "para", "str": "It also lets you"},
+    {"cmd": "line", "str": "SURF outside of"},
+    {"cmd": "cont", "str": "battle!"},
+    {"cmd": "para", "str": "Ah! Take this"},
+    {"cmd": "line", "str": "too!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_FuchsiaGymKogaReceivedTM06Text": {
+   "kind": "text",
+   "src": "text/FuchsiaGym_2.asm:28",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} received"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_FuchsiaGymKogaTM06ExplanationText": {
+   "kind": "text",
+   "src": "text/FuchsiaGym_2.asm:35",
+   "commands": [
+    {"cmd": "text", "str": ""},
+    {"cmd": "para", "str": "TM06 contains"},
+    {"cmd": "line", "str": "TOXIC!"},
+    {"cmd": "para", "str": "It is a secret"},
+    {"cmd": "line", "str": "technique over"},
+    {"cmd": "cont", "str": "400 years old!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_FuchsiaGymKogaTM06NoRoomText": {
+   "kind": "text",
+   "src": "text/FuchsiaGym_2.asm:46",
+   "commands": [
+    {"cmd": "text", "str": "Make space for"},
+    {"cmd": "line", "str": "this, child!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_FuchsiaGymRocker1BattleText": {
+   "kind": "text",
+   "src": "text/FuchsiaGym_2.asm:51",
+   "commands": [
+    {"cmd": "text", "str": "Strength isn't"},
+    {"cmd": "line", "str": "the key for"},
+    {"cmd": "cont", "str": "POKéMON!"},
+    {"cmd": "para", "str": "It's strategy!"},
+    {"cmd": "para", "str": "I'll show you how"},
+    {"cmd": "line", "str": "strategy can beat"},
+    {"cmd": "cont", "str": "brute strength!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_FuchsiaGymRocker1EndBattleText": {
+   "kind": "text",
+   "src": "text/FuchsiaGym_2.asm:63",
+   "commands": [
+    {"cmd": "text", "str": "What?"},
+    {"cmd": "line", "str": "Extraordinary!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_FuchsiaGymRocker1AfterBattleText": {
+   "kind": "text",
+   "src": "text/FuchsiaGym_2.asm:68",
+   "commands": [
+    {"cmd": "text", "str": "So, you mix brawn"},
+    {"cmd": "line", "str": "with brains?"},
+    {"cmd": "cont", "str": "Good strategy!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_FuchsiaGymRocker2BattleText": {
+   "kind": "text",
+   "src": "text/FuchsiaGym_2.asm:74",
+   "commands": [
+    {"cmd": "text", "str": "I wanted to become"},
+    {"cmd": "line", "str": "a ninja, so I"},
+    {"cmd": "cont", "str": "joined this GYM!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_FuchsiaGymRocker2EndBattleText": {
+   "kind": "text",
+   "src": "text/FuchsiaGym_2.asm:80",
+   "commands": [
+    {"cmd": "text", "str": "I'm done"},
+    {"cmd": "line", "str": "for!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_FuchsiaGymRocker2AfterBattleText": {
+   "kind": "text",
+   "src": "text/FuchsiaGym_2.asm:85",
+   "commands": [
+    {"cmd": "text", "str": "I will keep on"},
+    {"cmd": "line", "str": "training under"},
+    {"cmd": "cont", "str": "KOGA, my ninja"},
+    {"cmd": "cont", "str": "master!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_FuchsiaGymRocker3BattleText": {
+   "kind": "text",
+   "src": "text/FuchsiaGym_2.asm:92",
+   "commands": [
+    {"cmd": "text", "str": "Let's see you"},
+    {"cmd": "line", "str": "beat my special"},
+    {"cmd": "cont", "str": "techniques!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_FuchsiaGymRocker3EndBattleText": {
+   "kind": "text",
+   "src": "text/FuchsiaGym_2.asm:98",
+   "commands": [
+    {"cmd": "text", "str": "You"},
+    {"cmd": "line", "str": "had me fooled!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_FuchsiaGymRocker3AfterBattleText": {
+   "kind": "text",
+   "src": "text/FuchsiaGym_2.asm:103",
+   "commands": [
+    {"cmd": "text", "str": "I like poison and"},
+    {"cmd": "line", "str": "sleep techniques,"},
+    {"cmd": "cont", "str": "as they linger"},
+    {"cmd": "cont", "str": "after battle!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_FuchsiaGymRocker4BattleText": {
+   "kind": "text",
+   "src": "text/FuchsiaGym_2.asm:110",
+   "commands": [
+    {"cmd": "text", "str": "Stop right there!"},
+    {"cmd": "para", "str": "Our invisible"},
+    {"cmd": "line", "str": "walls have you"},
+    {"cmd": "cont", "str": "frustrated?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_FuchsiaGymRocker4EndBattleText": {
+   "kind": "text",
+   "src": "text/FuchsiaGym_2.asm:118",
+   "commands": [
+    {"cmd": "text", "str": "Whoa!"},
+    {"cmd": "line", "str": "He's got it!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_FuchsiaGymRocker4AfterBattleText": {
+   "kind": "text",
+   "src": "text/FuchsiaGym_2.asm:123",
+   "commands": [
+    {"cmd": "text", "str": "You impressed me!"},
+    {"cmd": "line", "str": "Here's a hint!"},
+    {"cmd": "para", "str": "Look very closely"},
+    {"cmd": "line", "str": "for gaps in the"},
+    {"cmd": "cont", "str": "invisible walls!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_FuchsiaGymRocker5BattleText": {
+   "kind": "text",
+   "src": "text/FuchsiaGym_2.asm:132",
+   "commands": [
+    {"cmd": "text", "str": "I also study the"},
+    {"cmd": "line", "str": "way of the ninja"},
+    {"cmd": "cont", "str": "with master KOGA!"},
+    {"cmd": "para", "str": "Ninja have a long"},
+    {"cmd": "line", "str": "history of using"},
+    {"cmd": "cont", "str": "animals!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_FuchsiaGymRocker5EndBattleText": {
+   "kind": "text",
+   "src": "text/FuchsiaGym_2.asm:142",
+   "commands": [
+    {"cmd": "text", "str": "Awoo!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_FuchsiaGymRocker5AfterBattleText": {
+   "kind": "text",
+   "src": "text/FuchsiaGym_2.asm:146",
+   "commands": [
+    {"cmd": "text", "str": "I still have much"},
+    {"cmd": "line", "str": "to learn!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_FuchsiaGymRocker6BattleText": {
+   "kind": "text",
+   "src": "text/FuchsiaGym_2.asm:151",
+   "commands": [
+    {"cmd": "text", "str": "Master KOGA comes"},
+    {"cmd": "line", "str": "from a long line"},
+    {"cmd": "cont", "str": "of ninjas!"},
+    {"cmd": "para", "str": "What did you"},
+    {"cmd": "line", "str": "descend from?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_FuchsiaGymRocker6EndBattleText": {
+   "kind": "text",
+   "src": "text/FuchsiaGym_2.asm:160",
+   "commands": [
+    {"cmd": "text", "str": "Dropped"},
+    {"cmd": "line", "str": "my balls!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_FuchsiaGymRocker6AfterBattleText": {
+   "kind": "text",
+   "src": "text/FuchsiaGym_2.asm:165",
+   "commands": [
+    {"cmd": "text", "str": "Where there is"},
+    {"cmd": "line", "str": "light, there is"},
+    {"cmd": "cont", "str": "shadow!"},
+    {"cmd": "para", "str": "Light and shadow!"},
+    {"cmd": "line", "str": "Which do you"},
+    {"cmd": "cont", "str": "choose?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_FuchsiaGymGymGuideChampInMakingText": {
+   "kind": "text",
+   "src": "text/FuchsiaGym_2.asm:175",
+   "commands": [
+    {"cmd": "text", "str": "Yo! Champ in"},
+    {"cmd": "line", "str": "making!"},
+    {"cmd": "para", "str": "FUCHSIA GYM is"},
+    {"cmd": "line", "str": "riddled with"},
+    {"cmd": "cont", "str": "invisible walls!"},
+    {"cmd": "para", "str": "KOGA might appear"},
+    {"cmd": "line", "str": "close, but he's"},
+    {"cmd": "cont", "str": "blocked off!"},
+    {"cmd": "para", "str": "You have to find"},
+    {"cmd": "line", "str": "gaps in the walls"},
+    {"cmd": "cont", "str": "to reach him!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_FuchsiaGymGymGuideBeatKogaText": {
+   "kind": "text",
+   "src": "text/FuchsiaGym_2.asm:192",
+   "commands": [
+    {"cmd": "text", "str": "It's amazing how"},
+    {"cmd": "line", "str": "ninja can terrify"},
+    {"cmd": "cont", "str": "even now!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

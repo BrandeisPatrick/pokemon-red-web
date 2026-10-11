@@ -1,0 +1,42 @@
+{
+  "name": "SFX_DENIED",
+  "title": "Denied",
+  "kind": "sfx",
+  "bank": 3,
+  "id": 165,
+  "label": "SFX_Denied_3",
+  "channels": [
+    {
+      "channel": 5,
+      "label": "SFX_Denied_3_Ch5",
+      "entry": 0,
+      "bytes": 23,
+      "labels": {"SFX_Denied_3_Ch5": 0},
+      "commands": [
+        {"op": "duty_cycle", "duty": 3},
+        {"op": "pitch_sweep", "length": 5, "change": -2},
+        {"op": "square_note", "length": 4, "volume": 15, "fade": 0, "frequency": 1280},
+        {"op": "pitch_sweep", "length": 0, "change": 8},
+        {"op": "square_note", "length": 4, "volume": 0, "fade": 0, "frequency": 0},
+        {"op": "square_note", "length": 15, "volume": 15, "fade": 0, "frequency": 1280},
+        {"op": "square_note", "length": 1, "volume": 0, "fade": 0, "frequency": 0},
+        {"op": "sound_ret"}
+      ]
+    },
+    {
+      "channel": 6,
+      "label": "SFX_Denied_3_Ch6",
+      "entry": 0,
+      "bytes": 19,
+      "labels": {"SFX_Denied_3_Ch6": 0},
+      "commands": [
+        {"op": "duty_cycle", "duty": 3},
+        {"op": "square_note", "length": 4, "volume": 15, "fade": 0, "frequency": 1025},
+        {"op": "square_note", "length": 4, "volume": 0, "fade": 0, "frequency": 0},
+        {"op": "square_note", "length": 15, "volume": 15, "fade": 0, "frequency": 1025},
+        {"op": "square_note", "length": 1, "volume": 0, "fade": 0, "frequency": 0},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "name": "SFX_BATTLE_2C",
+  "title": "Battle 2C",
+  "kind": "sfx",
+  "bank": 2,
+  "id": 204,
+  "label": "SFX_Battle_2C",
+  "channels": [
+    {
+      "channel": 5,
+      "label": "SFX_Battle_2C_Ch5",
+      "entry": 0,
+      "bytes": 19,
+      "labels": {"SFX_Battle_2C_Ch5": 0},
+      "commands": [
+        {"op": "duty_cycle_pattern", "pattern": [0, 3, 2, 1]},
+        {"op": "square_note", "length": 15, "volume": 15, "fade": 4, "frequency": 1280},
+        {"op": "square_note", "length": 15, "volume": 12, "fade": 4, "frequency": 1024},
+        {"op": "square_note", "length": 15, "volume": 14, "fade": 2, "frequency": 1472},
+        {"op": "sound_loop", "count": 3, "target": 0},
+        {"op": "sound_ret"}
+      ]
+    },
+    {
+      "channel": 6,
+      "label": "SFX_Battle_2C_Ch6",
+      "entry": 0,
+      "bytes": 19,
+      "labels": {"SFX_Battle_2C_Ch6": 0},
+      "commands": [
+        {"op": "duty_cycle_pattern", "pattern": [2, 0, 3, 1]},
+        {"op": "square_note", "length": 7, "volume": 14, "fade": 4, "frequency": 1072},
+        {"op": "square_note", "length": 15, "volume": 11, "fade": 4, "frequency": 816},
+        {"op": "square_note", "length": 15, "volume": 10, "fade": 2, "frequency": 1080},
+        {"op": "sound_loop", "count": 4, "target": 0},
+        {"op": "sound_ret"}
+      ]
+    },
+    {
+      "channel": 8,
+      "label": "SFX_Battle_2C_Ch8",
+      "entry": 0,
+      "bytes": 17,
+      "labels": {"SFX_Battle_2C_Ch8": 0},
+      "commands": [
+        {"op": "noise_note", "length": 9, "volume": 15, "fade": 4, "value": 68},
+        {"op": "noise_note", "length": 9, "volume": 15, "fade": 2, "value": 67},
+        {"op": "noise_note", "length": 15, "volume": 15, "fade": 4, "value": 66},
+        {"op": "noise_note", "length": 15, "volume": 15, "fade": 4, "value": 65},
+        {"op": "sound_loop", "count": 3, "target": 0},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

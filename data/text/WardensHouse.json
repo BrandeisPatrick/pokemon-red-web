@@ -1,0 +1,275 @@
+{
+ "map": "WardensHouse",
+ "const": "WARDENS_HOUSE",
+ "textPointerTables": [
+  {
+   "label": "WardensHouse_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_WARDENSHOUSE_WARDEN", "label": "WardensHouseWardenText", "kind": "asm", "handler": "asm"},
+    {"id": 2, "const": "TEXT_WARDENSHOUSE_RARE_CANDY", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 3, "const": "TEXT_WARDENSHOUSE_BOULDER", "label": "BoulderText", "kind": "text", "handler": "text"},
+    {"id": 4, "const": "TEXT_WARDENSHOUSE_DISPLAY_LEFT", "label": "WardensHouseDisplayText", "kind": "asm", "handler": "asm"},
+    {"id": 5, "const": "TEXT_WARDENSHOUSE_DISPLAY_RIGHT", "label": "WardensHouseDisplayText", "kind": "asm", "handler": "asm"}
+   ]
+  }
+ ],
+ "texts": {
+  "_BoulderText": {
+   "kind": "text",
+   "src": "data/text/text_1.asm:45",
+   "commands": [
+    {"cmd": "text", "str": "This requires"},
+    {"cmd": "line", "str": "STRENGTH to move!"},
+    {"cmd": "done"}
+   ]
+  },
+  "BoulderText": {
+   "kind": "text",
+   "src": "home/overworld_text.asm:17",
+   "commands": [
+    {"cmd": "text_far", "label": "_BoulderText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PickUpItemText": {
+   "kind": "asm",
+   "src": "home/overworld_text.asm:29",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "WardensHouseWardenText": {
+   "kind": "asm",
+   "src": "scripts/WardensHouse.asm:13",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["WardensHouseWardenText.Gibberish1Text", "WardensHouseWardenText.Gibberish3Text", "WardensHouseWardenText.Gibberish2Text", "WardensHouseWardenText.GaveTheGoldTeethText", "WardensHouseWardenText.ThanksText", "WardensHouseWardenText.ReceivedHM04Text", "WardensHouseWardenText.HM04ExplanationText", "WardensHouseWardenText.HM04NoRoomText"]
+  },
+  "WardensHouseWardenText.Gibberish1Text": {
+   "kind": "text",
+   "src": "scripts/WardensHouse.asm:60",
+   "commands": [
+    {"cmd": "text_far", "label": "_WardensHouseWardenGibberish1Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "WardensHouseWardenText.Gibberish2Text": {
+   "kind": "text",
+   "src": "scripts/WardensHouse.asm:64",
+   "commands": [
+    {"cmd": "text_far", "label": "_WardensHouseWardenGibberish2Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "WardensHouseWardenText.Gibberish3Text": {
+   "kind": "text",
+   "src": "scripts/WardensHouse.asm:68",
+   "commands": [
+    {"cmd": "text_far", "label": "_WardensHouseWardenGibberish3Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "WardensHouseWardenText.GaveTheGoldTeethText": {
+   "kind": "text",
+   "src": "scripts/WardensHouse.asm:72",
+   "commands": [
+    {"cmd": "text_far", "label": "_WardensHouseWardenGaveTheGoldTeethText"},
+    {"cmd": "sound", "sound": "sound_get_item_1"},
+    {"cmd": "text_far", "label": "_WardensHouseWardenTeethPoppedInHisTeethText"},
+    {"cmd": "text_end"}
+   ],
+   "continuesInto": ["WardensHouseWardenText.PoppedInHisTeethText"]
+  },
+  "WardensHouseWardenText.PoppedInHisTeethText": {
+   "kind": "text",
+   "src": "scripts/WardensHouse.asm:76",
+   "commands": [
+    {"cmd": "text_far", "label": "_WardensHouseWardenTeethPoppedInHisTeethText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "WardensHouseWardenText.ThanksText": {
+   "kind": "text",
+   "src": "scripts/WardensHouse.asm:80",
+   "commands": [
+    {"cmd": "text_far", "label": "_WardensHouseWardenThanksText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "WardensHouseWardenText.ReceivedHM04Text": {
+   "kind": "text",
+   "src": "scripts/WardensHouse.asm:84",
+   "commands": [
+    {"cmd": "text_far", "label": "_WardensHouseWardenReceivedHM04Text"},
+    {"cmd": "sound", "sound": "sound_get_item_1"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "WardensHouseWardenText.HM04ExplanationText": {
+   "kind": "text",
+   "src": "scripts/WardensHouse.asm:89",
+   "commands": [
+    {"cmd": "text_far", "label": "_WardensHouseWardenHM04ExplanationText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "WardensHouseWardenText.HM04NoRoomText": {
+   "kind": "text",
+   "src": "scripts/WardensHouse.asm:93",
+   "commands": [
+    {"cmd": "text_far", "label": "_WardensHouseWardenHM04NoRoomText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "WardensHouseDisplayText": {
+   "kind": "asm",
+   "src": "scripts/WardensHouse.asm:97",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["WardensHouseDisplayText.MerchandiseText", "WardensHouseDisplayText.PhotosAndFossilsText"]
+  },
+  "WardensHouseDisplayText.PhotosAndFossilsText": {
+   "kind": "text",
+   "src": "scripts/WardensHouse.asm:108",
+   "commands": [
+    {"cmd": "text_far", "label": "_WardensHouseDisplayPhotosAndFossilsText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "WardensHouseDisplayText.MerchandiseText": {
+   "kind": "text",
+   "src": "scripts/WardensHouse.asm:112",
+   "commands": [
+    {"cmd": "text_far", "label": "_WardensHouseDisplayMerchandiseText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_WardensHouseWardenGibberish1Text": {
+   "kind": "text",
+   "src": "text/WardensHouse.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "WARDEN: Hif fuff"},
+    {"cmd": "line", "str": "hefifoo!"},
+    {"cmd": "para", "str": "Ha lof ha feef ee"},
+    {"cmd": "line", "str": "hafahi ho. Heff"},
+    {"cmd": "cont", "str": "hee fwee!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_WardensHouseWardenGibberish2Text": {
+   "kind": "text",
+   "src": "text/WardensHouse.asm:11",
+   "commands": [
+    {"cmd": "text", "str": "Ah howhee ho hoo!"},
+    {"cmd": "line", "str": "Eef ee hafahi ho!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_WardensHouseWardenGibberish3Text": {
+   "kind": "text",
+   "src": "text/WardensHouse.asm:16",
+   "commands": [
+    {"cmd": "text", "str": "Ha? He ohay heh"},
+    {"cmd": "line", "str": "ha hoo ee haheh!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_WardensHouseWardenGaveTheGoldTeethText": {
+   "kind": "text",
+   "src": "text/WardensHouse.asm:21",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} gave the"},
+    {"cmd": "line", "str": "GOLD TEETH to the"},
+    {"cmd": "cont", "str": "WARDEN!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_WardensHouseWardenTeethPoppedInHisTeethText": {
+   "kind": "text",
+   "src": "text/WardensHouse.asm:27",
+   "commands": [
+    {"cmd": "text", "str": ""},
+    {"cmd": "para", "str": "The WARDEN popped"},
+    {"cmd": "line", "str": "in his teeth!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_WardensHouseWardenThanksText": {
+   "kind": "text",
+   "src": "text/WardensHouse.asm:34",
+   "commands": [
+    {"cmd": "text", "str": "WARDEN: Thanks,"},
+    {"cmd": "line", "str": "kid! No one could"},
+    {"cmd": "cont", "str": "understand a word"},
+    {"cmd": "cont", "str": "that I said."},
+    {"cmd": "para", "str": "I couldn't work"},
+    {"cmd": "line", "str": "that way."},
+    {"cmd": "cont", "str": "Let me give you"},
+    {"cmd": "cont", "str": "something for"},
+    {"cmd": "cont", "str": "your trouble."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_WardensHouseWardenReceivedHM04Text": {
+   "kind": "text",
+   "src": "text/WardensHouse.asm:47",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} received"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_WardensHouseWardenHM04ExplanationText": {
+   "kind": "text",
+   "src": "text/WardensHouse.asm:54",
+   "commands": [
+    {"cmd": "text", "str": "WARDEN: HM04"},
+    {"cmd": "line", "str": "teaches STRENGTH!"},
+    {"cmd": "para", "str": "It lets POKéMON"},
+    {"cmd": "line", "str": "move boulders"},
+    {"cmd": "cont", "str": "when you're out-"},
+    {"cmd": "cont", "str": "side of battle."},
+    {"cmd": "para", "str": "Oh yes, did you"},
+    {"cmd": "line", "str": "find SECRET HOUSE"},
+    {"cmd": "cont", "str": "in SAFARI ZONE?"},
+    {"cmd": "para", "str": "If you do, you"},
+    {"cmd": "line", "str": "win an HM!"},
+    {"cmd": "para", "str": "I hear it's the"},
+    {"cmd": "line", "str": "rare SURF HM."},
+    {"cmd": "done"}
+   ]
+  },
+  "_WardensHouseWardenHM04NoRoomText": {
+   "kind": "text",
+   "src": "text/WardensHouse.asm:74",
+   "commands": [
+    {"cmd": "text", "str": "Your pack is"},
+    {"cmd": "line", "str": "stuffed full!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_WardensHouseDisplayPhotosAndFossilsText": {
+   "kind": "text",
+   "src": "text/WardensHouse.asm:79",
+   "commands": [
+    {"cmd": "text", "str": "POKéMON photos"},
+    {"cmd": "line", "str": "and fossils."},
+    {"cmd": "done"}
+   ]
+  },
+  "_WardensHouseDisplayMerchandiseText": {
+   "kind": "text",
+   "src": "text/WardensHouse.asm:84",
+   "commands": [
+    {"cmd": "text", "str": "Old POKéMON"},
+    {"cmd": "line", "str": "merchandise."},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

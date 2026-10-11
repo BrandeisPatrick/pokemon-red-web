@@ -1,0 +1,124 @@
+{
+ "map": "Route16FlyHouse",
+ "const": "ROUTE_16_FLY_HOUSE",
+ "textPointerTables": [
+  {
+   "label": "Route16FlyHouse_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_ROUTE16FLYHOUSE_BRUNETTE_GIRL", "label": "Route16FlyHouseBrunetteGirlText", "kind": "asm", "handler": "asm"},
+    {"id": 2, "const": "TEXT_ROUTE16FLYHOUSE_FEAROW", "label": "Route16FlyHouseFearowText", "kind": "asm", "handler": "asm"}
+   ]
+  }
+ ],
+ "texts": {
+  "Route16FlyHouseBrunetteGirlText": {
+   "kind": "asm",
+   "src": "scripts/Route16FlyHouse.asm:10",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["Route16FlyHouseBrunetteGirlText.HM02ExplanationText", "Route16FlyHouseBrunetteGirlText.Text", "Route16FlyHouseBrunetteGirlText.ReceivedHM02Text", "Route16FlyHouseBrunetteGirlText.HM02NoRoomText"]
+  },
+  "Route16FlyHouseBrunetteGirlText.Text": {
+   "kind": "text",
+   "src": "scripts/Route16FlyHouse.asm:29",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route16FlyHouseBrunetteGirlText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route16FlyHouseBrunetteGirlText.ReceivedHM02Text": {
+   "kind": "text",
+   "src": "scripts/Route16FlyHouse.asm:33",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route16FlyHouseBrunetteGirlReceivedHM02Text"},
+    {"cmd": "sound", "sound": "sound_get_key_item"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route16FlyHouseBrunetteGirlText.HM02ExplanationText": {
+   "kind": "text",
+   "src": "scripts/Route16FlyHouse.asm:38",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route16FlyHouseBrunetteGirlHM02ExplanationText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route16FlyHouseBrunetteGirlText.HM02NoRoomText": {
+   "kind": "text",
+   "src": "scripts/Route16FlyHouse.asm:42",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route16FlyHouseBrunetteGirlHM02NoRoomText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route16FlyHouseFearowText": {
+   "kind": "asm",
+   "src": "scripts/Route16FlyHouse.asm:46",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["Route16FlyHouseFearowText.Text"]
+  },
+  "Route16FlyHouseFearowText.Text": {
+   "kind": "text",
+   "src": "scripts/Route16FlyHouse.asm:55",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route16FlyHouseFearowText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_Route16FlyHouseBrunetteGirlText": {
+   "kind": "text",
+   "src": "text/Route16FlyHouse.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Oh, you found my"},
+    {"cmd": "line", "str": "secret retreat!"},
+    {"cmd": "para", "str": "Please don't tell"},
+    {"cmd": "line", "str": "anyone I'm here."},
+    {"cmd": "cont", "str": "I'll make it up"},
+    {"cmd": "cont", "str": "to you with this!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route16FlyHouseBrunetteGirlReceivedHM02Text": {
+   "kind": "text",
+   "src": "text/Route16FlyHouse.asm:12",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} received"},
+    {"cmd": "line", "str": "HM02!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_Route16FlyHouseBrunetteGirlHM02ExplanationText": {
+   "kind": "text",
+   "src": "text/Route16FlyHouse.asm:17",
+   "commands": [
+    {"cmd": "text", "str": "HM02 is FLY."},
+    {"cmd": "line", "str": "It will take you"},
+    {"cmd": "cont", "str": "back to any town."},
+    {"cmd": "para", "str": "Put it to good"},
+    {"cmd": "line", "str": "use!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route16FlyHouseBrunetteGirlHM02NoRoomText": {
+   "kind": "text",
+   "src": "text/Route16FlyHouse.asm:26",
+   "commands": [
+    {"cmd": "text", "str": "You don't have any"},
+    {"cmd": "line", "str": "room for this."},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route16FlyHouseFearowText": {
+   "kind": "text",
+   "src": "text/Route16FlyHouse.asm:31",
+   "commands": [
+    {"cmd": "text", "str": "FEAROW: Kyueen!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

@@ -1,0 +1,355 @@
+{
+ "map": "Museum1F",
+ "const": "MUSEUM_1F",
+ "textPointerTables": [
+  {
+   "label": "Museum1F_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_MUSEUM1F_SCIENTIST1", "label": "Museum1FScientist1Text", "kind": "asm", "handler": "asm"},
+    {"id": 2, "const": "TEXT_MUSEUM1F_GAMBLER", "label": "Museum1FGamblerText", "kind": "asm", "handler": "asm"},
+    {"id": 3, "const": "TEXT_MUSEUM1F_SCIENTIST2", "label": "Museum1FScientist2Text", "kind": "asm", "handler": "asm"},
+    {"id": 4, "const": "TEXT_MUSEUM1F_SCIENTIST3", "label": "Museum1FScientist3Text", "kind": "asm", "handler": "asm"},
+    {"id": 5, "const": "TEXT_MUSEUM1F_OLD_AMBER", "label": "Museum1FOldAmberText", "kind": "asm", "handler": "asm"}
+   ]
+  }
+ ],
+ "texts": {
+  "Museum1FScientist1Text": {
+   "kind": "asm",
+   "src": "scripts/Museum1F.asm:44",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["Museum1FScientist1Text.GoToOtherSideText", "Museum1FScientist1Text.TakePlentyOfTimeText", "Museum1FScientist1Text.WouldYouLikeToComeInText", "Museum1FScientist1Text.DontHaveEnoughMoneyText", "Museum1FScientist1Text.ThankYouText", "Museum1FScientist1Text.ComeAgainText", "Museum1FScientist1Text.DoYouKnowWhatAmberIsText", "Museum1FScientist1Text.TheresALabSomewhereText", "Museum1FScientist1Text.AmberIsFossilizedTreeSapText"]
+  },
+  "Museum1FScientist1Text.ComeAgainText": {
+   "kind": "text",
+   "src": "scripts/Museum1F.asm:145",
+   "commands": [
+    {"cmd": "text_far", "label": "_Museum1FScientist1ComeAgainText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Museum1FScientist1Text.WouldYouLikeToComeInText": {
+   "kind": "text",
+   "src": "scripts/Museum1F.asm:149",
+   "commands": [
+    {"cmd": "text_far", "label": "_Museum1FScientist1WouldYouLikeToComeInText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Museum1FScientist1Text.ThankYouText": {
+   "kind": "text",
+   "src": "scripts/Museum1F.asm:153",
+   "commands": [
+    {"cmd": "text_far", "label": "_Museum1FScientist1ThankYouText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Museum1FScientist1Text.DontHaveEnoughMoneyText": {
+   "kind": "text",
+   "src": "scripts/Museum1F.asm:157",
+   "commands": [
+    {"cmd": "text_far", "label": "_Museum1FScientist1DontHaveEnoughMoneyText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Museum1FScientist1Text.DoYouKnowWhatAmberIsText": {
+   "kind": "text",
+   "src": "scripts/Museum1F.asm:161",
+   "commands": [
+    {"cmd": "text_far", "label": "_Museum1FScientist1DoYouKnowWhatAmberIsText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Museum1FScientist1Text.TheresALabSomewhereText": {
+   "kind": "text",
+   "src": "scripts/Museum1F.asm:165",
+   "commands": [
+    {"cmd": "text_far", "label": "_Museum1FScientist1TheresALabSomewhereText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Museum1FScientist1Text.AmberIsFossilizedTreeSapText": {
+   "kind": "text",
+   "src": "scripts/Museum1F.asm:169",
+   "commands": [
+    {"cmd": "text_far", "label": "_Museum1FScientist1AmberIsFossilizedTreeSapText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Museum1FScientist1Text.GoToOtherSideText": {
+   "kind": "text",
+   "src": "scripts/Museum1F.asm:173",
+   "commands": [
+    {"cmd": "text_far", "label": "_Museum1FScientist1GoToOtherSideText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Museum1FScientist1Text.TakePlentyOfTimeText": {
+   "kind": "text",
+   "src": "scripts/Museum1F.asm:177",
+   "commands": [
+    {"cmd": "text_far", "label": "_Museum1FScientist1TakePlentyOfTimeText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Museum1FGamblerText": {
+   "kind": "asm",
+   "src": "scripts/Museum1F.asm:181",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["Museum1FGamblerText.Text"]
+  },
+  "Museum1FGamblerText.Text": {
+   "kind": "text",
+   "src": "scripts/Museum1F.asm:187",
+   "commands": [
+    {"cmd": "text_far", "label": "_Museum1FGamblerText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Museum1FScientist2Text": {
+   "kind": "asm",
+   "src": "scripts/Museum1F.asm:191",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["Museum1FScientist2Text.TakeThisToAPokemonLabText", "Museum1FScientist2Text.ReceivedOldAmberText", "Museum1FScientist2Text.YouDontHaveSpaceText", "Museum1FScientist2Text.GetTheOldAmberCheckText"]
+  },
+  "Museum1FScientist2Text.TakeThisToAPokemonLabText": {
+   "kind": "text",
+   "src": "scripts/Museum1F.asm:215",
+   "commands": [
+    {"cmd": "text_far", "label": "_Museum1FScientist2TakeThisToAPokemonLabText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Museum1FScientist2Text.ReceivedOldAmberText": {
+   "kind": "text",
+   "src": "scripts/Museum1F.asm:219",
+   "commands": [
+    {"cmd": "text_far", "label": "_Museum1FScientist2ReceivedOldAmberText"},
+    {"cmd": "sound", "sound": "sound_get_item_1"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Museum1FScientist2Text.GetTheOldAmberCheckText": {
+   "kind": "text",
+   "src": "scripts/Museum1F.asm:224",
+   "commands": [
+    {"cmd": "text_far", "label": "_Museum1FScientist2GetTheOldAmberCheckText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Museum1FScientist2Text.YouDontHaveSpaceText": {
+   "kind": "text",
+   "src": "scripts/Museum1F.asm:228",
+   "commands": [
+    {"cmd": "text_far", "label": "_Museum1FScientist2YouDontHaveSpaceText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Museum1FScientist3Text": {
+   "kind": "asm",
+   "src": "scripts/Museum1F.asm:232",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["Museum1FScientist3Text.Text"]
+  },
+  "Museum1FScientist3Text.Text": {
+   "kind": "text",
+   "src": "scripts/Museum1F.asm:238",
+   "commands": [
+    {"cmd": "text_far", "label": "_Museum1FScientist3Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Museum1FOldAmberText": {
+   "kind": "asm",
+   "src": "scripts/Museum1F.asm:242",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["Museum1FOldAmberText.Text"]
+  },
+  "Museum1FOldAmberText.Text": {
+   "kind": "text",
+   "src": "scripts/Museum1F.asm:248",
+   "commands": [
+    {"cmd": "text_far", "label": "_Museum1FOldAmberText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_Museum1FScientist1ComeAgainText": {
+   "kind": "text",
+   "src": "text/Museum1F.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Come again!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Museum1FScientist1WouldYouLikeToComeInText": {
+   "kind": "text",
+   "src": "text/Museum1F.asm:6",
+   "commands": [
+    {"cmd": "text", "str": "It's ¥50 for a"},
+    {"cmd": "line", "str": "child's ticket."},
+    {"cmd": "para", "str": "Would you like to"},
+    {"cmd": "line", "str": "come in?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Museum1FScientist1ThankYouText": {
+   "kind": "text",
+   "src": "text/Museum1F.asm:14",
+   "commands": [
+    {"cmd": "text", "str": "Right, ¥50!"},
+    {"cmd": "line", "str": "Thank you!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Museum1FScientist1DontHaveEnoughMoneyText": {
+   "kind": "text",
+   "src": "text/Museum1F.asm:19",
+   "commands": [
+    {"cmd": "text", "str": "You don't have"},
+    {"cmd": "line", "str": "enough money."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Museum1FScientist1DoYouKnowWhatAmberIsText": {
+   "kind": "text",
+   "src": "text/Museum1F.asm:24",
+   "commands": [
+    {"cmd": "text", "str": "You can't sneak"},
+    {"cmd": "line", "str": "in the back way!"},
+    {"cmd": "para", "str": "Oh, whatever!"},
+    {"cmd": "line", "str": "Do you know what"},
+    {"cmd": "cont", "str": "AMBER is?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Museum1FScientist1TheresALabSomewhereText": {
+   "kind": "text",
+   "src": "text/Museum1F.asm:33",
+   "commands": [
+    {"cmd": "text", "str": "There's a lab"},
+    {"cmd": "line", "str": "somewhere trying"},
+    {"cmd": "cont", "str": "to resurrect"},
+    {"cmd": "cont", "str": "ancient POKéMON"},
+    {"cmd": "cont", "str": "from AMBER."},
+    {"cmd": "done"}
+   ]
+  },
+  "_Museum1FScientist1AmberIsFossilizedTreeSapText": {
+   "kind": "text",
+   "src": "text/Museum1F.asm:41",
+   "commands": [
+    {"cmd": "text", "str": "AMBER is fossil-"},
+    {"cmd": "line", "str": "ized tree sap."},
+    {"cmd": "done"}
+   ]
+  },
+  "_Museum1FScientist1GoToOtherSideText": {
+   "kind": "text",
+   "src": "text/Museum1F.asm:46",
+   "commands": [
+    {"cmd": "text", "str": "Please go to the"},
+    {"cmd": "line", "str": "other side!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Museum1FScientist1TakePlentyOfTimeText": {
+   "kind": "text",
+   "src": "text/Museum1F.asm:51",
+   "commands": [
+    {"cmd": "text", "str": "Take plenty of"},
+    {"cmd": "line", "str": "time to look!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Museum1FGamblerText": {
+   "kind": "text",
+   "src": "text/Museum1F.asm:56",
+   "commands": [
+    {"cmd": "text", "str": "That is one"},
+    {"cmd": "line", "str": "magnificent"},
+    {"cmd": "cont", "str": "fossil!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Museum1FScientist2TakeThisToAPokemonLabText": {
+   "kind": "text",
+   "src": "text/Museum1F.asm:62",
+   "commands": [
+    {"cmd": "text", "str": "Ssh! I think that"},
+    {"cmd": "line", "str": "this chunk of"},
+    {"cmd": "cont", "str": "AMBER contains"},
+    {"cmd": "cont", "str": "POKéMON DNA!"},
+    {"cmd": "para", "str": "It would be great"},
+    {"cmd": "line", "str": "if POKéMON could"},
+    {"cmd": "cont", "str": "be resurrected"},
+    {"cmd": "cont", "str": "from it!"},
+    {"cmd": "para", "str": "But, my colleagues"},
+    {"cmd": "line", "str": "just ignore me!"},
+    {"cmd": "para", "str": "So I have a favor"},
+    {"cmd": "line", "str": "to ask!"},
+    {"cmd": "para", "str": "Take this to a"},
+    {"cmd": "line", "str": "POKéMON LAB and"},
+    {"cmd": "cont", "str": "get it examined!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Museum1FScientist2ReceivedOldAmberText": {
+   "kind": "text",
+   "src": "text/Museum1F.asm:84",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} received"},
+    {"cmd": "line", "str": "OLD AMBER!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_Museum1FScientist2GetTheOldAmberCheckText": {
+   "kind": "text",
+   "src": "text/Museum1F.asm:89",
+   "commands": [
+    {"cmd": "text", "str": "Ssh! Get the OLD"},
+    {"cmd": "line", "str": "AMBER checked!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Museum1FScientist2YouDontHaveSpaceText": {
+   "kind": "text",
+   "src": "text/Museum1F.asm:94",
+   "commands": [
+    {"cmd": "text", "str": "You don't have"},
+    {"cmd": "line", "str": "space for this!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Museum1FScientist3Text": {
+   "kind": "text",
+   "src": "text/Museum1F.asm:99",
+   "commands": [
+    {"cmd": "text", "str": "We are proud of 2"},
+    {"cmd": "line", "str": "fossils of very"},
+    {"cmd": "cont", "str": "rare, prehistoric"},
+    {"cmd": "cont", "str": "POKéMON!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Museum1FOldAmberText": {
+   "kind": "text",
+   "src": "text/Museum1F.asm:106",
+   "commands": [
+    {"cmd": "text", "str": "The AMBER is"},
+    {"cmd": "line", "str": "clear and gold!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

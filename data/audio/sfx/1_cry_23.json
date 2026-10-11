@@ -1,0 +1,55 @@
+{
+  "name": "SFX_CRY_23",
+  "title": "Cry 23",
+  "kind": "sfx",
+  "bank": 1,
+  "id": 125,
+  "label": "SFX_Cry23_1",
+  "channels": [
+    {
+      "channel": 5,
+      "label": "SFX_Cry23_1_Ch5",
+      "entry": 0,
+      "bytes": 23,
+      "labels": {"SFX_Cry23_1_Ch5": 0},
+      "commands": [
+        {"op": "duty_cycle_pattern", "pattern": [3, 3, 0, 0]},
+        {"op": "square_note", "length": 15, "volume": 15, "fade": 7, "frequency": 1984},
+        {"op": "square_note", "length": 6, "volume": 14, "fade": 4, "frequency": 1985},
+        {"op": "square_note", "length": 10, "volume": 15, "fade": 6, "frequency": 1984},
+        {"op": "square_note", "length": 4, "volume": 13, "fade": 3, "frequency": 1986},
+        {"op": "square_note", "length": 8, "volume": 12, "fade": 1, "frequency": 1984},
+        {"op": "sound_ret"}
+      ]
+    },
+    {
+      "channel": 6,
+      "label": "SFX_Cry23_1_Ch6",
+      "entry": 0,
+      "bytes": 19,
+      "labels": {"SFX_Cry23_1_Ch6": 0},
+      "commands": [
+        {"op": "duty_cycle_pattern", "pattern": [1, 1, 3, 3]},
+        {"op": "square_note", "length": 15, "volume": 9, "fade": 7, "frequency": 1921},
+        {"op": "square_note", "length": 6, "volume": 8, "fade": 4, "frequency": 1920},
+        {"op": "square_note", "length": 10, "volume": 9, "fade": 6, "frequency": 1921},
+        {"op": "square_note", "length": 15, "volume": 8, "fade": 3, "frequency": 1921},
+        {"op": "sound_ret"}
+      ]
+    },
+    {
+      "channel": 8,
+      "label": "SFX_Cry23_1_Ch8",
+      "entry": 0,
+      "bytes": 13,
+      "labels": {"SFX_Cry23_1_Ch8": 0},
+      "commands": [
+        {"op": "noise_note", "length": 3, "volume": 15, "fade": 2, "value": 60},
+        {"op": "noise_note", "length": 13, "volume": 14, "fade": 6, "value": 44},
+        {"op": "noise_note", "length": 15, "volume": 13, "fade": 7, "value": 60},
+        {"op": "noise_note", "length": 8, "volume": 12, "fade": 1, "value": 44},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

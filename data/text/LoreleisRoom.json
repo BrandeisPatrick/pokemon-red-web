@@ -1,0 +1,109 @@
+{
+ "map": "LoreleisRoom",
+ "const": "LORELEIS_ROOM",
+ "textPointerTables": [
+  {
+   "label": "LoreleisRoom_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_LORELEISROOM_LORELEI", "label": "LoreleisRoomLoreleiText", "kind": "asm", "handler": "trainer", "trainerHeader": "LoreleisRoomTrainerHeader0"},
+    {"id": 2, "const": "TEXT_LORELEISROOM_DONT_RUN_AWAY", "label": "LoreleisRoomLoreleiDontRunAwayText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "LoreleisRoomLoreleiText": {
+   "kind": "asm",
+   "src": "scripts/LoreleisRoom.asm:131",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "LoreleisRoomTrainerHeader0"
+  },
+  "LoreleisRoomLoreleiBeforeBattleText": {
+   "kind": "text",
+   "src": "scripts/LoreleisRoom.asm:137",
+   "commands": [
+    {"cmd": "text_far", "label": "_LoreleisRoomLoreleiBeforeBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "LoreleisRoomLoreleiEndBattleText": {
+   "kind": "text",
+   "src": "scripts/LoreleisRoom.asm:141",
+   "commands": [
+    {"cmd": "text_far", "label": "_LoreleisRoomLoreleiEndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "LoreleisRoomLoreleiAfterBattleText": {
+   "kind": "text",
+   "src": "scripts/LoreleisRoom.asm:145",
+   "commands": [
+    {"cmd": "text_far", "label": "_LoreleisRoomLoreleiAfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "LoreleisRoomLoreleiDontRunAwayText": {
+   "kind": "text",
+   "src": "scripts/LoreleisRoom.asm:149",
+   "commands": [
+    {"cmd": "text_far", "label": "_LoreleisRoomLoreleiDontRunAwayText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_LoreleisRoomLoreleiBeforeBattleText": {
+   "kind": "text",
+   "src": "text/LoreleisRoom.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Welcome to"},
+    {"cmd": "line", "str": "POKéMON LEAGUE!"},
+    {"cmd": "para", "str": "I am LORELEI of"},
+    {"cmd": "line", "str": "the ELITE FOUR!"},
+    {"cmd": "para", "str": "No one can best"},
+    {"cmd": "line", "str": "me when it comes"},
+    {"cmd": "cont", "str": "to icy POKéMON!"},
+    {"cmd": "para", "str": "Freezing moves"},
+    {"cmd": "line", "str": "are powerful!"},
+    {"cmd": "para", "str": "Your POKéMON will"},
+    {"cmd": "line", "str": "be at my mercy"},
+    {"cmd": "cont", "str": "when they are"},
+    {"cmd": "cont", "str": "frozen solid!"},
+    {"cmd": "para", "str": "Hahaha!"},
+    {"cmd": "line", "str": "Are you ready?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_LoreleisRoomLoreleiEndBattleText": {
+   "kind": "text",
+   "src": "text/LoreleisRoom.asm:25",
+   "commands": [
+    {"cmd": "text", "str": "How"},
+    {"cmd": "line", "str": "dare you!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_LoreleisRoomLoreleiAfterBattleText": {
+   "kind": "text",
+   "src": "text/LoreleisRoom.asm:30",
+   "commands": [
+    {"cmd": "text", "str": "You're better"},
+    {"cmd": "line", "str": "than I thought!"},
+    {"cmd": "cont", "str": "Go on ahead!"},
+    {"cmd": "para", "str": "You only got a"},
+    {"cmd": "line", "str": "taste of POKéMON"},
+    {"cmd": "cont", "str": "LEAGUE power!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_LoreleisRoomLoreleiDontRunAwayText": {
+   "kind": "text",
+   "src": "text/LoreleisRoom.asm:40",
+   "commands": [
+    {"cmd": "text", "str": "Someone's voice:"},
+    {"cmd": "line", "str": "Don't run away!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

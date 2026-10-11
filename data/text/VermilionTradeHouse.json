@@ -1,0 +1,22 @@
+{
+ "map": "VermilionTradeHouse",
+ "const": "VERMILION_TRADE_HOUSE",
+ "textPointerTables": [
+  {
+   "label": "VermilionTradeHouse_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_VERMILIONTRADEHOUSE_LITTLE_GIRL", "label": "VermilionTradeHouseLittleGirlText", "kind": "asm", "handler": "asm"}
+   ]
+  }
+ ],
+ "texts": {
+  "VermilionTradeHouseLittleGirlText": {
+   "kind": "asm",
+   "src": "scripts/VermilionTradeHouse.asm:9",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  }
+ }
+}

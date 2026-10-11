@@ -1,0 +1,41 @@
+{
+ "id": 72,
+ "const": "DAYCARE",
+ "name": "Daycare",
+ "displayName": "ROUTE 5",
+ "width": 4,
+ "height": 4,
+ "tileset": "HOUSE",
+ "tilesetId": 8,
+ "tilesetFile": "data/tilesets/House.json",
+ "isOutside": false,
+ "borderBlock": 10,
+ "blocks": [4, 14, 5, 9, 15, 1, 2, 15, 15, 12, 13, 15, 6, 11, 15, 7],
+ "connections": {},
+ "warps": [
+  {"x": 2, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 5, "destWarpIndex": 4},
+  {"x": 3, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 5, "destWarpIndex": 4}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "DAYCARE_GENTLEMAN", "x": 2, "y": 3, "sprite": "SPRITE_GENTLEMAN", "spriteId": 16, "movement": "STAY", "rangeOrDirection": "RIGHT", "rangeOrDirectionValue": 211, "behavior": "face_right", "textId": "TEXT_DAYCARE_GENTLEMAN", "textIndex": 1}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_CITIES1",
+ "wild": null,
+ "townMap": {"x": 10, "y": 4, "group": "ROUTE_5"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/Daycare.json",
+ "textPointers": "Daycare_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/Daycare.asm",
+  "objects": "data/maps/objects/Daycare.asm",
+  "blocks": "maps/Daycare.blk",
+  "script": "scripts/Daycare.asm"
+ },
+ "lastMapCandidates": ["ROUTE_5"],
+ "palette": {"pal": "PAL_ROUTE", "rule": "lastMap", "viaLastMap": "ROUTE_5"}
+}

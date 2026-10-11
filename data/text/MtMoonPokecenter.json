@@ -1,0 +1,172 @@
+{
+ "map": "MtMoonPokecenter",
+ "const": "MT_MOON_POKECENTER",
+ "textPointerTables": [
+  {
+   "label": "MtMoonPokecenter_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_MTMOONPOKECENTER_NURSE", "label": "MtMoonPokecenterNurseText", "kind": "script", "handler": "script_pokecenter_nurse"},
+    {"id": 2, "const": "TEXT_MTMOONPOKECENTER_YOUNGSTER", "label": "MtMoonPokecenterYoungsterText", "kind": "text", "handler": "text"},
+    {"id": 3, "const": "TEXT_MTMOONPOKECENTER_GENTLEMAN", "label": "MtMoonPokecenterGentlemanText", "kind": "text", "handler": "text"},
+    {"id": 4, "const": "TEXT_MTMOONPOKECENTER_MAGIKARP_SALESMAN", "label": "MtMoonPokecenterMagikarpSalesmanText", "kind": "asm", "handler": "asm"},
+    {"id": 5, "const": "TEXT_MTMOONPOKECENTER_CLIPBOARD", "label": "MtMoonPokecenterClipboardText", "kind": "text", "handler": "text"},
+    {"id": 6, "const": "TEXT_MTMOONPOKECENTER_LINK_RECEPTIONIST", "label": "MtMoonPokecenterLinkReceptionistText", "kind": "script", "handler": "script_cable_club_receptionist"}
+   ]
+  }
+ ],
+ "texts": {
+  "MtMoonPokecenterNurseText": {
+   "kind": "script",
+   "src": "scripts/MtMoonPokecenter.asm:15",
+   "commands": [
+    {"cmd": "script", "script": "script_pokecenter_nurse"}
+   ]
+  },
+  "MtMoonPokecenterYoungsterText": {
+   "kind": "text",
+   "src": "scripts/MtMoonPokecenter.asm:18",
+   "commands": [
+    {"cmd": "text_far", "label": "_MtMoonPokecenterYoungsterText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "MtMoonPokecenterGentlemanText": {
+   "kind": "text",
+   "src": "scripts/MtMoonPokecenter.asm:22",
+   "commands": [
+    {"cmd": "text_far", "label": "_MtMoonPokecenterGentlemanText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "MtMoonPokecenterMagikarpSalesmanText": {
+   "kind": "asm",
+   "src": "scripts/MtMoonPokecenter.asm:26",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["MtMoonPokecenterMagikarpSalesmanText.IGotADealText", "MtMoonPokecenterMagikarpSalesmanText.NoMoneyText", "MtMoonPokecenterMagikarpSalesmanText.NoText", "MtMoonPokecenterMagikarpSalesmanText.NoRefundsText"]
+  },
+  "MtMoonPokecenterMagikarpSalesmanText.IGotADealText": {
+   "kind": "text",
+   "src": "scripts/MtMoonPokecenter.asm:75",
+   "commands": [
+    {"cmd": "text_far", "label": "_MtMoonPokecenterMagikarpSalesmanIGotADealText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "MtMoonPokecenterMagikarpSalesmanText.NoText": {
+   "kind": "text",
+   "src": "scripts/MtMoonPokecenter.asm:79",
+   "commands": [
+    {"cmd": "text_far", "label": "_MtMoonPokecenterMagikarpSalesmanNoText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "MtMoonPokecenterMagikarpSalesmanText.NoMoneyText": {
+   "kind": "text",
+   "src": "scripts/MtMoonPokecenter.asm:83",
+   "commands": [
+    {"cmd": "text_far", "label": "_MtMoonPokecenterMagikarpSalesmanNoMoneyText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "MtMoonPokecenterMagikarpSalesmanText.NoRefundsText": {
+   "kind": "text",
+   "src": "scripts/MtMoonPokecenter.asm:87",
+   "commands": [
+    {"cmd": "text_far", "label": "_MtMoonPokecenterMagikarpSalesmanNoRefundsText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "MtMoonPokecenterClipboardText": {
+   "kind": "text",
+   "src": "scripts/MtMoonPokecenter.asm:91",
+   "commands": [
+    {"cmd": "text_far", "label": "_MtMoonPokecenterClipboardText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "MtMoonPokecenterLinkReceptionistText": {
+   "kind": "script",
+   "src": "scripts/MtMoonPokecenter.asm:95",
+   "commands": [
+    {"cmd": "script", "script": "script_cable_club_receptionist"}
+   ]
+  },
+  "_MtMoonPokecenterYoungsterText": {
+   "kind": "text",
+   "src": "text/MtMoonPokecenter.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "I've 6 POKé BALLs"},
+    {"cmd": "line", "str": "set in my belt."},
+    {"cmd": "para", "str": "At most, you can"},
+    {"cmd": "line", "str": "carry 6 POKéMON."},
+    {"cmd": "done"}
+   ]
+  },
+  "_MtMoonPokecenterGentlemanText": {
+   "kind": "text",
+   "src": "text/MtMoonPokecenter.asm:10",
+   "commands": [
+    {"cmd": "text", "str": "TEAM ROCKET"},
+    {"cmd": "line", "str": "attacks CERULEAN"},
+    {"cmd": "cont", "str": "citizens..."},
+    {"cmd": "para", "str": "TEAM ROCKET is"},
+    {"cmd": "line", "str": "always in the"},
+    {"cmd": "cont", "str": "news!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_MtMoonPokecenterMagikarpSalesmanIGotADealText": {
+   "kind": "text",
+   "src": "text/MtMoonPokecenter.asm:20",
+   "commands": [
+    {"cmd": "text", "str": "MAN: Hello, there!"},
+    {"cmd": "line", "str": "Have I got a deal"},
+    {"cmd": "cont", "str": "just for you!"},
+    {"cmd": "para", "str": "I'll let you have"},
+    {"cmd": "line", "str": "a swell MAGIKARP"},
+    {"cmd": "cont", "str": "for just ¥500!"},
+    {"cmd": "cont", "str": "What do you say?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_MtMoonPokecenterMagikarpSalesmanNoText": {
+   "kind": "text",
+   "src": "text/MtMoonPokecenter.asm:31",
+   "commands": [
+    {"cmd": "text", "str": "No? I'm only"},
+    {"cmd": "line", "str": "doing this as a"},
+    {"cmd": "cont", "str": "favor to you!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_MtMoonPokecenterMagikarpSalesmanNoMoneyText": {
+   "kind": "text",
+   "src": "text/MtMoonPokecenter.asm:37",
+   "commands": [
+    {"cmd": "text", "str": "You'll need more"},
+    {"cmd": "line", "str": "money than that!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_MtMoonPokecenterMagikarpSalesmanNoRefundsText": {
+   "kind": "text",
+   "src": "text/MtMoonPokecenter.asm:42",
+   "commands": [
+    {"cmd": "text", "str": "MAN: Well, I don't"},
+    {"cmd": "line", "str": "give refunds!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_MtMoonPokecenterClipboardText": {
+   "kind": "text",
+   "src": "text/MtMoonPokecenter.asm:47",
+   "commands": [
+    {"cmd": "text", "str": ""},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

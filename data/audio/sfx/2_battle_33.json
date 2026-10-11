@@ -1,0 +1,42 @@
+{
+  "name": "SFX_BATTLE_33",
+  "title": "Battle 33",
+  "kind": "sfx",
+  "bank": 2,
+  "id": 223,
+  "label": "SFX_Battle_33",
+  "channels": [
+    {
+      "channel": 5,
+      "label": "SFX_Battle_33_Ch5",
+      "entry": 0,
+      "bytes": 23,
+      "labels": {"SFX_Battle_33_Ch5": 0},
+      "commands": [
+        {"op": "duty_cycle", "duty": 2},
+        {"op": "square_note", "length": 6, "volume": 15, "fade": 1, "frequency": 1280},
+        {"op": "square_note", "length": 6, "volume": 15, "fade": 1, "frequency": 1408},
+        {"op": "square_note", "length": 6, "volume": 15, "fade": 1, "frequency": 1536},
+        {"op": "square_note", "length": 6, "volume": 15, "fade": 1, "frequency": 1664},
+        {"op": "square_note", "length": 8, "volume": 15, "fade": 1, "frequency": 1792},
+        {"op": "sound_ret"}
+      ]
+    },
+    {
+      "channel": 6,
+      "label": "SFX_Battle_33_Ch6",
+      "entry": 0,
+      "bytes": 23,
+      "labels": {"SFX_Battle_33_Ch6": 0},
+      "commands": [
+        {"op": "duty_cycle", "duty": 3},
+        {"op": "square_note", "length": 6, "volume": 14, "fade": 1, "frequency": 1296},
+        {"op": "square_note", "length": 6, "volume": 14, "fade": 1, "frequency": 1424},
+        {"op": "square_note", "length": 6, "volume": 14, "fade": 1, "frequency": 1552},
+        {"op": "square_note", "length": 6, "volume": 14, "fade": 1, "frequency": 1680},
+        {"op": "square_note", "length": 8, "volume": 14, "fade": 1, "frequency": 1808},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

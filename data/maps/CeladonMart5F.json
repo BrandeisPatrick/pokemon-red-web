@@ -1,0 +1,47 @@
+{
+ "id": 136,
+ "const": "CELADON_MART_5F",
+ "name": "CeladonMart5F",
+ "displayName": "CELADON CITY",
+ "width": 10,
+ "height": 4,
+ "tileset": "LOBBY",
+ "tilesetId": 18,
+ "tilesetFile": "data/tilesets/Lobby.json",
+ "isOutside": false,
+ "borderBlock": 15,
+ "blocks": [12, 13, 24, 25, 1, 1, 2, 37, 3, 1, 11, 11, 20, 23, 11, 26, 26, 11, 26, 26, 11, 11, 21, 22, 11, 30, 30, 11, 30, 30, 11, 11, 11, 11, 11, 10, 10, 11, 10, 10],
+ "connections": {},
+ "warps": [
+  {"x": 12, "y": 1, "destMap": "CELADON_MART_ROOF", "destMapId": 126, "destMapName": "CeladonMartRoof", "destWarp": 1, "destWarpIndex": 0},
+  {"x": 16, "y": 1, "destMap": "CELADON_MART_4F", "destMapId": 125, "destMapName": "CeladonMart4F", "destWarp": 2, "destWarpIndex": 1},
+  {"x": 1, "y": 1, "destMap": "CELADON_MART_ELEVATOR", "destMapId": 127, "destMapName": "CeladonMartElevator", "destWarp": 1, "destWarpIndex": 0}
+ ],
+ "bgEvents": [
+  {"x": 14, "y": 1, "textId": "TEXT_CELADONMART5F_CURRENT_FLOOR_SIGN", "textIndex": 5}
+ ],
+ "objectEvents": [
+  {"index": 1, "const": "CELADONMART5F_GENTLEMAN", "x": 14, "y": 5, "sprite": "SPRITE_GENTLEMAN", "spriteId": 16, "movement": "WALK", "rangeOrDirection": "UP_DOWN", "rangeOrDirectionValue": 1, "behavior": "walk_up_down", "textId": "TEXT_CELADONMART5F_GENTLEMAN", "textIndex": 1},
+  {"index": 2, "const": "CELADONMART5F_SAILOR", "x": 2, "y": 6, "sprite": "SPRITE_SAILOR", "spriteId": 19, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_CELADONMART5F_SAILOR", "textIndex": 2},
+  {"index": 3, "const": "CELADONMART5F_CLERK1", "x": 5, "y": 3, "sprite": "SPRITE_CLERK", "spriteId": 38, "movement": "STAY", "rangeOrDirection": "DOWN", "rangeOrDirectionValue": 208, "behavior": "face_down", "textId": "TEXT_CELADONMART5F_CLERK1", "textIndex": 3},
+  {"index": 4, "const": "CELADONMART5F_CLERK2", "x": 6, "y": 3, "sprite": "SPRITE_CLERK", "spriteId": 38, "movement": "STAY", "rangeOrDirection": "DOWN", "rangeOrDirectionValue": 208, "behavior": "face_down", "textId": "TEXT_CELADONMART5F_CLERK2", "textIndex": 4}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_POKECENTER",
+ "wild": null,
+ "townMap": {"x": 7, "y": 5, "group": "CELADON_CITY"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/CeladonMart5F.json",
+ "textPointers": "CeladonMart5F_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/CeladonMart5F.asm",
+  "objects": "data/maps/objects/CeladonMart5F.asm",
+  "blocks": "maps/CeladonMart5F.blk",
+  "script": "scripts/CeladonMart5F.asm"
+ },
+ "lastMapCandidates": ["CELADON_CITY"],
+ "palette": {"pal": "PAL_CELADON", "rule": "lastMap", "viaLastMap": "CELADON_CITY"}
+}

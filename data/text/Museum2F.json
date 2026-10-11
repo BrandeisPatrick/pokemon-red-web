@@ -1,0 +1,147 @@
+{
+ "map": "Museum2F",
+ "const": "MUSEUM_2F",
+ "textPointerTables": [
+  {
+   "label": "Museum2F_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_MUSEUM2F_YOUNGSTER", "label": "Museum2FYoungsterText", "kind": "text", "handler": "text"},
+    {"id": 2, "const": "TEXT_MUSEUM2F_GRAMPS", "label": "Museum2FGrampsText", "kind": "text", "handler": "text"},
+    {"id": 3, "const": "TEXT_MUSEUM2F_SCIENTIST", "label": "Museum2FScientistText", "kind": "text", "handler": "text"},
+    {"id": 4, "const": "TEXT_MUSEUM2F_BRUNETTE_GIRL", "label": "Museum2FBrunetteGirlText", "kind": "text", "handler": "text"},
+    {"id": 5, "const": "TEXT_MUSEUM2F_HIKER", "label": "Museum2FHikerText", "kind": "text", "handler": "text"},
+    {"id": 6, "const": "TEXT_MUSEUM2F_SPACE_SHUTTLE_SIGN", "label": "Museum2FSpaceShuttleSignText", "kind": "text", "handler": "text"},
+    {"id": 7, "const": "TEXT_MUSEUM2F_MOON_STONE_SIGN", "label": "Museum2FMoonStoneSignText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "Museum2FYoungsterText": {
+   "kind": "text",
+   "src": "scripts/Museum2F.asm:15",
+   "commands": [
+    {"cmd": "text_far", "label": "_Museum2FYoungsterText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Museum2FGrampsText": {
+   "kind": "text",
+   "src": "scripts/Museum2F.asm:19",
+   "commands": [
+    {"cmd": "text_far", "label": "_Museum2FGrampsText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Museum2FScientistText": {
+   "kind": "text",
+   "src": "scripts/Museum2F.asm:23",
+   "commands": [
+    {"cmd": "text_far", "label": "_Museum2FScientistText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Museum2FBrunetteGirlText": {
+   "kind": "text",
+   "src": "scripts/Museum2F.asm:27",
+   "commands": [
+    {"cmd": "text_far", "label": "_Museum2FBrunetteGirlText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Museum2FHikerText": {
+   "kind": "text",
+   "src": "scripts/Museum2F.asm:31",
+   "commands": [
+    {"cmd": "text_far", "label": "_Museum2FHikerText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Museum2FSpaceShuttleSignText": {
+   "kind": "text",
+   "src": "scripts/Museum2F.asm:35",
+   "commands": [
+    {"cmd": "text_far", "label": "_Museum2FSpaceShuttleSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Museum2FMoonStoneSignText": {
+   "kind": "text",
+   "src": "scripts/Museum2F.asm:39",
+   "commands": [
+    {"cmd": "text_far", "label": "_Museum2FMoonStoneSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_Museum2FYoungsterText": {
+   "kind": "text",
+   "src": "text/Museum2F.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "MOON STONE?"},
+    {"cmd": "para", "str": "What's so special"},
+    {"cmd": "line", "str": "about it?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Museum2FGrampsText": {
+   "kind": "text",
+   "src": "text/Museum2F.asm:9",
+   "commands": [
+    {"cmd": "text", "str": "July 20, 1969!"},
+    {"cmd": "para", "str": "The 1st lunar"},
+    {"cmd": "line", "str": "landing!"},
+    {"cmd": "para", "str": "I bought a color"},
+    {"cmd": "line", "str": "TV to watch it!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Museum2FScientistText": {
+   "kind": "text",
+   "src": "text/Museum2F.asm:19",
+   "commands": [
+    {"cmd": "text", "str": "We have a space"},
+    {"cmd": "line", "str": "exhibit now."},
+    {"cmd": "done"}
+   ]
+  },
+  "_Museum2FBrunetteGirlText": {
+   "kind": "text",
+   "src": "text/Museum2F.asm:24",
+   "commands": [
+    {"cmd": "text", "str": "I want a PIKACHU!"},
+    {"cmd": "line", "str": "It's so cute!"},
+    {"cmd": "para", "str": "I asked my Daddy"},
+    {"cmd": "line", "str": "to catch me one!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Museum2FHikerText": {
+   "kind": "text",
+   "src": "text/Museum2F.asm:32",
+   "commands": [
+    {"cmd": "text", "str": "Yeah, a PIKACHU"},
+    {"cmd": "line", "str": "soon, I promise!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Museum2FSpaceShuttleSignText": {
+   "kind": "text",
+   "src": "text/Museum2F.asm:37",
+   "commands": [
+    {"cmd": "text", "str": "SPACE SHUTTLE"},
+    {"cmd": "line", "str": "COLUMBIA"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Museum2FMoonStoneSignText": {
+   "kind": "text",
+   "src": "text/Museum2F.asm:42",
+   "commands": [
+    {"cmd": "text", "str": "Meteorite that"},
+    {"cmd": "line", "str": "fell on MT.MOON."},
+    {"cmd": "cont", "str": "(MOON STONE?)"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

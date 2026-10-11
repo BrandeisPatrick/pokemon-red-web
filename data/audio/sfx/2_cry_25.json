@@ -1,0 +1,56 @@
+{
+  "name": "SFX_CRY_25",
+  "title": "Cry 25",
+  "kind": "sfx",
+  "bank": 2,
+  "id": 131,
+  "label": "SFX_Cry25_2",
+  "channels": [
+    {
+      "channel": 5,
+      "label": "SFX_Cry25_2_Ch5",
+      "entry": 0,
+      "bytes": 23,
+      "labels": {"SFX_Cry25_2_Ch5": 0},
+      "commands": [
+        {"op": "duty_cycle_pattern", "pattern": [2, 2, 1, 1]},
+        {"op": "square_note", "length": 6, "volume": 15, "fade": 4, "frequency": 1856},
+        {"op": "square_note", "length": 15, "volume": 14, "fade": 3, "frequency": 1840},
+        {"op": "square_note", "length": 4, "volume": 15, "fade": 4, "frequency": 1856},
+        {"op": "square_note", "length": 5, "volume": 11, "fade": 3, "frequency": 1864},
+        {"op": "square_note", "length": 8, "volume": 13, "fade": 1, "frequency": 1872},
+        {"op": "sound_ret"}
+      ]
+    },
+    {
+      "channel": 6,
+      "label": "SFX_Cry25_2_Ch6",
+      "entry": 0,
+      "bytes": 23,
+      "labels": {"SFX_Cry25_2_Ch6": 0},
+      "commands": [
+        {"op": "duty_cycle_pattern", "pattern": [1, 3, 1, 3]},
+        {"op": "square_note", "length": 6, "volume": 12, "fade": 3, "frequency": 1810},
+        {"op": "square_note", "length": 15, "volume": 11, "fade": 3, "frequency": 1796},
+        {"op": "square_note", "length": 3, "volume": 12, "fade": 3, "frequency": 1810},
+        {"op": "square_note", "length": 4, "volume": 12, "fade": 3, "frequency": 1825},
+        {"op": "square_note", "length": 8, "volume": 11, "fade": 1, "frequency": 1842},
+        {"op": "sound_ret"}
+      ]
+    },
+    {
+      "channel": 8,
+      "label": "SFX_Cry25_2_Ch8",
+      "entry": 0,
+      "bytes": 13,
+      "labels": {"SFX_Cry25_2_Ch8": 0},
+      "commands": [
+        {"op": "noise_note", "length": 8, "volume": 13, "fade": 6, "value": 44},
+        {"op": "noise_note", "length": 12, "volume": 12, "fade": 6, "value": 60},
+        {"op": "noise_note", "length": 10, "volume": 11, "fade": 6, "value": 44},
+        {"op": "noise_note", "length": 8, "volume": 9, "fade": 1, "value": 28},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

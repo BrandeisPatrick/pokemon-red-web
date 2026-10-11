@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menus test</title>
+  <link rel="icon" href="data:,">
+  <style>
+    :root { color-scheme: dark; }
+    html, body { margin: 0; height: 100%; background: #2b2b30; color: #ddd; font: 12px/1.4 ui-monospace, Menlo, monospace; }
+    body { display: flex; gap: 12px; padding: 10px; box-sizing: border-box; }
+    #left { flex: 0 0 auto; display: flex; flex-direction: column; align-items: center; gap: 6px; }
+    #screen { display: block; image-rendering: pixelated; image-rendering: crisp-edges; background: #000; outline: none; }
+    #screen:focus { box-shadow: 0 0 0 2px #9bbc0f; }
+    #panel { flex: 1 1 auto; min-width: 320px; max-width: 560px; overflow-y: auto; overflow-x: hidden; }
+    fieldset { border: 1px solid #333; margin: 0 0 8px; padding: 6px 8px; }
+    legend { color: #9ad; }
+    select, input, button { font: inherit; background: #222; color: #ddd; border: 1px solid #444; border-radius: 3px; padding: 2px 4px; }
+    button { cursor: pointer; }
+    button:hover { background: #2c2c2c; }
+    button.busy { border-color: #9bbc0f; color: #9bbc0f; }
+    .row { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin: 3px 0; }
+    #info { white-space: pre-wrap; word-break: break-word; color: #cfc; margin: 0; }
+    .log { height: 150px; overflow-y: auto; background: #181818; border: 1px solid #333; padding: 2px 4px; white-space: pre-wrap; word-break: break-all; }
+    .help { color: #888; max-width: 480px; text-align: center; }
+    #status { color: #9bbc0f; }
+    .err { color: #f88; white-space: pre-wrap; }
+    label { user-select: none; }
+  </style>
+</head>
+<body>
+  <div id="left">
+    <canvas id="screen" width="160" height="144" tabindex="0" aria-label="Menus"></canvas>
+    <div class="help">Arrows/WASD = D-pad · Z/Enter = A · X/Backspace = B · Shift = START · Tab = SELECT<br>
+      On the checkered backdrop (a stand-in for the overworld) START opens the START menu.</div>
+    <div id="status">loading…</div>
+  </div>
+  <div id="panel">
+    <fieldset><legend>START menu</legend>
+      <div class="row">
+        <button data-open="start">START menu</button>
+        <button data-open="startLink">START (Cable Club: RESET)</button>
+        <button data-open="startSound">START (with SFX_START_MENU)</button>
+      </div>
+    </fieldset>
+    <fieldset><legend>POKéMON</legend>
+      <div class="row">
+        <button data-open="party">Party menu (choose)</button>
+        <button data-open="partyStart">Party (START flow: STATS/SWITCH/field moves)</button>
+        <button data-open="partyItem">Use item on which…</button>
+        <button data-open="partyForce">Forced choice (B off)</button>
+      </div>
+      <div class="row">
+        <select id="tm"></select><button data-open="partyTM">TM/HM menu (ABLE)</button>
+        <select id="stone"></select><button data-open="partyStone">Stone menu (ABLE)</button>
+      </div>
+      <div class="row">
+        <select id="statMon"></select><button data-open="stats">Stats screen</button>
+      </div>
+    </fieldset>
+    <fieldset><legend>ITEM</legend>
+      <div class="row">
+        <button data-open="bag">ITEM bag</button>
+        <button data-open="townMap">TOWN MAP</button>
+      </div>
+    </fieldset>
+    <fieldset><legend>POKéDEX</legend>
+      <div class="row">
+        <button data-open="dex">Pokédex list</button>
+        <select id="dexMon"></select>
+        <button data-open="dexEntry">Entry</button>
+        <button data-open="nest">AREA (nests)</button>
+      </div>
+    </fieldset>
+    <fieldset><legend>PC</legend>
+      <div class="row">
+        <button data-open="pcCenter">Pokécenter PC</button>
+        <button data-open="pcBills">Bill's PC</button>
+        <button data-open="pcPlayers">Player's PC (bedroom)</button>
+        <button data-open="rating">Oak's rating</button>
+      </div>
+    </fieldset>
+    <fieldset><legend>Shops, Center, Game Corner</legend>
+      <div class="row">
+        <select id="mart"></select><button data-open="mart">Poké Mart</button>
+        <button data-open="heal">Nurse (heal)</button>
+      </div>
+      <div class="row">
+        <button data-open="coins">Coin clerk</button>
+        <button data-open="prize0">Prizes 1 (mons)</button>
+        <button data-open="prize1">Prizes 2 (mons)</button>
+        <button data-open="prize2">Prizes 3 (TMs)</button>
+        <button data-open="slots">Slots</button>
+        <button data-open="slotsLucky">Slots (lucky machine)</button>
+      </div>
+    </fieldset>
+    <fieldset><legend>Maps, trades</legend>
+      <div class="row">
+        <button data-open="townMap">Town Map</button>
+        <button data-open="fly">Fly map</button>
+      </div>
+      <div class="row">
+        <select id="trade"></select>
+        <label><input type="checkbox" id="giveWanted" checked> give the wanted mon first</label>
+        <button data-open="trade">In-game trade</button>
+        <button data-open="tradeAnim">Trade animation only</button>
+      </div>
+    </fieldset>
+    <fieldset><legend>Player</legend>
+      <div class="row">
+        <button data-open="card">Trainer card</button>
+        <button data-open="save">SAVE</button>
+        <button data-open="options">OPTION</button>
+      </div>
+    </fieldset>
+    <fieldset><legend>State &amp; overworld facts (env)</legend>
+      <div class="row">
+        seed <input id="seed" type="number" value="1996" style="width:6em">
+        <button id="reset">Reset demo state</button>
+        <button id="clearSave">Delete test save</button>
+        <button id="hurt">Hurt party</button>
+        <button id="noDex">Toggle POKéDEX flag</button>
+      </div>
+      <div class="row">
+        location <select id="loc"></select>
+        <label><input type="checkbox" id="water"> facing water</label>
+        <label><input type="checkbox" id="cutTree" checked> CUT tree ahead</label>
+        <label><input type="checkbox" id="hidden"> hidden item near</label>
+      </div>
+      <div class="row">
+        palette <select id="palette"><option value="dmg">DMG green</option><option value="gray">gray</option><option value="pocket">pocket</option><option value="dmgClassic">DMG classic</option></select>
+        text <select id="speed"><option value="fast">fast</option><option value="mid" selected>mid</option><option value="slow">slow</option><option value="instant">instant (debug)</option></select>
+        <label><input type="checkbox" id="sound"> sound (real sound engine)</label>
+      </div>
+    </fieldset>
+    <fieldset><legend>State</legend><pre id="info">…</pre></fieldset>
+    <fieldset><legend>Results</legend><div id="log" class="log"></div></fieldset>
+    <div id="error" class="err"></div>
+  </div>
+
+  <script type="module">
+    import { FrameBuffer } from './src/engine/framebuffer.js';
+    import { Palette, PALETTES } from './src/engine/palette.js';
+    import { Input } from './src/engine/input.js';
+    import { Rng } from './src/engine/rng.js';
+    import { Loop } from './src/engine/loop.js';
+    import { SceneStack, Scene } from './src/engine/scene.js';
+    import { Assets } from './src/engine/assets.js';
+    import { Font } from './src/engine/font.js';
+    import { Sfx } from './src/engine/sfx.js';
+    import { TEXT_SPEED } from './src/engine/text.js';
+    import { loadGameData } from './src/pokemon/data.js';
+    import { makeMon } from './src/pokemon/mon.js';
+    import { createSaveStore } from './src/game/save.js';
+    import { createAudio } from './src/audio/audio.js';
+    import { optionsScreen } from './src/intro/options.js';
+    import { installMenus, PARTY_MENU } from './src/menus/index.js';
+    import { makeDemoState } from './src/menus/demo_state.js';
+    import { findTrade } from './src/menus/trade.js';
+
+    const $ = (id) => document.getElementById(id);
+
+    // ---------------------------------------------------------------- engine services (as src/main.js)
+    const canvas = $('screen');
+    const fb = new FrameBuffer();
+    fb.attachCanvas(canvas, {
+      getViewport: () => ({ width: Math.max(160, Math.min(640, window.innerWidth - 600)), height: Math.max(144, window.innerHeight - 90) }),
+    });
+    const palette = new Palette(PALETTES.dmg);
+    const input = new Input();
+    // keyboard -> joypad, except while typing in the panel's form fields
+    const isField = (t) => t && ((t.tagName === 'INPUT' && t.type !== 'checkbox') || t.tagName === 'SELECT' || t.tagName === 'TEXTAREA');
+    window.addEventListener('keydown', (e) => { if (!isField(e.target)) input.handleKeyDown(e); });
+    window.addEventListener('keyup', (e) => input.handleKeyUp(e));
+    window.addEventListener('blur', () => input.releaseAll());
+    const rng = new Rng();
+    const assets = new Assets();
+    const sfx = new Sfx();
+    for (const t of ['keydown', 'pointerdown']) window.addEventListener(t, () => sfx.unlock(), { capture: true });
+    const game = {
+      fb, input, palette, rng, assets, sfx, font: null, scenes: null, loop: null,
+      options: { textSpeed: TEXT_SPEED.medium }, hooks: {}, audio: null, state: null,
+      saveStore: createSaveStore({ key: 'pokered-web:menus-test' }),
+    };
+    game.scenes = new SceneStack(game);
+    window.game = game;
+
+    const log = (line) => { const d = $('log'); d.textContent += `${line}\n`; d.scrollTop = d.scrollHeight; };
+    const showError = (err) => { console.error(err); $('error').textContent = String(err && err.stack ? err.stack : err); };
+
+    /** The overworld stand-in: a checkered "map" with a player block; START opens the START menu. */
+    class Backdrop extends Scene {
+      update(frame, inp) {
+        if (inp.isPressed('start')) openMenu('start');
+      }
+      draw(f) {
+        for (let by = 0; by < 9; by++) {
+          for (let bx = 0; bx < 10; bx++) f.fillRect(bx * 16, by * 16, 16, 16, (bx + by) & 1 ? 1 : 0);
+        }
+        f.fillRect(0, 0, 160, 4, 2);
+        f.fillRect(64, 60, 16, 16, 3); // where the player stands
+        f.fillRect(68, 64, 8, 4, 0);
+      }
+    }
+
+    // ---------------------------------------------------------------- data + state
+    let gd = null;
+    function resetState() {
+      game.state = makeDemoState(gd, { seed: +$('seed').value || 1996 });
+      applyLocation();
+      applySpeed();
+      fillPerState();
+      showInfo();
+    }
+
+    const LOCATIONS = ['CELADON_CITY', 'ROUTE_23', 'VIRIDIAN_POKECENTER', 'MT_MOON_1F', 'SAFARI_ZONE_EAST',
+      'POKEMON_TOWER_3F', 'AGATHAS_ROOM', 'INDIGO_PLATEAU', 'SEAFOAM_ISLANDS_B4F'];
+    function applyLocation() {
+      const m = gd.findMap($('loc').value);
+      if (!m || !game.state) return;
+      game.state.pos.map = m.const;
+      if (m.isOutside) game.state.lastOutdoor = { ...(game.state.lastOutdoor || {}), map: m.const };
+    }
+    /** The overworld facts the field moves / items look at (docs/menus.md "env"). */
+    function env() {
+      const m = gd.findMap($('loc').value);
+      const pos = game.state.pos;
+      return {
+        map: m.const, tileset: m.tileset, coords: { x: pos.x, y: pos.y }, facingWater: $('water').checked,
+        surfAllowed: true, canCut: () => $('cutTree').checked, hiddenItemNear: () => $('hidden').checked,
+      };
+    }
+    function applySpeed() {
+      const v = $('speed').value;
+      if (v === 'instant') game.options.menuTextSpeed = 0;
+      else {
+        delete game.options.menuTextSpeed;
+        if (game.state) game.state.options.textSpeed = v;
+      }
+    }
+
+    // ---------------------------------------------------------------- opening scenes
+    let busy = null;
+    const safeJSON = (v) => {
+      try {
+        return JSON.stringify(v, (k, x) => {
+          if (typeof x === 'function') return '[fn]';
+          if (x && typeof x === 'object' && 'species' in x && 'dvs' in x && 'moves' in x) return `${x.nickname} L${x.level}`;
+          return x;
+        });
+      } catch {
+        return String(v);
+      }
+    };
+    async function openScene(name, fn) {
+      if (busy) { log(`(busy with ${busy}: finish it first)`); return; }
+      busy = name;
+      $('status').textContent = `open: ${name}`;
+      canvas.focus();
+      const t0 = performance.now();
+      try {
+        const r = await fn();
+        log(`${name} → ${r === undefined ? 'undefined' : safeJSON(r)}  (${((performance.now() - t0) / 1000).toFixed(1)} s)`);
+      } catch (err) {
+        log(`${name} ✗ ${err && err.message ? err.message : err}`);
+        showError(err);
+      } finally {
+        busy = null;
+        $('status').textContent = 'idle — pick a menu (or press START)';
+        showInfo();
+        canvas.focus();
+      }
+    }
+
+    function wantedTradeMon() {
+      const t = findTrade(gd, +$('trade').value);
+      const st = game.state;
+      if (!t || st.party.some((m) => m.species === t.give.species)) return;
+      const m = makeMon({ species: t.give.species, level: 12, otName: st.playerName, otId: st.playerId, rng }, gd);
+      if (st.party.length < 6) st.party.push(m);
+      else st.party[5] = m;
+      log(`(gave ${m.nickname} for the trade)`);
+    }
+
+    const OPEN = {
+      start: () => game.menus.startMenu({ env: env() }),
+      startLink: () => game.menus.startMenu({ env: env(), link: true }),
+      startSound: () => game.menus.startMenu({ env: env(), sound: true }),
+      party: () => game.menus.partyMenu(),
+      partyStart: () => game.menus.partyMenu({ start: true, env: env() }),
+      partyItem: () => game.menus.partyMenu({ mode: PARTY_MENU.USE_ITEM }),
+      partyForce: () => game.menus.partyMenu({ forceChoose: true }),
+      partyTM: () => game.menus.partyMenu({ mode: PARTY_MENU.USE_TM, item: $('tm').value }),
+      partyStone: () => game.menus.partyMenu({ mode: PARTY_MENU.EVO_STONE, item: $('stone').value }),
+      stats: () => {
+        const [where, a, b] = $('statMon').value.split(':');
+        const st = game.state;
+        const mon = where === 'party' ? st.party[+a] : st.pcBoxes[+a][+b];
+        if (!mon) throw new Error('no such mon');
+        return game.menus.statsScreen(mon, { box: where === 'box' });
+      },
+      bag: () => game.menus.bagMenu({ env: env() }),
+      townMap: () => game.menus.townMapScene(),
+      dex: () => game.menus.pokedexScene(),
+      dexEntry: () => game.menus.pokedexScene({ species: +$('dexMon').value }),
+      nest: () => game.menus.nestMapScene(+$('dexMon').value),
+      pcCenter: () => game.menus.pcScene('pokecenter'),
+      pcBills: () => game.menus.pcScene('bills'),
+      pcPlayers: () => game.menus.pcScene('players'),
+      rating: () => game.menus.dexRatingScene(),
+      mart: () => game.menus.martScene($('mart').value),
+      heal: () => game.menus.healScene(),
+      coins: () => game.menus.gameCornerScene({ mode: 'coins' }),
+      prize0: () => game.menus.gameCornerScene({ mode: 'prizes', menu: 0 }),
+      prize1: () => game.menus.gameCornerScene({ mode: 'prizes', menu: 1 }),
+      prize2: () => game.menus.gameCornerScene({ mode: 'prizes', menu: 2 }),
+      slots: () => game.menus.slotsScene(),
+      slotsLucky: () => game.menus.slotsScene({ lucky: true }),
+      fly: () => game.menus.flyMapScene(),
+      trade: () => {
+        if ($('giveWanted').checked) wantedTradeMon();
+        return game.menus.tradeScene(+$('trade').value);
+      },
+      tradeAnim: () => {
+        const t = findTrade(gd, +$('trade').value);
+        const st = game.state;
+        return game.menus.tradeAnimScene({
+          left: { species: t.give.species, otName: st.playerName, otId: st.playerId },
+          right: { species: t.get.species, otName: 'TRAINER', otId: 12345 },
+        });
+      },
+      card: () => game.menus.trainerCard(),
+      save: () => game.menus.saveFlow(),
+      options: () => optionsScreen(game.state.options, game, { audio: game.audio }).then(() => ({ ...game.state.options })),
+    };
+    function openMenu(name) { return openScene(name, OPEN[name]); }
+    for (const b of document.querySelectorAll('button[data-open]')) {
+      b.addEventListener('click', () => { b.blur(); openMenu(b.dataset.open); });
+    }
+
+    // ---------------------------------------------------------------- panel
+    function opt(sel, value, text) {
+      const o = document.createElement('option');
+      o.value = String(value);
+      o.textContent = text;
+      sel.appendChild(o);
+    }
+    function fillStatic() {
+      for (const m of gd.raw.items.machines) opt($('tm'), m.const, `${m.name} ${m.moveName}`);
+      $('tm').value = 'TM_THUNDERBOLT';
+      for (const s of ['FIRE_STONE', 'THUNDER_STONE', 'WATER_STONE', 'LEAF_STONE', 'MOON_STONE']) opt($('stone'), s, s);
+      $('stone').value = 'THUNDER_STONE';
+      for (let d = 1; d <= 151; d++) opt($('dexMon'), d, `${String(d).padStart(3, '0')} ${gd.species(d).name}`);
+      $('dexMon').value = '25';
+      for (const m of gd.raw.items.marts) opt($('mart'), m.label, `${m.label.replace(/ClerkText|Text$/, '')} (${m.items.length})`);
+      $('mart').value = 'CeladonMart2FClerk2Text';
+      for (const t of gd.events.trades) opt($('trade'), t.id, `${t.nickname}: ${gd.species(t.give.species).name} → ${gd.species(t.get.species).name} (${(t.usedIn || []).join(', ')})`);
+      for (const c of LOCATIONS) {
+        const m = gd.findMap(c);
+        if (m) opt($('loc'), m.const, `${m.const} (${m.tileset}${m.isOutside ? ', outside' : ''})`);
+      }
+      $('loc').value = 'CELADON_CITY';
+    }
+    function fillPerState() {
+      const sel = $('statMon');
+      const keep = sel.value;
+      sel.innerHTML = '';
+      const st = game.state;
+      st.party.forEach((m, i) => opt(sel, `party:${i}`, `party ${i + 1}: ${m.nickname} L${m.level}`));
+      st.pcBoxes.forEach((box, b) => box.slice(0, 6).forEach((m, i) => opt(sel, `box:${b}:${i}`, `box ${b + 1} #${i + 1}: ${m.nickname} L${m.level}`)));
+      if ([...sel.options].some((o) => o.value === keep)) sel.value = keep;
+    }
+    function showInfo() {
+      const st = game.state;
+      if (!st) return;
+      const lines = [];
+      lines.push(`${st.playerName}  ¥${st.money}  coins ${st.coins}  badges ${st.badges.toString(2).padStart(8, '0')}  map ${st.pos.map}`);
+      lines.push(`dex seen ${st.pokedex.seenCount} owned ${st.pokedex.ownedCount}  box ${st.currentBox + 1}  boxes [${st.pcBoxes.map((b) => b.length).join(' ')}]  PC items ${st.pcItems.length}`);
+      for (const m of st.party) lines.push(`  ${m.nickname.padEnd(10)} L${String(m.level).padEnd(3)} ${String(m.hp).padStart(3)}/${String(m.maxHP).padEnd(3)} ${m.statusLabel || ''}  ${m.moves.map((s) => `${s.move}:${s.pp}`).join(' ')}`);
+      lines.push(`bag ${st.bag.length}/20: ${st.bag.items.map((s) => `${s.item}×${s.qty}`).join(' ')}`);
+      lines.push(`save: ${game.saveStore.exists() ? 'yes' : 'none'} (key pokered-web:menus-test)  audio: ${game.audio ? 'on' : 'off'}`);
+      $('info').textContent = lines.join('\n');
+      fillPerState();
+    }
+
+    $('reset').addEventListener('click', () => { if (busy) return log('(close the open menu first)'); resetState(); log('state reset'); });
+    $('clearSave').addEventListener('click', () => { game.saveStore.clear(); showInfo(); log('test save deleted'); });
+    $('hurt').addEventListener('click', () => {
+      for (const m of game.state.party) m.hp = Math.max(1, Math.floor(m.maxHP / 3));
+      showInfo();
+    });
+    $('noDex').addEventListener('click', () => {
+      const f = game.state.flags;
+      if (f.get('EVENT_GOT_POKEDEX')) f.clear('EVENT_GOT_POKEDEX'); else f.set('EVENT_GOT_POKEDEX');
+      log(`EVENT_GOT_POKEDEX = ${f.get('EVENT_GOT_POKEDEX')}`);
+    });
+    $('loc').addEventListener('change', () => { applyLocation(); showInfo(); });
+    $('palette').addEventListener('change', () => palette.setColors(PALETTES[$('palette').value]));
+    $('speed').addEventListener('change', applySpeed);
+
+    let audio = null;
+    $('sound').addEventListener('change', async () => {
+      if (!$('sound').checked) {
+        if (audio) audio.stopMusic();
+        game.audio = null;
+        showInfo();
+        return;
+      }
+      try {
+        audio = audio || createAudio({ volume: 0.6 });
+        await audio.init(); // inside the click gesture
+        game.audio = audio;
+        log('sound engine running');
+      } catch (err) {
+        $('sound').checked = false;
+        log(`sound failed: ${err && err.message ? err.message : err}`);
+      }
+      showInfo();
+    });
+
+    // ---------------------------------------------------------------- scripting helpers (console / automation)
+    /** Press a button for ~3 frames, then wait 120 ms. */
+    const tap = (b, ms = 50) => new Promise((r) => { input.press(b); setTimeout(() => { input.release(b); setTimeout(r, 120); }, ms); });
+    /** Run taps ('a', 'down', ...) and waits (numbers, ms) in order; returns the scene stack. */
+    async function seq(list) {
+      for (const x of list) {
+        if (typeof x === 'number') await new Promise((r) => setTimeout(r, x));
+        else await tap(x);
+      }
+      return game.scenes.scenes.map((sc) => sc.constructor.name).join(' > ');
+    }
+    /** The top menu scene's tile layer as text (charmap keys; '·' = a graphics tile). */
+    function screenRows() {
+      const sc = game.scenes.top;
+      const ctx = game._menuCtx;
+      if (!sc || !sc.ui || !ctx) return null;
+      const rev = new Map();
+      for (const [k, b] of ctx.charmap) if (!rev.has(b)) rev.set(b, k);
+      rev.set(0x7f, ' ');
+      const out = [];
+      for (let y = 0; y < 18; y++) {
+        let line = '';
+        for (let x = 0; x < 20; x++) {
+          const t = sc.ui.get(x, y);
+          line += t < 0 ? ' ' : t < 512 ? (rev.get(t & 0xff) ?? '?') : '·';
+        }
+        out.push(line);
+      }
+      return out.join('\n');
+    }
+    window.menusTest = { tap, seq, screenRows, open: openMenu, log, env, resetState };
+
+    // ---------------------------------------------------------------- boot
+    async function boot() {
+      console.info(`[menus-test] RNG seed ${rng.seed}`);
+      game.font = await Font.load(assets);
+      gd = await loadGameData();
+      fillStatic();
+      resetState();
+      installMenus(game); // window.game.menus
+      await game.menus.preload();
+      game.scenes.push(new Backdrop());
+      game.loop = new Loop({
+        update(frame) {
+          input.sample();
+          game.scenes.update(frame, input);
+        },
+        render() {
+          fb.clear(0);
+          game.scenes.draw(fb);
+          fb.present(palette);
+        },
+      });
+      game.loop.start();
+      $('status').textContent = 'idle — pick a menu (or press START)';
+      canvas.focus();
+    }
+    boot().catch(showError);
+  </script>
+</body>
+</html>

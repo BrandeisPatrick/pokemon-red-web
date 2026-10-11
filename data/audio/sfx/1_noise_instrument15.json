@@ -1,0 +1,22 @@
+{
+  "name": "SFX_NOISE_INSTRUMENT15",
+  "title": "Noise Instrument 15",
+  "kind": "sfx",
+  "bank": 1,
+  "id": 15,
+  "label": "SFX_Noise_Instrument15_1",
+  "channels": [
+    {
+      "channel": 8,
+      "label": "SFX_Noise_Instrument15_1_Ch8",
+      "entry": 0,
+      "bytes": 7,
+      "labels": {"SFX_Noise_Instrument15_1_Ch8": 0},
+      "commands": [
+        {"op": "noise_note", "length": 0, "volume": 10, "fade": 1, "value": 24},
+        {"op": "noise_note", "length": 0, "volume": 3, "fade": 1, "value": 51},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

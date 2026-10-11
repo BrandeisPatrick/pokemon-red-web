@@ -1,0 +1,112 @@
+{
+ "map": "AgathasRoom",
+ "const": "AGATHAS_ROOM",
+ "textPointerTables": [
+  {
+   "label": "AgathasRoom_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_AGATHASROOM_AGATHA", "label": "AgathasRoomAgathaText", "kind": "asm", "handler": "trainer", "trainerHeader": "AgathasRoomTrainerHeader0"},
+    {"id": 2, "const": "TEXT_AGATHASROOM_AGATHA_DONT_RUN_AWAY", "label": "AgathasRoomAgathaDontRunAwayText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "AgathasRoomAgathaText": {
+   "kind": "asm",
+   "src": "scripts/AgathasRoom.asm:132",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "AgathasRoomTrainerHeader0"
+  },
+  "AgathaBeforeBattleText": {
+   "kind": "text",
+   "src": "scripts/AgathasRoom.asm:138",
+   "commands": [
+    {"cmd": "text_far", "label": "_AgathaBeforeBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "AgathaEndBattleText": {
+   "kind": "text",
+   "src": "scripts/AgathasRoom.asm:142",
+   "commands": [
+    {"cmd": "text_far", "label": "_AgathaEndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "AgathaAfterBattleText": {
+   "kind": "text",
+   "src": "scripts/AgathasRoom.asm:146",
+   "commands": [
+    {"cmd": "text_far", "label": "_AgathaAfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "AgathasRoomAgathaDontRunAwayText": {
+   "kind": "text",
+   "src": "scripts/AgathasRoom.asm:150",
+   "commands": [
+    {"cmd": "text_far", "label": "_AgathasRoomAgathaDontRunAwayText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_AgathaBeforeBattleText": {
+   "kind": "text",
+   "src": "text/AgathasRoom.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "I am AGATHA of"},
+    {"cmd": "line", "str": "the ELITE FOUR!"},
+    {"cmd": "para", "str": "OAK's taken a lot"},
+    {"cmd": "line", "str": "of interest in"},
+    {"cmd": "cont", "str": "you, child!"},
+    {"cmd": "para", "str": "That old duff was"},
+    {"cmd": "line", "str": "once tough and"},
+    {"cmd": "cont", "str": "handsome! That"},
+    {"cmd": "cont", "str": "was decades ago!"},
+    {"cmd": "para", "str": "Now he just wants"},
+    {"cmd": "line", "str": "to fiddle with"},
+    {"cmd": "cont", "str": "his POKéDEX! He's"},
+    {"cmd": "cont", "str": "wrong! POKéMON"},
+    {"cmd": "cont", "str": "are for fighting!"},
+    {"cmd": "para", "str": "{PLAYER}! I'll show"},
+    {"cmd": "line", "str": "you how a real"},
+    {"cmd": "cont", "str": "trainer fights!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_AgathaEndBattleText": {
+   "kind": "text",
+   "src": "text/AgathasRoom.asm:26",
+   "commands": [
+    {"cmd": "text", "str": "Oh ho!"},
+    {"cmd": "line", "str": "You're something"},
+    {"cmd": "cont", "str": "special, child!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_AgathaAfterBattleText": {
+   "kind": "text",
+   "src": "text/AgathasRoom.asm:32",
+   "commands": [
+    {"cmd": "text", "str": "You win! I see"},
+    {"cmd": "line", "str": "what the old duff"},
+    {"cmd": "cont", "str": "sees in you now!"},
+    {"cmd": "para", "str": "I have nothing"},
+    {"cmd": "line", "str": "else to say! Run"},
+    {"cmd": "cont", "str": "along now, child!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_AgathasRoomAgathaDontRunAwayText": {
+   "kind": "text",
+   "src": "text/AgathasRoom.asm:42",
+   "commands": [
+    {"cmd": "text", "str": "Someone's voice:"},
+    {"cmd": "line", "str": "Don't run away!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

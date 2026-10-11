@@ -1,0 +1,542 @@
+{
+ "map": "Route12",
+ "const": "ROUTE_12",
+ "textPointerTables": [
+  {
+   "label": "Route12_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_ROUTE12_SNORLAX", "label": "Route12SnorlaxText", "kind": "text", "handler": "text"},
+    {"id": 2, "const": "TEXT_ROUTE12_FISHER1", "label": "Route12Fisher1Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route12TrainerHeader0"},
+    {"id": 3, "const": "TEXT_ROUTE12_FISHER2", "label": "Route12Fisher2Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route12TrainerHeader1"},
+    {"id": 4, "const": "TEXT_ROUTE12_COOLTRAINER_M", "label": "Route12CooltrainerMText", "kind": "asm", "handler": "trainer", "trainerHeader": "Route12TrainerHeader2"},
+    {"id": 5, "const": "TEXT_ROUTE12_SUPER_NERD", "label": "Route12SuperNerdText", "kind": "asm", "handler": "trainer", "trainerHeader": "Route12TrainerHeader3"},
+    {"id": 6, "const": "TEXT_ROUTE12_FISHER3", "label": "Route12Fisher3Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route12TrainerHeader4"},
+    {"id": 7, "const": "TEXT_ROUTE12_FISHER4", "label": "Route12Fisher4Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route12TrainerHeader5"},
+    {"id": 8, "const": "TEXT_ROUTE12_FISHER5", "label": "Route12Fisher5Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route12TrainerHeader6"},
+    {"id": 9, "const": "TEXT_ROUTE12_TM_PAY_DAY", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 10, "const": "TEXT_ROUTE12_IRON", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 11, "const": "TEXT_ROUTE12_SIGN", "label": "Route12SignText", "kind": "text", "handler": "text"},
+    {"id": 12, "const": "TEXT_ROUTE12_SPORT_FISHING_SIGN", "label": "Route12SportFishingSignText", "kind": "text", "handler": "text"},
+    {"id": 13, "const": "TEXT_ROUTE12_SNORLAX_WOKE_UP", "label": "Route12SnorlaxWokeUpText", "kind": "text", "handler": "text"},
+    {"id": 14, "const": "TEXT_ROUTE12_SNORLAX_CALMED_DOWN", "label": "Route12SnorlaxCalmedDownText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "PickUpItemText": {
+   "kind": "asm",
+   "src": "home/overworld_text.asm:29",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "Route12SnorlaxText": {
+   "kind": "text",
+   "src": "scripts/Route12.asm:100",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route12SnorlaxText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route12SnorlaxWokeUpText": {
+   "kind": "text",
+   "src": "scripts/Route12.asm:104",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route12SnorlaxWokeUpText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route12SnorlaxCalmedDownText": {
+   "kind": "text",
+   "src": "scripts/Route12.asm:108",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route12SnorlaxCalmedDownText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route12Fisher1Text": {
+   "kind": "asm",
+   "src": "scripts/Route12.asm:112",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route12TrainerHeader0"
+  },
+  "Route12Fisher1BattleText": {
+   "kind": "text",
+   "src": "scripts/Route12.asm:118",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route12Fisher1BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route12Fisher1EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route12.asm:122",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route12Fisher1EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route12Fisher1AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route12.asm:126",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route12Fisher1AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route12Fisher2Text": {
+   "kind": "asm",
+   "src": "scripts/Route12.asm:130",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route12TrainerHeader1"
+  },
+  "Route12Fisher2BattleText": {
+   "kind": "text",
+   "src": "scripts/Route12.asm:136",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route12Fisher2BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route12Fisher2EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route12.asm:140",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route12Fisher2EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route12Fisher2AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route12.asm:144",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route12Fisher2AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route12CooltrainerMText": {
+   "kind": "asm",
+   "src": "scripts/Route12.asm:148",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route12TrainerHeader2"
+  },
+  "Route12CooltrainerMBattleText": {
+   "kind": "text",
+   "src": "scripts/Route12.asm:154",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route12CooltrainerMBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route12CooltrainerMEndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route12.asm:158",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route12CooltrainerMEndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route12CooltrainerMAfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route12.asm:162",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route12CooltrainerMAfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route12SuperNerdText": {
+   "kind": "asm",
+   "src": "scripts/Route12.asm:166",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route12TrainerHeader3"
+  },
+  "Route12SuperNerdBattleText": {
+   "kind": "text",
+   "src": "scripts/Route12.asm:172",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route12SuperNerdBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route12SuperNerdEndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route12.asm:176",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route12SuperNerdEndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route12SuperNerdAfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route12.asm:180",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route12SuperNerdAfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route12Fisher3Text": {
+   "kind": "asm",
+   "src": "scripts/Route12.asm:184",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route12TrainerHeader4"
+  },
+  "Route12Fisher3BattleText": {
+   "kind": "text",
+   "src": "scripts/Route12.asm:190",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route12Fisher3BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route12Fisher3EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route12.asm:194",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route12Fisher3EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route12Fisher3AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route12.asm:198",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route12Fisher3AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route12Fisher4Text": {
+   "kind": "asm",
+   "src": "scripts/Route12.asm:202",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route12TrainerHeader5"
+  },
+  "Route12Fisher4BattleText": {
+   "kind": "text",
+   "src": "scripts/Route12.asm:208",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route12Fisher4BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route12Fisher4EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route12.asm:212",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route12Fisher4EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route12Fisher4AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route12.asm:216",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route12Fisher4AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route12Fisher5Text": {
+   "kind": "asm",
+   "src": "scripts/Route12.asm:220",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route12TrainerHeader6"
+  },
+  "Route12Fisher5BattleText": {
+   "kind": "text",
+   "src": "scripts/Route12.asm:226",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route12Fisher5BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route12Fisher5EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route12.asm:230",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route12Fisher5EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route12Fisher5AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route12.asm:234",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route12Fisher5AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route12SignText": {
+   "kind": "text",
+   "src": "scripts/Route12.asm:238",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route12SignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route12SportFishingSignText": {
+   "kind": "text",
+   "src": "scripts/Route12.asm:242",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route12SportFishingSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_Route12SnorlaxText": {
+   "kind": "text",
+   "src": "text/Route12.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "A sleeping POKéMON"},
+    {"cmd": "line", "str": "blocks the way!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route12SnorlaxWokeUpText": {
+   "kind": "text",
+   "src": "text/Route12.asm:7",
+   "commands": [
+    {"cmd": "text", "str": "SNORLAX woke up!"},
+    {"cmd": "para", "str": "It attacked in a"},
+    {"cmd": "line", "str": "grumpy rage!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route12SnorlaxCalmedDownText": {
+   "kind": "text",
+   "src": "text/Route12.asm:14",
+   "commands": [
+    {"cmd": "text", "str": "SNORLAX calmed"},
+    {"cmd": "line", "str": "down! With a big"},
+    {"cmd": "cont", "str": "yawn, it returned"},
+    {"cmd": "cont", "str": "to the mountains!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route12Fisher1BattleText": {
+   "kind": "text",
+   "src": "text/Route12.asm:21",
+   "commands": [
+    {"cmd": "text", "str": "Yeah! I got a"},
+    {"cmd": "line", "str": "bite, here!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route12Fisher1EndBattleText": {
+   "kind": "text",
+   "src": "text/Route12.asm:26",
+   "commands": [
+    {"cmd": "text", "str": "Tch!"},
+    {"cmd": "line", "str": "Just a small fry!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route12Fisher1AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route12.asm:31",
+   "commands": [
+    {"cmd": "text", "str": "Hang on! My line's"},
+    {"cmd": "line", "str": "snagged!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route12Fisher2BattleText": {
+   "kind": "text",
+   "src": "text/Route12.asm:36",
+   "commands": [
+    {"cmd": "text", "str": "Be patient!"},
+    {"cmd": "line", "str": "Fishing is a"},
+    {"cmd": "cont", "str": "waiting game!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route12Fisher2EndBattleText": {
+   "kind": "text",
+   "src": "text/Route12.asm:42",
+   "commands": [
+    {"cmd": "text", "str": "That"},
+    {"cmd": "line", "str": "one got away!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route12Fisher2AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route12.asm:47",
+   "commands": [
+    {"cmd": "text", "str": "With a better ROD,"},
+    {"cmd": "line", "str": "I could catch"},
+    {"cmd": "cont", "str": "better POKéMON!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route12CooltrainerMBattleText": {
+   "kind": "text",
+   "src": "text/Route12.asm:53",
+   "commands": [
+    {"cmd": "text", "str": "Have you found a"},
+    {"cmd": "line", "str": "MOON STONE?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route12CooltrainerMEndBattleText": {
+   "kind": "text",
+   "src": "text/Route12.asm:58",
+   "commands": [
+    {"cmd": "text", "str": "Oww!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route12CooltrainerMAfterBattleText": {
+   "kind": "text",
+   "src": "text/Route12.asm:62",
+   "commands": [
+    {"cmd": "text", "str": "I could have made"},
+    {"cmd": "line", "str": "my POKéMON evolve"},
+    {"cmd": "cont", "str": "with MOON STONE!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route12SuperNerdBattleText": {
+   "kind": "text",
+   "src": "text/Route12.asm:68",
+   "commands": [
+    {"cmd": "text", "str": "Electricity is my"},
+    {"cmd": "line", "str": "specialty!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route12SuperNerdEndBattleText": {
+   "kind": "text",
+   "src": "text/Route12.asm:73",
+   "commands": [
+    {"cmd": "text", "str": "Unplugged!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route12SuperNerdAfterBattleText": {
+   "kind": "text",
+   "src": "text/Route12.asm:77",
+   "commands": [
+    {"cmd": "text", "str": "Water conducts"},
+    {"cmd": "line", "str": "electricity, so"},
+    {"cmd": "cont", "str": "you should zap"},
+    {"cmd": "cont", "str": "sea POKéMON!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route12Fisher3BattleText": {
+   "kind": "text",
+   "src": "text/Route12.asm:84",
+   "commands": [
+    {"cmd": "text", "str": "The FISHING FOOL"},
+    {"cmd": "line", "str": "vs. POKéMON KID!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route12Fisher3EndBattleText": {
+   "kind": "text",
+   "src": "text/Route12.asm:89",
+   "commands": [
+    {"cmd": "text", "str": "Too"},
+    {"cmd": "line", "str": "much!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route12Fisher3AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route12.asm:94",
+   "commands": [
+    {"cmd": "text", "str": "You beat me at"},
+    {"cmd": "line", "str": "POKéMON, but I'm"},
+    {"cmd": "cont", "str": "good at fishing!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route12Fisher4BattleText": {
+   "kind": "text",
+   "src": "text/Route12.asm:100",
+   "commands": [
+    {"cmd": "text", "str": "I'd rather be"},
+    {"cmd": "line", "str": "working!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route12Fisher4EndBattleText": {
+   "kind": "text",
+   "src": "text/Route12.asm:105",
+   "commands": [
+    {"cmd": "text", "str": "It's"},
+    {"cmd": "line", "str": "not easy..."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route12Fisher4AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route12.asm:110",
+   "commands": [
+    {"cmd": "text", "str": "It's all right."},
+    {"cmd": "line", "str": "Losing doesn't"},
+    {"cmd": "cont", "str": "bug me any more."},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route12Fisher5BattleText": {
+   "kind": "text",
+   "src": "text/Route12.asm:116",
+   "commands": [
+    {"cmd": "text", "str": "You never know"},
+    {"cmd": "line", "str": "what you could"},
+    {"cmd": "cont", "str": "catch!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route12Fisher5EndBattleText": {
+   "kind": "text",
+   "src": "text/Route12.asm:122",
+   "commands": [
+    {"cmd": "text", "str": "Lost"},
+    {"cmd": "line", "str": "it!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route12Fisher5AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route12.asm:127",
+   "commands": [
+    {"cmd": "text", "str": "I catch MAGIKARP"},
+    {"cmd": "line", "str": "all the time, but"},
+    {"cmd": "cont", "str": "they're so weak!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route12SignText": {
+   "kind": "text",
+   "src": "text/Route12.asm:133",
+   "commands": [
+    {"cmd": "text", "str": "ROUTE 12 "},
+    {"cmd": "line", "str": "North to LAVENDER"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route12SportFishingSignText": {
+   "kind": "text",
+   "src": "text/Route12.asm:138",
+   "commands": [
+    {"cmd": "text", "str": "SPORT FISHING AREA"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

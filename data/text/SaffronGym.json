@@ -1,0 +1,690 @@
+{
+ "map": "SaffronGym",
+ "const": "SAFFRON_GYM",
+ "textPointerTables": [
+  {
+   "label": "SaffronGym_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_SAFFRONGYM_SABRINA", "label": "SaffronGymSabrinaText", "kind": "asm", "handler": "asm"},
+    {"id": 2, "const": "TEXT_SAFFRONGYM_CHANNELER1", "label": "SaffronGymChanneler1Text", "kind": "asm", "handler": "trainer", "trainerHeader": "SaffronGymTrainerHeader0"},
+    {"id": 3, "const": "TEXT_SAFFRONGYM_YOUNGSTER1", "label": "SaffronGymYoungster1Text", "kind": "asm", "handler": "trainer", "trainerHeader": "SaffronGymTrainerHeader1"},
+    {"id": 4, "const": "TEXT_SAFFRONGYM_CHANNELER2", "label": "SaffronGymChanneler2Text", "kind": "asm", "handler": "trainer", "trainerHeader": "SaffronGymTrainerHeader2"},
+    {"id": 5, "const": "TEXT_SAFFRONGYM_YOUNGSTER2", "label": "SaffronGymYoungster2Text", "kind": "asm", "handler": "trainer", "trainerHeader": "SaffronGymTrainerHeader3"},
+    {"id": 6, "const": "TEXT_SAFFRONGYM_CHANNELER3", "label": "SaffronGymChanneler3Text", "kind": "asm", "handler": "trainer", "trainerHeader": "SaffronGymTrainerHeader4"},
+    {"id": 7, "const": "TEXT_SAFFRONGYM_YOUNGSTER3", "label": "SaffronGymYoungster3Text", "kind": "asm", "handler": "trainer", "trainerHeader": "SaffronGymTrainerHeader5"},
+    {"id": 8, "const": "TEXT_SAFFRONGYM_YOUNGSTER4", "label": "SaffronGymYoungster4Text", "kind": "asm", "handler": "trainer", "trainerHeader": "SaffronGymTrainerHeader6"},
+    {"id": 9, "const": "TEXT_SAFFRONGYM_GYM_GUIDE", "label": "SaffronGymGymGuideText", "kind": "asm", "handler": "asm"},
+    {"id": 10, "const": "TEXT_SAFFRONGYM_SABRINA_MARSH_BADGE_INFO", "label": "SaffronGymSabrinaMarshBadgeInfoText", "kind": "text", "handler": "text"},
+    {"id": 11, "const": "TEXT_SAFFRONGYM_SABRINA_RECEIVED_TM46", "label": "SaffronGymSabrinaReceivedTM46Text", "kind": "text", "handler": "text"},
+    {"id": 12, "const": "TEXT_SAFFRONGYM_SABRINA_TM46_NO_ROOM", "label": "SaffronGymSabrinaTM46NoRoomText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "SaffronGym_Script.CityName": {
+   "kind": "string",
+   "src": "scripts/SaffronGym.asm:20",
+   "commands": [
+    {"cmd": "str", "str": "SAFFRON CITY"}
+   ]
+  },
+  "SaffronGym_Script.LeaderName": {
+   "kind": "string",
+   "src": "scripts/SaffronGym.asm:23",
+   "commands": [
+    {"cmd": "str", "str": "SABRINA"}
+   ]
+  },
+  "SaffronGymSabrinaText": {
+   "kind": "asm",
+   "src": "scripts/SaffronGym.asm:108",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["SaffronGymSabrinaText.PostBattleAdviceText", "SaffronGymSabrinaText.Text", "SaffronGymSabrinaText.ReceivedMarshBadgeText"]
+  },
+  "SaffronGymSabrinaText.Text": {
+   "kind": "text",
+   "src": "scripts/SaffronGym.asm:141",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronGymSabrinaText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronGymSabrinaText.ReceivedMarshBadgeText": {
+   "kind": "text",
+   "src": "scripts/SaffronGym.asm:145",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronGymSabrinaReceivedMarshBadgeText"},
+    {"cmd": "sound", "sound": "sound_get_key_item"},
+    {"cmd": "text_promptbutton"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronGymSabrinaText.PostBattleAdviceText": {
+   "kind": "text",
+   "src": "scripts/SaffronGym.asm:151",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronGymSabrinaPostBattleAdviceText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronGymSabrinaMarshBadgeInfoText": {
+   "kind": "text",
+   "src": "scripts/SaffronGym.asm:155",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronGymSabrinaMarshBadgeInfoText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronGymSabrinaReceivedTM46Text": {
+   "kind": "text",
+   "src": "scripts/SaffronGym.asm:159",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronGymSabrinaReceivedTM46Text"},
+    {"cmd": "sound", "sound": "sound_get_item_1"},
+    {"cmd": "text_far", "label": "_TM46ExplanationText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronGymSabrinaTM46NoRoomText": {
+   "kind": "text",
+   "src": "scripts/SaffronGym.asm:165",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronGymSabrinaTM46NoRoomText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronGymChanneler1Text": {
+   "kind": "asm",
+   "src": "scripts/SaffronGym.asm:169",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "SaffronGymTrainerHeader0"
+  },
+  "SaffronGymYoungster1Text": {
+   "kind": "asm",
+   "src": "scripts/SaffronGym.asm:175",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "SaffronGymTrainerHeader1"
+  },
+  "SaffronGymChanneler2Text": {
+   "kind": "asm",
+   "src": "scripts/SaffronGym.asm:181",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "SaffronGymTrainerHeader2"
+  },
+  "SaffronGymYoungster2Text": {
+   "kind": "asm",
+   "src": "scripts/SaffronGym.asm:187",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "SaffronGymTrainerHeader3"
+  },
+  "SaffronGymChanneler3Text": {
+   "kind": "asm",
+   "src": "scripts/SaffronGym.asm:193",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "SaffronGymTrainerHeader4"
+  },
+  "SaffronGymYoungster3Text": {
+   "kind": "asm",
+   "src": "scripts/SaffronGym.asm:199",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "SaffronGymTrainerHeader5"
+  },
+  "SaffronGymYoungster4Text": {
+   "kind": "asm",
+   "src": "scripts/SaffronGym.asm:205",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "SaffronGymTrainerHeader6"
+  },
+  "SaffronGymGymGuideText": {
+   "kind": "asm",
+   "src": "scripts/SaffronGym.asm:211",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["SaffronGymGymGuideText.ChampInMakingText", "SaffronGymGymGuideText.BeatSabrinaText"]
+  },
+  "SaffronGymGymGuideText.ChampInMakingText": {
+   "kind": "text",
+   "src": "scripts/SaffronGym.asm:224",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronGymGuideChampInMakingText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronGymGymGuideText.BeatSabrinaText": {
+   "kind": "text",
+   "src": "scripts/SaffronGym.asm:228",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronGymGuideBeatSabrinaText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronGymChanneler1BattleText": {
+   "kind": "text",
+   "src": "scripts/SaffronGym.asm:232",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronGymChanneler1BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronGymChanneler1EndBattleText": {
+   "kind": "text",
+   "src": "scripts/SaffronGym.asm:236",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronGymChanneler1EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronGymChanneler1AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/SaffronGym.asm:240",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronGymChanneler1AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronGymYoungster1BattleText": {
+   "kind": "text",
+   "src": "scripts/SaffronGym.asm:244",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronGymYoungster1BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronGymYoungster1EndBattleText": {
+   "kind": "text",
+   "src": "scripts/SaffronGym.asm:248",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronGymYoungster1EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronGymYoungster1AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/SaffronGym.asm:252",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronGymYoungster1AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronGymChanneler2BattleText": {
+   "kind": "text",
+   "src": "scripts/SaffronGym.asm:256",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronGymChanneler2BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronGymChanneler2EndBattleText": {
+   "kind": "text",
+   "src": "scripts/SaffronGym.asm:260",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronGymChanneler2EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronGymChanneler2AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/SaffronGym.asm:264",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronGymChanneler2AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronGymYoungster2BattleText": {
+   "kind": "text",
+   "src": "scripts/SaffronGym.asm:268",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronGymYoungster2BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronGymYoungster2EndBattleText": {
+   "kind": "text",
+   "src": "scripts/SaffronGym.asm:272",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronGymYoungster2EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronGymYoungster2AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/SaffronGym.asm:276",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronGymYoungster2AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronGymChanneler3BattleText": {
+   "kind": "text",
+   "src": "scripts/SaffronGym.asm:280",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronGymChanneler3BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronGymChanneler3EndBattleText": {
+   "kind": "text",
+   "src": "scripts/SaffronGym.asm:284",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronGymChanneler3EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronGymChanneler3AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/SaffronGym.asm:288",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronGymChanneler3AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronGymYoungster3BattleText": {
+   "kind": "text",
+   "src": "scripts/SaffronGym.asm:292",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronGymYoungster3BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronGymYoungster3EndBattleText": {
+   "kind": "text",
+   "src": "scripts/SaffronGym.asm:296",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronGymYoungster3EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronGymYoungster3AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/SaffronGym.asm:300",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronGymYoungster3AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronGymYoungster4BattleText": {
+   "kind": "text",
+   "src": "scripts/SaffronGym.asm:304",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronGymYoungster4BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronGymYoungster4EndBattleText": {
+   "kind": "text",
+   "src": "scripts/SaffronGym.asm:308",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronGymYoungster4EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronGymYoungster4AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/SaffronGym.asm:312",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronGymYoungster4AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_SaffronGymSabrinaText": {
+   "kind": "text",
+   "src": "text/SaffronGym.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "I had a vision of"},
+    {"cmd": "line", "str": "your arrival!"},
+    {"cmd": "para", "str": "I have had psychic"},
+    {"cmd": "line", "str": "powers since I"},
+    {"cmd": "cont", "str": "was a child."},
+    {"cmd": "para", "str": "I first learned"},
+    {"cmd": "line", "str": "to bend spoons"},
+    {"cmd": "cont", "str": "with my mind."},
+    {"cmd": "para", "str": "I dislike fight-"},
+    {"cmd": "line", "str": "ing, but if you"},
+    {"cmd": "cont", "str": "wish, I will show"},
+    {"cmd": "cont", "str": "you my powers!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SaffronGymSabrinaReceivedMarshBadgeText": {
+   "kind": "text",
+   "src": "text/SaffronGym.asm:20",
+   "commands": [
+    {"cmd": "text", "str": "I'm"},
+    {"cmd": "line", "str": "shocked!"},
+    {"cmd": "cont", "str": "But, a loss is a"},
+    {"cmd": "cont", "str": "loss."},
+    {"cmd": "para", "str": "I admit I didn't"},
+    {"cmd": "line", "str": "work hard enough"},
+    {"cmd": "cont", "str": "to win!"},
+    {"cmd": "para", "str": "You earned the"},
+    {"cmd": "line", "str": "MARSHBADGE!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_SaffronGymSabrinaPostBattleAdviceText": {
+   "kind": "text",
+   "src": "text/SaffronGym.asm:34",
+   "commands": [
+    {"cmd": "text", "str": "Everyone has"},
+    {"cmd": "line", "str": "psychic power!"},
+    {"cmd": "cont", "str": "People just don't"},
+    {"cmd": "cont", "str": "realize it!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SaffronGymSabrinaMarshBadgeInfoText": {
+   "kind": "text",
+   "src": "text/SaffronGym.asm:41",
+   "commands": [
+    {"cmd": "text", "str": "The MARSHBADGE"},
+    {"cmd": "line", "str": "makes POKéMON up"},
+    {"cmd": "cont", "str": "to L70 obey you!"},
+    {"cmd": "para", "str": "Stronger POKéMON"},
+    {"cmd": "line", "str": "will become wild,"},
+    {"cmd": "cont", "str": "ignoring your"},
+    {"cmd": "cont", "str": "orders in battle!"},
+    {"cmd": "para", "str": "Just don't raise"},
+    {"cmd": "line", "str": "your POKéMON too"},
+    {"cmd": "cont", "str": "much!"},
+    {"cmd": "para", "str": "Wait, please take"},
+    {"cmd": "line", "str": "this TM with you!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SaffronGymSabrinaReceivedTM46Text": {
+   "kind": "text",
+   "src": "text/SaffronGym.asm:59",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} received"},
+    {"cmd": "line", "str": "TM46!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_TM46ExplanationText": {
+   "kind": "text",
+   "src": "text/SaffronGym.asm:64",
+   "commands": [
+    {"cmd": "text", "str": ""},
+    {"cmd": "para", "str": "TM46 is PSYWAVE!"},
+    {"cmd": "line", "str": "It uses powerful"},
+    {"cmd": "cont", "str": "psychic waves to"},
+    {"cmd": "cont", "str": "inflict damage!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SaffronGymSabrinaTM46NoRoomText": {
+   "kind": "text",
+   "src": "text/SaffronGym.asm:73",
+   "commands": [
+    {"cmd": "text", "str": "Your pack is full"},
+    {"cmd": "line", "str": "of other items!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SaffronGymGuideChampInMakingText": {
+   "kind": "text",
+   "src": "text/SaffronGym.asm:78",
+   "commands": [
+    {"cmd": "text", "str": "Yo! Champ in"},
+    {"cmd": "line", "str": "making!"},
+    {"cmd": "para", "str": "SABRINA's POKéMON"},
+    {"cmd": "line", "str": "use psychic power"},
+    {"cmd": "cont", "str": "instead of force!"},
+    {"cmd": "para", "str": "Fighting POKéMON"},
+    {"cmd": "line", "str": "are weak against"},
+    {"cmd": "cont", "str": "psychic POKéMON!"},
+    {"cmd": "para", "str": "They get creamed"},
+    {"cmd": "line", "str": "before they can"},
+    {"cmd": "cont", "str": "even aim a punch!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SaffronGymGuideBeatSabrinaText": {
+   "kind": "text",
+   "src": "text/SaffronGym.asm:95",
+   "commands": [
+    {"cmd": "text", "str": "Psychic power,"},
+    {"cmd": "line", "str": "huh?"},
+    {"cmd": "para", "str": "If I had that,"},
+    {"cmd": "line", "str": "I'd make a bundle"},
+    {"cmd": "cont", "str": "at the slots!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SaffronGymChanneler1BattleText": {
+   "kind": "text",
+   "src": "text/SaffronGym.asm:104",
+   "commands": [
+    {"cmd": "text", "str": "SABRINA is younger"},
+    {"cmd": "line", "str": "than I, but I"},
+    {"cmd": "cont", "str": "respect her!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SaffronGymChanneler1EndBattleText": {
+   "kind": "text",
+   "src": "text/SaffronGym.asm:110",
+   "commands": [
+    {"cmd": "text", "str": "Not"},
+    {"cmd": "line", "str": "good enough!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_SaffronGymChanneler1AfterBattleText": {
+   "kind": "text",
+   "src": "text/SaffronGym.asm:115",
+   "commands": [
+    {"cmd": "text", "str": "In a battle of"},
+    {"cmd": "line", "str": "equals, the one"},
+    {"cmd": "cont", "str": "with the stronger"},
+    {"cmd": "cont", "str": "will wins!"},
+    {"cmd": "para", "str": "If you wish"},
+    {"cmd": "line", "str": "to beat SABRINA,"},
+    {"cmd": "cont", "str": "focus on winning!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SaffronGymYoungster1BattleText": {
+   "kind": "text",
+   "src": "text/SaffronGym.asm:126",
+   "commands": [
+    {"cmd": "text", "str": "Does our unseen"},
+    {"cmd": "line", "str": "power scare you?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SaffronGymYoungster1EndBattleText": {
+   "kind": "text",
+   "src": "text/SaffronGym.asm:131",
+   "commands": [
+    {"cmd": "text", "str": "I never"},
+    {"cmd": "line", "str": "foresaw this!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_SaffronGymYoungster1AfterBattleText": {
+   "kind": "text",
+   "src": "text/SaffronGym.asm:136",
+   "commands": [
+    {"cmd": "text", "str": "Psychic POKéMON"},
+    {"cmd": "line", "str": "fear only ghosts"},
+    {"cmd": "cont", "str": "and bugs!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SaffronGymChanneler2BattleText": {
+   "kind": "text",
+   "src": "text/SaffronGym.asm:142",
+   "commands": [
+    {"cmd": "text", "str": "POKéMON take on"},
+    {"cmd": "line", "str": "the appearance of"},
+    {"cmd": "cont", "str": "their trainers."},
+    {"cmd": "para", "str": "Your POKéMON must"},
+    {"cmd": "line", "str": "be tough, then!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SaffronGymChanneler2EndBattleText": {
+   "kind": "text",
+   "src": "text/SaffronGym.asm:151",
+   "commands": [
+    {"cmd": "text", "str": "I knew"},
+    {"cmd": "line", "str": "it!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_SaffronGymChanneler2AfterBattleText": {
+   "kind": "text",
+   "src": "text/SaffronGym.asm:156",
+   "commands": [
+    {"cmd": "text", "str": "I must teach"},
+    {"cmd": "line", "str": "better techniques"},
+    {"cmd": "cont", "str": "to my POKéMON!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SaffronGymYoungster2BattleText": {
+   "kind": "text",
+   "src": "text/SaffronGym.asm:162",
+   "commands": [
+    {"cmd": "text", "str": "You know that"},
+    {"cmd": "line", "str": "power alone isn't"},
+    {"cmd": "cont", "str": "enough!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SaffronGymYoungster2EndBattleText": {
+   "kind": "text",
+   "src": "text/SaffronGym.asm:168",
+   "commands": [
+    {"cmd": "text", "str": "I don't"},
+    {"cmd": "line", "str": "believe this!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_SaffronGymYoungster2AfterBattleText": {
+   "kind": "text",
+   "src": "text/SaffronGym.asm:173",
+   "commands": [
+    {"cmd": "text", "str": "SABRINA just wiped"},
+    {"cmd": "line", "str": "out the KARATE"},
+    {"cmd": "cont", "str": "MASTER next door!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SaffronGymChanneler3BattleText": {
+   "kind": "text",
+   "src": "text/SaffronGym.asm:179",
+   "commands": [
+    {"cmd": "text", "str": "You and I, our"},
+    {"cmd": "line", "str": "POKéMON shall"},
+    {"cmd": "cont", "str": "fight!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SaffronGymChanneler3EndBattleText": {
+   "kind": "text",
+   "src": "text/SaffronGym.asm:185",
+   "commands": [
+    {"cmd": "text", "str": "I lost"},
+    {"cmd": "line", "str": "after all!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_SaffronGymChanneler3AfterBattleText": {
+   "kind": "text",
+   "src": "text/SaffronGym.asm:190",
+   "commands": [
+    {"cmd": "text", "str": "I knew that this"},
+    {"cmd": "line", "str": "was going to take"},
+    {"cmd": "cont", "str": "place."},
+    {"cmd": "done"}
+   ]
+  },
+  "_SaffronGymYoungster3BattleText": {
+   "kind": "text",
+   "src": "text/SaffronGym.asm:196",
+   "commands": [
+    {"cmd": "text", "str": "SABRINA is young,"},
+    {"cmd": "line", "str": "but she's also"},
+    {"cmd": "cont", "str": "our LEADER!"},
+    {"cmd": "para", "str": "You won't reach"},
+    {"cmd": "line", "str": "her easily!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SaffronGymYoungster3EndBattleText": {
+   "kind": "text",
+   "src": "text/SaffronGym.asm:205",
+   "commands": [
+    {"cmd": "text", "str": "I lost"},
+    {"cmd": "line", "str": "my concentration!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_SaffronGymYoungster3AfterBattleText": {
+   "kind": "text",
+   "src": "text/SaffronGym.asm:210",
+   "commands": [
+    {"cmd": "text", "str": "There used to be"},
+    {"cmd": "line", "str": "2 POKéMON GYMs in"},
+    {"cmd": "cont", "str": "SAFFRON."},
+    {"cmd": "para", "str": "The FIGHTING DOJO"},
+    {"cmd": "line", "str": "next door lost"},
+    {"cmd": "cont", "str": "its GYM status"},
+    {"cmd": "cont", "str": "when we went and"},
+    {"cmd": "cont", "str": "creamed them!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SaffronGymYoungster4BattleText": {
+   "kind": "text",
+   "src": "text/SaffronGym.asm:222",
+   "commands": [
+    {"cmd": "text", "str": "SAFFRON POKéMON"},
+    {"cmd": "line", "str": "GYM is famous for"},
+    {"cmd": "cont", "str": "its psychics!"},
+    {"cmd": "para", "str": "You want to see"},
+    {"cmd": "line", "str": "SABRINA!"},
+    {"cmd": "cont", "str": "I can tell!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SaffronGymYoungster4EndBattleText": {
+   "kind": "text",
+   "src": "text/SaffronGym.asm:232",
+   "commands": [
+    {"cmd": "text", "str": "Arrrgh!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_SaffronGymYoungster4AfterBattleText": {
+   "kind": "text",
+   "src": "text/SaffronGym.asm:236",
+   "commands": [
+    {"cmd": "text", "str": "That's right! I"},
+    {"cmd": "line", "str": "used telepathy to"},
+    {"cmd": "cont", "str": "read your mind!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

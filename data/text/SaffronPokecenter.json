@@ -1,0 +1,69 @@
+{
+ "map": "SaffronPokecenter",
+ "const": "SAFFRON_POKECENTER",
+ "textPointerTables": [
+  {
+   "label": "SaffronPokecenter_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_SAFFRONPOKECENTER_NURSE", "label": "SaffronPokecenterNurseText", "kind": "script", "handler": "script_pokecenter_nurse"},
+    {"id": 2, "const": "TEXT_SAFFRONPOKECENTER_BEAUTY", "label": "SaffronPokecenterBeautyText", "kind": "text", "handler": "text"},
+    {"id": 3, "const": "TEXT_SAFFRONPOKECENTER_GENTLEMAN", "label": "SaffronPokecenterGentlemanText", "kind": "text", "handler": "text"},
+    {"id": 4, "const": "TEXT_SAFFRONPOKECENTER_LINK_RECEPTIONIST", "label": "SaffronPokecenterLinkReceptionistText", "kind": "script", "handler": "script_cable_club_receptionist"}
+   ]
+  }
+ ],
+ "texts": {
+  "SaffronPokecenterNurseText": {
+   "kind": "script",
+   "src": "scripts/SaffronPokecenter.asm:13",
+   "commands": [
+    {"cmd": "script", "script": "script_pokecenter_nurse"}
+   ]
+  },
+  "SaffronPokecenterBeautyText": {
+   "kind": "text",
+   "src": "scripts/SaffronPokecenter.asm:16",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronPokecenterBeautyText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronPokecenterGentlemanText": {
+   "kind": "text",
+   "src": "scripts/SaffronPokecenter.asm:20",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronPokecenterGentlemanText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronPokecenterLinkReceptionistText": {
+   "kind": "script",
+   "src": "scripts/SaffronPokecenter.asm:24",
+   "commands": [
+    {"cmd": "script", "script": "script_cable_club_receptionist"}
+   ]
+  },
+  "_SaffronPokecenterBeautyText": {
+   "kind": "text",
+   "src": "text/SaffronPokecenter.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "POKéMON growth"},
+    {"cmd": "line", "str": "rates differ from"},
+    {"cmd": "cont", "str": "specie to specie."},
+    {"cmd": "done"}
+   ]
+  },
+  "_SaffronPokecenterGentlemanText": {
+   "kind": "text",
+   "src": "text/SaffronPokecenter.asm:8",
+   "commands": [
+    {"cmd": "text", "str": "SILPH CO. is very"},
+    {"cmd": "line", "str": "famous. That's"},
+    {"cmd": "cont", "str": "why it attracted"},
+    {"cmd": "cont", "str": "TEAM ROCKET!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

@@ -1,0 +1,108 @@
+{
+ "map": "CinnabarLab",
+ "const": "CINNABAR_LAB",
+ "textPointerTables": [
+  {
+   "label": "CinnabarLab_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_CINNABARLAB_FISHING_GURU", "label": "CinnabarLabFishingGuruText", "kind": "text", "handler": "text"},
+    {"id": 2, "const": "TEXT_CINNABARLAB_PHOTO", "label": "CinnabarLabPhotoText", "kind": "text", "handler": "text"},
+    {"id": 3, "const": "TEXT_CINNABARLAB_MEETING_ROOM_SIGN", "label": "CinnabarLabMeetingRoomSignText", "kind": "text", "handler": "text"},
+    {"id": 4, "const": "TEXT_CINNABARLAB_R_AND_D_SIGN", "label": "CinnabarLabRAndDSignText", "kind": "text", "handler": "text"},
+    {"id": 5, "const": "TEXT_CINNABARLAB_TESTING_ROOM_SIGN", "label": "CinnabarLabTestingRoomSignText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "CinnabarLabFishingGuruText": {
+   "kind": "text",
+   "src": "scripts/CinnabarLab.asm:14",
+   "commands": [
+    {"cmd": "text_far", "label": "_CinnabarLabFishingGuruText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CinnabarLabPhotoText": {
+   "kind": "text",
+   "src": "scripts/CinnabarLab.asm:18",
+   "commands": [
+    {"cmd": "text_far", "label": "_CinnabarLabPhotoText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CinnabarLabMeetingRoomSignText": {
+   "kind": "text",
+   "src": "scripts/CinnabarLab.asm:22",
+   "commands": [
+    {"cmd": "text_far", "label": "_CinnabarLabMeetingRoomSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CinnabarLabRAndDSignText": {
+   "kind": "text",
+   "src": "scripts/CinnabarLab.asm:26",
+   "commands": [
+    {"cmd": "text_far", "label": "_CinnabarLabRAndDSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CinnabarLabTestingRoomSignText": {
+   "kind": "text",
+   "src": "scripts/CinnabarLab.asm:30",
+   "commands": [
+    {"cmd": "text_far", "label": "_CinnabarLabTestingRoomSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_CinnabarLabFishingGuruText": {
+   "kind": "text",
+   "src": "text/CinnabarLab.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "We study POKéMON"},
+    {"cmd": "line", "str": "extensively here."},
+    {"cmd": "para", "str": "People often bring"},
+    {"cmd": "line", "str": "us rare POKéMON"},
+    {"cmd": "cont", "str": "for examination."},
+    {"cmd": "done"}
+   ]
+  },
+  "_CinnabarLabPhotoText": {
+   "kind": "text",
+   "src": "text/CinnabarLab.asm:11",
+   "commands": [
+    {"cmd": "text", "str": "A photo of the"},
+    {"cmd": "line", "str": "LAB's founder,"},
+    {"cmd": "cont", "str": "DR.FUJI!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CinnabarLabMeetingRoomSignText": {
+   "kind": "text",
+   "src": "text/CinnabarLab.asm:17",
+   "commands": [
+    {"cmd": "text", "str": "POKéMON LAB"},
+    {"cmd": "line", "str": "Meeting Room"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CinnabarLabRAndDSignText": {
+   "kind": "text",
+   "src": "text/CinnabarLab.asm:22",
+   "commands": [
+    {"cmd": "text", "str": "POKéMON LAB"},
+    {"cmd": "line", "str": "R-and-D Room"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CinnabarLabTestingRoomSignText": {
+   "kind": "text",
+   "src": "text/CinnabarLab.asm:27",
+   "commands": [
+    {"cmd": "text", "str": "POKéMON LAB"},
+    {"cmd": "line", "str": "Testing Room"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

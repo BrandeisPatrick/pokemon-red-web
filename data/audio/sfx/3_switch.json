@@ -1,0 +1,26 @@
+{
+  "name": "SFX_SWITCH",
+  "title": "Switch",
+  "kind": "sfx",
+  "bank": 3,
+  "id": 157,
+  "label": "SFX_Switch_3",
+  "channels": [
+    {
+      "channel": 5,
+      "label": "SFX_Switch_3_Ch5",
+      "entry": 0,
+      "bytes": 23,
+      "labels": {"SFX_Switch_3_Ch5": 0},
+      "commands": [
+        {"op": "duty_cycle", "duty": 2},
+        {"op": "square_note", "length": 4, "volume": 0, "fade": 0, "frequency": 0},
+        {"op": "square_note", "length": 2, "volume": 15, "fade": 1, "frequency": 1664},
+        {"op": "square_note", "length": 1, "volume": 0, "fade": 0, "frequency": 0},
+        {"op": "square_note", "length": 4, "volume": 15, "fade": 1, "frequency": 1920},
+        {"op": "square_note", "length": 4, "volume": 0, "fade": 0, "frequency": 0},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

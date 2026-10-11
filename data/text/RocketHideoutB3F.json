@@ -1,0 +1,149 @@
+{
+ "map": "RocketHideoutB3F",
+ "const": "ROCKET_HIDEOUT_B3F",
+ "textPointerTables": [
+  {
+   "label": "RocketHideoutB3F_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_ROCKETHIDEOUTB3F_ROCKET1", "label": "RocketHideoutB3FRocket1Text", "kind": "asm", "handler": "trainer", "trainerHeader": "RocketHideout3TrainerHeader0"},
+    {"id": 2, "const": "TEXT_ROCKETHIDEOUTB3F_ROCKET2", "label": "RocketHideoutB3FRocket2Text", "kind": "asm", "handler": "trainer", "trainerHeader": "RocketHideout3TrainerHeader1"},
+    {"id": 3, "const": "TEXT_ROCKETHIDEOUTB3F_TM_DOUBLE_EDGE", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 4, "const": "TEXT_ROCKETHIDEOUTB3F_RARE_CANDY", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"}
+   ]
+  }
+ ],
+ "texts": {
+  "PickUpItemText": {
+   "kind": "asm",
+   "src": "home/overworld_text.asm:29",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "RocketHideoutB3FRocket1Text": {
+   "kind": "asm",
+   "src": "scripts/RocketHideoutB3F.asm:144",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "RocketHideout3TrainerHeader0"
+  },
+  "RocketHideoutB3FRocket1BattleText": {
+   "kind": "text",
+   "src": "scripts/RocketHideoutB3F.asm:150",
+   "commands": [
+    {"cmd": "text_far", "label": "_RocketHideoutB3FRocket1BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "RocketHideoutB3FRocket1EndBattleText": {
+   "kind": "text",
+   "src": "scripts/RocketHideoutB3F.asm:154",
+   "commands": [
+    {"cmd": "text_far", "label": "_RocketHideoutB3FRocket1EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "RocketHideoutB3FRocket1AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/RocketHideoutB3F.asm:158",
+   "commands": [
+    {"cmd": "text_far", "label": "_RocketHideoutB3FRocket1AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "RocketHideoutB3FRocket2Text": {
+   "kind": "asm",
+   "src": "scripts/RocketHideoutB3F.asm:162",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "RocketHideout3TrainerHeader1"
+  },
+  "RocketHideoutB3FRocket2BattleText": {
+   "kind": "text",
+   "src": "scripts/RocketHideoutB3F.asm:168",
+   "commands": [
+    {"cmd": "text_far", "label": "_RocketHideout3BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "RocketHideoutB3FRocket2EndBattleText": {
+   "kind": "text",
+   "src": "scripts/RocketHideoutB3F.asm:172",
+   "commands": [
+    {"cmd": "text_far", "label": "_RocketHideout3EndBattleText3"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "RocketHideoutB3FRocket2AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/RocketHideoutB3F.asm:176",
+   "commands": [
+    {"cmd": "text_far", "label": "_RocketHide3AfterBattleText3"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_RocketHideoutB3FRocket1BattleText": {
+   "kind": "text",
+   "src": "text/RocketHideoutB3F.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Stop meddling in"},
+    {"cmd": "line", "str": "TEAM ROCKET's"},
+    {"cmd": "cont", "str": "affairs!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_RocketHideoutB3FRocket1EndBattleText": {
+   "kind": "text",
+   "src": "text/RocketHideoutB3F.asm:8",
+   "commands": [
+    {"cmd": "text", "str": "Oof!"},
+    {"cmd": "line", "str": "Taken down!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_RocketHideoutB3FRocket1AfterBattleText": {
+   "kind": "text",
+   "src": "text/RocketHideoutB3F.asm:13",
+   "commands": [
+    {"cmd": "text", "str": "SILPH SCOPE?"},
+    {"cmd": "line", "str": "The machine the"},
+    {"cmd": "cont", "str": "BOSS stole. It's"},
+    {"cmd": "cont", "str": "here somewhere."},
+    {"cmd": "done"}
+   ]
+  },
+  "_RocketHideout3BattleText": {
+   "kind": "text",
+   "src": "text/RocketHideoutB3F.asm:20",
+   "commands": [
+    {"cmd": "text", "str": "We got word from"},
+    {"cmd": "line", "str": "upstairs that you"},
+    {"cmd": "cont", "str": "were coming!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_RocketHideout3EndBattleText3": {
+   "kind": "text",
+   "src": "text/RocketHideoutB3F.asm:26",
+   "commands": [
+    {"cmd": "text", "str": "What?"},
+    {"cmd": "line", "str": "I lost? No!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_RocketHide3AfterBattleText3": {
+   "kind": "text",
+   "src": "text/RocketHideoutB3F.asm:31",
+   "commands": [
+    {"cmd": "text", "str": "Go ahead and go!"},
+    {"cmd": "line", "str": "But, you need the"},
+    {"cmd": "cont", "str": "LIFT KEY to run"},
+    {"cmd": "cont", "str": "the elevator!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

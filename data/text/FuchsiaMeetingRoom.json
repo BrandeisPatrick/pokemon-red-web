@@ -1,0 +1,77 @@
+{
+ "map": "FuchsiaMeetingRoom",
+ "const": "FUCHSIA_MEETING_ROOM",
+ "textPointerTables": [
+  {
+   "label": "FuchsiaMeetingRoom_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_FUCHSIAMEETINGROOM_SAFARI_ZONE_WORKER1", "label": "FuchsiaMeetingRoomSafariZoneWorker1", "kind": "text", "handler": "text"},
+    {"id": 2, "const": "TEXT_FUCHSIAMEETINGROOM_SAFARI_ZONE_WORKER2", "label": "FuchsiaMeetingRoomSafariZoneWorker2", "kind": "text", "handler": "text"},
+    {"id": 3, "const": "TEXT_FUCHSIAMEETINGROOM_SAFARI_ZONE_WORKER3", "label": "FuchsiaMeetingRoomSafariZoneWorker3", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "FuchsiaMeetingRoomSafariZoneWorker1": {
+   "kind": "text",
+   "src": "scripts/FuchsiaMeetingRoom.asm:12",
+   "commands": [
+    {"cmd": "text_far", "label": "_FuchsiaMeetingRoomSafariZoneWorker1"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FuchsiaMeetingRoomSafariZoneWorker2": {
+   "kind": "text",
+   "src": "scripts/FuchsiaMeetingRoom.asm:16",
+   "commands": [
+    {"cmd": "text_far", "label": "_FuchsiaMeetingRoomSafariZoneWorker2"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FuchsiaMeetingRoomSafariZoneWorker3": {
+   "kind": "text",
+   "src": "scripts/FuchsiaMeetingRoom.asm:20",
+   "commands": [
+    {"cmd": "text_far", "label": "_FuchsiaMeetingRoomSafariZoneWorker3"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_FuchsiaMeetingRoomSafariZoneWorker1": {
+   "kind": "text",
+   "src": "text/FuchsiaMeetingRoom.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "We nicknamed the"},
+    {"cmd": "line", "str": "WARDEN SLOWPOKE."},
+    {"cmd": "para", "str": "He and SLOWPOKE"},
+    {"cmd": "line", "str": "both look vacant!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_FuchsiaMeetingRoomSafariZoneWorker2": {
+   "kind": "text",
+   "src": "text/FuchsiaMeetingRoom.asm:10",
+   "commands": [
+    {"cmd": "text", "str": "SLOWPOKE is very"},
+    {"cmd": "line", "str": "knowledgeable"},
+    {"cmd": "cont", "str": "about POKéMON!"},
+    {"cmd": "para", "str": "He even has some"},
+    {"cmd": "line", "str": "fossils of rare,"},
+    {"cmd": "cont", "str": "extinct POKéMON!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_FuchsiaMeetingRoomSafariZoneWorker3": {
+   "kind": "text",
+   "src": "text/FuchsiaMeetingRoom.asm:20",
+   "commands": [
+    {"cmd": "text", "str": "SLOWPOKE came in,"},
+    {"cmd": "line", "str": "but I couldn't"},
+    {"cmd": "cont", "str": "understand him."},
+    {"cmd": "para", "str": "I think he's got"},
+    {"cmd": "line", "str": "a speech problem!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

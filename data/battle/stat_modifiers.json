@@ -1,0 +1,18 @@
+{
+ "note": "StatModifierRatios. Stat-stage bytes (wPlayerMonStatMods etc.) hold 1..13 with 7 = neutral (stage -6..+6). Attack/Defense/Speed/Special: stat = floor(unmodifiedStat * num / den), capped at 999, minimum 1 (CalculateModifiedStat and the Stat*Effect handlers). Accuracy/evasion: see CalcHitChance in docs/data-format-pokemon.md (accuracy uses the accuracy stage directly, evasion uses the mirrored stage 14 - evasionMod).",
+ "stages": [
+  {"stage": -6, "modValue": 1, "numerator": 25, "denominator": 100, "ratio": 0.25},
+  {"stage": -5, "modValue": 2, "numerator": 28, "denominator": 100, "ratio": 0.28},
+  {"stage": -4, "modValue": 3, "numerator": 33, "denominator": 100, "ratio": 0.33},
+  {"stage": -3, "modValue": 4, "numerator": 40, "denominator": 100, "ratio": 0.4},
+  {"stage": -2, "modValue": 5, "numerator": 50, "denominator": 100, "ratio": 0.5},
+  {"stage": -1, "modValue": 6, "numerator": 66, "denominator": 100, "ratio": 0.66},
+  {"stage": 0, "modValue": 7, "numerator": 1, "denominator": 1, "ratio": 1.0},
+  {"stage": 1, "modValue": 8, "numerator": 15, "denominator": 10, "ratio": 1.5},
+  {"stage": 2, "modValue": 9, "numerator": 2, "denominator": 1, "ratio": 2.0},
+  {"stage": 3, "modValue": 10, "numerator": 25, "denominator": 10, "ratio": 2.5},
+  {"stage": 4, "modValue": 11, "numerator": 3, "denominator": 1, "ratio": 3.0},
+  {"stage": 5, "modValue": 12, "numerator": 35, "denominator": 10, "ratio": 3.5},
+  {"stage": 6, "modValue": 13, "numerator": 4, "denominator": 1, "ratio": 4.0}
+ ]
+}

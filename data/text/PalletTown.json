@@ -1,0 +1,178 @@
+{
+ "map": "PalletTown",
+ "const": "PALLET_TOWN",
+ "textPointerTables": [
+  {
+   "label": "PalletTown_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_PALLETTOWN_OAK", "label": "PalletTownOakText", "kind": "asm", "handler": "asm"},
+    {"id": 2, "const": "TEXT_PALLETTOWN_GIRL", "label": "PalletTownGirlText", "kind": "text", "handler": "text"},
+    {"id": 3, "const": "TEXT_PALLETTOWN_FISHER", "label": "PalletTownFisherText", "kind": "text", "handler": "text"},
+    {"id": 4, "const": "TEXT_PALLETTOWN_OAKSLAB_SIGN", "label": "PalletTownOaksLabSignText", "kind": "text", "handler": "text"},
+    {"id": 5, "const": "TEXT_PALLETTOWN_SIGN", "label": "PalletTownSignText", "kind": "text", "handler": "text"},
+    {"id": 6, "const": "TEXT_PALLETTOWN_PLAYERSHOUSE_SIGN", "label": "PalletTownPlayersHouseSignText", "kind": "text", "handler": "text"},
+    {"id": 7, "const": "TEXT_PALLETTOWN_RIVALSHOUSE_SIGN", "label": "PalletTownRivalsHouseSignText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "PalletTownOakText": {
+   "kind": "asm",
+   "src": "scripts/PalletTown.asm:163",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["PalletTownOakText.HeyWaitDontGoOutText", "PalletTownOakText.ItsUnsafeText"]
+  },
+  "PalletTownOakText.HeyWaitDontGoOutText": {
+   "kind": "text",
+   "src": "scripts/PalletTown.asm:178",
+   "commands": [
+    {"cmd": "text_far", "label": "_PalletTownOakHeyWaitDontGoOutText"},
+    {"cmd": "text_asm"}
+   ]
+  },
+  "PalletTownOakText.ItsUnsafeText": {
+   "kind": "text",
+   "src": "scripts/PalletTown.asm:191",
+   "commands": [
+    {"cmd": "text_far", "label": "_PalletTownOakItsUnsafeText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PalletTownGirlText": {
+   "kind": "text",
+   "src": "scripts/PalletTown.asm:195",
+   "commands": [
+    {"cmd": "text_far", "label": "_PalletTownGirlText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PalletTownFisherText": {
+   "kind": "text",
+   "src": "scripts/PalletTown.asm:199",
+   "commands": [
+    {"cmd": "text_far", "label": "_PalletTownFisherText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PalletTownOaksLabSignText": {
+   "kind": "text",
+   "src": "scripts/PalletTown.asm:203",
+   "commands": [
+    {"cmd": "text_far", "label": "_PalletTownOaksLabSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PalletTownSignText": {
+   "kind": "text",
+   "src": "scripts/PalletTown.asm:207",
+   "commands": [
+    {"cmd": "text_far", "label": "_PalletTownSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PalletTownPlayersHouseSignText": {
+   "kind": "text",
+   "src": "scripts/PalletTown.asm:211",
+   "commands": [
+    {"cmd": "text_far", "label": "_PalletTownPlayersHouseSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PalletTownRivalsHouseSignText": {
+   "kind": "text",
+   "src": "scripts/PalletTown.asm:215",
+   "commands": [
+    {"cmd": "text_far", "label": "_PalletTownRivalsHouseSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_PalletTownOakHeyWaitDontGoOutText": {
+   "kind": "text",
+   "src": "text/PalletTown.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "OAK: Hey! Wait!"},
+    {"cmd": "line", "str": "Don't go out!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_PalletTownOakItsUnsafeText": {
+   "kind": "text",
+   "src": "text/PalletTown.asm:7",
+   "commands": [
+    {"cmd": "text", "str": "OAK: It's unsafe!"},
+    {"cmd": "line", "str": "Wild POKéMON live"},
+    {"cmd": "cont", "str": "in tall grass!"},
+    {"cmd": "para", "str": "You need your own"},
+    {"cmd": "line", "str": "POKéMON for your"},
+    {"cmd": "cont", "str": "protection."},
+    {"cmd": "cont", "str": "I know!"},
+    {"cmd": "para", "str": "Here, come with"},
+    {"cmd": "line", "str": "me!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PalletTownGirlText": {
+   "kind": "text",
+   "src": "text/PalletTown.asm:21",
+   "commands": [
+    {"cmd": "text", "str": "I'm raising"},
+    {"cmd": "line", "str": "POKéMON too!"},
+    {"cmd": "para", "str": "When they get"},
+    {"cmd": "line", "str": "strong, they can"},
+    {"cmd": "cont", "str": "protect me!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PalletTownFisherText": {
+   "kind": "text",
+   "src": "text/PalletTown.asm:30",
+   "commands": [
+    {"cmd": "text", "str": "Technology is"},
+    {"cmd": "line", "str": "incredible!"},
+    {"cmd": "para", "str": "You can now store"},
+    {"cmd": "line", "str": "and recall items"},
+    {"cmd": "cont", "str": "and POKéMON as"},
+    {"cmd": "cont", "str": "data via PC!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PalletTownOaksLabSignText": {
+   "kind": "text",
+   "src": "text/PalletTown.asm:40",
+   "commands": [
+    {"cmd": "text", "str": "OAK POKéMON"},
+    {"cmd": "line", "str": "RESEARCH LAB"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PalletTownSignText": {
+   "kind": "text",
+   "src": "text/PalletTown.asm:45",
+   "commands": [
+    {"cmd": "text", "str": "PALLET TOWN"},
+    {"cmd": "line", "str": "Shades of your"},
+    {"cmd": "cont", "str": "journey await!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PalletTownPlayersHouseSignText": {
+   "kind": "text",
+   "src": "text/PalletTown.asm:51",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER}'s house "},
+    {"cmd": "done"}
+   ]
+  },
+  "_PalletTownRivalsHouseSignText": {
+   "kind": "text",
+   "src": "text/PalletTown.asm:55",
+   "commands": [
+    {"cmd": "text", "str": "{RIVAL}'s house "},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

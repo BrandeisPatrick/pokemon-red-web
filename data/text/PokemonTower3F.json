@@ -1,0 +1,203 @@
+{
+ "map": "PokemonTower3F",
+ "const": "POKEMON_TOWER_3F",
+ "textPointerTables": [
+  {
+   "label": "PokemonTower3F_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_POKEMONTOWER3F_CHANNELER1", "label": "PokemonTower3FChanneler1Text", "kind": "asm", "handler": "trainer", "trainerHeader": "PokemonTower3TrainerHeader0"},
+    {"id": 2, "const": "TEXT_POKEMONTOWER3F_CHANNELER2", "label": "PokemonTower3FChanneler2Text", "kind": "asm", "handler": "trainer", "trainerHeader": "PokemonTower3TrainerHeader1"},
+    {"id": 3, "const": "TEXT_POKEMONTOWER3F_CHANNELER3", "label": "PokemonTower3FChanneler3Text", "kind": "asm", "handler": "trainer", "trainerHeader": "PokemonTower3TrainerHeader2"},
+    {"id": 4, "const": "TEXT_POKEMONTOWER3F_ESCAPE_ROPE", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"}
+   ]
+  }
+ ],
+ "texts": {
+  "PickUpItemText": {
+   "kind": "asm",
+   "src": "home/overworld_text.asm:29",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "PokemonTower3FChanneler1Text": {
+   "kind": "asm",
+   "src": "scripts/PokemonTower3F.asm:34",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "PokemonTower3TrainerHeader0"
+  },
+  "PokemonTower3FChanneler2Text": {
+   "kind": "asm",
+   "src": "scripts/PokemonTower3F.asm:40",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "PokemonTower3TrainerHeader1"
+  },
+  "PokemonTower3FChanneler3Text": {
+   "kind": "asm",
+   "src": "scripts/PokemonTower3F.asm:46",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "PokemonTower3TrainerHeader2"
+  },
+  "PokemonTower3FChanneler1BattleText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower3F.asm:52",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower3FChanneler1BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower3FChanneler1EndBattleText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower3F.asm:56",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower3FChanneler1EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower3FChanneler1AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower3F.asm:60",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower3FChanneler1AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower3FChanneler2BattleText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower3F.asm:64",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower3FChanneler2BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower3FChanneler2EndBattleText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower3F.asm:68",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower3FChanneler2EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower3FChanneler2AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower3F.asm:72",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower3FChanneler2AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower3FChanneler3BattleText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower3F.asm:76",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower3FChanneler3BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower3FChanneler3EndBattleText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower3F.asm:80",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower3FChanneler3EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower3FChanneler3AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower3F.asm:84",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower3FChanneler3AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_PokemonTower3FChanneler1BattleText": {
+   "kind": "text",
+   "src": "text/PokemonTower3F.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Urrg...Awaa..."},
+    {"cmd": "line", "str": "Huhu...graa.."},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonTower3FChanneler1EndBattleText": {
+   "kind": "text",
+   "src": "text/PokemonTower3F.asm:7",
+   "commands": [
+    {"cmd": "text", "str": "Hwa!"},
+    {"cmd": "line", "str": "I'm saved!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_PokemonTower3FChanneler1AfterBattleText": {
+   "kind": "text",
+   "src": "text/PokemonTower3F.asm:12",
+   "commands": [
+    {"cmd": "text", "str": "The GHOSTs can be"},
+    {"cmd": "line", "str": "identified by the"},
+    {"cmd": "cont", "str": "SILPH SCOPE."},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonTower3FChanneler2BattleText": {
+   "kind": "text",
+   "src": "text/PokemonTower3F.asm:18",
+   "commands": [
+    {"cmd": "text", "str": "Kekeke...."},
+    {"cmd": "line", "str": "Kwaaah!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonTower3FChanneler2EndBattleText": {
+   "kind": "text",
+   "src": "text/PokemonTower3F.asm:23",
+   "commands": [
+    {"cmd": "text", "str": "Hmm?"},
+    {"cmd": "line", "str": "What am I doing?"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_PokemonTower3FChanneler2AfterBattleText": {
+   "kind": "text",
+   "src": "text/PokemonTower3F.asm:28",
+   "commands": [
+    {"cmd": "text", "str": "Sorry! I was"},
+    {"cmd": "line", "str": "possessed!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonTower3FChanneler3BattleText": {
+   "kind": "text",
+   "src": "text/PokemonTower3F.asm:33",
+   "commands": [
+    {"cmd": "text", "str": "Be gone!"},
+    {"cmd": "line", "str": "Evil spirit!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonTower3FChanneler3EndBattleText": {
+   "kind": "text",
+   "src": "text/PokemonTower3F.asm:38",
+   "commands": [
+    {"cmd": "text", "str": "Whew!"},
+    {"cmd": "line", "str": "The spirit left!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_PokemonTower3FChanneler3AfterBattleText": {
+   "kind": "text",
+   "src": "text/PokemonTower3F.asm:43",
+   "commands": [
+    {"cmd": "text", "str": "My friends were"},
+    {"cmd": "line", "str": "possessed too!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

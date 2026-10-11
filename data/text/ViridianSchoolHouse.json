@@ -1,0 +1,53 @@
+{
+ "map": "ViridianSchoolHouse",
+ "const": "VIRIDIAN_SCHOOL_HOUSE",
+ "textPointerTables": [
+  {
+   "label": "ViridianSchoolHouse_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_VIRIDIANSCHOOLHOUSE_BRUNETTE_GIRL", "label": "ViridianSchoolHouseBrunetteGirlText", "kind": "text", "handler": "text"},
+    {"id": 2, "const": "TEXT_VIRIDIANSCHOOLHOUSE_COOLTRAINER_F", "label": "ViridianSchoolHouseCooltrainerFText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "ViridianSchoolHouseBrunetteGirlText": {
+   "kind": "text",
+   "src": "scripts/ViridianSchoolHouse.asm:10",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianSchoolHouseBrunetteGirlText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianSchoolHouseCooltrainerFText": {
+   "kind": "text",
+   "src": "scripts/ViridianSchoolHouse.asm:14",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianSchoolHouseCooltrainerFText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_ViridianSchoolHouseBrunetteGirlText": {
+   "kind": "text",
+   "src": "text/ViridianSchoolHouse.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Whew! I'm trying"},
+    {"cmd": "line", "str": "to memorize all"},
+    {"cmd": "cont", "str": "my notes."},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianSchoolHouseCooltrainerFText": {
+   "kind": "text",
+   "src": "text/ViridianSchoolHouse.asm:8",
+   "commands": [
+    {"cmd": "text", "str": "Okay!"},
+    {"cmd": "para", "str": "Be sure to read"},
+    {"cmd": "line", "str": "the blackboard"},
+    {"cmd": "cont", "str": "carefully!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

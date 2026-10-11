@@ -1,0 +1,31 @@
+{
+ "map": "CeladonMansionRoof",
+ "const": "CELADON_MANSION_ROOF",
+ "textPointerTables": [
+  {
+   "label": "CeladonMansionRoof_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_CELADONMANSIONROOF_HOUSE_SIGN", "label": "CeladonMansionRoofHouseSignText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "CeladonMansionRoofHouseSignText": {
+   "kind": "text",
+   "src": "scripts/CeladonMansionRoof.asm:9",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonMansionRoofHouseSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_CeladonMansionRoofHouseSignText": {
+   "kind": "text",
+   "src": "text/CeladonMansionRoof.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "I KNOW EVERYTHING!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

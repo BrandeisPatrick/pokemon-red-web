@@ -1,0 +1,50 @@
+{
+ "id": 66,
+ "const": "BIKE_SHOP",
+ "name": "BikeShop",
+ "displayName": "CERULEAN CITY",
+ "width": 4,
+ "height": 4,
+ "tileset": "CLUB",
+ "tilesetId": 21,
+ "tilesetFile": "data/tilesets/Club.json",
+ "isOutside": false,
+ "borderBlock": 14,
+ "blocks": [4, 5, 2, 3, 8, 8, 6, 7, 11, 10, 10, 10, 10, 1, 10, 9],
+ "connections": {},
+ "warps": [
+  {"x": 2, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 5, "destWarpIndex": 4},
+  {"x": 3, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 5, "destWarpIndex": 4}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "BIKESHOP_CLERK", "x": 6, "y": 2, "sprite": "SPRITE_BIKE_SHOP_CLERK", "spriteId": 21, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_BIKESHOP_CLERK", "textIndex": 1},
+  {"index": 2, "const": "BIKESHOP_MIDDLE_AGED_WOMAN", "x": 5, "y": 6, "sprite": "SPRITE_MIDDLE_AGED_WOMAN", "spriteId": 28, "movement": "WALK", "rangeOrDirection": "UP_DOWN", "rangeOrDirectionValue": 1, "behavior": "walk_up_down", "textId": "TEXT_BIKESHOP_MIDDLE_AGED_WOMAN", "textIndex": 2},
+  {"index": 3, "const": "BIKESHOP_YOUNGSTER", "x": 1, "y": 3, "sprite": "SPRITE_YOUNGSTER", "spriteId": 4, "movement": "STAY", "rangeOrDirection": "UP", "rangeOrDirectionValue": 209, "behavior": "face_up", "textId": "TEXT_BIKESHOP_YOUNGSTER", "textIndex": 3}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [
+  {"x": 1, "y": 0, "routine": "PrintNewBikeText", "arg": "ANY_FACING", "argValue": 208, "kind": "event"},
+  {"x": 2, "y": 1, "routine": "PrintNewBikeText", "arg": "ANY_FACING", "argValue": 208, "kind": "event"},
+  {"x": 1, "y": 2, "routine": "PrintNewBikeText", "arg": "ANY_FACING", "argValue": 208, "kind": "event"},
+  {"x": 3, "y": 2, "routine": "PrintNewBikeText", "arg": "ANY_FACING", "argValue": 208, "kind": "event"},
+  {"x": 0, "y": 4, "routine": "PrintNewBikeText", "arg": "ANY_FACING", "argValue": 208, "kind": "event"},
+  {"x": 1, "y": 5, "routine": "PrintNewBikeText", "arg": "ANY_FACING", "argValue": 208, "kind": "event"}
+ ],
+ "spriteSet": null,
+ "music": "MUSIC_CITIES2",
+ "wild": null,
+ "townMap": {"x": 10, "y": 2, "group": "CERULEAN_CITY"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/BikeShop.json",
+ "textPointers": "BikeShop_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/BikeShop.asm",
+  "objects": "data/maps/objects/BikeShop.asm",
+  "blocks": "maps/BikeShop.blk",
+  "script": "scripts/BikeShop.asm"
+ },
+ "lastMapCandidates": ["CERULEAN_CITY"],
+ "palette": {"pal": "PAL_CERULEAN", "rule": "lastMap", "viaLastMap": "CERULEAN_CITY"}
+}

@@ -1,0 +1,50 @@
+{
+ "id": 100,
+ "const": "SS_ANNE_KITCHEN",
+ "name": "SSAnneKitchen",
+ "displayName": "S.S.ANNE",
+ "width": 7,
+ "height": 8,
+ "tileset": "SHIP",
+ "tilesetId": 13,
+ "tilesetFile": "data/tilesets/Ship.json",
+ "isOutside": false,
+ "borderBlock": 12,
+ "blocks": [10, 10, 10, 9, 10, 10, 10, 11, 11, 11, 11, 11, 11, 11, 11, 6, 11, 6, 11, 6, 53, 11, 42, 11, 42, 11, 42, 53, 11, 42, 11, 42, 11, 42, 53, 11, 44, 11, 44, 11, 44, 11, 11, 11, 11, 11, 11, 11, 11, 43, 45, 43, 45, 43, 45, 43],
+ "connections": {},
+ "warps": [
+  {"x": 6, "y": 0, "destMap": "SS_ANNE_1F", "destMapId": 95, "destMapName": "SSAnne1F", "destWarp": 11, "destWarpIndex": 10}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "SSANNEKITCHEN_COOK1", "x": 1, "y": 8, "sprite": "SPRITE_COOK", "spriteId": 20, "movement": "WALK", "rangeOrDirection": "UP_DOWN", "rangeOrDirectionValue": 1, "behavior": "walk_up_down", "textId": "TEXT_SSANNEKITCHEN_COOK1", "textIndex": 1},
+  {"index": 2, "const": "SSANNEKITCHEN_COOK2", "x": 5, "y": 8, "sprite": "SPRITE_COOK", "spriteId": 20, "movement": "WALK", "rangeOrDirection": "UP_DOWN", "rangeOrDirectionValue": 1, "behavior": "walk_up_down", "textId": "TEXT_SSANNEKITCHEN_COOK2", "textIndex": 2},
+  {"index": 3, "const": "SSANNEKITCHEN_COOK3", "x": 9, "y": 7, "sprite": "SPRITE_COOK", "spriteId": 20, "movement": "WALK", "rangeOrDirection": "UP_DOWN", "rangeOrDirectionValue": 1, "behavior": "walk_up_down", "textId": "TEXT_SSANNEKITCHEN_COOK3", "textIndex": 3},
+  {"index": 4, "const": "SSANNEKITCHEN_COOK4", "x": 13, "y": 6, "sprite": "SPRITE_COOK", "spriteId": 20, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_SSANNEKITCHEN_COOK4", "textIndex": 4},
+  {"index": 5, "const": "SSANNEKITCHEN_COOK5", "x": 13, "y": 8, "sprite": "SPRITE_COOK", "spriteId": 20, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_SSANNEKITCHEN_COOK5", "textIndex": 5},
+  {"index": 6, "const": "SSANNEKITCHEN_COOK6", "x": 13, "y": 10, "sprite": "SPRITE_COOK", "spriteId": 20, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_SSANNEKITCHEN_COOK6", "textIndex": 6},
+  {"index": 7, "const": "SSANNEKITCHEN_COOK7", "x": 11, "y": 13, "sprite": "SPRITE_COOK", "spriteId": 20, "movement": "STAY", "rangeOrDirection": "UP", "rangeOrDirectionValue": 209, "behavior": "face_up", "textId": "TEXT_SSANNEKITCHEN_COOK7", "textIndex": 7}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [
+  {"x": 13, "y": 5, "routine": "PrintTrashText", "arg": "SPRITE_FACING_DOWN", "argValue": 0, "kind": "event"},
+  {"x": 13, "y": 7, "routine": "PrintTrashText", "arg": "SPRITE_FACING_DOWN", "argValue": 0, "kind": "event"},
+  {"x": 13, "y": 9, "routine": "HiddenItems", "arg": "GREAT_BALL", "argValue": 3, "kind": "item", "item": "GREAT_BALL", "flagIndex": 5}
+ ],
+ "spriteSet": null,
+ "music": "MUSIC_SS_ANNE",
+ "wild": null,
+ "townMap": {"x": 9, "y": 10, "group": "SS_ANNE"},
+ "extraWarpCheck": "warpTileInFront",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/SSAnneKitchen.json",
+ "textPointers": "SSAnneKitchen_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/SSAnneKitchen.asm",
+  "objects": "data/maps/objects/SSAnneKitchen.asm",
+  "blocks": "maps/SSAnneKitchen.blk",
+  "script": "scripts/SSAnneKitchen.asm"
+ },
+ "lastMapCandidates": ["VERMILION_CITY"],
+ "palette": {"pal": "PAL_VERMILION", "rule": "lastMap", "viaLastMap": "VERMILION_CITY"}
+}

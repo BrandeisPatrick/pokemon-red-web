@@ -1,0 +1,78 @@
+{
+ "map": "Route15Gate2F",
+ "const": "ROUTE_15_GATE_2F",
+ "textPointerTables": [
+  {
+   "label": "Route15Gate2F_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_ROUTE15GATE2F_OAKS_AIDE", "label": "Route15Gate2FOaksAideText", "kind": "asm", "handler": "asm"},
+    {"id": 2, "const": "TEXT_ROUTE15GATE2F_BINOCULARS", "label": "Route15Gate2FBinocularsText", "kind": "asm", "handler": "asm"}
+   ]
+  }
+ ],
+ "texts": {
+  "Route15Gate2FOaksAideText": {
+   "kind": "asm",
+   "src": "scripts/Route15Gate2F.asm:10",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["Route15Gate2FOaksAideText.ExpAllText"]
+  },
+  "Route15Gate2FOaksAideText.ExpAllText": {
+   "kind": "text",
+   "src": "scripts/Route15Gate2F.asm:35",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route15Gate2FOaksAideExpAllText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route15Gate2FBinocularsText": {
+   "kind": "asm",
+   "src": "scripts/Route15Gate2F.asm:39",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["Route15Gate2FBinocularsText.Text"]
+  },
+  "Route15Gate2FBinocularsText.Text": {
+   "kind": "text",
+   "src": "scripts/Route15Gate2F.asm:44",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route15Gate2FBinocularsText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_Route15Gate2FOaksAideExpAllText": {
+   "kind": "text",
+   "src": "text/Route15Gate2F.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "EXP.ALL gives"},
+    {"cmd": "line", "str": "EXP points to all"},
+    {"cmd": "cont", "str": "the POKéMON with"},
+    {"cmd": "cont", "str": "you, even if they"},
+    {"cmd": "cont", "str": "don't fight."},
+    {"cmd": "para", "str": "It does, however,"},
+    {"cmd": "line", "str": "reduce the amount"},
+    {"cmd": "cont", "str": "of EXP for each"},
+    {"cmd": "cont", "str": "POKéMON."},
+    {"cmd": "para", "str": "If you don't need"},
+    {"cmd": "line", "str": "it, you should "},
+    {"cmd": "cont", "str": "store it via PC."},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route15Gate2FBinocularsText": {
+   "kind": "text",
+   "src": "text/Route15Gate2F.asm:19",
+   "commands": [
+    {"cmd": "text", "str": "Looked into the"},
+    {"cmd": "line", "str": "binoculars."},
+    {"cmd": "para", "str": "It looks like a"},
+    {"cmd": "line", "str": "small island!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

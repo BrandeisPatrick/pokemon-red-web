@@ -1,0 +1,27 @@
+{
+  "name": "SFX_TRAINER_APPEARED",
+  "title": "Trainer Appeared",
+  "kind": "sfx",
+  "bank": 2,
+  "id": 233,
+  "label": "SFX_Trainer_Appeared",
+  "channels": [
+    {
+      "channel": 5,
+      "label": "SFX_Trainer_Appeared_Ch5",
+      "entry": 0,
+      "bytes": 27,
+      "labels": {"SFX_Trainer_Appeared_Ch5": 0},
+      "commands": [
+        {"op": "duty_cycle", "duty": 0},
+        {"op": "square_note", "length": 0, "volume": 13, "fade": 2, "frequency": 1792},
+        {"op": "square_note", "length": 0, "volume": 13, "fade": 2, "frequency": 1856},
+        {"op": "square_note", "length": 0, "volume": 13, "fade": 2, "frequency": 1920},
+        {"op": "square_note", "length": 0, "volume": 13, "fade": 2, "frequency": 1984},
+        {"op": "square_note", "length": 10, "volume": 14, "fade": 1, "frequency": 2016},
+        {"op": "square_note", "length": 1, "volume": 0, "fade": 0, "frequency": 0},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "SFX_TELEPORT_EXIT_2",
+  "title": "Teleport Exit 2",
+  "kind": "sfx",
+  "bank": 3,
+  "id": 161,
+  "label": "SFX_Teleport_Exit2_3",
+  "channels": [
+    {
+      "channel": 5,
+      "label": "SFX_Teleport_Exit2_3_Ch5",
+      "entry": 0,
+      "bytes": 11,
+      "labels": {"SFX_Teleport_Exit2_3_Ch5": 0},
+      "commands": [
+        {"op": "duty_cycle", "duty": 1},
+        {"op": "pitch_sweep", "length": 1, "change": 6},
+        {"op": "square_note", "length": 15, "volume": 13, "fade": 2, "frequency": 1280},
+        {"op": "pitch_sweep", "length": 0, "change": 8},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

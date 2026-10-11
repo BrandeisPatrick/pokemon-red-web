@@ -1,0 +1,42 @@
+{
+ "id": 131,
+ "const": "CELADON_MANSION_ROOF",
+ "name": "CeladonMansionRoof",
+ "displayName": "CELADON CITY",
+ "width": 4,
+ "height": 6,
+ "tileset": "MANSION",
+ "tilesetId": 19,
+ "tilesetFile": "data/tilesets/Mansion.json",
+ "isOutside": false,
+ "borderBlock": 9,
+ "blocks": [69, 59, 28, 27, 61, 7, 29, 29, 33, 34, 29, 29, 37, 38, 29, 29, 51, 31, 30, 29, 32, 31, 31, 30],
+ "connections": {},
+ "warps": [
+  {"x": 6, "y": 1, "destMap": "CELADON_MANSION_3F", "destMapId": 130, "destMapName": "CeladonMansion3F", "destWarp": 2, "destWarpIndex": 1},
+  {"x": 2, "y": 1, "destMap": "CELADON_MANSION_3F", "destMapId": 130, "destMapName": "CeladonMansion3F", "destWarp": 3, "destWarpIndex": 2},
+  {"x": 2, "y": 7, "destMap": "CELADON_MANSION_ROOF_HOUSE", "destMapId": 132, "destMapName": "CeladonMansionRoofHouse", "destWarp": 1, "destWarpIndex": 0}
+ ],
+ "bgEvents": [
+  {"x": 3, "y": 7, "textId": "TEXT_CELADONMANSIONROOF_HOUSE_SIGN", "textIndex": 1}
+ ],
+ "objectEvents": [],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_CELADON",
+ "wild": null,
+ "townMap": {"x": 7, "y": 5, "group": "CELADON_CITY"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/CeladonMansionRoof.json",
+ "textPointers": "CeladonMansionRoof_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/CeladonMansionRoof.asm",
+  "objects": "data/maps/objects/CeladonMansionRoof.asm",
+  "blocks": "maps/CeladonMansionRoof.blk",
+  "script": "scripts/CeladonMansionRoof.asm"
+ },
+ "lastMapCandidates": ["CELADON_CITY"],
+ "palette": {"pal": "PAL_CELADON", "rule": "lastMap", "viaLastMap": "CELADON_CITY"}
+}

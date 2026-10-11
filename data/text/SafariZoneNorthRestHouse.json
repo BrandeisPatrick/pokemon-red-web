@@ -1,0 +1,79 @@
+{
+ "map": "SafariZoneNorthRestHouse",
+ "const": "SAFARI_ZONE_NORTH_REST_HOUSE",
+ "textPointerTables": [
+  {
+   "label": "SafariZoneNorthRestHouse_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_SAFARIZONENORTHRESTHOUSE_SCIENTIST", "label": "SafariZoneNorthRestHouseScientistText", "kind": "text", "handler": "text"},
+    {"id": 2, "const": "TEXT_SAFARIZONENORTHRESTHOUSE_SAFARI_ZONE_WORKER", "label": "SafariZoneNorthRestHouseSafariZoneWorkerText", "kind": "text", "handler": "text"},
+    {"id": 3, "const": "TEXT_SAFARIZONENORTHRESTHOUSE_GENTLEMAN", "label": "SafariZoneNorthRestHouseGentlemanText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "SafariZoneNorthRestHouseScientistText": {
+   "kind": "text",
+   "src": "scripts/SafariZoneNorthRestHouse.asm:12",
+   "commands": [
+    {"cmd": "text_far", "label": "_SafariZoneNorthRestHouseScientistText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SafariZoneNorthRestHouseSafariZoneWorkerText": {
+   "kind": "text",
+   "src": "scripts/SafariZoneNorthRestHouse.asm:16",
+   "commands": [
+    {"cmd": "text_far", "label": "_SafariZoneNorthRestHouseSafariZoneWorkerText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SafariZoneNorthRestHouseGentlemanText": {
+   "kind": "text",
+   "src": "scripts/SafariZoneNorthRestHouse.asm:20",
+   "commands": [
+    {"cmd": "text_far", "label": "_SafariZoneNorthRestHouseGentlemanText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_SafariZoneNorthRestHouseScientistText": {
+   "kind": "text",
+   "src": "text/SafariZoneNorthRestHouse.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "You can keep any"},
+    {"cmd": "line", "str": "item you find on"},
+    {"cmd": "cont", "str": "the ground here."},
+    {"cmd": "para", "str": "But, you'll run"},
+    {"cmd": "line", "str": "out of time if"},
+    {"cmd": "cont", "str": "you try for all"},
+    {"cmd": "cont", "str": "of them at once!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SafariZoneNorthRestHouseSafariZoneWorkerText": {
+   "kind": "text",
+   "src": "text/SafariZoneNorthRestHouse.asm:13",
+   "commands": [
+    {"cmd": "text", "str": "Go to the deepest"},
+    {"cmd": "line", "str": "part of the"},
+    {"cmd": "cont", "str": "SAFARI ZONE. You"},
+    {"cmd": "cont", "str": "will win a prize!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SafariZoneNorthRestHouseGentlemanText": {
+   "kind": "text",
+   "src": "text/SafariZoneNorthRestHouse.asm:20",
+   "commands": [
+    {"cmd": "text", "str": "My EEVEE evolved"},
+    {"cmd": "line", "str": "into FLAREON!"},
+    {"cmd": "para", "str": "But, a friend's"},
+    {"cmd": "line", "str": "EEVEE turned into"},
+    {"cmd": "cont", "str": "a VAPOREON!"},
+    {"cmd": "cont", "str": "I wonder why?"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

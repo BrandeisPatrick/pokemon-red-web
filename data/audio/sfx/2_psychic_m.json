@@ -1,0 +1,62 @@
+{
+  "name": "SFX_PSYCHIC_M",
+  "title": "Psychic M",
+  "kind": "sfx",
+  "bank": 2,
+  "id": 216,
+  "label": "SFX_Psychic_M",
+  "channels": [
+    {
+      "channel": 5,
+      "label": "SFX_Psychic_M_Ch5",
+      "entry": 0,
+      "bytes": 31,
+      "labels": {"SFX_Psychic_M_Ch5": 0},
+      "commands": [
+        {"op": "duty_cycle", "duty": 2},
+        {"op": "pitch_sweep", "length": 15, "change": 7},
+        {"op": "square_note", "length": 8, "volume": 12, "fade": 4, "frequency": 1981},
+        {"op": "square_note", "length": 8, "volume": 12, "fade": 4, "frequency": 1982},
+        {"op": "square_note", "length": 8, "volume": 12, "fade": 4, "frequency": 1983},
+        {"op": "square_note", "length": 8, "volume": 12, "fade": 4, "frequency": 1984},
+        {"op": "square_note", "length": 15, "volume": 12, "fade": 4, "frequency": 1985},
+        {"op": "square_note", "length": 15, "volume": 15, "fade": 2, "frequency": 1984},
+        {"op": "pitch_sweep", "length": 0, "change": 8},
+        {"op": "sound_ret"}
+      ]
+    },
+    {
+      "channel": 6,
+      "label": "SFX_Psychic_M_Ch6",
+      "entry": 0,
+      "bytes": 27,
+      "labels": {"SFX_Psychic_M_Ch6": 0},
+      "commands": [
+        {"op": "duty_cycle", "duty": 2},
+        {"op": "square_note", "length": 8, "volume": 12, "fade": 4, "frequency": 1904},
+        {"op": "square_note", "length": 8, "volume": 12, "fade": 4, "frequency": 1889},
+        {"op": "square_note", "length": 8, "volume": 12, "fade": 4, "frequency": 1890},
+        {"op": "square_note", "length": 8, "volume": 12, "fade": 4, "frequency": 1891},
+        {"op": "square_note", "length": 15, "volume": 12, "fade": 4, "frequency": 1892},
+        {"op": "square_note", "length": 15, "volume": 15, "fade": 2, "frequency": 1892},
+        {"op": "sound_ret"}
+      ]
+    },
+    {
+      "channel": 8,
+      "label": "SFX_Psychic_M_Ch8",
+      "entry": 0,
+      "bytes": 19,
+      "labels": {"SFX_Psychic_M_Ch8": 0},
+      "commands": [
+        {"op": "noise_note", "length": 15, "volume": 3, "fade": -7, "value": 20},
+        {"op": "noise_note", "length": 15, "volume": 12, "fade": -7, "value": 19},
+        {"op": "noise_note", "length": 15, "volume": 12, "fade": -7, "value": 18},
+        {"op": "noise_note", "length": 15, "volume": 12, "fade": -7, "value": 17},
+        {"op": "noise_note", "length": 15, "volume": 12, "fade": -7, "value": 16},
+        {"op": "noise_note", "length": 15, "volume": 12, "fade": 2, "value": 16},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

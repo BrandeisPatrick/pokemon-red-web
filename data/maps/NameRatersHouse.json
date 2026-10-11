@@ -1,0 +1,41 @@
+{
+ "id": 229,
+ "const": "NAME_RATERS_HOUSE",
+ "name": "NameRatersHouse",
+ "displayName": "LAVENDER TOWN",
+ "width": 4,
+ "height": 4,
+ "tileset": "HOUSE",
+ "tilesetId": 8,
+ "tilesetFile": "data/tilesets/House.json",
+ "isOutside": false,
+ "borderBlock": 10,
+ "blocks": [4, 14, 5, 9, 15, 1, 2, 15, 15, 12, 13, 15, 6, 11, 15, 7],
+ "connections": {},
+ "warps": [
+  {"x": 2, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 6, "destWarpIndex": 5},
+  {"x": 3, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 6, "destWarpIndex": 5}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "NAMERATERSHOUSE_NAME_RATER", "x": 5, "y": 3, "sprite": "SPRITE_SILPH_PRESIDENT", "spriteId": 43, "movement": "STAY", "rangeOrDirection": "LEFT", "rangeOrDirectionValue": 210, "behavior": "face_left", "textId": "TEXT_NAMERATERSHOUSE_NAME_RATER", "textIndex": 1}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_CITIES2",
+ "wild": null,
+ "townMap": {"x": 14, "y": 5, "group": "LAVENDER_TOWN_3"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/NameRatersHouse.json",
+ "textPointers": "NameRatersHouse_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/NameRatersHouse.asm",
+  "objects": "data/maps/objects/NameRatersHouse.asm",
+  "blocks": "maps/ViridianNicknameHouse.blk",
+  "script": "scripts/NameRatersHouse.asm"
+ },
+ "lastMapCandidates": ["LAVENDER_TOWN"],
+ "palette": {"pal": "PAL_LAVENDER", "rule": "lastMap", "viaLastMap": "LAVENDER_TOWN"}
+}

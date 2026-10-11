@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Overworld test</title>
+  <link rel="icon" href="data:,">
+  <style>
+    :root { color-scheme: dark; }
+    html, body { margin: 0; height: 100%; background: #2b2b30; color: #ddd; font: 12px/1.4 ui-monospace, Menlo, monospace; }
+    body { display: flex; gap: 12px; padding: 10px; box-sizing: border-box; }
+    #left { flex: 0 0 auto; display: flex; flex-direction: column; align-items: center; gap: 6px; }
+    #screen { display: block; image-rendering: pixelated; image-rendering: crisp-edges; background: #000; }
+    #panel { flex: 1 1 auto; min-width: 300px; max-width: 520px; overflow-y: auto; overflow-x: hidden; }
+    fieldset { border: 1px solid #333; margin: 0 0 8px; padding: 6px 8px; }
+    legend { color: #9ad; }
+    select, input, button { font: inherit; background: #222; color: #ddd; border: 1px solid #444; border-radius: 3px; padding: 2px 4px; }
+    button { cursor: pointer; }
+    button:hover { background: #2c2c2c; }
+    select#map { width: 100%; }
+    .row { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin: 3px 0; }
+    #info { white-space: pre-wrap; word-break: break-all; color: #cfc; margin: 0; }
+    .log { height: 130px; overflow-y: auto; background: #181818; border: 1px solid #333; padding: 2px 4px; white-space: pre-wrap; word-break: break-all; }
+    .help { color: #888; }
+    .err { color: #f88; white-space: pre-wrap; }
+    label { user-select: none; }
+  </style>
+</head>
+<body>
+  <div id="left">
+    <canvas id="screen" width="160" height="144" aria-label="Overworld"></canvas>
+    <div class="help">Arrows/WASD move · Z/Enter = A · X/Backspace = B · Shift = START (debug menu)</div>
+  </div>
+  <div id="panel">
+    <fieldset><legend>Position</legend><pre id="info">loading…</pre></fieldset>
+    <fieldset><legend>Warp</legend>
+      <div class="row"><select id="map"></select></div>
+      <div class="row">
+        <select id="warp"></select>
+        <button id="go">Warp</button>
+        x <input id="tx" type="number" style="width:4em"> y <input id="ty" type="number" style="width:4em">
+        <button id="tp">Teleport</button>
+      </div>
+      <div class="row">
+        <button id="newgame">New game (Red's room)</button>
+        <button id="pallet">Pallet Town</button>
+        <button id="viridian">Viridian City</button>
+        <button id="cerulean">Cerulean City</button>
+        <button id="mtmoon">Mt. Moon 1F</button>
+        <button id="pkmncenter">Viridian Pokécenter</button>
+      </div>
+    </fieldset>
+    <fieldset><legend>Options</legend>
+      <div class="row">
+        palette <select id="palette"><option value="sgb">SGB (per map)</option><option value="dmg">DMG green</option><option value="gray">gray</option><option value="pocket">pocket</option><option value="dmgClassic">DMG classic</option></select>
+        text <select id="speed"><option value="fast">fast</option><option value="mid" selected>mid</option><option value="slow">slow</option></select>
+      </div>
+      <div class="row">
+        <label><input type="checkbox" id="noclip"> noclip</label>
+        <label><input type="checkbox" id="surf"> give SURF (F)</label>
+        <label><input type="checkbox" id="bike"> give BIKE (G)</label>
+        <label><input type="checkbox" id="strength"> STRENGTH</label>
+        <label><input type="checkbox" id="cutok"> give CUT (C)</label>
+      </div>
+      <div class="row">
+        <label><input type="checkbox" id="sound"> sound</label>
+        <label><input type="checkbox" id="oakdemo"> Oak script demo (Pallet north exit)</label>
+        <label><input type="checkbox" id="nobattle"> no wild battles</label>
+        repel <input id="repel" type="number" value="0" min="0" style="width:4em">
+        lead lvl <input id="lead" type="number" value="5" min="1" max="100" style="width:4em">
+      </div>
+    </fieldset>
+    <fieldset><legend>Encounters</legend><div id="enc" class="log"></div></fieldset>
+    <fieldset><legend>Events</legend><div id="events" class="log"></div></fieldset>
+    <div id="error" class="err"></div>
+  </div>
+
+  <script type="module">
+    import { FrameBuffer } from './src/engine/framebuffer.js';
+    import { Palette, PALETTES } from './src/engine/palette.js';
+    import { Input } from './src/engine/input.js';
+    import { Rng } from './src/engine/rng.js';
+    import { Loop } from './src/engine/loop.js';
+    import { SceneStack } from './src/engine/scene.js';
+    import { Assets } from './src/engine/assets.js';
+    import { Font } from './src/engine/font.js';
+    import { Sfx } from './src/engine/sfx.js';
+    import { TEXT_SPEED } from './src/engine/text.js';
+    import { OverworldScene } from './src/overworld/overworld.js';
+    import { OverworldData } from './src/overworld/data.js';
+    import { WorldState } from './src/overworld/world_state.js';
+    import { MODE } from './src/overworld/constants.js';
+    import { isWalkable } from './src/overworld/collision.js';
+    import { defaultWildBattleGen, defaultTrainerBattleGen, canCut, doCut } from './src/overworld/interact.js';
+    import { registerPalletOakExample } from './src/overworld/examples/pallet_oak.js';
+
+    const $ = (id) => document.getElementById(id);
+    const params = new URLSearchParams(location.search);
+
+    // ---------------------------------------------------------------- engine services
+    const canvas = $('screen');
+    const fb = new FrameBuffer();
+    fb.attachCanvas(canvas, {
+      getViewport: () => ({ width: Math.max(160, window.innerWidth - 560), height: Math.max(144, window.innerHeight - 50) }),
+    });
+    const palette = new Palette(PALETTES.dmg);
+    const input = new Input();
+    // keyboard -> joypad, except while typing in the panel's form fields
+    const isField = (t) => t && (t.tagName === 'INPUT' && t.type !== 'checkbox' || t.tagName === 'TEXTAREA');
+    window.addEventListener('keydown', (e) => { if (!isField(e.target)) input.handleKeyDown(e); });
+    window.addEventListener('keyup', (e) => input.handleKeyUp(e));
+    window.addEventListener('blur', () => input.releaseAll());
+    const rng = new Rng();
+    const assets = new Assets();
+    const sfx = new Sfx();
+    const game = { fb, input, palette, rng, assets, sfx, font: null, scenes: null, loop: null, options: { textSpeed: TEXT_SPEED.medium } };
+    game.scenes = new SceneStack(game);
+    window.game = game;
+    for (const t of ['keydown', 'pointerdown']) window.addEventListener(t, () => sfx.unlock(), { capture: true });
+
+    // ---------------------------------------------------------------- test-page game hooks
+    const bag = new Map();
+    let audio = null;
+    const log = (el, line) => { const d = $(el); d.textContent += `${line}\n`; d.scrollTop = d.scrollHeight; };
+    let ov = null;
+    const hooks = {
+      audio: null,
+      onWildEncounter(dex, level, info) {
+        const mon = data.monsByDex.get(dex);
+        log('enc', `${ov.mapName} (${ov.player.x},${ov.player.y}) ${info.kind}: ${mon ? mon.name : dex} L${level} [slot ${info.slot}]`);
+        if ($('nobattle').checked) return undefined;
+        return defaultWildBattleGen(ov, { species: dex, level });
+      },
+      onTrainerBattle(map, objectIndex, trainerClass, partyIndex) {
+        log('enc', `${map}: TRAINER ${trainerClass} #${partyIndex} (object ${objectIndex})`);
+        return defaultTrainerBattleGen(ov, { trainerClass });
+      },
+      giveItem(item, n = 1) { bag.set(item, (bag.get(item) || 0) + n); log('events', `+ ${item} x${n}`); return true; },
+      hasItem(item) { return (bag.get(item) || 0) > 0; },
+      getLeadLevel() { return +$('lead').value || 5; },
+      healParty() { log('events', 'party healed'); },
+      *onStartMenu(ctx) {
+        const items = ['BIKE', 'SURF', 'CUT', 'STRENGTH', 'EXIT'];
+        const i = yield* ov.menuGen(items, { x: 10, y: 0, width: 10 });
+        if (i === 0) yield* ov.textGen(bikeText(ov.useBike()));
+        else if (i === 1) yield* ov.textGen(surfText(ov.useSurf()));
+        else if (i === 2) yield* ov.textGen(doCut(ov) ? 'Cut!' : [{ cmd: 'text_far', label: '_NothingToCutText' }]);
+        else if (i === 3) { ov.strengthActive = true; $('strength').checked = true; yield* ov.textGen('STRENGTH on!'); }
+      },
+    };
+    const bikeText = (r) => (r === 'on' ? 'Got on the BIKE.' : r === 'off' ? 'Got off the BIKE.' : [{ cmd: 'text_far', label: '_NoCyclingAllowedHereText' }]);
+    const surfText = (r) => (r === 'started' ? '{PLAYER} got on SURF!' : r === 'stopped' ? 'Stopped surfing.' : 'No SURFing here!');
+
+    // ---------------------------------------------------------------- boot
+    let data = null;
+    async function boot() {
+      console.info(`[overworld-test] RNG seed ${rng.seed}`);
+      game.font = await Font.load(assets);
+      data = OverworldData.fromAssets(assets);
+      await data.init();
+      const state = WorldState.newGame(data.meta, data.toggleables, (c) => data.mapNameForConst(c));
+      if (params.get('map')) {
+        state.pos = { map: params.get('map'), x: +(params.get('x') ?? 5), y: +(params.get('y') ?? 5), facing: params.get('facing') || 'down' };
+        if (data.mapEntry(state.pos.map) && data.mapEntry(state.pos.map).isOutside) state.lastOutdoor.map = state.pos.map;
+      }
+      game.state = state;
+      game.data = data;
+      ov = new OverworldScene({ data, state, hooks, paletteMode: params.get('palette') || 'sgb' });
+      ov.onEvent = (e) => {
+        if (e.kind === 'wild') return;
+        const { frame, kind, map, ...rest } = e;
+        log('events', `${String(frame).padStart(6)} ${kind.padEnd(14)} ${map || ''} ${JSON.stringify(rest)}`);
+      };
+      game.overworld = ov;
+      game.scenes.push(ov);
+      let renders = 0;
+      game.loop = new Loop({
+        update(frame) {
+          input.sample();
+          game.scenes.update(frame, input);
+        },
+        render() {
+          fb.clear(0);
+          game.scenes.draw(fb);
+          fb.present(palette);
+          if ((renders++ & 7) === 0) showInfo();
+        },
+      });
+      game.loop.start();
+      fillMaps();
+    }
+
+    // ---------------------------------------------------------------- panel
+    function fillMaps() {
+      const sel = $('map');
+      for (const name of data.mapNames) {
+        const e = data.mapEntry(name);
+        const o = document.createElement('option');
+        o.value = name;
+        o.textContent = `${String(e.id).padStart(3)} ${name} — ${e.displayName || ''} (${e.tileset})`;
+        sel.appendChild(o);
+      }
+      sel.value = ov.state.pos.map;
+      fillWarps();
+      sel.addEventListener('change', fillWarps);
+    }
+
+    async function fillWarps() {
+      const name = $('map').value;
+      const json = await data.loadMapJson(name);
+      const sel = $('warp');
+      sel.innerHTML = '';
+      json.warps.forEach((w, i) => {
+        const o = document.createElement('option');
+        o.value = String(i);
+        o.textContent = `warp ${i} (${w.x},${w.y}) → ${w.destMap}`;
+        sel.appendChild(o);
+      });
+      const spot = spawnSpot(json);
+      $('tx').value = spot.x;
+      $('ty').value = spot.y;
+      if (!json.warps.length) sel.innerHTML = '<option value="-1">(no warps)</option>';
+    }
+
+    /** A sensible arrival cell: the fly spot, else a walkable cell near the centre. */
+    function spawnSpot(json) {
+      const fly = data.meta.flyWarps.find((f) => f.map === json.const);
+      if (fly) return { x: fly.x, y: fly.y };
+      const ts = data.get(json.tilesetFile);
+      const W = json.width * 2, H = json.height * 2;
+      if (ts) {
+        const tileAt = (x, y) => ts.blocks[json.blocks[Math.floor(y / 2) * json.width + Math.floor(x / 2)] ?? json.borderBlock][(2 * (y % 2) + 1) * 4 + 2 * (x % 2)];
+        for (let r = 0; r < Math.max(W, H); r++) {
+          for (let y = Math.max(0, (H >> 1) - r); y <= Math.min(H - 1, (H >> 1) + r); y++) {
+            for (let x = Math.max(0, (W >> 1) - r); x <= Math.min(W - 1, (W >> 1) + r); x++) {
+              if (isWalkable(ts, tileAt(x, y))) return { x, y };
+            }
+          }
+        }
+      }
+      return { x: W >> 1, y: H >> 1 };
+    }
+
+    function showInfo() {
+      if (!ov || !ov.map) return;
+      const p = ov.player, g = ov.map.grid;
+      const lo = ov.state.lastOutdoor;
+      const hex = (t) => `$${t.toString(16).padStart(2, '0')}`;
+      $('info').textContent = [
+        `map      ${ov.mapName} (${ov.map.json.const}, id ${ov.map.json.id})  ${ov.map.json.displayName}`,
+        `pos      x ${p.x}  y ${p.y}  facing ${p.facing}  mode ${p.modeName}${p.walkCounter ? `  walking ${p.walkCounter}` : ''}`,
+        `tiles    under ${hex(g.cellTile(p.x, p.y))} (BR ${hex(g.cellTileBR(p.x, p.y))})  front ${hex(ov.frontTile())}  ${p.grass ? 'in grass' : ''}`,
+        `tileset  ${ov.map.tileset.name}  palette ${ov.currentPaletteName}  dark ${ov.mapPalOffset ? 'yes' : 'no'}`,
+        `last map ${lo.map} ${lo.x != null ? `(${lo.x},${lo.y}) warp ${lo.warpIndex}` : ''}`,
+        `flags    ${p.standingOnWarp ? 'onWarp ' : ''}${p.ledge ? 'ledge ' : ''}${p.spinning ? 'spinning ' : ''}${ov.simulating ? `sim(${ov.sim.length}) ` : ''}${ov.inputLock ? `lock(${ov.inputLock}) ` : ''}${ov.freeze ? `freeze(${ov.freeze}) ` : ''}`,
+        `stats    steps ${ov.stats.steps}  bumps ${ov.stats.bumps}  wild ${ov.stats.encounters}  warps ${ov.stats.warps}  conn ${ov.stats.connections}`,
+        `state    stepCounter ${ov.state.stepCounter}  repel ${ov.state.repelSteps}  surf ${ov.state.surfing}  bike ${ov.state.bike}`,
+        `npcs     ${ov.npcs.map((n) => `${n.index}${ov.isObjectHidden(n) ? 'h' : n.visible ? '' : '-'}@${n.x},${n.y}`).join(' ')}`,
+        `frame    ${game.loop.frame}`,
+      ].join('\n');
+      $('repel').value = ov.state.repelSteps;
+    }
+
+    const blur = (e) => e.currentTarget.blur();
+    $('go').addEventListener('click', (e) => {
+      blur(e);
+      const i = +$('warp').value;
+      if (i < 0) ov.debugTeleport($('map').value, +$('tx').value, +$('ty').value, 'down');
+      else ov.debugWarp($('map').value, i);
+    });
+    $('tp').addEventListener('click', (e) => { blur(e); ov.debugTeleport($('map').value, +$('tx').value, +$('ty').value, 'down'); });
+    const jump = (map, x, y, facing = 'down') => () => { ov.debugTeleport(map, x, y, facing); $('map').value = map; fillWarps(); };
+    $('newgame').addEventListener('click', jump('RedsHouse2F', 3, 6));
+    $('pallet').addEventListener('click', jump('PalletTown', 5, 6));
+    $('viridian').addEventListener('click', jump('ViridianCity', 23, 26));
+    $('cerulean').addEventListener('click', jump('CeruleanCity', 19, 18));
+    $('mtmoon').addEventListener('click', jump('MtMoon1F', 14, 35, 'up'));
+    $('pkmncenter').addEventListener('click', jump('ViridianPokecenter', 3, 6, 'up'));
+    for (const b of document.querySelectorAll('button')) b.addEventListener('click', blur);
+    $('palette').addEventListener('change', (e) => { ov.setPaletteMode(e.target.value); e.target.blur(); });
+    $('speed').addEventListener('change', (e) => { ov.state.options.textSpeed = e.target.value; e.target.blur(); });
+    $('noclip').addEventListener('change', (e) => { ov.noclip = e.target.checked; });
+    $('strength').addEventListener('change', (e) => { ov.strengthActive = e.target.checked; });
+    $('repel').addEventListener('change', (e) => { ov.state.repelSteps = Math.max(0, +e.target.value | 0); });
+    $('oakdemo').addEventListener('change', (e) => {
+      if (e.target.checked) { window.__unregOak = registerPalletOakExample(); ov.state.flags.clear('EVENT_FOLLOWED_OAK_INTO_LAB'); ov.state.flags.clear('EVENT_OAK_APPEARED_IN_PALLET'); }
+      else if (window.__unregOak) window.__unregOak();
+    });
+    $('sound').addEventListener('change', async (e) => {
+      if (e.target.checked) {
+        try {
+          if (!audio) {
+            const mod = await import('./src/audio/audio.js');
+            audio = mod.createAudio();
+          }
+          await audio.init();
+          hooks.audio = { playMusic: (n) => audio.playMusic(n), playSfx: (n) => audio.playSfx(n) };
+          if (ov.currentMusic) audio.playMusic(ov.currentMusic);
+        } catch (err) {
+          console.warn('[overworld-test] audio unavailable', err);
+          e.target.checked = false;
+        }
+      } else {
+        hooks.audio = null;
+        if (audio) audio.stopMusic();
+      }
+    });
+    // field-move debug keys (only when "given")
+    window.addEventListener('keydown', (e) => {
+      if (isField(e.target) || !ov || !ov.ready || ov.freeze || ov.scriptCount) return;
+      if (e.code === 'KeyF' && $('surf').checked) ov.run(ov.textGen(surfText(ov.useSurf())));
+      else if (e.code === 'KeyG' && $('bike').checked) { const r = ov.useBike(); if (r === 'cant') ov.run(ov.textGen(bikeText(r))); }
+      else if (e.code === 'KeyC' && $('cutok').checked) { if (canCut(ov)) doCut(ov); }
+    });
+
+    boot().catch((err) => {
+      console.error('[overworld-test] boot failed', err);
+      $('error').textContent = `Boot failed: ${err && err.stack ? err.stack : err}`;
+    });
+  </script>
+</body>
+</html>

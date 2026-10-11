@@ -1,0 +1,142 @@
+{
+ "map": "PokemonMansion1F",
+ "const": "POKEMON_MANSION_1F",
+ "textPointerTables": [
+  {
+   "label": "PokemonMansion1F_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_POKEMONMANSION1F_SCIENTIST", "label": "PokemonMansion1FScientistText", "kind": "asm", "handler": "trainer", "trainerHeader": "Mansion1TrainerHeader0"},
+    {"id": 2, "const": "TEXT_POKEMONMANSION1F_ESCAPE_ROPE", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 3, "const": "TEXT_POKEMONMANSION1F_CARBOS", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 4, "const": "TEXT_POKEMONMANSION1F_SWITCH", "label": "PokemonMansion1FSwitchText", "kind": "asm", "handler": "asm"}
+   ]
+  }
+ ],
+ "texts": {
+  "PickUpItemText": {
+   "kind": "asm",
+   "src": "home/overworld_text.asm:29",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "PokemonMansion1FScientistText": {
+   "kind": "asm",
+   "src": "scripts/PokemonMansion1F.asm:78",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Mansion1TrainerHeader0"
+  },
+  "PokemonMansion1FScientistBattleText": {
+   "kind": "text",
+   "src": "scripts/PokemonMansion1F.asm:84",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonMansion1FScientistBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonMansion1FScientistEndBattleText": {
+   "kind": "text",
+   "src": "scripts/PokemonMansion1F.asm:88",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonMansion1FScientistEndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonMansion1FScientistAfterBattleText": {
+   "kind": "text",
+   "src": "scripts/PokemonMansion1F.asm:92",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonMansion1FScientistAfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonMansion1FSwitchText": {
+   "kind": "asm",
+   "src": "scripts/PokemonMansion1F.asm:96",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["PokemonMansion1FSwitchText.Text", "PokemonMansion1FSwitchText.PressedText", "PokemonMansion1FSwitchText.NotPressedText"]
+  },
+  "PokemonMansion1FSwitchText.Text": {
+   "kind": "text",
+   "src": "scripts/PokemonMansion1F.asm:122",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonMansion1FSwitchText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonMansion1FSwitchText.PressedText": {
+   "kind": "text",
+   "src": "scripts/PokemonMansion1F.asm:126",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonMansion1FSwitchPressedText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonMansion1FSwitchText.NotPressedText": {
+   "kind": "text",
+   "src": "scripts/PokemonMansion1F.asm:130",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonMansion1FSwitchNotPressedText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_PokemonMansion1FScientistBattleText": {
+   "kind": "text",
+   "src": "text/PokemonMansion1F.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Who are you? There"},
+    {"cmd": "line", "str": "shouldn't be"},
+    {"cmd": "cont", "str": "anyone here."},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonMansion1FScientistEndBattleText": {
+   "kind": "text",
+   "src": "text/PokemonMansion1F.asm:8",
+   "commands": [
+    {"cmd": "text", "str": "Ouch!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_PokemonMansion1FScientistAfterBattleText": {
+   "kind": "text",
+   "src": "text/PokemonMansion1F.asm:12",
+   "commands": [
+    {"cmd": "text", "str": "A key? I don't"},
+    {"cmd": "line", "str": "know what you're"},
+    {"cmd": "cont", "str": "talking about."},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonMansion1FSwitchText": {
+   "kind": "text",
+   "src": "text/PokemonMansion1F.asm:18",
+   "commands": [
+    {"cmd": "text", "str": "A secret switch!"},
+    {"cmd": "para", "str": "Press it?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonMansion1FSwitchPressedText": {
+   "kind": "text",
+   "src": "text/PokemonMansion1F.asm:24",
+   "commands": [
+    {"cmd": "text", "str": "Who wouldn't?"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_PokemonMansion1FSwitchNotPressedText": {
+   "kind": "text",
+   "src": "text/PokemonMansion1F.asm:28",
+   "commands": [
+    {"cmd": "text", "str": "Not quite yet!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

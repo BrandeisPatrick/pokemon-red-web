@@ -1,0 +1,62 @@
+{
+ "map": "SaffronMart",
+ "const": "SAFFRON_MART",
+ "textPointerTables": [
+  {
+   "label": "SaffronMart_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_SAFFRONMART_CLERK", "label": "SaffronMartClerkText", "kind": "script", "handler": "script_mart"},
+    {"id": 2, "const": "TEXT_SAFFRONMART_SUPER_NERD", "label": "SaffronMartSuperNerdText", "kind": "text", "handler": "text"},
+    {"id": 3, "const": "TEXT_SAFFRONMART_COOLTRAINER_F", "label": "SaffronMartCooltrainerFText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "SaffronMartClerkText": {
+   "kind": "script",
+   "src": "data/items/marts.asm:47",
+   "commands": [
+    {"cmd": "script", "script": "script_mart", "items": ["GREAT_BALL", "HYPER_POTION", "MAX_REPEL", "ESCAPE_ROPE", "FULL_HEAL", "REVIVE"]}
+   ]
+  },
+  "SaffronMartSuperNerdText": {
+   "kind": "text",
+   "src": "scripts/SaffronMart.asm:11",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronMartSuperNerdText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronMartCooltrainerFText": {
+   "kind": "text",
+   "src": "scripts/SaffronMart.asm:15",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronMartCooltrainerFText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_SaffronMartSuperNerdText": {
+   "kind": "text",
+   "src": "text/SaffronMart.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "MAX REPEL lasts"},
+    {"cmd": "line", "str": "longer than SUPER"},
+    {"cmd": "cont", "str": "REPEL for keeping"},
+    {"cmd": "cont", "str": "weaker POKéMON"},
+    {"cmd": "cont", "str": "away!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SaffronMartCooltrainerFText": {
+   "kind": "text",
+   "src": "text/SaffronMart.asm:10",
+   "commands": [
+    {"cmd": "text", "str": "REVIVE is costly,"},
+    {"cmd": "line", "str": "but it revives"},
+    {"cmd": "cont", "str": "fainted POKéMON!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

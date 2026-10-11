@@ -1,0 +1,271 @@
+{
+ "map": "SafariZoneGate",
+ "const": "SAFARI_ZONE_GATE",
+ "textPointerTables": [
+  {
+   "label": "SafariZoneGate_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_SAFARIZONEGATE_SAFARI_ZONE_WORKER1", "label": "SafariZoneGateSafariZoneWorker1Text", "kind": "text", "handler": "text"},
+    {"id": 2, "const": "TEXT_SAFARIZONEGATE_SAFARI_ZONE_WORKER2", "label": "SafariZoneGateSafariZoneWorker2Text", "kind": "asm", "handler": "asm"},
+    {"id": 3, "const": "TEXT_SAFARIZONEGATE_SAFARI_ZONE_WORKER1_1", "label": "SafariZoneGateSafariZoneWorker1Text", "kind": "text", "handler": "text"},
+    {"id": 4, "const": "TEXT_SAFARIZONEGATE_SAFARI_ZONE_WORKER1_WOULD_YOU_LIKE_TO_JOIN", "label": "SafariZoneGateSafariZoneWorker1WouldYouLikeToJoinText", "kind": "text", "handler": "text"},
+    {"id": 5, "const": "TEXT_SAFARIZONEGATE_SAFARI_ZONE_WORKER1_LEAVING_EARLY", "label": "SafariZoneGateSafariZoneWorker1LeavingEarlyText", "kind": "text", "handler": "text"},
+    {"id": 6, "const": "TEXT_SAFARIZONEGATE_SAFARI_ZONE_WORKER1_GOOD_HAUL_COME_AGAIN", "label": "SafariZoneGateSafariZoneWorker1GoodHaulComeAgainText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "SafariZoneGateSafariZoneWorker1Text": {
+   "kind": "text",
+   "src": "scripts/SafariZoneGate.asm:145",
+   "commands": [
+    {"cmd": "text_far", "label": "_SafariZoneGateSafariZoneWorker1Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SafariZoneGateSafariZoneWorker1WouldYouLikeToJoinText": {
+   "kind": "text",
+   "src": "scripts/SafariZoneGate.asm:149",
+   "refs": ["SafariZoneGateSafariZoneWorker1WouldYouLikeToJoinText.NotEnoughMoneyText", "SafariZoneGateSafariZoneWorker1WouldYouLikeToJoinText.MakePaymentText", "SafariZoneGateSafariZoneWorker1WouldYouLikeToJoinText.PleaseComeAgainText"],
+   "commands": [
+    {"cmd": "text_far", "label": "_SafariZoneGateSafariZoneWorker1WouldYouLikeToJoinText"},
+    {"cmd": "text_asm"}
+   ]
+  },
+  "SafariZoneGateSafariZoneWorker1WouldYouLikeToJoinText.MakePaymentText": {
+   "kind": "text",
+   "src": "scripts/SafariZoneGate.asm:214",
+   "commands": [
+    {"cmd": "text_far", "label": "_SafariZoneGateSafariZoneWorker1ThatllBe500PleaseText"},
+    {"cmd": "sound", "sound": "sound_get_item_1"},
+    {"cmd": "text_far", "label": "_SafariZoneGateSafariZoneWorker1CallYouOnThePAText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SafariZoneGateSafariZoneWorker1WouldYouLikeToJoinText.PleaseComeAgainText": {
+   "kind": "text",
+   "src": "scripts/SafariZoneGate.asm:220",
+   "commands": [
+    {"cmd": "text_far", "label": "_SafariZoneGateSafariZoneWorker1PleaseComeAgainText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SafariZoneGateSafariZoneWorker1WouldYouLikeToJoinText.NotEnoughMoneyText": {
+   "kind": "text",
+   "src": "scripts/SafariZoneGate.asm:224",
+   "commands": [
+    {"cmd": "text_far", "label": "_SafariZoneGateSafariZoneWorker1NotEnoughMoneyText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SafariZoneGateSafariZoneWorker1LeavingEarlyText": {
+   "kind": "text",
+   "src": "scripts/SafariZoneGate.asm:228",
+   "refs": ["SafariZoneGateSafariZoneWorker1LeavingEarlyText.ReturnSafariBallsText", "SafariZoneGateSafariZoneWorker1LeavingEarlyText.GoodLuckText"],
+   "commands": [
+    {"cmd": "text_far", "label": "_SafariZoneGateSafariZoneWorker1LeavingEarlyText"},
+    {"cmd": "text_asm"}
+   ]
+  },
+  "SafariZoneGateSafariZoneWorker1LeavingEarlyText.ReturnSafariBallsText": {
+   "kind": "text",
+   "src": "scripts/SafariZoneGate.asm:261",
+   "commands": [
+    {"cmd": "text_far", "label": "_SafariZoneGateSafariZoneWorker1ReturnSafariBallsText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SafariZoneGateSafariZoneWorker1LeavingEarlyText.GoodLuckText": {
+   "kind": "text",
+   "src": "scripts/SafariZoneGate.asm:265",
+   "commands": [
+    {"cmd": "text_far", "label": "_SafariZoneGateSafariZoneWorker1GoodLuckText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SafariZoneGateSafariZoneWorker1GoodHaulComeAgainText": {
+   "kind": "text",
+   "src": "scripts/SafariZoneGate.asm:269",
+   "commands": [
+    {"cmd": "text_far", "label": "_SafariZoneGateSafariZoneWorker1GoodHaulComeAgainText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SafariZoneGateSafariZoneWorker2Text": {
+   "kind": "asm",
+   "src": "scripts/SafariZoneGate.asm:273",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["SafariZoneGateSafariZoneWorker2Text.FirstTimeHereText", "SafariZoneGateSafariZoneWorker2Text.YoureARegularHereText", "SafariZoneGateSafariZoneWorker2Text.SafariZoneExplanationText"]
+  },
+  "SafariZoneGateSafariZoneWorker2Text.FirstTimeHereText": {
+   "kind": "text",
+   "src": "scripts/SafariZoneGate.asm:287",
+   "commands": [
+    {"cmd": "text_far", "label": "_SafariZoneGateSafariZoneWorker2FirstTimeHereText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SafariZoneGateSafariZoneWorker2Text.SafariZoneExplanationText": {
+   "kind": "text",
+   "src": "scripts/SafariZoneGate.asm:291",
+   "commands": [
+    {"cmd": "text_far", "label": "_SafariZoneGateSafariZoneWorker2SafariZoneExplanationText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SafariZoneGateSafariZoneWorker2Text.YoureARegularHereText": {
+   "kind": "text",
+   "src": "scripts/SafariZoneGate.asm:295",
+   "commands": [
+    {"cmd": "text_far", "label": "_SafariZoneGateSafariZoneWorker2YoureARegularHereText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_SafariZoneGateSafariZoneWorker1Text": {
+   "kind": "text",
+   "src": "text/SafariZoneGate.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Welcome to the"},
+    {"cmd": "line", "str": "SAFARI ZONE!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SafariZoneGateSafariZoneWorker1WouldYouLikeToJoinText": {
+   "kind": "text",
+   "src": "text/SafariZoneGate.asm:7",
+   "commands": [
+    {"cmd": "text", "str": "For just ¥500,"},
+    {"cmd": "line", "str": "you can catch all"},
+    {"cmd": "cont", "str": "the POKéMON you"},
+    {"cmd": "cont", "str": "want in the park!"},
+    {"cmd": "para", "str": "Would you like to"},
+    {"cmd": "line", "str": "join the hunt?"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_SafariZoneGateSafariZoneWorker1ThatllBe500PleaseText": {
+   "kind": "text",
+   "src": "text/SafariZoneGate.asm:17",
+   "commands": [
+    {"cmd": "text", "str": "That'll be ¥500"},
+    {"cmd": "line", "str": "please!"},
+    {"cmd": "para", "str": "We only use a"},
+    {"cmd": "line", "str": "special POKé BALL"},
+    {"cmd": "cont", "str": "here."},
+    {"cmd": "para", "str": "{PLAYER} received"},
+    {"cmd": "line", "str": "30 SAFARI BALLs!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_SafariZoneGateSafariZoneWorker1CallYouOnThePAText": {
+   "kind": "text",
+   "src": "text/SafariZoneGate.asm:29",
+   "commands": [
+    {"cmd": "text", "str": ""},
+    {"cmd": "para", "str": "We'll call you on"},
+    {"cmd": "line", "str": "the PA when you"},
+    {"cmd": "cont", "str": "run out of time"},
+    {"cmd": "cont", "str": "or SAFARI BALLs!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SafariZoneGateSafariZoneWorker1PleaseComeAgainText": {
+   "kind": "text",
+   "src": "text/SafariZoneGate.asm:38",
+   "commands": [
+    {"cmd": "text", "str": "OK! Please come"},
+    {"cmd": "line", "str": "again!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SafariZoneGateSafariZoneWorker1NotEnoughMoneyText": {
+   "kind": "text",
+   "src": "text/SafariZoneGate.asm:43",
+   "commands": [
+    {"cmd": "text", "str": "Oops! Not enough"},
+    {"cmd": "line", "str": "money!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SafariZoneGateSafariZoneWorker1LeavingEarlyText": {
+   "kind": "text",
+   "src": "text/SafariZoneGate.asm:48",
+   "commands": [
+    {"cmd": "text", "str": "Leaving early?"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_SafariZoneGateSafariZoneWorker1ReturnSafariBallsText": {
+   "kind": "text",
+   "src": "text/SafariZoneGate.asm:52",
+   "commands": [
+    {"cmd": "text", "str": "Please return any"},
+    {"cmd": "line", "str": "SAFARI BALLs you"},
+    {"cmd": "cont", "str": "have left."},
+    {"cmd": "done"}
+   ]
+  },
+  "_SafariZoneGateSafariZoneWorker1GoodLuckText": {
+   "kind": "text",
+   "src": "text/SafariZoneGate.asm:58",
+   "commands": [
+    {"cmd": "text", "str": "Good Luck!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SafariZoneGateSafariZoneWorker1GoodHaulComeAgainText": {
+   "kind": "text",
+   "src": "text/SafariZoneGate.asm:62",
+   "commands": [
+    {"cmd": "text", "str": "Did you get a"},
+    {"cmd": "line", "str": "good haul?"},
+    {"cmd": "cont", "str": "Come again!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SafariZoneGateSafariZoneWorker2FirstTimeHereText": {
+   "kind": "text",
+   "src": "text/SafariZoneGate.asm:68",
+   "commands": [
+    {"cmd": "text", "str": "Hi! Is it your"},
+    {"cmd": "line", "str": "first time here?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SafariZoneGateSafariZoneWorker2SafariZoneExplanationText": {
+   "kind": "text",
+   "src": "text/SafariZoneGate.asm:73",
+   "commands": [
+    {"cmd": "text", "str": "SAFARI ZONE has 4"},
+    {"cmd": "line", "str": "zones in it."},
+    {"cmd": "para", "str": "Each zone has"},
+    {"cmd": "line", "str": "different kinds"},
+    {"cmd": "cont", "str": "of POKéMON. Use"},
+    {"cmd": "cont", "str": "SAFARI BALLs to"},
+    {"cmd": "cont", "str": "catch them!"},
+    {"cmd": "para", "str": "When you run out"},
+    {"cmd": "line", "str": "of time or SAFARI"},
+    {"cmd": "cont", "str": "BALLs, it's game"},
+    {"cmd": "cont", "str": "over for you!"},
+    {"cmd": "para", "str": "Before you go,"},
+    {"cmd": "line", "str": "open an unused"},
+    {"cmd": "cont", "str": "POKéMON BOX so"},
+    {"cmd": "cont", "str": "there's room for"},
+    {"cmd": "cont", "str": "new POKéMON!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SafariZoneGateSafariZoneWorker2YoureARegularHereText": {
+   "kind": "text",
+   "src": "text/SafariZoneGate.asm:95",
+   "commands": [
+    {"cmd": "text", "str": "Sorry, you're a"},
+    {"cmd": "line", "str": "regular here!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

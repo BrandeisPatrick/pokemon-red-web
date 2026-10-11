@@ -1,0 +1,22 @@
+{
+  "name": "SFX_GO_INSIDE",
+  "title": "Go Inside",
+  "kind": "sfx",
+  "bank": 3,
+  "id": 173,
+  "label": "SFX_Go_Inside_3",
+  "channels": [
+    {
+      "channel": 8,
+      "label": "SFX_Go_Inside_3_Ch8",
+      "entry": 0,
+      "bytes": 7,
+      "labels": {"SFX_Go_Inside_3_Ch8": 0},
+      "commands": [
+        {"op": "noise_note", "length": 9, "volume": 15, "fade": 1, "value": 68},
+        {"op": "noise_note", "length": 8, "volume": 13, "fade": 1, "value": 67},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "name": "SFX_CRY_0F",
+  "title": "Cry 0F",
+  "kind": "sfx",
+  "bank": 3,
+  "id": 65,
+  "label": "SFX_Cry0F_3",
+  "channels": [
+    {
+      "channel": 5,
+      "label": "SFX_Cry0F_3_Ch5",
+      "entry": 0,
+      "bytes": 27,
+      "labels": {"SFX_Cry0F_3_Ch5": 0},
+      "commands": [
+        {"op": "duty_cycle_pattern", "pattern": [3, 3, 0, 1]},
+        {"op": "square_note", "length": 4, "volume": 15, "fade": 7, "frequency": 1984},
+        {"op": "square_note", "length": 12, "volume": 14, "fade": 6, "frequency": 1986},
+        {"op": "square_note", "length": 6, "volume": 11, "fade": 5, "frequency": 1664},
+        {"op": "square_note", "length": 4, "volume": 12, "fade": 4, "frequency": 1648},
+        {"op": "square_note", "length": 4, "volume": 11, "fade": 5, "frequency": 1632},
+        {"op": "square_note", "length": 8, "volume": 12, "fade": 1, "frequency": 1600},
+        {"op": "sound_ret"}
+      ]
+    },
+    {
+      "channel": 6,
+      "label": "SFX_Cry0F_3_Ch6",
+      "entry": 0,
+      "bytes": 27,
+      "labels": {"SFX_Cry0F_3_Ch6": 0},
+      "commands": [
+        {"op": "duty_cycle_pattern", "pattern": [3, 0, 3, 0]},
+        {"op": "square_note", "length": 3, "volume": 12, "fade": 7, "frequency": 1921},
+        {"op": "square_note", "length": 12, "volume": 11, "fade": 6, "frequency": 1920},
+        {"op": "square_note", "length": 6, "volume": 10, "fade": 5, "frequency": 1601},
+        {"op": "square_note", "length": 4, "volume": 12, "fade": 4, "frequency": 1586},
+        {"op": "square_note", "length": 6, "volume": 11, "fade": 5, "frequency": 1569},
+        {"op": "square_note", "length": 8, "volume": 10, "fade": 1, "frequency": 1538},
+        {"op": "sound_ret"}
+      ]
+    },
+    {
+      "channel": 8,
+      "label": "SFX_Cry0F_3_Ch8",
+      "entry": 0,
+      "bytes": 16,
+      "labels": {"SFX_Cry0F_3_Ch8": 0},
+      "commands": [
+        {"op": "noise_note", "length": 3, "volume": 14, "fade": 4, "value": 60},
+        {"op": "noise_note", "length": 12, "volume": 13, "fade": 6, "value": 44},
+        {"op": "noise_note", "length": 4, "volume": 14, "fade": 4, "value": 60},
+        {"op": "noise_note", "length": 8, "volume": 11, "fade": 7, "value": 92},
+        {"op": "noise_note", "length": 15, "volume": 12, "fade": 2, "value": 93},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

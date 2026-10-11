@@ -1,0 +1,71 @@
+{
+ "map": "ViridianPokecenter",
+ "const": "VIRIDIAN_POKECENTER",
+ "textPointerTables": [
+  {
+   "label": "ViridianPokecenter_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_VIRIDIANPOKECENTER_NURSE", "label": "ViridianPokecenterNurseText", "kind": "script", "handler": "script_pokecenter_nurse"},
+    {"id": 2, "const": "TEXT_VIRIDIANPOKECENTER_GENTLEMAN", "label": "ViridianPokecenterGentlemanText", "kind": "text", "handler": "text"},
+    {"id": 3, "const": "TEXT_VIRIDIANPOKECENTER_COOLTRAINER_M", "label": "ViridianPokecenterCooltrainerMText", "kind": "text", "handler": "text"},
+    {"id": 4, "const": "TEXT_VIRIDIANPOKECENTER_LINK_RECEPTIONIST", "label": "ViridianPokecenterLinkReceptionistText", "kind": "script", "handler": "script_cable_club_receptionist"}
+   ]
+  }
+ ],
+ "texts": {
+  "ViridianPokecenterNurseText": {
+   "kind": "script",
+   "src": "scripts/ViridianPokecenter.asm:13",
+   "commands": [
+    {"cmd": "script", "script": "script_pokecenter_nurse"}
+   ]
+  },
+  "ViridianPokecenterGentlemanText": {
+   "kind": "text",
+   "src": "scripts/ViridianPokecenter.asm:16",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianPokecenterGentlemanText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianPokecenterCooltrainerMText": {
+   "kind": "text",
+   "src": "scripts/ViridianPokecenter.asm:20",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianPokecenterCooltrainerMText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianPokecenterLinkReceptionistText": {
+   "kind": "script",
+   "src": "scripts/ViridianPokecenter.asm:24",
+   "commands": [
+    {"cmd": "script", "script": "script_cable_club_receptionist"}
+   ]
+  },
+  "_ViridianPokecenterGentlemanText": {
+   "kind": "text",
+   "src": "text/ViridianPokecenter.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "You can use that"},
+    {"cmd": "line", "str": "PC in the corner."},
+    {"cmd": "para", "str": "The receptionist"},
+    {"cmd": "line", "str": "told me. So kind!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianPokecenterCooltrainerMText": {
+   "kind": "text",
+   "src": "text/ViridianPokecenter.asm:10",
+   "commands": [
+    {"cmd": "text", "str": "There's a POKéMON"},
+    {"cmd": "line", "str": "CENTER in every"},
+    {"cmd": "cont", "str": "town ahead."},
+    {"cmd": "para", "str": "They don't charge"},
+    {"cmd": "line", "str": "any money either!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

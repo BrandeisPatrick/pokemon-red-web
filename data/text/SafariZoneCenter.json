@@ -1,0 +1,59 @@
+{
+ "map": "SafariZoneCenter",
+ "const": "SAFARI_ZONE_CENTER",
+ "textPointerTables": [
+  {
+   "label": "SafariZoneCenter_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_SAFARIZONECENTER_NUGGET", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 2, "const": "TEXT_SAFARIZONECENTER_REST_HOUSE_SIGN", "label": "SafariZoneCenterRestHouseSignText", "kind": "text", "handler": "text"},
+    {"id": 3, "const": "TEXT_SAFARIZONECENTER_TRAINER_TIPS_SIGN", "label": "SafariZoneCenterTrainerTipsSignText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "PickUpItemText": {
+   "kind": "asm",
+   "src": "home/overworld_text.asm:29",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "SafariZoneCenterRestHouseSignText": {
+   "kind": "text",
+   "src": "scripts/SafariZoneCenter.asm:11",
+   "commands": [
+    {"cmd": "text_far", "label": "_SafariZoneCenterRestHouseSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SafariZoneCenterTrainerTipsSignText": {
+   "kind": "text",
+   "src": "scripts/SafariZoneCenter.asm:15",
+   "commands": [
+    {"cmd": "text_far", "label": "_SafariZoneCenterTrainerTipsSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_SafariZoneCenterRestHouseSignText": {
+   "kind": "text",
+   "src": "text/SafariZoneCenter.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "REST HOUSE"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SafariZoneCenterTrainerTipsSignText": {
+   "kind": "text",
+   "src": "text/SafariZoneCenter.asm:6",
+   "commands": [
+    {"cmd": "text", "str": "TRAINER TIPS"},
+    {"cmd": "para", "str": "Press the START"},
+    {"cmd": "line", "str": "Button to check"},
+    {"cmd": "cont", "str": "remaining time!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

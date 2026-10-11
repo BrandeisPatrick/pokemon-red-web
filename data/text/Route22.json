@@ -1,0 +1,231 @@
+{
+ "map": "Route22",
+ "const": "ROUTE_22",
+ "textPointerTables": [
+  {
+   "label": "Route22_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_ROUTE22_RIVAL1", "label": "Route22Rival1Text", "kind": "asm", "handler": "asm"},
+    {"id": 2, "const": "TEXT_ROUTE22_RIVAL2", "label": "Route22Rival2Text", "kind": "asm", "handler": "asm"},
+    {"id": 3, "const": "TEXT_ROUTE22_POKEMON_LEAGUE_SIGN", "label": "Route22PokemonLeagueSignText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "Route22Rival1Text": {
+   "kind": "asm",
+   "src": "scripts/Route22.asm:387",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["Route22RivalAfterBattleText1", "Route22RivalBeforeBattleText1"]
+  },
+  "Route22Rival2Text": {
+   "kind": "asm",
+   "src": "scripts/Route22.asm:400",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["Route22RivalAfterBattleText2", "Route22RivalBeforeBattleText2"]
+  },
+  "Route22RivalBeforeBattleText1": {
+   "kind": "text",
+   "src": "scripts/Route22.asm:413",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route22RivalBeforeBattleText1"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route22RivalAfterBattleText1": {
+   "kind": "text",
+   "src": "scripts/Route22.asm:417",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route22RivalAfterBattleText1"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route22Rival1DefeatedText": {
+   "kind": "text",
+   "src": "scripts/Route22.asm:421",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route22Rival1DefeatedText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route22Rival1VictoryText": {
+   "kind": "text",
+   "src": "scripts/Route22.asm:425",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route22Rival1VictoryText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route22RivalBeforeBattleText2": {
+   "kind": "text",
+   "src": "scripts/Route22.asm:429",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route22RivalBeforeBattleText2"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route22RivalAfterBattleText2": {
+   "kind": "text",
+   "src": "scripts/Route22.asm:433",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route22RivalAfterBattleText2"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route22Rival2DefeatedText": {
+   "kind": "text",
+   "src": "scripts/Route22.asm:437",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route22Rival2DefeatedText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route22Rival2VictoryText": {
+   "kind": "text",
+   "src": "scripts/Route22.asm:441",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route22Rival2VictoryText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route22PokemonLeagueSignText": {
+   "kind": "text",
+   "src": "scripts/Route22.asm:445",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route22PokemonLeagueSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_Route22RivalBeforeBattleText1": {
+   "kind": "text",
+   "src": "text/Route22.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "{RIVAL}: Hey!"},
+    {"cmd": "line", "str": "{PLAYER}!"},
+    {"cmd": "para", "str": "You're going to"},
+    {"cmd": "line", "str": "POKéMON LEAGUE?"},
+    {"cmd": "para", "str": "Forget it! You"},
+    {"cmd": "line", "str": "probably don't"},
+    {"cmd": "cont", "str": "have any BADGEs!"},
+    {"cmd": "para", "str": "The guard won't"},
+    {"cmd": "line", "str": "let you through!"},
+    {"cmd": "para", "str": "By the way, did"},
+    {"cmd": "line", "str": "your POKéMON"},
+    {"cmd": "cont", "str": "get any stronger?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route22RivalAfterBattleText1": {
+   "kind": "text",
+   "src": "text/Route22.asm:21",
+   "commands": [
+    {"cmd": "text", "str": "I heard POKéMON"},
+    {"cmd": "line", "str": "LEAGUE has many"},
+    {"cmd": "cont", "str": "tough trainers!"},
+    {"cmd": "para", "str": "I have to figure"},
+    {"cmd": "line", "str": "out how to get"},
+    {"cmd": "cont", "str": "past them!"},
+    {"cmd": "para", "str": "You should quit"},
+    {"cmd": "line", "str": "dawdling and get"},
+    {"cmd": "cont", "str": "a move on!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route22Rival1DefeatedText": {
+   "kind": "text",
+   "src": "text/Route22.asm:35",
+   "commands": [
+    {"cmd": "text", "str": "Awww!"},
+    {"cmd": "line", "str": "You just lucked"},
+    {"cmd": "cont", "str": "out!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route22Rival1VictoryText": {
+   "kind": "text",
+   "src": "text/Route22.asm:41",
+   "commands": [
+    {"cmd": "text", "str": "{RIVAL}: What?"},
+    {"cmd": "line", "str": "Why do I have 2"},
+    {"cmd": "cont", "str": "POKéMON?"},
+    {"cmd": "para", "str": "You should catch"},
+    {"cmd": "cont", "str": "some more too!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route22RivalBeforeBattleText2": {
+   "kind": "text",
+   "src": "text/Route22.asm:50",
+   "commands": [
+    {"cmd": "text", "str": "{RIVAL}: What?"},
+    {"cmd": "line", "str": "{PLAYER}! What a"},
+    {"cmd": "cont", "str": "surprise to see"},
+    {"cmd": "cont", "str": "you here!"},
+    {"cmd": "para", "str": "So you're going to"},
+    {"cmd": "line", "str": "POKéMON LEAGUE?"},
+    {"cmd": "para", "str": "You collected all"},
+    {"cmd": "line", "str": "the BADGEs too?"},
+    {"cmd": "cont", "str": "That's cool!"},
+    {"cmd": "para", "str": "Then I'll whip you"},
+    {"cmd": "line", "str": "{PLAYER} as a"},
+    {"cmd": "cont", "str": "warm up for"},
+    {"cmd": "cont", "str": "POKéMON LEAGUE!"},
+    {"cmd": "para", "str": "Come on!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route22RivalAfterBattleText2": {
+   "kind": "text",
+   "src": "text/Route22.asm:71",
+   "commands": [
+    {"cmd": "text", "str": "That loosened me"},
+    {"cmd": "line", "str": "up! I'm ready for"},
+    {"cmd": "cont", "str": "POKéMON LEAGUE!"},
+    {"cmd": "para", "str": "{PLAYER}, you need"},
+    {"cmd": "line", "str": "more practice!"},
+    {"cmd": "para", "str": "But hey, you know"},
+    {"cmd": "line", "str": "that! I'm out of"},
+    {"cmd": "cont", "str": "here. Smell ya!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route22Rival2DefeatedText": {
+   "kind": "text",
+   "src": "text/Route22.asm:84",
+   "commands": [
+    {"cmd": "text", "str": "What!?"},
+    {"cmd": "para", "str": "I was just"},
+    {"cmd": "line", "str": "careless!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route22Rival2VictoryText": {
+   "kind": "text",
+   "src": "text/Route22.asm:91",
+   "commands": [
+    {"cmd": "text", "str": "{RIVAL}: Hahaha!"},
+    {"cmd": "line", "str": "{PLAYER}! That's"},
+    {"cmd": "cont", "str": "your best? You're"},
+    {"cmd": "cont", "str": "nowhere near as"},
+    {"cmd": "cont", "str": "good as me, pal!"},
+    {"cmd": "para", "str": "Go train some"},
+    {"cmd": "line", "str": "more! You loser!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route22PokemonLeagueSignText": {
+   "kind": "text",
+   "src": "text/Route22.asm:102",
+   "commands": [
+    {"cmd": "text", "str": "POKéMON LEAGUE"},
+    {"cmd": "line", "str": "Front Gate"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

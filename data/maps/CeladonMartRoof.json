@@ -1,0 +1,46 @@
+{
+ "id": 126,
+ "const": "CELADON_MART_ROOF",
+ "name": "CeladonMartRoof",
+ "displayName": "CELADON CITY",
+ "width": 10,
+ "height": 4,
+ "tileset": "LOBBY",
+ "tilesetId": 18,
+ "tilesetFile": "data/tilesets/Lobby.json",
+ "isOutside": false,
+ "borderBlock": 66,
+ "blocks": [54, 28, 28, 28, 28, 27, 59, 63, 63, 65, 54, 33, 29, 31, 32, 32, 60, 67, 42, 65, 54, 32, 32, 33, 29, 31, 32, 32, 32, 65, 54, 55, 55, 55, 55, 55, 55, 55, 55, 65],
+ "connections": {},
+ "warps": [
+  {"x": 15, "y": 2, "destMap": "CELADON_MART_5F", "destMapId": 136, "destMapName": "CeladonMart5F", "destWarp": 1, "destWarpIndex": 0}
+ ],
+ "bgEvents": [
+  {"x": 10, "y": 1, "textId": "TEXT_CELADONMARTROOF_VENDING_MACHINE1", "textIndex": 3},
+  {"x": 11, "y": 1, "textId": "TEXT_CELADONMARTROOF_VENDING_MACHINE2", "textIndex": 4},
+  {"x": 12, "y": 2, "textId": "TEXT_CELADONMARTROOF_VENDING_MACHINE3", "textIndex": 5},
+  {"x": 13, "y": 2, "textId": "TEXT_CELADONMARTROOF_CURRENT_FLOOR_SIGN", "textIndex": 6}
+ ],
+ "objectEvents": [
+  {"index": 1, "const": "CELADONMARTROOF_SUPER_NERD", "x": 10, "y": 4, "sprite": "SPRITE_SUPER_NERD", "spriteId": 12, "movement": "STAY", "rangeOrDirection": "LEFT", "rangeOrDirectionValue": 210, "behavior": "face_left", "textId": "TEXT_CELADONMARTROOF_SUPER_NERD", "textIndex": 1},
+  {"index": 2, "const": "CELADONMARTROOF_LITTLE_GIRL", "x": 5, "y": 5, "sprite": "SPRITE_LITTLE_GIRL", "spriteId": 8, "movement": "WALK", "rangeOrDirection": "ANY_DIR", "rangeOrDirectionValue": 0, "behavior": "walk_any", "textId": "TEXT_CELADONMARTROOF_LITTLE_GIRL", "textIndex": 2}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_POKECENTER",
+ "wild": null,
+ "townMap": {"x": 7, "y": 5, "group": "CELADON_CITY"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/CeladonMartRoof.json",
+ "textPointers": "CeladonMartRoof_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/CeladonMartRoof.asm",
+  "objects": "data/maps/objects/CeladonMartRoof.asm",
+  "blocks": "maps/CeladonMartRoof.blk",
+  "script": "scripts/CeladonMartRoof.asm"
+ },
+ "lastMapCandidates": ["CELADON_CITY"],
+ "palette": {"pal": "PAL_CELADON", "rule": "lastMap", "viaLastMap": "CELADON_CITY"}
+}

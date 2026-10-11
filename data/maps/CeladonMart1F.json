@@ -1,0 +1,48 @@
+{
+ "id": 122,
+ "const": "CELADON_MART_1F",
+ "name": "CeladonMart1F",
+ "displayName": "CELADON CITY",
+ "width": 10,
+ "height": 4,
+ "tileset": "LOBBY",
+ "tilesetId": 18,
+ "tilesetFile": "data/tilesets/Lobby.json",
+ "isOutside": false,
+ "borderBlock": 15,
+ "blocks": [12, 13, 1, 24, 1, 25, 2, 37, 7, 1, 11, 11, 11, 20, 11, 23, 11, 11, 18, 9, 11, 11, 11, 21, 17, 38, 11, 11, 11, 9, 11, 8, 11, 11, 11, 11, 11, 11, 8, 11],
+ "connections": {},
+ "warps": [
+  {"x": 2, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 1, "destWarpIndex": 0},
+  {"x": 3, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 1, "destWarpIndex": 0},
+  {"x": 16, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 2, "destWarpIndex": 1},
+  {"x": 17, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 2, "destWarpIndex": 1},
+  {"x": 12, "y": 1, "destMap": "CELADON_MART_2F", "destMapId": 123, "destMapName": "CeladonMart2F", "destWarp": 1, "destWarpIndex": 0},
+  {"x": 1, "y": 1, "destMap": "CELADON_MART_ELEVATOR", "destMapId": 127, "destMapName": "CeladonMartElevator", "destWarp": 1, "destWarpIndex": 0}
+ ],
+ "bgEvents": [
+  {"x": 11, "y": 4, "textId": "TEXT_CELADONMART1F_DIRECTORY_SIGN", "textIndex": 2},
+  {"x": 14, "y": 1, "textId": "TEXT_CELADONMART1F_CURRENT_FLOOR_SIGN", "textIndex": 3}
+ ],
+ "objectEvents": [
+  {"index": 1, "const": "CELADONMART1F_RECEPTIONIST", "x": 8, "y": 3, "sprite": "SPRITE_LINK_RECEPTIONIST", "spriteId": 42, "movement": "STAY", "rangeOrDirection": "DOWN", "rangeOrDirectionValue": 208, "behavior": "face_down", "textId": "TEXT_CELADONMART1F_RECEPTIONIST", "textIndex": 1}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_POKECENTER",
+ "wild": null,
+ "townMap": {"x": 7, "y": 5, "group": "CELADON_CITY"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/CeladonMart1F.json",
+ "textPointers": "CeladonMart1F_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/CeladonMart1F.asm",
+  "objects": "data/maps/objects/CeladonMart1F.asm",
+  "blocks": "maps/CeladonMart1F.blk",
+  "script": "scripts/CeladonMart1F.asm"
+ },
+ "lastMapCandidates": ["CELADON_CITY"],
+ "palette": {"pal": "PAL_CELADON", "rule": "lastMap", "viaLastMap": "CELADON_CITY"}
+}

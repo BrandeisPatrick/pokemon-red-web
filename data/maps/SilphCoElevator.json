@@ -1,0 +1,41 @@
+{
+ "id": 236,
+ "const": "SILPH_CO_ELEVATOR",
+ "name": "SilphCoElevator",
+ "displayName": "SILPH CO.",
+ "width": 2,
+ "height": 2,
+ "tileset": "LOBBY",
+ "tilesetId": 18,
+ "tilesetFile": "data/tilesets/Lobby.json",
+ "isOutside": false,
+ "borderBlock": 15,
+ "blocks": [42, 43, 40, 41],
+ "connections": {},
+ "warps": [
+  {"x": 1, "y": 3, "destMap": "UNUSED_MAP_ED", "destMapId": 237, "destMapName": null, "destWarp": 1, "destWarpIndex": 0, "placeholder": true},
+  {"x": 2, "y": 3, "destMap": "UNUSED_MAP_ED", "destMapId": 237, "destMapName": null, "destWarp": 1, "destWarpIndex": 0, "placeholder": true}
+ ],
+ "bgEvents": [
+  {"x": 3, "y": 0, "textId": "TEXT_SILPHCOELEVATOR_ELEVATOR", "textIndex": 1}
+ ],
+ "objectEvents": [],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_SILPH_CO",
+ "wild": null,
+ "townMap": {"x": 10, "y": 5, "group": "SILPH_CO_2"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/SilphCoElevator.json",
+ "textPointers": "SilphCoElevator_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/SilphCoElevator.asm",
+  "objects": "data/maps/objects/SilphCoElevator.asm",
+  "blocks": "maps/SilphCoElevator.blk",
+  "script": "scripts/SilphCoElevator.asm"
+ },
+ "lastMapCandidates": ["SAFFRON_CITY"],
+ "palette": {"pal": "PAL_SAFFRON", "rule": "lastMap", "viaLastMap": "SAFFRON_CITY"}
+}

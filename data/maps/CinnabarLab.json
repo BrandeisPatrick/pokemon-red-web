@@ -1,0 +1,49 @@
+{
+ "id": 167,
+ "const": "CINNABAR_LAB",
+ "name": "CinnabarLab",
+ "displayName": "CINNABAR ISLAND",
+ "width": 9,
+ "height": 4,
+ "tileset": "LAB",
+ "tilesetId": 20,
+ "tilesetFile": "data/tilesets/Lab.json",
+ "isOutside": false,
+ "borderBlock": 23,
+ "blocks": [23, 23, 23, 23, 23, 23, 23, 23, 23, 9, 3, 10, 23, 23, 23, 23, 23, 23, 7, 7, 7, 25, 24, 1, 24, 1, 24, 7, 12, 7, 7, 7, 7, 7, 7, 7],
+ "connections": {},
+ "warps": [
+  {"x": 2, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 3, "destWarpIndex": 2},
+  {"x": 3, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 3, "destWarpIndex": 2},
+  {"x": 8, "y": 4, "destMap": "CINNABAR_LAB_TRADE_ROOM", "destMapId": 168, "destMapName": "CinnabarLabTradeRoom", "destWarp": 1, "destWarpIndex": 0},
+  {"x": 12, "y": 4, "destMap": "CINNABAR_LAB_METRONOME_ROOM", "destMapId": 169, "destMapName": "CinnabarLabMetronomeRoom", "destWarp": 1, "destWarpIndex": 0},
+  {"x": 16, "y": 4, "destMap": "CINNABAR_LAB_FOSSIL_ROOM", "destMapId": 170, "destMapName": "CinnabarLabFossilRoom", "destWarp": 1, "destWarpIndex": 0}
+ ],
+ "bgEvents": [
+  {"x": 3, "y": 2, "textId": "TEXT_CINNABARLAB_PHOTO", "textIndex": 2},
+  {"x": 9, "y": 4, "textId": "TEXT_CINNABARLAB_MEETING_ROOM_SIGN", "textIndex": 3},
+  {"x": 13, "y": 4, "textId": "TEXT_CINNABARLAB_R_AND_D_SIGN", "textIndex": 4},
+  {"x": 17, "y": 4, "textId": "TEXT_CINNABARLAB_TESTING_ROOM_SIGN", "textIndex": 5}
+ ],
+ "objectEvents": [
+  {"index": 1, "const": "CINNABARLAB_FISHING_GURU", "x": 1, "y": 3, "sprite": "SPRITE_FISHING_GURU", "spriteId": 39, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_CINNABARLAB_FISHING_GURU", "textIndex": 1}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_CINNABAR",
+ "wild": null,
+ "townMap": {"x": 2, "y": 15, "group": "CINNABAR_ISLAND"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/CinnabarLab.json",
+ "textPointers": "CinnabarLab_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/CinnabarLab.asm",
+  "objects": "data/maps/objects/CinnabarLab.asm",
+  "blocks": "maps/CinnabarLab.blk",
+  "script": "scripts/CinnabarLab.asm"
+ },
+ "lastMapCandidates": ["CINNABAR_ISLAND"],
+ "palette": {"pal": "PAL_CINNABAR", "rule": "lastMap", "viaLastMap": "CINNABAR_ISLAND"}
+}

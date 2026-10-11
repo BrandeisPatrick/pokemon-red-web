@@ -1,0 +1,229 @@
+{
+ "map": "BillsHouse",
+ "const": "BILLS_HOUSE",
+ "textPointerTables": [
+  {
+   "label": "BillsHouse_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_BILLSHOUSE_BILL_POKEMON", "label": "BillsHouseBillPokemonText", "kind": "asm", "handler": "asm"},
+    {"id": 2, "const": "TEXT_BILLSHOUSE_BILL_SS_TICKET", "label": "BillsHouseBillSSTicketText", "kind": "asm", "handler": "asm"},
+    {"id": 3, "const": "TEXT_BILLSHOUSE_BILL_CHECK_OUT_MY_RARE_POKEMON", "label": "BillsHouseBillCheckOutMyRarePokemonText", "kind": "asm", "handler": "asm"},
+    {"id": 4, "const": "TEXT_BILLSHOUSE_ACTIVATE_PC", "label": "BillsHouseActivatePCScript", "kind": "script", "handler": "script_bills_pc"}
+   ]
+  }
+ ],
+ "texts": {
+  "BillsHouseActivatePCScript": {
+   "kind": "script",
+   "src": "scripts/BillsHouse.asm:127",
+   "commands": [
+    {"cmd": "script", "script": "script_bills_pc"}
+   ]
+  },
+  "BillsHouseBillPokemonText": {
+   "kind": "asm",
+   "src": "scripts/BillsHouse.asm:130",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["BillsHouseBillPokemonText.ImNotAPokemonText", "BillsHouseBillPokemonText.UseSeparationSystemText", "BillsHouseBillPokemonText.NoYouGottaHelpText"]
+  },
+  "BillsHouseBillPokemonText.ImNotAPokemonText": {
+   "kind": "text",
+   "src": "scripts/BillsHouse.asm:151",
+   "commands": [
+    {"cmd": "text_far", "label": "_BillsHouseBillImNotAPokemonText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "BillsHouseBillPokemonText.UseSeparationSystemText": {
+   "kind": "text",
+   "src": "scripts/BillsHouse.asm:155",
+   "commands": [
+    {"cmd": "text_far", "label": "_BillsHouseBillUseSeparationSystemText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "BillsHouseBillPokemonText.NoYouGottaHelpText": {
+   "kind": "text",
+   "src": "scripts/BillsHouse.asm:159",
+   "commands": [
+    {"cmd": "text_far", "label": "_BillsHouseBillNoYouGottaHelpText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "BillsHouseBillSSTicketText": {
+   "kind": "asm",
+   "src": "scripts/BillsHouse.asm:163",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["BillsHouseBillSSTicketText.ThankYouText", "BillsHouseBillSSTicketText.SSTicketReceivedText", "BillsHouseBillSSTicketText.WhyDontYouGoInsteadOfMeText", "BillsHouseBillSSTicketText.SSTicketNoRoomText"]
+  },
+  "BillsHouseBillSSTicketText.ThankYouText": {
+   "kind": "text",
+   "src": "scripts/BillsHouse.asm:191",
+   "commands": [
+    {"cmd": "text_far", "label": "_BillsHouseBillThankYouText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "BillsHouseBillSSTicketText.SSTicketReceivedText": {
+   "kind": "text",
+   "src": "scripts/BillsHouse.asm:195",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSTicketReceivedText"},
+    {"cmd": "sound", "sound": "sound_get_key_item"},
+    {"cmd": "text_promptbutton"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "BillsHouseBillSSTicketText.SSTicketNoRoomText": {
+   "kind": "text",
+   "src": "scripts/BillsHouse.asm:201",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSTicketNoRoomText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "BillsHouseBillSSTicketText.WhyDontYouGoInsteadOfMeText": {
+   "kind": "text",
+   "src": "scripts/BillsHouse.asm:205",
+   "commands": [
+    {"cmd": "text_far", "label": "_BillsHouseBillWhyDontYouGoInsteadOfMeText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "BillsHouseBillCheckOutMyRarePokemonText": {
+   "kind": "asm",
+   "src": "scripts/BillsHouse.asm:209",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["BillsHouseBillCheckOutMyRarePokemonText.Text"]
+  },
+  "BillsHouseBillCheckOutMyRarePokemonText.Text": {
+   "kind": "text",
+   "src": "scripts/BillsHouse.asm:215",
+   "commands": [
+    {"cmd": "text_far", "label": "_BillsHouseBillCheckOutMyRarePokemonText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_BillsHouseBillImNotAPokemonText": {
+   "kind": "text",
+   "src": "text/BillsHouse.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Hiya! I'm a"},
+    {"cmd": "line", "str": "POKéMON..."},
+    {"cmd": "cont", "str": "...No I'm not!"},
+    {"cmd": "para", "str": "Call me BILL!"},
+    {"cmd": "line", "str": "I'm a true blue"},
+    {"cmd": "cont", "str": "POKéMANIAC! Hey!"},
+    {"cmd": "cont", "str": "What's with that"},
+    {"cmd": "cont", "str": "skeptical look?"},
+    {"cmd": "para", "str": "I'm not joshing"},
+    {"cmd": "line", "str": "you, I screwed up"},
+    {"cmd": "cont", "str": "an experiment and"},
+    {"cmd": "cont", "str": "got combined with"},
+    {"cmd": "cont", "str": "a POKéMON!"},
+    {"cmd": "para", "str": "So, how about it?"},
+    {"cmd": "line", "str": "Help me out here!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_BillsHouseBillUseSeparationSystemText": {
+   "kind": "text",
+   "src": "text/BillsHouse.asm:23",
+   "commands": [
+    {"cmd": "text", "str": "When I'm in the"},
+    {"cmd": "line", "str": "TELEPORTER, go to"},
+    {"cmd": "cont", "str": "my PC and run the"},
+    {"cmd": "cont", "str": "Cell Separation"},
+    {"cmd": "cont", "str": "System!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_BillsHouseBillNoYouGottaHelpText": {
+   "kind": "text",
+   "src": "text/BillsHouse.asm:31",
+   "commands": [
+    {"cmd": "text", "str": "No!? Come on, you"},
+    {"cmd": "line", "str": "gotta help a guy"},
+    {"cmd": "cont", "str": "in deep trouble!"},
+    {"cmd": "para", "str": "What do you say,"},
+    {"cmd": "line", "str": "chief? Please?"},
+    {"cmd": "cont", "str": "OK? All right!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_BillsHouseBillThankYouText": {
+   "kind": "text",
+   "src": "text/BillsHouse.asm:41",
+   "commands": [
+    {"cmd": "text", "str": "BILL: Yeehah!"},
+    {"cmd": "line", "str": "Thanks, bud! I"},
+    {"cmd": "cont", "str": "owe you one!"},
+    {"cmd": "para", "str": "So, did you come"},
+    {"cmd": "line", "str": "to see my POKéMON"},
+    {"cmd": "cont", "str": "collection?"},
+    {"cmd": "cont", "str": "You didn't?"},
+    {"cmd": "cont", "str": "That's a bummer."},
+    {"cmd": "para", "str": "I've got to thank"},
+    {"cmd": "line", "str": "you... Oh here,"},
+    {"cmd": "cont", "str": "maybe this'll do."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_SSTicketReceivedText": {
+   "kind": "text",
+   "src": "text/BillsHouse.asm:57",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} received"},
+    {"cmd": "line", "str": "an "},
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_SSTicketNoRoomText": {
+   "kind": "text",
+   "src": "text/BillsHouse.asm:64",
+   "commands": [
+    {"cmd": "text", "str": "You've got too"},
+    {"cmd": "line", "str": "much stuff, bud!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_BillsHouseBillWhyDontYouGoInsteadOfMeText": {
+   "kind": "text",
+   "src": "text/BillsHouse.asm:69",
+   "commands": [
+    {"cmd": "text", "str": "That cruise ship,"},
+    {"cmd": "line", "str": "S.S.ANNE, is in"},
+    {"cmd": "cont", "str": "VERMILION CITY."},
+    {"cmd": "cont", "str": "Its passengers"},
+    {"cmd": "cont", "str": "are all trainers!"},
+    {"cmd": "para", "str": "They invited me"},
+    {"cmd": "line", "str": "to their party,"},
+    {"cmd": "cont", "str": "but I can't stand"},
+    {"cmd": "cont", "str": "fancy do's. Why"},
+    {"cmd": "cont", "str": "don't you go"},
+    {"cmd": "cont", "str": "instead of me?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_BillsHouseBillCheckOutMyRarePokemonText": {
+   "kind": "text",
+   "src": "text/BillsHouse.asm:84",
+   "commands": [
+    {"cmd": "text", "str": "BILL: Look, bud,"},
+    {"cmd": "line", "str": "just check out"},
+    {"cmd": "cont", "str": "some of my rare"},
+    {"cmd": "cont", "str": "POKéMON on my PC!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

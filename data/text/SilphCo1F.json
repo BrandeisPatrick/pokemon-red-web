@@ -1,0 +1,34 @@
+{
+ "map": "SilphCo1F",
+ "const": "SILPH_CO_1F",
+ "textPointerTables": [
+  {
+   "label": "SilphCo1F_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_SILPHCO1F_LINK_RECEPTIONIST", "label": "SilphCo1FLinkReceptionistText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "SilphCo1FLinkReceptionistText": {
+   "kind": "text",
+   "src": "scripts/SilphCo1F.asm:16",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo1FLinkReceptionistText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_SilphCo1FLinkReceptionistText": {
+   "kind": "text",
+   "src": "text/SilphCo1F.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Welcome!"},
+    {"cmd": "para", "str": "The PRESIDENT is"},
+    {"cmd": "line", "str": "in the boardroom"},
+    {"cmd": "cont", "str": "on 11F!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

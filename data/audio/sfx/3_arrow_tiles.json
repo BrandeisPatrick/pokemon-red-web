@@ -1,0 +1,24 @@
+{
+  "name": "SFX_ARROW_TILES",
+  "title": "Arrow Tiles",
+  "kind": "sfx",
+  "bank": 3,
+  "id": 167,
+  "label": "SFX_Arrow_Tiles_3",
+  "channels": [
+    {
+      "channel": 5,
+      "label": "SFX_Arrow_Tiles_3_Ch5",
+      "entry": 0,
+      "bytes": 11,
+      "labels": {"SFX_Arrow_Tiles_3_Ch5": 0},
+      "commands": [
+        {"op": "duty_cycle", "duty": 0},
+        {"op": "pitch_sweep", "length": 1, "change": 7},
+        {"op": "square_note", "length": 15, "volume": 13, "fade": 2, "frequency": 1792},
+        {"op": "pitch_sweep", "length": 0, "change": 8},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

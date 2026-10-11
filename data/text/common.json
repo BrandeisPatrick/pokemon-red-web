@@ -1,0 +1,6089 @@
+{
+ "textPredefs": {
+  "CardKeySuccessText": 1,
+  "CardKeyFailText": 2,
+  "RedBedroomPCText": 3,
+  "RedBedroomSNESText": 4,
+  "PushStartText": 5,
+  "SaveOptionText": 6,
+  "StrengthsAndWeaknessesText": 7,
+  "OakLabEmailText": 8,
+  "AerodactylFossilText": 9,
+  "Route15UpstairsBinocularsText": 10,
+  "KabutopsFossilText": 11,
+  "GymStatueText1": 12,
+  "GymStatueText2": 13,
+  "BookcaseText": 14,
+  "ViridianCityPokecenterBenchGuyText": 15,
+  "PewterCityPokecenterBenchGuyText": 16,
+  "CeruleanCityPokecenterBenchGuyText": 17,
+  "LavenderCityPokecenterBenchGuyText": 18,
+  "VermilionCityPokecenterBenchGuyText": 19,
+  "CeladonCityPokecenterBenchGuyText": 20,
+  "CeladonCityHotelText": 21,
+  "FuchsiaCityPokecenterBenchGuyText": 22,
+  "CinnabarIslandPokecenterBenchGuyText": 23,
+  "SaffronCityPokecenterBenchGuyText": 24,
+  "MtMoonPokecenterBenchGuyText": 25,
+  "RockTunnelPokecenterBenchGuyText": 26,
+  "UnusedBenchGuyText1": 27,
+  "UnusedBenchGuyText2": 28,
+  "UnusedBenchGuyText3": 29,
+  "UnusedPredefText": 30,
+  "PokemonCenterPCText": 31,
+  "ViridianSchoolNotebook": 32,
+  "ViridianSchoolBlackboard": 33,
+  "JustAMomentText": 34,
+  "OpenBillsPCText": 35,
+  "FoundHiddenItemText": 36,
+  "HiddenItemBagFullText": 37,
+  "VermilionGymTrashText": 38,
+  "IndigoPlateauHQText": 39,
+  "GameCornerOutOfOrderText": 40,
+  "GameCornerOutToLunchText": 41,
+  "GameCornerSomeonesKeysText": 42,
+  "FoundHiddenCoinsText": 43,
+  "DroppedHiddenCoinsText": 44,
+  "BillsHouseMonitorText": 45,
+  "BillsHouseInitiatedText": 46,
+  "BillsHousePokemonList": 47,
+  "MagazinesText": 48,
+  "CinnabarGymQuiz": 49,
+  "GameCornerNoCoinsText": 50,
+  "GameCornerCoinCaseText": 51,
+  "LinkCableHelp": 52,
+  "TMNotebook": 53,
+  "FightingDojoText": 54,
+  "EnemiesOnEverySideText": 55,
+  "WhatGoesAroundComesAroundText": 56,
+  "NewBicycleText": 57,
+  "IndigoPlateauStatues": 58,
+  "VermilionGymTrashSuccessText1": 59,
+  "VermilionGymTrashSuccessText2": 60,
+  "VermilionGymTrashSuccessText3": 61,
+  "VermilionGymTrashFailText": 62,
+  "TownMapText": 63,
+  "BookOrSculptureText": 64,
+  "ElevatorText": 65,
+  "PokemonStuffText": 66
+ },
+ "texts": {
+  "LowerCaseAlphabet": {
+   "kind": "string",
+   "src": "data/text/alphabets.asm:2",
+   "commands": [
+    {"cmd": "str", "str": "abcdefghijklmnopqrstuvwxyz ×():;[]<PK><MN>-?!♂♀/<DOT>,<ED>UPPER CASE"}
+   ]
+  },
+  "UpperCaseAlphabet": {
+   "kind": "string",
+   "src": "data/text/alphabets.asm:10",
+   "commands": [
+    {"cmd": "str", "str": "ABCDEFGHIJKLMNOPQRSTUVWXYZ ×():;[]<PK><MN>-?!♂♀/<DOT>,<ED>lower case"}
+   ]
+  },
+  "Dakutens": {
+   "kind": "string",
+   "src": "data/text/dakutens.asm:2",
+   "commands": [
+    {"cmd": "str", "str": "かがきぎくぐけげこごさざしじすずせぜそぞただちぢつづてでとどはばひびふぶへべほぼカガキギクグケゲコゴサザシジスズセゼソゾタダチヂツヅテデトドハバヒビフブへべホボ"}
+   ]
+  },
+  "Handakutens": {
+   "kind": "string",
+   "src": "data/text/dakutens.asm:13",
+   "commands": [
+    {"cmd": "str", "str": "はぱひぴふぷへぺほぽハパヒピフプへぺホポ"}
+   ]
+  },
+  "_CardKeySuccessText1": {
+   "kind": "text",
+   "src": "data/text/text_1.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Bingo!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_CardKeySuccessText2": {
+   "kind": "text",
+   "src": "data/text/text_1.asm:6",
+   "commands": [
+    {"cmd": "text", "str": ""},
+    {"cmd": "line", "str": "The CARD KEY"},
+    {"cmd": "cont", "str": "opened the door!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CardKeyFailText": {
+   "kind": "text",
+   "src": "data/text/text_1.asm:12",
+   "commands": [
+    {"cmd": "text", "str": "Darn! It needs a"},
+    {"cmd": "line", "str": "CARD KEY!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_TrainerNameText": {
+   "kind": "text",
+   "src": "data/text/text_1.asm:17",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": ": "},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_NoNibbleText": {
+   "kind": "text",
+   "src": "data/text/text_1.asm:22",
+   "commands": [
+    {"cmd": "text", "str": "Not even a nibble!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_NothingHereText": {
+   "kind": "text",
+   "src": "data/text/text_1.asm:26",
+   "commands": [
+    {"cmd": "text", "str": "Looks like there's"},
+    {"cmd": "line", "str": "nothing here."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_ItsABiteText": {
+   "kind": "text",
+   "src": "data/text/text_1.asm:31",
+   "commands": [
+    {"cmd": "text", "str": "Oh!"},
+    {"cmd": "line", "str": "It's a bite!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_ExclamationText": {
+   "kind": "text",
+   "src": "data/text/text_1.asm:36",
+   "commands": [
+    {"cmd": "text", "str": "!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_GroundRoseText": {
+   "kind": "text",
+   "src": "data/text/text_1.asm:40",
+   "commands": [
+    {"cmd": "text", "str": "Ground rose up"},
+    {"cmd": "line", "str": "somewhere!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_BoulderText": {
+   "kind": "text",
+   "src": "data/text/text_1.asm:45",
+   "commands": [
+    {"cmd": "text", "str": "This requires"},
+    {"cmd": "line", "str": "STRENGTH to move!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_MartSignText": {
+   "kind": "text",
+   "src": "data/text/text_1.asm:50",
+   "commands": [
+    {"cmd": "text", "str": "All your item"},
+    {"cmd": "line", "str": "needs fulfilled!"},
+    {"cmd": "cont", "str": "POKéMON MART"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokeCenterSignText": {
+   "kind": "text",
+   "src": "data/text/text_1.asm:56",
+   "commands": [
+    {"cmd": "text", "str": "Heal Your POKéMON!"},
+    {"cmd": "line", "str": "POKéMON CENTER"},
+    {"cmd": "done"}
+   ]
+  },
+  "_FoundItemText": {
+   "kind": "text",
+   "src": "data/text/text_1.asm:61",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} found"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_NoMoreRoomForItemText": {
+   "kind": "text",
+   "src": "data/text/text_1.asm:68",
+   "commands": [
+    {"cmd": "text", "str": "No more room for"},
+    {"cmd": "line", "str": "items!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_OaksAideHiText": {
+   "kind": "text",
+   "src": "data/text/text_1.asm:73",
+   "commands": [
+    {"cmd": "text", "str": "Hi! Remember me?"},
+    {"cmd": "line", "str": "I'm PROF.OAK's"},
+    {"cmd": "cont", "str": "AIDE!"},
+    {"cmd": "para", "str": "If you caught "},
+    {"cmd": "text_decimal", "ram": "hOaksAideRequirement", "bytes": 1, "digits": 3},
+    {"cmd": "text", "str": ""},
+    {"cmd": "line", "str": "kinds of POKéMON,"},
+    {"cmd": "cont", "str": "I'm supposed to"},
+    {"cmd": "cont", "str": "give you an"},
+    {"cmd": "cont", "str": ""},
+    {"cmd": "text_ram", "ram": "wOaksAideRewardItemName"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "para", "str": "So, {PLAYER}! Have"},
+    {"cmd": "line", "str": "you caught at"},
+    {"cmd": "cont", "str": "least "},
+    {"cmd": "text_decimal", "ram": "hOaksAideRequirement", "bytes": 1, "digits": 3},
+    {"cmd": "text", "str": " kinds of"},
+    {"cmd": "cont", "str": "POKéMON?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_OaksAideUhOhText": {
+   "kind": "text",
+   "src": "data/text/text_1.asm:96",
+   "commands": [
+    {"cmd": "text", "str": "Let's see..."},
+    {"cmd": "line", "str": "Uh-oh! You have"},
+    {"cmd": "cont", "str": "caught only "},
+    {"cmd": "text_decimal", "ram": "hOaksAideNumMonsOwned", "bytes": 1, "digits": 3},
+    {"cmd": "text", "str": ""},
+    {"cmd": "cont", "str": "kinds of POKéMON!"},
+    {"cmd": "para", "str": "You need "},
+    {"cmd": "text_decimal", "ram": "hOaksAideRequirement", "bytes": 1, "digits": 3},
+    {"cmd": "text", "str": " kinds"},
+    {"cmd": "line", "str": "if you want the"},
+    {"cmd": "cont", "str": ""},
+    {"cmd": "text_ram", "ram": "wOaksAideRewardItemName"},
+    {"cmd": "text", "str": "."},
+    {"cmd": "done"}
+   ]
+  },
+  "_OaksAideComeBackText": {
+   "kind": "text",
+   "src": "data/text/text_1.asm:113",
+   "commands": [
+    {"cmd": "text", "str": "Oh. I see."},
+    {"cmd": "para", "str": "When you get "},
+    {"cmd": "text_decimal", "ram": "hOaksAideRequirement", "bytes": 1, "digits": 3},
+    {"cmd": "text", "str": ""},
+    {"cmd": "line", "str": "kinds, come back"},
+    {"cmd": "cont", "str": "for "},
+    {"cmd": "text_ram", "ram": "wOaksAideRewardItemName"},
+    {"cmd": "text", "str": "."},
+    {"cmd": "done"}
+   ]
+  },
+  "_OaksAideHereYouGoText": {
+   "kind": "text",
+   "src": "data/text/text_1.asm:125",
+   "commands": [
+    {"cmd": "text", "str": "Great! You have"},
+    {"cmd": "line", "str": "caught "},
+    {"cmd": "text_decimal", "ram": "hOaksAideNumMonsOwned", "bytes": 1, "digits": 3},
+    {"cmd": "text", "str": " kinds "},
+    {"cmd": "cont", "str": "of POKéMON!"},
+    {"cmd": "cont", "str": "Congratulations!"},
+    {"cmd": "para", "str": "Here you go!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_OaksAideGotItemText": {
+   "kind": "text",
+   "src": "data/text/text_1.asm:136",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} got the"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wOaksAideRewardItemName"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_OaksAideNoRoomText": {
+   "kind": "text",
+   "src": "data/text/text_1.asm:143",
+   "commands": [
+    {"cmd": "text", "str": "Oh! I see you"},
+    {"cmd": "line", "str": "don't have any"},
+    {"cmd": "cont", "str": "room for the"},
+    {"cmd": "cont", "str": ""},
+    {"cmd": "text_ram", "ram": "wOaksAideRewardItemName"},
+    {"cmd": "text", "str": "."},
+    {"cmd": "done"}
+   ]
+  },
+  "_AIBattleWithdrawText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:2",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wTrainerName"},
+    {"cmd": "text", "str": " with-"},
+    {"cmd": "line", "str": "drew "},
+    {"cmd": "text_ram", "ram": "wEnemyMonNick"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_AIBattleUseItemText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:10",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wTrainerName"},
+    {"cmd": "text", "str": ""},
+    {"cmd": "line", "str": "used "},
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": ""},
+    {"cmd": "cont", "str": "on "},
+    {"cmd": "text_ram", "ram": "wEnemyMonNick"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_TradeWentToText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:21",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": " went"},
+    {"cmd": "line", "str": "to "},
+    {"cmd": "text_ram", "ram": "wLinkEnemyTrainerName"},
+    {"cmd": "text", "str": "."},
+    {"cmd": "done"}
+   ]
+  },
+  "_TradeForText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:29",
+   "commands": [
+    {"cmd": "text", "str": "For {PLAYER}'s"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": ","},
+    {"cmd": "done"}
+   ]
+  },
+  "_TradeSendsText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:36",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wLinkEnemyTrainerName"},
+    {"cmd": "text", "str": " sends"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": "."},
+    {"cmd": "done"}
+   ]
+  },
+  "_TradeWavesFarewellText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:44",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wLinkEnemyTrainerName"},
+    {"cmd": "text", "str": " waves"},
+    {"cmd": "line", "str": "farewell as"},
+    {"cmd": "done"}
+   ]
+  },
+  "_TradeTransferredText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:50",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": " is"},
+    {"cmd": "line", "str": "transferred."},
+    {"cmd": "done"}
+   ]
+  },
+  "_TradeTakeCareText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:56",
+   "commands": [
+    {"cmd": "text", "str": "Take good care of"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": "."},
+    {"cmd": "done"}
+   ]
+  },
+  "_TradeWillTradeText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:63",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wLinkEnemyTrainerName"},
+    {"cmd": "text", "str": " will"},
+    {"cmd": "line", "str": "trade "},
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": ""},
+    {"cmd": "done"}
+   ]
+  },
+  "_TradeforText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:71",
+   "commands": [
+    {"cmd": "text", "str": "for {PLAYER}'s"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": "."},
+    {"cmd": "done"}
+   ]
+  },
+  "_PlaySlotMachineText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:78",
+   "commands": [
+    {"cmd": "text", "str": "A slot machine!"},
+    {"cmd": "line", "str": "Want to play?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_OutOfCoinsSlotMachineText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:83",
+   "commands": [
+    {"cmd": "text", "str": "Darn!"},
+    {"cmd": "line", "str": "Ran out of coins!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_BetHowManySlotMachineText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:88",
+   "commands": [
+    {"cmd": "text", "str": "Bet how many"},
+    {"cmd": "line", "str": "coins?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_StartSlotMachineText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:93",
+   "commands": [
+    {"cmd": "text", "str": "Start!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_NotEnoughCoinsSlotMachineText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:97",
+   "commands": [
+    {"cmd": "text", "str": "Not enough"},
+    {"cmd": "line", "str": "coins!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_OneMoreGoSlotMachineText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:102",
+   "commands": [
+    {"cmd": "text", "str": "One more "},
+    {"cmd": "line", "str": "go?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_LinedUpText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:107",
+   "commands": [
+    {"cmd": "text", "str": " lined up!"},
+    {"cmd": "line", "str": "Scored "},
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": " coins!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_NotThisTimeText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:114",
+   "commands": [
+    {"cmd": "text", "str": "Not this time!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_YeahText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:118",
+   "commands": [
+    {"cmd": "text", "str": "Yeah!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_DexSeenOwnedText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:122",
+   "commands": [
+    {"cmd": "text", "str": "POKéDEX   Seen:"},
+    {"cmd": "text_decimal", "ram": "wDexRatingNumMonsSeen", "bytes": 1, "digits": 3},
+    {"cmd": "text", "str": ""},
+    {"cmd": "line", "str": "         Owned:"},
+    {"cmd": "text_decimal", "ram": "wDexRatingNumMonsOwned", "bytes": 1, "digits": 3},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_DexRatingText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:130",
+   "commands": [
+    {"cmd": "text", "str": "POKéDEX Rating<COLON>"},
+    {"cmd": "done"}
+   ]
+  },
+  "_GymStatueText1": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:134",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wGymCityName"},
+    {"cmd": "text", "str": ""},
+    {"cmd": "line", "str": "POKéMON GYM"},
+    {"cmd": "cont", "str": "LEADER: "},
+    {"cmd": "text_ram", "ram": "wGymLeaderName"},
+    {"cmd": "text", "str": ""},
+    {"cmd": "para", "str": "WINNING TRAINERS:"},
+    {"cmd": "line", "str": "{RIVAL}"},
+    {"cmd": "done"}
+   ]
+  },
+  "_GymStatueText2": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:146",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wGymCityName"},
+    {"cmd": "text", "str": ""},
+    {"cmd": "line", "str": "POKéMON GYM"},
+    {"cmd": "cont", "str": "LEADER: "},
+    {"cmd": "text_ram", "ram": "wGymLeaderName"},
+    {"cmd": "text", "str": ""},
+    {"cmd": "para", "str": "WINNING TRAINERS:"},
+    {"cmd": "line", "str": "{RIVAL}"},
+    {"cmd": "cont", "str": "{PLAYER}"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianCityPokecenterGuyText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:159",
+   "commands": [
+    {"cmd": "text", "str": "POKéMON CENTERs"},
+    {"cmd": "line", "str": "heal your tired,"},
+    {"cmd": "cont", "str": "hurt or fainted"},
+    {"cmd": "cont", "str": "POKéMON!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PewterCityPokecenterGuyText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:166",
+   "commands": [
+    {"cmd": "text", "str": "Yawn!"},
+    {"cmd": "para", "str": "When JIGGLYPUFF"},
+    {"cmd": "line", "str": "sings, POKéMON"},
+    {"cmd": "cont", "str": "get drowsy..."},
+    {"cmd": "para", "str": "...Me too..."},
+    {"cmd": "line", "str": "Snore..."},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeruleanPokecenterGuyText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:177",
+   "commands": [
+    {"cmd": "text", "str": "BILL has lots of"},
+    {"cmd": "line", "str": "POKéMON!"},
+    {"cmd": "para", "str": "He collects rare"},
+    {"cmd": "line", "str": "ones too!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_LavenderPokecenterGuyText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:185",
+   "commands": [
+    {"cmd": "text", "str": "CUBONEs wear"},
+    {"cmd": "line", "str": "skulls, right?"},
+    {"cmd": "para", "str": "People will pay a"},
+    {"cmd": "line", "str": "lot for one!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_MtMoonPokecenterBenchGuyText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:193",
+   "commands": [
+    {"cmd": "text", "str": "If you have too"},
+    {"cmd": "line", "str": "many POKéMON, you"},
+    {"cmd": "cont", "str": "should store them"},
+    {"cmd": "cont", "str": "via PC!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_RockTunnelPokecenterGuyText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:200",
+   "commands": [
+    {"cmd": "text", "str": "I heard that"},
+    {"cmd": "line", "str": "GHOSTs haunt"},
+    {"cmd": "cont", "str": "LAVENDER TOWN!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_UnusedBenchGuyText1": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:206",
+   "commands": [
+    {"cmd": "text", "str": "I wish I could"},
+    {"cmd": "line", "str": "catch POKéMON."},
+    {"cmd": "done"}
+   ]
+  },
+  "_UnusedBenchGuyText2": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:211",
+   "commands": [
+    {"cmd": "text", "str": "I'm tired from"},
+    {"cmd": "line", "str": "all the fun..."},
+    {"cmd": "done"}
+   ]
+  },
+  "_UnusedBenchGuyText3": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:216",
+   "commands": [
+    {"cmd": "text", "str": "SILPH's manager"},
+    {"cmd": "line", "str": "is hiding in the"},
+    {"cmd": "cont", "str": "SAFARI ZONE."},
+    {"cmd": "done"}
+   ]
+  },
+  "_VermilionPokecenterGuyText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:222",
+   "commands": [
+    {"cmd": "text", "str": "It is true that a"},
+    {"cmd": "line", "str": "higher level"},
+    {"cmd": "cont", "str": "POKéMON will be"},
+    {"cmd": "cont", "str": "more powerful..."},
+    {"cmd": "para", "str": "But, all POKéMON"},
+    {"cmd": "line", "str": "will have weak"},
+    {"cmd": "cont", "str": "points against"},
+    {"cmd": "cont", "str": "specific types."},
+    {"cmd": "para", "str": "So, there is no"},
+    {"cmd": "line", "str": "universally"},
+    {"cmd": "cont", "str": "strong POKéMON."},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonCityPokecenterGuyText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:238",
+   "commands": [
+    {"cmd": "text", "str": "If I had a BIKE,"},
+    {"cmd": "line", "str": "I would go to"},
+    {"cmd": "cont", "str": "CYCLING ROAD!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_FuchsiaCityPokecenterGuyText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:244",
+   "commands": [
+    {"cmd": "text", "str": "If you're studying "},
+    {"cmd": "line", "str": "POKéMON, visit"},
+    {"cmd": "cont", "str": "the SAFARI ZONE."},
+    {"cmd": "para", "str": "It has all sorts"},
+    {"cmd": "line", "str": "of rare POKéMON."},
+    {"cmd": "done"}
+   ]
+  },
+  "_CinnabarPokecenterGuyText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:253",
+   "commands": [
+    {"cmd": "text", "str": "POKéMON can still"},
+    {"cmd": "line", "str": "learn techniques"},
+    {"cmd": "cont", "str": "after canceling"},
+    {"cmd": "cont", "str": "evolution."},
+    {"cmd": "para", "str": "Evolution can wait"},
+    {"cmd": "line", "str": "until new moves"},
+    {"cmd": "cont", "str": "have been learned."},
+    {"cmd": "done"}
+   ]
+  },
+  "_SaffronCityPokecenterGuyText1": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:264",
+   "commands": [
+    {"cmd": "text", "str": "It would be great"},
+    {"cmd": "line", "str": "if the ELITE FOUR"},
+    {"cmd": "cont", "str": "came and stomped"},
+    {"cmd": "cont", "str": "TEAM ROCKET!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SaffronCityPokecenterGuyText2": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:271",
+   "commands": [
+    {"cmd": "text", "str": "TEAM ROCKET took"},
+    {"cmd": "line", "str": "off! We can go"},
+    {"cmd": "cont", "str": "out safely again!"},
+    {"cmd": "cont", "str": "That's great!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonCityHotelText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:278",
+   "commands": [
+    {"cmd": "text", "str": "My sis brought me"},
+    {"cmd": "line", "str": "on this vacation!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_BookcaseText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:283",
+   "commands": [
+    {"cmd": "text", "str": "Crammed full of"},
+    {"cmd": "line", "str": "POKéMON books!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_NewBicycleText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:288",
+   "commands": [
+    {"cmd": "text", "str": "A shiny new"},
+    {"cmd": "line", "str": "BICYCLE!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PushStartText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:293",
+   "commands": [
+    {"cmd": "text", "str": "Push START to"},
+    {"cmd": "line", "str": "open the MENU!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SaveOptionText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:298",
+   "commands": [
+    {"cmd": "text", "str": "The SAVE option is"},
+    {"cmd": "line", "str": "on the MENU"},
+    {"cmd": "cont", "str": "screen."},
+    {"cmd": "done"}
+   ]
+  },
+  "_StrengthsAndWeaknessesText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:304",
+   "commands": [
+    {"cmd": "text", "str": "All POKéMON types"},
+    {"cmd": "line", "str": "have strong and"},
+    {"cmd": "cont", "str": "weak points"},
+    {"cmd": "cont", "str": "against others."},
+    {"cmd": "done"}
+   ]
+  },
+  "_TimesUpText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:311",
+   "commands": [
+    {"cmd": "text", "str": "PA: Ding-dong!"},
+    {"cmd": "para", "str": "Time's up!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_GameOverText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:317",
+   "commands": [
+    {"cmd": "text", "str": "PA: Your SAFARI"},
+    {"cmd": "line", "str": "GAME is over!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CinnabarGymQuizIntroText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:322",
+   "commands": [
+    {"cmd": "text", "str": "POKéMON Quiz!"},
+    {"cmd": "para", "str": "Get it right and"},
+    {"cmd": "line", "str": "the door opens to"},
+    {"cmd": "cont", "str": "the next room!"},
+    {"cmd": "para", "str": "Get it wrong and"},
+    {"cmd": "line", "str": "face a trainer!"},
+    {"cmd": "para", "str": "If you want to"},
+    {"cmd": "line", "str": "conserve your"},
+    {"cmd": "cont", "str": "POKéMON for the"},
+    {"cmd": "cont", "str": "GYM LEADER..."},
+    {"cmd": "para", "str": "Then get it right!"},
+    {"cmd": "line", "str": "Here we go!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_CinnabarQuizQuestionsText1": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:341",
+   "commands": [
+    {"cmd": "text", "str": "CATERPIE evolves"},
+    {"cmd": "line", "str": "into BUTTERFREE?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CinnabarQuizQuestionsText2": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:346",
+   "commands": [
+    {"cmd": "text", "str": "There are 9"},
+    {"cmd": "line", "str": "certified POKéMON"},
+    {"cmd": "cont", "str": "LEAGUE BADGEs?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CinnabarQuizQuestionsText3": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:352",
+   "commands": [
+    {"cmd": "text", "str": "POLIWAG evolves 3"},
+    {"cmd": "line", "str": "times?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CinnabarQuizQuestionsText4": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:357",
+   "commands": [
+    {"cmd": "text", "str": "Are thunder moves"},
+    {"cmd": "line", "str": "effective against"},
+    {"cmd": "cont", "str": "ground element-"},
+    {"cmd": "cont", "str": "type POKéMON?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CinnabarQuizQuestionsText5": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:364",
+   "commands": [
+    {"cmd": "text", "str": "POKéMON of the"},
+    {"cmd": "line", "str": "same kind and"},
+    {"cmd": "cont", "str": "level are not"},
+    {"cmd": "cont", "str": "identical?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CinnabarQuizQuestionsText6": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:371",
+   "commands": [
+    {"cmd": "text", "str": "TM28 contains"},
+    {"cmd": "line", "str": "TOMBSTONER?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CinnabarGymQuizCorrectText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:376",
+   "commands": [
+    {"cmd": "text", "str": "You're absolutely"},
+    {"cmd": "line", "str": "correct!"},
+    {"cmd": "para", "str": "Go on through!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_CinnabarGymQuizIncorrectText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:383",
+   "commands": [
+    {"cmd": "text", "str": "Sorry! Bad call!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_MagazinesText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:387",
+   "commands": [
+    {"cmd": "text", "str": "POKéMON magazines!"},
+    {"cmd": "para", "str": "POKéMON notebooks!"},
+    {"cmd": "para", "str": "POKéMON graphs!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_BillsHouseMonitorText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:395",
+   "commands": [
+    {"cmd": "text", "str": "TELEPORTER is"},
+    {"cmd": "line", "str": "displayed on the"},
+    {"cmd": "cont", "str": "PC monitor."},
+    {"cmd": "done"}
+   ]
+  },
+  "_BillsHouseInitiatedText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:401",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} initiated"},
+    {"cmd": "line", "str": "TELEPORTER's Cell"},
+    {"cmd": "cont", "str": "Separator!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_BillsHousePokemonListText1": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:407",
+   "commands": [
+    {"cmd": "text", "str": "BILL's favorite"},
+    {"cmd": "line", "str": "POKéMON list!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_BillsHousePokemonListText2": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:412",
+   "commands": [
+    {"cmd": "text", "str": "Which POKéMON do"},
+    {"cmd": "line", "str": "you want to see?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_OakLabEmailText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:417",
+   "commands": [
+    {"cmd": "text", "str": "There's an e-mail"},
+    {"cmd": "line", "str": "message here!"},
+    {"cmd": "para", "str": "..."},
+    {"cmd": "para", "str": "Calling all"},
+    {"cmd": "line", "str": "POKéMON trainers!"},
+    {"cmd": "para", "str": "The elite trainers"},
+    {"cmd": "line", "str": "of POKéMON LEAGUE"},
+    {"cmd": "cont", "str": "are ready to take"},
+    {"cmd": "cont", "str": "on all comers!"},
+    {"cmd": "para", "str": "Bring your best"},
+    {"cmd": "line", "str": "POKéMON and see"},
+    {"cmd": "cont", "str": "how you rate as a"},
+    {"cmd": "cont", "str": "trainer!"},
+    {"cmd": "para", "str": "POKéMON LEAGUE HQ"},
+    {"cmd": "line", "str": "INDIGO PLATEAU"},
+    {"cmd": "para", "str": "PS: PROF.OAK,"},
+    {"cmd": "line", "str": "please visit us!"},
+    {"cmd": "cont", "str": "..."},
+    {"cmd": "done"}
+   ]
+  },
+  "_GameCornerCoinCaseText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:444",
+   "commands": [
+    {"cmd": "text", "str": "A COIN CASE is"},
+    {"cmd": "line", "str": "required!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_GameCornerNoCoinsText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:449",
+   "commands": [
+    {"cmd": "text", "str": "You don't have"},
+    {"cmd": "line", "str": "any coins!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_GameCornerOutOfOrderText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:454",
+   "commands": [
+    {"cmd": "text", "str": "OUT OF ORDER"},
+    {"cmd": "line", "str": "This is broken."},
+    {"cmd": "done"}
+   ]
+  },
+  "_GameCornerOutToLunchText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:459",
+   "commands": [
+    {"cmd": "text", "str": "OUT TO LUNCH"},
+    {"cmd": "line", "str": "This is reserved."},
+    {"cmd": "done"}
+   ]
+  },
+  "_GameCornerSomeonesKeysText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:464",
+   "commands": [
+    {"cmd": "text", "str": "Someone's keys!"},
+    {"cmd": "line", "str": "They'll be back."},
+    {"cmd": "done"}
+   ]
+  },
+  "_JustAMomentText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:469",
+   "commands": [
+    {"cmd": "text", "str": "Just a moment."},
+    {"cmd": "done"}
+   ]
+  },
+  "TMNotebookText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:473",
+   "commands": [
+    {"cmd": "text", "str": "It's a pamphlet"},
+    {"cmd": "line", "str": "on TMs."},
+    {"cmd": "para", "str": "..."},
+    {"cmd": "para", "str": "There are 50 TMs"},
+    {"cmd": "line", "str": "in all."},
+    {"cmd": "para", "str": "There are also 5"},
+    {"cmd": "line", "str": "HMs that can be"},
+    {"cmd": "cont", "str": "used repeatedly."},
+    {"cmd": "para", "str": "SILPH CO."},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_TurnPageText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:489",
+   "commands": [
+    {"cmd": "text", "str": "Turn the page?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianSchoolNotebookText5": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:493",
+   "commands": [
+    {"cmd": "text", "str": "GIRL: Hey! Don't"},
+    {"cmd": "line", "str": "look at my notes!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_ViridianSchoolNotebookText1": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:498",
+   "commands": [
+    {"cmd": "text", "str": "Looked at the"},
+    {"cmd": "line", "str": "notebook!"},
+    {"cmd": "para", "str": "First page..."},
+    {"cmd": "para", "str": "POKé BALLs are"},
+    {"cmd": "line", "str": "used to catch"},
+    {"cmd": "cont", "str": "POKéMON."},
+    {"cmd": "para", "str": "Up to 6 POKéMON"},
+    {"cmd": "line", "str": "can be carried."},
+    {"cmd": "para", "str": "People who raise"},
+    {"cmd": "line", "str": "and make POKéMON"},
+    {"cmd": "cont", "str": "fight are called"},
+    {"cmd": "cont", "str": "POKéMON trainers."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_ViridianSchoolNotebookText2": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:517",
+   "commands": [
+    {"cmd": "text", "str": "Second page..."},
+    {"cmd": "para", "str": "A healthy POKéMON"},
+    {"cmd": "line", "str": "may be hard to"},
+    {"cmd": "cont", "str": "catch, so weaken"},
+    {"cmd": "cont", "str": "it first!"},
+    {"cmd": "para", "str": "Poison, burns and"},
+    {"cmd": "line", "str": "other damage are"},
+    {"cmd": "cont", "str": "effective!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_ViridianSchoolNotebookText3": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:530",
+   "commands": [
+    {"cmd": "text", "str": "Third page..."},
+    {"cmd": "para", "str": "POKéMON trainers"},
+    {"cmd": "line", "str": "seek others to"},
+    {"cmd": "cont", "str": "engage in POKéMON"},
+    {"cmd": "cont", "str": "fights."},
+    {"cmd": "para", "str": "Battles are"},
+    {"cmd": "line", "str": "constantly fought"},
+    {"cmd": "cont", "str": "at POKéMON GYMs."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_ViridianSchoolNotebookText4": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:543",
+   "commands": [
+    {"cmd": "text", "str": "Fourth page..."},
+    {"cmd": "para", "str": "The goal for"},
+    {"cmd": "line", "str": "POKéMON trainers"},
+    {"cmd": "cont", "str": "is to beat the "},
+    {"cmd": "cont", "str": "top 8 POKéMON"},
+    {"cmd": "cont", "str": "GYM LEADERs."},
+    {"cmd": "para", "str": "Do so to earn the"},
+    {"cmd": "line", "str": "right to face..."},
+    {"cmd": "para", "str": "The ELITE FOUR of"},
+    {"cmd": "line", "str": "POKéMON LEAGUE!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_EnemiesOnEverySideText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:559",
+   "commands": [
+    {"cmd": "text", "str": "Enemies on every"},
+    {"cmd": "line", "str": "side!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_WhatGoesAroundComesAroundText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:564",
+   "commands": [
+    {"cmd": "text", "str": "What goes around"},
+    {"cmd": "line", "str": "comes around!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_FightingDojoText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:569",
+   "commands": [
+    {"cmd": "text", "str": "FIGHTING DOJO"},
+    {"cmd": "done"}
+   ]
+  },
+  "_IndigoPlateauHQText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:573",
+   "commands": [
+    {"cmd": "text", "str": "INDIGO PLATEAU"},
+    {"cmd": "line", "str": "POKéMON LEAGUE HQ"},
+    {"cmd": "done"}
+   ]
+  },
+  "_RedBedroomSNESText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:578",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} is"},
+    {"cmd": "line", "str": "playing the SNES!"},
+    {"cmd": "cont", "str": "...Okay!"},
+    {"cmd": "cont", "str": "It's time to go!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route15UpstairsBinocularsText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:585",
+   "commands": [
+    {"cmd": "text", "str": "Looked into the"},
+    {"cmd": "line", "str": "binoculars..."},
+    {"cmd": "para", "str": "A large, shining"},
+    {"cmd": "line", "str": "bird is flying"},
+    {"cmd": "cont", "str": "toward the sea."},
+    {"cmd": "done"}
+   ]
+  },
+  "_AerodactylFossilText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:594",
+   "commands": [
+    {"cmd": "text", "str": "AERODACTYL Fossil"},
+    {"cmd": "line", "str": "A primitive and"},
+    {"cmd": "cont", "str": "rare POKéMON."},
+    {"cmd": "done"}
+   ]
+  },
+  "_KabutopsFossilText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:600",
+   "commands": [
+    {"cmd": "text", "str": "KABUTOPS Fossil"},
+    {"cmd": "line", "str": "A primitive and"},
+    {"cmd": "cont", "str": "rare POKéMON."},
+    {"cmd": "done"}
+   ]
+  },
+  "_LinkCableHelpText1": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:606",
+   "commands": [
+    {"cmd": "text", "str": "TRAINER TIPS"},
+    {"cmd": "para", "str": "Using a Game Link"},
+    {"cmd": "line", "str": "Cable"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_LinkCableHelpText2": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:613",
+   "commands": [
+    {"cmd": "text", "str": "Which heading do"},
+    {"cmd": "line", "str": "you want to read?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_LinkCableInfoText1": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:618",
+   "commands": [
+    {"cmd": "text", "str": "When you have"},
+    {"cmd": "line", "str": "linked your GAME"},
+    {"cmd": "cont", "str": "BOY with another"},
+    {"cmd": "cont", "str": "GAME BOY, talk to"},
+    {"cmd": "cont", "str": "the attendant on"},
+    {"cmd": "cont", "str": "the right in any"},
+    {"cmd": "cont", "str": "POKéMON CENTER."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_LinkCableInfoText2": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:628",
+   "commands": [
+    {"cmd": "text", "str": "COLOSSEUM lets"},
+    {"cmd": "line", "str": "you play against"},
+    {"cmd": "cont", "str": "a friend."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_LinkCableInfoText3": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:634",
+   "commands": [
+    {"cmd": "text", "str": "TRADE CENTER is"},
+    {"cmd": "line", "str": "used for trading"},
+    {"cmd": "cont", "str": "POKéMON."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_ViridianSchoolBlackboardText1": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:640",
+   "commands": [
+    {"cmd": "text", "str": "The blackboard"},
+    {"cmd": "line", "str": "describes POKéMON"},
+    {"cmd": "cont", "str": "STATUS changes"},
+    {"cmd": "cont", "str": "during battles."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_ViridianSchoolBlackboardText2": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:647",
+   "commands": [
+    {"cmd": "text", "str": "Which heading do"},
+    {"cmd": "line", "str": "you want to read?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianBlackboardSleepText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:652",
+   "commands": [
+    {"cmd": "text", "str": "A POKéMON can't"},
+    {"cmd": "line", "str": "attack if it's"},
+    {"cmd": "cont", "str": "asleep!"},
+    {"cmd": "para", "str": "POKéMON will stay"},
+    {"cmd": "line", "str": "asleep even after"},
+    {"cmd": "cont", "str": "battles."},
+    {"cmd": "para", "str": "Use AWAKENING to"},
+    {"cmd": "line", "str": "wake them up!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_ViridianBlackboardPoisonText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:665",
+   "commands": [
+    {"cmd": "text", "str": "When poisoned, a"},
+    {"cmd": "line", "str": "POKéMON's health"},
+    {"cmd": "cont", "str": "steadily drops."},
+    {"cmd": "para", "str": "Poison lingers"},
+    {"cmd": "line", "str": "after battles."},
+    {"cmd": "para", "str": "Use an ANTIDOTE"},
+    {"cmd": "line", "str": "to cure poison!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_ViridianBlackboardPrlzText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:677",
+   "commands": [
+    {"cmd": "text", "str": "Paralysis could"},
+    {"cmd": "line", "str": "make POKéMON"},
+    {"cmd": "cont", "str": "moves misfire!"},
+    {"cmd": "para", "str": "Paralysis remains"},
+    {"cmd": "line", "str": "after battles."},
+    {"cmd": "para", "str": "Use PARLYZ HEAL"},
+    {"cmd": "line", "str": "for treatment!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_ViridianBlackboardBurnText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:689",
+   "commands": [
+    {"cmd": "text", "str": "A burn reduces"},
+    {"cmd": "line", "str": "power and speed."},
+    {"cmd": "cont", "str": "It also causes"},
+    {"cmd": "cont", "str": "ongoing damage."},
+    {"cmd": "para", "str": "Burns remain"},
+    {"cmd": "line", "str": "after battles."},
+    {"cmd": "para", "str": "Use BURN HEAL to"},
+    {"cmd": "line", "str": "cure a burn!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_ViridianBlackboardFrozenText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:702",
+   "commands": [
+    {"cmd": "text", "str": "If frozen, a"},
+    {"cmd": "line", "str": "POKéMON becomes"},
+    {"cmd": "cont", "str": "totally immobile!"},
+    {"cmd": "para", "str": "It stays frozen"},
+    {"cmd": "line", "str": "even after the"},
+    {"cmd": "cont", "str": "battle ends."},
+    {"cmd": "para", "str": "Use ICE HEAL to"},
+    {"cmd": "line", "str": "thaw out POKéMON!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_VermilionGymTrashText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:715",
+   "commands": [
+    {"cmd": "text", "str": "Nope, there's"},
+    {"cmd": "line", "str": "only trash here."},
+    {"cmd": "done"}
+   ]
+  },
+  "_VermilionGymTrashSuccessText1": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:720",
+   "commands": [
+    {"cmd": "text", "str": "Hey! There's a"},
+    {"cmd": "line", "str": "switch under the"},
+    {"cmd": "cont", "str": "trash!"},
+    {"cmd": "cont", "str": "Turn it on!"},
+    {"cmd": "para", "str": "The 1st electric"},
+    {"cmd": "line", "str": "lock opened!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_VermilionGymTrashSuccessText2": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:730",
+   "commands": [
+    {"cmd": "text", "str": "Hey! There's"},
+    {"cmd": "line", "str": "another switch"},
+    {"cmd": "cont", "str": "under the trash!"},
+    {"cmd": "cont", "str": "Turn it on!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_VermilionGymTrashSuccessText3": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:737",
+   "commands": [
+    {"cmd": "text", "str": "The 2nd electric"},
+    {"cmd": "line", "str": "lock opened!"},
+    {"cmd": "para", "str": "The motorized door"},
+    {"cmd": "line", "str": "opened!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_VermilionGymTrashFailText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:745",
+   "commands": [
+    {"cmd": "text", "str": "Nope! There's"},
+    {"cmd": "line", "str": "only trash here."},
+    {"cmd": "cont", "str": "Hey! The electric"},
+    {"cmd": "cont", "str": "locks were reset!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_FoundHiddenItemText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:752",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} found"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_HiddenItemBagFullText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:759",
+   "commands": [
+    {"cmd": "text", "str": "But, {PLAYER} has"},
+    {"cmd": "line", "str": "no more room for"},
+    {"cmd": "cont", "str": "other items!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_FoundHiddenCoinsText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:765",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} found"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_bcd", "ram": "hCoins", "bytes": 2, "flags": ["LEADING_ZEROES", "LEFT_ALIGN"]},
+    {"cmd": "text", "str": " coins!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_FoundHiddenCoins2Text": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:772",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} found"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_bcd", "ram": "hCoins", "bytes": 2, "flags": ["LEADING_ZEROES", "LEFT_ALIGN"]},
+    {"cmd": "text", "str": " coins!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_DroppedHiddenCoinsText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:779",
+   "commands": [
+    {"cmd": "text", "str": ""},
+    {"cmd": "para", "str": "Oops! Dropped"},
+    {"cmd": "line", "str": "some coins!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_IndigoPlateauStatuesText1": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:786",
+   "commands": [
+    {"cmd": "text", "str": "INDIGO PLATEAU"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_IndigoPlateauStatuesText2": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:790",
+   "commands": [
+    {"cmd": "text", "str": "The ultimate goal"},
+    {"cmd": "line", "str": "of trainers!"},
+    {"cmd": "cont", "str": "POKéMON LEAGUE HQ"},
+    {"cmd": "done"}
+   ]
+  },
+  "_IndigoPlateauStatuesText3": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:796",
+   "commands": [
+    {"cmd": "text", "str": "The highest"},
+    {"cmd": "line", "str": "POKéMON authority"},
+    {"cmd": "cont", "str": "POKéMON LEAGUE HQ"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonBooksText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:802",
+   "commands": [
+    {"cmd": "text", "str": "Crammed full of"},
+    {"cmd": "line", "str": "POKéMON books!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_DiglettSculptureText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:807",
+   "commands": [
+    {"cmd": "text", "str": "It's a sculpture"},
+    {"cmd": "line", "str": "of DIGLETT."},
+    {"cmd": "done"}
+   ]
+  },
+  "_ElevatorText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:812",
+   "commands": [
+    {"cmd": "text", "str": "This is an"},
+    {"cmd": "line", "str": "elevator."},
+    {"cmd": "done"}
+   ]
+  },
+  "_TownMapText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:817",
+   "commands": [
+    {"cmd": "text", "str": "A TOWN MAP."},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_PokemonStuffText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:821",
+   "commands": [
+    {"cmd": "text", "str": "Wow! Tons of"},
+    {"cmd": "line", "str": "POKéMON stuff!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_OutOfSafariBallsText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:826",
+   "commands": [
+    {"cmd": "text", "str": "PA: Ding-dong!"},
+    {"cmd": "para", "str": "You are out of"},
+    {"cmd": "line", "str": "SAFARI BALLs!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_WildRanText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:833",
+   "commands": [
+    {"cmd": "text", "str": "Wild "},
+    {"cmd": "text_ram", "ram": "wEnemyMonNick"},
+    {"cmd": "text", "str": ""},
+    {"cmd": "line", "str": "ran!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_EnemyRanText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:840",
+   "commands": [
+    {"cmd": "text", "str": "Enemy "},
+    {"cmd": "text_ram", "ram": "wEnemyMonNick"},
+    {"cmd": "text", "str": ""},
+    {"cmd": "line", "str": "ran!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_HurtByPoisonText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:847",
+   "commands": [
+    {"cmd": "text", "str": "{USER}'s"},
+    {"cmd": "line", "str": "hurt by poison!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_HurtByBurnText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:852",
+   "commands": [
+    {"cmd": "text", "str": "{USER}'s"},
+    {"cmd": "line", "str": "hurt by the burn!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_HurtByLeechSeedText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:857",
+   "commands": [
+    {"cmd": "text", "str": "LEECH SEED saps"},
+    {"cmd": "line", "str": "{USER}!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_EnemyMonFaintedText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:862",
+   "commands": [
+    {"cmd": "text", "str": "Enemy "},
+    {"cmd": "text_ram", "ram": "wEnemyMonNick"},
+    {"cmd": "text", "str": ""},
+    {"cmd": "line", "str": "fainted!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_MoneyForWinningText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:869",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} got ¥"},
+    {"cmd": "text_bcd", "ram": "wAmountMoneyWon", "bytes": 3, "flags": ["LEADING_ZEROES", "LEFT_ALIGN"]},
+    {"cmd": "text", "str": ""},
+    {"cmd": "line", "str": "for winning!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_TrainerDefeatedText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:876",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} defeated"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wTrainerName"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_PlayerMonFaintedText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:883",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wBattleMonNick"},
+    {"cmd": "text", "str": ""},
+    {"cmd": "line", "str": "fainted!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_UseNextMonText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:889",
+   "commands": [
+    {"cmd": "text", "str": "Use next POKéMON?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Rival1WinText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:893",
+   "commands": [
+    {"cmd": "text", "str": "{RIVAL}: Yeah! Am"},
+    {"cmd": "line", "str": "I great or what?"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_PlayerBlackedOutText2": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:898",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} is out of"},
+    {"cmd": "line", "str": "useable POKéMON!"},
+    {"cmd": "para", "str": "{PLAYER} blacked"},
+    {"cmd": "line", "str": "out!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_LinkBattleLostText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:906",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} lost to"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wTrainerName"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_TrainerAboutToUseText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:913",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wTrainerName"},
+    {"cmd": "text", "str": " is"},
+    {"cmd": "line", "str": "about to use"},
+    {"cmd": "cont", "str": ""},
+    {"cmd": "text_ram", "ram": "wEnemyMonNick"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "para", "str": "Will {PLAYER}"},
+    {"cmd": "line", "str": "change POKéMON?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_TrainerSentOutText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:925",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wTrainerName"},
+    {"cmd": "text", "str": " sent"},
+    {"cmd": "line", "str": "out "},
+    {"cmd": "text_ram", "ram": "wEnemyMonNick"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_NoWillText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:933",
+   "commands": [
+    {"cmd": "text", "str": "There's no will"},
+    {"cmd": "line", "str": "to fight!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_CantEscapeText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:938",
+   "commands": [
+    {"cmd": "text", "str": "Can't escape!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_NoRunningText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:942",
+   "commands": [
+    {"cmd": "text", "str": "No! There's no"},
+    {"cmd": "line", "str": "running from a"},
+    {"cmd": "cont", "str": "trainer battle!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_GotAwayText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:948",
+   "commands": [
+    {"cmd": "text", "str": "Got away safely!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_ItemsCantBeUsedHereText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:952",
+   "commands": [
+    {"cmd": "text", "str": "Items can't be"},
+    {"cmd": "line", "str": "used here."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_AlreadyOutText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:957",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wBattleMonNick"},
+    {"cmd": "text", "str": " is"},
+    {"cmd": "line", "str": "already out!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_MoveNoPPText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:963",
+   "commands": [
+    {"cmd": "text", "str": "No PP left for"},
+    {"cmd": "line", "str": "this move!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_MoveDisabledText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:968",
+   "commands": [
+    {"cmd": "text", "str": "The move is"},
+    {"cmd": "line", "str": "disabled!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_NoMovesLeftText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:973",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wBattleMonNick"},
+    {"cmd": "text", "str": " has no"},
+    {"cmd": "line", "str": "moves left!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_MultiHitText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:979",
+   "commands": [
+    {"cmd": "text", "str": "Hit the enemy"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_decimal", "ram": "wPlayerNumHits", "bytes": 1, "digits": 1},
+    {"cmd": "text", "str": " times!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_ScaredText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:986",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wBattleMonNick"},
+    {"cmd": "text", "str": " is too"},
+    {"cmd": "line", "str": "scared to move!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_GetOutText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:992",
+   "commands": [
+    {"cmd": "text", "str": "GHOST: Get out..."},
+    {"cmd": "line", "str": "Get out..."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_FastAsleepText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:997",
+   "commands": [
+    {"cmd": "text", "str": "{USER}"},
+    {"cmd": "line", "str": "is fast asleep!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_WokeUpText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1002",
+   "commands": [
+    {"cmd": "text", "str": "{USER}"},
+    {"cmd": "line", "str": "woke up!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_IsFrozenText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1007",
+   "commands": [
+    {"cmd": "text", "str": "{USER}"},
+    {"cmd": "line", "str": "is frozen solid!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_FullyParalyzedText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1012",
+   "commands": [
+    {"cmd": "text", "str": "{USER}'s"},
+    {"cmd": "line", "str": "fully paralyzed!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_FlinchedText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1017",
+   "commands": [
+    {"cmd": "text", "str": "{USER}"},
+    {"cmd": "line", "str": "flinched!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_MustRechargeText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1022",
+   "commands": [
+    {"cmd": "text", "str": "{USER}"},
+    {"cmd": "line", "str": "must recharge!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_DisabledNoMoreText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1027",
+   "commands": [
+    {"cmd": "text", "str": "{USER}'s"},
+    {"cmd": "line", "str": "disabled no more!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_IsConfusedText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1032",
+   "commands": [
+    {"cmd": "text", "str": "{USER}"},
+    {"cmd": "line", "str": "is confused!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_HurtItselfText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1037",
+   "commands": [
+    {"cmd": "text", "str": "It hurt itself in"},
+    {"cmd": "line", "str": "its confusion!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_ConfusedNoMoreText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1042",
+   "commands": [
+    {"cmd": "text", "str": "{USER}'s"},
+    {"cmd": "line", "str": "confused no more!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_SavingEnergyText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1047",
+   "commands": [
+    {"cmd": "text", "str": "{USER}"},
+    {"cmd": "line", "str": "is saving energy!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_UnleashedEnergyText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1052",
+   "commands": [
+    {"cmd": "text", "str": "{USER}"},
+    {"cmd": "line", "str": "unleashed energy!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_ThrashingAboutText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1057",
+   "commands": [
+    {"cmd": "text", "str": "{USER}'s"},
+    {"cmd": "line", "str": "thrashing about!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_AttackContinuesText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1062",
+   "commands": [
+    {"cmd": "text", "str": "{USER}'s"},
+    {"cmd": "line", "str": "attack continues!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CantMoveText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1067",
+   "commands": [
+    {"cmd": "text", "str": "{USER}"},
+    {"cmd": "line", "str": "can't move!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_MoveIsDisabledText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1072",
+   "commands": [
+    {"cmd": "text", "str": "{USER}'s"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": " is"},
+    {"cmd": "cont", "str": "disabled!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_ActorNameText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1080",
+   "commands": [
+    {"cmd": "text", "str": "{USER}"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_UsedMove1Text": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1084",
+   "commands": [
+    {"cmd": "text", "str": ""},
+    {"cmd": "line", "str": "used "},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_UsedMove2Text": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1089",
+   "commands": [
+    {"cmd": "text", "str": ""},
+    {"cmd": "line", "str": "used "},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_UsedInsteadText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1094",
+   "commands": [
+    {"cmd": "text", "str": "instead,"},
+    {"cmd": "cont", "str": ""},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_MoveNameText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1099",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": ""},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "done"}
+   ],
+   "continuesInto": ["_EndUsedMove1Text"]
+  },
+  "_EndUsedMove1Text": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1103",
+   "commands": [
+    {"cmd": "text", "str": "!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_EndUsedMove2Text": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1107",
+   "commands": [
+    {"cmd": "text", "str": "!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_EndUsedMove3Text": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1111",
+   "commands": [
+    {"cmd": "text", "str": "!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_EndUsedMove4Text": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1115",
+   "commands": [
+    {"cmd": "text", "str": "!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_EndUsedMove5Text": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1119",
+   "commands": [
+    {"cmd": "text", "str": "!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_AttackMissedText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1123",
+   "commands": [
+    {"cmd": "text", "str": "{USER}'s"},
+    {"cmd": "line", "str": "attack missed!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_KeptGoingAndCrashedText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1128",
+   "commands": [
+    {"cmd": "text", "str": "{USER}"},
+    {"cmd": "line", "str": "kept going and"},
+    {"cmd": "cont", "str": "crashed!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_UnaffectedText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1134",
+   "commands": [
+    {"cmd": "text", "str": "{TARGET}'s"},
+    {"cmd": "line", "str": "unaffected!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_DoesntAffectMonText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1139",
+   "commands": [
+    {"cmd": "text", "str": "It doesn't affect"},
+    {"cmd": "line", "str": "{TARGET}!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_CriticalHitText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1144",
+   "commands": [
+    {"cmd": "text", "str": "Critical hit!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_OHKOText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1148",
+   "commands": [
+    {"cmd": "text", "str": "One-hit KO!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_LoafingAroundText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1152",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wBattleMonNick"},
+    {"cmd": "text", "str": " is"},
+    {"cmd": "line", "str": "loafing around."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_BeganToNapText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1158",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wBattleMonNick"},
+    {"cmd": "text", "str": " began"},
+    {"cmd": "line", "str": "to nap!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_WontObeyText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1164",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wBattleMonNick"},
+    {"cmd": "text", "str": " won't"},
+    {"cmd": "line", "str": "obey!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_TurnedAwayText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1170",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wBattleMonNick"},
+    {"cmd": "text", "str": " turned"},
+    {"cmd": "line", "str": "away!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_IgnoredOrdersText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1176",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wBattleMonNick"},
+    {"cmd": "text", "str": ""},
+    {"cmd": "line", "str": "ignored orders!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_SubstituteTookDamageText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1182",
+   "commands": [
+    {"cmd": "text", "str": "The SUBSTITUTE"},
+    {"cmd": "line", "str": "took damage for"},
+    {"cmd": "cont", "str": "{TARGET}!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_SubstituteBrokeText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1188",
+   "commands": [
+    {"cmd": "text", "str": "{TARGET}'s"},
+    {"cmd": "line", "str": "SUBSTITUTE broke!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_BuildingRageText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1193",
+   "commands": [
+    {"cmd": "text", "str": "{USER}'s"},
+    {"cmd": "line", "str": "RAGE is building!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_MirrorMoveFailedText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1198",
+   "commands": [
+    {"cmd": "text", "str": "The MIRROR MOVE"},
+    {"cmd": "next", "str": "failed!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_HitXTimesText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1203",
+   "commands": [
+    {"cmd": "text", "str": "Hit "},
+    {"cmd": "text_decimal", "ram": "wEnemyNumHits", "bytes": 1, "digits": 1},
+    {"cmd": "text", "str": " times!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_GainedText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1209",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": " gained"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_WithExpAllText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1215",
+   "commands": [
+    {"cmd": "text", "str": "with EXP.ALL,"},
+    {"cmd": "cont", "str": ""},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_BoostedText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1220",
+   "commands": [
+    {"cmd": "text", "str": "a boosted"},
+    {"cmd": "cont", "str": ""},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_ExpPointsText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1225",
+   "commands": [
+    {"cmd": "text_decimal", "ram": "wExpAmountGained", "bytes": 2, "digits": 4},
+    {"cmd": "text", "str": " EXP. Points!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_GrewLevelText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1230",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": " grew"},
+    {"cmd": "line", "str": "to level "},
+    {"cmd": "text_decimal", "ram": "wCurEnemyLevel", "bytes": 1, "digits": 3},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_WildMonAppearedText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1238",
+   "commands": [
+    {"cmd": "text", "str": "Wild "},
+    {"cmd": "text_ram", "ram": "wEnemyMonNick"},
+    {"cmd": "text", "str": ""},
+    {"cmd": "line", "str": "appeared!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_HookedMonAttackedText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1245",
+   "commands": [
+    {"cmd": "text", "str": "The hooked"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wEnemyMonNick"},
+    {"cmd": "text", "str": ""},
+    {"cmd": "cont", "str": "attacked!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_EnemyAppearedText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1253",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wEnemyMonNick"},
+    {"cmd": "text", "str": ""},
+    {"cmd": "line", "str": "appeared!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_TrainerWantsToFightText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1259",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wTrainerName"},
+    {"cmd": "text", "str": " wants"},
+    {"cmd": "line", "str": "to fight!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_UnveiledGhostText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1265",
+   "commands": [
+    {"cmd": "text", "str": "SILPH SCOPE"},
+    {"cmd": "line", "str": "unveiled the"},
+    {"cmd": "cont", "str": "GHOST's identity!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_GhostCantBeIDdText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1271",
+   "commands": [
+    {"cmd": "text", "str": "Darn! The GHOST"},
+    {"cmd": "line", "str": "can't be ID'd!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_GoText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1276",
+   "commands": [
+    {"cmd": "text", "str": "Go! "},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_DoItText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1280",
+   "commands": [
+    {"cmd": "text", "str": "Do it! "},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_GetmText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1284",
+   "commands": [
+    {"cmd": "text", "str": "Get'm! "},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_EnemysWeakText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1288",
+   "commands": [
+    {"cmd": "text", "str": "The enemy's weak!"},
+    {"cmd": "line", "str": "Get'm! "},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_PlayerMon1Text": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1293",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wBattleMonNick"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PlayerMon2Text": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1298",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wBattleMonNick"},
+    {"cmd": "text", "str": " "},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_EnoughText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1303",
+   "commands": [
+    {"cmd": "text", "str": "enough!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_OKExclamationText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1307",
+   "commands": [
+    {"cmd": "text", "str": "OK!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_GoodText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1311",
+   "commands": [
+    {"cmd": "text", "str": "good!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_ComeBackText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1315",
+   "commands": [
+    {"cmd": "text", "str": ""},
+    {"cmd": "line", "str": "Come back!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SuperEffectiveText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1320",
+   "commands": [
+    {"cmd": "text", "str": "It's super"},
+    {"cmd": "line", "str": "effective!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_NotVeryEffectiveText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1325",
+   "commands": [
+    {"cmd": "text", "str": "It's not very"},
+    {"cmd": "line", "str": "effective..."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_SafariZoneEatingText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1330",
+   "commands": [
+    {"cmd": "text", "str": "Wild "},
+    {"cmd": "text_ram", "ram": "wEnemyMonNick"},
+    {"cmd": "text", "str": ""},
+    {"cmd": "line", "str": "is eating!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_SafariZoneAngryText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1337",
+   "commands": [
+    {"cmd": "text", "str": "Wild "},
+    {"cmd": "text_ram", "ram": "wEnemyMonNick"},
+    {"cmd": "text", "str": ""},
+    {"cmd": "line", "str": "is angry!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_PickUpPayDayMoneyText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1345",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} picked up"},
+    {"cmd": "line", "str": "¥"},
+    {"cmd": "text_bcd", "ram": "wTotalPayDayMoney", "bytes": 3, "flags": ["LEADING_ZEROES", "LEFT_ALIGN"]},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_ClearSaveDataText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1352",
+   "commands": [
+    {"cmd": "text", "str": "Clear all saved"},
+    {"cmd": "line", "str": "data?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_WhichFloorText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1357",
+   "commands": [
+    {"cmd": "text", "str": "Which floor do"},
+    {"cmd": "line", "str": "you want? "},
+    {"cmd": "done"}
+   ]
+  },
+  "_PartyMenuNormalText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1362",
+   "commands": [
+    {"cmd": "text", "str": "Choose a POKéMON."},
+    {"cmd": "done"}
+   ]
+  },
+  "_PartyMenuItemUseText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1366",
+   "commands": [
+    {"cmd": "text", "str": "Use item on which"},
+    {"cmd": "line", "str": "POKéMON?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PartyMenuBattleText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1371",
+   "commands": [
+    {"cmd": "text", "str": "Bring out which"},
+    {"cmd": "line", "str": "POKéMON?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PartyMenuUseTMText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1376",
+   "commands": [
+    {"cmd": "text", "str": "Use TM on which"},
+    {"cmd": "line", "str": "POKéMON?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PartyMenuSwapMonText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1381",
+   "commands": [
+    {"cmd": "text", "str": "Move POKéMON"},
+    {"cmd": "line", "str": "where?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PotionText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1386",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": ""},
+    {"cmd": "line", "str": "recovered by "},
+    {"cmd": "text_decimal", "ram": "wHPBarHPDifference", "bytes": 2, "digits": 3},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_AntidoteText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1394",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": " was"},
+    {"cmd": "line", "str": "cured of poison!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ParlyzHealText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1400",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": "'s"},
+    {"cmd": "line", "str": "rid of paralysis!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_BurnHealText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1406",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": "'s"},
+    {"cmd": "line", "str": "burn was healed!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_IceHealText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1412",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": " was"},
+    {"cmd": "line", "str": "defrosted!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_AwakeningText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1418",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": ""},
+    {"cmd": "line", "str": "woke up!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_FullHealText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1424",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": "'s"},
+    {"cmd": "line", "str": "health returned!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ReviveText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1430",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": ""},
+    {"cmd": "line", "str": "is revitalized!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_RareCandyText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1436",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": " grew"},
+    {"cmd": "line", "str": "to level "},
+    {"cmd": "text_decimal", "ram": "wCurEnemyLevel", "bytes": 1, "digits": 3},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_TurnedOnPC1Text": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1444",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} turned on"},
+    {"cmd": "line", "str": "the PC."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_AccessedBillsPCText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1449",
+   "commands": [
+    {"cmd": "text", "str": "Accessed BILL's"},
+    {"cmd": "line", "str": "PC."},
+    {"cmd": "para", "str": "Accessed POKéMON"},
+    {"cmd": "line", "str": "Storage System."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_AccessedSomeonesPCText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1457",
+   "commands": [
+    {"cmd": "text", "str": "Accessed someone's"},
+    {"cmd": "line", "str": "PC."},
+    {"cmd": "para", "str": "Accessed POKéMON"},
+    {"cmd": "line", "str": "Storage System."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_AccessedMyPCText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1465",
+   "commands": [
+    {"cmd": "text", "str": "Accessed my PC."},
+    {"cmd": "para", "str": "Accessed Item"},
+    {"cmd": "line", "str": "Storage System."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_TurnedOnPC2Text": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1472",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} turned on"},
+    {"cmd": "line", "str": "the PC."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_WhatDoYouWantText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1477",
+   "commands": [
+    {"cmd": "text", "str": "What do you want"},
+    {"cmd": "line", "str": "to do?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_WhatToDepositText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1482",
+   "commands": [
+    {"cmd": "text", "str": "What do you want"},
+    {"cmd": "line", "str": "to deposit?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_DepositHowManyText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1487",
+   "commands": [
+    {"cmd": "text", "str": "How many?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ItemWasStoredText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1491",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": " was"},
+    {"cmd": "line", "str": "stored via PC."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_NothingToDepositText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1497",
+   "commands": [
+    {"cmd": "text", "str": "You have nothing"},
+    {"cmd": "line", "str": "to deposit."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_NoRoomToStoreText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1502",
+   "commands": [
+    {"cmd": "text", "str": "No room left to"},
+    {"cmd": "line", "str": "store items."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_WhatToWithdrawText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1507",
+   "commands": [
+    {"cmd": "text", "str": "What do you want"},
+    {"cmd": "line", "str": "to withdraw?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_WithdrawHowManyText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1512",
+   "commands": [
+    {"cmd": "text", "str": "How many?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_WithdrewItemText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1516",
+   "commands": [
+    {"cmd": "text", "str": "Withdrew"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": "."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_NothingStoredText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1523",
+   "commands": [
+    {"cmd": "text", "str": "There is nothing"},
+    {"cmd": "line", "str": "stored."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_CantCarryMoreText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1528",
+   "commands": [
+    {"cmd": "text", "str": "You can't carry"},
+    {"cmd": "line", "str": "any more items."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_WhatToTossText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1533",
+   "commands": [
+    {"cmd": "text", "str": "What do you want"},
+    {"cmd": "line", "str": "to toss away?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_TossHowManyText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1538",
+   "commands": [
+    {"cmd": "text", "str": "How many?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_AccessedHoFPCText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1542",
+   "commands": [
+    {"cmd": "text", "str": "Accessed POKéMON"},
+    {"cmd": "line", "str": "LEAGUE's site."},
+    {"cmd": "para", "str": "Accessed the HALL"},
+    {"cmd": "line", "str": "OF FAME List."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_SwitchOnText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1550",
+   "commands": [
+    {"cmd": "text", "str": "Switch on!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_WhatText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1554",
+   "commands": [
+    {"cmd": "text", "str": "What?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_DepositWhichMonText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1558",
+   "commands": [
+    {"cmd": "text", "str": "Deposit which"},
+    {"cmd": "line", "str": "POKéMON?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_MonWasStoredText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1563",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": " was"},
+    {"cmd": "line", "str": "stored in Box "},
+    {"cmd": "text_ram", "ram": "wBoxNumString"},
+    {"cmd": "text", "str": "."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_CantDepositLastMonText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1571",
+   "commands": [
+    {"cmd": "text", "str": "You can't deposit"},
+    {"cmd": "line", "str": "the last POKéMON!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_BoxFullText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1576",
+   "commands": [
+    {"cmd": "text", "str": "Oops! This Box is"},
+    {"cmd": "line", "str": "full of POKéMON."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_MonIsTakenOutText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1581",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": " is"},
+    {"cmd": "line", "str": "taken out."},
+    {"cmd": "cont", "str": "Got "},
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": "."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_NoMonText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1590",
+   "commands": [
+    {"cmd": "text", "str": "What? There are"},
+    {"cmd": "line", "str": "no POKéMON here!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_CantTakeMonText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1595",
+   "commands": [
+    {"cmd": "text", "str": "You can't take"},
+    {"cmd": "line", "str": "any more POKéMON."},
+    {"cmd": "para", "str": "Deposit POKéMON"},
+    {"cmd": "line", "str": "first."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_ReleaseWhichMonText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1603",
+   "commands": [
+    {"cmd": "text", "str": "Release which"},
+    {"cmd": "line", "str": "POKéMON?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_OnceReleasedText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1608",
+   "commands": [
+    {"cmd": "text", "str": "Once released,"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": " is"},
+    {"cmd": "cont", "str": "gone forever. OK?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_MonWasReleasedText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1616",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": " was"},
+    {"cmd": "line", "str": "released outside."},
+    {"cmd": "cont", "str": "Bye "},
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_RequireCoinCaseText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1625",
+   "commands": [
+    {"cmd": "text", "str": "A COIN CASE is"},
+    {"cmd": "line", "str": "required!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_ExchangeCoinsForPrizesText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1630",
+   "commands": [
+    {"cmd": "text", "str": "We exchange your"},
+    {"cmd": "line", "str": "coins for prizes."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_WhichPrizeText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1635",
+   "commands": [
+    {"cmd": "text", "str": "Which prize do"},
+    {"cmd": "line", "str": "you want?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_HereYouGoText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1640",
+   "commands": [
+    {"cmd": "text", "str": "Here you go!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_SoYouWantPrizeText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1644",
+   "commands": [
+    {"cmd": "text", "str": "So, you want"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": "?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SorryNeedMoreCoinsText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1651",
+   "commands": [
+    {"cmd": "text", "str": "Sorry, you need"},
+    {"cmd": "line", "str": "more coins."},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_OopsYouDontHaveEnoughRoomText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1656",
+   "commands": [
+    {"cmd": "text", "str": "Oops! You don't"},
+    {"cmd": "line", "str": "have enough room."},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_OhFineThenText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1661",
+   "commands": [
+    {"cmd": "text", "str": "Oh, fine then."},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_GetDexRatedText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1665",
+   "commands": [
+    {"cmd": "text", "str": "Want to get your"},
+    {"cmd": "line", "str": "POKéDEX rated?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ClosedOaksPCText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1670",
+   "commands": [
+    {"cmd": "text", "str": "Closed link to"},
+    {"cmd": "line", "str": "PROF.OAK's PC."},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_AccessedOaksPCText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1675",
+   "commands": [
+    {"cmd": "text", "str": "Accessed PROF."},
+    {"cmd": "line", "str": "OAK's PC."},
+    {"cmd": "para", "str": "Accessed POKéDEX"},
+    {"cmd": "line", "str": "Rating System."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_WhereWouldYouLikeText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1683",
+   "commands": [
+    {"cmd": "text", "str": "Where would you"},
+    {"cmd": "line", "str": "like to go?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PleaseWaitText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1688",
+   "commands": [
+    {"cmd": "text", "str": "OK, please wait"},
+    {"cmd": "line", "str": "just a moment."},
+    {"cmd": "done"}
+   ]
+  },
+  "_LinkCanceledText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1693",
+   "commands": [
+    {"cmd": "text", "str": "The link was"},
+    {"cmd": "line", "str": "canceled."},
+    {"cmd": "done"}
+   ]
+  },
+  "_OakSpeechText1": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1698",
+   "commands": [
+    {"cmd": "text", "str": "Hello there!"},
+    {"cmd": "line", "str": "Welcome to the"},
+    {"cmd": "cont", "str": "world of POKéMON!"},
+    {"cmd": "para", "str": "My name is OAK!"},
+    {"cmd": "line", "str": "People call me"},
+    {"cmd": "cont", "str": "the POKéMON PROF!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_OakSpeechText2A": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1708",
+   "commands": [
+    {"cmd": "text", "str": "This world is"},
+    {"cmd": "line", "str": "inhabited by"},
+    {"cmd": "cont", "str": "creatures called"},
+    {"cmd": "cont", "str": "POKéMON!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_OakSpeechText2B": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1715",
+   "commands": [
+    {"cmd": "text", "str": ""},
+    {"cmd": "para", "str": "For some people,"},
+    {"cmd": "line", "str": "POKéMON are"},
+    {"cmd": "cont", "str": "pets. Others use"},
+    {"cmd": "cont", "str": "them for fights."},
+    {"cmd": "para", "str": "Myself..."},
+    {"cmd": "para", "str": "I study POKéMON"},
+    {"cmd": "line", "str": "as a profession."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_IntroducePlayerText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1729",
+   "commands": [
+    {"cmd": "text", "str": "First, what is"},
+    {"cmd": "line", "str": "your name?"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_IntroduceRivalText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1734",
+   "commands": [
+    {"cmd": "text", "str": "This is my grand-"},
+    {"cmd": "line", "str": "son. He's been"},
+    {"cmd": "cont", "str": "your rival since"},
+    {"cmd": "cont", "str": "you were a baby."},
+    {"cmd": "para", "str": "...Erm, what is"},
+    {"cmd": "line", "str": "his name again?"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_OakSpeechText3": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1744",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER}!"},
+    {"cmd": "para", "str": "Your very own"},
+    {"cmd": "line", "str": "POKéMON legend is"},
+    {"cmd": "cont", "str": "about to unfold!"},
+    {"cmd": "para", "str": "A world of dreams"},
+    {"cmd": "line", "str": "and adventures"},
+    {"cmd": "cont", "str": "with POKéMON"},
+    {"cmd": "cont", "str": "awaits! Let's go!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_DoYouWantToNicknameText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1757",
+   "commands": [
+    {"cmd": "text", "str": "Do you want to"},
+    {"cmd": "line", "str": "give a nickname"},
+    {"cmd": "cont", "str": "to "},
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": "?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_YourNameIsText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1765",
+   "commands": [
+    {"cmd": "text", "str": "Right! So your"},
+    {"cmd": "line", "str": "name is {PLAYER}!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_HisNameIsText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1770",
+   "commands": [
+    {"cmd": "text", "str": "That's right! I"},
+    {"cmd": "line", "str": "remember now! His"},
+    {"cmd": "cont", "str": "name is {RIVAL}!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_WillBeTradedText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1776",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wNameOfPlayerMonToBeTraded"},
+    {"cmd": "text", "str": " and"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": " will"},
+    {"cmd": "cont", "str": "be traded."},
+    {"cmd": "done"}
+   ]
+  },
+  "_TextIDErrorText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1785",
+   "commands": [
+    {"cmd": "text_decimal", "ram": "hTextID", "bytes": 1, "digits": 2},
+    {"cmd": "text", "str": " ERROR."},
+    {"cmd": "done"}
+   ]
+  },
+  "_ContCharText": {
+   "kind": "text",
+   "src": "data/text/text_2.asm:1790",
+   "commands": [
+    {"cmd": "text", "str": ""},
+    {"cmd": "cont", "str": ""},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_FileDataDestroyedText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "The file data is"},
+    {"cmd": "line", "str": "destroyed!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_WouldYouLikeToSaveText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:7",
+   "commands": [
+    {"cmd": "text", "str": "Would you like to"},
+    {"cmd": "line", "str": "SAVE the game?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_GameSavedText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:12",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} saved"},
+    {"cmd": "line", "str": "the game!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_OlderFileWillBeErasedText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:17",
+   "commands": [
+    {"cmd": "text", "str": "The older file"},
+    {"cmd": "line", "str": "will be erased to"},
+    {"cmd": "cont", "str": "save. Okay?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_WhenYouChangeBoxText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:23",
+   "commands": [
+    {"cmd": "text", "str": "When you change a"},
+    {"cmd": "line", "str": "POKéMON BOX, data"},
+    {"cmd": "cont", "str": "will be saved."},
+    {"cmd": "para", "str": "Is that okay?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ChooseABoxText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:31",
+   "commands": [
+    {"cmd": "text", "str": "Choose a"},
+    {"cmd": "line", "str": "<PK><MN> BOX."},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_EvolvedText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:36",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": " evolved"},
+    {"cmd": "done"}
+   ]
+  },
+  "_IntoText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:41",
+   "commands": [
+    {"cmd": "text", "str": ""},
+    {"cmd": "line", "str": "into "},
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_StoppedEvolvingText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:48",
+   "commands": [
+    {"cmd": "text", "str": "Huh? "},
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": ""},
+    {"cmd": "line", "str": "stopped evolving!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_IsEvolvingText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:55",
+   "commands": [
+    {"cmd": "text", "str": "What? "},
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": ""},
+    {"cmd": "line", "str": "is evolving!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_FellAsleepText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:62",
+   "commands": [
+    {"cmd": "text", "str": "{TARGET}"},
+    {"cmd": "line", "str": "fell asleep!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_AlreadyAsleepText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:67",
+   "commands": [
+    {"cmd": "text", "str": "{TARGET}'s"},
+    {"cmd": "line", "str": "already asleep!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_PoisonedText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:72",
+   "commands": [
+    {"cmd": "text", "str": "{TARGET}"},
+    {"cmd": "line", "str": "was poisoned!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_BadlyPoisonedText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:77",
+   "commands": [
+    {"cmd": "text", "str": "{TARGET}'s"},
+    {"cmd": "line", "str": "badly poisoned!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_BurnedText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:82",
+   "commands": [
+    {"cmd": "text", "str": "{TARGET}"},
+    {"cmd": "line", "str": "was burned!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_FrozenText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:87",
+   "commands": [
+    {"cmd": "text", "str": "{TARGET}"},
+    {"cmd": "line", "str": "was frozen solid!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_FireDefrostedText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:92",
+   "commands": [
+    {"cmd": "text", "str": "Fire defrosted"},
+    {"cmd": "line", "str": "{TARGET}!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_MonsStatsRoseText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:97",
+   "commands": [
+    {"cmd": "text", "str": "{USER}'s"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": ""},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_GreatlyRoseText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:104",
+   "commands": [
+    {"cmd": "text", "str": ""},
+    {"cmd": "scroll", "str": "greatly"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_RoseText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:108",
+   "commands": [
+    {"cmd": "text", "str": " rose!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_MonsStatsFellText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:112",
+   "commands": [
+    {"cmd": "text", "str": "{TARGET}'s"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": ""},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_GreatlyFellText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:119",
+   "commands": [
+    {"cmd": "text", "str": ""},
+    {"cmd": "scroll", "str": "greatly"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_FellText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:123",
+   "commands": [
+    {"cmd": "text", "str": " fell!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_RanFromBattleText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:127",
+   "commands": [
+    {"cmd": "text", "str": "{USER}"},
+    {"cmd": "line", "str": "ran from battle!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_RanAwayScaredText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:132",
+   "commands": [
+    {"cmd": "text", "str": "{TARGET}"},
+    {"cmd": "line", "str": "ran away scared!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_WasBlownAwayText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:137",
+   "commands": [
+    {"cmd": "text", "str": "{TARGET}"},
+    {"cmd": "line", "str": "was blown away!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_ChargeMoveEffectText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:142",
+   "commands": [
+    {"cmd": "text", "str": "{USER}"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_MadeWhirlwindText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:146",
+   "commands": [
+    {"cmd": "text", "str": ""},
+    {"cmd": "line", "str": "made a whirlwind!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_TookInSunlightText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:151",
+   "commands": [
+    {"cmd": "text", "str": ""},
+    {"cmd": "line", "str": "took in sunlight!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_LoweredItsHeadText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:156",
+   "commands": [
+    {"cmd": "text", "str": ""},
+    {"cmd": "line", "str": "lowered its head!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_SkyAttackGlowingText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:161",
+   "commands": [
+    {"cmd": "text", "str": ""},
+    {"cmd": "line", "str": "is glowing!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_FlewUpHighText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:166",
+   "commands": [
+    {"cmd": "text", "str": ""},
+    {"cmd": "line", "str": "flew up high!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_DugAHoleText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:171",
+   "commands": [
+    {"cmd": "text", "str": ""},
+    {"cmd": "line", "str": "dug a hole!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_BecameConfusedText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:176",
+   "commands": [
+    {"cmd": "text", "str": "{TARGET}"},
+    {"cmd": "line", "str": "became confused!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_MimicLearnedMoveText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:181",
+   "commands": [
+    {"cmd": "text", "str": "{USER}"},
+    {"cmd": "line", "str": "learned"},
+    {"cmd": "cont", "str": ""},
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_MoveWasDisabledText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:189",
+   "commands": [
+    {"cmd": "text", "str": "{TARGET}'s"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": " was"},
+    {"cmd": "cont", "str": "disabled!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_NothingHappenedText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:197",
+   "commands": [
+    {"cmd": "text", "str": "Nothing happened!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_NoEffectText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:201",
+   "commands": [
+    {"cmd": "text", "str": "No effect!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_ButItFailedText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:205",
+   "commands": [
+    {"cmd": "text", "str": "But, it failed! "},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_DidntAffectText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:209",
+   "commands": [
+    {"cmd": "text", "str": "It didn't affect"},
+    {"cmd": "line", "str": "{TARGET}!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_IsUnaffectedText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:214",
+   "commands": [
+    {"cmd": "text", "str": "{TARGET}"},
+    {"cmd": "line", "str": "is unaffected!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_ParalyzedMayNotAttackText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:219",
+   "commands": [
+    {"cmd": "text", "str": "{TARGET}'s"},
+    {"cmd": "line", "str": "paralyzed! It may"},
+    {"cmd": "cont", "str": "not attack!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_SubstituteText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:225",
+   "commands": [
+    {"cmd": "text", "str": "It created a"},
+    {"cmd": "line", "str": "SUBSTITUTE!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_HasSubstituteText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:230",
+   "commands": [
+    {"cmd": "text", "str": "{USER}"},
+    {"cmd": "line", "str": "has a SUBSTITUTE!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_TooWeakSubstituteText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:235",
+   "commands": [
+    {"cmd": "text", "str": "Too weak to make"},
+    {"cmd": "line", "str": "a SUBSTITUTE!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_CoinsScatteredText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:240",
+   "commands": [
+    {"cmd": "text", "str": "Coins scattered"},
+    {"cmd": "line", "str": "everywhere!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_GettingPumpedText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:245",
+   "commands": [
+    {"cmd": "text", "str": "{USER}'s"},
+    {"cmd": "line", "str": "getting pumped!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_WasSeededText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:250",
+   "commands": [
+    {"cmd": "text", "str": "{TARGET}"},
+    {"cmd": "line", "str": "was seeded!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_EvadedAttackText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:255",
+   "commands": [
+    {"cmd": "text", "str": "{TARGET}"},
+    {"cmd": "line", "str": "evaded attack!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_HitWithRecoilText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:260",
+   "commands": [
+    {"cmd": "text", "str": "{USER}'s"},
+    {"cmd": "line", "str": "hit with recoil!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_ConvertedTypeText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:265",
+   "commands": [
+    {"cmd": "text", "str": "Converted type to"},
+    {"cmd": "line", "str": "{TARGET}'s!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_StatusChangesEliminatedText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:270",
+   "commands": [
+    {"cmd": "text", "str": "All STATUS changes"},
+    {"cmd": "line", "str": "are eliminated!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_StartedSleepingEffect": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:275",
+   "commands": [
+    {"cmd": "text", "str": "{USER}"},
+    {"cmd": "line", "str": "started sleeping!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_FellAsleepBecameHealthyText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:280",
+   "commands": [
+    {"cmd": "text", "str": "{USER}"},
+    {"cmd": "line", "str": "fell asleep and"},
+    {"cmd": "cont", "str": "became healthy!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_RegainedHealthText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:286",
+   "commands": [
+    {"cmd": "text", "str": "{USER}"},
+    {"cmd": "line", "str": "regained health!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_TransformedText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:291",
+   "commands": [
+    {"cmd": "text", "str": "{USER}"},
+    {"cmd": "line", "str": "transformed into"},
+    {"cmd": "cont", "str": ""},
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_LightScreenProtectedText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:299",
+   "commands": [
+    {"cmd": "text", "str": "{USER}'s"},
+    {"cmd": "line", "str": "protected against"},
+    {"cmd": "cont", "str": "special attacks!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_ReflectGainedArmorText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:305",
+   "commands": [
+    {"cmd": "text", "str": "{USER}"},
+    {"cmd": "line", "str": "gained armor!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_ShroudedInMistText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:310",
+   "commands": [
+    {"cmd": "text", "str": "{USER}'s"},
+    {"cmd": "line", "str": "shrouded in mist!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_SuckedHealthText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:315",
+   "commands": [
+    {"cmd": "text", "str": "Sucked health from"},
+    {"cmd": "line", "str": "{TARGET}!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_DreamWasEatenText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:320",
+   "commands": [
+    {"cmd": "text", "str": "{TARGET}'s"},
+    {"cmd": "line", "str": "dream was eaten!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_TradeCenterOpponentText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:325",
+   "commands": [
+    {"cmd": "text", "str": "!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ColosseumOpponentText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:329",
+   "commands": [
+    {"cmd": "text", "str": "!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemartGreetingText": {
+   "kind": "text",
+   "src": "data/text/text_4.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Hi there!"},
+    {"cmd": "next", "str": "May I help you?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonFaintedText": {
+   "kind": "text",
+   "src": "data/text/text_4.asm:7",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": ""},
+    {"cmd": "line", "str": "fainted!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PlayerBlackedOutText": {
+   "kind": "text",
+   "src": "data/text/text_4.asm:13",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} is out of"},
+    {"cmd": "line", "str": "useable POKéMON!"},
+    {"cmd": "para", "str": "{PLAYER} blacked"},
+    {"cmd": "line", "str": "out!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_RepelWoreOffText": {
+   "kind": "text",
+   "src": "data/text/text_4.asm:21",
+   "commands": [
+    {"cmd": "text", "str": "REPEL's effect"},
+    {"cmd": "line", "str": "wore off."},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemartBuyingGreetingText": {
+   "kind": "text",
+   "src": "data/text/text_4.asm:26",
+   "commands": [
+    {"cmd": "text", "str": "Take your time."},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemartTellBuyPriceText": {
+   "kind": "text",
+   "src": "data/text/text_4.asm:30",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": "?"},
+    {"cmd": "line", "str": "That will be"},
+    {"cmd": "cont", "str": "¥"},
+    {"cmd": "text_bcd", "ram": "hMoney", "bytes": 3, "flags": ["LEADING_ZEROES", "LEFT_ALIGN"]},
+    {"cmd": "text", "str": ". OK?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemartBoughtItemText": {
+   "kind": "text",
+   "src": "data/text/text_4.asm:39",
+   "commands": [
+    {"cmd": "text", "str": "Here you are!"},
+    {"cmd": "line", "str": "Thank you!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_PokemartNotEnoughMoneyText": {
+   "kind": "text",
+   "src": "data/text/text_4.asm:44",
+   "commands": [
+    {"cmd": "text", "str": "You don't have"},
+    {"cmd": "line", "str": "enough money."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_PokemartItemBagFullText": {
+   "kind": "text",
+   "src": "data/text/text_4.asm:49",
+   "commands": [
+    {"cmd": "text", "str": "You can't carry"},
+    {"cmd": "line", "str": "any more items."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_PokemonSellingGreetingText": {
+   "kind": "text",
+   "src": "data/text/text_4.asm:54",
+   "commands": [
+    {"cmd": "text", "str": "What would you"},
+    {"cmd": "line", "str": "like to sell?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemartTellSellPriceText": {
+   "kind": "text",
+   "src": "data/text/text_4.asm:59",
+   "commands": [
+    {"cmd": "text", "str": "I can pay you"},
+    {"cmd": "line", "str": "¥"},
+    {"cmd": "text_bcd", "ram": "hMoney", "bytes": 3, "flags": ["LEADING_ZEROES", "LEFT_ALIGN"]},
+    {"cmd": "text", "str": " for that."},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemartItemBagEmptyText": {
+   "kind": "text",
+   "src": "data/text/text_4.asm:66",
+   "commands": [
+    {"cmd": "text", "str": "You don't have"},
+    {"cmd": "line", "str": "anything to sell."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_PokemartUnsellableItemText": {
+   "kind": "text",
+   "src": "data/text/text_4.asm:71",
+   "commands": [
+    {"cmd": "text", "str": "I can't put a"},
+    {"cmd": "line", "str": "price on that."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_PokemartThankYouText": {
+   "kind": "text",
+   "src": "data/text/text_4.asm:76",
+   "commands": [
+    {"cmd": "text", "str": "Thank you!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemartAnythingElseText": {
+   "kind": "text",
+   "src": "data/text/text_4.asm:80",
+   "commands": [
+    {"cmd": "text", "str": "Is there anything"},
+    {"cmd": "line", "str": "else I can do?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_LearnedMove1Text": {
+   "kind": "text",
+   "src": "data/text/text_4.asm:85",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wLearnMoveMonName"},
+    {"cmd": "text", "str": " learned"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_WhichMoveToForgetText": {
+   "kind": "text",
+   "src": "data/text/text_4.asm:93",
+   "commands": [
+    {"cmd": "text", "str": "Which move should"},
+    {"cmd": "next", "str": "be forgotten?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_AbandonLearningText": {
+   "kind": "text",
+   "src": "data/text/text_4.asm:98",
+   "commands": [
+    {"cmd": "text", "str": "Abandon learning"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": "?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_DidNotLearnText": {
+   "kind": "text",
+   "src": "data/text/text_4.asm:105",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wLearnMoveMonName"},
+    {"cmd": "text", "str": ""},
+    {"cmd": "line", "str": "did not learn"},
+    {"cmd": "cont", "str": ""},
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_TryingToLearnText": {
+   "kind": "text",
+   "src": "data/text/text_4.asm:114",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wLearnMoveMonName"},
+    {"cmd": "text", "str": " is"},
+    {"cmd": "line", "str": "trying to learn"},
+    {"cmd": "cont", "str": ""},
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "para", "str": "But, "},
+    {"cmd": "text_ram", "ram": "wLearnMoveMonName"},
+    {"cmd": "text", "str": ""},
+    {"cmd": "line", "str": "can't learn more"},
+    {"cmd": "cont", "str": "than 4 moves!"},
+    {"cmd": "para", "str": "Delete an older"},
+    {"cmd": "line", "str": "move to make room"},
+    {"cmd": "cont", "str": "for "},
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": "?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_OneTwoAndText": {
+   "kind": "text",
+   "src": "data/text/text_4.asm:135",
+   "commands": [
+    {"cmd": "text", "str": "1, 2 and..."},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_PoofText": {
+   "kind": "text",
+   "src": "data/text/text_4.asm:139",
+   "commands": [
+    {"cmd": "text", "str": " Poof!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_ForgotAndText": {
+   "kind": "text",
+   "src": "data/text/text_4.asm:143",
+   "commands": [
+    {"cmd": "text", "str": ""},
+    {"cmd": "para", "str": ""},
+    {"cmd": "text_ram", "ram": "wLearnMoveMonName"},
+    {"cmd": "text", "str": " forgot"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "para", "str": "And..."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_HMCantDeleteText": {
+   "kind": "text",
+   "src": "data/text/text_4.asm:156",
+   "commands": [
+    {"cmd": "text", "str": "HM techniques"},
+    {"cmd": "line", "str": "can't be deleted!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_PokemonCenterWelcomeText": {
+   "kind": "text",
+   "src": "data/text/text_4.asm:161",
+   "commands": [
+    {"cmd": "text", "str": "Welcome to our"},
+    {"cmd": "line", "str": "POKéMON CENTER!"},
+    {"cmd": "para", "str": "We heal your"},
+    {"cmd": "line", "str": "POKéMON back to"},
+    {"cmd": "cont", "str": "perfect health!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_ShallWeHealYourPokemonText": {
+   "kind": "text",
+   "src": "data/text/text_4.asm:170",
+   "commands": [
+    {"cmd": "text", "str": "Shall we heal your"},
+    {"cmd": "line", "str": "POKéMON?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_NeedYourPokemonText": {
+   "kind": "text",
+   "src": "data/text/text_4.asm:175",
+   "commands": [
+    {"cmd": "text", "str": "OK. We'll need"},
+    {"cmd": "line", "str": "your POKéMON."},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonFightingFitText": {
+   "kind": "text",
+   "src": "data/text/text_4.asm:180",
+   "commands": [
+    {"cmd": "text", "str": "Thank you!"},
+    {"cmd": "line", "str": "Your POKéMON are"},
+    {"cmd": "cont", "str": "fighting fit!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_PokemonCenterFarewellText": {
+   "kind": "text",
+   "src": "data/text/text_4.asm:186",
+   "commands": [
+    {"cmd": "text", "str": "We hope to see"},
+    {"cmd": "line", "str": "you again!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CableClubNPCAreaReservedFor2FriendsLinkedByCableText": {
+   "kind": "text",
+   "src": "data/text/text_4.asm:191",
+   "commands": [
+    {"cmd": "text", "str": "This area is"},
+    {"cmd": "line", "str": "reserved for 2"},
+    {"cmd": "cont", "str": "friends who are"},
+    {"cmd": "cont", "str": "linked by cable."},
+    {"cmd": "done"}
+   ]
+  },
+  "_CableClubNPCWelcomeText": {
+   "kind": "text",
+   "src": "data/text/text_4.asm:198",
+   "commands": [
+    {"cmd": "text", "str": "Welcome to the"},
+    {"cmd": "line", "str": "Cable Club!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CableClubNPCPleaseApplyHereHaveToSaveText": {
+   "kind": "text",
+   "src": "data/text/text_4.asm:203",
+   "commands": [
+    {"cmd": "text", "str": "Please apply here."},
+    {"cmd": "para", "str": "Before opening"},
+    {"cmd": "line", "str": "the link, we have"},
+    {"cmd": "cont", "str": "to save the game."},
+    {"cmd": "done"}
+   ]
+  },
+  "_CableClubNPCPleaseWaitText": {
+   "kind": "text",
+   "src": "data/text/text_4.asm:211",
+   "commands": [
+    {"cmd": "text", "str": "Please wait."},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_CableClubNPCPleaseComeAgainText": {
+   "kind": "text",
+   "src": "data/text/text_5.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Please come again!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CableClubNPCMakingPreparationsText": {
+   "kind": "text",
+   "src": "data/text/text_5.asm:6",
+   "commands": [
+    {"cmd": "text", "str": "We're making"},
+    {"cmd": "line", "str": "preparations."},
+    {"cmd": "cont", "str": "Please wait."},
+    {"cmd": "done"}
+   ]
+  },
+  "_UsedStrengthText": {
+   "kind": "text",
+   "src": "data/text/text_5.asm:12",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": " used"},
+    {"cmd": "line", "str": "STRENGTH."},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_CanMoveBouldersText": {
+   "kind": "text",
+   "src": "data/text/text_5.asm:18",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": " can"},
+    {"cmd": "line", "str": "move boulders."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_CurrentTooFastText": {
+   "kind": "text",
+   "src": "data/text/text_5.asm:24",
+   "commands": [
+    {"cmd": "text", "str": "The current is"},
+    {"cmd": "line", "str": "much too fast!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_CyclingIsFunText": {
+   "kind": "text",
+   "src": "data/text/text_5.asm:29",
+   "commands": [
+    {"cmd": "text", "str": "Cycling is fun!"},
+    {"cmd": "line", "str": "Forget SURFing!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_FlashLightsAreaText": {
+   "kind": "text",
+   "src": "data/text/text_5.asm:34",
+   "commands": [
+    {"cmd": "text", "str": "A blinding FLASH"},
+    {"cmd": "line", "str": "lights the area!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_WarpToLastPokemonCenterText": {
+   "kind": "text",
+   "src": "data/text/text_5.asm:39",
+   "commands": [
+    {"cmd": "text", "str": "Warp to the last"},
+    {"cmd": "line", "str": "POKéMON CENTER."},
+    {"cmd": "done"}
+   ]
+  },
+  "_CannotUseTeleportNowText": {
+   "kind": "text",
+   "src": "data/text/text_5.asm:44",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": " can't"},
+    {"cmd": "line", "str": "use TELEPORT now."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_CannotFlyHereText": {
+   "kind": "text",
+   "src": "data/text/text_5.asm:50",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": " can't"},
+    {"cmd": "line", "str": "FLY here."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_NotHealthyEnoughText": {
+   "kind": "text",
+   "src": "data/text/text_5.asm:56",
+   "commands": [
+    {"cmd": "text", "str": "Not healthy"},
+    {"cmd": "line", "str": "enough."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_NewBadgeRequiredText": {
+   "kind": "text",
+   "src": "data/text/text_5.asm:61",
+   "commands": [
+    {"cmd": "text", "str": "No! A new BADGE"},
+    {"cmd": "line", "str": "is required."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_CannotUseItemsHereText": {
+   "kind": "text",
+   "src": "data/text/text_5.asm:66",
+   "commands": [
+    {"cmd": "text", "str": "You can't use items"},
+    {"cmd": "line", "str": "here."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_CannotGetOffHereText": {
+   "kind": "text",
+   "src": "data/text/text_5.asm:71",
+   "commands": [
+    {"cmd": "text", "str": "You can't get off"},
+    {"cmd": "line", "str": "here."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_GotMonText": {
+   "kind": "text",
+   "src": "data/text/text_5.asm:76",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} got"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_SentToBoxText": {
+   "kind": "text",
+   "src": "data/text/text_5.asm:83",
+   "commands": [
+    {"cmd": "text", "str": "There's no more"},
+    {"cmd": "line", "str": "room for POKéMON!"},
+    {"cmd": "cont", "str": ""},
+    {"cmd": "text_ram", "ram": "wBoxMonNicks"},
+    {"cmd": "text", "str": " was"},
+    {"cmd": "cont", "str": "sent to POKéMON"},
+    {"cmd": "cont", "str": "BOX "},
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": " on PC!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_BoxIsFullText": {
+   "kind": "text",
+   "src": "data/text/text_5.asm:95",
+   "commands": [
+    {"cmd": "text", "str": "There's no more"},
+    {"cmd": "line", "str": "room for POKéMON!"},
+    {"cmd": "para", "str": "The POKéMON BOX"},
+    {"cmd": "line", "str": "is full and can't"},
+    {"cmd": "cont", "str": "accept any more!"},
+    {"cmd": "para", "str": "Change the BOX at"},
+    {"cmd": "line", "str": "a POKéMON CENTER!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ItemUseBallText00": {
+   "kind": "text",
+   "src": "data/text/text_6.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "It dodged the"},
+    {"cmd": "line", "str": "thrown BALL!"},
+    {"cmd": "para", "str": "This POKéMON"},
+    {"cmd": "line", "str": "can't be caught!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_ItemUseBallText01": {
+   "kind": "text",
+   "src": "data/text/text_6.asm:10",
+   "commands": [
+    {"cmd": "text", "str": "You missed the"},
+    {"cmd": "line", "str": "POKéMON!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_ItemUseBallText02": {
+   "kind": "text",
+   "src": "data/text/text_6.asm:15",
+   "commands": [
+    {"cmd": "text", "str": "Darn! The POKéMON"},
+    {"cmd": "line", "str": "broke free!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_ItemUseBallText03": {
+   "kind": "text",
+   "src": "data/text/text_6.asm:20",
+   "commands": [
+    {"cmd": "text", "str": "Aww! It appeared"},
+    {"cmd": "line", "str": "to be caught! "},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_ItemUseBallText04": {
+   "kind": "text",
+   "src": "data/text/text_6.asm:25",
+   "commands": [
+    {"cmd": "text", "str": "Shoot! It was so"},
+    {"cmd": "line", "str": "close too!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_ItemUseBallText05": {
+   "kind": "text",
+   "src": "data/text/text_6.asm:30",
+   "commands": [
+    {"cmd": "text", "str": "All right!"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wEnemyMonNick"},
+    {"cmd": "text", "str": " was"},
+    {"cmd": "cont", "str": "caught!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_ItemUseBallText07": {
+   "kind": "text",
+   "src": "data/text/text_6.asm:38",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wBoxMonNicks"},
+    {"cmd": "text", "str": " was"},
+    {"cmd": "line", "str": "transferred to"},
+    {"cmd": "cont", "str": "BILL's PC!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_ItemUseBallText08": {
+   "kind": "text",
+   "src": "data/text/text_6.asm:45",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wBoxMonNicks"},
+    {"cmd": "text", "str": " was"},
+    {"cmd": "line", "str": "transferred to"},
+    {"cmd": "cont", "str": "someone's PC!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_ItemUseBallText06": {
+   "kind": "text",
+   "src": "data/text/text_6.asm:52",
+   "commands": [
+    {"cmd": "text", "str": "New POKéDEX data"},
+    {"cmd": "line", "str": "will be added for"},
+    {"cmd": "cont", "str": ""},
+    {"cmd": "text_ram", "ram": "wEnemyMonNick"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_SurfingGotOnText": {
+   "kind": "text",
+   "src": "data/text/text_6.asm:60",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} got on"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_SurfingNoPlaceToGetOffText": {
+   "kind": "text",
+   "src": "data/text/text_6.asm:67",
+   "commands": [
+    {"cmd": "text", "str": "There's no place"},
+    {"cmd": "line", "str": "to get off!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_VitaminStatRoseText": {
+   "kind": "text",
+   "src": "data/text/text_6.asm:72",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": "'s"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": " rose."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_VitaminNoEffectText": {
+   "kind": "text",
+   "src": "data/text/text_6.asm:80",
+   "commands": [
+    {"cmd": "text", "str": "It won't have any"},
+    {"cmd": "line", "str": "effect."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_ThrewBaitText": {
+   "kind": "text",
+   "src": "data/text/text_6.asm:85",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} threw"},
+    {"cmd": "line", "str": "some BAIT."},
+    {"cmd": "done"}
+   ]
+  },
+  "_ThrewRockText": {
+   "kind": "text",
+   "src": "data/text/text_6.asm:90",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} threw a"},
+    {"cmd": "line", "str": "ROCK."},
+    {"cmd": "done"}
+   ]
+  },
+  "_PlayedFluteNoEffectText": {
+   "kind": "text",
+   "src": "data/text/text_6.asm:95",
+   "commands": [
+    {"cmd": "text", "str": "Played the POKé"},
+    {"cmd": "line", "str": "FLUTE."},
+    {"cmd": "para", "str": "Now, that's a"},
+    {"cmd": "line", "str": "catchy tune!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_FluteWokeUpText": {
+   "kind": "text",
+   "src": "data/text/text_6.asm:103",
+   "commands": [
+    {"cmd": "text", "str": "All sleeping"},
+    {"cmd": "line", "str": "POKéMON woke up."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_PlayedFluteHadEffectText": {
+   "kind": "text",
+   "src": "data/text/text_6.asm:108",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} played the"},
+    {"cmd": "line", "str": "POKé FLUTE."},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_CoinCaseNumCoinsText": {
+   "kind": "text",
+   "src": "data/text/text_6.asm:113",
+   "commands": [
+    {"cmd": "text", "str": "Coins"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_bcd", "ram": "wPlayerCoins", "bytes": 2, "flags": ["LEADING_ZEROES", "LEFT_ALIGN"]},
+    {"cmd": "text", "str": " "},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_ItemfinderFoundItemText": {
+   "kind": "text",
+   "src": "data/text/text_6.asm:120",
+   "commands": [
+    {"cmd": "text", "str": "Yes! ITEMFINDER"},
+    {"cmd": "line", "str": "indicates there's"},
+    {"cmd": "cont", "str": "an item nearby."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_ItemfinderFoundNothingText": {
+   "kind": "text",
+   "src": "data/text/text_6.asm:126",
+   "commands": [
+    {"cmd": "text", "str": "Nope! ITEMFINDER"},
+    {"cmd": "line", "str": "isn't responding."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_RaisePPWhichTechniqueText": {
+   "kind": "text",
+   "src": "data/text/text_6.asm:131",
+   "commands": [
+    {"cmd": "text", "str": "Raise PP of which"},
+    {"cmd": "line", "str": "technique?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_RestorePPWhichTechniqueText": {
+   "kind": "text",
+   "src": "data/text/text_6.asm:136",
+   "commands": [
+    {"cmd": "text", "str": "Restore PP of"},
+    {"cmd": "line", "str": "which technique?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PPMaxedOutText": {
+   "kind": "text",
+   "src": "data/text/text_6.asm:141",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": "'s PP"},
+    {"cmd": "line", "str": "is maxed out."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_PPIncreasedText": {
+   "kind": "text",
+   "src": "data/text/text_6.asm:147",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": "'s PP"},
+    {"cmd": "line", "str": "increased."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_PPRestoredText": {
+   "kind": "text",
+   "src": "data/text/text_6.asm:153",
+   "commands": [
+    {"cmd": "text", "str": "PP was restored."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_BootedUpTMText": {
+   "kind": "text",
+   "src": "data/text/text_6.asm:157",
+   "commands": [
+    {"cmd": "text", "str": "Booted up a TM!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_BootedUpHMText": {
+   "kind": "text",
+   "src": "data/text/text_6.asm:161",
+   "commands": [
+    {"cmd": "text", "str": "Booted up an HM!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_TeachMachineMoveText": {
+   "kind": "text",
+   "src": "data/text/text_6.asm:165",
+   "commands": [
+    {"cmd": "text", "str": "It contained"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "para", "str": "Teach "},
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": ""},
+    {"cmd": "line", "str": "to a POKéMON?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_MonCannotLearnMachineMoveText": {
+   "kind": "text",
+   "src": "data/text/text_6.asm:177",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": " is not"},
+    {"cmd": "line", "str": "compatible with"},
+    {"cmd": "cont", "str": ""},
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": "."},
+    {"cmd": "para", "str": "It can't learn"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": "."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_ItemUseNotTimeText": {
+   "kind": "text",
+   "src": "data/text/text_6.asm:191",
+   "commands": [
+    {"cmd": "text", "str": "OAK: {PLAYER}!"},
+    {"cmd": "line", "str": "This isn't the"},
+    {"cmd": "cont", "str": "time to use that! "},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_ItemUseNotYoursToUseText": {
+   "kind": "text",
+   "src": "data/text/text_6.asm:197",
+   "commands": [
+    {"cmd": "text", "str": "This isn't yours"},
+    {"cmd": "line", "str": "to use!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_ItemUseNoEffectText": {
+   "kind": "text",
+   "src": "data/text/text_6.asm:202",
+   "commands": [
+    {"cmd": "text", "str": "It won't have any"},
+    {"cmd": "line", "str": "effect."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_ThrowBallAtTrainerMonText1": {
+   "kind": "text",
+   "src": "data/text/text_6.asm:207",
+   "commands": [
+    {"cmd": "text", "str": "The trainer"},
+    {"cmd": "line", "str": "blocked the BALL!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_ThrowBallAtTrainerMonText2": {
+   "kind": "text",
+   "src": "data/text/text_6.asm:212",
+   "commands": [
+    {"cmd": "text", "str": "Don't be a thief!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_NoCyclingAllowedHereText": {
+   "kind": "text",
+   "src": "data/text/text_6.asm:216",
+   "commands": [
+    {"cmd": "text", "str": "No cycling"},
+    {"cmd": "next", "str": "allowed here."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_NoSurfingHereText": {
+   "kind": "text",
+   "src": "data/text/text_6.asm:221",
+   "commands": [
+    {"cmd": "text", "str": "No SURFing on"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": " here!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_BoxFullCannotThrowBallText": {
+   "kind": "text",
+   "src": "data/text/text_6.asm:228",
+   "commands": [
+    {"cmd": "text", "str": "The POKéMON BOX"},
+    {"cmd": "line", "str": "is full! Can't"},
+    {"cmd": "cont", "str": "use that item!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_ItemUseText001": {
+   "kind": "text",
+   "src": "data/text/text_7.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} used"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_ItemUseText002": {
+   "kind": "text",
+   "src": "data/text/text_7.asm:6",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_GotOnBicycleText1": {
+   "kind": "text",
+   "src": "data/text/text_7.asm:11",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} got on the"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_GotOnBicycleText2": {
+   "kind": "text",
+   "src": "data/text/text_7.asm:15",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_GotOffBicycleText1": {
+   "kind": "text",
+   "src": "data/text/text_7.asm:20",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} got off"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_GotOffBicycleText2": {
+   "kind": "text",
+   "src": "data/text/text_7.asm:24",
+   "commands": [
+    {"cmd": "text", "str": "the "},
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": "."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_ThrewAwayItemText": {
+   "kind": "text",
+   "src": "data/text/text_7.asm:30",
+   "commands": [
+    {"cmd": "text", "str": "Threw away"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": "."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_IsItOKToTossItemText": {
+   "kind": "text",
+   "src": "data/text/text_7.asm:37",
+   "commands": [
+    {"cmd": "text", "str": "Is it OK to toss"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": "?"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_TooImportantToTossText": {
+   "kind": "text",
+   "src": "data/text/text_7.asm:44",
+   "commands": [
+    {"cmd": "text", "str": "That's too impor-"},
+    {"cmd": "line", "str": "tant to toss!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_AlreadyKnowsText": {
+   "kind": "text",
+   "src": "data/text/text_7.asm:49",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": " knows"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_ConnectCableText": {
+   "kind": "text",
+   "src": "data/text/text_7.asm:57",
+   "commands": [
+    {"cmd": "text", "str": "Okay, connect the"},
+    {"cmd": "line", "str": "cable like so!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_TradedForText": {
+   "kind": "text",
+   "src": "data/text/text_7.asm:62",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} traded"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wInGameTradeGiveMonName"},
+    {"cmd": "text", "str": " for"},
+    {"cmd": "cont", "str": ""},
+    {"cmd": "text_ram", "ram": "wInGameTradeReceiveMonName"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_WannaTrade1Text": {
+   "kind": "text",
+   "src": "data/text/text_7.asm:72",
+   "commands": [
+    {"cmd": "text", "str": "I'm looking for"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wInGameTradeGiveMonName"},
+    {"cmd": "text", "str": "! Wanna"},
+    {"cmd": "para", "str": "trade one for"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wInGameTradeReceiveMonName"},
+    {"cmd": "text", "str": "? "},
+    {"cmd": "done"}
+   ]
+  },
+  "_NoTrade1Text": {
+   "kind": "text",
+   "src": "data/text/text_7.asm:84",
+   "commands": [
+    {"cmd": "text", "str": "Awww!"},
+    {"cmd": "line", "str": "Oh well..."},
+    {"cmd": "done"}
+   ]
+  },
+  "_WrongMon1Text": {
+   "kind": "text",
+   "src": "data/text/text_7.asm:89",
+   "commands": [
+    {"cmd": "text", "str": "What? That's not"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wInGameTradeGiveMonName"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "para", "str": "If you get one,"},
+    {"cmd": "line", "str": "come back here!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Thanks1Text": {
+   "kind": "text",
+   "src": "data/text/text_7.asm:99",
+   "commands": [
+    {"cmd": "text", "str": "Hey thanks!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_AfterTrade1Text": {
+   "kind": "text",
+   "src": "data/text/text_7.asm:103",
+   "commands": [
+    {"cmd": "text", "str": "Isn't my old"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wInGameTradeReceiveMonName"},
+    {"cmd": "text", "str": " great?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_WannaTrade2Text": {
+   "kind": "text",
+   "src": "data/text/text_7.asm:110",
+   "commands": [
+    {"cmd": "text", "str": "Hello there! Do"},
+    {"cmd": "line", "str": "you want to trade"},
+    {"cmd": "para", "str": "your "},
+    {"cmd": "text_ram", "ram": "wInGameTradeGiveMonName"},
+    {"cmd": "text", "str": ""},
+    {"cmd": "line", "str": "for "},
+    {"cmd": "text_ram", "ram": "wInGameTradeReceiveMonName"},
+    {"cmd": "text", "str": "?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_NoTrade2Text": {
+   "kind": "text",
+   "src": "data/text/text_7.asm:122",
+   "commands": [
+    {"cmd": "text", "str": "Well, if you"},
+    {"cmd": "line", "str": "don't want to..."},
+    {"cmd": "done"}
+   ]
+  },
+  "_WrongMon2Text": {
+   "kind": "text",
+   "src": "data/text/text_7.asm:127",
+   "commands": [
+    {"cmd": "text", "str": "Hmmm? This isn't"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wInGameTradeGiveMonName"},
+    {"cmd": "text", "str": "."},
+    {"cmd": "para", "str": "Think of me when"},
+    {"cmd": "line", "str": "you get one."},
+    {"cmd": "done"}
+   ]
+  },
+  "_Thanks2Text": {
+   "kind": "text",
+   "src": "data/text/text_7.asm:137",
+   "commands": [
+    {"cmd": "text", "str": "Thanks!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_AfterTrade2Text": {
+   "kind": "text",
+   "src": "data/text/text_7.asm:141",
+   "commands": [
+    {"cmd": "text", "str": "The "},
+    {"cmd": "text_ram", "ram": "wInGameTradeGiveMonName"},
+    {"cmd": "text", "str": " you"},
+    {"cmd": "line", "str": "traded to me"},
+    {"cmd": "para", "str": "went and evolved!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_WannaTrade3Text": {
+   "kind": "text",
+   "src": "data/text/text_7.asm:150",
+   "commands": [
+    {"cmd": "text", "str": "Hi! Do you have"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wInGameTradeGiveMonName"},
+    {"cmd": "text", "str": "?"},
+    {"cmd": "para", "str": "Want to trade it"},
+    {"cmd": "line", "str": "for "},
+    {"cmd": "text_ram", "ram": "wInGameTradeReceiveMonName"},
+    {"cmd": "text", "str": "?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_NoTrade3Text": {
+   "kind": "text",
+   "src": "data/text/text_7.asm:162",
+   "commands": [
+    {"cmd": "text", "str": "That's too bad."},
+    {"cmd": "done"}
+   ]
+  },
+  "_WrongMon3Text": {
+   "kind": "text",
+   "src": "data/text/text_7.asm:166",
+   "commands": [
+    {"cmd": "text", "str": "...This is no"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wInGameTradeGiveMonName"},
+    {"cmd": "text", "str": "."},
+    {"cmd": "para", "str": "If you get one,"},
+    {"cmd": "line", "str": "trade it with me!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Thanks3Text": {
+   "kind": "text",
+   "src": "data/text/text_7.asm:176",
+   "commands": [
+    {"cmd": "text", "str": "Thanks pal!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_AfterTrade3Text": {
+   "kind": "text",
+   "src": "data/text/text_7.asm:180",
+   "commands": [
+    {"cmd": "text", "str": "How is my old"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wInGameTradeReceiveMonName"},
+    {"cmd": "text", "str": "?"},
+    {"cmd": "para", "str": "My "},
+    {"cmd": "text_ram", "ram": "wInGameTradeGiveMonName"},
+    {"cmd": "text", "str": " is"},
+    {"cmd": "line", "str": "doing great!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_NothingToCutText": {
+   "kind": "text",
+   "src": "data/text/text_7.asm:192",
+   "commands": [
+    {"cmd": "text", "str": "There isn't"},
+    {"cmd": "line", "str": "anything to CUT!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_UsedCutText": {
+   "kind": "text",
+   "src": "data/text/text_7.asm:197",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": " hacked"},
+    {"cmd": "line", "str": "away with CUT!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "UnusedBadgeNames": {
+   "kind": "string",
+   "src": "data/text/unused_names.asm:2",
+   "commands": [
+    {"cmd": "str", "str": "かみなりバッヂ"}
+   ]
+  },
+  "UnusedRankingNames": {
+   "kind": "string",
+   "src": "data/text/unused_names.asm:13",
+   "commands": [
+    {"cmd": "str", "str": "たまご"}
+   ]
+  },
+  "CardKeySuccessText": {
+   "kind": "text",
+   "src": "engine/events/card_key.asm:64",
+   "commands": [
+    {"cmd": "text_far", "label": "_CardKeySuccessText1"},
+    {"cmd": "sound", "sound": "sound_get_item_1"},
+    {"cmd": "text_far", "label": "_CardKeySuccessText2"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CardKeyFailText": {
+   "kind": "text",
+   "src": "engine/events/card_key.asm:70",
+   "commands": [
+    {"cmd": "text_far", "label": "_CardKeyFailText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianCityPokecenterBenchGuyText": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/bench_guys.asm:36",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianCityPokecenterGuyText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PewterCityPokecenterBenchGuyText": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/bench_guys.asm:40",
+   "commands": [
+    {"cmd": "text_far", "label": "_PewterCityPokecenterGuyText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeruleanCityPokecenterBenchGuyText": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/bench_guys.asm:44",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanPokecenterGuyText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "LavenderCityPokecenterBenchGuyText": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/bench_guys.asm:48",
+   "commands": [
+    {"cmd": "text_far", "label": "_LavenderPokecenterGuyText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "MtMoonPokecenterBenchGuyText": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/bench_guys.asm:52",
+   "commands": [
+    {"cmd": "text_far", "label": "_MtMoonPokecenterBenchGuyText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "RockTunnelPokecenterBenchGuyText": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/bench_guys.asm:56",
+   "commands": [
+    {"cmd": "text_far", "label": "_RockTunnelPokecenterGuyText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "UnusedBenchGuyText1": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/bench_guys.asm:60",
+   "commands": [
+    {"cmd": "text_far", "label": "_UnusedBenchGuyText1"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "UnusedBenchGuyText2": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/bench_guys.asm:64",
+   "commands": [
+    {"cmd": "text_far", "label": "_UnusedBenchGuyText2"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "UnusedBenchGuyText3": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/bench_guys.asm:68",
+   "commands": [
+    {"cmd": "text_far", "label": "_UnusedBenchGuyText3"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VermilionCityPokecenterBenchGuyText": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/bench_guys.asm:72",
+   "commands": [
+    {"cmd": "text_far", "label": "_VermilionPokecenterGuyText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonCityPokecenterBenchGuyText": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/bench_guys.asm:76",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonCityPokecenterGuyText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FuchsiaCityPokecenterBenchGuyText": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/bench_guys.asm:80",
+   "commands": [
+    {"cmd": "text_far", "label": "_FuchsiaCityPokecenterGuyText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CinnabarIslandPokecenterBenchGuyText": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/bench_guys.asm:84",
+   "commands": [
+    {"cmd": "text_far", "label": "_CinnabarPokecenterGuyText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronCityPokecenterBenchGuyText": {
+   "kind": "asm",
+   "src": "engine/events/hidden_events/bench_guys.asm:88",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["SaffronCityPokecenterBenchGuyText2", "SaffronCityPokecenterBenchGuyText1"]
+  },
+  "SaffronCityPokecenterBenchGuyText1": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/bench_guys.asm:98",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronCityPokecenterGuyText1"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronCityPokecenterBenchGuyText2": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/bench_guys.asm:102",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronCityPokecenterGuyText2"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonCityHotelText": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/bench_guys.asm:106",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonCityHotelText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "BillsHouseMonitorText": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/bills_house_pc.asm:48",
+   "commands": [
+    {"cmd": "text_far", "label": "_BillsHouseMonitorText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "BillsHouseInitiatedText": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/bills_house_pc.asm:52",
+   "commands": [
+    {"cmd": "text_far", "label": "_BillsHouseInitiatedText"},
+    {"cmd": "text_promptbutton"},
+    {"cmd": "text_asm"}
+   ]
+  },
+  "BillsHousePokemonList": {
+   "kind": "asm",
+   "src": "engine/events/hidden_events/bills_house_pc.asm:68",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["BillsHousePokemonListText1", "BillsMonListText", "BillsHousePokemonListText2"]
+  },
+  "BillsHousePokemonListText1": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/bills_house_pc.asm:122",
+   "commands": [
+    {"cmd": "text_far", "label": "_BillsHousePokemonListText1"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "BillsMonListText": {
+   "kind": "string",
+   "src": "engine/events/hidden_events/bills_house_pc.asm:126",
+   "commands": [
+    {"cmd": "str", "str": "EEVEE"},
+    {"cmd": "next", "str": "FLAREON"},
+    {"cmd": "next", "str": "JOLTEON"},
+    {"cmd": "next", "str": "VAPOREON"},
+    {"cmd": "next", "str": "CANCEL"}
+   ]
+  },
+  "BillsHousePokemonListText2": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/bills_house_pc.asm:133",
+   "commands": [
+    {"cmd": "text_far", "label": "_BillsHousePokemonListText2"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "UnusedPredefText": {
+   "kind": "string",
+   "src": "engine/events/hidden_events/blues_room.asm:5",
+   "commands": [
+    {"cmd": "str", "str": ""}
+   ]
+  },
+  "BookcaseText": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/blues_room.asm:12",
+   "commands": [
+    {"cmd": "text_far", "label": "_BookcaseText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "BookOrSculptureText": {
+   "kind": "asm",
+   "src": "engine/events/hidden_events/book_or_sculpture.asm:2",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["PokemonBooksText", "DiglettSculptureText"]
+  },
+  "PokemonBooksText": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/book_or_sculpture.asm:16",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonBooksText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "DiglettSculptureText": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/book_or_sculpture.asm:20",
+   "commands": [
+    {"cmd": "text_far", "label": "_DiglettSculptureText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CinnabarGymQuiz": {
+   "kind": "asm",
+   "src": "engine/events/hidden_events/cinnabar_gym_quiz.asm:9",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["CinnabarGymQuizIntroText"]
+  },
+  "CinnabarGymQuizIntroText": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/cinnabar_gym_quiz.asm:39",
+   "commands": [
+    {"cmd": "text_far", "label": "_CinnabarGymQuizIntroText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ElevatorText": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/elevator.asm:2",
+   "commands": [
+    {"cmd": "text_far", "label": "_ElevatorText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "EnemiesOnEverySideText": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/fighting_dojo.asm:6",
+   "commands": [
+    {"cmd": "text_far", "label": "_EnemiesOnEverySideText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "WhatGoesAroundComesAroundText": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/fighting_dojo.asm:14",
+   "commands": [
+    {"cmd": "text_far", "label": "_WhatGoesAroundComesAroundText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FightingDojoText": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/fighting_dojo.asm:22",
+   "commands": [
+    {"cmd": "text_far", "label": "_FightingDojoText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "GymStatueText1": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/gym_statues.asm:34",
+   "commands": [
+    {"cmd": "text_far", "label": "_GymStatueText1"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "GymStatueText2": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/gym_statues.asm:38",
+   "commands": [
+    {"cmd": "text_far", "label": "_GymStatueText2"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "IndigoPlateauHQText": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/indigo_plateau_hq.asm:9",
+   "commands": [
+    {"cmd": "text_far", "label": "_IndigoPlateauHQText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "IndigoPlateauStatues": {
+   "kind": "asm",
+   "src": "engine/events/hidden_events/indigo_plateau_statues.asm:2",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["IndigoPlateauStatuesText1", "IndigoPlateauStatuesText2", "IndigoPlateauStatuesText3"]
+  },
+  "IndigoPlateauStatuesText1": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/indigo_plateau_statues.asm:15",
+   "commands": [
+    {"cmd": "text_far", "label": "_IndigoPlateauStatuesText1"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "IndigoPlateauStatuesText2": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/indigo_plateau_statues.asm:19",
+   "commands": [
+    {"cmd": "text_far", "label": "_IndigoPlateauStatuesText2"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "IndigoPlateauStatuesText3": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/indigo_plateau_statues.asm:23",
+   "commands": [
+    {"cmd": "text_far", "label": "_IndigoPlateauStatuesText3"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "MagazinesText": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/magazines.asm:7",
+   "commands": [
+    {"cmd": "text_far", "label": "_MagazinesText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "AerodactylFossilText": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/museum_fossils.asm:10",
+   "commands": [
+    {"cmd": "text_far", "label": "_AerodactylFossilText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "KabutopsFossilText": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/museum_fossils.asm:22",
+   "commands": [
+    {"cmd": "text_far", "label": "_KabutopsFossilText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "NewBicycleText": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/new_bike.asm:6",
+   "commands": [
+    {"cmd": "text_far", "label": "_NewBicycleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "OakLabEmailText": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/oaks_lab_email.asm:9",
+   "commands": [
+    {"cmd": "text_far", "label": "_OakLabEmailText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PushStartText": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/oaks_lab_posters.asm:6",
+   "commands": [
+    {"cmd": "text_far", "label": "_PushStartText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaveOptionText": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/oaks_lab_posters.asm:24",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaveOptionText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "StrengthsAndWeaknessesText": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/oaks_lab_posters.asm:28",
+   "commands": [
+    {"cmd": "text_far", "label": "_StrengthsAndWeaknessesText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonCenterPCText": {
+   "kind": "script",
+   "src": "engine/events/hidden_events/pokecenter_pc.asm:11",
+   "commands": [
+    {"cmd": "script", "script": "script_pokecenter_pc"}
+   ]
+  },
+  "PokemonStuffText": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/pokemon_stuff.asm:2",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonStuffText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "RedBedroomSNESText": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/reds_room.asm:6",
+   "commands": [
+    {"cmd": "text_far", "label": "_RedBedroomSNESText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "RedBedroomPCText": {
+   "kind": "script",
+   "src": "engine/events/hidden_events/reds_room.asm:14",
+   "commands": [
+    {"cmd": "script", "script": "script_players_pc"}
+   ]
+  },
+  "Route15UpstairsBinocularsText": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/route_15_binoculars.asm:13",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route15UpstairsBinocularsText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "LinkCableHelp": {
+   "kind": "asm",
+   "src": "engine/events/hidden_events/school_blackboard.asm:10",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["LinkCableHelpText1", "HowToLinkText", "LinkCableHelpText2"]
+  },
+  "LinkCableHelpText1": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/school_blackboard.asm:63",
+   "commands": [
+    {"cmd": "text_far", "label": "_LinkCableHelpText1"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "LinkCableHelpText2": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/school_blackboard.asm:67",
+   "commands": [
+    {"cmd": "text_far", "label": "_LinkCableHelpText2"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "HowToLinkText": {
+   "kind": "string",
+   "src": "engine/events/hidden_events/school_blackboard.asm:71",
+   "commands": [
+    {"cmd": "str", "str": "HOW TO LINK"},
+    {"cmd": "next", "str": "COLOSSEUM"},
+    {"cmd": "next", "str": "TRADE CENTER"},
+    {"cmd": "next", "str": "STOP READING"}
+   ]
+  },
+  "ViridianSchoolBlackboard": {
+   "kind": "asm",
+   "src": "engine/events/hidden_events/school_blackboard.asm:94",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["ViridianSchoolBlackboardText1", "StatusAilmentText1", "StatusAilmentText2", "ViridianSchoolBlackboardText2"]
+  },
+  "ViridianSchoolBlackboardText1": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/school_blackboard.asm:180",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianSchoolBlackboardText1"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianSchoolBlackboardText2": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/school_blackboard.asm:184",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianSchoolBlackboardText2"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "StatusAilmentText1": {
+   "kind": "string",
+   "src": "engine/events/hidden_events/school_blackboard.asm:188",
+   "commands": [
+    {"cmd": "str", "str": " SLP"},
+    {"cmd": "next", "str": " PSN"},
+    {"cmd": "next", "str": " PAR"}
+   ]
+  },
+  "StatusAilmentText2": {
+   "kind": "string",
+   "src": "engine/events/hidden_events/school_blackboard.asm:193",
+   "commands": [
+    {"cmd": "str", "str": " BRN"},
+    {"cmd": "next", "str": " FRZ"},
+    {"cmd": "next", "str": " QUIT"}
+   ]
+  },
+  "TMNotebook": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/school_notebooks.asm:9",
+   "commands": [
+    {"cmd": "text_far", "label": "TMNotebookText"},
+    {"cmd": "text_waitbutton"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianSchoolNotebook": {
+   "kind": "asm",
+   "src": "engine/events/hidden_events/school_notebooks.asm:14",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["ViridianSchoolNotebookText1", "ViridianSchoolNotebookText2", "ViridianSchoolNotebookText3", "ViridianSchoolNotebookText4", "ViridianSchoolNotebookText5"]
+  },
+  "ViridianSchoolNotebookText5": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/school_notebooks.asm:47",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianSchoolNotebookText5"},
+    {"cmd": "text_waitbutton"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianSchoolNotebookText1": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/school_notebooks.asm:52",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianSchoolNotebookText1"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianSchoolNotebookText2": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/school_notebooks.asm:56",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianSchoolNotebookText2"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianSchoolNotebookText3": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/school_notebooks.asm:60",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianSchoolNotebookText3"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianSchoolNotebookText4": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/school_notebooks.asm:64",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianSchoolNotebookText4"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "TownMapText": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/town_map.asm:2",
+   "commands": [
+    {"cmd": "text_far", "label": "_TownMapText"},
+    {"cmd": "text_promptbutton"},
+    {"cmd": "text_asm"}
+   ]
+  },
+  "VermilionGymTrashText": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/vermilion_gym_trash.asm:6",
+   "commands": [
+    {"cmd": "text_far", "label": "_VermilionGymTrashText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VermilionGymTrashSuccessText1": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/vermilion_gym_trash.asm:131",
+   "commands": [
+    {"cmd": "text_far", "label": "_VermilionGymTrashSuccessText1"},
+    {"cmd": "text_asm"}
+   ]
+  },
+  "VermilionGymTrashSuccessText2": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/vermilion_gym_trash.asm:141",
+   "commands": [
+    {"cmd": "text_far", "label": "_VermilionGymTrashSuccessText2"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VermilionGymTrashSuccessText3": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/vermilion_gym_trash.asm:154",
+   "commands": [
+    {"cmd": "text_far", "label": "_VermilionGymTrashSuccessText3"},
+    {"cmd": "text_asm"}
+   ]
+  },
+  "VermilionGymTrashFailText": {
+   "kind": "text",
+   "src": "engine/events/hidden_events/vermilion_gym_trash.asm:163",
+   "commands": [
+    {"cmd": "text_far", "label": "_VermilionGymTrashFailText"},
+    {"cmd": "text_asm"}
+   ]
+  },
+  "FoundHiddenItemText": {
+   "kind": "text",
+   "src": "engine/events/hidden_items.asm:24",
+   "refs": ["HiddenItemBagFullText"],
+   "commands": [
+    {"cmd": "text_far", "label": "_FoundHiddenItemText"},
+    {"cmd": "text_asm"}
+   ]
+  },
+  "HiddenItemBagFullText": {
+   "kind": "text",
+   "src": "engine/events/hidden_items.asm:49",
+   "commands": [
+    {"cmd": "text_far", "label": "_HiddenItemBagFullText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FoundHiddenCoinsText": {
+   "kind": "text",
+   "src": "engine/events/hidden_items.asm:124",
+   "commands": [
+    {"cmd": "text_far", "label": "_FoundHiddenCoinsText"},
+    {"cmd": "sound", "sound": "sound_get_item_2"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "DroppedHiddenCoinsText": {
+   "kind": "text",
+   "src": "engine/events/hidden_items.asm:129",
+   "commands": [
+    {"cmd": "text_far", "label": "_FoundHiddenCoins2Text"},
+    {"cmd": "sound", "sound": "sound_get_item_2"},
+    {"cmd": "text_far", "label": "_DroppedHiddenCoinsText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "JustAMomentText": {
+   "kind": "text",
+   "src": "engine/pokemon/bills_pc.asm:538",
+   "commands": [
+    {"cmd": "text_far", "label": "_JustAMomentText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "OpenBillsPCText": {
+   "kind": "script",
+   "src": "engine/pokemon/bills_pc.asm:549",
+   "commands": [
+    {"cmd": "script", "script": "script_bills_pc"}
+   ]
+  },
+  "GameCornerOutOfOrderText": {
+   "kind": "text",
+   "src": "engine/slots/game_corner_slots.asm:45",
+   "commands": [
+    {"cmd": "text_far", "label": "_GameCornerOutOfOrderText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "GameCornerOutToLunchText": {
+   "kind": "text",
+   "src": "engine/slots/game_corner_slots.asm:49",
+   "commands": [
+    {"cmd": "text_far", "label": "_GameCornerOutToLunchText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "GameCornerSomeonesKeysText": {
+   "kind": "text",
+   "src": "engine/slots/game_corner_slots.asm:53",
+   "commands": [
+    {"cmd": "text_far", "label": "_GameCornerSomeonesKeysText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "GameCornerCoinCaseText": {
+   "kind": "text",
+   "src": "engine/slots/game_corner_slots2.asm:26",
+   "commands": [
+    {"cmd": "text_far", "label": "_GameCornerCoinCaseText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "GameCornerNoCoinsText": {
+   "kind": "text",
+   "src": "engine/slots/game_corner_slots2.asm:30",
+   "commands": [
+    {"cmd": "text_far", "label": "_GameCornerNoCoinsText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "InitialQuantityText": {
+   "kind": "string",
+   "src": "home/list_menu.asm:317",
+   "commands": [
+    {"cmd": "str", "str": "×01"}
+   ]
+  },
+  "SpacesBetweenQuantityAndPriceText": {
+   "kind": "string",
+   "src": "home/list_menu.asm:320",
+   "commands": [
+    {"cmd": "str", "str": "      "}
+   ]
+  },
+  "ListMenuCancelText": {
+   "kind": "string",
+   "src": "home/list_menu.asm:528",
+   "commands": [
+    {"cmd": "str", "str": "CANCEL"}
+   ]
+  },
+  "TechnicalPrefix": {
+   "kind": "string",
+   "src": "home/names.asm:104",
+   "commands": [
+    {"cmd": "str", "str": "TMHM"}
+   ],
+   "continuesInto": ["HiddenPrefix", "IsItemHM"]
+  },
+  "HiddenPrefix": {
+   "kind": "string",
+   "src": "home/names.asm:106",
+   "commands": [
+    {"cmd": "str", "str": "HM"}
+   ],
+   "continuesInto": ["IsItemHM"]
+  },
+  "TextScriptEndingText": {
+   "kind": "text",
+   "src": "home/overworld_text.asm:2",
+   "commands": [
+    {"cmd": "text_end"}
+   ]
+  },
+  "ExclamationText": {
+   "kind": "text",
+   "src": "home/overworld_text.asm:9",
+   "commands": [
+    {"cmd": "text_far", "label": "_ExclamationText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "GroundRoseText": {
+   "kind": "text",
+   "src": "home/overworld_text.asm:13",
+   "commands": [
+    {"cmd": "text_far", "label": "_GroundRoseText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "BoulderText": {
+   "kind": "text",
+   "src": "home/overworld_text.asm:17",
+   "commands": [
+    {"cmd": "text_far", "label": "_BoulderText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "MartSignText": {
+   "kind": "text",
+   "src": "home/overworld_text.asm:21",
+   "commands": [
+    {"cmd": "text_far", "label": "_MartSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokeCenterSignText": {
+   "kind": "text",
+   "src": "home/overworld_text.asm:25",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokeCenterSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PickUpItemText": {
+   "kind": "asm",
+   "src": "home/overworld_text.asm:29",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "TextIDErrorText": {
+   "kind": "text",
+   "src": "home/text.asm:127",
+   "commands": [
+    {"cmd": "text_far", "label": "_TextIDErrorText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "TMCharText": {
+   "kind": "string",
+   "src": "home/text.asm:179",
+   "commands": [
+    {"cmd": "str", "str": "TM"}
+   ]
+  },
+  "TrainerCharText": {
+   "kind": "string",
+   "src": "home/text.asm:180",
+   "commands": [
+    {"cmd": "str", "str": "TRAINER"}
+   ]
+  },
+  "PCCharText": {
+   "kind": "string",
+   "src": "home/text.asm:181",
+   "commands": [
+    {"cmd": "str", "str": "PC"}
+   ]
+  },
+  "RocketCharText": {
+   "kind": "string",
+   "src": "home/text.asm:182",
+   "commands": [
+    {"cmd": "str", "str": "ROCKET"}
+   ]
+  },
+  "PlacePOKeText": {
+   "kind": "string",
+   "src": "home/text.asm:183",
+   "commands": [
+    {"cmd": "str", "str": "POKé"}
+   ]
+  },
+  "SixDotsCharText": {
+   "kind": "string",
+   "src": "home/text.asm:184",
+   "commands": [
+    {"cmd": "str", "str": "……"}
+   ]
+  },
+  "EnemyText": {
+   "kind": "string",
+   "src": "home/text.asm:185",
+   "commands": [
+    {"cmd": "str", "str": "Enemy "}
+   ]
+  },
+  "PlacePKMNText": {
+   "kind": "string",
+   "src": "home/text.asm:186",
+   "commands": [
+    {"cmd": "str", "str": "<PK><MN>"}
+   ]
+  },
+  "ContCharText": {
+   "kind": "text",
+   "src": "home/text.asm:201",
+   "commands": [
+    {"cmd": "text_far", "label": "_ContCharText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "DoneText.stop": {
+   "kind": "text",
+   "src": "home/text.asm:228",
+   "commands": [
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemartGreetingText": {
+   "kind": "text",
+   "src": "home/text_script.asm:154",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemartGreetingText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonFaintedText": {
+   "kind": "text",
+   "src": "home/text_script.asm:194",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonFaintedText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PlayerBlackedOutText": {
+   "kind": "text",
+   "src": "home/text_script.asm:206",
+   "commands": [
+    {"cmd": "text_far", "label": "_PlayerBlackedOutText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "RepelWoreOffText": {
+   "kind": "text",
+   "src": "home/text_script.asm:215",
+   "commands": [
+    {"cmd": "text_far", "label": "_RepelWoreOffText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "TrainerEndBattleText": {
+   "kind": "text",
+   "src": "home/trainers.asm:375",
+   "commands": [
+    {"cmd": "text_far", "label": "_TrainerNameText"},
+    {"cmd": "text_asm"}
+   ]
+  },
+  "_DexCompletionText": {
+   "kind": "text",
+   "src": "text/pokedex_ratings.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "POKéDEX comp-"},
+    {"cmd": "line", "str": "letion is:"},
+    {"cmd": "para", "str": ""},
+    {"cmd": "text_decimal", "ram": "hDexRatingNumMonsSeen", "bytes": 1, "digits": 3},
+    {"cmd": "text", "str": " POKéMON seen"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_decimal", "ram": "hDexRatingNumMonsOwned", "bytes": 1, "digits": 3},
+    {"cmd": "text", "str": " POKéMON owned"},
+    {"cmd": "para", "str": "PROF.OAK's"},
+    {"cmd": "line", "str": "Rating:"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_DexRatingText_Own0To9": {
+   "kind": "text",
+   "src": "text/pokedex_ratings.asm:17",
+   "commands": [
+    {"cmd": "text", "str": "You still have"},
+    {"cmd": "line", "str": "lots to do."},
+    {"cmd": "cont", "str": "Look for POKéMON"},
+    {"cmd": "cont", "str": "in grassy areas!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_DexRatingText_Own10To19": {
+   "kind": "text",
+   "src": "text/pokedex_ratings.asm:24",
+   "commands": [
+    {"cmd": "text", "str": "You're on the"},
+    {"cmd": "line", "str": "right track! "},
+    {"cmd": "cont", "str": "Get a FLASH HM"},
+    {"cmd": "cont", "str": "from my AIDE!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_DexRatingText_Own20To29": {
+   "kind": "text",
+   "src": "text/pokedex_ratings.asm:31",
+   "commands": [
+    {"cmd": "text", "str": "You still need"},
+    {"cmd": "line", "str": "more POKéMON!"},
+    {"cmd": "cont", "str": "Try to catch"},
+    {"cmd": "cont", "str": "other species!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_DexRatingText_Own30To39": {
+   "kind": "text",
+   "src": "text/pokedex_ratings.asm:38",
+   "commands": [
+    {"cmd": "text", "str": "Good, you're"},
+    {"cmd": "line", "str": "trying hard!"},
+    {"cmd": "cont", "str": "Get an ITEMFINDER"},
+    {"cmd": "cont", "str": "from my AIDE!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_DexRatingText_Own40To49": {
+   "kind": "text",
+   "src": "text/pokedex_ratings.asm:45",
+   "commands": [
+    {"cmd": "text", "str": "Looking good!"},
+    {"cmd": "line", "str": "Go find my AIDE"},
+    {"cmd": "cont", "str": "when you get 50!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_DexRatingText_Own50To59": {
+   "kind": "text",
+   "src": "text/pokedex_ratings.asm:51",
+   "commands": [
+    {"cmd": "text", "str": "You finally got at"},
+    {"cmd": "line", "str": "least 50 species!"},
+    {"cmd": "cont", "str": "Be sure to get"},
+    {"cmd": "cont", "str": "EXP.ALL from my"},
+    {"cmd": "cont", "str": "AIDE!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_DexRatingText_Own60To69": {
+   "kind": "text",
+   "src": "text/pokedex_ratings.asm:59",
+   "commands": [
+    {"cmd": "text", "str": "Ho! This is geting"},
+    {"cmd": "line", "str": "even better!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_DexRatingText_Own70To79": {
+   "kind": "text",
+   "src": "text/pokedex_ratings.asm:64",
+   "commands": [
+    {"cmd": "text", "str": "Very good!"},
+    {"cmd": "line", "str": "Go fish for some"},
+    {"cmd": "cont", "str": "marine POKéMON!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_DexRatingText_Own80To89": {
+   "kind": "text",
+   "src": "text/pokedex_ratings.asm:70",
+   "commands": [
+    {"cmd": "text", "str": "Wonderful!"},
+    {"cmd": "line", "str": "Do you like to"},
+    {"cmd": "cont", "str": "collect things?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_DexRatingText_Own90To99": {
+   "kind": "text",
+   "src": "text/pokedex_ratings.asm:76",
+   "commands": [
+    {"cmd": "text", "str": "I'm impressed!"},
+    {"cmd": "line", "str": "It must have been"},
+    {"cmd": "cont", "str": "difficult to do!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_DexRatingText_Own100To109": {
+   "kind": "text",
+   "src": "text/pokedex_ratings.asm:82",
+   "commands": [
+    {"cmd": "text", "str": "You finally got at"},
+    {"cmd": "line", "str": "least 100 species!"},
+    {"cmd": "cont", "str": "I can't believe"},
+    {"cmd": "cont", "str": "how good you are!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_DexRatingText_Own110To119": {
+   "kind": "text",
+   "src": "text/pokedex_ratings.asm:89",
+   "commands": [
+    {"cmd": "text", "str": "You even have the"},
+    {"cmd": "line", "str": "evolved forms of"},
+    {"cmd": "cont", "str": "POKéMON! Super!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_DexRatingText_Own120To129": {
+   "kind": "text",
+   "src": "text/pokedex_ratings.asm:95",
+   "commands": [
+    {"cmd": "text", "str": "Excellent! Trade"},
+    {"cmd": "line", "str": "with friends to"},
+    {"cmd": "cont", "str": "get some more!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_DexRatingText_Own130To139": {
+   "kind": "text",
+   "src": "text/pokedex_ratings.asm:101",
+   "commands": [
+    {"cmd": "text", "str": "Outstanding!"},
+    {"cmd": "line", "str": "You've become a"},
+    {"cmd": "cont", "str": "real pro at this!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_DexRatingText_Own140To149": {
+   "kind": "text",
+   "src": "text/pokedex_ratings.asm:107",
+   "commands": [
+    {"cmd": "text", "str": "I have nothing"},
+    {"cmd": "line", "str": "left to say!"},
+    {"cmd": "cont", "str": "You're the"},
+    {"cmd": "cont", "str": "authority now!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_DexRatingText_Own150To151": {
+   "kind": "text",
+   "src": "text/pokedex_ratings.asm:114",
+   "commands": [
+    {"cmd": "text", "str": "Your POKéDEX is"},
+    {"cmd": "line", "str": "entirely complete!"},
+    {"cmd": "cont", "str": "Congratulations!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

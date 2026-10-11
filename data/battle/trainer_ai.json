@@ -1,0 +1,15 @@
+{
+ "statusAilmentMoveEffects": ["EFFECT_01", "SLEEP_EFFECT", "POISON_EFFECT", "PARALYZE_EFFECT"],
+ "layer2PreferredEffects": [
+  "ATTACK_UP1_EFFECT", "DEFENSE_UP1_EFFECT", "SPEED_UP1_EFFECT", "SPECIAL_UP1_EFFECT", "ACCURACY_UP1_EFFECT",
+  "EVASION_UP1_EFFECT", "PAY_DAY_EFFECT", "SWIFT_EFFECT", "ATTACK_DOWN1_EFFECT", "DEFENSE_DOWN1_EFFECT",
+  "SPEED_DOWN1_EFFECT", "SPECIAL_DOWN1_EFFECT", "ACCURACY_DOWN1_EFFECT", "EVASION_DOWN1_EFFECT",
+  "CONVERSION_EFFECT", "HAZE_EFFECT", "ATTACK_UP2_EFFECT", "DEFENSE_UP2_EFFECT", "SPEED_UP2_EFFECT",
+  "SPECIAL_UP2_EFFECT", "ACCURACY_UP2_EFFECT", "EVASION_UP2_EFFECT", "HEAL_EFFECT", "TRANSFORM_EFFECT",
+  "ATTACK_DOWN2_EFFECT", "DEFENSE_DOWN2_EFFECT", "SPEED_DOWN2_EFFECT", "SPECIAL_DOWN2_EFFECT",
+  "ACCURACY_DOWN2_EFFECT", "EVASION_DOWN2_EFFECT", "LIGHT_SCREEN_EFFECT", "REFLECT_EFFECT"
+ ],
+ "typeEffectivenessDefault": 16,
+ "typeEffectivenessNote": "AIGetTypeEffectiveness starts from $10 (bug: EFFECTIVE is 10) and returns the factor of the FIRST TypeEffects row matching the move type and either defender type; layer 3 treats > $10 as super effective and < $10 as not very effective.",
+ "note": "Per-class settings live in data/trainer_classes.json (ai, moveChoiceLayers); layer semantics in data/trainers.json aiMoveChoiceLayers and docs/data-format-pokemon.md."
+}

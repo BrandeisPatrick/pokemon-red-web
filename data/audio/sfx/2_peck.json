@@ -1,0 +1,21 @@
+{
+  "name": "SFX_PECK",
+  "title": "Peck",
+  "kind": "sfx",
+  "bank": 2,
+  "id": 157,
+  "label": "SFX_Peck",
+  "channels": [
+    {
+      "channel": 8,
+      "label": "SFX_Peck_Ch8",
+      "entry": 0,
+      "bytes": 4,
+      "labels": {"SFX_Peck_Ch8": 0},
+      "commands": [
+        {"op": "noise_note", "length": 2, "volume": 10, "fade": 1, "value": 18},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+ "map": "PewterSpeechHouse",
+ "const": "PEWTER_SPEECH_HOUSE",
+ "textPointerTables": [
+  {
+   "label": "PewterSpeechHouse_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_PEWTERSPEECHHOUSE_GAMBLER", "label": "PewterSpeechHouseGamblerText", "kind": "text", "handler": "text"},
+    {"id": 2, "const": "TEXT_PEWTERSPEECHHOUSE_YOUNGSTER", "label": "PewterSpeechHouseYoungsterText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "PewterSpeechHouseGamblerText": {
+   "kind": "text",
+   "src": "scripts/PewterSpeechHouse.asm:10",
+   "commands": [
+    {"cmd": "text_far", "label": "_PewterSpeechHouseGamblerText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PewterSpeechHouseYoungsterText": {
+   "kind": "text",
+   "src": "scripts/PewterSpeechHouse.asm:14",
+   "commands": [
+    {"cmd": "text_far", "label": "_PewterSpeechHouseYoungsterText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_PewterSpeechHouseGamblerText": {
+   "kind": "text",
+   "src": "text/PewterSpeechHouse.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "POKéMON learn new"},
+    {"cmd": "line", "str": "techniques as"},
+    {"cmd": "cont", "str": "they grow!"},
+    {"cmd": "para", "str": "But, some moves"},
+    {"cmd": "line", "str": "must be taught by"},
+    {"cmd": "cont", "str": "the trainer!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PewterSpeechHouseYoungsterText": {
+   "kind": "text",
+   "src": "text/PewterSpeechHouse.asm:12",
+   "commands": [
+    {"cmd": "text", "str": "POKéMON become"},
+    {"cmd": "line", "str": "easier to catch"},
+    {"cmd": "cont", "str": "when they are"},
+    {"cmd": "cont", "str": "hurt or asleep!"},
+    {"cmd": "para", "str": "But, it's not a"},
+    {"cmd": "line", "str": "sure thing!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

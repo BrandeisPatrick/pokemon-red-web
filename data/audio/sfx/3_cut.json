@@ -1,0 +1,25 @@
+{
+  "name": "SFX_CUT",
+  "title": "Cut",
+  "kind": "sfx",
+  "bank": 3,
+  "id": 172,
+  "label": "SFX_Cut_3",
+  "channels": [
+    {
+      "channel": 8,
+      "label": "SFX_Cut_3_Ch8",
+      "entry": 0,
+      "bytes": 16,
+      "labels": {"SFX_Cut_3_Ch8": 0},
+      "commands": [
+        {"op": "noise_note", "length": 2, "volume": 15, "fade": 7, "value": 36},
+        {"op": "noise_note", "length": 2, "volume": 15, "fade": 7, "value": 52},
+        {"op": "noise_note", "length": 4, "volume": 15, "fade": 7, "value": 68},
+        {"op": "noise_note", "length": 8, "volume": 15, "fade": 4, "value": 85},
+        {"op": "noise_note", "length": 8, "volume": 15, "fade": 1, "value": 68},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "SFX_LEDGE",
+  "title": "Ledge",
+  "kind": "sfx",
+  "bank": 3,
+  "id": 162,
+  "label": "SFX_Ledge_3",
+  "channels": [
+    {
+      "channel": 5,
+      "label": "SFX_Ledge_3_Ch5",
+      "entry": 0,
+      "bytes": 11,
+      "labels": {"SFX_Ledge_3_Ch5": 0},
+      "commands": [
+        {"op": "duty_cycle", "duty": 2},
+        {"op": "pitch_sweep", "length": 9, "change": 5},
+        {"op": "square_note", "length": 15, "volume": 15, "fade": 2, "frequency": 1024},
+        {"op": "pitch_sweep", "length": 0, "change": 8},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

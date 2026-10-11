@@ -1,0 +1,30 @@
+{
+ "map": "UndergroundPathRoute5",
+ "const": "UNDERGROUND_PATH_ROUTE_5",
+ "textPointerTables": [
+  {
+   "label": "UndergroundPathRoute5_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_UNDERGROUNDPATHROUTE5_LITTLE_GIRL", "label": "UndergroundPathRoute5LittleGirlText", "kind": "asm", "handler": "asm"}
+   ]
+  }
+ ],
+ "texts": {
+  "UndergroundPathEntranceRoute5_TextScriptEndingText": {
+   "kind": "text",
+   "src": "scripts/UndergroundPathRoute5.asm:7",
+   "commands": [
+    {"cmd": "text_end"}
+   ]
+  },
+  "UndergroundPathRoute5LittleGirlText": {
+   "kind": "asm",
+   "src": "scripts/UndergroundPathRoute5.asm:14",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["UndergroundPathEntranceRoute5_TextScriptEndingText"]
+  }
+ }
+}

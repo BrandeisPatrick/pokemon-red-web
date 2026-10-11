@@ -1,0 +1,45 @@
+{
+  "name": "SFX_BATTLE_2B",
+  "title": "Battle 2B",
+  "kind": "sfx",
+  "bank": 2,
+  "id": 202,
+  "label": "SFX_Battle_2B",
+  "channels": [
+    {
+      "channel": 5,
+      "label": "SFX_Battle_2B_Ch5",
+      "entry": 0,
+      "bytes": 31,
+      "labels": {"SFX_Battle_2B_Ch5": 0},
+      "commands": [
+        {"op": "duty_cycle_pattern", "pattern": [3, 1, 0, 2]},
+        {"op": "square_note", "length": 3, "volume": 8, "fade": 1, "frequency": 768},
+        {"op": "square_note", "length": 3, "volume": 12, "fade": 1, "frequency": 1024},
+        {"op": "square_note", "length": 3, "volume": 15, "fade": 1, "frequency": 1280},
+        {"op": "square_note", "length": 3, "volume": 11, "fade": 1, "frequency": 1024},
+        {"op": "square_note", "length": 3, "volume": 7, "fade": 1, "frequency": 768},
+        {"op": "sound_loop", "count": 5, "target": 0},
+        {"op": "square_note", "length": 8, "volume": 8, "fade": 1, "frequency": 1024},
+        {"op": "sound_ret"}
+      ]
+    },
+    {
+      "channel": 8,
+      "label": "SFX_Battle_2B_Ch8",
+      "entry": 0,
+      "bytes": 23,
+      "labels": {"SFX_Battle_2B_Ch8": 0},
+      "commands": [
+        {"op": "noise_note", "length": 3, "volume": 6, "fade": 2, "value": 34},
+        {"op": "noise_note", "length": 3, "volume": 10, "fade": 2, "value": 50},
+        {"op": "noise_note", "length": 3, "volume": 13, "fade": 2, "value": 51},
+        {"op": "noise_note", "length": 3, "volume": 9, "fade": 2, "value": 35},
+        {"op": "noise_note", "length": 3, "volume": 5, "fade": 2, "value": 18},
+        {"op": "sound_loop", "count": 5, "target": 0},
+        {"op": "noise_note", "length": 8, "volume": 8, "fade": 1, "value": 18},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

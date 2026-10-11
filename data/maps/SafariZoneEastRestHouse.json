@@ -1,0 +1,46 @@
+{
+ "id": 224,
+ "const": "SAFARI_ZONE_EAST_REST_HOUSE",
+ "name": "SafariZoneEastRestHouse",
+ "displayName": "SAFARI ZONE",
+ "width": 4,
+ "height": 4,
+ "tileset": "GATE",
+ "tilesetId": 12,
+ "tilesetFile": "data/tilesets/Gate.json",
+ "isOutside": false,
+ "borderBlock": 10,
+ "blocks": [3, 7, 77, 77, 59, 56, 0, 0, 59, 56, 17, 33, 0, 11, 8, 1],
+ "connections": {},
+ "warps": [
+  {"x": 2, "y": 7, "destMap": "SAFARI_ZONE_EAST", "destMapId": 217, "destMapName": "SafariZoneEast", "destWarp": 5, "destWarpIndex": 4},
+  {"x": 3, "y": 7, "destMap": "SAFARI_ZONE_EAST", "destMapId": 217, "destMapName": "SafariZoneEast", "destWarp": 5, "destWarpIndex": 4}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "SAFARIZONEEASTRESTHOUSE_SCIENTIST", "x": 1, "y": 3, "sprite": "SPRITE_SCIENTIST", "spriteId": 32, "movement": "WALK", "rangeOrDirection": "UP_DOWN", "rangeOrDirectionValue": 1, "behavior": "walk_up_down", "textId": "TEXT_SAFARIZONEEASTRESTHOUSE_SCIENTIST", "textIndex": 1},
+  {"index": 2, "const": "SAFARIZONEEASTRESTHOUSE_ROCKER", "x": 4, "y": 2, "sprite": "SPRITE_ROCKER", "spriteId": 33, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_SAFARIZONEEASTRESTHOUSE_ROCKER", "textIndex": 2},
+  {"index": 3, "const": "SAFARIZONEEASTRESTHOUSE_SILPH_WORKER_M", "x": 5, "y": 2, "sprite": "SPRITE_SILPH_WORKER_M", "spriteId": 44, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_SAFARIZONEEASTRESTHOUSE_SILPH_WORKER_M", "textIndex": 3}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [
+  {"x": 0, "y": 4, "routine": "PrintBenchGuyText", "arg": "SPRITE_FACING_LEFT", "argValue": 8, "kind": "event"},
+  {"x": 13, "y": 3, "routine": "OpenPokemonCenterPC", "arg": "SPRITE_FACING_UP", "argValue": 4, "kind": "event"}
+ ],
+ "spriteSet": null,
+ "music": "MUSIC_SAFARI_ZONE",
+ "wild": null,
+ "townMap": {"x": 8, "y": 12, "group": "SAFARI_ZONE_2"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/SafariZoneEastRestHouse.json",
+ "textPointers": "SafariZoneEastRestHouse_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/SafariZoneEastRestHouse.asm",
+  "objects": "data/maps/objects/SafariZoneEastRestHouse.asm",
+  "blocks": "maps/SafariZoneCenterRestHouse.blk",
+  "script": "scripts/SafariZoneEastRestHouse.asm"
+ },
+ "lastMapCandidates": ["FUCHSIA_CITY"],
+ "palette": {"pal": "PAL_FUCHSIA", "rule": "lastMap", "viaLastMap": "FUCHSIA_CITY"}
+}

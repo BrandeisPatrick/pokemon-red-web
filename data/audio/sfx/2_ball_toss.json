@@ -1,0 +1,35 @@
+{
+  "name": "SFX_BALL_TOSS",
+  "title": "Ball Toss",
+  "kind": "sfx",
+  "bank": 2,
+  "id": 145,
+  "label": "SFX_Ball_Toss",
+  "channels": [
+    {
+      "channel": 5,
+      "label": "SFX_Ball_Toss_Ch5",
+      "entry": 0,
+      "bytes": 9,
+      "labels": {"SFX_Ball_Toss_Ch5": 0},
+      "commands": [
+        {"op": "duty_cycle", "duty": 2},
+        {"op": "pitch_sweep", "length": 2, "change": -7},
+        {"op": "square_note", "length": 15, "volume": 15, "fade": 2, "frequency": 1920},
+        {"op": "sound_ret"}
+      ]
+    },
+    {
+      "channel": 6,
+      "label": "SFX_Ball_Toss_Ch6",
+      "entry": 0,
+      "bytes": 7,
+      "labels": {"SFX_Ball_Toss_Ch6": 0},
+      "commands": [
+        {"op": "duty_cycle", "duty": 2},
+        {"op": "square_note", "length": 15, "volume": 12, "fade": 2, "frequency": 1922},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

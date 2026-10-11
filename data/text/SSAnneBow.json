@@ -1,0 +1,194 @@
+{
+ "map": "SSAnneBow",
+ "const": "SS_ANNE_BOW",
+ "textPointerTables": [
+  {
+   "label": "SSAnneBow_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_SSANNEBOW_SUPER_NERD", "label": "SSAnneBowSuperNerdText", "kind": "text", "handler": "text"},
+    {"id": 2, "const": "TEXT_SSANNEBOW_SAILOR1", "label": "SSAnneBowSailor1Text", "kind": "text", "handler": "text"},
+    {"id": 3, "const": "TEXT_SSANNEBOW_COOLTRAINER_M", "label": "SSAnneBowCooltrainerMText", "kind": "text", "handler": "text"},
+    {"id": 4, "const": "TEXT_SSANNEBOW_SAILOR2", "label": "SSAnneBowSailor2Text", "kind": "asm", "handler": "trainer", "trainerHeader": "SSAnne5TrainerHeader0"},
+    {"id": 5, "const": "TEXT_SSANNEBOW_SAILOR3", "label": "SSAnneBowSailor3Text", "kind": "asm", "handler": "trainer", "trainerHeader": "SSAnne5TrainerHeader1"}
+   ]
+  }
+ ],
+ "texts": {
+  "SSAnneBowSuperNerdText": {
+   "kind": "text",
+   "src": "scripts/SSAnneBow.asm:33",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnneBowSuperNerdText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnneBowSailor1Text": {
+   "kind": "text",
+   "src": "scripts/SSAnneBow.asm:37",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnneBowSailor1Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnneBowCooltrainerMText": {
+   "kind": "text",
+   "src": "scripts/SSAnneBow.asm:41",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnneBowCooltrainerMText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnneBowSailor2Text": {
+   "kind": "asm",
+   "src": "scripts/SSAnneBow.asm:45",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "SSAnne5TrainerHeader0"
+  },
+  "SSAnneBowSailor2BattleText": {
+   "kind": "text",
+   "src": "scripts/SSAnneBow.asm:51",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnneBowSailor2BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnneBowSailor2EndBattleText": {
+   "kind": "text",
+   "src": "scripts/SSAnneBow.asm:55",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnneBowSailor2EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnneBowSailor2AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/SSAnneBow.asm:59",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnneBowSailor2AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnneBowSailor3Text": {
+   "kind": "asm",
+   "src": "scripts/SSAnneBow.asm:63",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "SSAnne5TrainerHeader1"
+  },
+  "SSAnneBowSailor3BattleText": {
+   "kind": "text",
+   "src": "scripts/SSAnneBow.asm:69",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnneBowSailor3BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnneBowSailor3EndBattleText": {
+   "kind": "text",
+   "src": "scripts/SSAnneBow.asm:73",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnneBowSailor3EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnneBowSailor3AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/SSAnneBow.asm:77",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnneBowSailor3AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_SSAnneBowSuperNerdText": {
+   "kind": "text",
+   "src": "text/SSAnneBow.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "The party's over."},
+    {"cmd": "line", "str": "The ship will be"},
+    {"cmd": "cont", "str": "departing soon."},
+    {"cmd": "done"}
+   ]
+  },
+  "_SSAnneBowSailor1Text": {
+   "kind": "text",
+   "src": "text/SSAnneBow.asm:8",
+   "commands": [
+    {"cmd": "text", "str": "Scrubbing decks"},
+    {"cmd": "line", "str": "is hard work!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SSAnneBowCooltrainerMText": {
+   "kind": "text",
+   "src": "text/SSAnneBow.asm:13",
+   "commands": [
+    {"cmd": "text", "str": "Urf. I feel ill."},
+    {"cmd": "para", "str": "I stepped out to"},
+    {"cmd": "line", "str": "get some air."},
+    {"cmd": "done"}
+   ]
+  },
+  "_SSAnneBowSailor2BattleText": {
+   "kind": "text",
+   "src": "text/SSAnneBow.asm:20",
+   "commands": [
+    {"cmd": "text", "str": "Hey matey!"},
+    {"cmd": "para", "str": "Let's do a little"},
+    {"cmd": "line", "str": "jig!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SSAnneBowSailor2EndBattleText": {
+   "kind": "text",
+   "src": "text/SSAnneBow.asm:27",
+   "commands": [
+    {"cmd": "text", "str": "You're"},
+    {"cmd": "line", "str": "impressive!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_SSAnneBowSailor2AfterBattleText": {
+   "kind": "text",
+   "src": "text/SSAnneBow.asm:32",
+   "commands": [
+    {"cmd": "text", "str": "How many kinds of"},
+    {"cmd": "line", "str": "POKéMON do you"},
+    {"cmd": "cont", "str": "think there are?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SSAnneBowSailor3BattleText": {
+   "kind": "text",
+   "src": "text/SSAnneBow.asm:38",
+   "commands": [
+    {"cmd": "text", "str": "Ahoy there!"},
+    {"cmd": "line", "str": "Are you seasick?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SSAnneBowSailor3EndBattleText": {
+   "kind": "text",
+   "src": "text/SSAnneBow.asm:43",
+   "commands": [
+    {"cmd": "text", "str": "I was"},
+    {"cmd": "line", "str": "just careless!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_SSAnneBowSailor3AfterBattleText": {
+   "kind": "text",
+   "src": "text/SSAnneBow.asm:48",
+   "commands": [
+    {"cmd": "text", "str": "My Pa said there"},
+    {"cmd": "line", "str": "are 100 kinds of"},
+    {"cmd": "cont", "str": "POKéMON. I think"},
+    {"cmd": "cont", "str": "there are more."},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

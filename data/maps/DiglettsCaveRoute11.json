@@ -1,0 +1,42 @@
+{
+ "id": 85,
+ "const": "DIGLETTS_CAVE_ROUTE_11",
+ "name": "DiglettsCaveRoute11",
+ "displayName": "ROUTE 11",
+ "width": 4,
+ "height": 4,
+ "tileset": "CAVERN",
+ "tilesetId": 17,
+ "tilesetFile": "data/tilesets/Cavern.json",
+ "isOutside": false,
+ "borderBlock": 125,
+ "blocks": [125, 125, 125, 125, 6, 1, 1, 125, 6, 1, 39, 125, 10, 36, 4, 125],
+ "connections": {},
+ "warps": [
+  {"x": 2, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 5, "destWarpIndex": 4},
+  {"x": 3, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 5, "destWarpIndex": 4},
+  {"x": 4, "y": 4, "destMap": "DIGLETTS_CAVE", "destMapId": 197, "destMapName": "DiglettsCave", "destWarp": 2, "destWarpIndex": 1}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "DIGLETTSCAVEROUTE11_GAMBLER", "x": 2, "y": 3, "sprite": "SPRITE_GAMBLER", "spriteId": 11, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_DIGLETTSCAVEROUTE11_GAMBLER", "textIndex": 1}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_DUNGEON2",
+ "wild": null,
+ "townMap": {"x": 13, "y": 9, "group": "ROUTE_11"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": ["ROUTE_11"],
+ "textFile": "data/text/DiglettsCaveRoute11.json",
+ "textPointers": "DiglettsCaveRoute11_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/DiglettsCaveRoute11.asm",
+  "objects": "data/maps/objects/DiglettsCaveRoute11.asm",
+  "blocks": "maps/DiglettsCaveRoute2.blk",
+  "script": "scripts/DiglettsCaveRoute11.asm"
+ },
+ "lastMapCandidates": ["ROUTE_11"],
+ "palette": {"pal": "PAL_CAVE", "rule": "cavernTileset"}
+}

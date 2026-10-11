@@ -1,0 +1,41 @@
+{
+ "id": 127,
+ "const": "CELADON_MART_ELEVATOR",
+ "name": "CeladonMartElevator",
+ "displayName": "CELADON CITY",
+ "width": 2,
+ "height": 2,
+ "tileset": "LOBBY",
+ "tilesetId": 18,
+ "tilesetFile": "data/tilesets/Lobby.json",
+ "isOutside": false,
+ "borderBlock": 15,
+ "blocks": [42, 43, 40, 41],
+ "connections": {},
+ "warps": [
+  {"x": 1, "y": 3, "destMap": "CELADON_MART_1F", "destMapId": 122, "destMapName": "CeladonMart1F", "destWarp": 6, "destWarpIndex": 5},
+  {"x": 2, "y": 3, "destMap": "CELADON_MART_1F", "destMapId": 122, "destMapName": "CeladonMart1F", "destWarp": 6, "destWarpIndex": 5}
+ ],
+ "bgEvents": [
+  {"x": 3, "y": 0, "textId": "TEXT_CELADONMARTELEVATOR", "textIndex": 1}
+ ],
+ "objectEvents": [],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_POKECENTER",
+ "wild": null,
+ "townMap": {"x": 7, "y": 5, "group": "CELADON_CITY"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/CeladonMartElevator.json",
+ "textPointers": "CeladonMartElevator_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/CeladonMartElevator.asm",
+  "objects": "data/maps/objects/CeladonMartElevator.asm",
+  "blocks": "maps/CeladonMartElevator.blk",
+  "script": "scripts/CeladonMartElevator.asm"
+ },
+ "lastMapCandidates": ["CELADON_CITY"],
+ "palette": {"pal": "PAL_CELADON", "rule": "lastMap", "viaLastMap": "CELADON_CITY"}
+}

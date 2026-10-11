@@ -1,0 +1,42 @@
+{
+ "id": 151,
+ "const": "LAVENDER_CUBONE_HOUSE",
+ "name": "LavenderCuboneHouse",
+ "displayName": "LAVENDER TOWN",
+ "width": 4,
+ "height": 4,
+ "tileset": "HOUSE",
+ "tilesetId": 8,
+ "tilesetFile": "data/tilesets/House.json",
+ "isOutside": false,
+ "borderBlock": 10,
+ "blocks": [4, 14, 5, 9, 15, 1, 2, 15, 15, 12, 13, 15, 6, 11, 15, 7],
+ "connections": {},
+ "warps": [
+  {"x": 2, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 5, "destWarpIndex": 4},
+  {"x": 3, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 5, "destWarpIndex": 4}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "LAVENDERCUBONEHOUSE_CUBONE", "x": 3, "y": 5, "sprite": "SPRITE_MONSTER", "spriteId": 5, "movement": "STAY", "rangeOrDirection": "UP", "rangeOrDirectionValue": 209, "behavior": "face_up", "textId": "TEXT_LAVENDERCUBONEHOUSE_CUBONE", "textIndex": 1},
+  {"index": 2, "const": "LAVENDERCUBONEHOUSE_BRUNETTE_GIRL", "x": 2, "y": 4, "sprite": "SPRITE_BRUNETTE_GIRL", "spriteId": 29, "movement": "STAY", "rangeOrDirection": "RIGHT", "rangeOrDirectionValue": 211, "behavior": "face_right", "textId": "TEXT_LAVENDERCUBONEHOUSE_BRUNETTE_GIRL", "textIndex": 2}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_LAVENDER",
+ "wild": null,
+ "townMap": {"x": 14, "y": 5, "group": "LAVENDER_TOWN_2"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/LavenderCuboneHouse.json",
+ "textPointers": "LavenderCuboneHouse_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/LavenderCuboneHouse.asm",
+  "objects": "data/maps/objects/LavenderCuboneHouse.asm",
+  "blocks": "maps/ViridianNicknameHouse.blk",
+  "script": "scripts/LavenderCuboneHouse.asm"
+ },
+ "lastMapCandidates": ["LAVENDER_TOWN"],
+ "palette": {"pal": "PAL_LAVENDER", "rule": "lastMap", "viaLastMap": "LAVENDER_TOWN"}
+}

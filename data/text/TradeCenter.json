@@ -1,0 +1,31 @@
+{
+ "map": "TradeCenter",
+ "const": "TRADE_CENTER",
+ "textPointerTables": [
+  {
+   "label": "TradeCenter_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_TRADECENTER_OPPONENT", "label": "TradeCenterOpponentText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "_TradeCenterOpponentText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:325",
+   "commands": [
+    {"cmd": "text", "str": "!"},
+    {"cmd": "done"}
+   ]
+  },
+  "TradeCenterOpponentText": {
+   "kind": "text",
+   "src": "scripts/TradeCenter.asm:38",
+   "commands": [
+    {"cmd": "text_far", "label": "_TradeCenterOpponentText"},
+    {"cmd": "text_end"}
+   ]
+  }
+ }
+}

@@ -1,0 +1,165 @@
+{
+ "map": "VictoryRoad1F",
+ "const": "VICTORY_ROAD_1F",
+ "textPointerTables": [
+  {
+   "label": "VictoryRoad1F_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_VICTORYROAD1F_COOLTRAINER_F", "label": "VictoryRoad1FCooltrainerFText", "kind": "asm", "handler": "trainer", "trainerHeader": "VictoryRoad1TrainerHeader0"},
+    {"id": 2, "const": "TEXT_VICTORYROAD1F_COOLTRAINER_M", "label": "VictoryRoad1FCooltrainerMText", "kind": "asm", "handler": "trainer", "trainerHeader": "VictoryRoad1TrainerHeader1"},
+    {"id": 3, "const": "TEXT_VICTORYROAD1F_TM_SKY_ATTACK", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 4, "const": "TEXT_VICTORYROAD1F_RARE_CANDY", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 5, "const": "TEXT_VICTORYROAD1F_BOULDER1", "label": "BoulderText", "kind": "text", "handler": "text"},
+    {"id": 6, "const": "TEXT_VICTORYROAD1F_BOULDER2", "label": "BoulderText", "kind": "text", "handler": "text"},
+    {"id": 7, "const": "TEXT_VICTORYROAD1F_BOULDER3", "label": "BoulderText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "_BoulderText": {
+   "kind": "text",
+   "src": "data/text/text_1.asm:45",
+   "commands": [
+    {"cmd": "text", "str": "This requires"},
+    {"cmd": "line", "str": "STRENGTH to move!"},
+    {"cmd": "done"}
+   ]
+  },
+  "BoulderText": {
+   "kind": "text",
+   "src": "home/overworld_text.asm:17",
+   "commands": [
+    {"cmd": "text_far", "label": "_BoulderText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PickUpItemText": {
+   "kind": "asm",
+   "src": "home/overworld_text.asm:29",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "VictoryRoad1FCooltrainerFText": {
+   "kind": "asm",
+   "src": "scripts/VictoryRoad1F.asm:61",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "VictoryRoad1TrainerHeader0"
+  },
+  "VictoryRoad1FCooltrainerMText": {
+   "kind": "asm",
+   "src": "scripts/VictoryRoad1F.asm:67",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "VictoryRoad1TrainerHeader1"
+  },
+  "VictoryRoad1FCooltrainerFBattleText": {
+   "kind": "text",
+   "src": "scripts/VictoryRoad1F.asm:73",
+   "commands": [
+    {"cmd": "text_far", "label": "_VictoryRoad1FCooltrainerFBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VictoryRoad1FCooltrainerFEndBattleText": {
+   "kind": "text",
+   "src": "scripts/VictoryRoad1F.asm:77",
+   "commands": [
+    {"cmd": "text_far", "label": "_VictoryRoad1FCooltrainerFEndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VictoryRoad1FCooltrainerFAfterBattleText": {
+   "kind": "text",
+   "src": "scripts/VictoryRoad1F.asm:81",
+   "commands": [
+    {"cmd": "text_far", "label": "_VictoryRoad1FCooltrainerFAfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VictoryRoad1FCooltrainerMBattleText": {
+   "kind": "text",
+   "src": "scripts/VictoryRoad1F.asm:85",
+   "commands": [
+    {"cmd": "text_far", "label": "_VictoryRoad1FCooltrainerMBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VictoryRoad1FCooltrainerMEndBattleText": {
+   "kind": "text",
+   "src": "scripts/VictoryRoad1F.asm:89",
+   "commands": [
+    {"cmd": "text_far", "label": "_VictoryRoad1FCooltrainerMEndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VictoryRoad1FCooltrainerMAfterBattleText": {
+   "kind": "text",
+   "src": "scripts/VictoryRoad1F.asm:93",
+   "commands": [
+    {"cmd": "text_far", "label": "_VictoryRoad1FCooltrainerMAfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_VictoryRoad1FCooltrainerFBattleText": {
+   "kind": "text",
+   "src": "text/VictoryRoad1F.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "I wonder if you"},
+    {"cmd": "line", "str": "are good enough"},
+    {"cmd": "cont", "str": "for me!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_VictoryRoad1FCooltrainerFEndBattleText": {
+   "kind": "text",
+   "src": "text/VictoryRoad1F.asm:8",
+   "commands": [
+    {"cmd": "text", "str": "I"},
+    {"cmd": "line", "str": "lost out!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_VictoryRoad1FCooltrainerFAfterBattleText": {
+   "kind": "text",
+   "src": "text/VictoryRoad1F.asm:13",
+   "commands": [
+    {"cmd": "text", "str": "I never wanted to"},
+    {"cmd": "line", "str": "lose to anybody!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_VictoryRoad1FCooltrainerMBattleText": {
+   "kind": "text",
+   "src": "text/VictoryRoad1F.asm:18",
+   "commands": [
+    {"cmd": "text", "str": "I can see you're"},
+    {"cmd": "line", "str": "good! Let me see"},
+    {"cmd": "cont", "str": "exactly how good!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_VictoryRoad1FCooltrainerMEndBattleText": {
+   "kind": "text",
+   "src": "text/VictoryRoad1F.asm:24",
+   "commands": [
+    {"cmd": "text", "str": "I"},
+    {"cmd": "line", "str": "had a chance..."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_VictoryRoad1FCooltrainerMAfterBattleText": {
+   "kind": "text",
+   "src": "text/VictoryRoad1F.asm:29",
+   "commands": [
+    {"cmd": "text", "str": "I concede, you're"},
+    {"cmd": "line", "str": "better than me!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

@@ -1,0 +1,374 @@
+{
+ "map": "CeladonMartRoof",
+ "const": "CELADON_MART_ROOF",
+ "textPointerTables": [
+  {
+   "label": "CeladonMartRoof_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_CELADONMARTROOF_SUPER_NERD", "label": "CeladonMartRoofSuperNerdText", "kind": "text", "handler": "text"},
+    {"id": 2, "const": "TEXT_CELADONMARTROOF_LITTLE_GIRL", "label": "CeladonMartRoofLittleGirlText", "kind": "asm", "handler": "asm"},
+    {"id": 3, "const": "TEXT_CELADONMARTROOF_VENDING_MACHINE1", "label": "CeladonMartRoofVendingMachineText", "kind": "script", "handler": "script_vending_machine"},
+    {"id": 4, "const": "TEXT_CELADONMARTROOF_VENDING_MACHINE2", "label": "CeladonMartRoofVendingMachineText", "kind": "script", "handler": "script_vending_machine"},
+    {"id": 5, "const": "TEXT_CELADONMARTROOF_VENDING_MACHINE3", "label": "CeladonMartRoofVendingMachineText", "kind": "script", "handler": "script_vending_machine"},
+    {"id": 6, "const": "TEXT_CELADONMARTROOF_CURRENT_FLOOR_SIGN", "label": "CeladonMartRoofCurrentFloorSignText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "CeladonMartRoofLittleGirlGiveHerWhichDrinkText": {
+   "kind": "text",
+   "src": "scripts/CeladonMartRoof.asm:138",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonMartRoofLittleGirlGiveHerWhichDrinkText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonMartRoofLittleGirlYayFreshWaterText": {
+   "kind": "text",
+   "src": "scripts/CeladonMartRoof.asm:142",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonMartRoofLittleGirlYayFreshWaterText"},
+    {"cmd": "text_waitbutton"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonMartRoofLittleGirlReceivedTM13Text": {
+   "kind": "text",
+   "src": "scripts/CeladonMartRoof.asm:147",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonMartRoofLittleGirlReceivedTM13Text"},
+    {"cmd": "sound", "sound": "sound_get_item_1"},
+    {"cmd": "text_far", "label": "_CeladonMartRoofLittleGirlTM13ExplanationText"},
+    {"cmd": "text_waitbutton"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonMartRoofLittleGirlYaySodaPopText": {
+   "kind": "text",
+   "src": "scripts/CeladonMartRoof.asm:154",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonMartRoofLittleGirlYaySodaPopText"},
+    {"cmd": "text_waitbutton"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonMartRoofLittleGirlReceivedTM48Text": {
+   "kind": "text",
+   "src": "scripts/CeladonMartRoof.asm:159",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonMartRoofLittleGirlReceivedTM48Text"},
+    {"cmd": "sound", "sound": "sound_get_item_1"},
+    {"cmd": "text_far", "label": "_CeladonMartRoofLittleGirlTM48ExplanationText"},
+    {"cmd": "text_waitbutton"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonMartRoofLittleGirlYayLemonadeText": {
+   "kind": "text",
+   "src": "scripts/CeladonMartRoof.asm:166",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonMartRoofLittleGirlYayLemonadeText"},
+    {"cmd": "text_waitbutton"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonMartRoofLittleGirlReceivedTM49Text": {
+   "kind": "text",
+   "src": "scripts/CeladonMartRoof.asm:171",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonMartRoofLittleGirlReceivedTM49Text"},
+    {"cmd": "sound", "sound": "sound_get_item_1"},
+    {"cmd": "text_far", "label": "_CeladonMartRoofLittleGirlTM49ExplanationText"},
+    {"cmd": "text_waitbutton"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonMartRoofLittleGirlNoRoomText": {
+   "kind": "text",
+   "src": "scripts/CeladonMartRoof.asm:178",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonMartRoofLittleGirlNoRoomText"},
+    {"cmd": "text_waitbutton"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonMartRoofLittleGirlImNotThirstyText": {
+   "kind": "text",
+   "src": "scripts/CeladonMartRoof.asm:183",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonMartRoofLittleGirlImNotThirstyText"},
+    {"cmd": "text_waitbutton"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonMartRoofSuperNerdText": {
+   "kind": "text",
+   "src": "scripts/CeladonMartRoof.asm:219",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonMartRoofSuperNerdText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonMartRoofLittleGirlText": {
+   "kind": "asm",
+   "src": "scripts/CeladonMartRoof.asm:223",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["CeladonMartRoofLittleGirlText.GiveHerADrinkText", "CeladonMartRoofLittleGirlText.ImThirstyText"]
+  },
+  "CeladonMartRoofLittleGirlText.ImThirstyText": {
+   "kind": "text",
+   "src": "scripts/CeladonMartRoof.asm:245",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonMartRoofLittleGirlImThirstyText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonMartRoofLittleGirlText.GiveHerADrinkText": {
+   "kind": "text",
+   "src": "scripts/CeladonMartRoof.asm:249",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonMartRoofLittleGirlGiveHerADrinkText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonMartRoofVendingMachineText": {
+   "kind": "script",
+   "src": "scripts/CeladonMartRoof.asm:253",
+   "commands": [
+    {"cmd": "script", "script": "script_vending_machine"}
+   ]
+  },
+  "CeladonMartRoofCurrentFloorSignText": {
+   "kind": "text",
+   "src": "scripts/CeladonMartRoof.asm:256",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonMartRoofCurrentFloorSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_CeladonMartRoofLittleGirlGiveHerWhichDrinkText": {
+   "kind": "text",
+   "src": "text/CeladonMartRoof.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Give her which"},
+    {"cmd": "line", "str": "drink?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonMartRoofLittleGirlYayFreshWaterText": {
+   "kind": "text",
+   "src": "text/CeladonMartRoof.asm:7",
+   "commands": [
+    {"cmd": "text", "str": "Yay!"},
+    {"cmd": "para", "str": "FRESH WATER!"},
+    {"cmd": "para", "str": "Thank you!"},
+    {"cmd": "para", "str": "You can have this"},
+    {"cmd": "line", "str": "from me!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_CeladonMartRoofLittleGirlReceivedTM13Text": {
+   "kind": "text",
+   "src": "text/CeladonMartRoof.asm:18",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} received"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_CeladonMartRoofLittleGirlTM13ExplanationText": {
+   "kind": "text",
+   "src": "text/CeladonMartRoof.asm:25",
+   "commands": [
+    {"cmd": "text", "str": ""},
+    {"cmd": "para", "str": ""},
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": " contains"},
+    {"cmd": "line", "str": "ICE BEAM!"},
+    {"cmd": "para", "str": "It can freeze the"},
+    {"cmd": "line", "str": "target sometimes!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_CeladonMartRoofLittleGirlYaySodaPopText": {
+   "kind": "text",
+   "src": "text/CeladonMartRoof.asm:37",
+   "commands": [
+    {"cmd": "text", "str": "Yay!"},
+    {"cmd": "para", "str": "SODA POP!"},
+    {"cmd": "para", "str": "Thank you!"},
+    {"cmd": "para", "str": "You can have this"},
+    {"cmd": "line", "str": "from me!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_CeladonMartRoofLittleGirlReceivedTM48Text": {
+   "kind": "text",
+   "src": "text/CeladonMartRoof.asm:48",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} received"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_CeladonMartRoofLittleGirlTM48ExplanationText": {
+   "kind": "text",
+   "src": "text/CeladonMartRoof.asm:55",
+   "commands": [
+    {"cmd": "text", "str": ""},
+    {"cmd": "para", "str": ""},
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": " contains"},
+    {"cmd": "line", "str": "ROCK SLIDE!"},
+    {"cmd": "para", "str": "It can spook the"},
+    {"cmd": "line", "str": "target sometimes!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_CeladonMartRoofLittleGirlYayLemonadeText": {
+   "kind": "text",
+   "src": "text/CeladonMartRoof.asm:67",
+   "commands": [
+    {"cmd": "text", "str": "Yay!"},
+    {"cmd": "para", "str": "LEMONADE!"},
+    {"cmd": "para", "str": "Thank you!"},
+    {"cmd": "para", "str": "You can have this"},
+    {"cmd": "line", "str": "from me!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_CeladonMartRoofLittleGirlReceivedTM49Text": {
+   "kind": "text",
+   "src": "text/CeladonMartRoof.asm:78",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} received"},
+    {"cmd": "line", "str": "TM49!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_CeladonMartRoofLittleGirlTM49ExplanationText": {
+   "kind": "text",
+   "src": "text/CeladonMartRoof.asm:83",
+   "commands": [
+    {"cmd": "text", "str": ""},
+    {"cmd": "para", "str": "TM49 contains"},
+    {"cmd": "line", "str": "TRI ATTACK!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_CeladonMartRoofLittleGirlNoRoomText": {
+   "kind": "text",
+   "src": "text/CeladonMartRoof.asm:90",
+   "commands": [
+    {"cmd": "text", "str": "You don't have"},
+    {"cmd": "line", "str": "space for this!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_CeladonMartRoofLittleGirlImNotThirstyText": {
+   "kind": "text",
+   "src": "text/CeladonMartRoof.asm:95",
+   "commands": [
+    {"cmd": "text", "str": "No thank you!"},
+    {"cmd": "line", "str": "I'm not thirsty"},
+    {"cmd": "cont", "str": "after all!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_CeladonMartRoofSuperNerdText": {
+   "kind": "text",
+   "src": "text/CeladonMartRoof.asm:101",
+   "commands": [
+    {"cmd": "text", "str": "My sister is a"},
+    {"cmd": "line", "str": "trainer, believe"},
+    {"cmd": "cont", "str": "it or not."},
+    {"cmd": "para", "str": "But, she's so"},
+    {"cmd": "line", "str": "immature, she"},
+    {"cmd": "cont", "str": "drives me nuts!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonMartRoofLittleGirlImThirstyText": {
+   "kind": "text",
+   "src": "text/CeladonMartRoof.asm:111",
+   "commands": [
+    {"cmd": "text", "str": "I'm thirsty!"},
+    {"cmd": "line", "str": "I want something"},
+    {"cmd": "cont", "str": "to drink!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonMartRoofLittleGirlGiveHerADrinkText": {
+   "kind": "text",
+   "src": "text/CeladonMartRoof.asm:117",
+   "commands": [
+    {"cmd": "text", "str": "I'm thirsty!"},
+    {"cmd": "line", "str": "I want something"},
+    {"cmd": "cont", "str": "to drink!"},
+    {"cmd": "para", "str": "Give her a drink?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonMartRoofCurrentFloorSignText": {
+   "kind": "text",
+   "src": "text/CeladonMartRoof.asm:125",
+   "commands": [
+    {"cmd": "text", "str": "ROOFTOP SQUARE:"},
+    {"cmd": "line", "str": "VENDING MACHINES"},
+    {"cmd": "done"}
+   ]
+  },
+  "_VendingMachineText1": {
+   "kind": "text",
+   "src": "text/CeladonMartRoof.asm:130",
+   "commands": [
+    {"cmd": "text", "str": "A vending machine!"},
+    {"cmd": "line", "str": "Here's the menu!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_VendingMachineText4": {
+   "kind": "text",
+   "src": "text/CeladonMartRoof.asm:135",
+   "commands": [
+    {"cmd": "text", "str": "Oops, not enough"},
+    {"cmd": "line", "str": "money!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_VendingMachineText5": {
+   "kind": "text",
+   "src": "text/CeladonMartRoof.asm:140",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": ""},
+    {"cmd": "line", "str": "popped out!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_VendingMachineText6": {
+   "kind": "text",
+   "src": "text/CeladonMartRoof.asm:146",
+   "commands": [
+    {"cmd": "text", "str": "There's no more"},
+    {"cmd": "line", "str": "room for stuff!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_VendingMachineText7": {
+   "kind": "text",
+   "src": "text/CeladonMartRoof.asm:151",
+   "commands": [
+    {"cmd": "text", "str": "Not thirsty!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

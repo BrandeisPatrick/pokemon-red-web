@@ -1,0 +1,378 @@
+{
+ "map": "PokemonFanClub",
+ "const": "POKEMON_FAN_CLUB",
+ "textPointerTables": [
+  {
+   "label": "PokemonFanClub_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_POKEMONFANCLUB_PIKACHU_FAN", "label": "PokemonFanClubPikachuFanText", "kind": "asm", "handler": "asm"},
+    {"id": 2, "const": "TEXT_POKEMONFANCLUB_SEEL_FAN", "label": "PokemonFanClubSeelFanText", "kind": "asm", "handler": "asm"},
+    {"id": 3, "const": "TEXT_POKEMONFANCLUB_PIKACHU", "label": "PokemonFanClubPikachuText", "kind": "asm", "handler": "asm"},
+    {"id": 4, "const": "TEXT_POKEMONFANCLUB_SEEL", "label": "PokemonFanClubSeelText", "kind": "asm", "handler": "asm"},
+    {"id": 5, "const": "TEXT_POKEMONFANCLUB_CHAIRMAN", "label": "PokemonFanClubChairmanText", "kind": "asm", "handler": "asm"},
+    {"id": 6, "const": "TEXT_POKEMONFANCLUB_RECEPTIONIST", "label": "PokemonFanClubReceptionistText", "kind": "text", "handler": "text"},
+    {"id": 7, "const": "TEXT_POKEMONFANCLUB_SIGN_1", "label": "PokemonFanClubSign1Text", "kind": "text", "handler": "text"},
+    {"id": 8, "const": "TEXT_POKEMONFANCLUB_SIGN_2", "label": "PokemonFanClubSign2Text", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "PokemonFanClubPikachuFanText": {
+   "kind": "asm",
+   "src": "scripts/PokemonFanClub.asm:26",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["PokemonFanClubPikachuFanText.NormalText", "PokemonFanClubPikachuFanText.BetterText"]
+  },
+  "PokemonFanClubPikachuFanText.NormalText": {
+   "kind": "text",
+   "src": "scripts/PokemonFanClub.asm:41",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonFanClubPikachuFanNormalText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonFanClubPikachuFanText.BetterText": {
+   "kind": "text",
+   "src": "scripts/PokemonFanClub.asm:45",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonFanClubPikachuFanBetterText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonFanClubSeelFanText": {
+   "kind": "asm",
+   "src": "scripts/PokemonFanClub.asm:49",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["PokemonFanClubSeelFanText.NormalText", "PokemonFanClubSeelFanText.BetterText"]
+  },
+  "PokemonFanClubSeelFanText.NormalText": {
+   "kind": "text",
+   "src": "scripts/PokemonFanClub.asm:64",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonFanClubSeelFanNormalText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonFanClubSeelFanText.BetterText": {
+   "kind": "text",
+   "src": "scripts/PokemonFanClub.asm:68",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonFanClubSeelFanBetterText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonFanClubPikachuText": {
+   "kind": "asm",
+   "src": "scripts/PokemonFanClub.asm:72",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["PokemonFanClubPikachuText.Text"]
+  },
+  "PokemonFanClubPikachuText.Text": {
+   "kind": "text",
+   "src": "scripts/PokemonFanClub.asm:81",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonFanClubPikachuText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonFanClubSeelText": {
+   "kind": "asm",
+   "src": "scripts/PokemonFanClub.asm:85",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["PokemonFanClubSeelText.Text"]
+  },
+  "PokemonFanClubSeelText.Text": {
+   "kind": "text",
+   "src": "scripts/PokemonFanClub.asm:94",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonFanClubSeelText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonFanClubChairmanText": {
+   "kind": "asm",
+   "src": "scripts/PokemonFanClub.asm:98",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["PokemonFanClubChairmanText.IntroText", "PokemonFanClubChairmanText.StoryText", "PokemonFanClubChairmanText.BikeVoucherText", "PokemonFanClubChairmanText.BagFullText", "PokemonFanClubChairmanText.NoStoryText", "PokemonFanClubChairmanText.FinalText"]
+  },
+  "PokemonFanClubChairmanText.IntroText": {
+   "kind": "text",
+   "src": "scripts/PokemonFanClub.asm:134",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonFanClubChairmanIntroText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonFanClubChairmanText.StoryText": {
+   "kind": "text",
+   "src": "scripts/PokemonFanClub.asm:138",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonFanClubChairmanStoryText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonFanClubChairmanText.BikeVoucherText": {
+   "kind": "text",
+   "src": "scripts/PokemonFanClub.asm:142",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonFanClubReceivedBikeVoucherText"},
+    {"cmd": "sound", "sound": "sound_get_key_item"},
+    {"cmd": "text_far", "label": "_PokemonFanClubExplainBikeVoucherText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonFanClubChairmanText.NoStoryText": {
+   "kind": "text",
+   "src": "scripts/PokemonFanClub.asm:148",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonFanClubNoStoryText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonFanClubChairmanText.FinalText": {
+   "kind": "text",
+   "src": "scripts/PokemonFanClub.asm:152",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonFanClubChairFinalText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonFanClubChairmanText.BagFullText": {
+   "kind": "text",
+   "src": "scripts/PokemonFanClub.asm:156",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonFanClubBagFullText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonFanClubReceptionistText": {
+   "kind": "text",
+   "src": "scripts/PokemonFanClub.asm:160",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonFanClubReceptionistText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonFanClubSign1Text": {
+   "kind": "text",
+   "src": "scripts/PokemonFanClub.asm:164",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonFanClubSign1Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonFanClubSign2Text": {
+   "kind": "text",
+   "src": "scripts/PokemonFanClub.asm:168",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonFanClubSign2Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_PokemonFanClubPikachuFanNormalText": {
+   "kind": "text",
+   "src": "text/PokemonFanClub.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Won't you admire"},
+    {"cmd": "line", "str": "my PIKACHU's"},
+    {"cmd": "cont", "str": "adorable tail?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonFanClubPikachuFanBetterText": {
+   "kind": "text",
+   "src": "text/PokemonFanClub.asm:8",
+   "commands": [
+    {"cmd": "text", "str": "Humph! My PIKACHU"},
+    {"cmd": "line", "str": "is twice as cute"},
+    {"cmd": "cont", "str": "as that one!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonFanClubSeelFanNormalText": {
+   "kind": "text",
+   "src": "text/PokemonFanClub.asm:14",
+   "commands": [
+    {"cmd": "text", "str": "I just love my"},
+    {"cmd": "line", "str": "SEEL!"},
+    {"cmd": "para", "str": "It squeals when I"},
+    {"cmd": "line", "str": "hug it!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonFanClubSeelFanBetterText": {
+   "kind": "text",
+   "src": "text/PokemonFanClub.asm:22",
+   "commands": [
+    {"cmd": "text", "str": "Oh dear!"},
+    {"cmd": "para", "str": "My SEEL is far"},
+    {"cmd": "line", "str": "more attractive!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonFanClubPikachuText": {
+   "kind": "text",
+   "src": "text/PokemonFanClub.asm:29",
+   "commands": [
+    {"cmd": "text", "str": "PIKACHU: Chu!"},
+    {"cmd": "line", "str": "Pikachu!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonFanClubSeelText": {
+   "kind": "text",
+   "src": "text/PokemonFanClub.asm:34",
+   "commands": [
+    {"cmd": "text", "str": "SEEL: Kyuoo!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonFanClubChairmanIntroText": {
+   "kind": "text",
+   "src": "text/PokemonFanClub.asm:38",
+   "commands": [
+    {"cmd": "text", "str": "I chair the"},
+    {"cmd": "line", "str": "POKéMON Fan Club!"},
+    {"cmd": "para", "str": "I have collected"},
+    {"cmd": "line", "str": "over 100 POKéMON!"},
+    {"cmd": "para", "str": "I'm very fussy"},
+    {"cmd": "line", "str": "when it comes to"},
+    {"cmd": "cont", "str": "POKéMON!"},
+    {"cmd": "para", "str": "So..."},
+    {"cmd": "para", "str": "Did you come"},
+    {"cmd": "line", "str": "visit to hear"},
+    {"cmd": "cont", "str": "about my POKéMON?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonFanClubChairmanStoryText": {
+   "kind": "text",
+   "src": "text/PokemonFanClub.asm:56",
+   "commands": [
+    {"cmd": "text", "str": "Good!"},
+    {"cmd": "line", "str": "Then listen up!"},
+    {"cmd": "para", "str": "My favorite"},
+    {"cmd": "line", "str": "RAPIDASH..."},
+    {"cmd": "para", "str": "It...cute..."},
+    {"cmd": "line", "str": "lovely...smart..."},
+    {"cmd": "cont", "str": "plus...amazing..."},
+    {"cmd": "cont", "str": "you think so?..."},
+    {"cmd": "cont", "str": "oh yes...it..."},
+    {"cmd": "cont", "str": "stunning..."},
+    {"cmd": "cont", "str": "kindly..."},
+    {"cmd": "cont", "str": "love it!"},
+    {"cmd": "para", "str": "Hug it...when..."},
+    {"cmd": "cont", "str": "sleeping...warm"},
+    {"cmd": "cont", "str": "and cuddly..."},
+    {"cmd": "cont", "str": "spectacular..."},
+    {"cmd": "cont", "str": "ravishing..."},
+    {"cmd": "cont", "str": "...Oops! Look at"},
+    {"cmd": "cont", "str": "the time! I kept"},
+    {"cmd": "cont", "str": "you too long!"},
+    {"cmd": "para", "str": "Thanks for hearing"},
+    {"cmd": "line", "str": "me out! I want"},
+    {"cmd": "cont", "str": "you to have this!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_PokemonFanClubReceivedBikeVoucherText": {
+   "kind": "text",
+   "src": "text/PokemonFanClub.asm:86",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} received"},
+    {"cmd": "line", "str": "a "},
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_PokemonFanClubExplainBikeVoucherText": {
+   "kind": "text",
+   "src": "text/PokemonFanClub.asm:93",
+   "commands": [
+    {"cmd": "text", "str": ""},
+    {"cmd": "para", "str": "Exchange that for"},
+    {"cmd": "line", "str": "a BICYCLE!"},
+    {"cmd": "para", "str": "Don't worry, my"},
+    {"cmd": "line", "str": "FEAROW will FLY"},
+    {"cmd": "cont", "str": "me anywhere!"},
+    {"cmd": "para", "str": "So, I don't need a"},
+    {"cmd": "line", "str": "BICYCLE!"},
+    {"cmd": "para", "str": "I hope you like"},
+    {"cmd": "line", "str": "cycling!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonFanClubNoStoryText": {
+   "kind": "text",
+   "src": "text/PokemonFanClub.asm:110",
+   "commands": [
+    {"cmd": "text", "str": "Oh. Come back"},
+    {"cmd": "line", "str": "when you want to"},
+    {"cmd": "cont", "str": "hear my story!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonFanClubChairFinalText": {
+   "kind": "text",
+   "src": "text/PokemonFanClub.asm:116",
+   "commands": [
+    {"cmd": "text", "str": "Hello, {PLAYER}!"},
+    {"cmd": "para", "str": "Did you come see"},
+    {"cmd": "line", "str": "me about my"},
+    {"cmd": "cont", "str": "POKéMON again?"},
+    {"cmd": "para", "str": "No? Too bad!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonFanClubBagFullText": {
+   "kind": "text",
+   "src": "text/PokemonFanClub.asm:126",
+   "commands": [
+    {"cmd": "text", "str": "Make room for"},
+    {"cmd": "line", "str": "this!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonFanClubReceptionistText": {
+   "kind": "text",
+   "src": "text/PokemonFanClub.asm:131",
+   "commands": [
+    {"cmd": "text", "str": "Our Chairman is"},
+    {"cmd": "line", "str": "very vocal about"},
+    {"cmd": "cont", "str": "POKéMON."},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonFanClubSign1Text": {
+   "kind": "text",
+   "src": "text/PokemonFanClub.asm:137",
+   "commands": [
+    {"cmd": "text", "str": "Let's all listen"},
+    {"cmd": "line", "str": "politely to other"},
+    {"cmd": "cont", "str": "trainers!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonFanClubSign2Text": {
+   "kind": "text",
+   "src": "text/PokemonFanClub.asm:143",
+   "commands": [
+    {"cmd": "text", "str": "If someone brags,"},
+    {"cmd": "line", "str": "brag right back!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

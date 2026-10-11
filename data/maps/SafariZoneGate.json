@@ -1,0 +1,46 @@
+{
+ "id": 156,
+ "const": "SAFARI_ZONE_GATE",
+ "name": "SafariZoneGate",
+ "displayName": "SAFARI ZONE",
+ "width": 4,
+ "height": 3,
+ "tileset": "GATE",
+ "tilesetId": 12,
+ "tilesetFile": "data/tilesets/Gate.json",
+ "isOutside": false,
+ "borderBlock": 10,
+ "blocks": [22, 107, 106, 23, 2, 9, 8, 1, 24, 108, 105, 25],
+ "connections": {},
+ "warps": [
+  {"x": 3, "y": 5, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 5, "destWarpIndex": 4},
+  {"x": 4, "y": 5, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 5, "destWarpIndex": 4},
+  {"x": 3, "y": 0, "destMap": "SAFARI_ZONE_CENTER", "destMapId": 220, "destMapName": "SafariZoneCenter", "destWarp": 1, "destWarpIndex": 0},
+  {"x": 4, "y": 0, "destMap": "SAFARI_ZONE_CENTER", "destMapId": 220, "destMapName": "SafariZoneCenter", "destWarp": 2, "destWarpIndex": 1}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "SAFARIZONEGATE_SAFARI_ZONE_WORKER1", "x": 6, "y": 2, "sprite": "SPRITE_SAFARI_ZONE_WORKER", "spriteId": 35, "movement": "STAY", "rangeOrDirection": "LEFT", "rangeOrDirectionValue": 210, "behavior": "face_left", "textId": "TEXT_SAFARIZONEGATE_SAFARI_ZONE_WORKER1", "textIndex": 1},
+  {"index": 2, "const": "SAFARIZONEGATE_SAFARI_ZONE_WORKER2", "x": 1, "y": 4, "sprite": "SPRITE_SAFARI_ZONE_WORKER", "spriteId": 35, "movement": "STAY", "rangeOrDirection": "RIGHT", "rangeOrDirectionValue": 211, "behavior": "face_right", "textId": "TEXT_SAFARIZONEGATE_SAFARI_ZONE_WORKER2", "textIndex": 2}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [
+  {"x": 10, "y": 1, "routine": "HiddenItems", "arg": "NUGGET", "argValue": 49, "kind": "item", "item": "NUGGET", "flagIndex": 16}
+ ],
+ "spriteSet": null,
+ "music": "MUSIC_CITIES2",
+ "wild": null,
+ "townMap": {"x": 8, "y": 12, "group": "SAFARI_ZONE"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/SafariZoneGate.json",
+ "textPointers": "SafariZoneGate_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/SafariZoneGate.asm",
+  "objects": "data/maps/objects/SafariZoneGate.asm",
+  "blocks": "maps/SafariZoneGate.blk",
+  "script": "scripts/SafariZoneGate.asm"
+ },
+ "lastMapCandidates": ["FUCHSIA_CITY"],
+ "palette": {"pal": "PAL_FUCHSIA", "rule": "lastMap", "viaLastMap": "FUCHSIA_CITY"}
+}

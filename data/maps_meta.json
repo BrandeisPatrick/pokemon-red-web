@@ -1,0 +1,232 @@
+{
+ "newGame": {"map": "REDS_HOUSE_2F", "mapId": 38, "x": 3, "y": 6, "tileset": "REDS_HOUSE_2"},
+ "elevators": [
+  {
+   "map": "CELADON_MART_ELEVATOR",
+   "mapName": "CeladonMartElevator",
+   "floors": [
+    {"floor": "FLOOR_1F", "map": "CELADON_MART_1F", "destWarpIndex": 5},
+    {"floor": "FLOOR_2F", "map": "CELADON_MART_2F", "destWarpIndex": 2},
+    {"floor": "FLOOR_3F", "map": "CELADON_MART_3F", "destWarpIndex": 2},
+    {"floor": "FLOOR_4F", "map": "CELADON_MART_4F", "destWarpIndex": 2},
+    {"floor": "FLOOR_5F", "map": "CELADON_MART_5F", "destWarpIndex": 2}
+   ],
+   "note": "On entering, both elevator warps are rewritten to return to (wWarpedFromWhichWarp, wWarpedFromWhichMap); choosing a floor rewrites them to (destWarpIndex, map). destWarpIndex is 0-based."
+  },
+  {
+   "map": "ROCKET_HIDEOUT_ELEVATOR",
+   "mapName": "RocketHideoutElevator",
+   "floors": [
+    {"floor": "FLOOR_B1F", "map": "ROCKET_HIDEOUT_B1F", "destWarpIndex": 4},
+    {"floor": "FLOOR_B2F", "map": "ROCKET_HIDEOUT_B2F", "destWarpIndex": 4},
+    {"floor": "FLOOR_B4F", "map": "ROCKET_HIDEOUT_B4F", "destWarpIndex": 2}
+   ],
+   "note": "On entering, both elevator warps are rewritten to return to (wWarpedFromWhichWarp, wWarpedFromWhichMap); choosing a floor rewrites them to (destWarpIndex, map). destWarpIndex is 0-based."
+  },
+  {
+   "map": "SILPH_CO_ELEVATOR",
+   "mapName": "SilphCoElevator",
+   "floors": [
+    {"floor": "FLOOR_1F", "map": "SILPH_CO_1F", "destWarpIndex": 3},
+    {"floor": "FLOOR_2F", "map": "SILPH_CO_2F", "destWarpIndex": 2},
+    {"floor": "FLOOR_3F", "map": "SILPH_CO_3F", "destWarpIndex": 2},
+    {"floor": "FLOOR_4F", "map": "SILPH_CO_4F", "destWarpIndex": 2},
+    {"floor": "FLOOR_5F", "map": "SILPH_CO_5F", "destWarpIndex": 2},
+    {"floor": "FLOOR_6F", "map": "SILPH_CO_6F", "destWarpIndex": 2},
+    {"floor": "FLOOR_7F", "map": "SILPH_CO_7F", "destWarpIndex": 2},
+    {"floor": "FLOOR_8F", "map": "SILPH_CO_8F", "destWarpIndex": 2},
+    {"floor": "FLOOR_9F", "map": "SILPH_CO_9F", "destWarpIndex": 2},
+    {"floor": "FLOOR_10F", "map": "SILPH_CO_10F", "destWarpIndex": 2},
+    {"floor": "FLOOR_11F", "map": "SILPH_CO_11F", "destWarpIndex": 1}
+   ],
+   "note": "On entering, both elevator warps are rewritten to return to (wWarpedFromWhichWarp, wWarpedFromWhichMap); choosing a floor rewrites them to (destWarpIndex, map). destWarpIndex is 0-based."
+  }
+ ],
+ "linkWarps": {
+  "TradeCenterPlayerWarp": {"map": "TRADE_CENTER", "mapId": 239, "x": 3, "y": 4, "tileset": "CLUB"},
+  "TradeCenterFriendWarp": {"map": "TRADE_CENTER", "mapId": 239, "x": 6, "y": 4, "tileset": "CLUB"},
+  "ColosseumPlayerWarp": {"map": "COLOSSEUM", "mapId": 240, "x": 3, "y": 4, "tileset": "CLUB"},
+  "ColosseumFriendWarp": {"map": "COLOSSEUM", "mapId": 240, "x": 6, "y": 4, "tileset": "CLUB"}
+ },
+ "flyWarps": [
+  {"map": "PALLET_TOWN", "x": 5, "y": 6},
+  {"map": "VIRIDIAN_CITY", "x": 23, "y": 26},
+  {"map": "PEWTER_CITY", "x": 13, "y": 26},
+  {"map": "CERULEAN_CITY", "x": 19, "y": 18},
+  {"map": "LAVENDER_TOWN", "x": 3, "y": 6},
+  {"map": "VERMILION_CITY", "x": 11, "y": 4},
+  {"map": "CELADON_CITY", "x": 41, "y": 10},
+  {"map": "FUCHSIA_CITY", "x": 19, "y": 28},
+  {"map": "CINNABAR_ISLAND", "x": 11, "y": 12},
+  {"map": "INDIGO_PLATEAU", "x": 9, "y": 6},
+  {"map": "SAFFRON_CITY", "x": 9, "y": 30},
+  {"map": "ROUTE_4", "x": 11, "y": 6},
+  {"map": "ROUTE_10", "x": 11, "y": 20}
+ ],
+ "dungeonWarps": [
+  {"map": "SEAFOAM_ISLANDS_B1F", "whichWarp": 1, "x": 18, "y": 7},
+  {"map": "SEAFOAM_ISLANDS_B1F", "whichWarp": 2, "x": 23, "y": 7},
+  {"map": "SEAFOAM_ISLANDS_B2F", "whichWarp": 1, "x": 19, "y": 7},
+  {"map": "SEAFOAM_ISLANDS_B2F", "whichWarp": 2, "x": 22, "y": 7},
+  {"map": "SEAFOAM_ISLANDS_B3F", "whichWarp": 1, "x": 18, "y": 7},
+  {"map": "SEAFOAM_ISLANDS_B3F", "whichWarp": 2, "x": 19, "y": 7},
+  {"map": "SEAFOAM_ISLANDS_B4F", "whichWarp": 1, "x": 4, "y": 14},
+  {"map": "SEAFOAM_ISLANDS_B4F", "whichWarp": 2, "x": 5, "y": 14},
+  {"map": "VICTORY_ROAD_2F", "whichWarp": 2, "x": 22, "y": 16},
+  {"map": "POKEMON_MANSION_1F", "whichWarp": 1, "x": 16, "y": 14},
+  {"map": "POKEMON_MANSION_1F", "whichWarp": 2, "x": 16, "y": 14},
+  {"map": "POKEMON_MANSION_2F", "whichWarp": 3, "x": 18, "y": 14}
+ ],
+ "dungeonMapsForBattleTransition": {
+  "maps": ["VIRIDIAN_FOREST", "ROCK_TUNNEL_1F", "SEAFOAM_ISLANDS_1F", "ROCK_TUNNEL_B1F"],
+  "ranges": [
+   ["MT_MOON_1F", "MT_MOON_B2F"],
+   ["SS_ANNE_1F", "HALL_OF_FAME"],
+   ["LAVENDER_POKECENTER", "LAVENDER_CUBONE_HOUSE"],
+   ["SILPH_CO_2F", "CERULEAN_CAVE_1F"]
+  ]
+ },
+ "forcedBikeOrSurf": [
+  {"map": "ROUTE_16", "x": 17, "y": 10, "mode": "bike"},
+  {"map": "ROUTE_16", "x": 17, "y": 11, "mode": "bike"},
+  {"map": "ROUTE_18", "x": 33, "y": 8, "mode": "bike"},
+  {"map": "ROUTE_18", "x": 33, "y": 9, "mode": "bike"},
+  {"map": "SEAFOAM_ISLANDS_B3F", "x": 18, "y": 7, "mode": "surf"},
+  {"map": "SEAFOAM_ISLANDS_B3F", "x": 19, "y": 7, "mode": "surf"},
+  {"map": "SEAFOAM_ISLANDS_B4F", "x": 4, "y": 14, "mode": "surf"},
+  {"map": "SEAFOAM_ISLANDS_B4F", "x": 5, "y": 14, "mode": "surf"}
+ ],
+ "safariRestHouses": ["SAFARI_ZONE_WEST_REST_HOUSE", "SAFARI_ZONE_EAST_REST_HOUSE", "SAFARI_ZONE_NORTH_REST_HOUSE"],
+ "badgeMaps": [
+  {"map": "PEWTER_GYM", "badgeMask": 1, "badge": "BOULDERBADGE"},
+  {"map": "CERULEAN_GYM", "badgeMask": 2, "badge": "CASCADEBADGE"},
+  {"map": "VERMILION_GYM", "badgeMask": 4, "badge": "THUNDERBADGE"},
+  {"map": "CELADON_GYM", "badgeMask": 8, "badge": "RAINBOWBADGE"},
+  {"map": "FUCHSIA_GYM", "badgeMask": 16, "badge": "SOULBADGE"},
+  {"map": "SAFFRON_GYM", "badgeMask": 32, "badge": "MARSHBADGE"},
+  {"map": "CINNABAR_GYM", "badgeMask": 64, "badge": "VOLCANOBADGE"},
+  {"map": "VIRIDIAN_GYM", "badgeMask": 128, "badge": "EARTHBADGE"}
+ ],
+ "benchGuys": [
+  {"map": "VIRIDIAN_POKECENTER", "facing": "SPRITE_FACING_LEFT", "text": "ViridianCityPokecenterBenchGuyText", "textPredefId": 15},
+  {"map": "PEWTER_POKECENTER", "facing": "SPRITE_FACING_LEFT", "text": "PewterCityPokecenterBenchGuyText", "textPredefId": 16},
+  {"map": "CERULEAN_POKECENTER", "facing": "SPRITE_FACING_LEFT", "text": "CeruleanCityPokecenterBenchGuyText", "textPredefId": 17},
+  {"map": "LAVENDER_POKECENTER", "facing": "SPRITE_FACING_LEFT", "text": "LavenderCityPokecenterBenchGuyText", "textPredefId": 18},
+  {"map": "VERMILION_POKECENTER", "facing": "SPRITE_FACING_LEFT", "text": "VermilionCityPokecenterBenchGuyText", "textPredefId": 19},
+  {"map": "CELADON_POKECENTER", "facing": "SPRITE_FACING_LEFT", "text": "CeladonCityPokecenterBenchGuyText", "textPredefId": 20},
+  {"map": "CELADON_HOTEL", "facing": "SPRITE_FACING_LEFT", "text": "CeladonCityHotelText", "textPredefId": 21},
+  {"map": "FUCHSIA_POKECENTER", "facing": "SPRITE_FACING_LEFT", "text": "FuchsiaCityPokecenterBenchGuyText", "textPredefId": 22},
+  {"map": "CINNABAR_POKECENTER", "facing": "SPRITE_FACING_LEFT", "text": "CinnabarIslandPokecenterBenchGuyText", "textPredefId": 23},
+  {"map": "SAFFRON_POKECENTER", "facing": "SPRITE_FACING_LEFT", "text": "SaffronCityPokecenterBenchGuyText", "textPredefId": 24},
+  {"map": "MT_MOON_POKECENTER", "facing": "SPRITE_FACING_LEFT", "text": "MtMoonPokecenterBenchGuyText", "textPredefId": 25},
+  {"map": "ROCK_TUNNEL_POKECENTER", "facing": "SPRITE_FACING_LEFT", "text": "RockTunnelPokecenterBenchGuyText", "textPredefId": 26}
+ ],
+ "cardKeyTables": {
+  "CardKeyTable1": [
+   {"map": "SILPH_CO_2F", "y": 4, "x": 4, "gate": 0},
+   {"map": "SILPH_CO_2F", "y": 4, "x": 5, "gate": 1},
+   {"map": "SILPH_CO_4F", "y": 12, "x": 4, "gate": 2},
+   {"map": "SILPH_CO_4F", "y": 12, "x": 5, "gate": 3},
+   {"map": "SILPH_CO_7F", "y": 6, "x": 10, "gate": 4},
+   {"map": "SILPH_CO_7F", "y": 6, "x": 11, "gate": 5},
+   {"map": "SILPH_CO_9F", "y": 4, "x": 18, "gate": 6},
+   {"map": "SILPH_CO_9F", "y": 4, "x": 19, "gate": 7},
+   {"map": "SILPH_CO_10F", "y": 8, "x": 10, "gate": 8},
+   {"map": "SILPH_CO_10F", "y": 8, "x": 11, "gate": 9}
+  ],
+  "CardKeyTable2": [
+   {"map": "SILPH_CO_3F", "y": 8, "x": 9, "gate": 10},
+   {"map": "SILPH_CO_3F", "y": 9, "x": 9, "gate": 11},
+   {"map": "SILPH_CO_5F", "y": 4, "x": 7, "gate": 12},
+   {"map": "SILPH_CO_5F", "y": 5, "x": 7, "gate": 13},
+   {"map": "SILPH_CO_6F", "y": 12, "x": 5, "gate": 14},
+   {"map": "SILPH_CO_6F", "y": 13, "x": 5, "gate": 15},
+   {"map": "SILPH_CO_8F", "y": 8, "x": 7, "gate": 16},
+   {"map": "SILPH_CO_8F", "y": 9, "x": 7, "gate": 17},
+   {"map": "SILPH_CO_9F", "y": 8, "x": 3, "gate": 18},
+   {"map": "SILPH_CO_9F", "y": 9, "x": 3, "gate": 19}
+  ],
+  "CardKeyTable3": [
+   {"map": "SILPH_CO_11F", "y": 8, "x": 9, "gate": 20},
+   {"map": "SILPH_CO_11F", "y": 9, "x": 9, "gate": 21}
+  ]
+ },
+ "silphCoMaps": ["SILPH_CO_2F", "SILPH_CO_3F", "SILPH_CO_4F", "SILPH_CO_5F", "SILPH_CO_6F", "SILPH_CO_7F", "SILPH_CO_8F", "SILPH_CO_9F", "SILPH_CO_10F", "SILPH_CO_11F"],
+ "hiddenEventMapOrder": ["REDS_HOUSE_2F", "BLUES_HOUSE", "OAKS_LAB", "VIRIDIAN_POKECENTER", "VIRIDIAN_MART", "VIRIDIAN_SCHOOL_HOUSE", "VIRIDIAN_GYM", "MUSEUM_1F", "PEWTER_GYM", "PEWTER_MART", "PEWTER_POKECENTER", "CERULEAN_POKECENTER", "CERULEAN_GYM", "CERULEAN_MART", "LAVENDER_POKECENTER", "VERMILION_POKECENTER", "VERMILION_GYM", "CELADON_MANSION_2F", "CELADON_POKECENTER", "CELADON_GYM", "GAME_CORNER", "CELADON_HOTEL", "FUCHSIA_POKECENTER", "FUCHSIA_GYM", "CINNABAR_GYM", "CINNABAR_POKECENTER", "SAFFRON_GYM", "MT_MOON_POKECENTER", "ROCK_TUNNEL_POKECENTER", "TRADE_CENTER", "COLOSSEUM", "VIRIDIAN_FOREST", "MT_MOON_B2F", "INDIGO_PLATEAU", "ROUTE_25", "ROUTE_9", "SS_ANNE_KITCHEN", "SS_ANNE_B1F_ROOMS", "ROCKET_HIDEOUT_B1F", "ROCKET_HIDEOUT_B3F", "ROCKET_HIDEOUT_B4F", "SAFFRON_POKECENTER", "POKEMON_TOWER_5F", "ROUTE_13", "SAFARI_ZONE_GATE", "SAFARI_ZONE_WEST", "SILPH_CO_5F", "SILPH_CO_9F", "COPYCATS_HOUSE_2F", "CERULEAN_CAVE_1F", "CERULEAN_CAVE_B1F", "POWER_PLANT", "SEAFOAM_ISLANDS_B2F", "SEAFOAM_ISLANDS_B4F", "POKEMON_MANSION_1F", "POKEMON_MANSION_3F", "ROUTE_23", "VICTORY_ROAD_2F", "UNUSED_MAP_6F", "BILLS_HOUSE", "VIRIDIAN_CITY", "SAFARI_ZONE_WEST_REST_HOUSE", "SAFARI_ZONE_EAST_REST_HOUSE", "SAFARI_ZONE_NORTH_REST_HOUSE", "ROUTE_15_GATE_2F", "MR_FUJIS_HOUSE", "CELADON_MANSION_ROOF_HOUSE", "FIGHTING_DOJO", "ROUTE_10", "INDIGO_PLATEAU_LOBBY", "CINNABAR_LAB_FOSSIL_ROOM", "BIKE_SHOP", "ROUTE_11", "ROUTE_12", "POKEMON_MANSION_2F", "POKEMON_MANSION_B1F", "SILPH_CO_11F", "ROUTE_17", "UNDERGROUND_PATH_NORTH_SOUTH", "UNDERGROUND_PATH_WEST_EAST", "CELADON_CITY", "SEAFOAM_ISLANDS_B3F", "VERMILION_CITY", "CERULEAN_CITY", "ROUTE_4"],
+ "hiddenItemCoords": [
+  {"map": "VIRIDIAN_FOREST", "x": 1, "y": 18},
+  {"map": "VIRIDIAN_FOREST", "x": 16, "y": 42},
+  {"map": "MT_MOON_B2F", "x": 18, "y": 12},
+  {"map": "ROUTE_25", "x": 38, "y": 3},
+  {"map": "ROUTE_9", "x": 14, "y": 7},
+  {"map": "SS_ANNE_KITCHEN", "x": 13, "y": 9},
+  {"map": "SS_ANNE_B1F_ROOMS", "x": 3, "y": 1},
+  {"map": "ROUTE_10", "x": 9, "y": 17},
+  {"map": "ROUTE_10", "x": 16, "y": 53},
+  {"map": "ROCKET_HIDEOUT_B1F", "x": 21, "y": 15},
+  {"map": "ROCKET_HIDEOUT_B3F", "x": 27, "y": 17},
+  {"map": "ROCKET_HIDEOUT_B4F", "x": 25, "y": 1},
+  {"map": "POKEMON_TOWER_5F", "x": 4, "y": 12},
+  {"map": "ROUTE_13", "x": 1, "y": 14},
+  {"map": "ROUTE_13", "x": 16, "y": 13},
+  {"map": "POKEMON_MANSION_B1F", "x": 1, "y": 9},
+  {"map": "SAFARI_ZONE_GATE", "x": 10, "y": 1},
+  {"map": "SAFARI_ZONE_WEST", "x": 6, "y": 5},
+  {"map": "SILPH_CO_5F", "x": 12, "y": 3},
+  {"map": "SILPH_CO_9F", "x": 2, "y": 15},
+  {"map": "COPYCATS_HOUSE_2F", "x": 1, "y": 1},
+  {"map": "CERULEAN_CAVE_1F", "x": 14, "y": 11},
+  {"map": "CERULEAN_CAVE_B1F", "x": 27, "y": 3},
+  {"map": "POWER_PLANT", "x": 17, "y": 16},
+  {"map": "POWER_PLANT", "x": 12, "y": 1},
+  {"map": "SEAFOAM_ISLANDS_B2F", "x": 15, "y": 15},
+  {"map": "SEAFOAM_ISLANDS_B4F", "x": 25, "y": 17},
+  {"map": "POKEMON_MANSION_1F", "x": 8, "y": 16},
+  {"map": "POKEMON_MANSION_3F", "x": 1, "y": 9},
+  {"map": "ROUTE_23", "x": 9, "y": 44},
+  {"map": "ROUTE_23", "x": 19, "y": 70},
+  {"map": "ROUTE_23", "x": 8, "y": 90},
+  {"map": "VICTORY_ROAD_2F", "x": 5, "y": 2},
+  {"map": "VICTORY_ROAD_2F", "x": 26, "y": 7},
+  {"map": "UNUSED_MAP_6F", "x": 14, "y": 11},
+  {"map": "VIRIDIAN_CITY", "x": 14, "y": 4},
+  {"map": "ROUTE_11", "x": 48, "y": 5},
+  {"map": "ROUTE_12", "x": 2, "y": 63},
+  {"map": "ROUTE_17", "x": 15, "y": 14},
+  {"map": "ROUTE_17", "x": 8, "y": 45},
+  {"map": "ROUTE_17", "x": 17, "y": 72},
+  {"map": "ROUTE_17", "x": 4, "y": 91},
+  {"map": "ROUTE_17", "x": 8, "y": 121},
+  {"map": "UNDERGROUND_PATH_NORTH_SOUTH", "x": 3, "y": 4},
+  {"map": "UNDERGROUND_PATH_NORTH_SOUTH", "x": 4, "y": 34},
+  {"map": "UNDERGROUND_PATH_WEST_EAST", "x": 12, "y": 2},
+  {"map": "UNDERGROUND_PATH_WEST_EAST", "x": 21, "y": 5},
+  {"map": "CELADON_CITY", "x": 48, "y": 15},
+  {"map": "ROUTE_25", "x": 10, "y": 1},
+  {"map": "MT_MOON_B2F", "x": 33, "y": 9},
+  {"map": "SEAFOAM_ISLANDS_B3F", "x": 9, "y": 16},
+  {"map": "VERMILION_CITY", "x": 14, "y": 11},
+  {"map": "CERULEAN_CITY", "x": 15, "y": 8},
+  {"map": "ROUTE_4", "x": 40, "y": 3}
+ ],
+ "hiddenCoinCoords": [
+  {"map": "GAME_CORNER", "x": 0, "y": 8},
+  {"map": "GAME_CORNER", "x": 1, "y": 16},
+  {"map": "GAME_CORNER", "x": 3, "y": 11},
+  {"map": "GAME_CORNER", "x": 3, "y": 14},
+  {"map": "GAME_CORNER", "x": 4, "y": 12},
+  {"map": "GAME_CORNER", "x": 9, "y": 12},
+  {"map": "GAME_CORNER", "x": 9, "y": 15},
+  {"map": "GAME_CORNER", "x": 16, "y": 14},
+  {"map": "GAME_CORNER", "x": 10, "y": 16},
+  {"map": "GAME_CORNER", "x": 11, "y": 7},
+  {"map": "GAME_CORNER", "x": 15, "y": 8},
+  {"map": "GAME_CORNER", "x": 12, "y": 15}
+ ],
+ "bikeAlsoAllowedMaps": ["ROUTE_23", "INDIGO_PLATEAU"],
+ "townVisitedFlags": "entering any map with id < FIRST_ROUTE_MAP sets its bit in wTownVisitedFlag (fly targets)",
+ "cyclingRoad": {
+  "map": "ROUTE_17",
+  "note": "JoypadOverworld forces PAD_DOWN when no button is held; bike speed-up only when not holding UP/LEFT/RIGHT"
+ }
+}

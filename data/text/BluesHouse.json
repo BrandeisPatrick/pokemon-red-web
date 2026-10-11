@@ -1,0 +1,153 @@
+{
+ "map": "BluesHouse",
+ "const": "BLUES_HOUSE",
+ "textPointerTables": [
+  {
+   "label": "BluesHouse_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_BLUESHOUSE_DAISY_SITTING", "label": "BluesHouseDaisySittingText", "kind": "asm", "handler": "asm"},
+    {"id": 2, "const": "TEXT_BLUESHOUSE_DAISY_WALKING", "label": "BluesHouseDaisyWalkingText", "kind": "text", "handler": "text"},
+    {"id": 3, "const": "TEXT_BLUESHOUSE_TOWN_MAP", "label": "BluesHouseTownMapText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "BluesHouseDaisySittingText": {
+   "kind": "asm",
+   "src": "scripts/BluesHouse.asm:28",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["BluesHouseDaisyRivalAtLabText", "BluesHouseDaisyOfferMapText", "GotMapText", "BluesHouseDaisyUseMapText", "BluesHouseDaisyBagFullText"]
+  },
+  "BluesHouseDaisyRivalAtLabText": {
+   "kind": "text",
+   "src": "scripts/BluesHouse.asm:63",
+   "commands": [
+    {"cmd": "text_far", "label": "_BluesHouseDaisyRivalAtLabText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "BluesHouseDaisyOfferMapText": {
+   "kind": "text",
+   "src": "scripts/BluesHouse.asm:67",
+   "commands": [
+    {"cmd": "text_far", "label": "_BluesHouseDaisyOfferMapText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "GotMapText": {
+   "kind": "text",
+   "src": "scripts/BluesHouse.asm:71",
+   "commands": [
+    {"cmd": "text_far", "label": "_GotMapText"},
+    {"cmd": "sound", "sound": "sound_get_key_item"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "BluesHouseDaisyBagFullText": {
+   "kind": "text",
+   "src": "scripts/BluesHouse.asm:76",
+   "commands": [
+    {"cmd": "text_far", "label": "_BluesHouseDaisyBagFullText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "BluesHouseDaisyUseMapText": {
+   "kind": "text",
+   "src": "scripts/BluesHouse.asm:80",
+   "commands": [
+    {"cmd": "text_far", "label": "_BluesHouseDaisyUseMapText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "BluesHouseDaisyWalkingText": {
+   "kind": "text",
+   "src": "scripts/BluesHouse.asm:84",
+   "commands": [
+    {"cmd": "text_far", "label": "_BluesHouseDaisyWalkingText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "BluesHouseTownMapText": {
+   "kind": "text",
+   "src": "scripts/BluesHouse.asm:88",
+   "commands": [
+    {"cmd": "text_far", "label": "_BluesHouseTownMapText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_BluesHouseDaisyRivalAtLabText": {
+   "kind": "text",
+   "src": "text/BluesHouse.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Hi {PLAYER}!"},
+    {"cmd": "line", "str": "{RIVAL} is out at"},
+    {"cmd": "cont", "str": "Grandpa's lab."},
+    {"cmd": "done"}
+   ]
+  },
+  "_BluesHouseDaisyOfferMapText": {
+   "kind": "text",
+   "src": "text/BluesHouse.asm:8",
+   "commands": [
+    {"cmd": "text", "str": "Grandpa asked you"},
+    {"cmd": "line", "str": "to run an errand?"},
+    {"cmd": "cont", "str": "Here, this will"},
+    {"cmd": "cont", "str": "help you!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_GotMapText": {
+   "kind": "text",
+   "src": "text/BluesHouse.asm:15",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} got a"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_BluesHouseDaisyBagFullText": {
+   "kind": "text",
+   "src": "text/BluesHouse.asm:22",
+   "commands": [
+    {"cmd": "text", "str": "You have too much"},
+    {"cmd": "line", "str": "stuff with you."},
+    {"cmd": "done"}
+   ]
+  },
+  "_BluesHouseDaisyUseMapText": {
+   "kind": "text",
+   "src": "text/BluesHouse.asm:27",
+   "commands": [
+    {"cmd": "text", "str": "Use the TOWN MAP"},
+    {"cmd": "line", "str": "to find out where"},
+    {"cmd": "cont", "str": "you are."},
+    {"cmd": "done"}
+   ]
+  },
+  "_BluesHouseDaisyWalkingText": {
+   "kind": "text",
+   "src": "text/BluesHouse.asm:33",
+   "commands": [
+    {"cmd": "text", "str": "POKéMON are living"},
+    {"cmd": "line", "str": "things! If they"},
+    {"cmd": "cont", "str": "get tired, give"},
+    {"cmd": "cont", "str": "them a rest!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_BluesHouseTownMapText": {
+   "kind": "text",
+   "src": "text/BluesHouse.asm:40",
+   "commands": [
+    {"cmd": "text", "str": "It's a big map!"},
+    {"cmd": "line", "str": "This is useful!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

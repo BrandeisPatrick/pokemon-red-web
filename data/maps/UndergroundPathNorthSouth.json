@@ -1,0 +1,43 @@
+{
+ "id": 119,
+ "const": "UNDERGROUND_PATH_NORTH_SOUTH",
+ "name": "UndergroundPathNorthSouth",
+ "displayName": "UNDERGROUND PATH",
+ "width": 4,
+ "height": 24,
+ "tileset": "UNDERGROUND",
+ "tilesetId": 11,
+ "tilesetFile": "data/tilesets/Underground.json",
+ "isOutside": false,
+ "borderBlock": 1,
+ "blocks": [1, 1, 1, 1, 13, 9, 3, 12, 13, 4, 5, 12, 13, 4, 2, 12, 13, 4, 2, 12, 13, 4, 2, 12, 13, 4, 2, 12, 13, 4, 2, 12, 13, 4, 2, 12, 13, 4, 2, 12, 13, 4, 2, 12, 13, 4, 2, 12, 13, 4, 2, 12, 13, 4, 2, 12, 13, 4, 2, 12, 13, 4, 2, 12, 13, 4, 2, 12, 13, 4, 2, 12, 13, 4, 2, 12, 13, 4, 2, 12, 13, 15, 2, 12, 1, 14, 14, 1, 1, 1, 1, 1, 13, 9, 3, 3],
+ "connections": {},
+ "warps": [
+  {"x": 5, "y": 4, "destMap": "UNDERGROUND_PATH_ROUTE_5", "destMapId": 71, "destMapName": "UndergroundPathRoute5", "destWarp": 3, "destWarpIndex": 2},
+  {"x": 2, "y": 41, "destMap": "UNDERGROUND_PATH_ROUTE_6", "destMapId": 74, "destMapName": "UndergroundPathRoute6", "destWarp": 3, "destWarpIndex": 2}
+ ],
+ "bgEvents": [],
+ "objectEvents": [],
+ "trainerHeaders": [],
+ "hiddenObjects": [
+  {"x": 3, "y": 4, "routine": "HiddenItems", "arg": "FULL_RESTORE", "argValue": 16, "kind": "item", "item": "FULL_RESTORE", "flagIndex": 43},
+  {"x": 4, "y": 34, "routine": "HiddenItems", "arg": "X_SPECIAL", "argValue": 68, "kind": "item", "item": "X_SPECIAL", "flagIndex": 44}
+ ],
+ "spriteSet": null,
+ "music": "MUSIC_ROUTES1",
+ "wild": null,
+ "townMap": {"x": 10, "y": 5, "group": "UNDERGROUND_PATH"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/UndergroundPathNorthSouth.json",
+ "textPointers": "UndergroundPathNorthSouth_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/UndergroundPathNorthSouth.asm",
+  "objects": "data/maps/objects/UndergroundPathNorthSouth.asm",
+  "blocks": "maps/UndergroundPathNorthSouth.blk",
+  "script": "scripts/UndergroundPathNorthSouth.asm"
+ },
+ "blocksOverflowFrom": "maps/UndergroundPathWestEast.blk",
+ "lastMapCandidates": ["ROUTE_5", "ROUTE_6"],
+ "palette": {"pal": "PAL_ROUTE", "rule": "lastMap", "viaLastMap": "ROUTE_5"}
+}

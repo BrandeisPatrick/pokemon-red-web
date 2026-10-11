@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Battle test</title>
+  <link rel="icon" href="data:,">
+  <style>
+    :root { color-scheme: dark; }
+    html, body { margin: 0; height: 100%; background: #2b2b30; color: #ddd; font: 12px/1.4 ui-monospace, Menlo, monospace; }
+    body { display: flex; gap: 12px; padding: 10px; box-sizing: border-box; }
+    #left { flex: 0 0 auto; display: flex; flex-direction: column; align-items: center; gap: 6px; }
+    #screen { display: block; image-rendering: pixelated; image-rendering: crisp-edges; background: #000; }
+    #panel { flex: 1 1 auto; min-width: 320px; max-width: 560px; overflow-y: auto; overflow-x: hidden; }
+    fieldset { border: 1px solid #333; margin: 0 0 8px; padding: 6px 8px; }
+    legend { color: #9ad; }
+    select, input, button { font: inherit; background: #222; color: #ddd; border: 1px solid #444; border-radius: 3px; padding: 2px 4px; }
+    button { cursor: pointer; }
+    button:hover { background: #2c2c2c; }
+    .row { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin: 3px 0; }
+    .log { height: 150px; overflow-y: auto; background: #181818; border: 1px solid #333; padding: 2px 4px; white-space: pre-wrap; word-break: break-word; }
+    #result { height: 110px; }
+    #soaklog { height: 170px; }
+    .help { color: #888; max-width: 480px; text-align: center; }
+    .err { color: #f88; }
+    label { user-select: none; }
+  </style>
+</head>
+<body>
+  <div id="left">
+    <canvas id="screen" width="160" height="144" aria-label="Battle"></canvas>
+    <div class="help">Arrows/WASD = D-pad · Z/Enter = A · X/Backspace = B · Shift = START · Tab = SELECT</div>
+    <div class="help" id="status">loading…</div>
+  </div>
+  <div id="panel">
+    <fieldset><legend>Battle</legend>
+      <div class="row">
+        kind <select id="kind">
+          <option value="wild">wild</option>
+          <option value="trainer">trainer</option>
+          <option value="safari">Safari Zone</option>
+          <option value="oldman">old man (catching demo)</option>
+          <option value="ghost">ghost Marowak (no Silph Scope)</option>
+          <option value="ghostScope">ghost Marowak (Silph Scope)</option>
+          <option value="towerGhost">Pokémon Tower ghost (wild, no scope)</option>
+        </select>
+        transition <select id="transition"><option value="auto">auto</option><option value="none">none</option></select>
+      </div>
+      <div class="row" id="wildrow">
+        species <select id="species"></select>
+        level <input id="level" type="number" value="5" min="1" max="100" style="width:4em">
+        map <select id="map">
+          <option value="ROUTE_1">ROUTE_1</option>
+          <option value="VIRIDIAN_FOREST">VIRIDIAN_FOREST (dungeon)</option>
+          <option value="MT_MOON_1F">MT_MOON_1F (dungeon)</option>
+          <option value="ROUTE_22">ROUTE_22</option>
+        </select>
+        <label><input type="checkbox" id="fishing"> hooked</label>
+      </div>
+      <div class="row" id="trainerrow">
+        class <select id="tclass"></select>
+        party <select id="tparty"></select>
+        <span id="tinfo" class="help"></span>
+      </div>
+    </fieldset>
+    <fieldset><legend>Player</legend>
+      <div class="row">
+        party <select id="preset">
+          <option value="starters">L5 starters</option>
+          <option value="mixed30">L30 mixed team</option>
+          <option value="status60">L60 team, every status</option>
+          <option value="evolve">about to evolve (L15-L35)</option>
+          <option value="learn">about to learn a move (4 moves, HM)</option>
+          <option value="traded">traded L50 (disobedient, no badges)</option>
+        </select>
+        <label><input type="checkbox" id="keep"> keep party between battles</label>
+      </div>
+      <div class="row">
+        <label><input type="checkbox" id="expall"> EXP.ALL in bag</label>
+        badges <select id="badges"><option value="0">none</option><option value="255" selected>all 8</option></select>
+        text <select id="speed"><option value="fast">fast</option><option value="mid" selected>mid</option><option value="slow">slow</option></select>
+        <label><input type="checkbox" id="anims" checked> animations</label>
+        style <select id="style"><option value="shift">SHIFT</option><option value="set">SET</option></select>
+        <label><input type="checkbox" id="sound"> sound</label>
+      </div>
+      <div class="row"><button id="start">Start battle</button> <button id="reset">Reset state</button></div>
+    </fieldset>
+    <fieldset><legend>Result</legend><div id="result" class="log"></div></fieldset>
+    <fieldset><legend>Messages</legend><div id="messages" class="log"></div></fieldset>
+    <fieldset><legend>Soak (headless random battles)</legend>
+      <div class="row">
+        battles <input id="soakn" type="number" value="300" min="1" style="width:5em">
+        seed <input id="soakseed" type="number" value="1" style="width:7em">
+        <button id="soak">Run soak</button>
+      </div>
+      <div id="soaklog" class="log"></div>
+    </fieldset>
+  </div>
+
+  <script type="module">
+    import { FrameBuffer } from './src/engine/framebuffer.js';
+    import { Palette, PALETTES } from './src/engine/palette.js';
+    import { Input } from './src/engine/input.js';
+    import { Rng } from './src/engine/rng.js';
+    import { Loop } from './src/engine/loop.js';
+    import { SceneStack, Scene } from './src/engine/scene.js';
+    import { Assets } from './src/engine/assets.js';
+    import { Font } from './src/engine/font.js';
+    import { Sfx } from './src/engine/sfx.js';
+    import { TEXT_SPEED } from './src/engine/text.js';
+    import { loadGameData } from './src/pokemon/data.js';
+    import { GameState } from './src/game/state.js';
+    import { makeMon } from './src/pokemon/mon.js';
+    import { expForLevel } from './src/pokemon/exp.js';
+    import { startBattle, soakBattles, TextLibrary, flattenText, oneLine } from './src/battle/index.js';
+
+    const $ = (id) => document.getElementById(id);
+    const qs = new URLSearchParams(location.search);
+
+    // ------------------------------------------------------------ engine services
+    const fb = new FrameBuffer();
+    fb.attachCanvas($('screen'), { getViewport: () => ({ width: Math.max(160, window.innerWidth - 600), height: Math.max(144, window.innerHeight - 70) }) });
+    const palette = new Palette(PALETTES.dmg);
+    const input = new Input();
+    const isField = (t) => t && ((t.tagName === 'INPUT' && t.type !== 'checkbox') || t.tagName === 'SELECT' || t.tagName === 'TEXTAREA');
+    window.addEventListener('keydown', (e) => { if (!isField(e.target)) input.handleKeyDown(e); });
+    window.addEventListener('keyup', (e) => input.handleKeyUp(e));
+    window.addEventListener('blur', () => input.releaseAll());
+    const rng = new Rng(qs.has('seed') ? Number(qs.get('seed')) : Date.now());
+    const assets = new Assets();
+    const sfx = new Sfx();
+    const game = { fb, input, palette, rng, assets, sfx, font: null, scenes: null, loop: null, options: { textSpeed: TEXT_SPEED.medium }, state: null, audio: null, battle: null };
+    game.scenes = new SceneStack(game);
+    window.game = game;
+    for (const t of ['keydown', 'pointerdown']) window.addEventListener(t, () => sfx.unlock(), { capture: true });
+
+    const gd = await loadGameData();
+    game.font = await Font.load(assets);
+    const common = await assets.json('data/text/common.json');
+    const texts = new TextLibrary(common);
+
+    // A stand-in "overworld" under the battle so the transitions have something to eat.
+    class FieldScene extends Scene {
+      draw(f) {
+        for (let ty = 0; ty < 18; ty++) for (let tx = 0; tx < 20; tx++) {
+          const shade = ((tx + ty) & 1) ? 1 : ((tx * 3 + ty * 5) % 7 === 0 ? 2 : 0);
+          f.fillRect(tx * 8, ty * 8, 8, 8, shade);
+          if ((tx + ty) % 4 === 0) f.fillRect(tx * 8 + 3, ty * 8 + 3, 2, 2, 3);
+        }
+        game.font.drawText(f, 'BATTLE TEST', 40, 64);
+      }
+    }
+    game.scenes.push(new FieldScene());
+    game.loop = new Loop({
+      update(frame) { input.sample(); game.scenes.update(frame, input); },
+      render() { fb.clear(0); game.scenes.draw(fb); fb.present(palette); },
+    });
+    game.loop.start();
+
+    // ------------------------------------------------------------ panel data
+    for (const sp of gd.pokemon) $('species').add(new Option(`${String(sp.dex).padStart(3, '0')} ${sp.name}`, sp.dex));
+    $('species').value = qs.get('species') || '16';
+    if (qs.get('level')) $('level').value = qs.get('level');
+    for (const c of gd.trainerClasses.filter((c) => c.partyCount > 0)) $('tclass').add(new Option(`${c.const} (${c.partyCount})`, c.const));
+    function fillParties() {
+      const cls = gd.trainerClass($('tclass').value);
+      $('tparty').innerHTML = '';
+      for (let i = 1; i <= cls.partyCount; i++) {
+        let label = `#${i}`;
+        try {
+          const d = gd.trainerPartyData(cls.const, i);
+          label += ` ${d.location || ''}: ` + d.pokemon.map((p) => `${gd.species(p.species).name} ${p.level}`).join(', ');
+        } catch { /* ignore */ }
+        $('tparty').add(new Option(label, i));
+      }
+      $('tinfo').textContent = `music ${cls.gymBattleMusic || cls.battleMusic}, AI ${cls.ai.routine}`;
+    }
+    $('tclass').addEventListener('change', fillParties);
+    $('tclass').value = qs.get('trainer') || 'BROCK';
+    fillParties();
+    if (qs.get('party')) $('tparty').value = qs.get('party');
+    if (qs.get('kind')) $('kind').value = qs.get('kind');
+    if (qs.get('preset')) $('preset').value = qs.get('preset');
+    for (let i = 0; i < 8; i++) $('transition').add(new Option(`${i}`, i));
+    const showRows = () => {
+      const k = $('kind').value;
+      $('wildrow').style.display = k === 'wild' || k === 'safari' || k === 'towerGhost' ? '' : 'none';
+      $('trainerrow').style.display = k === 'trainer' ? '' : 'none';
+    };
+    $('kind').addEventListener('change', showRows);
+    showRows();
+
+    // ------------------------------------------------------------ presets
+    const dv15 = { atk: 15, def: 15, spd: 15, spc: 15 };
+    const mk = (species, level, o = {}) => {
+      const m = makeMon({ species, level, otName: o.otName || 'RED', otId: o.otId ?? 12345, dvs: o.dvs || dv15, moves: o.moves, nickname: o.nickname }, gd);
+      if (o.status) m.status = o.status;
+      if (o.hp !== undefined) m.hp = o.hp;
+      if (o.nearLevel) m.exp = expForLevel(gd.species(species).growthRate, level + 1, gd) - 1;
+      return m;
+    };
+    const PRESETS = {
+      starters: () => [mk('BULBASAUR', 5), mk('CHARMANDER', 5), mk('SQUIRTLE', 5)],
+      mixed30: () => [
+        mk('PIDGEOTTO', 30, { moves: ['GUST', 'QUICK_ATTACK', 'SAND_ATTACK', 'WING_ATTACK'] }),
+        mk('PIKACHU', 30, { moves: ['THUNDERSHOCK', 'THUNDER_WAVE', 'QUICK_ATTACK', 'SWIFT'] }),
+        mk('WARTORTLE', 30, { moves: ['WATER_GUN', 'BITE', 'WITHDRAW', 'SURF'] }),
+        mk('KADABRA', 30, { moves: ['PSYBEAM', 'RECOVER', 'REFLECT', 'TELEPORT'] }),
+        mk('GRAVELER', 30, { moves: ['ROCK_THROW', 'SELFDESTRUCT', 'DEFENSE_CURL', 'EARTHQUAKE'] }),
+        mk('BUTTERFREE', 30, { moves: ['CONFUSION', 'SLEEP_POWDER', 'STUN_SPORE', 'SUPERSONIC'] }),
+      ],
+      status60: () => [
+        mk('CHARIZARD', 60, { moves: ['FLAMETHROWER', 'SLASH', 'FIRE_SPIN', 'SWORDS_DANCE'] }),
+        mk('VENUSAUR', 60, { status: 0x08, moves: ['RAZOR_LEAF', 'SLEEP_POWDER', 'LEECH_SEED', 'SOLARBEAM'] }),
+        mk('BLASTOISE', 60, { status: 0x10, moves: ['HYDRO_PUMP', 'BITE', 'SKULL_BASH', 'BLIZZARD'] }),
+        mk('LAPRAS', 60, { status: 0x20, moves: ['ICE_BEAM', 'BODY_SLAM', 'CONFUSE_RAY', 'SING'] }),
+        mk('RAICHU', 60, { status: 0x40, moves: ['THUNDERBOLT', 'THUNDER_WAVE', 'AGILITY', 'SEISMIC_TOSS'] }),
+        mk('SNORLAX', 60, { status: 3, moves: ['REST', 'BODY_SLAM', 'HYPER_BEAM', 'AMNESIA'] }),
+      ],
+      evolve: () => [
+        mk('CHARMANDER', 15, { nearLevel: true, moves: ['SCRATCH', 'GROWL', 'EMBER', 'LEER'] }),
+        mk('PIDGEY', 17, { nearLevel: true }),
+        mk('IVYSAUR', 31, { nearLevel: true }),
+        mk('MAGIKARP', 19, { nearLevel: true }),
+      ],
+      learn: () => [
+        mk('BULBASAUR', 6, { nearLevel: true, moves: ['TACKLE', 'GROWL', 'CUT', 'STRENGTH'] }),
+        mk('PIKACHU', 25, { nearLevel: true }),
+      ],
+      traded: () => [mk('MACHAMP', 50, { otId: 4321, otName: 'TRADER', nickname: 'MUSCLES' }), mk('ALAKAZAM', 50)],
+    };
+    const BAG = ['POKE_BALL', 'GREAT_BALL', 'ULTRA_BALL', 'MASTER_BALL', 'POTION', 'SUPER_POTION', 'FULL_RESTORE', 'REVIVE',
+      'ANTIDOTE', 'PARLYZ_HEAL', 'AWAKENING', 'FULL_HEAL', 'ETHER', 'MAX_ELIXER', 'X_ATTACK', 'X_ACCURACY', 'GUARD_SPEC',
+      'POKE_DOLL', 'POKE_FLUTE', 'BICYCLE'];
+
+    function makeState() {
+      const s = new GameState({
+        playerName: 'RED', rivalName: 'BLUE', playerId: 12345, money: 3000, badges: Number($('badges').value),
+        options: { textSpeed: $('speed').value, battleAnimations: $('anims').checked, battleStyle: $('style').value },
+      }, gd);
+      s.party = PRESETS[$('preset').value]();
+      for (const it of BAG) s.bag.add(it === 'BICYCLE' && $('expall').checked ? 'EXP_ALL' : it, it.endsWith('BALL') ? 10 : 3, gd);
+      s.safari.balls = 30;
+      for (let d = 1; d <= 151; d++) if (d % 3 === 0) s.pokedex.setOwned(d);
+      return s;
+    }
+    $('reset').addEventListener('click', () => { game.state = makeState(); log('result', 'state reset'); });
+
+    // ------------------------------------------------------------ audio (optional)
+    async function ensureAudio() {
+      if (!$('sound').checked) { game.audio = null; return; }
+      if (game.audio) return;
+      try {
+        const { createAudio } = await import('./src/audio/audio.js');
+        const a = createAudio();
+        await a.init();
+        game.audio = a;
+      } catch (err) {
+        log('result', `audio unavailable: ${err.message}`);
+      }
+    }
+
+    // ------------------------------------------------------------ battles
+    const log = (id, line) => { const d = $(id); d.textContent += `${line}\n`; d.scrollTop = d.scrollHeight; };
+    let running = false;
+    function battleParams() {
+      const k = $('kind').value;
+      const t = $('transition').value;
+      const p = {};
+      if (t === 'none') p.noTransition = true;
+      else if (t !== 'auto') p.transition = Number(t);
+      p.restorePalette = true;
+      const species = Number($('species').value);
+      const level = Number($('level').value) || 5;
+      switch (k) {
+        case 'wild': return { ...p, kind: 'wild', species, level, map: $('map').value, fishing: $('fishing').checked };
+        case 'trainer': return { ...p, kind: 'trainer', trainerClass: $('tclass').value, partyIndex: Number($('tparty').value) || 1, map: 'ROUTE_3' };
+        case 'safari': return { ...p, kind: 'safari', species, level, map: 'SAFARI_ZONE_CENTER' };
+        case 'oldman': return { ...p, kind: 'oldman', species: 'WEEDLE', level: 5, map: 'VIRIDIAN_CITY' };
+        case 'ghost': case 'ghostScope': return { ...p, kind: 'ghost', species: 'MAROWAK', level: 30, restlessSoul: true, map: 'POKEMON_TOWER_6F' };
+        case 'towerGhost': return { ...p, kind: 'wild', species, level, map: 'POKEMON_TOWER_3F' };
+        default: return p;
+      }
+    }
+    async function runOne() {
+      if (running) return;
+      running = true;
+      $('start').disabled = true;
+      try {
+        await ensureAudio();
+        if (!game.state || !$('keep').checked) game.state = makeState();
+        game.state.options = { ...game.state.options, textSpeed: $('speed').value, battleAnimations: $('anims').checked, battleStyle: $('style').value };
+        game.state.badges = Number($('badges').value);
+        const k = $('kind').value;
+        if (k === 'ghostScope' && !game.state.bag.has('SILPH_SCOPE')) {
+          if (game.state.bag.items.length >= 20) game.state.bag.removeAt(game.state.bag.items.length - 1, game.state.bag.items[game.state.bag.items.length - 1].qty);
+          game.state.bag.add('SILPH_SCOPE', 1, gd);
+        }
+        if (k !== 'ghostScope' && game.state.bag.has('SILPH_SCOPE')) game.state.bag.remove('SILPH_SCOPE', 1, gd);
+        const params = battleParams();
+        $('messages').textContent = '';
+        $('status').textContent = `battle: ${JSON.stringify(params)}`;
+        const seen = { n: 0 };
+        const timer = setInterval(() => {
+          const b = game.battle;
+          if (!b) return;
+          for (; seen.n < b.log.length; seen.n++) log('messages', oneLine(flattenText(b.log[seen.n].cmds, b.log[seen.n].subs, texts.resolver())));
+        }, 100);
+        const result = await startBattle(game, params);
+        clearInterval(timer);
+        const short = { ...result, aiActions: result.aiActions && result.aiActions.length, caughtMon: result.caughtMon && `${result.caughtMon.nickname} L${result.caughtMon.level}` };
+        log('result', JSON.stringify(short));
+        $('status').textContent = `done: ${result.outcome}`;
+      } catch (err) {
+        log('result', `ERROR ${err.stack || err}`);
+      } finally {
+        running = false;
+        $('start').disabled = false;
+      }
+    }
+    $('start').addEventListener('click', () => { $('start').blur(); runOne(); });
+
+    // ------------------------------------------------------------ soak
+    $('soak').addEventListener('click', async () => {
+      const n = Math.max(1, Number($('soakn').value) || 300);
+      const seed = Number($('soakseed').value) || 1;
+      $('soaklog').textContent = '';
+      log('soaklog', `running ${n} battles from seed ${seed}…`);
+      const total = { runs: 0, errors: [], stalls: [], outcomes: {}, turns: 0, ms: 0 };
+      const chunk = 25;
+      for (let i = 0; i < n; i += chunk) {
+        const r = soakBattles({ n: Math.min(chunk, n - i), seed: seed + i, texts, gd });
+        total.runs += r.runs; total.turns += r.turns; total.ms += r.ms;
+        total.errors.push(...r.errors.map((e) => ({ ...e, index: e.index + i })));
+        total.stalls.push(...r.stalls.map((e) => ({ ...e, index: e.index + i })));
+        for (const [k, v] of Object.entries(r.outcomes)) total.outcomes[k] = (total.outcomes[k] || 0) + v;
+        $('status').textContent = `soak ${total.runs}/${n}`;
+        await new Promise((res) => setTimeout(res, 0));
+      }
+      log('soaklog', `${total.runs} battles, ${total.turns} turns, ${total.ms} ms, outcomes ${JSON.stringify(total.outcomes)}`);
+      log('soaklog', `${total.errors.length} exceptions, ${total.stalls.length} never-ending battles (Rage/frozen/ghost loops, cut at 1500 turns)`);
+      for (const e of total.errors) log('soaklog', `seed ${e.seed} (${e.label}): ${e.stack}`);
+      for (const s of total.stalls.slice(0, 10)) log('soaklog', `stall seed ${s.seed}: ${s.label}`);
+      window.soakReport = total;
+      $('status').textContent = `soak done: ${total.errors.length} errors`;
+    });
+
+    game.state = makeState();
+    $('status').textContent = 'ready';
+    window.battleTest = { runOne, makeState, PRESETS, battleParams };
+    if (qs.has('auto')) runOne();
+  </script>
+</body>
+</html>

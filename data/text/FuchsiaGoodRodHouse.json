@@ -1,0 +1,136 @@
+{
+ "map": "FuchsiaGoodRodHouse",
+ "const": "FUCHSIA_GOOD_ROD_HOUSE",
+ "textPointerTables": [
+  {
+   "label": "FuchsiaGoodRodHouse_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_FUCHSIAGOODRODHOUSE_FISHING_GURU", "label": "FuchsiaGoodRodHouseFishingGuruText", "kind": "asm", "handler": "asm"}
+   ]
+  }
+ ],
+ "texts": {
+  "FuchsiaGoodRodHouseFishingGuruText": {
+   "kind": "asm",
+   "src": "scripts/FuchsiaGoodRodHouse.asm:9",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["FuchsiaGoodRodHouseFishingGuruText.Text", "FuchsiaGoodRodHouseFishingGuruText.ReceivedGoodRodText", "FuchsiaGoodRodHouseFishingGuruText.NoRoomText", "FuchsiaGoodRodHouseFishingGuruText.ThatsSoDisappointingText", "FuchsiaGoodRodHouseFishingGuruText.HowAreTheFishText"]
+  },
+  "FuchsiaGoodRodHouseFishingGuruText.Text": {
+   "kind": "text",
+   "src": "scripts/FuchsiaGoodRodHouse.asm:39",
+   "commands": [
+    {"cmd": "text_far", "label": "_FuchsiaGoodRodHouseFishingGuruText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FuchsiaGoodRodHouseFishingGuruText.ReceivedGoodRodText": {
+   "kind": "text",
+   "src": "scripts/FuchsiaGoodRodHouse.asm:43",
+   "commands": [
+    {"cmd": "text_far", "label": "_FuchsiaGoodRodHouseFishingGuruReceivedGoodRodText"},
+    {"cmd": "sound", "sound": "sound_get_item_1"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FuchsiaGoodRodHouseFishingGuruText.UnusedText": {
+   "kind": "text",
+   "src": "scripts/FuchsiaGoodRodHouse.asm:48",
+   "commands": [
+    {"cmd": "para", "str": "つり　こそ"},
+    {"cmd": "line", "str": "おとこの　ロマン　だ！"},
+    {"cmd": "para", "str": "へぼいつりざおは"},
+    {"cmd": "line", "str": "コイキングしか　つれ　なんだが"},
+    {"cmd": "line", "str": "この　いいつりざおなら"},
+    {"cmd": "line", "str": "もっと　いいもんが　つれるんじゃ！"},
+    {"cmd": "done"}
+   ]
+  },
+  "FuchsiaGoodRodHouseFishingGuruText.ThatsSoDisappointingText": {
+   "kind": "text",
+   "src": "scripts/FuchsiaGoodRodHouse.asm:58",
+   "commands": [
+    {"cmd": "text_far", "label": "_FuchsiaGoodRodHouseFishingGuruThatsSoDisappointingText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FuchsiaGoodRodHouseFishingGuruText.HowAreTheFishText": {
+   "kind": "text",
+   "src": "scripts/FuchsiaGoodRodHouse.asm:62",
+   "commands": [
+    {"cmd": "text_far", "label": "_FuchsiaGoodRodHouseFishingGuruHowAreTheFishText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FuchsiaGoodRodHouseFishingGuruText.NoRoomText": {
+   "kind": "text",
+   "src": "scripts/FuchsiaGoodRodHouse.asm:66",
+   "commands": [
+    {"cmd": "text_far", "label": "_FuchsiaGoodRodHouseFishingGuruNoRoomText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_FuchsiaGoodRodHouseFishingGuruText": {
+   "kind": "text",
+   "src": "text/FuchsiaGoodRodHouse.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "I'm the FISHING"},
+    {"cmd": "line", "str": "GURU's older"},
+    {"cmd": "cont", "str": "brother!"},
+    {"cmd": "para", "str": "I simply Looove"},
+    {"cmd": "line", "str": "fishing!"},
+    {"cmd": "para", "str": "Do you like to"},
+    {"cmd": "line", "str": "fish?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_FuchsiaGoodRodHouseFishingGuruReceivedGoodRodText": {
+   "kind": "text",
+   "src": "text/FuchsiaGoodRodHouse.asm:14",
+   "commands": [
+    {"cmd": "text", "str": "Grand! I like"},
+    {"cmd": "line", "str": "your style!"},
+    {"cmd": "para", "str": "Take this and"},
+    {"cmd": "line", "str": "fish, young one!"},
+    {"cmd": "para", "str": "{PLAYER} received"},
+    {"cmd": "line", "str": "a "},
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_FuchsiaGoodRodHouseFishingGuruThatsSoDisappointingText": {
+   "kind": "text",
+   "src": "text/FuchsiaGoodRodHouse.asm:27",
+   "commands": [
+    {"cmd": "text", "str": "Oh... That's so"},
+    {"cmd": "line", "str": "disappointing..."},
+    {"cmd": "done"}
+   ]
+  },
+  "_FuchsiaGoodRodHouseFishingGuruHowAreTheFishText": {
+   "kind": "text",
+   "src": "text/FuchsiaGoodRodHouse.asm:32",
+   "commands": [
+    {"cmd": "text", "str": "Hello there,"},
+    {"cmd": "line", "str": "{PLAYER}!"},
+    {"cmd": "para", "str": "How are the fish"},
+    {"cmd": "line", "str": "biting?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_FuchsiaGoodRodHouseFishingGuruNoRoomText": {
+   "kind": "text",
+   "src": "text/FuchsiaGoodRodHouse.asm:40",
+   "commands": [
+    {"cmd": "text", "str": "Oh no!"},
+    {"cmd": "para", "str": "You have no room"},
+    {"cmd": "line", "str": "for my gift!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

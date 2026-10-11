@@ -1,0 +1,433 @@
+{
+ "map": "SSAnneB1FRooms",
+ "const": "SS_ANNE_B1F_ROOMS",
+ "textPointerTables": [
+  {
+   "label": "SSAnneB1FRooms_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_SSANNEB1FROOMS_SAILOR1", "label": "SSAnneB1FRoomsSailor1Text", "kind": "asm", "handler": "trainer", "trainerHeader": "SSAnne10TrainerHeader0"},
+    {"id": 2, "const": "TEXT_SSANNEB1FROOMS_SAILOR2", "label": "SSAnneB1FRoomsSailor2Text", "kind": "asm", "handler": "trainer", "trainerHeader": "SSAnne10TrainerHeader1"},
+    {"id": 3, "const": "TEXT_SSANNEB1FROOMS_SAILOR3", "label": "SSAnneB1FRoomsSailor3Text", "kind": "asm", "handler": "trainer", "trainerHeader": "SSAnne10TrainerHeader2"},
+    {"id": 4, "const": "TEXT_SSANNEB1FROOMS_SAILOR4", "label": "SSAnneB1FRoomsSailor4Text", "kind": "asm", "handler": "trainer", "trainerHeader": "SSAnne10TrainerHeader3"},
+    {"id": 5, "const": "TEXT_SSANNEB1FROOMS_SAILOR5", "label": "SSAnneB1FRoomsSailor5Text", "kind": "asm", "handler": "trainer", "trainerHeader": "SSAnne10TrainerHeader4"},
+    {"id": 6, "const": "TEXT_SSANNEB1FROOMS_FISHER", "label": "SSAnneB1FRoomsFisherText", "kind": "asm", "handler": "trainer", "trainerHeader": "SSAnne10TrainerHeader5"},
+    {"id": 7, "const": "TEXT_SSANNEB1FROOMS_SUPER_NERD", "label": "SSAnneB1FRoomsSuperNerdText", "kind": "text", "handler": "text"},
+    {"id": 8, "const": "TEXT_SSANNEB1FROOMS_MACHOKE", "label": "SSAnneB1FRoomsMachokeText", "kind": "text", "handler": "text"},
+    {"id": 9, "const": "TEXT_SSANNEB1FROOMS_ETHER", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 10, "const": "TEXT_SSANNEB1FROOMS_TM_REST", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 11, "const": "TEXT_SSANNEB1FROOMS_MAX_POTION", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"}
+   ]
+  }
+ ],
+ "texts": {
+  "PickUpItemText": {
+   "kind": "asm",
+   "src": "home/overworld_text.asm:29",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "SSAnneB1FRoomsSailor1Text": {
+   "kind": "asm",
+   "src": "scripts/SSAnneB1FRooms.asm:47",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "SSAnne10TrainerHeader0"
+  },
+  "SSAnneB1FRoomsSailor2Text": {
+   "kind": "asm",
+   "src": "scripts/SSAnneB1FRooms.asm:53",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "SSAnne10TrainerHeader1"
+  },
+  "SSAnneB1FRoomsSailor3Text": {
+   "kind": "asm",
+   "src": "scripts/SSAnneB1FRooms.asm:59",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "SSAnne10TrainerHeader2"
+  },
+  "SSAnneB1FRoomsSailor4Text": {
+   "kind": "asm",
+   "src": "scripts/SSAnneB1FRooms.asm:65",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "SSAnne10TrainerHeader3"
+  },
+  "SSAnneB1FRoomsSailor5Text": {
+   "kind": "asm",
+   "src": "scripts/SSAnneB1FRooms.asm:71",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "SSAnne10TrainerHeader4"
+  },
+  "SSAnneB1FRoomsFisherText": {
+   "kind": "asm",
+   "src": "scripts/SSAnneB1FRooms.asm:77",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "SSAnne10TrainerHeader5"
+  },
+  "SSAnneB1FRoomsMachokeText": {
+   "kind": "text",
+   "src": "scripts/SSAnneB1FRooms.asm:83",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnneB1FRoomsMachokeText"},
+    {"cmd": "text_asm"}
+   ]
+  },
+  "SSAnneB1FRoomsSailor1BattleText": {
+   "kind": "text",
+   "src": "scripts/SSAnneB1FRooms.asm:90",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnneB1FRoomsSailor1BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnneB1FRoomsSailor1EndBattleText": {
+   "kind": "text",
+   "src": "scripts/SSAnneB1FRooms.asm:94",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnneB1FRoomsSailor1EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnneB1FRoomsSailor1AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/SSAnneB1FRooms.asm:98",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnneB1FRoomsSailor1AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnneB1FRoomsSailor2BattleText": {
+   "kind": "text",
+   "src": "scripts/SSAnneB1FRooms.asm:102",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnneB1FRoomsSailor2BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnneB1FRoomsSailor2EndBattleText": {
+   "kind": "text",
+   "src": "scripts/SSAnneB1FRooms.asm:106",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnneB1FRoomsSailor2EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnneB1FRoomsSailor2AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/SSAnneB1FRooms.asm:110",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnneB1FRoomsSailor2AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnneB1FRoomsSailor3BattleText": {
+   "kind": "text",
+   "src": "scripts/SSAnneB1FRooms.asm:114",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnneB1FRoomsSailor3BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnneB1FRoomsSailor3EndBattleText": {
+   "kind": "text",
+   "src": "scripts/SSAnneB1FRooms.asm:118",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnneB1FRoomsSailor3EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnneB1FRoomsSailor3AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/SSAnneB1FRooms.asm:122",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnneB1FRoomsSailor3AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnneB1FRoomsSailor4BattleText": {
+   "kind": "text",
+   "src": "scripts/SSAnneB1FRooms.asm:126",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnneB1FRoomsSailor4BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnneB1FRoomsSailor4EndBattleText": {
+   "kind": "text",
+   "src": "scripts/SSAnneB1FRooms.asm:130",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnneB1FRoomsSailor4EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnneB1FRoomsSailor4AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/SSAnneB1FRooms.asm:134",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnneB1FRoomsSailor4AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnneB1FRoomsSailor5BattleText": {
+   "kind": "text",
+   "src": "scripts/SSAnneB1FRooms.asm:138",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnneB1FRoomsSailor5BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnneB1FRoomsSailor5EndBattleText": {
+   "kind": "text",
+   "src": "scripts/SSAnneB1FRooms.asm:142",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnneB1FRoomsSailor5EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnneB1FRoomsSailor5AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/SSAnneB1FRooms.asm:146",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnneB1FRoomsSailor5AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnneB1FRoomsFisherBattleText": {
+   "kind": "text",
+   "src": "scripts/SSAnneB1FRooms.asm:150",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnneB1FRoomsFisherBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnneB1FRoomsFisherEndBattleText": {
+   "kind": "text",
+   "src": "scripts/SSAnneB1FRooms.asm:154",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnneB1FRoomsFisherEndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnneB1FRoomsFisherAfterBattleText": {
+   "kind": "text",
+   "src": "scripts/SSAnneB1FRooms.asm:158",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnneB1FRoomsFisherAfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnneB1FRoomsSuperNerdText": {
+   "kind": "text",
+   "src": "scripts/SSAnneB1FRooms.asm:162",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnneB1FRoomsSuperNerdText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_SSAnneB1FRoomsMachokeText": {
+   "kind": "text",
+   "src": "text/SSAnneB1FRooms.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "MACHOKE: Gwoh!"},
+    {"cmd": "line", "str": "Goggoh!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_SSAnneB1FRoomsSailor1BattleText": {
+   "kind": "text",
+   "src": "text/SSAnneB1FRooms.asm:7",
+   "commands": [
+    {"cmd": "text", "str": "You know what they"},
+    {"cmd": "line", "str": "say about sailors"},
+    {"cmd": "cont", "str": "and fighting!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SSAnneB1FRoomsSailor1EndBattleText": {
+   "kind": "text",
+   "src": "text/SSAnneB1FRooms.asm:13",
+   "commands": [
+    {"cmd": "text", "str": "Right!"},
+    {"cmd": "line", "str": "Good fight, mate!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_SSAnneB1FRoomsSailor1AfterBattleText": {
+   "kind": "text",
+   "src": "text/SSAnneB1FRooms.asm:18",
+   "commands": [
+    {"cmd": "text", "str": "Haha! Want to be"},
+    {"cmd": "line", "str": "a sailor, mate?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SSAnneB1FRoomsSailor2BattleText": {
+   "kind": "text",
+   "src": "text/SSAnneB1FRooms.asm:23",
+   "commands": [
+    {"cmd": "text", "str": "My sailor's pride"},
+    {"cmd": "line", "str": "is at stake!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SSAnneB1FRoomsSailor2EndBattleText": {
+   "kind": "text",
+   "src": "text/SSAnneB1FRooms.asm:28",
+   "commands": [
+    {"cmd": "text", "str": "Your"},
+    {"cmd": "line", "str": "spirit sank me!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_SSAnneB1FRoomsSailor2AfterBattleText": {
+   "kind": "text",
+   "src": "text/SSAnneB1FRooms.asm:33",
+   "commands": [
+    {"cmd": "text", "str": "Did you see the"},
+    {"cmd": "line", "str": "FISHING GURU in"},
+    {"cmd": "cont", "str": "VERMILION CITY?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SSAnneB1FRoomsSailor3BattleText": {
+   "kind": "text",
+   "src": "text/SSAnneB1FRooms.asm:39",
+   "commands": [
+    {"cmd": "text", "str": "Us sailors have"},
+    {"cmd": "line", "str": "POKéMON too!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SSAnneB1FRoomsSailor3EndBattleText": {
+   "kind": "text",
+   "src": "text/SSAnneB1FRooms.asm:44",
+   "commands": [
+    {"cmd": "text", "str": "OK, "},
+    {"cmd": "line", "str": "you're not bad."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_SSAnneB1FRoomsSailor3AfterBattleText": {
+   "kind": "text",
+   "src": "text/SSAnneB1FRooms.asm:49",
+   "commands": [
+    {"cmd": "text", "str": "We caught all our"},
+    {"cmd": "line", "str": "POKéMON while"},
+    {"cmd": "cont", "str": "out at sea!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SSAnneB1FRoomsSailor4BattleText": {
+   "kind": "text",
+   "src": "text/SSAnneB1FRooms.asm:55",
+   "commands": [
+    {"cmd": "text", "str": "I like feisty"},
+    {"cmd": "line", "str": "kids like you!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_SSAnneB1FRoomsSailor4EndBattleText": {
+   "kind": "text",
+   "src": "text/SSAnneB1FRooms.asm:60",
+   "commands": [
+    {"cmd": "text", "str": "Argh!"},
+    {"cmd": "line", "str": "Lost it!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_SSAnneB1FRoomsSailor4AfterBattleText": {
+   "kind": "text",
+   "src": "text/SSAnneB1FRooms.asm:65",
+   "commands": [
+    {"cmd": "text", "str": "Sea POKéMON live"},
+    {"cmd": "line", "str": "in deep water."},
+    {"cmd": "cont", "str": "You'll need a ROD!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SSAnneB1FRoomsSailor5BattleText": {
+   "kind": "text",
+   "src": "text/SSAnneB1FRooms.asm:71",
+   "commands": [
+    {"cmd": "text", "str": "Matey, you're"},
+    {"cmd": "line", "str": "walking the plank"},
+    {"cmd": "cont", "str": "if you lose!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SSAnneB1FRoomsSailor5EndBattleText": {
+   "kind": "text",
+   "src": "text/SSAnneB1FRooms.asm:77",
+   "commands": [
+    {"cmd": "text", "str": "Argh!"},
+    {"cmd": "line", "str": "Beaten by a kid!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_SSAnneB1FRoomsSailor5AfterBattleText": {
+   "kind": "text",
+   "src": "text/SSAnneB1FRooms.asm:82",
+   "commands": [
+    {"cmd": "text", "str": "Jellyfish some-"},
+    {"cmd": "line", "str": "times drift into"},
+    {"cmd": "cont", "str": "the ship."},
+    {"cmd": "done"}
+   ]
+  },
+  "_SSAnneB1FRoomsFisherBattleText": {
+   "kind": "text",
+   "src": "text/SSAnneB1FRooms.asm:88",
+   "commands": [
+    {"cmd": "text", "str": "Hello stranger!"},
+    {"cmd": "line", "str": "Stop and chat!"},
+    {"cmd": "para", "str": "All my POKéMON"},
+    {"cmd": "line", "str": "are from the sea!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SSAnneB1FRoomsFisherEndBattleText": {
+   "kind": "text",
+   "src": "text/SSAnneB1FRooms.asm:96",
+   "commands": [
+    {"cmd": "text", "str": "Darn!"},
+    {"cmd": "line", "str": "I let that one"},
+    {"cmd": "cont", "str": "get away!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_SSAnneB1FRoomsFisherAfterBattleText": {
+   "kind": "text",
+   "src": "text/SSAnneB1FRooms.asm:102",
+   "commands": [
+    {"cmd": "text", "str": "I was going to"},
+    {"cmd": "line", "str": "make you my"},
+    {"cmd": "cont", "str": "assistant too!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SSAnneB1FRoomsSuperNerdText": {
+   "kind": "text",
+   "src": "text/SSAnneB1FRooms.asm:108",
+   "commands": [
+    {"cmd": "text", "str": "My buddy, MACHOKE,"},
+    {"cmd": "line", "str": "is super strong!"},
+    {"cmd": "para", "str": "He has enough"},
+    {"cmd": "line", "str": "STRENGTH to move"},
+    {"cmd": "cont", "str": "big rocks!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

@@ -1,0 +1,74 @@
+{
+ "map": "CopycatsHouse1F",
+ "const": "COPYCATS_HOUSE_1F",
+ "textPointerTables": [
+  {
+   "label": "CopycatsHouse1F_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_COPYCATSHOUSE1F_MIDDLE_AGED_WOMAN", "label": "CopycatsHouse1FMiddleAgedWomanText", "kind": "text", "handler": "text"},
+    {"id": 2, "const": "TEXT_COPYCATSHOUSE1F_MIDDLE_AGED_MAN", "label": "CopycatsHouse1FMiddleAgedManText", "kind": "text", "handler": "text"},
+    {"id": 3, "const": "TEXT_COPYCATSHOUSE1F_CHANSEY", "label": "CopycatsHouse1FChanseyText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "CopycatsHouse1FMiddleAgedWomanText": {
+   "kind": "text",
+   "src": "scripts/CopycatsHouse1F.asm:11",
+   "commands": [
+    {"cmd": "text_far", "label": "_CopycatsHouse1FMiddleAgedWomanText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CopycatsHouse1FMiddleAgedManText": {
+   "kind": "text",
+   "src": "scripts/CopycatsHouse1F.asm:15",
+   "commands": [
+    {"cmd": "text_far", "label": "_CopycatsHouse1FMiddleAgedManText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CopycatsHouse1FChanseyText": {
+   "kind": "text",
+   "src": "scripts/CopycatsHouse1F.asm:19",
+   "commands": [
+    {"cmd": "text_far", "label": "_CopycatsHouse1FChanseyText"},
+    {"cmd": "text_asm"}
+   ]
+  },
+  "_CopycatsHouse1FMiddleAgedWomanText": {
+   "kind": "text",
+   "src": "text/CopycatsHouse1F.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "My daughter is so"},
+    {"cmd": "line", "str": "self-centered."},
+    {"cmd": "cont", "str": "She only has a"},
+    {"cmd": "cont", "str": "few friends."},
+    {"cmd": "done"}
+   ]
+  },
+  "_CopycatsHouse1FMiddleAgedManText": {
+   "kind": "text",
+   "src": "text/CopycatsHouse1F.asm:9",
+   "commands": [
+    {"cmd": "text", "str": "My daughter likes"},
+    {"cmd": "line", "str": "to mimic people."},
+    {"cmd": "para", "str": "Her mimicry has"},
+    {"cmd": "line", "str": "earned her the"},
+    {"cmd": "cont", "str": "nickname COPYCAT"},
+    {"cmd": "cont", "str": "around here!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CopycatsHouse1FChanseyText": {
+   "kind": "text",
+   "src": "text/CopycatsHouse1F.asm:19",
+   "commands": [
+    {"cmd": "text", "str": "CHANSEY: Chaan!"},
+    {"cmd": "line", "str": "Sii!"},
+    {"cmd": "text_end"}
+   ]
+  }
+ }
+}

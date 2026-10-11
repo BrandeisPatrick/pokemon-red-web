@@ -1,0 +1,25 @@
+{
+  "name": "SFX_PRESS_AB",
+  "title": "Press AB",
+  "kind": "sfx",
+  "bank": 3,
+  "id": 144,
+  "label": "SFX_Press_AB_3",
+  "channels": [
+    {
+      "channel": 5,
+      "label": "SFX_Press_AB_3_Ch5",
+      "entry": 0,
+      "bytes": 19,
+      "labels": {"SFX_Press_AB_3_Ch5": 0},
+      "commands": [
+        {"op": "duty_cycle", "duty": 2},
+        {"op": "square_note", "length": 0, "volume": 9, "fade": 1, "frequency": 1984},
+        {"op": "square_note", "length": 0, "volume": 8, "fade": 1, "frequency": 2000},
+        {"op": "square_note", "length": 0, "volume": 9, "fade": 1, "frequency": 1984},
+        {"op": "square_note", "length": 12, "volume": 10, "fade": 1, "frequency": 2000},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

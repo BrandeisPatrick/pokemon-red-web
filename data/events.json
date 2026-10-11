@@ -1,0 +1,151 @@
+{
+ "note": "trades: TradeMons (data/events/trades.asm) in TRADE_FOR_* order; the received mon gets the level of the mon given, OT \"TRAINER\" and a random OT id (InGameTrade_DoTrade). usedIn = map scripts that reference the constant. gameCornerPrizes: Red-version PrizeMenu tables, coins are Game Corner coins. slotMachine: reel strips (18 symbols each, top to bottom) and payouts for three of a kind (SlotRewardPointers order: 7, BAR, CHERRY, FISH, BIRD, MOUSE).",
+ "trades": [
+  {
+   "id": 0,
+   "const": "TRADE_FOR_TERRY",
+   "give": {"species": 33, "const": "NIDORINO"},
+   "get": {"species": 30, "const": "NIDORINA"},
+   "dialogSet": "TRADE_DIALOGSET_CASUAL",
+   "nickname": "TERRY",
+   "usedIn": ["Route11Gate2F"]
+  },
+  {
+   "id": 1,
+   "const": "TRADE_FOR_MARCEL",
+   "give": {"species": 63, "const": "ABRA"},
+   "get": {"species": 122, "const": "MR_MIME"},
+   "dialogSet": "TRADE_DIALOGSET_CASUAL",
+   "nickname": "MARCEL",
+   "usedIn": ["Route2TradeHouse"]
+  },
+  {
+   "id": 2,
+   "const": "TRADE_FOR_CHIKUCHIKU",
+   "give": {"species": 12, "const": "BUTTERFREE"},
+   "get": {"species": 15, "const": "BEEDRILL"},
+   "dialogSet": "TRADE_DIALOGSET_HAPPY",
+   "nickname": "CHIKUCHIKU",
+   "usedIn": [],
+   "unused": true
+  },
+  {
+   "id": 3,
+   "const": "TRADE_FOR_SAILOR",
+   "give": {"species": 77, "const": "PONYTA"},
+   "get": {"species": 86, "const": "SEEL"},
+   "dialogSet": "TRADE_DIALOGSET_CASUAL",
+   "nickname": "SAILOR",
+   "usedIn": ["CinnabarLabFossilRoom"]
+  },
+  {
+   "id": 4,
+   "const": "TRADE_FOR_DUX",
+   "give": {"species": 21, "const": "SPEAROW"},
+   "get": {"species": 83, "const": "FARFETCHD"},
+   "dialogSet": "TRADE_DIALOGSET_HAPPY",
+   "nickname": "DUX",
+   "usedIn": ["VermilionTradeHouse"]
+  },
+  {
+   "id": 5,
+   "const": "TRADE_FOR_MARC",
+   "give": {"species": 80, "const": "SLOWBRO"},
+   "get": {"species": 108, "const": "LICKITUNG"},
+   "dialogSet": "TRADE_DIALOGSET_CASUAL",
+   "nickname": "MARC",
+   "usedIn": ["Route18Gate2F"]
+  },
+  {
+   "id": 6,
+   "const": "TRADE_FOR_LOLA",
+   "give": {"species": 61, "const": "POLIWHIRL"},
+   "get": {"species": 124, "const": "JYNX"},
+   "dialogSet": "TRADE_DIALOGSET_EVOLUTION",
+   "nickname": "LOLA",
+   "usedIn": ["CeruleanTradeHouse"]
+  },
+  {
+   "id": 7,
+   "const": "TRADE_FOR_DORIS",
+   "give": {"species": 26, "const": "RAICHU"},
+   "get": {"species": 101, "const": "ELECTRODE"},
+   "dialogSet": "TRADE_DIALOGSET_EVOLUTION",
+   "nickname": "DORIS",
+   "usedIn": ["CinnabarLabTradeRoom"]
+  },
+  {
+   "id": 8,
+   "const": "TRADE_FOR_CRINKLES",
+   "give": {"species": 48, "const": "VENONAT"},
+   "get": {"species": 114, "const": "TANGELA"},
+   "dialogSet": "TRADE_DIALOGSET_HAPPY",
+   "nickname": "CRINKLES",
+   "usedIn": ["CinnabarLabTradeRoom"]
+  },
+  {
+   "id": 9,
+   "const": "TRADE_FOR_SPOT",
+   "give": {"species": 32, "const": "NIDORAN_M"},
+   "get": {"species": 29, "const": "NIDORAN_F"},
+   "dialogSet": "TRADE_DIALOGSET_HAPPY",
+   "nickname": "SPOT",
+   "usedIn": ["UndergroundPathRoute5"]
+  }
+ ],
+ "gameCornerPrizes": [
+  {
+   "menu": "PrizeMenuMon1Entries",
+   "prizes": [
+    {"kind": "pokemon", "species": 63, "const": "ABRA", "level": 9, "coins": 180},
+    {"kind": "pokemon", "species": 35, "const": "CLEFAIRY", "level": 8, "coins": 500},
+    {"kind": "pokemon", "species": 30, "const": "NIDORINA", "level": 17, "coins": 1200}
+   ]
+  },
+  {
+   "menu": "PrizeMenuMon2Entries",
+   "prizes": [
+    {"kind": "pokemon", "species": 147, "const": "DRATINI", "level": 18, "coins": 2800},
+    {"kind": "pokemon", "species": 123, "const": "SCYTHER", "level": 25, "coins": 5500},
+    {"kind": "pokemon", "species": 137, "const": "PORYGON", "level": 26, "coins": 9999}
+   ]
+  },
+  {
+   "menu": "PrizeMenuTMsEntries",
+   "prizes": [
+    {"kind": "item", "item": "TM_DRAGON_RAGE", "coins": 3300},
+    {"kind": "item", "item": "TM_HYPER_BEAM", "coins": 5500},
+    {"kind": "item", "item": "TM_SUBSTITUTE", "coins": 7700}
+   ]
+  }
+ ],
+ "slotMachine": {
+  "symbolsNote": "each wheel entry is a dw: low byte = OAM tile of the lower 16x8 half, high byte = upper half; each half is tiles (t, t+1) side by side from gfx/slots/red_slots_2.png loaded at vChars0 (SlotMachine_AnimWheel draws 3 visible symbols bottom-up).",
+  "symbols": {
+   "SLOTS7": {"lowerTiles": [0, 1], "upperTiles": [2, 3]},
+   "SLOTSBAR": {"lowerTiles": [4, 5], "upperTiles": [6, 7]},
+   "SLOTSCHERRY": {"lowerTiles": [8, 9], "upperTiles": [10, 11]},
+   "SLOTSFISH": {"lowerTiles": [12, 13], "upperTiles": [14, 15]},
+   "SLOTSBIRD": {"lowerTiles": [16, 17], "upperTiles": [18, 19]},
+   "SLOTSMOUSE": {"lowerTiles": [20, 21], "upperTiles": [22, 23]}
+  },
+  "wheels": [
+   [
+    "SLOTS7", "SLOTSMOUSE", "SLOTSFISH", "SLOTSBAR", "SLOTSCHERRY", "SLOTS7", "SLOTSFISH", "SLOTSBIRD",
+    "SLOTSBAR", "SLOTSCHERRY", "SLOTS7", "SLOTSMOUSE", "SLOTSBIRD", "SLOTSBAR", "SLOTSCHERRY", "SLOTS7",
+    "SLOTSMOUSE", "SLOTSFISH"
+   ],
+   [
+    "SLOTS7", "SLOTSFISH", "SLOTSCHERRY", "SLOTSBIRD", "SLOTSMOUSE", "SLOTSBAR", "SLOTSCHERRY", "SLOTSFISH",
+    "SLOTSBIRD", "SLOTSCHERRY", "SLOTSBAR", "SLOTSFISH", "SLOTSBIRD", "SLOTSCHERRY", "SLOTSMOUSE", "SLOTS7",
+    "SLOTSFISH", "SLOTSCHERRY"
+   ],
+   [
+    "SLOTS7", "SLOTSBIRD", "SLOTSFISH", "SLOTSCHERRY", "SLOTSMOUSE", "SLOTSBIRD", "SLOTSFISH", "SLOTSCHERRY",
+    "SLOTSMOUSE", "SLOTSBIRD", "SLOTSFISH", "SLOTSCHERRY", "SLOTSMOUSE", "SLOTSBIRD", "SLOTSBAR", "SLOTS7",
+    "SLOTSBIRD", "SLOTSFISH"
+   ]
+  ],
+  "payouts": {"SLOTS7": 300, "SLOTSBAR": 100, "SLOTSCHERRY": 8, "SLOTSFISH": 15, "SLOTSBIRD": 15, "SLOTSMOUSE": 15}
+ }
+}

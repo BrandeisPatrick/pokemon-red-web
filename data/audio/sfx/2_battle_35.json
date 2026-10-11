@@ -1,0 +1,53 @@
+{
+  "name": "SFX_BATTLE_35",
+  "title": "Battle 35",
+  "kind": "sfx",
+  "bank": 2,
+  "id": 228,
+  "label": "SFX_Battle_35",
+  "channels": [
+    {
+      "channel": 5,
+      "label": "SFX_Battle_35_Ch5",
+      "entry": 0,
+      "bytes": 16,
+      "labels": {"SFX_Battle_35_Ch5": 0},
+      "commands": [
+        {"op": "execute_music"},
+        {"op": "vibrato", "delay": 10, "depth": 2, "rate": 4},
+        {"op": "duty_cycle", "duty": 2},
+        {"op": "note_type", "speed": 10, "volume": 8, "fade": 7},
+        {"op": "octave", "octave": 5},
+        {"op": "note", "pitch": 8, "length": 8},
+        {"op": "octave", "octave": 6},
+        {"op": "note", "pitch": 6, "length": 4},
+        {"op": "note", "pitch": 4, "length": 4},
+        {"op": "octave", "octave": 5},
+        {"op": "note", "pitch": 8, "length": 8},
+        {"op": "sound_ret"}
+      ]
+    },
+    {
+      "channel": 6,
+      "label": "SFX_Battle_35_Ch6",
+      "entry": 0,
+      "bytes": 18,
+      "labels": {"SFX_Battle_35_Ch6": 0},
+      "commands": [
+        {"op": "execute_music"},
+        {"op": "vibrato", "delay": 10, "depth": 2, "rate": 3},
+        {"op": "duty_cycle", "duty": 2},
+        {"op": "note_type", "speed": 11, "volume": 6, "fade": 7},
+        {"op": "octave", "octave": 5},
+        {"op": "note", "pitch": 8, "length": 8},
+        {"op": "note_type", "speed": 10, "volume": 6, "fade": 7},
+        {"op": "octave", "octave": 6},
+        {"op": "note", "pitch": 6, "length": 4},
+        {"op": "note", "pitch": 4, "length": 4},
+        {"op": "octave", "octave": 5},
+        {"op": "note", "pitch": 8, "length": 8},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

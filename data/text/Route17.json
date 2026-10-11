@@ -1,0 +1,733 @@
+{
+ "map": "Route17",
+ "const": "ROUTE_17",
+ "textPointerTables": [
+  {
+   "label": "Route17_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_ROUTE17_BIKER1", "label": "Route17Biker1Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route17TrainerHeader0"},
+    {"id": 2, "const": "TEXT_ROUTE17_BIKER2", "label": "Route17Biker2Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route17TrainerHeader1"},
+    {"id": 3, "const": "TEXT_ROUTE17_BIKER3", "label": "Route17Biker3Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route17TrainerHeader2"},
+    {"id": 4, "const": "TEXT_ROUTE17_BIKER4", "label": "Route17Biker4Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route17TrainerHeader3"},
+    {"id": 5, "const": "TEXT_ROUTE17_BIKER5", "label": "Route17Biker5Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route17TrainerHeader4"},
+    {"id": 6, "const": "TEXT_ROUTE17_BIKER6", "label": "Route17Biker6Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route17TrainerHeader5"},
+    {"id": 7, "const": "TEXT_ROUTE17_BIKER7", "label": "Route17Biker7Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route17TrainerHeader6"},
+    {"id": 8, "const": "TEXT_ROUTE17_BIKER8", "label": "Route17Biker8Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route17TrainerHeader7"},
+    {"id": 9, "const": "TEXT_ROUTE17_BIKER9", "label": "Route17Biker9Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route17TrainerHeader8"},
+    {"id": 10, "const": "TEXT_ROUTE17_BIKER10", "label": "Route17Biker10Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route17TrainerHeader9"},
+    {"id": 11, "const": "TEXT_ROUTE17_NOTICE_SIGN1", "label": "Route17NoticeSign1Text", "kind": "text", "handler": "text"},
+    {"id": 12, "const": "TEXT_ROUTE17_TRAINER_TIPS1", "label": "Route17TrainerTips1Text", "kind": "text", "handler": "text"},
+    {"id": 13, "const": "TEXT_ROUTE17_TRAINER_TIPS2", "label": "Route17TrainerTips2Text", "kind": "text", "handler": "text"},
+    {"id": 14, "const": "TEXT_ROUTE17_SIGN", "label": "Route17SignText", "kind": "text", "handler": "text"},
+    {"id": 15, "const": "TEXT_ROUTE17_NOTICE_SIGN2", "label": "Route17NoticeSign2Text", "kind": "text", "handler": "text"},
+    {"id": 16, "const": "TEXT_ROUTE17_CYCLING_ROAD_ENDS_SIGN", "label": "Route17CyclingRoadEndsSignText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "Route17Biker1Text": {
+   "kind": "asm",
+   "src": "scripts/Route17.asm:60",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route17TrainerHeader0"
+  },
+  "Route17Biker1BattleText": {
+   "kind": "text",
+   "src": "scripts/Route17.asm:66",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route17Biker1BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route17Biker1EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route17.asm:70",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route17Biker1EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route17Biker1AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route17.asm:74",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route17Biker1AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route17Biker2Text": {
+   "kind": "asm",
+   "src": "scripts/Route17.asm:78",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route17TrainerHeader1"
+  },
+  "Route17Biker2BattleText": {
+   "kind": "text",
+   "src": "scripts/Route17.asm:84",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route17Biker2BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route17Biker2EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route17.asm:88",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route17Biker2EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route17Biker2AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route17.asm:92",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route17Biker2AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route17Biker3Text": {
+   "kind": "asm",
+   "src": "scripts/Route17.asm:96",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route17TrainerHeader2"
+  },
+  "Route17Biker3BattleText": {
+   "kind": "text",
+   "src": "scripts/Route17.asm:102",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route17Biker3BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route17Biker3EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route17.asm:106",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route17Biker3EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route17Biker3AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route17.asm:110",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route17Biker3AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route17Biker4Text": {
+   "kind": "asm",
+   "src": "scripts/Route17.asm:114",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route17TrainerHeader3"
+  },
+  "Route17Biker4BattleText": {
+   "kind": "text",
+   "src": "scripts/Route17.asm:120",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route17Biker4BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route17Biker4EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route17.asm:124",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route17Biker4EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route17Biker4AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route17.asm:128",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route17Biker4AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route17Biker5Text": {
+   "kind": "asm",
+   "src": "scripts/Route17.asm:132",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route17TrainerHeader4"
+  },
+  "Route17Biker5BattleText": {
+   "kind": "text",
+   "src": "scripts/Route17.asm:138",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route17Biker5BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route17Biker5EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route17.asm:142",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route17Biker5EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route17Biker5AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route17.asm:146",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route17Biker5AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route17Biker6Text": {
+   "kind": "asm",
+   "src": "scripts/Route17.asm:150",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route17TrainerHeader5"
+  },
+  "Route17Biker6BattleText": {
+   "kind": "text",
+   "src": "scripts/Route17.asm:156",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route17Biker6BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route17Biker6EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route17.asm:160",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route17Biker6EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route17Biker6AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route17.asm:164",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route17Biker6AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route17Biker7Text": {
+   "kind": "asm",
+   "src": "scripts/Route17.asm:168",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route17TrainerHeader6"
+  },
+  "Route17Biker7BattleText": {
+   "kind": "text",
+   "src": "scripts/Route17.asm:174",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route17Biker7BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route17Biker7EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route17.asm:178",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route17Biker7EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route17Biker7AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route17.asm:182",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route17Biker7AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route17Biker8Text": {
+   "kind": "asm",
+   "src": "scripts/Route17.asm:186",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route17TrainerHeader7"
+  },
+  "Route17Biker8BattleText": {
+   "kind": "text",
+   "src": "scripts/Route17.asm:192",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route17Biker8BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route17Biker8EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route17.asm:196",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route17Biker8EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route17Biker8AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route17.asm:200",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route17Biker8AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route17Biker9Text": {
+   "kind": "asm",
+   "src": "scripts/Route17.asm:204",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route17TrainerHeader8"
+  },
+  "Route17Biker9BattleText": {
+   "kind": "text",
+   "src": "scripts/Route17.asm:210",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route17Biker9BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route17Biker9EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route17.asm:214",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route17Biker9EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route17Biker9AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route17.asm:218",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route17Biker9AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route17Biker10Text": {
+   "kind": "asm",
+   "src": "scripts/Route17.asm:222",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route17TrainerHeader9"
+  },
+  "Route17Biker10BattleText": {
+   "kind": "text",
+   "src": "scripts/Route17.asm:228",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route17Biker10BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route17Biker10EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route17.asm:232",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route17Biker10EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route17Biker10AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route17.asm:236",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route17Biker10AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route17NoticeSign1Text": {
+   "kind": "text",
+   "src": "scripts/Route17.asm:240",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route17NoticeSign1Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route17TrainerTips1Text": {
+   "kind": "text",
+   "src": "scripts/Route17.asm:244",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route17TrainerTips1Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route17TrainerTips2Text": {
+   "kind": "text",
+   "src": "scripts/Route17.asm:248",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route17TrainerTips2Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route17SignText": {
+   "kind": "text",
+   "src": "scripts/Route17.asm:252",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route17SignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route17NoticeSign2Text": {
+   "kind": "text",
+   "src": "scripts/Route17.asm:256",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route17NoticeSign2Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route17CyclingRoadEndsSignText": {
+   "kind": "text",
+   "src": "scripts/Route17.asm:260",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route17CyclingRoadEndsSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_Route17Biker1BattleText": {
+   "kind": "text",
+   "src": "text/Route17.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "There's no money"},
+    {"cmd": "line", "str": "in fighting kids!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route17Biker1EndBattleText": {
+   "kind": "text",
+   "src": "text/Route17.asm:7",
+   "commands": [
+    {"cmd": "text", "str": "Burned"},
+    {"cmd": "line", "str": "out!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route17Biker1AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route17.asm:12",
+   "commands": [
+    {"cmd": "text", "str": "Good stuff is"},
+    {"cmd": "line", "str": "lying around on"},
+    {"cmd": "cont", "str": "CYCLING ROAD!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route17Biker2BattleText": {
+   "kind": "text",
+   "src": "text/Route17.asm:18",
+   "commands": [
+    {"cmd": "text", "str": "What do you want,"},
+    {"cmd": "line", "str": "kiddo?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route17Biker2EndBattleText": {
+   "kind": "text",
+   "src": "text/Route17.asm:23",
+   "commands": [
+    {"cmd": "text", "str": "Whoo!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route17Biker2AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route17.asm:27",
+   "commands": [
+    {"cmd": "text", "str": "I could belly-"},
+    {"cmd": "line", "str": "bump you outta"},
+    {"cmd": "cont", "str": "here!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route17Biker3BattleText": {
+   "kind": "text",
+   "src": "text/Route17.asm:33",
+   "commands": [
+    {"cmd": "text", "str": "You heading to"},
+    {"cmd": "line", "str": "FUCHSIA?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route17Biker3EndBattleText": {
+   "kind": "text",
+   "src": "text/Route17.asm:38",
+   "commands": [
+    {"cmd": "text", "str": "Crash and"},
+    {"cmd": "line", "str": "burn!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route17Biker3AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route17.asm:43",
+   "commands": [
+    {"cmd": "text", "str": "I love racing"},
+    {"cmd": "line", "str": "downhill!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route17Biker4BattleText": {
+   "kind": "text",
+   "src": "text/Route17.asm:48",
+   "commands": [
+    {"cmd": "text", "str": "We're BIKERs!"},
+    {"cmd": "line", "str": "Highway stars!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route17Biker4EndBattleText": {
+   "kind": "text",
+   "src": "text/Route17.asm:53",
+   "commands": [
+    {"cmd": "text", "str": "Smoked!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route17Biker4AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route17.asm:57",
+   "commands": [
+    {"cmd": "text", "str": "Are you looking"},
+    {"cmd": "line", "str": "for adventure?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route17Biker5BattleText": {
+   "kind": "text",
+   "src": "text/Route17.asm:62",
+   "commands": [
+    {"cmd": "text", "str": "Let VOLTORB"},
+    {"cmd": "line", "str": "electrify you!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route17Biker5EndBattleText": {
+   "kind": "text",
+   "src": "text/Route17.asm:67",
+   "commands": [
+    {"cmd": "text", "str": "Grounded"},
+    {"cmd": "line", "str": "out!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route17Biker5AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route17.asm:72",
+   "commands": [
+    {"cmd": "text", "str": "I got my VOLTORB"},
+    {"cmd": "line", "str": "at the abandoned"},
+    {"cmd": "cont", "str": "POWER PLANT."},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route17Biker6BattleText": {
+   "kind": "text",
+   "src": "text/Route17.asm:78",
+   "commands": [
+    {"cmd": "text", "str": "My POKéMON won't"},
+    {"cmd": "line", "str": "evolve! Why?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route17Biker6EndBattleText": {
+   "kind": "text",
+   "src": "text/Route17.asm:83",
+   "commands": [
+    {"cmd": "text", "str": "Why,"},
+    {"cmd": "line", "str": "you!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route17Biker6AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route17.asm:88",
+   "commands": [
+    {"cmd": "text", "str": "Maybe some POKéMON"},
+    {"cmd": "line", "str": "need element"},
+    {"cmd": "cont", "str": "STONEs to evolve."},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route17Biker7BattleText": {
+   "kind": "text",
+   "src": "text/Route17.asm:94",
+   "commands": [
+    {"cmd": "text", "str": "I need a little"},
+    {"cmd": "line", "str": "exercise!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route17Biker7EndBattleText": {
+   "kind": "text",
+   "src": "text/Route17.asm:99",
+   "commands": [
+    {"cmd": "text", "str": "Whew!"},
+    {"cmd": "line", "str": "Good workout!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route17Biker7AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route17.asm:104",
+   "commands": [
+    {"cmd": "text", "str": "I'm sure I lost"},
+    {"cmd": "line", "str": "weight there!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route17Biker8BattleText": {
+   "kind": "text",
+   "src": "text/Route17.asm:109",
+   "commands": [
+    {"cmd": "text", "str": "Be a rebel!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route17Biker8EndBattleText": {
+   "kind": "text",
+   "src": "text/Route17.asm:113",
+   "commands": [
+    {"cmd": "text", "str": "Aaaargh!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route17Biker8AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route17.asm:117",
+   "commands": [
+    {"cmd": "text", "str": "Be ready to fight"},
+    {"cmd": "line", "str": "for your beliefs!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route17Biker9BattleText": {
+   "kind": "text",
+   "src": "text/Route17.asm:122",
+   "commands": [
+    {"cmd": "text", "str": "Nice BIKE!"},
+    {"cmd": "line", "str": "How's it handle?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route17Biker9EndBattleText": {
+   "kind": "text",
+   "src": "text/Route17.asm:127",
+   "commands": [
+    {"cmd": "text", "str": "Shoot!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route17Biker9AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route17.asm:131",
+   "commands": [
+    {"cmd": "text", "str": "The slope makes"},
+    {"cmd": "line", "str": "it hard to steer!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route17Biker10BattleText": {
+   "kind": "text",
+   "src": "text/Route17.asm:136",
+   "commands": [
+    {"cmd": "text", "str": "Get lost kid!"},
+    {"cmd": "line", "str": "I'm bushed!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route17Biker10EndBattleText": {
+   "kind": "text",
+   "src": "text/Route17.asm:141",
+   "commands": [
+    {"cmd": "text", "str": "Are you"},
+    {"cmd": "line", "str": "satisfied?"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route17Biker10AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route17.asm:146",
+   "commands": [
+    {"cmd": "text", "str": "I need to catch"},
+    {"cmd": "line", "str": "a few Zs!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route17NoticeSign1Text": {
+   "kind": "text",
+   "src": "text/Route17.asm:151",
+   "commands": [
+    {"cmd": "text", "str": "It's a notice!"},
+    {"cmd": "para", "str": "Watch out for"},
+    {"cmd": "line", "str": "discarded items!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route17TrainerTips1Text": {
+   "kind": "text",
+   "src": "text/Route17.asm:158",
+   "commands": [
+    {"cmd": "text", "str": "TRAINER TIPS"},
+    {"cmd": "para", "str": "All POKéMON are"},
+    {"cmd": "line", "str": "unique."},
+    {"cmd": "para", "str": "Even POKéMON of"},
+    {"cmd": "line", "str": "the same type and"},
+    {"cmd": "cont", "str": "level grow at"},
+    {"cmd": "cont", "str": "different rates."},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route17TrainerTips2Text": {
+   "kind": "text",
+   "src": "text/Route17.asm:170",
+   "commands": [
+    {"cmd": "text", "str": "TRAINER TIPS"},
+    {"cmd": "para", "str": "Press the A or B"},
+    {"cmd": "line", "str": "Button to stay in"},
+    {"cmd": "cont", "str": "place while on a"},
+    {"cmd": "cont", "str": "slope."},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route17SignText": {
+   "kind": "text",
+   "src": "text/Route17.asm:179",
+   "commands": [
+    {"cmd": "text", "str": "ROUTE 17"},
+    {"cmd": "line", "str": "CELADON CITY -"},
+    {"cmd": "cont", "str": "FUCHSIA CITY"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route17NoticeSign2Text": {
+   "kind": "text",
+   "src": "text/Route17.asm:185",
+   "commands": [
+    {"cmd": "text", "str": "It's a notice!"},
+    {"cmd": "para", "str": "Don't throw the"},
+    {"cmd": "line", "str": "game, throw POKé"},
+    {"cmd": "cont", "str": "BALLs instead!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route17CyclingRoadEndsSignText": {
+   "kind": "text",
+   "src": "text/Route17.asm:193",
+   "commands": [
+    {"cmd": "text", "str": "CYCLING ROAD"},
+    {"cmd": "line", "str": "Slope ends here!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

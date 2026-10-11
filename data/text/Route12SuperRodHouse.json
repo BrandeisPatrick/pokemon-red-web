@@ -1,0 +1,143 @@
+{
+ "map": "Route12SuperRodHouse",
+ "const": "ROUTE_12_SUPER_ROD_HOUSE",
+ "textPointerTables": [
+  {
+   "label": "Route12SuperRodHouse_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_ROUTE12SUPERRODHOUSE_FISHING_GURU", "label": "Route12SuperRodHouseFishingGuruText", "kind": "asm", "handler": "asm"}
+   ]
+  }
+ ],
+ "texts": {
+  "Route12SuperRodHouseFishingGuruText": {
+   "kind": "asm",
+   "src": "scripts/Route12SuperRodHouse.asm:9",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["Route12SuperRodHouseFishingGuruText.DoYouLikeToFishText", "Route12SuperRodHouseFishingGuruText.ReceivedSuperRodText", "Route12SuperRodHouseFishingGuruText.NoRoomText", "Route12SuperRodHouseFishingGuruText.ThatsDisappointingText", "Route12SuperRodHouseFishingGuruText.TryFishingText"]
+  },
+  "Route12SuperRodHouseFishingGuruText.DoYouLikeToFishText": {
+   "kind": "text",
+   "src": "scripts/Route12SuperRodHouse.asm:39",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route12SuperRodHouseFishingGuruDoYouLikeToFishText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route12SuperRodHouseFishingGuruText.ReceivedSuperRodText": {
+   "kind": "text",
+   "src": "scripts/Route12SuperRodHouse.asm:43",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route12SuperRodHouseFishingGuruReceivedSuperRodText"},
+    {"cmd": "sound", "sound": "sound_get_item_1"},
+    {"cmd": "text_far", "label": "_Route12SuperRodHouseFishingGuruFishingWayOfLifeText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route12SuperRodHouseFishingGuruText.ThatsDisappointingText": {
+   "kind": "text",
+   "src": "scripts/Route12SuperRodHouse.asm:49",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route12SuperRodHouseFishingGuruThatsDisappointingText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route12SuperRodHouseFishingGuruText.TryFishingText": {
+   "kind": "text",
+   "src": "scripts/Route12SuperRodHouse.asm:53",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route12SuperRodHouseFishingGuruTryFishingText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route12SuperRodHouseFishingGuruText.NoRoomText": {
+   "kind": "text",
+   "src": "scripts/Route12SuperRodHouse.asm:57",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route12SuperRodHouseFishingGuruNoRoomText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_Route12SuperRodHouseFishingGuruDoYouLikeToFishText": {
+   "kind": "text",
+   "src": "text/Route12SuperRodHouse.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "I'm the FISHING"},
+    {"cmd": "line", "str": "GURU's brother!"},
+    {"cmd": "para", "str": "I simply Looove"},
+    {"cmd": "line", "str": "fishing!"},
+    {"cmd": "para", "str": "Do you like to"},
+    {"cmd": "line", "str": "fish?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route12SuperRodHouseFishingGuruReceivedSuperRodText": {
+   "kind": "text",
+   "src": "text/Route12SuperRodHouse.asm:13",
+   "commands": [
+    {"cmd": "text", "str": "Grand! I like"},
+    {"cmd": "line", "str": "your style!"},
+    {"cmd": "para", "str": "Take this and"},
+    {"cmd": "line", "str": "fish, young one!"},
+    {"cmd": "para", "str": "{PLAYER} received"},
+    {"cmd": "line", "str": "a "},
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_Route12SuperRodHouseFishingGuruFishingWayOfLifeText": {
+   "kind": "text",
+   "src": "text/Route12SuperRodHouse.asm:26",
+   "commands": [
+    {"cmd": "text", "str": ""},
+    {"cmd": "para", "str": "Fishing is a way"},
+    {"cmd": "line", "str": "of life!"},
+    {"cmd": "para", "str": "From the seas to"},
+    {"cmd": "line", "str": "rivers, go out"},
+    {"cmd": "cont", "str": "and land the big"},
+    {"cmd": "cont", "str": "one!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route12SuperRodHouseFishingGuruThatsDisappointingText": {
+   "kind": "text",
+   "src": "text/Route12SuperRodHouse.asm:38",
+   "commands": [
+    {"cmd": "text", "str": "Oh... That's so"},
+    {"cmd": "line", "str": "disappointing..."},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route12SuperRodHouseFishingGuruTryFishingText": {
+   "kind": "text",
+   "src": "text/Route12SuperRodHouse.asm:43",
+   "commands": [
+    {"cmd": "text", "str": "Hello there,"},
+    {"cmd": "line", "str": "{PLAYER}!"},
+    {"cmd": "para", "str": "Use the SUPER ROD"},
+    {"cmd": "line", "str": "in any water!"},
+    {"cmd": "cont", "str": "You can catch"},
+    {"cmd": "cont", "str": "different kinds"},
+    {"cmd": "cont", "str": "of POKéMON."},
+    {"cmd": "para", "str": "Try fishing"},
+    {"cmd": "line", "str": "wherever you can!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route12SuperRodHouseFishingGuruNoRoomText": {
+   "kind": "text",
+   "src": "text/Route12SuperRodHouse.asm:57",
+   "commands": [
+    {"cmd": "text", "str": "Oh no!"},
+    {"cmd": "para", "str": "I had a gift for"},
+    {"cmd": "line", "str": "you, but you have"},
+    {"cmd": "cont", "str": "no room for it!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

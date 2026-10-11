@@ -1,0 +1,34 @@
+{
+ "map": "SSAnne3F",
+ "const": "SS_ANNE_3F",
+ "textPointerTables": [
+  {
+   "label": "SSAnne3F_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_SSANNE3F_SAILOR", "label": "SSAnne3FSailorText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "SSAnne3FSailorText": {
+   "kind": "text",
+   "src": "scripts/SSAnne3F.asm:9",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnne3FSailorText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_SSAnne3FSailorText": {
+   "kind": "text",
+   "src": "text/SSAnne3F.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Our CAPTAIN is a"},
+    {"cmd": "line", "str": "sword master!"},
+    {"cmd": "para", "str": "He even teaches"},
+    {"cmd": "line", "str": "CUT to POKéMON!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

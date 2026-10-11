@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pokémon Red — audio test</title>
+<style>
+  :root {
+    --bg: #101418; --panel: #1a2027; --line: #2c343d; --text: #dfe6ec; --muted: #8a96a3;
+    --accent: #9bbc0f; --accent2: #e0f8d0; --warn: #f0a050; --err: #f06060;
+    --ch1: #9bbc0f; --ch2: #4fc3f7; --ch3: #ffb74d; --ch4: #e57373;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 14px/1.4 system-ui, sans-serif; }
+  header { position: sticky; top: 0; z-index: 2; background: var(--panel); border-bottom: 1px solid var(--line);
+           padding: 10px 16px; display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; }
+  h1 { font-size: 16px; margin: 0 8px 0 0; color: var(--accent2); }
+  main { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; padding: 16px; }
+  @media (max-width: 900px) { main { grid-template-columns: 1fr; } }
+  section { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 12px; min-width: 0; }
+  section h2 { font-size: 14px; margin: 0 0 8px; color: var(--accent2); display: flex; gap: 8px; align-items: center; }
+  button { background: #26303a; color: var(--text); border: 1px solid #3a4652; border-radius: 5px; padding: 3px 9px;
+           font: inherit; cursor: pointer; }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: var(--accent); color: #0f380f; border-color: var(--accent); font-weight: 600; }
+  input[type=search], input[type=number], select { background: #0e1216; color: var(--text); border: 1px solid #3a4652;
+           border-radius: 5px; padding: 3px 6px; font: inherit; }
+  label { color: var(--muted); display: inline-flex; gap: 6px; align-items: center; }
+  .list { max-height: 420px; overflow: auto; border-top: 1px solid var(--line); }
+  .row { display: grid; grid-template-columns: 1fr auto auto; gap: 8px; align-items: center; padding: 3px 2px;
+         border-bottom: 1px solid #222a32; }
+  .row .name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .row .meta { color: var(--muted); font: 12px ui-monospace, monospace; }
+  .row.playing .name { color: var(--accent); }
+  .tag { font-size: 11px; color: var(--muted); border: 1px solid #3a4652; border-radius: 4px; padding: 0 4px; margin-left: 4px; }
+  #viz { width: 100%; height: 150px; display: block; background: #0b0f12; border-radius: 6px; }
+  .channels { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-top: 8px; }
+  .chan { background: #0e1216; border: 1px solid var(--line); border-radius: 6px; padding: 6px; font: 12px ui-monospace, monospace; }
+  .chan b { display: block; margin-bottom: 2px; }
+  .bar { height: 6px; background: #222a32; border-radius: 3px; overflow: hidden; margin-top: 4px; }
+  .bar > i { display: block; height: 100%; width: 0; }
+  #status { color: var(--muted); font: 12px ui-monospace, monospace; }
+  #log { font: 12px ui-monospace, monospace; color: var(--muted); max-height: 120px; overflow: auto; white-space: pre-wrap; }
+  #log .warn { color: var(--warn); } #log .err { color: var(--err); }
+  .full { grid-column: 1 / -1; }
+  .controls { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; margin-bottom: 8px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Pokémon Red — audio test</h1>
+  <button id="start" class="primary">Start audio</button>
+  <label>Volume <input id="volume" type="range" min="0" max="1" step="0.01" value="0.8"></label>
+  <button id="mute">Mute</button>
+  <button id="stop">Stop all</button>
+  <button id="fade">Fade out</button>
+  <label><input id="loop" type="checkbox" checked> loop music</label>
+  <span id="status">loading index…</span>
+</header>
+<main>
+  <section class="full">
+    <h2>Output</h2>
+    <canvas id="viz" width="1200" height="150"></canvas>
+    <div class="channels" id="channels"></div>
+    <div class="controls" style="margin-top:8px">
+      <span>Hardware channels:</span>
+      <label><input type="checkbox" class="chmute" data-ch="0" checked> CH1 pulse</label>
+      <label><input type="checkbox" class="chmute" data-ch="1" checked> CH2 pulse</label>
+      <label><input type="checkbox" class="chmute" data-ch="2" checked> CH3 wave</label>
+      <label><input type="checkbox" class="chmute" data-ch="3" checked> CH4 noise</label>
+      <label><input id="alarm" type="checkbox"> low-health alarm (bank 2 music)</label>
+      <label><input id="duck" type="checkbox"> duck music (Pokédex / status)</label>
+    </div>
+  </section>
+
+  <section>
+    <h2>Music <span class="tag" id="musicCount"></span></h2>
+    <div class="controls">
+      <input id="musicFilter" type="search" placeholder="filter songs">
+      <label>Map <select id="mapSelect"><option value="">— map → song —</option></select></label>
+    </div>
+    <div class="list" id="musicList"></div>
+  </section>
+
+  <section>
+    <h2>Sound effects <span class="tag" id="sfxCount"></span></h2>
+    <div class="controls">
+      <input id="sfxFilter" type="search" placeholder="filter SFX">
+      <label>Bank <select id="sfxBank"><option value="1">1 (overworld)</option><option value="2">2 (battle)</option><option value="3">3 (misc)</option></select></label>
+      <label><input id="showCries" type="checkbox"> cry headers</label>
+      <label><input id="showDrums" type="checkbox"> drums</label>
+    </div>
+    <div class="list" id="sfxList"></div>
+  </section>
+
+  <section>
+    <h2>Pokémon cries</h2>
+    <div class="controls">
+      <label>Dex # <input id="cryNum" type="number" min="1" max="151" value="25" style="width:5em"></label>
+      <select id="crySelect"></select>
+      <button id="cryPlay" class="primary">Play cry</button>
+      <button id="cryRandom">Random</button>
+      <span id="cryInfo" class="meta"></span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Log</h2>
+    <div id="log"></div>
+  </section>
+</main>
+
+<script type="module">
+import { createAudio } from './src/audio/audio.js';
+
+const audio = createAudio({ volume: 0.8 });
+window.audio = audio; // debugging
+const $ = (id) => document.getElementById(id);
+const logEl = $('log');
+function log(msg, cls = '') {
+  const d = document.createElement('div');
+  if (cls) d.className = cls;
+  d.textContent = msg;
+  logEl.prepend(d);
+}
+audio.onWarning((m) => log('warn: ' + m, 'warn'));
+window.addEventListener('error', (e) => log('error: ' + e.message, 'err'));
+window.addEventListener('unhandledrejection', (e) => log('error: ' + (e.reason && e.reason.message || e.reason), 'err'));
+
+const hex = (n) => n == null ? '—' : '$' + n.toString(16).toUpperCase().padStart(2, '0');
+let playingRow = null;
+
+async function start() {
+  if (audio.isReady) return true;
+  $('status').textContent = 'starting…';
+  await audio.init();
+  audio.setVolume(+$('volume').value);
+  $('status').textContent = `running @ ${audio.context.sampleRate} Hz`;
+  $('start').textContent = 'Audio on';
+  $('start').disabled = true;
+  audio.onState(drawChannels);
+  requestAnimationFrame(drawViz);
+  return true;
+}
+
+function row(listEl, title, meta, tags, onPlay, onStop) {
+  const r = document.createElement('div');
+  r.className = 'row';
+  const n = document.createElement('div');
+  n.className = 'name';
+  n.textContent = title;
+  for (const t of tags) {
+    const s = document.createElement('span');
+    s.className = 'tag';
+    s.textContent = t;
+    n.append(s);
+  }
+  const m = document.createElement('div');
+  m.className = 'meta';
+  m.textContent = meta;
+  const b = document.createElement('div');
+  const play = document.createElement('button');
+  play.textContent = 'Play';
+  play.addEventListener('click', async () => {
+    const started = start(); // synchronous part creates the AudioContext inside the gesture
+    await started;
+    if (playingRow) playingRow.classList.remove('playing');
+    playingRow = r;
+    r.classList.add('playing');
+    await onPlay();
+  });
+  b.append(play);
+  if (onStop) {
+    const stop = document.createElement('button');
+    stop.textContent = 'Stop';
+    stop.style.marginLeft = '4px';
+    stop.addEventListener('click', () => { onStop(); r.classList.remove('playing'); });
+    b.append(stop);
+  }
+  r.append(n, m, b);
+  r.dataset.search = (title + ' ' + meta + ' ' + tags.join(' ')).toLowerCase();
+  listEl.append(r);
+  return r;
+}
+
+function filterList(listEl, q) {
+  q = q.trim().toLowerCase();
+  for (const r of listEl.children) r.style.display = !q || r.dataset.search.includes(q) ? '' : 'none';
+}
+
+function buildMusic(lib) {
+  const list = $('musicList');
+  list.textContent = '';
+  const songs = [...lib.index.music, ...lib.index.variants.map((v) => ({ ...v, isVariant: true }))];
+  for (const e of songs) {
+    const tags = [`bank ${e.bank}`];
+    if (e.unused) tags.push('unused');
+    if (e.isVariant) tags.push('variant');
+    row(list, e.title, `${e.name} ${hex(e.id)}`, tags,
+      () => audio.playMusic(e.name, { loop: $('loop').checked }).then((ok) => log(`music ${e.name}${ok ? '' : ' failed'}`)),
+      () => audio.stopMusic());
+  }
+  $('musicCount').textContent = songs.length;
+  const maps = $('mapSelect');
+  for (const m of lib.index.maps) {
+    const o = document.createElement('option');
+    o.value = m.map;
+    o.textContent = `${m.map} → ${m.music.replace('MUSIC_', '')}`;
+    maps.append(o);
+  }
+  maps.addEventListener('change', async () => {
+    if (!maps.value) return;
+    const song = audio.songForMap(maps.value);
+    await start();
+    log(`map ${maps.value} plays ${song.name} (bank ${song.bank}, id ${hex(song.id)})`);
+    audio.playMusic(song, { loop: $('loop').checked, fade: audio.state && audio.state.music ? 10 : 0 });
+  });
+}
+
+function buildSfx(lib) {
+  const list = $('sfxList');
+  list.textContent = '';
+  const bank = +$('sfxBank').value;
+  let count = 0;
+  for (const e of lib.index.sfx) {
+    if (e.bank !== bank) continue;
+    if (e.category === 'cry' && !$('showCries').checked) continue;
+    if (e.category === 'noise_instrument' && !$('showDrums').checked) continue;
+    const tags = [e.category];
+    if (e.synthetic) tags.push('synthetic');
+    if (e.unused) tags.push('unused');
+    const spec = `${e.bank}:${e.name}`;
+    row(list, e.title, `${e.name} ${hex(e.id)} ch${e.channels.join(',')}`, tags,
+      () => {
+        const fn = e.category === 'music_channel' ? audio.playMusic(spec) : audio.playSfx(spec);
+        return fn.then((ok) => log(`sfx ${spec} ${ok ? 'finished' : 'did not play'}`));
+      },
+      () => audio.stopMusic()); // SFX_STOP_ALL_MUSIC: the engine's only stop
+    count++;
+  }
+  $('sfxCount').textContent = count;
+  filterList(list, $('sfxFilter').value);
+}
+
+function buildCries(lib) {
+  const sel = $('crySelect');
+  const rows = lib.cries.filter((c) => c.dex != null).sort((a, b) => a.dex - b.dex);
+  for (const c of rows) {
+    const o = document.createElement('option');
+    o.value = c.dex;
+    o.textContent = `#${String(c.dex).padStart(3, '0')} ${c.name}`;
+    sel.append(o);
+  }
+  const sync = (dex) => {
+    $('cryNum').value = dex;
+    sel.value = dex;
+    const c = lib.cry(+dex);
+    $('cryInfo').textContent = c ? `${c.species} · base ${c.sfx} · pitch ${hex(c.pitch)} · length ${hex(c.length)} · internal #${c.index}` : '';
+  };
+  sel.addEventListener('change', () => sync(sel.value));
+  $('cryNum').addEventListener('input', () => sync($('cryNum').value));
+  const play = async () => {
+    await start();
+    const dex = +$('cryNum').value;
+    const ok = await audio.playCry(dex);
+    log(`cry #${dex} ${ok ? 'finished' : 'did not play'}`);
+  };
+  $('cryPlay').addEventListener('click', play);
+  $('cryRandom').addEventListener('click', () => { sync(1 + Math.floor(Math.random() * 151)); play(); });
+  sync(25);
+}
+
+// ---- visualizer ------------------------------------------------------------------------
+const NOTE = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
+const noteName = (hz) => {
+  if (!(hz > 0) || !isFinite(hz)) return '—';
+  const n = Math.round(12 * Math.log2(hz / 440) + 69);
+  return NOTE[((n % 12) + 12) % 12] + (Math.floor(n / 12) - 1);
+};
+const colors = ['--ch1', '--ch2', '--ch3', '--ch4'].map((v) => getComputedStyle(document.documentElement).getPropertyValue(v).trim());
+const chanEls = [];
+for (let i = 0; i < 4; i++) {
+  const d = document.createElement('div');
+  d.className = 'chan';
+  d.innerHTML = `<b style="color:${colors[i]}">${['CH1 pulse+sweep', 'CH2 pulse', 'CH3 wave', 'CH4 noise'][i]}</b><span></span><div class="bar"><i style="background:${colors[i]}"></i></div>`;
+  $('channels').append(d);
+  chanEls.push(d);
+}
+function drawChannels(st) {
+  st.channels.forEach((c, i) => {
+    const on = c.on && c.dac;
+    const l = (st.nr51 >> (4 + i)) & 1 ? 'L' : '·';
+    const r = (st.nr51 >> i) & 1 ? 'R' : '·';
+    const pitch = i === 3 ? `NR43 ${hex(c.nr43)}` : `${noteName(c.hz)} ${on ? c.hz.toFixed(1) + ' Hz' : ''}`;
+    chanEls[i].querySelector('span').textContent = `${on ? pitch : 'off'}  vol ${c.volume}  ${l}${r}`;
+    chanEls[i].querySelector('i').style.width = `${on ? (c.volume / 15) * 100 : 0}%`;
+  });
+  const ids = st.soundIds.map((x) => (x ? hex(x) : '··')).join(' ');
+  $('status').textContent = `bank ${st.bank} · ${st.music || 'no music'} · frame ${st.frame} · NR50 ${hex(st.nr50)} · ids ${ids}${st.fading ? ' · fading' : ''}`;
+}
+const viz = $('viz');
+const g = viz.getContext('2d');
+let buf = null;
+function drawViz() {
+  const an = audio.analyser;
+  if (an) {
+    if (!buf) buf = new Float32Array(an.fftSize);
+    an.getFloatTimeDomainData(buf);
+    const w = viz.width, h = viz.height;
+    g.fillStyle = '#0b0f12';
+    g.fillRect(0, 0, w, h);
+    g.strokeStyle = '#2c343d';
+    g.beginPath(); g.moveTo(0, h / 2); g.lineTo(w, h / 2); g.stroke();
+    g.strokeStyle = colors[0];
+    g.lineWidth = 1.5;
+    g.beginPath();
+    for (let i = 0; i < buf.length; i++) {
+      const x = (i / (buf.length - 1)) * w;
+      const y = h / 2 - buf[i] * h * 0.9;
+      if (i) g.lineTo(x, y); else g.moveTo(x, y);
+    }
+    g.stroke();
+  }
+  requestAnimationFrame(drawViz);
+}
+
+// ---- wiring ----------------------------------------------------------------------------
+$('start').addEventListener('click', () => start().catch((e) => log('error: ' + e.message, 'err')));
+$('volume').addEventListener('input', () => audio.setVolume(+$('volume').value));
+$('mute').addEventListener('click', () => { $('mute').textContent = audio.mute() ? 'Unmute' : 'Mute'; });
+$('stop').addEventListener('click', () => { audio.stopMusic(); if (playingRow) playingRow.classList.remove('playing'); });
+$('fade').addEventListener('click', () => audio.fadeOutMusic(10));
+$('alarm').addEventListener('change', () => audio.setLowHealthAlarm($('alarm').checked));
+$('duck').addEventListener('change', () => audio.duck($('duck').checked));
+for (const cb of document.querySelectorAll('.chmute')) {
+  cb.addEventListener('change', () => audio.muteChannels([...document.querySelectorAll('.chmute')].map((c) => !c.checked)));
+}
+$('musicFilter').addEventListener('input', () => filterList($('musicList'), $('musicFilter').value));
+$('sfxFilter').addEventListener('input', () => filterList($('sfxList'), $('sfxFilter').value));
+for (const id of ['sfxBank', 'showCries', 'showDrums']) $(id).addEventListener('change', () => buildSfx(audio.library));
+
+audio.load().then((lib) => {
+  buildMusic(lib);
+  buildSfx(lib);
+  buildCries(lib);
+  $('status').textContent = `index loaded: ${lib.index.music.length} songs, ${lib.index.sfx.length} SFX entries — press Start audio or any Play button`;
+}).catch((e) => { $('status').textContent = 'failed to load data/audio/index.json (run tools/extract_audio.py)'; log('error: ' + e.message, 'err'); });
+</script>
+</body>
+</html>

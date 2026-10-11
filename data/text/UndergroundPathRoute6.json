@@ -1,0 +1,33 @@
+{
+ "map": "UndergroundPathRoute6",
+ "const": "UNDERGROUND_PATH_ROUTE_6",
+ "textPointerTables": [
+  {
+   "label": "UndergroundPathRoute6_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_UNDERGROUNDPATHROUTE6_GIRL", "label": "UndergroundPathRoute6GirlText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "UndergroundPathRoute6GirlText": {
+   "kind": "text",
+   "src": "scripts/UndergroundPathRoute6.asm:11",
+   "commands": [
+    {"cmd": "text_far", "label": "_UndergroundPathRoute6GirlText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_UndergroundPathRoute6GirlText": {
+   "kind": "text",
+   "src": "text/UndergroundPathRoute6.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "People often lose"},
+    {"cmd": "line", "str": "things in that"},
+    {"cmd": "cont", "str": "UNDERGROUND PATH."},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

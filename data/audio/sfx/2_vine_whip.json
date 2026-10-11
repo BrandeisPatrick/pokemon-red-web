@@ -1,0 +1,28 @@
+{
+  "name": "SFX_VINE_WHIP",
+  "title": "Vine Whip",
+  "kind": "sfx",
+  "bank": 2,
+  "id": 171,
+  "label": "SFX_Vine_Whip",
+  "channels": [
+    {
+      "channel": 8,
+      "label": "SFX_Vine_Whip_Ch8",
+      "entry": 0,
+      "bytes": 25,
+      "labels": {"SFX_Vine_Whip_Ch8": 0},
+      "commands": [
+        {"op": "noise_note", "length": 1, "volume": 12, "fade": 2, "value": 51},
+        {"op": "noise_note", "length": 2, "volume": 15, "fade": 2, "value": 33},
+        {"op": "noise_note", "length": 1, "volume": 14, "fade": 2, "value": 51},
+        {"op": "noise_note", "length": 1, "volume": 12, "fade": 2, "value": 50},
+        {"op": "noise_note", "length": 1, "volume": 9, "fade": 2, "value": 18},
+        {"op": "noise_note", "length": 1, "volume": 11, "fade": 2, "value": 49},
+        {"op": "noise_note", "length": 12, "volume": 9, "fade": 1, "value": 16},
+        {"op": "noise_note", "length": 8, "volume": 15, "fade": 2, "value": 65},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

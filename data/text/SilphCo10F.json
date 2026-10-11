@@ -1,0 +1,190 @@
+{
+ "map": "SilphCo10F",
+ "const": "SILPH_CO_10F",
+ "textPointerTables": [
+  {
+   "label": "SilphCo10F_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_SILPHCO10F_ROCKET", "label": "SilphCo10FRocketText", "kind": "asm", "handler": "trainer", "trainerHeader": "SilphCo10TrainerHeader0"},
+    {"id": 2, "const": "TEXT_SILPHCO10F_SCIENTIST", "label": "SilphCo10FScientistText", "kind": "asm", "handler": "trainer", "trainerHeader": "SilphCo10TrainerHeader1"},
+    {"id": 3, "const": "TEXT_SILPHCO10F_SILPH_WORKER_F", "label": "SilphCo10FSilphWorkerFText", "kind": "asm", "handler": "asm"},
+    {"id": 4, "const": "TEXT_SILPHCO10F_TM_EARTHQUAKE", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 5, "const": "TEXT_SILPHCO10F_RARE_CANDY", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 6, "const": "TEXT_SILPHCO10F_CARBOS", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"}
+   ]
+  }
+ ],
+ "texts": {
+  "PickUpItemText": {
+   "kind": "asm",
+   "src": "home/overworld_text.asm:29",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "SilphCo10FRocketText": {
+   "kind": "asm",
+   "src": "scripts/SilphCo10F.asm:61",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "SilphCo10TrainerHeader0"
+  },
+  "SilphCo10FScientistText": {
+   "kind": "asm",
+   "src": "scripts/SilphCo10F.asm:67",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "SilphCo10TrainerHeader1"
+  },
+  "SilphCo10FSilphWorkerFText": {
+   "kind": "asm",
+   "src": "scripts/SilphCo10F.asm:73",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["SilphCo10FSilphWorkerFText.QuietAboutMyCryingText", "SilphCo10FSilphWorkerFText.ImScaredText"]
+  },
+  "SilphCo10FSilphWorkerFText.ImScaredText": {
+   "kind": "text",
+   "src": "scripts/SilphCo10F.asm:83",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo10FSilphWorkerFImScaredText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo10FSilphWorkerFText.QuietAboutMyCryingText": {
+   "kind": "text",
+   "src": "scripts/SilphCo10F.asm:87",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo10FSilphWorkerFQuietAboutMyCryingText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo10FRocketBattleText": {
+   "kind": "text",
+   "src": "scripts/SilphCo10F.asm:91",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo10FRocketBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo10FRocketEndBattleText": {
+   "kind": "text",
+   "src": "scripts/SilphCo10F.asm:95",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo10FRocketEndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo10FRocketAfterBattleText": {
+   "kind": "text",
+   "src": "scripts/SilphCo10F.asm:99",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo10FRocketAfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo10FScientistBattleText": {
+   "kind": "text",
+   "src": "scripts/SilphCo10F.asm:103",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo10FScientistBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo10FScientistEndBattleText": {
+   "kind": "text",
+   "src": "scripts/SilphCo10F.asm:107",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo10FScientistEndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo10FScientistAfterBattleText": {
+   "kind": "text",
+   "src": "scripts/SilphCo10F.asm:111",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo10FScientistAfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_SilphCo10FSilphWorkerFImScaredText": {
+   "kind": "text",
+   "src": "text/SilphCo10F.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Waaaaa!"},
+    {"cmd": "cont", "str": "I'm scared!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SilphCo10FSilphWorkerFQuietAboutMyCryingText": {
+   "kind": "text",
+   "src": "text/SilphCo10F.asm:7",
+   "commands": [
+    {"cmd": "text", "str": "Please keep quiet"},
+    {"cmd": "line", "str": "about my crying!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SilphCo10FRocketBattleText": {
+   "kind": "text",
+   "src": "text/SilphCo10F.asm:12",
+   "commands": [
+    {"cmd": "text", "str": "Welcome to the"},
+    {"cmd": "line", "str": "10F! So good of"},
+    {"cmd": "cont", "str": "you to join me!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SilphCo10FRocketEndBattleText": {
+   "kind": "text",
+   "src": "text/SilphCo10F.asm:18",
+   "commands": [
+    {"cmd": "text", "str": "I'm"},
+    {"cmd": "line", "str": "stunned!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_SilphCo10FRocketAfterBattleText": {
+   "kind": "text",
+   "src": "text/SilphCo10F.asm:23",
+   "commands": [
+    {"cmd": "text", "str": "Nice try, but the"},
+    {"cmd": "line", "str": "boardroom is up"},
+    {"cmd": "cont", "str": "one more floor!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SilphCo10FScientistBattleText": {
+   "kind": "text",
+   "src": "text/SilphCo10F.asm:29",
+   "commands": [
+    {"cmd": "text", "str": "Enough of your"},
+    {"cmd": "line", "str": "silly games!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SilphCo10FScientistEndBattleText": {
+   "kind": "text",
+   "src": "text/SilphCo10F.asm:34",
+   "commands": [
+    {"cmd": "text", "str": "No"},
+    {"cmd": "line", "str": "continues left!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_SilphCo10FScientistAfterBattleText": {
+   "kind": "text",
+   "src": "text/SilphCo10F.asm:39",
+   "commands": [
+    {"cmd": "text", "str": "Are you satisfied"},
+    {"cmd": "line", "str": "with beating me?"},
+    {"cmd": "cont", "str": "Then go on home!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

@@ -1,0 +1,380 @@
+{
+ "map": "SilphCo5F",
+ "const": "SILPH_CO_5F",
+ "textPointerTables": [
+  {
+   "label": "SilphCo5F_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_SILPHCO5F_SILPH_WORKER_M", "label": "SilphCo5FSilphWorkerMText", "kind": "asm", "handler": "asm"},
+    {"id": 2, "const": "TEXT_SILPHCO5F_ROCKET1", "label": "SilphCo5FRocket1Text", "kind": "asm", "handler": "trainer", "trainerHeader": "SilphCo5TrainerHeader0"},
+    {"id": 3, "const": "TEXT_SILPHCO5F_SCIENTIST", "label": "SilphCo5FScientistText", "kind": "asm", "handler": "trainer", "trainerHeader": "SilphCo5TrainerHeader1"},
+    {"id": 4, "const": "TEXT_SILPHCO5F_ROCKER", "label": "SilphCo5FRockerText", "kind": "asm", "handler": "trainer", "trainerHeader": "SilphCo5TrainerHeader2"},
+    {"id": 5, "const": "TEXT_SILPHCO5F_ROCKET2", "label": "SilphCo5FRocket2Text", "kind": "asm", "handler": "trainer", "trainerHeader": "SilphCo5TrainerHeader3"},
+    {"id": 6, "const": "TEXT_SILPHCO5F_TM_TAKE_DOWN", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 7, "const": "TEXT_SILPHCO5F_PROTEIN", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 8, "const": "TEXT_SILPHCO5F_CARD_KEY", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 9, "const": "TEXT_SILPHCO5F_POKEMON_REPORT1", "label": "SilphCo5FPokemonReport1Text", "kind": "text", "handler": "text"},
+    {"id": 10, "const": "TEXT_SILPHCO5F_POKEMON_REPORT2", "label": "SilphCo5FPokemonReport2Text", "kind": "text", "handler": "text"},
+    {"id": 11, "const": "TEXT_SILPHCO5F_POKEMON_REPORT3", "label": "SilphCo5FPokemonReport3Text", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "PickUpItemText": {
+   "kind": "asm",
+   "src": "home/overworld_text.asm:29",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "SilphCo5FSilphWorkerMText": {
+   "kind": "asm",
+   "src": "scripts/SilphCo5F.asm:101",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["SilphCo5FSilphWorkerMText.ThatsYouRightText", "SilphCo5FSilphWorkerMText.YoureOurHeroText"]
+  },
+  "SilphCo5FSilphWorkerMText.ThatsYouRightText": {
+   "kind": "text",
+   "src": "scripts/SilphCo5F.asm:108",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo5FSilphWorkerMThatsYouRightText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo5FSilphWorkerMText.YoureOurHeroText": {
+   "kind": "text",
+   "src": "scripts/SilphCo5F.asm:112",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo5FSilphWorkerMYoureOurHeroText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo5FRocket1Text": {
+   "kind": "asm",
+   "src": "scripts/SilphCo5F.asm:116",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "SilphCo5TrainerHeader0"
+  },
+  "SilphCo5FRocket1BattleText": {
+   "kind": "text",
+   "src": "scripts/SilphCo5F.asm:122",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo5FRocket1BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo5FRocket1EndBattleText": {
+   "kind": "text",
+   "src": "scripts/SilphCo5F.asm:126",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo5FRocket1EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo5FRocket1AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/SilphCo5F.asm:130",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo5FRocket1AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo5FScientistText": {
+   "kind": "asm",
+   "src": "scripts/SilphCo5F.asm:134",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "SilphCo5TrainerHeader1"
+  },
+  "SilphCo5FScientistBattleText": {
+   "kind": "text",
+   "src": "scripts/SilphCo5F.asm:140",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo5FScientistBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo5FScientistEndBattleText": {
+   "kind": "text",
+   "src": "scripts/SilphCo5F.asm:144",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo5FScientistEndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo5FScientistAfterBattleText": {
+   "kind": "text",
+   "src": "scripts/SilphCo5F.asm:148",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo5FScientistAfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo5FRockerText": {
+   "kind": "asm",
+   "src": "scripts/SilphCo5F.asm:152",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "SilphCo5TrainerHeader2"
+  },
+  "SilphCo5FRockerBattleText": {
+   "kind": "text",
+   "src": "scripts/SilphCo5F.asm:158",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo5FRockerBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo5FRockerEndBattleText": {
+   "kind": "text",
+   "src": "scripts/SilphCo5F.asm:162",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo5FRockerEndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo5FRockerAfterBattleText": {
+   "kind": "text",
+   "src": "scripts/SilphCo5F.asm:166",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo5FRockerAfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo5FRocket2Text": {
+   "kind": "asm",
+   "src": "scripts/SilphCo5F.asm:170",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "SilphCo5TrainerHeader3"
+  },
+  "SilphCo5FRocket2BattleText": {
+   "kind": "text",
+   "src": "scripts/SilphCo5F.asm:176",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo5FRocket2BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo5FRocket2EndBattleText": {
+   "kind": "text",
+   "src": "scripts/SilphCo5F.asm:180",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo5FRocket2EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo5FRocket2AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/SilphCo5F.asm:184",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo5FRocket2AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo5FPokemonReport1Text": {
+   "kind": "text",
+   "src": "scripts/SilphCo5F.asm:188",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo5FPokemonReport1Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo5FPokemonReport2Text": {
+   "kind": "text",
+   "src": "scripts/SilphCo5F.asm:192",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo5FPokemonReport2Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo5FPokemonReport3Text": {
+   "kind": "text",
+   "src": "scripts/SilphCo5F.asm:196",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo5FPokemonReport3Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_SilphCo5FSilphWorkerMThatsYouRightText": {
+   "kind": "text",
+   "src": "text/SilphCo5F.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "TEAM ROCKET is"},
+    {"cmd": "line", "str": "in an uproar over"},
+    {"cmd": "cont", "str": "some intruder."},
+    {"cmd": "cont", "str": "That's you right?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SilphCo5FSilphWorkerMYoureOurHeroText": {
+   "kind": "text",
+   "src": "text/SilphCo5F.asm:9",
+   "commands": [
+    {"cmd": "text", "str": "TEAM ROCKET took"},
+    {"cmd": "line", "str": "off! You're our"},
+    {"cmd": "cont", "str": "hero! Thank you!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SilphCo5FRocket1BattleText": {
+   "kind": "text",
+   "src": "text/SilphCo5F.asm:15",
+   "commands": [
+    {"cmd": "text", "str": "I heard a kid was"},
+    {"cmd": "line", "str": "wandering around."},
+    {"cmd": "done"}
+   ]
+  },
+  "_SilphCo5FRocket1EndBattleText": {
+   "kind": "text",
+   "src": "text/SilphCo5F.asm:20",
+   "commands": [
+    {"cmd": "text", "str": "Boom!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_SilphCo5FRocket1AfterBattleText": {
+   "kind": "text",
+   "src": "text/SilphCo5F.asm:24",
+   "commands": [
+    {"cmd": "text", "str": "It's not smart"},
+    {"cmd": "line", "str": "to pick a fight"},
+    {"cmd": "cont", "str": "with TEAM ROCKET!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SilphCo5FScientistBattleText": {
+   "kind": "text",
+   "src": "text/SilphCo5F.asm:30",
+   "commands": [
+    {"cmd": "text", "str": "We study POKé"},
+    {"cmd": "line", "str": "BALL technology"},
+    {"cmd": "cont", "str": "on this floor!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SilphCo5FScientistEndBattleText": {
+   "kind": "text",
+   "src": "text/SilphCo5F.asm:36",
+   "commands": [
+    {"cmd": "text", "str": "Dang!"},
+    {"cmd": "line", "str": "Blast it!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_SilphCo5FScientistAfterBattleText": {
+   "kind": "text",
+   "src": "text/SilphCo5F.asm:41",
+   "commands": [
+    {"cmd": "text", "str": "We worked on the"},
+    {"cmd": "line", "str": "ultimate POKé"},
+    {"cmd": "cont", "str": "BALL which would"},
+    {"cmd": "cont", "str": "catch anything!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SilphCo5FRockerBattleText": {
+   "kind": "text",
+   "src": "text/SilphCo5F.asm:48",
+   "commands": [
+    {"cmd": "text", "str": "Whaaat? There"},
+    {"cmd": "line", "str": "shouldn't be any"},
+    {"cmd": "cont", "str": "children here?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SilphCo5FRockerEndBattleText": {
+   "kind": "text",
+   "src": "text/SilphCo5F_2.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Oh"},
+    {"cmd": "line", "str": "goodness!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_SilphCo5FRockerAfterBattleText": {
+   "kind": "text",
+   "src": "text/SilphCo5F_2.asm:7",
+   "commands": [
+    {"cmd": "text", "str": "You're only on 5F."},
+    {"cmd": "line", "str": "It's a long way"},
+    {"cmd": "cont", "str": "to my BOSS!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SilphCo5FRocket2BattleText": {
+   "kind": "text",
+   "src": "text/SilphCo5F_2.asm:13",
+   "commands": [
+    {"cmd": "text", "str": "Show TEAM ROCKET"},
+    {"cmd": "line", "str": "a little respect!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SilphCo5FRocket2EndBattleText": {
+   "kind": "text",
+   "src": "text/SilphCo5F_2.asm:18",
+   "commands": [
+    {"cmd": "text", "str": "Cough..."},
+    {"cmd": "line", "str": "Cough..."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_SilphCo5FRocket2AfterBattleText": {
+   "kind": "text",
+   "src": "text/SilphCo5F_2.asm:23",
+   "commands": [
+    {"cmd": "text", "str": "Which reminds me."},
+    {"cmd": "para", "str": "KOFFING evolves"},
+    {"cmd": "line", "str": "into WEEZING!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SilphCo5FPokemonReport1Text": {
+   "kind": "text",
+   "src": "text/SilphCo5F_2.asm:30",
+   "commands": [
+    {"cmd": "text", "str": "It's a POKéMON"},
+    {"cmd": "line", "str": "REPORT!"},
+    {"cmd": "para", "str": "POKéMON LAB"},
+    {"cmd": "line", "str": "created PORYGON,"},
+    {"cmd": "cont", "str": "the first virtual"},
+    {"cmd": "cont", "str": "reality POKéMON."},
+    {"cmd": "done"}
+   ]
+  },
+  "_SilphCo5FPokemonReport2Text": {
+   "kind": "text",
+   "src": "text/SilphCo5F_2.asm:40",
+   "commands": [
+    {"cmd": "text", "str": "It's a POKéMON"},
+    {"cmd": "line", "str": "REPORT!"},
+    {"cmd": "para", "str": "Over 160 POKéMON"},
+    {"cmd": "line", "str": "techniques have"},
+    {"cmd": "cont", "str": "been confirmed."},
+    {"cmd": "done"}
+   ]
+  },
+  "_SilphCo5FPokemonReport3Text": {
+   "kind": "text",
+   "src": "text/SilphCo5F_2.asm:49",
+   "commands": [
+    {"cmd": "text", "str": "It's a POKéMON"},
+    {"cmd": "line", "str": "REPORT!"},
+    {"cmd": "para", "str": "4 POKéMON evolve"},
+    {"cmd": "line", "str": "only when traded"},
+    {"cmd": "cont", "str": "by link-cable."},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

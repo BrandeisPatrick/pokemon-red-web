@@ -1,0 +1,22 @@
+{
+  "name": "SFX_SUPER_EFFECTIVE",
+  "title": "Super Effective",
+  "kind": "sfx",
+  "bank": 2,
+  "id": 176,
+  "label": "SFX_Super_Effective",
+  "channels": [
+    {
+      "channel": 8,
+      "label": "SFX_Super_Effective_Ch8",
+      "entry": 0,
+      "bytes": 7,
+      "labels": {"SFX_Super_Effective_Ch8": 0},
+      "commands": [
+        {"op": "noise_note", "length": 4, "volume": 15, "fade": 1, "value": 52},
+        {"op": "noise_note", "length": 15, "volume": 15, "fade": 2, "value": 100},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

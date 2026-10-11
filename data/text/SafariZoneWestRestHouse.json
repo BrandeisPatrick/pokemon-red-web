@@ -1,0 +1,73 @@
+{
+ "map": "SafariZoneWestRestHouse",
+ "const": "SAFARI_ZONE_WEST_REST_HOUSE",
+ "textPointerTables": [
+  {
+   "label": "SafariZoneWestRestHouse_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_SAFARIZONEWESTRESTHOUSE_SCIENTIST", "label": "SafariZoneWestRestHouseScientistText", "kind": "text", "handler": "text"},
+    {"id": 2, "const": "TEXT_SAFARIZONEWESTRESTHOUSE_COOLTRAINER_M", "label": "SafariZoneWestRestHouseCooltrainerMText", "kind": "text", "handler": "text"},
+    {"id": 3, "const": "TEXT_SAFARIZONEWESTRESTHOUSE_SILPH_WORKER_F", "label": "SafariZoneWestRestHouseSilphWorkerFText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "SafariZoneWestRestHouseScientistText": {
+   "kind": "text",
+   "src": "scripts/SafariZoneWestRestHouse.asm:12",
+   "commands": [
+    {"cmd": "text_far", "label": "_SafariZoneWestRestHouseScientistText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SafariZoneWestRestHouseCooltrainerMText": {
+   "kind": "text",
+   "src": "scripts/SafariZoneWestRestHouse.asm:16",
+   "commands": [
+    {"cmd": "text_far", "label": "_SafariZoneWestRestHouseCooltrainerMText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SafariZoneWestRestHouseSilphWorkerFText": {
+   "kind": "text",
+   "src": "scripts/SafariZoneWestRestHouse.asm:20",
+   "commands": [
+    {"cmd": "text_far", "label": "_SafariZoneWestRestHouseSilphWorkerFText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_SafariZoneWestRestHouseScientistText": {
+   "kind": "text",
+   "src": "text/SafariZoneWestRestHouse.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Tossing ROCKs at"},
+    {"cmd": "line", "str": "POKéMON might"},
+    {"cmd": "cont", "str": "make them run,"},
+    {"cmd": "cont", "str": "but they'll be"},
+    {"cmd": "cont", "str": "easier to catch."},
+    {"cmd": "done"}
+   ]
+  },
+  "_SafariZoneWestRestHouseCooltrainerMText": {
+   "kind": "text",
+   "src": "text/SafariZoneWestRestHouse.asm:10",
+   "commands": [
+    {"cmd": "text", "str": "Using BAIT will"},
+    {"cmd": "line", "str": "make POKéMON"},
+    {"cmd": "cont", "str": "easier to catch."},
+    {"cmd": "done"}
+   ]
+  },
+  "_SafariZoneWestRestHouseSilphWorkerFText": {
+   "kind": "text",
+   "src": "text/SafariZoneWestRestHouse.asm:16",
+   "commands": [
+    {"cmd": "text", "str": "I hiked a lot, but"},
+    {"cmd": "line", "str": "I didn't see any"},
+    {"cmd": "cont", "str": "POKéMON I wanted."},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

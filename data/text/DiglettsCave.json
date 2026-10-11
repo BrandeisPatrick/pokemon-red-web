@@ -1,0 +1,8 @@
+{
+ "map": "DiglettsCave",
+ "const": "DIGLETTS_CAVE",
+ "textPointerTables": [
+  {"label": "DiglettsCave_TextPointers", "primary": true, "entries": []}
+ ],
+ "texts": {}
+}

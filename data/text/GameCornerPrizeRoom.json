@@ -1,0 +1,62 @@
+{
+ "map": "GameCornerPrizeRoom",
+ "const": "GAME_CORNER_PRIZE_ROOM",
+ "textPointerTables": [
+  {
+   "label": "GameCornerPrizeRoom_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_GAMECORNERPRIZEROOM_BALDING_GUY", "label": "GameCornerPrizeRoomBaldingGuyText", "kind": "text", "handler": "text"},
+    {"id": 2, "const": "TEXT_GAMECORNERPRIZEROOM_GAMBLER", "label": "GameCornerPrizeRoomGamblerText", "kind": "text", "handler": "text"},
+    {"id": 3, "const": "TEXT_GAMECORNERPRIZEROOM_PRIZE_VENDOR_1", "label": "GameCornerPRizeRoomPrizeVendorText", "kind": "script", "handler": "script_prize_vendor"},
+    {"id": 4, "const": "TEXT_GAMECORNERPRIZEROOM_PRIZE_VENDOR_2", "label": "GameCornerPRizeRoomPrizeVendorText", "kind": "script", "handler": "script_prize_vendor"},
+    {"id": 5, "const": "TEXT_GAMECORNERPRIZEROOM_PRIZE_VENDOR_3", "label": "GameCornerPRizeRoomPrizeVendorText", "kind": "script", "handler": "script_prize_vendor"}
+   ]
+  }
+ ],
+ "texts": {
+  "GameCornerPrizeRoomBaldingGuyText": {
+   "kind": "text",
+   "src": "scripts/GameCornerPrizeRoom.asm:14",
+   "commands": [
+    {"cmd": "text_far", "label": "_GameCornerPrizeRoomBaldingGuyText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "GameCornerPrizeRoomGamblerText": {
+   "kind": "text",
+   "src": "scripts/GameCornerPrizeRoom.asm:18",
+   "commands": [
+    {"cmd": "text_far", "label": "_GameCornerPrizeRoomGamblerText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "GameCornerPRizeRoomPrizeVendorText": {
+   "kind": "script",
+   "src": "scripts/GameCornerPrizeRoom.asm:22",
+   "commands": [
+    {"cmd": "script", "script": "script_prize_vendor"}
+   ]
+  },
+  "_GameCornerPrizeRoomBaldingGuyText": {
+   "kind": "text",
+   "src": "text/GameCornerPrizeRoom.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "I sure do fancy"},
+    {"cmd": "line", "str": "that PORYGON!"},
+    {"cmd": "para", "str": "But, it's hard to"},
+    {"cmd": "line", "str": "win at slots!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_GameCornerPrizeRoomGamblerText": {
+   "kind": "text",
+   "src": "text/GameCornerPrizeRoom.asm:10",
+   "commands": [
+    {"cmd": "text", "str": "I had a major"},
+    {"cmd": "line", "str": "haul today!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

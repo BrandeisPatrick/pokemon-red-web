@@ -1,0 +1,43 @@
+{
+ "id": 168,
+ "const": "CINNABAR_LAB_TRADE_ROOM",
+ "name": "CinnabarLabTradeRoom",
+ "displayName": "CINNABAR ISLAND",
+ "width": 4,
+ "height": 4,
+ "tileset": "LAB",
+ "tilesetId": 20,
+ "tilesetFile": "data/tilesets/Lab.json",
+ "isOutside": false,
+ "borderBlock": 23,
+ "blocks": [9, 3, 1, 10, 7, 16, 17, 7, 7, 20, 21, 7, 13, 12, 7, 14],
+ "connections": {},
+ "warps": [
+  {"x": 2, "y": 7, "destMap": "CINNABAR_LAB", "destMapId": 167, "destMapName": "CinnabarLab", "destWarp": 3, "destWarpIndex": 2},
+  {"x": 3, "y": 7, "destMap": "CINNABAR_LAB", "destMapId": 167, "destMapName": "CinnabarLab", "destWarp": 3, "destWarpIndex": 2}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "CINNABARLABTRADEROOM_SUPER_NERD", "x": 3, "y": 2, "sprite": "SPRITE_SUPER_NERD", "spriteId": 12, "movement": "STAY", "rangeOrDirection": "DOWN", "rangeOrDirectionValue": 208, "behavior": "face_down", "textId": "TEXT_CINNABARLABTRADEROOM_SUPER_NERD", "textIndex": 1},
+  {"index": 2, "const": "CINNABARLABTRADEROOM_GRAMPS", "x": 1, "y": 4, "sprite": "SPRITE_GRAMPS", "spriteId": 37, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_CINNABARLABTRADEROOM_GRAMPS", "textIndex": 2},
+  {"index": 3, "const": "CINNABARLABTRADEROOM_BEAUTY", "x": 5, "y": 5, "sprite": "SPRITE_BEAUTY", "spriteId": 15, "movement": "STAY", "rangeOrDirection": "UP", "rangeOrDirectionValue": 209, "behavior": "face_up", "textId": "TEXT_CINNABARLABTRADEROOM_BEAUTY", "textIndex": 3}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_CINNABAR",
+ "wild": null,
+ "townMap": {"x": 2, "y": 15, "group": "CINNABAR_ISLAND"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/CinnabarLabTradeRoom.json",
+ "textPointers": "CinnabarLabTradeRoom_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/CinnabarLabTradeRoom.asm",
+  "objects": "data/maps/objects/CinnabarLabTradeRoom.asm",
+  "blocks": "maps/CinnabarLabTradeRoom.blk",
+  "script": "scripts/CinnabarLabTradeRoom.asm"
+ },
+ "lastMapCandidates": ["CINNABAR_ISLAND"],
+ "palette": {"pal": "PAL_CINNABAR", "rule": "lastMap", "viaLastMap": "CINNABAR_ISLAND"}
+}

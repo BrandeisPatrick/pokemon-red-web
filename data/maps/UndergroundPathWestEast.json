@@ -1,0 +1,42 @@
+{
+ "id": 121,
+ "const": "UNDERGROUND_PATH_WEST_EAST",
+ "name": "UndergroundPathWestEast",
+ "displayName": "UNDERGROUND PATH",
+ "width": 25,
+ "height": 4,
+ "tileset": "UNDERGROUND",
+ "tilesetId": 11,
+ "tilesetFile": "data/tilesets/Underground.json",
+ "isOutside": false,
+ "borderBlock": 1,
+ "blocks": [13, 9, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 12, 13, 4, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 5, 12, 13, 15, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 12, 1, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 1],
+ "connections": {},
+ "warps": [
+  {"x": 2, "y": 5, "destMap": "UNDERGROUND_PATH_ROUTE_7", "destMapId": 77, "destMapName": "UndergroundPathRoute7", "destWarp": 3, "destWarpIndex": 2},
+  {"x": 47, "y": 2, "destMap": "UNDERGROUND_PATH_ROUTE_8", "destMapId": 80, "destMapName": "UndergroundPathRoute8", "destWarp": 3, "destWarpIndex": 2}
+ ],
+ "bgEvents": [],
+ "objectEvents": [],
+ "trainerHeaders": [],
+ "hiddenObjects": [
+  {"x": 12, "y": 2, "routine": "HiddenItems", "arg": "NUGGET", "argValue": 49, "kind": "item", "item": "NUGGET", "flagIndex": 45},
+  {"x": 21, "y": 5, "routine": "HiddenItems", "arg": "ELIXER", "argValue": 82, "kind": "item", "item": "ELIXER", "flagIndex": 46}
+ ],
+ "spriteSet": null,
+ "music": "MUSIC_ROUTES1",
+ "wild": null,
+ "townMap": {"x": 10, "y": 5, "group": "UNDERGROUND_PATH_2"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/UndergroundPathWestEast.json",
+ "textPointers": "UndergroundPathWestEast_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/UndergroundPathWestEast.asm",
+  "objects": "data/maps/objects/UndergroundPathWestEast.asm",
+  "blocks": "maps/UndergroundPathWestEast.blk",
+  "script": "scripts/UndergroundPathWestEast.asm"
+ },
+ "lastMapCandidates": ["ROUTE_7", "ROUTE_8"],
+ "palette": {"pal": "PAL_ROUTE", "rule": "lastMap", "viaLastMap": "ROUTE_7"}
+}

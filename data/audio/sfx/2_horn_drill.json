@@ -1,0 +1,24 @@
+{
+  "name": "SFX_HORN_DRILL",
+  "title": "Horn Drill",
+  "kind": "sfx",
+  "bank": 2,
+  "id": 182,
+  "label": "SFX_Horn_Drill",
+  "channels": [
+    {
+      "channel": 8,
+      "label": "SFX_Horn_Drill_Ch8",
+      "entry": 0,
+      "bytes": 13,
+      "labels": {"SFX_Horn_Drill_Ch8": 0},
+      "commands": [
+        {"op": "noise_note", "length": 3, "volume": 9, "fade": 2, "value": 49},
+        {"op": "noise_note", "length": 3, "volume": 11, "fade": 2, "value": 50},
+        {"op": "noise_note", "length": 3, "volume": 12, "fade": 2, "value": 51},
+        {"op": "noise_note", "length": 8, "volume": 15, "fade": 1, "value": 84},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

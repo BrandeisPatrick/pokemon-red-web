@@ -1,0 +1,461 @@
+{
+ "map": "SSAnne2FRooms",
+ "const": "SS_ANNE_2F_ROOMS",
+ "textPointerTables": [
+  {
+   "label": "SSAnne2FRooms_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_SSANNE2FROOMS_GENTLEMAN1", "label": "SSAnne2FRoomsGentleman1Text", "kind": "asm", "handler": "trainer", "trainerHeader": "SSAnne9TrainerHeader0"},
+    {"id": 2, "const": "TEXT_SSANNE2FROOMS_FISHER", "label": "SSAnne2FRoomsFisherText", "kind": "asm", "handler": "trainer", "trainerHeader": "SSAnne9TrainerHeader1"},
+    {"id": 3, "const": "TEXT_SSANNE2FROOMS_GENTLEMAN2", "label": "SSAnne2FRoomsGentleman2Text", "kind": "asm", "handler": "trainer", "trainerHeader": "SSAnne9TrainerHeader2"},
+    {"id": 4, "const": "TEXT_SSANNE2FROOMS_COOLTRAINER_F", "label": "SSAnne2FRoomsCooltrainerFText", "kind": "asm", "handler": "trainer", "trainerHeader": "SSAnne9TrainerHeader3"},
+    {"id": 5, "const": "TEXT_SSANNE2FROOMS_GENTLEMAN3", "label": "SSAnne2FRoomsGentleman3Text", "kind": "asm", "handler": "asm"},
+    {"id": 6, "const": "TEXT_SSANNE2FROOMS_MAX_ETHER", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 7, "const": "TEXT_SSANNE2FROOMS_GENTLEMAN4", "label": "SSAnne2FRoomsGentleman4Text", "kind": "asm", "handler": "asm"},
+    {"id": 8, "const": "TEXT_SSANNE2FROOMS_GRAMPS", "label": "SSAnne2FRoomsGrampsText", "kind": "asm", "handler": "asm"},
+    {"id": 9, "const": "TEXT_SSANNE2FROOMS_RARE_CANDY", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 10, "const": "TEXT_SSANNE2FROOMS_GENTLEMAN5", "label": "SSAnne2FRoomsGentleman5Text", "kind": "asm", "handler": "asm"},
+    {"id": 11, "const": "TEXT_SSANNE2FROOMS_LITTLE_BOY", "label": "SSAnne2FRoomsLittleBoyText", "kind": "asm", "handler": "asm"},
+    {"id": 12, "const": "TEXT_SSANNE2FROOMS_BRUNETTE_GIRL", "label": "SSAnne2FRoomsBrunetteGirlText", "kind": "asm", "handler": "asm"},
+    {"id": 13, "const": "TEXT_SSANNE2FROOMS_BEAUTY", "label": "SSAnne2FRoomsBeautyText", "kind": "asm", "handler": "asm"}
+   ]
+  }
+ ],
+ "texts": {
+  "PickUpItemText": {
+   "kind": "asm",
+   "src": "home/overworld_text.asm:29",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "SSAnne2FRoomsGentleman1Text": {
+   "kind": "asm",
+   "src": "scripts/SSAnne2FRooms.asm:48",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "SSAnne9TrainerHeader0"
+  },
+  "SSAnne2FRoomsFisherText": {
+   "kind": "asm",
+   "src": "scripts/SSAnne2FRooms.asm:54",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "SSAnne9TrainerHeader1"
+  },
+  "SSAnne2FRoomsGentleman2Text": {
+   "kind": "asm",
+   "src": "scripts/SSAnne2FRooms.asm:60",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "SSAnne9TrainerHeader2"
+  },
+  "SSAnne2FRoomsCooltrainerFText": {
+   "kind": "asm",
+   "src": "scripts/SSAnne2FRooms.asm:66",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "SSAnne9TrainerHeader3"
+  },
+  "SSAnne2FRoomsGentleman3Text": {
+   "kind": "asm",
+   "src": "scripts/SSAnne2FRooms.asm:72",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["SSAnne2FRoomsGentleman3Text.Text"]
+  },
+  "SSAnne2FRoomsGentleman3Text.Text": {
+   "kind": "text",
+   "src": "scripts/SSAnne2FRooms.asm:82",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnne2FRoomsGentleman3Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnne2FRoomsGentleman4Text": {
+   "kind": "asm",
+   "src": "scripts/SSAnne2FRooms.asm:86",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["SSAnne2FRoomsGentleman4Text.Text"]
+  },
+  "SSAnne2FRoomsGentleman4Text.Text": {
+   "kind": "text",
+   "src": "scripts/SSAnne2FRooms.asm:92",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnne2FRoomsGentleman4Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnne2FRoomsGrampsText": {
+   "kind": "asm",
+   "src": "scripts/SSAnne2FRooms.asm:96",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["SSAnne2FRoomsGrampsText.Text"]
+  },
+  "SSAnne2FRoomsGrampsText.Text": {
+   "kind": "text",
+   "src": "scripts/SSAnne2FRooms.asm:102",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnne2FRoomsGrampsText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnne2FRoomsGentleman5Text": {
+   "kind": "asm",
+   "src": "scripts/SSAnne2FRooms.asm:106",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["SSAnne2FRoomsGentleman5Text.Text"]
+  },
+  "SSAnne2FRoomsGentleman5Text.Text": {
+   "kind": "text",
+   "src": "scripts/SSAnne2FRooms.asm:112",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnne2FRoomsGentleman5Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnne2FRoomsLittleBoyText": {
+   "kind": "asm",
+   "src": "scripts/SSAnne2FRooms.asm:116",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["SSAnne2FRoomsLittleBoyText.Text"]
+  },
+  "SSAnne2FRoomsLittleBoyText.Text": {
+   "kind": "text",
+   "src": "scripts/SSAnne2FRooms.asm:122",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnne2FRoomsLittleBoyText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnne2FRoomsBrunetteGirlText": {
+   "kind": "asm",
+   "src": "scripts/SSAnne2FRooms.asm:126",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["SSAnne2FRoomsBrunetteGirlText.Text"]
+  },
+  "SSAnne2FRoomsBrunetteGirlText.Text": {
+   "kind": "text",
+   "src": "scripts/SSAnne2FRooms.asm:132",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnne2FRoomsBrunetteGirlText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnne2FRoomsBeautyText": {
+   "kind": "asm",
+   "src": "scripts/SSAnne2FRooms.asm:136",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["SSAnne2FRoomsBeautyText.Text"]
+  },
+  "SSAnne2FRoomsBeautyText.Text": {
+   "kind": "text",
+   "src": "scripts/SSAnne2FRooms.asm:142",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnne2FRoomsBeautyText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnne2FRoomsGentleman1BattleText": {
+   "kind": "text",
+   "src": "scripts/SSAnne2FRooms.asm:146",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnne2FRoomsGentleman1BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnne2FRoomsGentleman1EndBattleText": {
+   "kind": "text",
+   "src": "scripts/SSAnne2FRooms.asm:150",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnne2FRoomsGentleman1EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnne2FRoomsGentleman1AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/SSAnne2FRooms.asm:154",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnne2FRoomsGentleman1AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnne2FRoomsFisherBattleText": {
+   "kind": "text",
+   "src": "scripts/SSAnne2FRooms.asm:158",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnne2FRoomsFisherBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnne2FRoomsFisherEndBattleText": {
+   "kind": "text",
+   "src": "scripts/SSAnne2FRooms.asm:162",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnne2FRoomsFisherEndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnne2FRoomsFisherAfterBattleText": {
+   "kind": "text",
+   "src": "scripts/SSAnne2FRooms.asm:166",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnne2FRoomsFisherAfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnne2FRoomsGentleman2BattleText": {
+   "kind": "text",
+   "src": "scripts/SSAnne2FRooms.asm:170",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnne2FRoomsGentleman2BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnne2FRoomsGentleman2EndBattleText": {
+   "kind": "text",
+   "src": "scripts/SSAnne2FRooms.asm:174",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnne2FRoomsGentleman2EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnne2FRoomsGentleman2AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/SSAnne2FRooms.asm:178",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnne2FRoomsGentleman2AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnne2FRoomsCooltrainerFBattleText": {
+   "kind": "text",
+   "src": "scripts/SSAnne2FRooms.asm:182",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnne2FRoomsCooltrainerFBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnne2FRoomsCooltrainerFEndBattleText": {
+   "kind": "text",
+   "src": "scripts/SSAnne2FRooms.asm:186",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnne2FRoomsCooltrainerFEndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnne2FRoomsCooltrainerFAfterBattleText": {
+   "kind": "text",
+   "src": "scripts/SSAnne2FRooms.asm:190",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnne2FRoomsCooltrainerFAfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_SSAnne2FRoomsGentleman3Text": {
+   "kind": "text",
+   "src": "text/SSAnne2FRooms.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "In all my travels"},
+    {"cmd": "line", "str": "I've never seen"},
+    {"cmd": "cont", "str": "any POKéMON sleep"},
+    {"cmd": "cont", "str": "like this one!"},
+    {"cmd": "para", "str": "It was something"},
+    {"cmd": "line", "str": "like this!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_SSAnne2FRoomsGentleman4Text": {
+   "kind": "text",
+   "src": "text/SSAnne2FRooms.asm:12",
+   "commands": [
+    {"cmd": "text", "str": "Ah yes, I have"},
+    {"cmd": "line", "str": "seen some POKéMON"},
+    {"cmd": "cont", "str": "ferry people"},
+    {"cmd": "cont", "str": "across the water!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SSAnne2FRoomsGrampsText": {
+   "kind": "text",
+   "src": "text/SSAnne2FRooms.asm:19",
+   "commands": [
+    {"cmd": "text", "str": "POKéMON can CUT"},
+    {"cmd": "line", "str": "down small bushes."},
+    {"cmd": "done"}
+   ]
+  },
+  "_SSAnne2FRoomsGentleman5Text": {
+   "kind": "text",
+   "src": "text/SSAnne2FRooms.asm:24",
+   "commands": [
+    {"cmd": "text", "str": "Have you gone to"},
+    {"cmd": "line", "str": "the SAFARI ZONE"},
+    {"cmd": "cont", "str": "in FUCHSIA CITY?"},
+    {"cmd": "para", "str": "It had many rare"},
+    {"cmd": "line", "str": "kinds of POKéMON!!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SSAnne2FRoomsLittleBoyText": {
+   "kind": "text",
+   "src": "text/SSAnne2FRooms.asm:33",
+   "commands": [
+    {"cmd": "text", "str": "Me and my Daddy"},
+    {"cmd": "line", "str": "think the SAFARI"},
+    {"cmd": "cont", "str": "ZONE is awesome!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SSAnne2FRoomsBrunetteGirlText": {
+   "kind": "text",
+   "src": "text/SSAnne2FRooms.asm:39",
+   "commands": [
+    {"cmd": "text", "str": "The CAPTAIN looked"},
+    {"cmd": "line", "str": "really sick and"},
+    {"cmd": "cont", "str": "pale!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SSAnne2FRoomsBeautyText": {
+   "kind": "text",
+   "src": "text/SSAnne2FRooms.asm:45",
+   "commands": [
+    {"cmd": "text", "str": "I hear many people"},
+    {"cmd": "line", "str": "get seasick!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SSAnne2FRoomsGentleman1BattleText": {
+   "kind": "text",
+   "src": "text/SSAnne2FRooms.asm:50",
+   "commands": [
+    {"cmd": "text", "str": "Competing against"},
+    {"cmd": "line", "str": "the young keeps"},
+    {"cmd": "cont", "str": "me youthful."},
+    {"cmd": "done"}
+   ]
+  },
+  "_SSAnne2FRoomsGentleman1EndBattleText": {
+   "kind": "text",
+   "src": "text/SSAnne2FRooms.asm:56",
+   "commands": [
+    {"cmd": "text", "str": "Good"},
+    {"cmd": "line", "str": "fight! Ah, I feel"},
+    {"cmd": "cont", "str": "young again!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_SSAnne2FRoomsGentleman1AfterBattleText": {
+   "kind": "text",
+   "src": "text/SSAnne2FRooms.asm:62",
+   "commands": [
+    {"cmd": "text", "str": "15 years ago, I"},
+    {"cmd": "line", "str": "would have won!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SSAnne2FRoomsFisherBattleText": {
+   "kind": "text",
+   "src": "text/SSAnne2FRooms.asm:67",
+   "commands": [
+    {"cmd": "text", "str": "Check out what I"},
+    {"cmd": "line", "str": "fished up!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SSAnne2FRoomsFisherEndBattleText": {
+   "kind": "text",
+   "src": "text/SSAnne2FRooms.asm:72",
+   "commands": [
+    {"cmd": "text", "str": "I'm"},
+    {"cmd": "line", "str": "all out!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_SSAnne2FRoomsFisherAfterBattleText": {
+   "kind": "text",
+   "src": "text/SSAnne2FRooms.asm:77",
+   "commands": [
+    {"cmd": "text", "str": "Party?"},
+    {"cmd": "para", "str": "The cruise ship's"},
+    {"cmd": "line", "str": "party should be"},
+    {"cmd": "cont", "str": "over by now."},
+    {"cmd": "done"}
+   ]
+  },
+  "_SSAnne2FRoomsGentleman2BattleText": {
+   "kind": "text",
+   "src": "text/SSAnne2FRooms.asm:85",
+   "commands": [
+    {"cmd": "text", "str": "Which do you like,"},
+    {"cmd": "line", "str": "a strong or a"},
+    {"cmd": "cont", "str": "rare POKéMON?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SSAnne2FRoomsGentleman2EndBattleText": {
+   "kind": "text",
+   "src": "text/SSAnne2FRooms.asm:91",
+   "commands": [
+    {"cmd": "text", "str": "I must"},
+    {"cmd": "line", "str": "salute you!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_SSAnne2FRoomsGentleman2AfterBattleText": {
+   "kind": "text",
+   "src": "text/SSAnne2FRooms.asm:96",
+   "commands": [
+    {"cmd": "text", "str": "I prefer strong"},
+    {"cmd": "line", "str": "and rare POKéMON."},
+    {"cmd": "done"}
+   ]
+  },
+  "_SSAnne2FRoomsCooltrainerFBattleText": {
+   "kind": "text",
+   "src": "text/SSAnne2FRooms.asm:101",
+   "commands": [
+    {"cmd": "text", "str": "I never saw you"},
+    {"cmd": "line", "str": "at the party."},
+    {"cmd": "done"}
+   ]
+  },
+  "_SSAnne2FRoomsCooltrainerFEndBattleText": {
+   "kind": "text",
+   "src": "text/SSAnne2FRooms.asm:106",
+   "commands": [
+    {"cmd": "text", "str": "Take"},
+    {"cmd": "line", "str": "it easy!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_SSAnne2FRoomsCooltrainerFAfterBattleText": {
+   "kind": "text",
+   "src": "text/SSAnne2FRooms.asm:111",
+   "commands": [
+    {"cmd": "text", "str": "Oh, I adore your"},
+    {"cmd": "line", "str": "strong POKéMON!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

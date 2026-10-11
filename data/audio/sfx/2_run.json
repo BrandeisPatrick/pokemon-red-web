@@ -1,0 +1,31 @@
+{
+  "name": "SFX_RUN",
+  "title": "Run",
+  "kind": "sfx",
+  "bank": 2,
+  "id": 151,
+  "label": "SFX_Run",
+  "channels": [
+    {
+      "channel": 8,
+      "label": "SFX_Run_Ch8",
+      "entry": 0,
+      "bytes": 34,
+      "labels": {"SFX_Run_Ch8": 0},
+      "commands": [
+        {"op": "noise_note", "length": 2, "volume": 6, "fade": 1, "value": 35},
+        {"op": "noise_note", "length": 2, "volume": 10, "fade": 1, "value": 51},
+        {"op": "noise_note", "length": 2, "volume": 12, "fade": 1, "value": 51},
+        {"op": "noise_note", "length": 2, "volume": 5, "fade": 1, "value": 17},
+        {"op": "noise_note", "length": 2, "volume": 15, "fade": 1, "value": 51},
+        {"op": "noise_note", "length": 2, "volume": 4, "fade": 1, "value": 17},
+        {"op": "noise_note", "length": 2, "volume": 12, "fade": 1, "value": 51},
+        {"op": "noise_note", "length": 2, "volume": 3, "fade": 1, "value": 17},
+        {"op": "noise_note", "length": 2, "volume": 8, "fade": 1, "value": 51},
+        {"op": "noise_note", "length": 2, "volume": 3, "fade": 1, "value": 17},
+        {"op": "noise_note", "length": 8, "volume": 4, "fade": 1, "value": 51},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

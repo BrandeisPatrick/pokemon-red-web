@@ -1,0 +1,39 @@
+{
+ "id": 94,
+ "const": "VERMILION_DOCK",
+ "name": "VermilionDock",
+ "displayName": "VERMILION CITY",
+ "width": 14,
+ "height": 6,
+ "tileset": "SHIP_PORT",
+ "tilesetId": 14,
+ "tilesetFile": "data/tilesets/ShipPort.json",
+ "isOutside": false,
+ "borderBlock": 15,
+ "blocks": [14, 12, 12, 12, 12, 12, 22, 21, 12, 12, 3, 12, 12, 14, 19, 1, 1, 1, 1, 4, 5, 6, 7, 1, 1, 1, 1, 12, 17, 13, 13, 13, 13, 8, 9, 10, 11, 13, 13, 13, 13, 12, 17, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 12, 17, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 12, 16, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 14],
+ "connections": {},
+ "warps": [
+  {"x": 14, "y": 0, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 6, "destWarpIndex": 5},
+  {"x": 14, "y": 2, "destMap": "SS_ANNE_1F", "destMapId": 95, "destMapName": "SSAnne1F", "destWarp": 2, "destWarpIndex": 1}
+ ],
+ "bgEvents": [],
+ "objectEvents": [],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_SS_ANNE",
+ "wild": null,
+ "townMap": {"x": 10, "y": 9, "group": "VERMILION_CITY"},
+ "extraWarpCheck": "warpTileInFront",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/VermilionDock.json",
+ "textPointers": "VermilionDock_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/VermilionDock.asm",
+  "objects": "data/maps/objects/VermilionDock.asm",
+  "blocks": "maps/VermilionDock.blk",
+  "script": "scripts/VermilionDock.asm"
+ },
+ "lastMapCandidates": ["VERMILION_CITY"],
+ "palette": {"pal": "PAL_VERMILION", "rule": "lastMap", "viaLastMap": "VERMILION_CITY"}
+}

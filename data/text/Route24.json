@@ -1,0 +1,531 @@
+{
+ "map": "Route24",
+ "const": "ROUTE_24",
+ "textPointerTables": [
+  {
+   "label": "Route24_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_ROUTE24_COOLTRAINER_M1", "label": "Route24CooltrainerM1Text", "kind": "asm", "handler": "asm"},
+    {"id": 2, "const": "TEXT_ROUTE24_COOLTRAINER_M2", "label": "Route24CooltrainerM2Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route24TrainerHeader0"},
+    {"id": 3, "const": "TEXT_ROUTE24_COOLTRAINER_M3", "label": "Route24CooltrainerM3Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route24TrainerHeader1"},
+    {"id": 4, "const": "TEXT_ROUTE24_COOLTRAINER_F1", "label": "Route24CooltrainerF1Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route24TrainerHeader2"},
+    {"id": 5, "const": "TEXT_ROUTE24_YOUNGSTER1", "label": "Route24Youngster1Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route24TrainerHeader3"},
+    {"id": 6, "const": "TEXT_ROUTE24_COOLTRAINER_F2", "label": "Route24CooltrainerF2Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route24TrainerHeader4"},
+    {"id": 7, "const": "TEXT_ROUTE24_YOUNGSTER2", "label": "Route24Youngster2Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route24TrainerHeader5"},
+    {"id": 8, "const": "TEXT_ROUTE24_TM_THUNDER_WAVE", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"}
+   ]
+  }
+ ],
+ "texts": {
+  "PickUpItemText": {
+   "kind": "asm",
+   "src": "home/overworld_text.asm:29",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "Route24CooltrainerM1Text": {
+   "kind": "asm",
+   "src": "scripts/Route24.asm:108",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["Route24CooltrainerM1Text.YouBeatOurContestText", "Route24CooltrainerM1Text.ReceivedNuggetText", "Route24CooltrainerM1Text.JoinTeamRocketText", "Route24CooltrainerM1Text.DefeatedText", "Route24CooltrainerM1Text.YouCouldBecomeATopLeaderText", "Route24CooltrainerM1Text.NoRoomText"]
+  },
+  "Route24CooltrainerM1Text.YouBeatOurContestText": {
+   "kind": "text",
+   "src": "scripts/Route24.asm:149",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route24CooltrainerM1YouBeatOurContestText"},
+    {"cmd": "sound", "sound": "sound_get_item_1"},
+    {"cmd": "text_far", "label": "_Route24CooltrainerM1YouJustEarnedAPrizeText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route24CooltrainerM1Text.ReceivedNuggetText": {
+   "kind": "text",
+   "src": "scripts/Route24.asm:155",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route24CooltrainerM1ReceivedNuggetText"},
+    {"cmd": "sound", "sound": "sound_get_item_1"},
+    {"cmd": "text_promptbutton"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route24CooltrainerM1Text.NoRoomText": {
+   "kind": "text",
+   "src": "scripts/Route24.asm:161",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route24CooltrainerM1NoRoomText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route24CooltrainerM1Text.JoinTeamRocketText": {
+   "kind": "text",
+   "src": "scripts/Route24.asm:165",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route24CooltrainerM1JoinTeamRocketText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route24CooltrainerM1Text.DefeatedText": {
+   "kind": "text",
+   "src": "scripts/Route24.asm:169",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route24CooltrainerM1DefeatedText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route24CooltrainerM1Text.YouCouldBecomeATopLeaderText": {
+   "kind": "text",
+   "src": "scripts/Route24.asm:173",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route24CooltrainerM1YouCouldBecomeATopLeaderText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route24CooltrainerM2Text": {
+   "kind": "asm",
+   "src": "scripts/Route24.asm:177",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route24TrainerHeader0"
+  },
+  "Route24CooltrainerM3Text": {
+   "kind": "asm",
+   "src": "scripts/Route24.asm:183",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route24TrainerHeader1"
+  },
+  "Route24CooltrainerF1Text": {
+   "kind": "asm",
+   "src": "scripts/Route24.asm:189",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route24TrainerHeader2"
+  },
+  "Route24Youngster1Text": {
+   "kind": "asm",
+   "src": "scripts/Route24.asm:195",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route24TrainerHeader3"
+  },
+  "Route24CooltrainerF2Text": {
+   "kind": "asm",
+   "src": "scripts/Route24.asm:201",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route24TrainerHeader4"
+  },
+  "Route24Youngster2Text": {
+   "kind": "asm",
+   "src": "scripts/Route24.asm:207",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route24TrainerHeader5"
+  },
+  "Route24CooltrainerM2BattleText": {
+   "kind": "text",
+   "src": "scripts/Route24.asm:213",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route24CooltrainerM2BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route24CooltrainerM2EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route24.asm:217",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route24CooltrainerM2EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route24CooltrainerM2AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route24.asm:221",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route24CooltrainerM2AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route24CooltrainerM3BattleText": {
+   "kind": "text",
+   "src": "scripts/Route24.asm:225",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route24CooltrainerM3BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route24CooltrainerM3EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route24.asm:229",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route24CooltrainerM3EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route24CooltrainerM3AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route24.asm:233",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route24CooltrainerM3AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route24CooltrainerF1BattleText": {
+   "kind": "text",
+   "src": "scripts/Route24.asm:237",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route24CooltrainerF1BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route24CooltrainerF1EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route24.asm:241",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route24CooltrainerF1EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route24CooltrainerF1AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route24.asm:245",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route24CooltrainerF1AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route24Youngster1BattleText": {
+   "kind": "text",
+   "src": "scripts/Route24.asm:249",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route24Youngster1BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route24Youngster1EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route24.asm:253",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route24Youngster1EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route24Youngster1AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route24.asm:257",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route24Youngster1AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route24CooltrainerF2BattleText": {
+   "kind": "text",
+   "src": "scripts/Route24.asm:261",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route24CooltrainerF2BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route24CooltrainerF2EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route24.asm:265",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route24CooltrainerF2EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route24CooltrainerF2AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route24.asm:269",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route24CooltrainerF2AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route24Youngster2BattleText": {
+   "kind": "text",
+   "src": "scripts/Route24.asm:273",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route24Youngster2BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route24Youngster2EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route24.asm:277",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route24Youngster2EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route24Youngster2AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route24.asm:281",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route24Youngster2AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_Route24CooltrainerM1YouBeatOurContestText": {
+   "kind": "text",
+   "src": "text/Route24.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Congratulations!"},
+    {"cmd": "line", "str": "You beat our 5"},
+    {"cmd": "cont", "str": "contest trainers!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_Route24CooltrainerM1YouJustEarnedAPrizeText": {
+   "kind": "text",
+   "src": "text/Route24.asm:8",
+   "commands": [
+    {"cmd": "text", "str": ""},
+    {"cmd": "para", "str": "You just earned a"},
+    {"cmd": "line", "str": "fabulous prize!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route24CooltrainerM1ReceivedNuggetText": {
+   "kind": "text",
+   "src": "text/Route24.asm:15",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} received"},
+    {"cmd": "line", "str": "a "},
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_Route24CooltrainerM1NoRoomText": {
+   "kind": "text",
+   "src": "text/Route24.asm:22",
+   "commands": [
+    {"cmd": "text", "str": "You don't have"},
+    {"cmd": "line", "str": "any room!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route24CooltrainerM1JoinTeamRocketText": {
+   "kind": "text",
+   "src": "text/Route24.asm:27",
+   "commands": [
+    {"cmd": "text", "str": "By the way, would"},
+    {"cmd": "line", "str": "you like to join"},
+    {"cmd": "cont", "str": "TEAM ROCKET?"},
+    {"cmd": "para", "str": "We're a group"},
+    {"cmd": "line", "str": "dedicated to evil"},
+    {"cmd": "cont", "str": "using POKéMON!"},
+    {"cmd": "para", "str": "Want to join?"},
+    {"cmd": "para", "str": "Are you sure?"},
+    {"cmd": "para", "str": "Come on, join us!"},
+    {"cmd": "para", "str": "I'm telling you"},
+    {"cmd": "line", "str": "to join!"},
+    {"cmd": "para", "str": "OK, you need"},
+    {"cmd": "line", "str": "convincing!"},
+    {"cmd": "para", "str": "I'll make you an"},
+    {"cmd": "line", "str": "offer you can't"},
+    {"cmd": "cont", "str": "refuse!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route24CooltrainerM1DefeatedText": {
+   "kind": "text",
+   "src": "text/Route24.asm:53",
+   "commands": [
+    {"cmd": "text", "str": "Arrgh!"},
+    {"cmd": "line", "str": "You are good!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route24CooltrainerM1YouCouldBecomeATopLeaderText": {
+   "kind": "text",
+   "src": "text/Route24.asm:58",
+   "commands": [
+    {"cmd": "text", "str": "With your ability,"},
+    {"cmd": "line", "str": "you could become"},
+    {"cmd": "cont", "str": "a top leader in"},
+    {"cmd": "cont", "str": "TEAM ROCKET!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route24CooltrainerM2BattleText": {
+   "kind": "text",
+   "src": "text/Route24.asm:65",
+   "commands": [
+    {"cmd": "text", "str": "I saw your feat"},
+    {"cmd": "line", "str": "from the grass!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route24CooltrainerM2EndBattleText": {
+   "kind": "text",
+   "src": "text/Route24_2.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "I"},
+    {"cmd": "line", "str": "thought not!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route24CooltrainerM2AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route24_2.asm:7",
+   "commands": [
+    {"cmd": "text", "str": "I hid because the"},
+    {"cmd": "line", "str": "people on the"},
+    {"cmd": "cont", "str": "bridge scared me!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route24CooltrainerM3BattleText": {
+   "kind": "text",
+   "src": "text/Route24_2.asm:13",
+   "commands": [
+    {"cmd": "text", "str": "OK! I'm No. 5!"},
+    {"cmd": "line", "str": "I'll stomp you!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route24CooltrainerM3EndBattleText": {
+   "kind": "text",
+   "src": "text/Route24_2.asm:18",
+   "commands": [
+    {"cmd": "text", "str": "Whoa!"},
+    {"cmd": "line", "str": "Too much!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route24CooltrainerM3AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route24_2.asm:23",
+   "commands": [
+    {"cmd": "text", "str": "I did my best, I"},
+    {"cmd": "line", "str": "have no regrets!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route24CooltrainerF1BattleText": {
+   "kind": "text",
+   "src": "text/Route24_2.asm:28",
+   "commands": [
+    {"cmd": "text", "str": "I'm No. 4!"},
+    {"cmd": "line", "str": "Getting tired?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route24CooltrainerF1EndBattleText": {
+   "kind": "text",
+   "src": "text/Route24_2.asm:33",
+   "commands": [
+    {"cmd": "text", "str": "I lost"},
+    {"cmd": "line", "str": "too!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route24CooltrainerF1AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route24_2.asm:38",
+   "commands": [
+    {"cmd": "text", "str": "I did my best, so"},
+    {"cmd": "line", "str": "I've no regrets!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route24Youngster1BattleText": {
+   "kind": "text",
+   "src": "text/Route24_2.asm:43",
+   "commands": [
+    {"cmd": "text", "str": "Here's No. 3!"},
+    {"cmd": "line", "str": "I won't be easy!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route24Youngster1EndBattleText": {
+   "kind": "text",
+   "src": "text/Route24_2.asm:48",
+   "commands": [
+    {"cmd": "text", "str": "Ow!"},
+    {"cmd": "line", "str": "Stomped flat!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route24Youngster1AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route24_2.asm:53",
+   "commands": [
+    {"cmd": "text", "str": "I did my best, I"},
+    {"cmd": "line", "str": "have no regrets!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route24CooltrainerF2BattleText": {
+   "kind": "text",
+   "src": "text/Route24_2.asm:58",
+   "commands": [
+    {"cmd": "text", "str": "I'm second!"},
+    {"cmd": "line", "str": "Now it's serious!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route24CooltrainerF2EndBattleText": {
+   "kind": "text",
+   "src": "text/Route24_2.asm:63",
+   "commands": [
+    {"cmd": "text", "str": "How could I"},
+    {"cmd": "line", "str": "lose?"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route24CooltrainerF2AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route24_2.asm:68",
+   "commands": [
+    {"cmd": "text", "str": "I did my best, I"},
+    {"cmd": "line", "str": "have no regrets!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route24Youngster2BattleText": {
+   "kind": "text",
+   "src": "text/Route24_2.asm:73",
+   "commands": [
+    {"cmd": "text", "str": "This is NUGGET"},
+    {"cmd": "line", "str": "BRIDGE! Beat us 5"},
+    {"cmd": "cont", "str": "trainers and win"},
+    {"cmd": "cont", "str": "a fabulous prize!"},
+    {"cmd": "para", "str": "Think you got"},
+    {"cmd": "line", "str": "what it takes?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route24Youngster2EndBattleText": {
+   "kind": "text",
+   "src": "text/Route24_2.asm:83",
+   "commands": [
+    {"cmd": "text", "str": "Whoo!"},
+    {"cmd": "line", "str": "Good stuff!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route24Youngster2AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route24_2.asm:88",
+   "commands": [
+    {"cmd": "text", "str": "I did my best, I"},
+    {"cmd": "line", "str": "have no regrets!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

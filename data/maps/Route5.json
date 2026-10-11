@@ -1,0 +1,86 @@
+{
+ "id": 16,
+ "const": "ROUTE_5",
+ "name": "Route5",
+ "displayName": "ROUTE 5",
+ "width": 10,
+ "height": 18,
+ "tileset": "OVERWORLD",
+ "tilesetId": 0,
+ "tilesetFile": "data/tilesets/Overworld.json",
+ "isOutside": true,
+ "borderBlock": 10,
+ "blocks": [109, 39, 110, 10, 10, 10, 10, 78, 39, 77, 109, 39, 110, 7, 7, 7, 7, 78, 39, 77, 109, 39, 110, 11, 11, 11, 11, 78, 39, 77, 109, 39, 110, 7, 7, 7, 7, 78, 39, 77, 109, 39, 110, 11, 11, 11, 11, 78, 39, 77, 109, 39, 110, 7, 7, 7, 7, 78, 39, 77, 109, 39, 110, 11, 11, 11, 11, 78, 39, 77, 109, 39, 110, 7, 7, 7, 7, 78, 39, 77, 109, 39, 95, 49, 49, 49, 49, 27, 39, 77, 109, 39, 95, 49, 12, 14, 49, 27, 39, 77, 109, 94, 95, 49, 16, 18, 49, 27, 94, 77, 109, 1, 95, 26, 26, 26, 26, 27, 1, 77, 109, 1, 1, 1, 1, 1, 1, 1, 32, 33, 109, 1, 1, 1, 1, 1, 1, 1, 124, 126, 109, 1, 1, 1, 27, 95, 1, 1, 8, 77, 109, 1, 1, 32, 13, 13, 33, 1, 1, 77, 110, 119, 119, 55, 125, 58, 126, 119, 119, 109, 110, 116, 116, 10, 10, 10, 10, 116, 116, 109],
+ "connections": {
+  "north": {
+   "map": "CERULEAN_CITY",
+   "mapId": 3,
+   "mapName": "CeruleanCity",
+   "offset": -5,
+   "dx": -5,
+   "dy": -18,
+   "copyRect": {"x": 2, "y": 15, "w": 16, "h": 3},
+   "onEnter": {"newY": 35, "xAdd": 10},
+   "macro": {
+    "stripSrc": 302,
+    "stripDest": 0,
+    "stripLength": 16,
+    "connectedWidth": 20,
+    "yAlign": 35,
+    "xAlign": 10,
+    "viewPointer": 469
+   }
+  },
+  "south": {
+   "map": "SAFFRON_CITY",
+   "mapId": 10,
+   "mapName": "SaffronCity",
+   "offset": -5,
+   "dx": -5,
+   "dy": 18,
+   "copyRect": {"x": 2, "y": 0, "w": 16, "h": 3},
+   "onEnter": {"newY": 0, "xAdd": 10},
+   "macro": {"stripSrc": 2, "stripDest": 336, "stripLength": 16, "connectedWidth": 20, "yAlign": 0, "xAlign": 10, "viewPointer": 27}
+  }
+ },
+ "warps": [
+  {"x": 10, "y": 29, "destMap": "ROUTE_5_GATE", "destMapId": 70, "destMapName": "Route5Gate", "destWarp": 4, "destWarpIndex": 3},
+  {"x": 9, "y": 29, "destMap": "ROUTE_5_GATE", "destMapId": 70, "destMapName": "Route5Gate", "destWarp": 3, "destWarpIndex": 2},
+  {"x": 10, "y": 33, "destMap": "ROUTE_5_GATE", "destMapId": 70, "destMapName": "Route5Gate", "destWarp": 1, "destWarpIndex": 0},
+  {"x": 17, "y": 27, "destMap": "UNDERGROUND_PATH_ROUTE_5", "destMapId": 71, "destMapName": "UndergroundPathRoute5", "destWarp": 1, "destWarpIndex": 0},
+  {"x": 10, "y": 21, "destMap": "DAYCARE", "destMapId": 72, "destMapName": "Daycare", "destWarp": 1, "destWarpIndex": 0}
+ ],
+ "bgEvents": [
+  {"x": 17, "y": 29, "textId": "TEXT_ROUTE5_UNDERGROUND_PATH_SIGN", "textIndex": 1}
+ ],
+ "objectEvents": [],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": {
+  "type": "split",
+  "split": "SPLITSET_ROUTE_5",
+  "axis": "NORTH_SOUTH",
+  "compare": "y",
+  "coord": 33,
+  "below": "SPRITESET_PEWTER_CERULEAN",
+  "atOrAbove": "SPRITESET_SAFFRON",
+  "sets": {
+   "SPRITESET_PEWTER_CERULEAN": ["SPRITE_YOUNGSTER", "SPRITE_ROCKET", "SPRITE_SUPER_NERD", "SPRITE_HIKER", "SPRITE_MONSTER", "SPRITE_BLUE", "SPRITE_GUARD", "SPRITE_COOLTRAINER_F", "SPRITE_COOLTRAINER_M", "SPRITE_POKE_BALL", "SPRITE_UNUSED_GAMBLER_ASLEEP_2"],
+   "SPRITESET_SAFFRON": ["SPRITE_ROCKET", "SPRITE_SCIENTIST", "SPRITE_SILPH_WORKER_M", "SPRITE_SILPH_WORKER_F", "SPRITE_GENTLEMAN", "SPRITE_BIRD", "SPRITE_ROCKER", "SPRITE_COOLTRAINER_M", "SPRITE_MONSTER", "SPRITE_POKE_BALL", "SPRITE_UNUSED_GAMBLER_ASLEEP_2"]
+  }
+ },
+ "music": "MUSIC_ROUTES3",
+ "wild": {"label": "Route5WildMons", "file": "Route5"},
+ "townMap": {"x": 10, "y": 3, "group": null},
+ "extraWarpCheck": "warpTileInFront",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/Route5.json",
+ "textPointers": "Route5_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/Route5.asm",
+  "objects": "data/maps/objects/Route5.asm",
+  "blocks": "maps/Route5.blk",
+  "script": "scripts/Route5.asm"
+ },
+ "palette": {"pal": "PAL_ROUTE", "rule": "route"}
+}

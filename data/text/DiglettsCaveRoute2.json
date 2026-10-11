@@ -1,0 +1,36 @@
+{
+ "map": "DiglettsCaveRoute2",
+ "const": "DIGLETTS_CAVE_ROUTE_2",
+ "textPointerTables": [
+  {
+   "label": "DiglettsCaveRoute2_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_DIGLETTSCAVEROUTE2_FISHING_GURU", "label": "DiglettsCaveRoute2FishingGuruText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "DiglettsCaveRoute2FishingGuruText": {
+   "kind": "text",
+   "src": "scripts/DiglettsCaveRoute2.asm:11",
+   "commands": [
+    {"cmd": "text_far", "label": "_DiglettsCaveRoute2FishingGuruText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_DiglettsCaveRoute2FishingGuruText": {
+   "kind": "text",
+   "src": "text/DiglettsCaveRoute2.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "I went to ROCK"},
+    {"cmd": "line", "str": "TUNNEL, but it's"},
+    {"cmd": "cont", "str": "dark and scary."},
+    {"cmd": "para", "str": "If a POKéMON's"},
+    {"cmd": "line", "str": "FLASH could light"},
+    {"cmd": "cont", "str": "it up..."},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

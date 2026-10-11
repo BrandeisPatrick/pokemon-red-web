@@ -1,0 +1,97 @@
+{
+ "map": "UndergroundPathRoute7Copy",
+ "const": "UNDERGROUND_PATH_ROUTE_7_COPY",
+ "textPointerTables": [
+  {
+   "label": "UndergroundPathRoute7Copy_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_UNDERGROUNDPATHROUTE7COPY_UNUSED_GIRL", "label": "UndergroundPathRoute7CopyUnusedGirlText", "kind": "text", "handler": "text"},
+    {"id": 2, "const": "TEXT_UNDERGROUNDPATHROUTE7COPY_UNUSED_MIDDLE_AGED_MAN", "label": "UndergroundPathRoute7CopyUnusedMiddleAgedManText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "UndergroundPathRoute7CopyUnusedGirlText": {
+   "kind": "text",
+   "src": "scripts/UndergroundPathRoute7Copy.asm:12",
+   "commands": [
+    {"cmd": "text_far", "label": "_UndergroundPathRoute7CopyUnusedGirlText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "UndergroundPathRoute7CopyUnusedTeamRocketHadAHideoutText": {
+   "kind": "text",
+   "src": "scripts/UndergroundPathRoute7Copy.asm:16",
+   "commands": [
+    {"cmd": "text_far", "label": "_UndergroundPathRoute7CopyUnusedTeamRocketHadAHideoutText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "UndergroundPathRoute7CopyUnusedMiddleAgedManText": {
+   "kind": "text",
+   "src": "scripts/UndergroundPathRoute7Copy.asm:20",
+   "commands": [
+    {"cmd": "text_far", "label": "_UndergroundPathRoute7CopyUnusedMiddleAgedManText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "UndergroundPathRoute7CopyUnusedGoesUnderSaffronText": {
+   "kind": "text",
+   "src": "scripts/UndergroundPathRoute7Copy.asm:24",
+   "commands": [
+    {"cmd": "text_far", "label": "_UndergroundPathRoute7CopyUnusedGoesUnderSaffronText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_UndergroundPathRoute7CopyUnusedGirlText": {
+   "kind": "text",
+   "src": "text/UndergroundPathRoute7Copy.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "I want to shop at"},
+    {"cmd": "line", "str": "the dept. store"},
+    {"cmd": "cont", "str": "in CELADON but..."},
+    {"cmd": "para", "str": "There are so many"},
+    {"cmd": "line", "str": "rough looking"},
+    {"cmd": "cont", "str": "people there."},
+    {"cmd": "done"}
+   ]
+  },
+  "_UndergroundPathRoute7CopyUnusedTeamRocketHadAHideoutText": {
+   "kind": "text",
+   "src": "text/UndergroundPathRoute7Copy.asm:12",
+   "commands": [
+    {"cmd": "text", "str": "TEAM ROCKET had a"},
+    {"cmd": "line", "str": "secret hideout in"},
+    {"cmd": "cont", "str": "CELADON CITY?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_UndergroundPathRoute7CopyUnusedMiddleAgedManText": {
+   "kind": "text",
+   "src": "text/UndergroundPathRoute7Copy.asm:18",
+   "commands": [
+    {"cmd": "text", "str": "You're here to"},
+    {"cmd": "line", "str": "shop in CELADON?"},
+    {"cmd": "para", "str": "Just step outside"},
+    {"cmd": "line", "str": "and head west!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_UndergroundPathRoute7CopyUnusedGoesUnderSaffronText": {
+   "kind": "text",
+   "src": "text/UndergroundPathRoute7Copy.asm:26",
+   "commands": [
+    {"cmd": "text", "str": "The UNDERGROUND"},
+    {"cmd": "line", "str": "PATH goes beneath"},
+    {"cmd": "cont", "str": "SAFFRON and leads"},
+    {"cmd": "cont", "str": "to LAVENDER."},
+    {"cmd": "para", "str": "If you're heading"},
+    {"cmd": "line", "str": "to CERULEAN, go"},
+    {"cmd": "cont", "str": "to the building"},
+    {"cmd": "cont", "str": "across the road."},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

@@ -1,0 +1,75 @@
+{
+ "map": "FuchsiaPokecenter",
+ "const": "FUCHSIA_POKECENTER",
+ "textPointerTables": [
+  {
+   "label": "FuchsiaPokecenter_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_FUCHSIAPOKECENTER_NURSE", "label": "FuchsiaPokecenterNurseText", "kind": "script", "handler": "script_pokecenter_nurse"},
+    {"id": 2, "const": "TEXT_FUCHSIAPOKECENTER_ROCKER", "label": "FuchsiaPokecenterRockerText", "kind": "text", "handler": "text"},
+    {"id": 3, "const": "TEXT_FUCHSIAPOKECENTER_COOLTRAINER_F", "label": "FuchsiaPokecenterCooltrainerFText", "kind": "text", "handler": "text"},
+    {"id": 4, "const": "TEXT_FUCHSIAPOKECENTER_LINK_RECEPTIONIST", "label": "FuchsiaPokecenterLinkReceptionistText", "kind": "script", "handler": "script_cable_club_receptionist"}
+   ]
+  }
+ ],
+ "texts": {
+  "FuchsiaPokecenterNurseText": {
+   "kind": "script",
+   "src": "scripts/FuchsiaPokecenter.asm:13",
+   "commands": [
+    {"cmd": "script", "script": "script_pokecenter_nurse"}
+   ]
+  },
+  "FuchsiaPokecenterRockerText": {
+   "kind": "text",
+   "src": "scripts/FuchsiaPokecenter.asm:16",
+   "commands": [
+    {"cmd": "text_far", "label": "_FuchsiaPokecenterRockerText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FuchsiaPokecenterCooltrainerFText": {
+   "kind": "text",
+   "src": "scripts/FuchsiaPokecenter.asm:20",
+   "commands": [
+    {"cmd": "text_far", "label": "_FuchsiaPokecenterCooltrainerFText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "FuchsiaPokecenterLinkReceptionistText": {
+   "kind": "script",
+   "src": "scripts/FuchsiaPokecenter.asm:24",
+   "commands": [
+    {"cmd": "script", "script": "script_cable_club_receptionist"}
+   ]
+  },
+  "_FuchsiaPokecenterRockerText": {
+   "kind": "text",
+   "src": "text/FuchsiaPokecenter.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "You can't win"},
+    {"cmd": "line", "str": "with just one"},
+    {"cmd": "cont", "str": "strong POKéMON."},
+    {"cmd": "para", "str": "It's tough, but"},
+    {"cmd": "line", "str": "you have to raise"},
+    {"cmd": "cont", "str": "them evenly."},
+    {"cmd": "done"}
+   ]
+  },
+  "_FuchsiaPokecenterCooltrainerFText": {
+   "kind": "text",
+   "src": "text/FuchsiaPokecenter.asm:12",
+   "commands": [
+    {"cmd": "text", "str": "There's a narrow"},
+    {"cmd": "line", "str": "trail west of"},
+    {"cmd": "cont", "str": "VIRIDIAN CITY."},
+    {"cmd": "para", "str": "It goes to POKéMON"},
+    {"cmd": "line", "str": "LEAGUE HQ."},
+    {"cmd": "cont", "str": "The HQ governs"},
+    {"cmd": "cont", "str": "all trainers."},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

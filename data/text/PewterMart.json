@@ -1,0 +1,81 @@
+{
+ "map": "PewterMart",
+ "const": "PEWTER_MART",
+ "textPointerTables": [
+  {
+   "label": "PewterMart_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_PEWTERMART_CLERK", "label": "PewterMartClerkText", "kind": "script", "handler": "script_mart"},
+    {"id": 2, "const": "TEXT_PEWTERMART_YOUNGSTER", "label": "PewterMartYoungsterText", "kind": "asm", "handler": "asm"},
+    {"id": 3, "const": "TEXT_PEWTERMART_SUPER_NERD", "label": "PewterMartSuperNerdText", "kind": "asm", "handler": "asm"}
+   ]
+  }
+ ],
+ "texts": {
+  "PewterMartClerkText": {
+   "kind": "script",
+   "src": "data/items/marts.asm:8",
+   "commands": [
+    {"cmd": "script", "script": "script_mart", "items": ["POKE_BALL", "POTION", "ESCAPE_ROPE", "ANTIDOTE", "BURN_HEAL", "AWAKENING", "PARLYZ_HEAL"]}
+   ]
+  },
+  "PewterMartYoungsterText": {
+   "kind": "asm",
+   "src": "scripts/PewterMart.asm:14",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["PewterMartYoungsterText.Text"]
+  },
+  "PewterMartYoungsterText.Text": {
+   "kind": "text",
+   "src": "scripts/PewterMart.asm:20",
+   "commands": [
+    {"cmd": "text_far", "label": "_PewterMartYoungsterText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PewterMartSuperNerdText": {
+   "kind": "asm",
+   "src": "scripts/PewterMart.asm:24",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["PewterMartSuperNerdText.Text"]
+  },
+  "PewterMartSuperNerdText.Text": {
+   "kind": "text",
+   "src": "scripts/PewterMart.asm:30",
+   "commands": [
+    {"cmd": "text_far", "label": "_PewterMartSuperNerdText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_PewterMartYoungsterText": {
+   "kind": "text",
+   "src": "text/PewterMart.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "A shady, old man"},
+    {"cmd": "line", "str": "got me to buy"},
+    {"cmd": "cont", "str": "this really weird"},
+    {"cmd": "cont", "str": "fish POKéMON!"},
+    {"cmd": "para", "str": "It's totally weak"},
+    {"cmd": "line", "str": "and it cost ¥500!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PewterMartSuperNerdText": {
+   "kind": "text",
+   "src": "text/PewterMart.asm:12",
+   "commands": [
+    {"cmd": "text", "str": "Good things can"},
+    {"cmd": "line", "str": "happen if you"},
+    {"cmd": "cont", "str": "raise POKéMON"},
+    {"cmd": "cont", "str": "diligently, even"},
+    {"cmd": "cont", "str": "the weak ones!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

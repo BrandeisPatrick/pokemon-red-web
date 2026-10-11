@@ -1,0 +1,43 @@
+{
+ "id": 76,
+ "const": "ROUTE_7_GATE",
+ "name": "Route7Gate",
+ "displayName": "ROUTE 7",
+ "width": 3,
+ "height": 4,
+ "tileset": "GATE",
+ "tilesetId": 12,
+ "tilesetFile": "data/tilesets/Gate.json",
+ "isOutside": false,
+ "borderBlock": 10,
+ "blocks": [28, 31, 29, 112, 33, 111, 110, 37, 109, 24, 30, 25],
+ "connections": {},
+ "warps": [
+  {"x": 0, "y": 3, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 4, "destWarpIndex": 3},
+  {"x": 0, "y": 4, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 4, "destWarpIndex": 3},
+  {"x": 5, "y": 3, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 1, "destWarpIndex": 0},
+  {"x": 5, "y": 4, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 2, "destWarpIndex": 1}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "ROUTE7GATE_GUARD", "x": 3, "y": 1, "sprite": "SPRITE_GUARD", "spriteId": 49, "movement": "STAY", "rangeOrDirection": "DOWN", "rangeOrDirectionValue": 208, "behavior": "face_down", "textId": "TEXT_ROUTE7GATE_GUARD", "textIndex": 1}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_CITIES1",
+ "wild": null,
+ "townMap": {"x": 9, "y": 5, "group": "ROUTE_7"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/Route7Gate.json",
+ "textPointers": "Route7Gate_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/Route7Gate.asm",
+  "objects": "data/maps/objects/Route7Gate.asm",
+  "blocks": "maps/Route7Gate.blk",
+  "script": "scripts/Route7Gate.asm"
+ },
+ "lastMapCandidates": ["ROUTE_7"],
+ "palette": {"pal": "PAL_ROUTE", "rule": "lastMap", "viaLastMap": "ROUTE_7"}
+}

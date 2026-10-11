@@ -1,0 +1,127 @@
+{
+ "id": 65,
+ "const": "CERULEAN_GYM",
+ "name": "CeruleanGym",
+ "displayName": "CERULEAN CITY",
+ "width": 5,
+ "height": 7,
+ "tileset": "GYM",
+ "tilesetId": 7,
+ "tilesetFile": "data/tilesets/Gym.json",
+ "isOutside": false,
+ "borderBlock": 3,
+ "blocks": [20, 20, 33, 20, 20, 21, 35, 34, 35, 22, 21, 30, 30, 31, 22, 21, 28, 29, 32, 22, 21, 27, 5, 23, 22, 21, 26, 5, 25, 22, 24, 24, 4, 24, 24],
+ "connections": {},
+ "warps": [
+  {"x": 4, "y": 13, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 4, "destWarpIndex": 3},
+  {"x": 5, "y": 13, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 4, "destWarpIndex": 3}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {
+   "index": 1,
+   "const": "CERULEANGYM_MISTY",
+   "x": 4,
+   "y": 2,
+   "sprite": "SPRITE_BRUNETTE_GIRL",
+   "spriteId": 29,
+   "movement": "STAY",
+   "rangeOrDirection": "DOWN",
+   "rangeOrDirectionValue": 208,
+   "behavior": "face_down",
+   "textId": "TEXT_CERULEANGYM_MISTY",
+   "textIndex": 1,
+   "trainer": {"trainerClass": "OPP_MISTY", "trainerClassId": 35, "trainerPartyIndex": 1, "header": null}
+  },
+  {
+   "index": 2,
+   "const": "CERULEANGYM_COOLTRAINER_F",
+   "x": 2,
+   "y": 3,
+   "sprite": "SPRITE_COOLTRAINER_F",
+   "spriteId": 6,
+   "movement": "STAY",
+   "rangeOrDirection": "RIGHT",
+   "rangeOrDirectionValue": 211,
+   "behavior": "face_right",
+   "textId": "TEXT_CERULEANGYM_COOLTRAINER_F",
+   "textIndex": 2,
+   "trainer": {
+    "trainerClass": "OPP_JR_TRAINER_F",
+    "trainerClassId": 6,
+    "trainerPartyIndex": 1,
+    "header": "CeruleanGymTrainerHeader0",
+    "eventFlag": "EVENT_BEAT_CERULEAN_GYM_TRAINER_0",
+    "eventFlagIndex": 186,
+    "sightRange": 3,
+    "textBefore": "CeruleanGymBattleText1",
+    "textEnd": "CeruleanGymEndBattleText1",
+    "textAfter": "CeruleanGymAfterBattleText1"
+   }
+  },
+  {
+   "index": 3,
+   "const": "CERULEANGYM_SWIMMER",
+   "x": 8,
+   "y": 7,
+   "sprite": "SPRITE_SWIMMER",
+   "spriteId": 34,
+   "movement": "STAY",
+   "rangeOrDirection": "LEFT",
+   "rangeOrDirectionValue": 210,
+   "behavior": "face_left",
+   "textId": "TEXT_CERULEANGYM_SWIMMER",
+   "textIndex": 3,
+   "trainer": {
+    "trainerClass": "OPP_SWIMMER",
+    "trainerClassId": 15,
+    "trainerPartyIndex": 1,
+    "header": "CeruleanGymTrainerHeader1",
+    "eventFlag": "EVENT_BEAT_CERULEAN_GYM_TRAINER_1",
+    "eventFlagIndex": 187,
+    "sightRange": 3,
+    "textBefore": "CeruleanGymBattleText2",
+    "textEnd": "CeruleanGymEndBattleText2",
+    "textAfter": "CeruleanGymAfterBattleText2"
+   }
+  },
+  {
+   "index": 4,
+   "const": "CERULEANGYM_GYM_GUIDE",
+   "x": 7,
+   "y": 10,
+   "sprite": "SPRITE_GYM_GUIDE",
+   "spriteId": 36,
+   "movement": "STAY",
+   "rangeOrDirection": "DOWN",
+   "rangeOrDirectionValue": 208,
+   "behavior": "face_down",
+   "textId": "TEXT_CERULEANGYM_GYM_GUIDE",
+   "textIndex": 4
+  }
+ ],
+ "trainerHeaders": [
+  {"header": "CeruleanGymTrainerHeader0", "list": "CeruleanGymTrainerHeaders", "objectIndex": 2, "eventFlag": "EVENT_BEAT_CERULEAN_GYM_TRAINER_0", "sightRange": 3, "textBefore": "CeruleanGymBattleText1", "textEnd": "CeruleanGymEndBattleText1", "textAfter": "CeruleanGymAfterBattleText1", "talkObject": 2},
+  {"header": "CeruleanGymTrainerHeader1", "list": "CeruleanGymTrainerHeaders", "objectIndex": 3, "eventFlag": "EVENT_BEAT_CERULEAN_GYM_TRAINER_1", "sightRange": 3, "textBefore": "CeruleanGymBattleText2", "textEnd": "CeruleanGymEndBattleText2", "textAfter": "CeruleanGymAfterBattleText2", "talkObject": 3}
+ ],
+ "hiddenObjects": [
+  {"x": 3, "y": 11, "routine": "GymStatues", "arg": "SPRITE_FACING_UP", "argValue": 4, "kind": "event"},
+  {"x": 6, "y": 11, "routine": "GymStatues", "arg": "SPRITE_FACING_UP", "argValue": 4, "kind": "event"}
+ ],
+ "spriteSet": null,
+ "music": "MUSIC_GYM",
+ "wild": null,
+ "townMap": {"x": 10, "y": 2, "group": "CERULEAN_CITY"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/CeruleanGym.json",
+ "textPointers": "CeruleanGym_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/CeruleanGym.asm",
+  "objects": "data/maps/objects/CeruleanGym.asm",
+  "blocks": "maps/CeruleanGym.blk",
+  "script": "scripts/CeruleanGym.asm"
+ },
+ "lastMapCandidates": ["CERULEAN_CITY"],
+ "palette": {"pal": "PAL_CERULEAN", "rule": "lastMap", "viaLastMap": "CERULEAN_CITY"}
+}

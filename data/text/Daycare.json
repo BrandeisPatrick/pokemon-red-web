@@ -1,0 +1,301 @@
+{
+ "map": "Daycare",
+ "const": "DAYCARE",
+ "textPointerTables": [
+  {
+   "label": "Daycare_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_DAYCARE_GENTLEMAN", "label": "DaycareGentlemanText", "kind": "asm", "handler": "asm"}
+   ]
+  }
+ ],
+ "texts": {
+  "DaycareGentlemanText": {
+   "kind": "asm",
+   "src": "scripts/Daycare.asm:9",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["DaycareGentlemanText.IntroText", "DaycareGentlemanText.ComeAgainText", "DaycareGentlemanText.OnlyHaveOneMonText", "DaycareGentlemanText.WhichMonText", "DaycareGentlemanText.AllRightThenText", "DaycareGentlemanText.CantAcceptMonWithHMText", "DaycareGentlemanText.WillLookAfterMonText", "DaycareGentlemanText.ComeSeeMeInAWhileText", "DaycareGentlemanText.MonNeedsMoreTimeText", "DaycareGentlemanText.MonHasGrownText", "DaycareGentlemanText.NoRoomForMonText", "DaycareGentlemanText.OweMoneyText", "DaycareGentlemanText.NotEnoughMoneyText", "DaycareGentlemanText.HeresYourMonText", "DaycareGentlemanText.GotMonBackText"]
+  },
+  "DaycareGentlemanText.IntroText": {
+   "kind": "text",
+   "src": "scripts/Daycare.asm:215",
+   "commands": [
+    {"cmd": "text_far", "label": "_DaycareGentlemanIntroText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "DaycareGentlemanText.WhichMonText": {
+   "kind": "text",
+   "src": "scripts/Daycare.asm:219",
+   "commands": [
+    {"cmd": "text_far", "label": "_DaycareGentlemanWhichMonText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "DaycareGentlemanText.WillLookAfterMonText": {
+   "kind": "text",
+   "src": "scripts/Daycare.asm:223",
+   "commands": [
+    {"cmd": "text_far", "label": "_DaycareGentlemanWillLookAfterMonText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "DaycareGentlemanText.ComeSeeMeInAWhileText": {
+   "kind": "text",
+   "src": "scripts/Daycare.asm:227",
+   "commands": [
+    {"cmd": "text_far", "label": "_DaycareGentlemanComeSeeMeInAWhileText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "DaycareGentlemanText.MonHasGrownText": {
+   "kind": "text",
+   "src": "scripts/Daycare.asm:231",
+   "commands": [
+    {"cmd": "text_far", "label": "_DaycareGentlemanMonHasGrownText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "DaycareGentlemanText.OweMoneyText": {
+   "kind": "text",
+   "src": "scripts/Daycare.asm:235",
+   "commands": [
+    {"cmd": "text_far", "label": "_DaycareGentlemanOweMoneyText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "DaycareGentlemanText.GotMonBackText": {
+   "kind": "text",
+   "src": "scripts/Daycare.asm:239",
+   "commands": [
+    {"cmd": "text_far", "label": "_DaycareGentlemanGotMonBackText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "DaycareGentlemanText.MonNeedsMoreTimeText": {
+   "kind": "text",
+   "src": "scripts/Daycare.asm:243",
+   "commands": [
+    {"cmd": "text_far", "label": "_DaycareGentlemanMonNeedsMoreTimeText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "DaycareGentlemanText.AllRightThenText": {
+   "kind": "text",
+   "src": "scripts/Daycare.asm:247",
+   "commands": [
+    {"cmd": "text_far", "label": "_DaycareGentlemanAllRightThenText"},
+    {"cmd": "text_far", "label": "_DaycareGentlemanComeAgainText"},
+    {"cmd": "text_end"}
+   ],
+   "continuesInto": ["DaycareGentlemanText.ComeAgainText"]
+  },
+  "DaycareGentlemanText.ComeAgainText": {
+   "kind": "text",
+   "src": "scripts/Daycare.asm:249",
+   "commands": [
+    {"cmd": "text_far", "label": "_DaycareGentlemanComeAgainText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "DaycareGentlemanText.NoRoomForMonText": {
+   "kind": "text",
+   "src": "scripts/Daycare.asm:253",
+   "commands": [
+    {"cmd": "text_far", "label": "_DaycareGentlemanNoRoomForMonText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "DaycareGentlemanText.OnlyHaveOneMonText": {
+   "kind": "text",
+   "src": "scripts/Daycare.asm:257",
+   "commands": [
+    {"cmd": "text_far", "label": "_DaycareGentlemanOnlyHaveOneMonText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "DaycareGentlemanText.CantAcceptMonWithHMText": {
+   "kind": "text",
+   "src": "scripts/Daycare.asm:261",
+   "commands": [
+    {"cmd": "text_far", "label": "_DaycareGentlemanCantAcceptMonWithHMText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "DaycareGentlemanText.HeresYourMonText": {
+   "kind": "text",
+   "src": "scripts/Daycare.asm:265",
+   "commands": [
+    {"cmd": "text_far", "label": "_DaycareGentlemanHeresYourMonText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "DaycareGentlemanText.NotEnoughMoneyText": {
+   "kind": "text",
+   "src": "scripts/Daycare.asm:269",
+   "commands": [
+    {"cmd": "text_far", "label": "_DaycareGentlemanNotEnoughMoneyText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_DaycareGentlemanIntroText": {
+   "kind": "text",
+   "src": "text/Daycare.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "I run a DAYCARE."},
+    {"cmd": "line", "str": "Would you like me"},
+    {"cmd": "cont", "str": "to raise one of"},
+    {"cmd": "cont", "str": "your POKéMON?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_DaycareGentlemanWhichMonText": {
+   "kind": "text",
+   "src": "text/Daycare.asm:9",
+   "commands": [
+    {"cmd": "text", "str": "Which POKéMON"},
+    {"cmd": "line", "str": "should I raise?"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_DaycareGentlemanWillLookAfterMonText": {
+   "kind": "text",
+   "src": "text/Daycare.asm:14",
+   "commands": [
+    {"cmd": "text", "str": "Fine, I'll look"},
+    {"cmd": "line", "str": "after "},
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": ""},
+    {"cmd": "cont", "str": "for a while."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_DaycareGentlemanComeSeeMeInAWhileText": {
+   "kind": "text",
+   "src": "text/Daycare.asm:22",
+   "commands": [
+    {"cmd": "text", "str": "Come see me in"},
+    {"cmd": "line", "str": "a while."},
+    {"cmd": "done"}
+   ]
+  },
+  "_DaycareGentlemanMonHasGrownText": {
+   "kind": "text",
+   "src": "text/Daycare.asm:27",
+   "commands": [
+    {"cmd": "text", "str": "Your "},
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": ""},
+    {"cmd": "line", "str": "has grown a lot!"},
+    {"cmd": "para", "str": "By level, it's"},
+    {"cmd": "line", "str": "grown by "},
+    {"cmd": "text_decimal", "ram": "wDayCareNumLevelsGrown", "bytes": 1, "digits": 3},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "para", "str": "Aren't I great?"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_DaycareGentlemanOweMoneyText": {
+   "kind": "text",
+   "src": "text/Daycare.asm:41",
+   "commands": [
+    {"cmd": "text", "str": "You owe me ¥"},
+    {"cmd": "text_bcd", "ram": "wDayCareTotalCost", "bytes": 2, "flags": ["LEADING_ZEROES", "LEFT_ALIGN"]},
+    {"cmd": "text", "str": ""},
+    {"cmd": "line", "str": "for the return"},
+    {"cmd": "cont", "str": "of this POKéMON."},
+    {"cmd": "done"}
+   ]
+  },
+  "_DaycareGentlemanGotMonBackText": {
+   "kind": "text",
+   "src": "text/Daycare.asm:49",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} got"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wDayCareMonName"},
+    {"cmd": "text", "str": " back!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_DaycareGentlemanMonNeedsMoreTimeText": {
+   "kind": "text",
+   "src": "text/Daycare.asm:56",
+   "commands": [
+    {"cmd": "text", "str": "Back already?"},
+    {"cmd": "line", "str": "Your "},
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": ""},
+    {"cmd": "cont", "str": "needs some more"},
+    {"cmd": "cont", "str": "time with me."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_DaycareGentlemanAllRightThenText": {
+   "kind": "text",
+   "src": "text/Daycare_2.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "All right then,"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_DaycareGentlemanComeAgainText": {
+   "kind": "text",
+   "src": "text/Daycare_2.asm:7",
+   "commands": [
+    {"cmd": "text", "str": "come again."},
+    {"cmd": "done"}
+   ]
+  },
+  "_DaycareGentlemanNoRoomForMonText": {
+   "kind": "text",
+   "src": "text/Daycare_2.asm:11",
+   "commands": [
+    {"cmd": "text", "str": "You have no room"},
+    {"cmd": "line", "str": "for this POKéMON!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_DaycareGentlemanOnlyHaveOneMonText": {
+   "kind": "text",
+   "src": "text/Daycare_2.asm:16",
+   "commands": [
+    {"cmd": "text", "str": "You only have one"},
+    {"cmd": "line", "str": "POKéMON with you."},
+    {"cmd": "done"}
+   ]
+  },
+  "_DaycareGentlemanCantAcceptMonWithHMText": {
+   "kind": "text",
+   "src": "text/Daycare_2.asm:21",
+   "commands": [
+    {"cmd": "text", "str": "I can't accept a"},
+    {"cmd": "line", "str": "POKéMON that"},
+    {"cmd": "cont", "str": "knows an HM move."},
+    {"cmd": "done"}
+   ]
+  },
+  "_DaycareGentlemanHeresYourMonText": {
+   "kind": "text",
+   "src": "text/Daycare_2.asm:27",
+   "commands": [
+    {"cmd": "text", "str": "Thank you! Here's"},
+    {"cmd": "line", "str": "your POKéMON!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_DaycareGentlemanNotEnoughMoneyText": {
+   "kind": "text",
+   "src": "text/Daycare_2.asm:32",
+   "commands": [
+    {"cmd": "text", "str": "Hey, you don't"},
+    {"cmd": "line", "str": "have enough ¥!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

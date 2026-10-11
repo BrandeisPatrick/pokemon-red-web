@@ -1,0 +1,54 @@
+{
+ "map": "ViridianForestSouthGate",
+ "const": "VIRIDIAN_FOREST_SOUTH_GATE",
+ "textPointerTables": [
+  {
+   "label": "ViridianForestSouthGate_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_VIRIDIANFORESTSOUTHGATE_GIRL", "label": "ViridianForestSouthGateGirlText", "kind": "text", "handler": "text"},
+    {"id": 2, "const": "TEXT_VIRIDIANFORESTSOUTHGATE_LITTLE_GIRL", "label": "ViridianForestSouthGateLittleGirlText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "ViridianForestSouthGateGirlText": {
+   "kind": "text",
+   "src": "scripts/ViridianForestSouthGate.asm:10",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianForestSouthGateGirlText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianForestSouthGateLittleGirlText": {
+   "kind": "text",
+   "src": "scripts/ViridianForestSouthGate.asm:14",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianForestSouthGateLittleGirlText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_ViridianForestSouthGateGirlText": {
+   "kind": "text",
+   "src": "text/ViridianForestSouthGate.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Are you going to"},
+    {"cmd": "line", "str": "VIRIDIAN FOREST?"},
+    {"cmd": "cont", "str": "Be careful, it's"},
+    {"cmd": "cont", "str": "a natural maze!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianForestSouthGateLittleGirlText": {
+   "kind": "text",
+   "src": "text/ViridianForestSouthGate.asm:9",
+   "commands": [
+    {"cmd": "text", "str": "RATTATA may be"},
+    {"cmd": "line", "str": "small, but its"},
+    {"cmd": "cont", "str": "bite is wicked!"},
+    {"cmd": "cont", "str": "Did you get one?"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

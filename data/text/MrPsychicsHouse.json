@@ -1,0 +1,97 @@
+{
+ "map": "MrPsychicsHouse",
+ "const": "MR_PSYCHICS_HOUSE",
+ "textPointerTables": [
+  {
+   "label": "MrPsychicsHouse_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_MRPSYCHICSHOUSE_MR_PSYCHIC", "label": "MrPsychicsHouseMrPsychicText", "kind": "asm", "handler": "asm"}
+   ]
+  }
+ ],
+ "texts": {
+  "MrPsychicsHouseMrPsychicText": {
+   "kind": "asm",
+   "src": "scripts/MrPsychicsHouse.asm:9",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["MrPsychicsHouseMrPsychicText.YouWantedThisText", "MrPsychicsHouseMrPsychicText.ReceivedTM29Text", "MrPsychicsHouseMrPsychicText.TM29NoRoomText", "MrPsychicsHouseMrPsychicText.TM29ExplanationText"]
+  },
+  "MrPsychicsHouseMrPsychicText.YouWantedThisText": {
+   "kind": "text",
+   "src": "scripts/MrPsychicsHouse.asm:32",
+   "commands": [
+    {"cmd": "text_far", "label": "_MrPsychicsHouseMrPsychicYouWantedThisText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "MrPsychicsHouseMrPsychicText.ReceivedTM29Text": {
+   "kind": "text",
+   "src": "scripts/MrPsychicsHouse.asm:36",
+   "commands": [
+    {"cmd": "text_far", "label": "_MrPsychicsHouseMrPsychicReceivedTM29Text"},
+    {"cmd": "sound", "sound": "sound_get_item_1"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "MrPsychicsHouseMrPsychicText.TM29ExplanationText": {
+   "kind": "text",
+   "src": "scripts/MrPsychicsHouse.asm:41",
+   "commands": [
+    {"cmd": "text_far", "label": "_MrPsychicsHouseMrPsychicTM29ExplanationText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "MrPsychicsHouseMrPsychicText.TM29NoRoomText": {
+   "kind": "text",
+   "src": "scripts/MrPsychicsHouse.asm:45",
+   "commands": [
+    {"cmd": "text_far", "label": "_MrPsychicsHouseMrPsychicTM29NoRoomText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_MrPsychicsHouseMrPsychicYouWantedThisText": {
+   "kind": "text",
+   "src": "text/MrPsychicsHouse.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "...Wait! Don't"},
+    {"cmd": "line", "str": "say a word!"},
+    {"cmd": "para", "str": "You wanted this!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_MrPsychicsHouseMrPsychicReceivedTM29Text": {
+   "kind": "text",
+   "src": "text/MrPsychicsHouse.asm:9",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} received"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_MrPsychicsHouseMrPsychicTM29ExplanationText": {
+   "kind": "text",
+   "src": "text/MrPsychicsHouse.asm:16",
+   "commands": [
+    {"cmd": "text", "str": "TM29 is PSYCHIC!"},
+    {"cmd": "para", "str": "It can lower the"},
+    {"cmd": "line", "str": "target's SPECIAL"},
+    {"cmd": "cont", "str": "abilities."},
+    {"cmd": "done"}
+   ]
+  },
+  "_MrPsychicsHouseMrPsychicTM29NoRoomText": {
+   "kind": "text",
+   "src": "text/MrPsychicsHouse.asm:24",
+   "commands": [
+    {"cmd": "text", "str": "Where do you plan"},
+    {"cmd": "line", "str": "to put this?"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

@@ -1,0 +1,42 @@
+{
+ "id": 57,
+ "const": "PEWTER_SPEECH_HOUSE",
+ "name": "PewterSpeechHouse",
+ "displayName": "PEWTER CITY",
+ "width": 4,
+ "height": 4,
+ "tileset": "HOUSE",
+ "tilesetId": 8,
+ "tilesetFile": "data/tilesets/House.json",
+ "isOutside": false,
+ "borderBlock": 10,
+ "blocks": [4, 14, 5, 9, 15, 1, 2, 15, 15, 12, 13, 15, 6, 11, 15, 7],
+ "connections": {},
+ "warps": [
+  {"x": 2, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 6, "destWarpIndex": 5},
+  {"x": 3, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 6, "destWarpIndex": 5}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "PEWTERSPEECHHOUSE_GAMBLER", "x": 2, "y": 3, "sprite": "SPRITE_GAMBLER", "spriteId": 11, "movement": "STAY", "rangeOrDirection": "RIGHT", "rangeOrDirectionValue": 211, "behavior": "face_right", "textId": "TEXT_PEWTERSPEECHHOUSE_GAMBLER", "textIndex": 1},
+  {"index": 2, "const": "PEWTERSPEECHHOUSE_YOUNGSTER", "x": 4, "y": 5, "sprite": "SPRITE_YOUNGSTER", "spriteId": 4, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_PEWTERSPEECHHOUSE_YOUNGSTER", "textIndex": 2}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_CITIES1",
+ "wild": null,
+ "townMap": {"x": 2, "y": 3, "group": "PEWTER_CITY"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/PewterSpeechHouse.json",
+ "textPointers": "PewterSpeechHouse_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/PewterSpeechHouse.asm",
+  "objects": "data/maps/objects/PewterSpeechHouse.asm",
+  "blocks": "maps/ViridianNicknameHouse.blk",
+  "script": "scripts/PewterSpeechHouse.asm"
+ },
+ "lastMapCandidates": ["PEWTER_CITY"],
+ "palette": {"pal": "PAL_PEWTER", "rule": "lastMap", "viaLastMap": "PEWTER_CITY"}
+}

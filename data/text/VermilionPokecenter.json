@@ -1,0 +1,75 @@
+{
+ "map": "VermilionPokecenter",
+ "const": "VERMILION_POKECENTER",
+ "textPointerTables": [
+  {
+   "label": "VermilionPokecenter_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_VERMILIONPOKECENTER_NURSE", "label": "VermilionPokecenterNurseText", "kind": "script", "handler": "script_pokecenter_nurse"},
+    {"id": 2, "const": "TEXT_VERMILIONPOKECENTER_FISHING_GURU", "label": "VermilionPokecenterFishingGuruText", "kind": "text", "handler": "text"},
+    {"id": 3, "const": "TEXT_VERMILIONPOKECENTER_SAILOR", "label": "VermilionPokecenterSailorText", "kind": "text", "handler": "text"},
+    {"id": 4, "const": "TEXT_VERMILIONPOKECENTER_LINK_RECEPTIONIST", "label": "VermilionPokecenterLinkReceptionistText", "kind": "script", "handler": "script_cable_club_receptionist"}
+   ]
+  }
+ ],
+ "texts": {
+  "VermilionPokecenterNurseText": {
+   "kind": "script",
+   "src": "scripts/VermilionPokecenter.asm:13",
+   "commands": [
+    {"cmd": "script", "script": "script_pokecenter_nurse"}
+   ]
+  },
+  "VermilionPokecenterFishingGuruText": {
+   "kind": "text",
+   "src": "scripts/VermilionPokecenter.asm:16",
+   "commands": [
+    {"cmd": "text_far", "label": "_VermilionPokecenterFishingGuruText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VermilionPokecenterSailorText": {
+   "kind": "text",
+   "src": "scripts/VermilionPokecenter.asm:20",
+   "commands": [
+    {"cmd": "text_far", "label": "_VermilionPokecenterSailorText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VermilionPokecenterLinkReceptionistText": {
+   "kind": "script",
+   "src": "scripts/VermilionPokecenter.asm:24",
+   "commands": [
+    {"cmd": "script", "script": "script_cable_club_receptionist"}
+   ]
+  },
+  "_VermilionPokecenterFishingGuruText": {
+   "kind": "text",
+   "src": "text/VermilionPokecenter.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Even if they are"},
+    {"cmd": "line", "str": "the same level,"},
+    {"cmd": "cont", "str": "POKéMON can have"},
+    {"cmd": "cont", "str": "very different"},
+    {"cmd": "cont", "str": "abilities."},
+    {"cmd": "para", "str": "A POKéMON raised"},
+    {"cmd": "line", "str": "by a trainer is"},
+    {"cmd": "cont", "str": "stronger than one"},
+    {"cmd": "cont", "str": "in the wild."},
+    {"cmd": "done"}
+   ]
+  },
+  "_VermilionPokecenterSailorText": {
+   "kind": "text",
+   "src": "text/VermilionPokecenter.asm:15",
+   "commands": [
+    {"cmd": "text", "str": "My POKéMON was"},
+    {"cmd": "line", "str": "poisoned! It"},
+    {"cmd": "cont", "str": "fainted while we"},
+    {"cmd": "cont", "str": "were walking!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

@@ -1,0 +1,489 @@
+{
+ "note": "dexOrder[i-1] = Pokédex number of internal index i (data/pokemon/dex_order.asm; 0 = MissingNo). ratings: Prof. Oak's rating picks the first row with owned < ownedBelow (engine/events/pokedex_rating.asm). Text commands are the text-box script (text/line/cont/para/done) with \"#\" expanded to \"POKé\". titleMons: species the title screen cycles through (Red version; STARTER1/2/3 = CHARMANDER/SQUIRTLE/BULBASAUR).",
+ "dexOrder": [
+  112, 115, 32, 35, 21, 100, 34, 80, 2, 103, 108, 102, 88, 94, 29, 31, 104, 111, 131, 59, 151, 130, 90, 72,
+  92, 123, 120, 9, 127, 114, 0, 0, 58, 95, 22, 16, 79, 64, 75, 113, 67, 122, 106, 107, 24, 47, 54, 96, 76, 0,
+  126, 0, 125, 82, 109, 0, 56, 86, 50, 128, 0, 0, 0, 83, 48, 149, 0, 0, 0, 84, 60, 124, 146, 144, 145, 132,
+  52, 98, 0, 0, 0, 37, 38, 25, 26, 0, 0, 147, 148, 140, 141, 116, 117, 0, 0, 27, 28, 138, 139, 39, 40, 133,
+  136, 135, 134, 66, 41, 23, 46, 61, 62, 13, 14, 15, 0, 85, 57, 51, 49, 87, 0, 0, 10, 11, 12, 68, 0, 55, 97,
+  42, 150, 143, 129, 0, 0, 89, 0, 99, 91, 0, 101, 36, 110, 53, 105, 0, 93, 63, 65, 17, 18, 121, 1, 3, 73, 0,
+  118, 119, 0, 0, 0, 0, 77, 78, 19, 20, 33, 30, 74, 137, 142, 0, 81, 0, 0, 4, 7, 5, 8, 6, 0, 0, 0, 0, 43, 44,
+  45, 69, 70, 71
+ ],
+ "ratings": [
+  {
+   "ownedBelow": 10,
+   "textLabel": "_DexRatingText_Own0To9",
+   "text": [
+    {"cmd": "text", "text": "You still have"},
+    {"cmd": "line", "text": "lots to do."},
+    {"cmd": "cont", "text": "Look for POKéMON"},
+    {"cmd": "cont", "text": "in grassy areas!"},
+    {"cmd": "done"}
+   ]
+  },
+  {
+   "ownedBelow": 20,
+   "textLabel": "_DexRatingText_Own10To19",
+   "text": [
+    {"cmd": "text", "text": "You're on the"},
+    {"cmd": "line", "text": "right track! "},
+    {"cmd": "cont", "text": "Get a FLASH HM"},
+    {"cmd": "cont", "text": "from my AIDE!"},
+    {"cmd": "done"}
+   ]
+  },
+  {
+   "ownedBelow": 30,
+   "textLabel": "_DexRatingText_Own20To29",
+   "text": [
+    {"cmd": "text", "text": "You still need"},
+    {"cmd": "line", "text": "more POKéMON!"},
+    {"cmd": "cont", "text": "Try to catch"},
+    {"cmd": "cont", "text": "other species!"},
+    {"cmd": "done"}
+   ]
+  },
+  {
+   "ownedBelow": 40,
+   "textLabel": "_DexRatingText_Own30To39",
+   "text": [
+    {"cmd": "text", "text": "Good, you're"},
+    {"cmd": "line", "text": "trying hard!"},
+    {"cmd": "cont", "text": "Get an ITEMFINDER"},
+    {"cmd": "cont", "text": "from my AIDE!"},
+    {"cmd": "done"}
+   ]
+  },
+  {
+   "ownedBelow": 50,
+   "textLabel": "_DexRatingText_Own40To49",
+   "text": [
+    {"cmd": "text", "text": "Looking good!"},
+    {"cmd": "line", "text": "Go find my AIDE"},
+    {"cmd": "cont", "text": "when you get 50!"},
+    {"cmd": "done"}
+   ]
+  },
+  {
+   "ownedBelow": 60,
+   "textLabel": "_DexRatingText_Own50To59",
+   "text": [
+    {"cmd": "text", "text": "You finally got at"},
+    {"cmd": "line", "text": "least 50 species!"},
+    {"cmd": "cont", "text": "Be sure to get"},
+    {"cmd": "cont", "text": "EXP.ALL from my"},
+    {"cmd": "cont", "text": "AIDE!"},
+    {"cmd": "done"}
+   ]
+  },
+  {
+   "ownedBelow": 70,
+   "textLabel": "_DexRatingText_Own60To69",
+   "text": [{"cmd": "text", "text": "Ho! This is geting"}, {"cmd": "line", "text": "even better!"}, {"cmd": "done"}]
+  },
+  {
+   "ownedBelow": 80,
+   "textLabel": "_DexRatingText_Own70To79",
+   "text": [
+    {"cmd": "text", "text": "Very good!"},
+    {"cmd": "line", "text": "Go fish for some"},
+    {"cmd": "cont", "text": "marine POKéMON!"},
+    {"cmd": "done"}
+   ]
+  },
+  {
+   "ownedBelow": 90,
+   "textLabel": "_DexRatingText_Own80To89",
+   "text": [
+    {"cmd": "text", "text": "Wonderful!"},
+    {"cmd": "line", "text": "Do you like to"},
+    {"cmd": "cont", "text": "collect things?"},
+    {"cmd": "done"}
+   ]
+  },
+  {
+   "ownedBelow": 100,
+   "textLabel": "_DexRatingText_Own90To99",
+   "text": [
+    {"cmd": "text", "text": "I'm impressed!"},
+    {"cmd": "line", "text": "It must have been"},
+    {"cmd": "cont", "text": "difficult to do!"},
+    {"cmd": "done"}
+   ]
+  },
+  {
+   "ownedBelow": 110,
+   "textLabel": "_DexRatingText_Own100To109",
+   "text": [
+    {"cmd": "text", "text": "You finally got at"},
+    {"cmd": "line", "text": "least 100 species!"},
+    {"cmd": "cont", "text": "I can't believe"},
+    {"cmd": "cont", "text": "how good you are!"},
+    {"cmd": "done"}
+   ]
+  },
+  {
+   "ownedBelow": 120,
+   "textLabel": "_DexRatingText_Own110To119",
+   "text": [
+    {"cmd": "text", "text": "You even have the"},
+    {"cmd": "line", "text": "evolved forms of"},
+    {"cmd": "cont", "text": "POKéMON! Super!"},
+    {"cmd": "done"}
+   ]
+  },
+  {
+   "ownedBelow": 130,
+   "textLabel": "_DexRatingText_Own120To129",
+   "text": [
+    {"cmd": "text", "text": "Excellent! Trade"},
+    {"cmd": "line", "text": "with friends to"},
+    {"cmd": "cont", "text": "get some more!"},
+    {"cmd": "done"}
+   ]
+  },
+  {
+   "ownedBelow": 140,
+   "textLabel": "_DexRatingText_Own130To139",
+   "text": [
+    {"cmd": "text", "text": "Outstanding!"},
+    {"cmd": "line", "text": "You've become a"},
+    {"cmd": "cont", "text": "real pro at this!"},
+    {"cmd": "done"}
+   ]
+  },
+  {
+   "ownedBelow": 150,
+   "textLabel": "_DexRatingText_Own140To149",
+   "text": [
+    {"cmd": "text", "text": "I have nothing"},
+    {"cmd": "line", "text": "left to say!"},
+    {"cmd": "cont", "text": "You're the"},
+    {"cmd": "cont", "text": "authority now!"},
+    {"cmd": "done"}
+   ]
+  },
+  {
+   "ownedBelow": 152,
+   "textLabel": "_DexRatingText_Own150To151",
+   "text": [
+    {"cmd": "text", "text": "Your POKéDEX is"},
+    {"cmd": "line", "text": "entirely complete!"},
+    {"cmd": "cont", "text": "Congratulations!"},
+    {"cmd": "done"}
+   ]
+  }
+ ],
+ "completionText": [
+  {"cmd": "text", "text": "POKéDEX comp-"},
+  {"cmd": "line", "text": "letion is:"},
+  {"cmd": "para", "text": ""},
+  {"cmd": "text_decimal", "args": ["hDexRatingNumMonsSeen", "1", "3"]},
+  {"cmd": "text", "text": " POKéMON seen"},
+  {"cmd": "line", "text": ""},
+  {"cmd": "text_decimal", "args": ["hDexRatingNumMonsOwned", "1", "3"]},
+  {"cmd": "text", "text": " POKéMON owned"},
+  {"cmd": "para", "text": "PROF.OAK's"},
+  {"cmd": "line", "text": "Rating:"},
+  {"cmd": "prompt"}
+ ],
+ "titleMons": [
+  {"species": 4, "const": "CHARMANDER"},
+  {"species": 7, "const": "SQUIRTLE"},
+  {"species": 1, "const": "BULBASAUR"},
+  {"species": 13, "const": "WEEDLE"},
+  {"species": 32, "const": "NIDORAN_M"},
+  {"species": 123, "const": "SCYTHER"},
+  {"species": 25, "const": "PIKACHU"},
+  {"species": 35, "const": "CLEFAIRY"},
+  {"species": 112, "const": "RHYDON"},
+  {"species": 63, "const": "ABRA"},
+  {"species": 92, "const": "GASTLY"},
+  {"species": 132, "const": "DITTO"},
+  {"species": 17, "const": "PIDGEOTTO"},
+  {"species": 95, "const": "ONIX"},
+  {"species": 77, "const": "PONYTA"},
+  {"species": 129, "const": "MAGIKARP"}
+ ],
+ "nonDexIndexes": [
+  {
+   "id": 31,
+   "const": null,
+   "name": "MISSINGNO.",
+   "evolutionsAndMoves": "MissingNo1FEvosMoves",
+   "cry": {"sfx": "SFX_CRY_00", "baseCry": 0, "pitch": 0, "length": 0}
+  },
+  {
+   "id": 32,
+   "const": null,
+   "name": "MISSINGNO.",
+   "evolutionsAndMoves": "MissingNo20EvosMoves",
+   "cry": {"sfx": "SFX_CRY_00", "baseCry": 0, "pitch": 0, "length": 0}
+  },
+  {
+   "id": 50,
+   "const": null,
+   "name": "MISSINGNO.",
+   "evolutionsAndMoves": "MissingNo32EvosMoves",
+   "cry": {"sfx": "SFX_CRY_00", "baseCry": 0, "pitch": 0, "length": 0}
+  },
+  {
+   "id": 52,
+   "const": null,
+   "name": "MISSINGNO.",
+   "evolutionsAndMoves": "MissingNo34EvosMoves",
+   "cry": {"sfx": "SFX_CRY_00", "baseCry": 0, "pitch": 0, "length": 0}
+  },
+  {
+   "id": 56,
+   "const": null,
+   "name": "MISSINGNO.",
+   "evolutionsAndMoves": "MissingNo38EvosMoves",
+   "cry": {"sfx": "SFX_CRY_00", "baseCry": 0, "pitch": 0, "length": 0}
+  },
+  {
+   "id": 61,
+   "const": null,
+   "name": "MISSINGNO.",
+   "evolutionsAndMoves": "MissingNo3DEvosMoves",
+   "cry": {"sfx": "SFX_CRY_00", "baseCry": 0, "pitch": 0, "length": 0}
+  },
+  {
+   "id": 62,
+   "const": null,
+   "name": "MISSINGNO.",
+   "evolutionsAndMoves": "MissingNo3EEvosMoves",
+   "cry": {"sfx": "SFX_CRY_00", "baseCry": 0, "pitch": 0, "length": 0}
+  },
+  {
+   "id": 63,
+   "const": null,
+   "name": "MISSINGNO.",
+   "evolutionsAndMoves": "MissingNo3FEvosMoves",
+   "cry": {"sfx": "SFX_CRY_00", "baseCry": 0, "pitch": 0, "length": 0}
+  },
+  {
+   "id": 67,
+   "const": null,
+   "name": "MISSINGNO.",
+   "evolutionsAndMoves": "MissingNo43EvosMoves",
+   "cry": {"sfx": "SFX_CRY_00", "baseCry": 0, "pitch": 128, "length": 16}
+  },
+  {
+   "id": 68,
+   "const": null,
+   "name": "MISSINGNO.",
+   "evolutionsAndMoves": "MissingNo44EvosMoves",
+   "cry": {"sfx": "SFX_CRY_00", "baseCry": 0, "pitch": 0, "length": 0}
+  },
+  {
+   "id": 69,
+   "const": null,
+   "name": "MISSINGNO.",
+   "evolutionsAndMoves": "MissingNo45EvosMoves",
+   "cry": {"sfx": "SFX_CRY_1D", "baseCry": 29, "pitch": 224, "length": 128}
+  },
+  {
+   "id": 79,
+   "const": null,
+   "name": "MISSINGNO.",
+   "evolutionsAndMoves": "MissingNo4FEvosMoves",
+   "cry": {"sfx": "SFX_CRY_22", "baseCry": 34, "pitch": 255, "length": 64}
+  },
+  {
+   "id": 80,
+   "const": null,
+   "name": "MISSINGNO.",
+   "evolutionsAndMoves": "MissingNo50EvosMoves",
+   "cry": {"sfx": "SFX_CRY_00", "baseCry": 0, "pitch": 0, "length": 0}
+  },
+  {
+   "id": 81,
+   "const": null,
+   "name": "MISSINGNO.",
+   "evolutionsAndMoves": "MissingNo51EvosMoves",
+   "cry": {"sfx": "SFX_CRY_0E", "baseCry": 14, "pitch": 224, "length": 96}
+  },
+  {
+   "id": 86,
+   "const": null,
+   "name": "MISSINGNO.",
+   "evolutionsAndMoves": "MissingNo56EvosMoves",
+   "cry": {"sfx": "SFX_CRY_00", "baseCry": 0, "pitch": 0, "length": 0}
+  },
+  {
+   "id": 87,
+   "const": null,
+   "name": "MISSINGNO.",
+   "evolutionsAndMoves": "MissingNo57EvosMoves",
+   "cry": {"sfx": "SFX_CRY_00", "baseCry": 0, "pitch": 0, "length": 0}
+  },
+  {
+   "id": 94,
+   "const": null,
+   "name": "MISSINGNO.",
+   "evolutionsAndMoves": "MissingNo5EEvosMoves",
+   "cry": {"sfx": "SFX_CRY_0F", "baseCry": 15, "pitch": 64, "length": 192}
+  },
+  {
+   "id": 95,
+   "const": null,
+   "name": "MISSINGNO.",
+   "evolutionsAndMoves": "MissingNo5FEvosMoves",
+   "cry": {"sfx": "SFX_CRY_0F", "baseCry": 15, "pitch": 32, "length": 192}
+  },
+  {
+   "id": 115,
+   "const": null,
+   "name": "MISSINGNO.",
+   "evolutionsAndMoves": "MissingNo73EvosMoves",
+   "cry": {"sfx": "SFX_CRY_00", "baseCry": 0, "pitch": 0, "length": 0}
+  },
+  {
+   "id": 121,
+   "const": null,
+   "name": "MISSINGNO.",
+   "evolutionsAndMoves": "MissingNo79EvosMoves",
+   "cry": {"sfx": "SFX_CRY_00", "baseCry": 0, "pitch": 0, "length": 0}
+  },
+  {
+   "id": 122,
+   "const": null,
+   "name": "MISSINGNO.",
+   "evolutionsAndMoves": "MissingNo7AEvosMoves",
+   "cry": {"sfx": "SFX_CRY_00", "baseCry": 0, "pitch": 0, "length": 0}
+  },
+  {
+   "id": 127,
+   "const": null,
+   "name": "MISSINGNO.",
+   "evolutionsAndMoves": "MissingNo7FEvosMoves",
+   "cry": {"sfx": "SFX_CRY_11", "baseCry": 17, "pitch": 32, "length": 16}
+  },
+  {
+   "id": 134,
+   "const": null,
+   "name": "MISSINGNO.",
+   "evolutionsAndMoves": "MissingNo86EvosMoves",
+   "cry": {"sfx": "SFX_CRY_00", "baseCry": 0, "pitch": 0, "length": 0}
+  },
+  {
+   "id": 135,
+   "const": null,
+   "name": "MISSINGNO.",
+   "evolutionsAndMoves": "MissingNo87EvosMoves",
+   "cry": {"sfx": "SFX_CRY_00", "baseCry": 0, "pitch": 0, "length": 0}
+  },
+  {
+   "id": 137,
+   "const": null,
+   "name": "MISSINGNO.",
+   "evolutionsAndMoves": "MissingNo8AEvosMoves",
+   "cry": {"sfx": "SFX_CRY_0F", "baseCry": 15, "pitch": 64, "length": 128}
+  },
+  {
+   "id": 140,
+   "const": null,
+   "name": "MISSINGNO.",
+   "evolutionsAndMoves": "MissingNo8CEvosMoves",
+   "cry": {"sfx": "SFX_CRY_00", "baseCry": 0, "pitch": 0, "length": 0}
+  },
+  {
+   "id": 146,
+   "const": null,
+   "name": "MISSINGNO.",
+   "evolutionsAndMoves": "MissingNo92EvosMoves",
+   "cry": {"sfx": "SFX_CRY_00", "baseCry": 0, "pitch": 0, "length": 0}
+  },
+  {
+   "id": 156,
+   "const": null,
+   "name": "MISSINGNO.",
+   "evolutionsAndMoves": "MissingNo9CEvosMoves",
+   "cry": {"sfx": "SFX_CRY_00", "baseCry": 0, "pitch": 0, "length": 0}
+  },
+  {
+   "id": 159,
+   "const": null,
+   "name": "MISSINGNO.",
+   "evolutionsAndMoves": "MissingNo9FEvosMoves",
+   "cry": {"sfx": "SFX_CRY_00", "baseCry": 0, "pitch": 0, "length": 0}
+  },
+  {
+   "id": 160,
+   "const": null,
+   "name": "MISSINGNO.",
+   "evolutionsAndMoves": "MissingNoA0EvosMoves",
+   "cry": {"sfx": "SFX_CRY_00", "baseCry": 0, "pitch": 0, "length": 0}
+  },
+  {
+   "id": 161,
+   "const": null,
+   "name": "MISSINGNO.",
+   "evolutionsAndMoves": "MissingNoA1EvosMoves",
+   "cry": {"sfx": "SFX_CRY_00", "baseCry": 0, "pitch": 0, "length": 0}
+  },
+  {
+   "id": 162,
+   "const": null,
+   "name": "MISSINGNO.",
+   "evolutionsAndMoves": "MissingNoA2EvosMoves",
+   "cry": {"sfx": "SFX_CRY_00", "baseCry": 0, "pitch": 0, "length": 0}
+  },
+  {
+   "id": 172,
+   "const": null,
+   "name": "MISSINGNO.",
+   "evolutionsAndMoves": "MissingNoACEvosMoves",
+   "cry": {"sfx": "SFX_CRY_00", "baseCry": 0, "pitch": 0, "length": 0}
+  },
+  {
+   "id": 174,
+   "const": null,
+   "name": "MISSINGNO.",
+   "evolutionsAndMoves": "MissingNoAEEvosMoves",
+   "cry": {"sfx": "SFX_CRY_00", "baseCry": 0, "pitch": 0, "length": 0}
+  },
+  {
+   "id": 175,
+   "const": null,
+   "name": "MISSINGNO.",
+   "evolutionsAndMoves": "MissingNoAFEvosMoves",
+   "cry": {"sfx": "SFX_CRY_00", "baseCry": 0, "pitch": 0, "length": 0}
+  },
+  {
+   "id": 181,
+   "const": null,
+   "name": "MISSINGNO.",
+   "evolutionsAndMoves": "MissingNoB5EvosMoves",
+   "cry": {"sfx": "SFX_CRY_1D", "baseCry": 29, "pitch": 0, "length": 128}
+  },
+  {
+   "id": 182,
+   "const": "FOSSIL_KABUTOPS",
+   "name": "MISSINGNO.",
+   "evolutionsAndMoves": "FossilKabutopsEvosMoves",
+   "cry": {"sfx": "SFX_CRY_00", "baseCry": 0, "pitch": 0, "length": 0}
+  },
+  {
+   "id": 183,
+   "const": "FOSSIL_AERODACTYL",
+   "name": "MISSINGNO.",
+   "evolutionsAndMoves": "FossilAerodactylEvosMoves",
+   "cry": {"sfx": "SFX_CRY_00", "baseCry": 0, "pitch": 0, "length": 0}
+  },
+  {
+   "id": 184,
+   "const": "MON_GHOST",
+   "name": "MISSINGNO.",
+   "evolutionsAndMoves": "MonGhostEvosMoves",
+   "cry": {"sfx": "SFX_CRY_00", "baseCry": 0, "pitch": 0, "length": 0}
+  }
+ ],
+ "nonDexPics": {
+  "FOSSIL_KABUTOPS": "assets/pokemon/front/fossil_kabutops.png",
+  "FOSSIL_AERODACTYL": "assets/pokemon/front/fossil_aerodactyl.png",
+  "MON_GHOST": "assets/pokemon/front/mon_ghost.png"
+ }
+}

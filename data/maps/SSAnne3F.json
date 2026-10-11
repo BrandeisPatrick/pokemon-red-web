@@ -1,0 +1,41 @@
+{
+ "id": 97,
+ "const": "SS_ANNE_3F",
+ "name": "SSAnne3F",
+ "displayName": "S.S.ANNE",
+ "width": 10,
+ "height": 3,
+ "tileset": "SHIP",
+ "tilesetId": 13,
+ "tilesetFile": "data/tilesets/Ship.json",
+ "isOutside": false,
+ "borderBlock": 12,
+ "blocks": [18, 5, 5, 5, 5, 5, 5, 5, 5, 17, 29, 4, 4, 4, 4, 4, 4, 4, 4, 28, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+ "connections": {},
+ "warps": [
+  {"x": 0, "y": 3, "destMap": "SS_ANNE_BOW", "destMapId": 99, "destMapName": "SSAnneBow", "destWarp": 1, "destWarpIndex": 0},
+  {"x": 19, "y": 3, "destMap": "SS_ANNE_2F", "destMapId": 96, "destMapName": "SSAnne2F", "destWarp": 8, "destWarpIndex": 7}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "SSANNE3F_SAILOR", "x": 9, "y": 3, "sprite": "SPRITE_SAILOR", "spriteId": 19, "movement": "WALK", "rangeOrDirection": "LEFT_RIGHT", "rangeOrDirectionValue": 2, "behavior": "walk_left_right", "textId": "TEXT_SSANNE3F_SAILOR", "textIndex": 1}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_SS_ANNE",
+ "wild": null,
+ "townMap": {"x": 9, "y": 10, "group": "SS_ANNE"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/SSAnne3F.json",
+ "textPointers": "SSAnne3F_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/SSAnne3F.asm",
+  "objects": "data/maps/objects/SSAnne3F.asm",
+  "blocks": "maps/SSAnne3F.blk",
+  "script": "scripts/SSAnne3F.asm"
+ },
+ "lastMapCandidates": ["VERMILION_CITY"],
+ "palette": {"pal": "PAL_VERMILION", "rule": "lastMap", "viaLastMap": "VERMILION_CITY"}
+}

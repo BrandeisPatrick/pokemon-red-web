@@ -1,0 +1,42 @@
+{
+  "name": "SFX_BATTLE_31",
+  "title": "Battle 31",
+  "kind": "sfx",
+  "bank": 2,
+  "id": 219,
+  "label": "SFX_Battle_31",
+  "channels": [
+    {
+      "channel": 5,
+      "label": "SFX_Battle_31_Ch5",
+      "entry": 0,
+      "bytes": 23,
+      "labels": {"SFX_Battle_31_Ch5": 0},
+      "commands": [
+        {"op": "duty_cycle", "duty": 2},
+        {"op": "square_note", "length": 15, "volume": 15, "fade": -7, "frequency": 2016},
+        {"op": "square_note", "length": 15, "volume": 15, "fade": -7, "frequency": 2016},
+        {"op": "square_note", "length": 15, "volume": 15, "fade": -7, "frequency": 2016},
+        {"op": "square_note", "length": 15, "volume": 15, "fade": -7, "frequency": 2016},
+        {"op": "square_note", "length": 15, "volume": 15, "fade": 2, "frequency": 2016},
+        {"op": "sound_ret"}
+      ]
+    },
+    {
+      "channel": 6,
+      "label": "SFX_Battle_31_Ch6",
+      "entry": 0,
+      "bytes": 23,
+      "labels": {"SFX_Battle_31_Ch6": 0},
+      "commands": [
+        {"op": "duty_cycle", "duty": 3},
+        {"op": "square_note", "length": 15, "volume": 15, "fade": -7, "frequency": 2018},
+        {"op": "square_note", "length": 15, "volume": 15, "fade": -7, "frequency": 2017},
+        {"op": "square_note", "length": 15, "volume": 15, "fade": -7, "frequency": 2018},
+        {"op": "square_note", "length": 15, "volume": 15, "fade": -7, "frequency": 2017},
+        {"op": "square_note", "length": 15, "volume": 15, "fade": 2, "frequency": 2018},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

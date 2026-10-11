@@ -1,0 +1,90 @@
+{
+ "map": "CeladonMart2F",
+ "const": "CELADON_MART_2F",
+ "textPointerTables": [
+  {
+   "label": "CeladonMart2F_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_CELADONMART2F_CLERK1", "label": "CeladonMart2FClerk1Text", "kind": "script", "handler": "script_mart"},
+    {"id": 2, "const": "TEXT_CELADONMART2F_CLERK2", "label": "CeladonMart2FClerk2Text", "kind": "script", "handler": "script_mart"},
+    {"id": 3, "const": "TEXT_CELADONMART2F_MIDDLE_AGED_MAN", "label": "CeladonMart2FMiddleAgedManText", "kind": "text", "handler": "text"},
+    {"id": 4, "const": "TEXT_CELADONMART2F_GIRL", "label": "CeladonMart2FGirlText", "kind": "text", "handler": "text"},
+    {"id": 5, "const": "TEXT_CELADONMART2F_CURRENT_FLOOR_SIGN", "label": "CeladonMart2FCurrentFloorSignText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "CeladonMart2FClerk1Text": {
+   "kind": "script",
+   "src": "data/items/marts.asm:23",
+   "commands": [
+    {"cmd": "script", "script": "script_mart", "items": ["GREAT_BALL", "SUPER_POTION", "REVIVE", "SUPER_REPEL", "ANTIDOTE", "BURN_HEAL", "ICE_HEAL", "AWAKENING", "PARLYZ_HEAL"]}
+   ]
+  },
+  "CeladonMart2FClerk2Text": {
+   "kind": "script",
+   "src": "data/items/marts.asm:26",
+   "commands": [
+    {"cmd": "script", "script": "script_mart", "items": ["TM_DOUBLE_TEAM", "TM_REFLECT", "TM_RAZOR_WIND", "TM_HORN_DRILL", "TM_EGG_BOMB", "TM_MEGA_PUNCH", "TM_MEGA_KICK", "TM_TAKE_DOWN", "TM_SUBMISSION"]}
+   ]
+  },
+  "CeladonMart2FMiddleAgedManText": {
+   "kind": "text",
+   "src": "scripts/CeladonMart2F.asm:13",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonMart2FMiddleAgedManText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonMart2FGirlText": {
+   "kind": "text",
+   "src": "scripts/CeladonMart2F.asm:17",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonMart2FGirlText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonMart2FCurrentFloorSignText": {
+   "kind": "text",
+   "src": "scripts/CeladonMart2F.asm:21",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonMart2FCurrentFloorSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_CeladonMart2FMiddleAgedManText": {
+   "kind": "text",
+   "src": "text/CeladonMart2F.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "SUPER REPEL keeps"},
+    {"cmd": "line", "str": "weak POKéMON at"},
+    {"cmd": "cont", "str": "bay..."},
+    {"cmd": "para", "str": "Hmm, it's a more"},
+    {"cmd": "line", "str": "powerful REPEL!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonMart2FGirlText": {
+   "kind": "text",
+   "src": "text/CeladonMart2F.asm:11",
+   "commands": [
+    {"cmd": "text", "str": "For long outings,"},
+    {"cmd": "line", "str": "you should buy"},
+    {"cmd": "cont", "str": "REVIVE."},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonMart2FCurrentFloorSignText": {
+   "kind": "text",
+   "src": "text/CeladonMart2F.asm:17",
+   "commands": [
+    {"cmd": "text", "str": "Top Grade Items"},
+    {"cmd": "line", "str": "for Trainers!"},
+    {"cmd": "para", "str": "2F: TRAINER'S"},
+    {"cmd": "line", "str": "    MARKET"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

@@ -1,0 +1,164 @@
+{
+ "map": "CinnabarLabFossilRoom",
+ "const": "CINNABAR_LAB_FOSSIL_ROOM",
+ "textPointerTables": [
+  {
+   "label": "CinnabarLabFossilRoom_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_CINNABARLABFOSSILROOM_SCIENTIST1", "label": "CinnabarLabFossilRoomScientist1Text", "kind": "asm", "handler": "asm"},
+    {"id": 2, "const": "TEXT_CINNABARLABFOSSILROOM_SCIENTIST2", "label": "CinnabarLabFossilRoomScientist2Text", "kind": "asm", "handler": "asm"}
+   ]
+  }
+ ],
+ "texts": {
+  "CinnabarLabFossilRoomScientist1Text": {
+   "kind": "asm",
+   "src": "scripts/CinnabarLabFossilRoom.asm:50",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["CinnabarLabFossilRoomScientist1Text.Text", "CinnabarLabFossilRoomScientist1Text.NoFossilsText", "CinnabarLabFossilRoomScientist1Text.GoForAWalkText", "CinnabarLabFossilRoomScientist1Text.FossilIsBackToLifeText"]
+  },
+  "CinnabarLabFossilRoomScientist1Text.Text": {
+   "kind": "text",
+   "src": "scripts/CinnabarLabFossilRoom.asm:86",
+   "commands": [
+    {"cmd": "text_far", "label": "_CinnabarLabFossilRoomScientist1Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CinnabarLabFossilRoomScientist1Text.NoFossilsText": {
+   "kind": "text",
+   "src": "scripts/CinnabarLabFossilRoom.asm:90",
+   "commands": [
+    {"cmd": "text_far", "label": "_CinnabarLabFossilRoomScientist1NoFossilsText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CinnabarLabFossilRoomScientist1Text.GoForAWalkText": {
+   "kind": "text",
+   "src": "scripts/CinnabarLabFossilRoom.asm:94",
+   "commands": [
+    {"cmd": "text_far", "label": "_CinnabarLabFossilRoomScientist1GoForAWalkText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CinnabarLabFossilRoomScientist1Text.FossilIsBackToLifeText": {
+   "kind": "text",
+   "src": "scripts/CinnabarLabFossilRoom.asm:98",
+   "commands": [
+    {"cmd": "text_far", "label": "_CinnabarLabFossilRoomScientist1FossilIsBackToLifeText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CinnabarLabFossilRoomScientist2Text": {
+   "kind": "asm",
+   "src": "scripts/CinnabarLabFossilRoom.asm:102",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "_CinnabarLabFossilRoomScientist1Text": {
+   "kind": "text",
+   "src": "text/CinnabarLabFossilRoom.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Hiya!"},
+    {"cmd": "para", "str": "I am important"},
+    {"cmd": "line", "str": "doctor!"},
+    {"cmd": "para", "str": "I study here rare"},
+    {"cmd": "line", "str": "POKéMON fossils!"},
+    {"cmd": "para", "str": "You! Have you a"},
+    {"cmd": "line", "str": "fossil for me?"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_CinnabarLabFossilRoomScientist1NoFossilsText": {
+   "kind": "text",
+   "src": "text/CinnabarLabFossilRoom.asm:15",
+   "commands": [
+    {"cmd": "text", "str": "No! Is too bad!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CinnabarLabFossilRoomScientist1GoForAWalkText": {
+   "kind": "text",
+   "src": "text/CinnabarLabFossilRoom.asm:19",
+   "commands": [
+    {"cmd": "text", "str": "I take a little"},
+    {"cmd": "line", "str": "time!"},
+    {"cmd": "para", "str": "You go for walk a"},
+    {"cmd": "line", "str": "little while!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CinnabarLabFossilRoomScientist1FossilIsBackToLifeText": {
+   "kind": "text",
+   "src": "text/CinnabarLabFossilRoom.asm:27",
+   "commands": [
+    {"cmd": "text", "str": "Where were you?"},
+    {"cmd": "para", "str": "Your fossil is"},
+    {"cmd": "line", "str": "back to life!"},
+    {"cmd": "para", "str": "It was "},
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": ""},
+    {"cmd": "line", "str": "like I think!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_CinnabarLabFossilRoomScientist1SeesFossilText": {
+   "kind": "text",
+   "src": "text/CinnabarLabFossilRoom.asm:39",
+   "commands": [
+    {"cmd": "text", "str": "Oh! That is"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "para", "str": "It is fossil of"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": ", a"},
+    {"cmd": "cont", "str": "POKéMON that is"},
+    {"cmd": "cont", "str": "already extinct!"},
+    {"cmd": "para", "str": "My Resurrection"},
+    {"cmd": "line", "str": "Machine will make"},
+    {"cmd": "cont", "str": "that POKéMON live"},
+    {"cmd": "cont", "str": "again!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CinnabarLabFossilRoomScientist1TakesFossilText": {
+   "kind": "text",
+   "src": "text/CinnabarLabFossilRoom.asm:58",
+   "commands": [
+    {"cmd": "text", "str": "So! You hurry and"},
+    {"cmd": "line", "str": "give me that!"},
+    {"cmd": "para", "str": "{PLAYER} handed"},
+    {"cmd": "line", "str": "over "},
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_CinnabarLabFossilRoomScientist1GoForAWalkText2": {
+   "kind": "text",
+   "src": "text/CinnabarLabFossilRoom.asm:68",
+   "commands": [
+    {"cmd": "text", "str": "I take a little"},
+    {"cmd": "line", "str": "time!"},
+    {"cmd": "para", "str": "You go for walk a"},
+    {"cmd": "line", "str": "little while!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CinnabarLabFossilRoomScientist1ComeAgainText": {
+   "kind": "text",
+   "src": "text/CinnabarLabFossilRoom.asm:76",
+   "commands": [
+    {"cmd": "text", "str": "Aiyah! You come"},
+    {"cmd": "line", "str": "again!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

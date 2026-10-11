@@ -1,0 +1,650 @@
+{
+ "map": "Route14",
+ "const": "ROUTE_14",
+ "textPointerTables": [
+  {
+   "label": "Route14_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_ROUTE14_COOLTRAINER_M1", "label": "Route14CooltrainerM1Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route14TrainerHeader0"},
+    {"id": 2, "const": "TEXT_ROUTE14_COOLTRAINER_M2", "label": "Route14CooltrainerM2Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route14TrainerHeader1"},
+    {"id": 3, "const": "TEXT_ROUTE14_COOLTRAINER_M3", "label": "Route14CooltrainerM3Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route14TrainerHeader2"},
+    {"id": 4, "const": "TEXT_ROUTE14_COOLTRAINER_M4", "label": "Route14CooltrainerM4Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route14TrainerHeader3"},
+    {"id": 5, "const": "TEXT_ROUTE14_COOLTRAINER_M5", "label": "Route14CooltrainerM5Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route14TrainerHeader4"},
+    {"id": 6, "const": "TEXT_ROUTE14_COOLTRAINER_M6", "label": "Route14CooltrainerM6Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route14TrainerHeader5"},
+    {"id": 7, "const": "TEXT_ROUTE14_BIKER1", "label": "Route14Biker1Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route14TrainerHeader6"},
+    {"id": 8, "const": "TEXT_ROUTE14_BIKER2", "label": "Route14Biker2Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route14TrainerHeader7"},
+    {"id": 9, "const": "TEXT_ROUTE14_BIKER3", "label": "Route14Biker3Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route14TrainerHeader8"},
+    {"id": 10, "const": "TEXT_ROUTE14_BIKER4", "label": "Route14Biker4Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route14TrainerHeader9"},
+    {"id": 11, "const": "TEXT_ROUTE14_SIGN", "label": "Route14SignText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "Route14CooltrainerM1Text": {
+   "kind": "asm",
+   "src": "scripts/Route14.asm:55",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route14TrainerHeader0"
+  },
+  "Route14CooltrainerM1BattleText": {
+   "kind": "text",
+   "src": "scripts/Route14.asm:61",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route14CooltrainerM1BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route14CooltrainerM1EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route14.asm:65",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route14CooltrainerM1EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route14CooltrainerM1AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route14.asm:69",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route14CooltrainerM1AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route14CooltrainerM2Text": {
+   "kind": "asm",
+   "src": "scripts/Route14.asm:73",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route14TrainerHeader1"
+  },
+  "Route14CooltrainerM2BattleText": {
+   "kind": "text",
+   "src": "scripts/Route14.asm:79",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route14CooltrainerM2BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route14CooltrainerM2EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route14.asm:83",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route14CooltrainerM2EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route14CooltrainerM2AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route14.asm:87",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route14CooltrainerM2AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route14CooltrainerM3Text": {
+   "kind": "asm",
+   "src": "scripts/Route14.asm:91",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route14TrainerHeader2"
+  },
+  "Route14CooltrainerM3BattleText": {
+   "kind": "text",
+   "src": "scripts/Route14.asm:97",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route14CooltrainerM3BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route14CooltrainerM3EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route14.asm:101",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route14CooltrainerM3EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route14CooltrainerM3AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route14.asm:105",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route14CooltrainerM3AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route14CooltrainerM4Text": {
+   "kind": "asm",
+   "src": "scripts/Route14.asm:109",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route14TrainerHeader3"
+  },
+  "Route14CooltrainerM4BattleText": {
+   "kind": "text",
+   "src": "scripts/Route14.asm:115",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route14CooltrainerM4BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route14CooltrainerM4EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route14.asm:119",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route14CooltrainerM4EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route14CooltrainerM4AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route14.asm:123",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route14CooltrainerM4AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route14CooltrainerM5Text": {
+   "kind": "asm",
+   "src": "scripts/Route14.asm:127",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route14TrainerHeader4"
+  },
+  "Route14CooltrainerM5BattleText": {
+   "kind": "text",
+   "src": "scripts/Route14.asm:133",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route14CooltrainerM5BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route14CooltrainerM5EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route14.asm:137",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route14CooltrainerM5EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route14CooltrainerM5AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route14.asm:141",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route14CooltrainerM5AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route14CooltrainerM6Text": {
+   "kind": "asm",
+   "src": "scripts/Route14.asm:145",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route14TrainerHeader5"
+  },
+  "Route14CooltrainerM6BattleText": {
+   "kind": "text",
+   "src": "scripts/Route14.asm:151",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route14CooltrainerM6BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route14CooltrainerM6EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route14.asm:155",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route14CooltrainerM6EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route14CooltrainerM6AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route14.asm:159",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route14CooltrainerM6AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route14Biker1Text": {
+   "kind": "asm",
+   "src": "scripts/Route14.asm:163",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route14TrainerHeader6"
+  },
+  "Route14Biker1BattleText": {
+   "kind": "text",
+   "src": "scripts/Route14.asm:169",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route14Biker1BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route14Biker1EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route14.asm:173",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route14Biker1EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route14Biker1AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route14.asm:177",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route14Biker1AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route14Biker2Text": {
+   "kind": "asm",
+   "src": "scripts/Route14.asm:181",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route14TrainerHeader7"
+  },
+  "Route14Biker2BattleText": {
+   "kind": "text",
+   "src": "scripts/Route14.asm:187",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route14Biker2BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route14Biker2EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route14.asm:191",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route14Biker2EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route14Biker2AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route14.asm:195",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route14Biker2AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route14Biker3Text": {
+   "kind": "asm",
+   "src": "scripts/Route14.asm:199",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route14TrainerHeader8"
+  },
+  "Route14Biker3BattleText": {
+   "kind": "text",
+   "src": "scripts/Route14.asm:205",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route14Biker3BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route14Biker3EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route14.asm:209",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route14Biker3EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route14Biker3AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route14.asm:213",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route14Biker3AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route14Biker4Text": {
+   "kind": "asm",
+   "src": "scripts/Route14.asm:217",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route14TrainerHeader9"
+  },
+  "Route14Biker4BattleText": {
+   "kind": "text",
+   "src": "scripts/Route14.asm:223",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route14Biker4BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route14Biker4EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route14.asm:227",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route14Biker4EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route14Biker4AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route14.asm:231",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route14Biker4AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route14SignText": {
+   "kind": "text",
+   "src": "scripts/Route14.asm:235",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route14SignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_Route14CooltrainerM1BattleText": {
+   "kind": "text",
+   "src": "text/Route14.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "You need to use"},
+    {"cmd": "line", "str": "TMs to teach good"},
+    {"cmd": "cont", "str": "moves to POKéMON!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route14CooltrainerM1EndBattleText": {
+   "kind": "text",
+   "src": "text/Route14.asm:8",
+   "commands": [
+    {"cmd": "text", "str": "Not"},
+    {"cmd": "line", "str": "good enough!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route14CooltrainerM1AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route14.asm:13",
+   "commands": [
+    {"cmd": "text", "str": "You have some HMs"},
+    {"cmd": "line", "str": "right? POKéMON"},
+    {"cmd": "cont", "str": "can't ever forget"},
+    {"cmd": "cont", "str": "those moves."},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route14CooltrainerM2BattleText": {
+   "kind": "text",
+   "src": "text/Route14.asm:20",
+   "commands": [
+    {"cmd": "text", "str": "My bird POKéMON"},
+    {"cmd": "line", "str": "should be ready"},
+    {"cmd": "cont", "str": "for battle."},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route14CooltrainerM2EndBattleText": {
+   "kind": "text",
+   "src": "text/Route14.asm:26",
+   "commands": [
+    {"cmd": "text", "str": "Not"},
+    {"cmd": "line", "str": "ready yet!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route14CooltrainerM2AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route14.asm:31",
+   "commands": [
+    {"cmd": "text", "str": "They need to learn"},
+    {"cmd": "line", "str": "better moves."},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route14CooltrainerM3BattleText": {
+   "kind": "text",
+   "src": "text/Route14.asm:36",
+   "commands": [
+    {"cmd": "text", "str": "TMs are on sale"},
+    {"cmd": "line", "str": "in CELADON!"},
+    {"cmd": "cont", "str": "But, only a few"},
+    {"cmd": "cont", "str": "people have HMs!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route14CooltrainerM3EndBattleText": {
+   "kind": "text",
+   "src": "text/Route14.asm:43",
+   "commands": [
+    {"cmd": "text", "str": "Aww,"},
+    {"cmd": "line", "str": "bummer!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route14CooltrainerM3AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route14.asm:48",
+   "commands": [
+    {"cmd": "text", "str": "Teach POKéMON"},
+    {"cmd": "line", "str": "moves of the same"},
+    {"cmd": "cont", "str": "element type for"},
+    {"cmd": "cont", "str": "more power."},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route14CooltrainerM4BattleText": {
+   "kind": "text",
+   "src": "text/Route14.asm:55",
+   "commands": [
+    {"cmd": "text", "str": "Have you taught"},
+    {"cmd": "line", "str": "your bird POKéMON"},
+    {"cmd": "cont", "str": "how to FLY?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route14CooltrainerM4EndBattleText": {
+   "kind": "text",
+   "src": "text/Route14.asm:61",
+   "commands": [
+    {"cmd": "text", "str": "Shot"},
+    {"cmd": "line", "str": "down in flames!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route14CooltrainerM4AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route14.asm:66",
+   "commands": [
+    {"cmd": "text", "str": "Bird POKéMON are"},
+    {"cmd": "line", "str": "my true love!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route14CooltrainerM5BattleText": {
+   "kind": "text",
+   "src": "text/Route14.asm:71",
+   "commands": [
+    {"cmd": "text", "str": "Have you heard of"},
+    {"cmd": "line", "str": "the legendary"},
+    {"cmd": "cont", "str": "POKéMON?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route14CooltrainerM5EndBattleText": {
+   "kind": "text",
+   "src": "text/Route14.asm:77",
+   "commands": [
+    {"cmd": "text", "str": "Why?"},
+    {"cmd": "line", "str": "Why'd I lose?"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route14CooltrainerM5AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route14.asm:82",
+   "commands": [
+    {"cmd": "text", "str": "The 3 legendary"},
+    {"cmd": "line", "str": "POKéMON are all"},
+    {"cmd": "cont", "str": "birds of prey."},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route14CooltrainerM6BattleText": {
+   "kind": "text",
+   "src": "text/Route14.asm:88",
+   "commands": [
+    {"cmd": "text", "str": "I'm not into it,"},
+    {"cmd": "line", "str": "but OK! Let's go!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route14CooltrainerM6EndBattleText": {
+   "kind": "text",
+   "src": "text/Route14.asm:93",
+   "commands": [
+    {"cmd": "text", "str": "I"},
+    {"cmd": "line", "str": "knew it!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route14CooltrainerM6AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route14.asm:98",
+   "commands": [
+    {"cmd": "text", "str": "Winning, losing,"},
+    {"cmd": "line", "str": "it doesn't matter"},
+    {"cmd": "cont", "str": "in the long run!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route14Biker1BattleText": {
+   "kind": "text",
+   "src": "text/Route14.asm:104",
+   "commands": [
+    {"cmd": "text", "str": "C'mon, c'mon."},
+    {"cmd": "line", "str": "Let's go, let's"},
+    {"cmd": "cont", "str": "go, let's go!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route14Biker1EndBattleText": {
+   "kind": "text",
+   "src": "text/Route14.asm:110",
+   "commands": [
+    {"cmd": "text", "str": "Arrg!"},
+    {"cmd": "line", "str": "Lost! Get lost!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route14Biker1AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route14.asm:115",
+   "commands": [
+    {"cmd": "text", "str": "What, what, what?"},
+    {"cmd": "line", "str": "What do you want?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route14Biker2BattleText": {
+   "kind": "text",
+   "src": "text/Route14.asm:120",
+   "commands": [
+    {"cmd": "text", "str": "Perfect! I need to"},
+    {"cmd": "line", "str": "burn some time!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route14Biker2EndBattleText": {
+   "kind": "text",
+   "src": "text/Route14.asm:125",
+   "commands": [
+    {"cmd": "text", "str": "What?"},
+    {"cmd": "line", "str": "You!?"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route14Biker2AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route14.asm:130",
+   "commands": [
+    {"cmd": "text", "str": "Raising POKéMON"},
+    {"cmd": "line", "str": "is a drag, man."},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route14Biker3BattleText": {
+   "kind": "text",
+   "src": "text/Route14.asm:135",
+   "commands": [
+    {"cmd": "text", "str": "We ride out here"},
+    {"cmd": "line", "str": "because there's"},
+    {"cmd": "cont", "str": "more room!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route14Biker3EndBattleText": {
+   "kind": "text",
+   "src": "text/Route14.asm:141",
+   "commands": [
+    {"cmd": "text", "str": "Wipe out!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route14Biker3AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route14.asm:145",
+   "commands": [
+    {"cmd": "text", "str": "It's cool you"},
+    {"cmd": "line", "str": "made your POKéMON"},
+    {"cmd": "cont", "str": "so strong!"},
+    {"cmd": "para", "str": "Might is right!"},
+    {"cmd": "line", "str": "And you know it!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route14Biker4BattleText": {
+   "kind": "text",
+   "src": "text/Route14.asm:154",
+   "commands": [
+    {"cmd": "text", "str": "POKéMON fight?"},
+    {"cmd": "line", "str": "Cool! Rumble!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route14Biker4EndBattleText": {
+   "kind": "text",
+   "src": "text/Route14.asm:159",
+   "commands": [
+    {"cmd": "text", "str": "Blown"},
+    {"cmd": "line", "str": "away!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route14Biker4AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route14.asm:164",
+   "commands": [
+    {"cmd": "text", "str": "You know who'd"},
+    {"cmd": "line", "str": "win, you and me"},
+    {"cmd": "cont", "str": "one on one!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route14SignText": {
+   "kind": "text",
+   "src": "text/Route14.asm:170",
+   "commands": [
+    {"cmd": "text", "str": "ROUTE 14"},
+    {"cmd": "line", "str": "West to FUCHSIA"},
+    {"cmd": "cont", "str": "CITY"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

@@ -1,0 +1,70 @@
+{
+ "id": 245,
+ "const": "LORELEIS_ROOM",
+ "name": "LoreleisRoom",
+ "displayName": "POKéMON LEAGUE",
+ "width": 5,
+ "height": 6,
+ "tileset": "GYM",
+ "tilesetId": 7,
+ "tilesetFile": "data/tilesets/Gym.json",
+ "isOutside": false,
+ "borderBlock": 3,
+ "blocks": [33, 33, 36, 33, 33, 2, 24, 24, 24, 2, 2, 24, 24, 24, 2, 2, 32, 5, 32, 2, 2, 26, 5, 2, 2, 2, 68, 5, 68, 2],
+ "connections": {},
+ "warps": [
+  {"x": 4, "y": 11, "destMap": "INDIGO_PLATEAU_LOBBY", "destMapId": 174, "destMapName": "IndigoPlateauLobby", "destWarp": 3, "destWarpIndex": 2},
+  {"x": 5, "y": 11, "destMap": "INDIGO_PLATEAU_LOBBY", "destMapId": 174, "destMapName": "IndigoPlateauLobby", "destWarp": 3, "destWarpIndex": 2},
+  {"x": 4, "y": 0, "destMap": "BRUNOS_ROOM", "destMapId": 246, "destMapName": "BrunosRoom", "destWarp": 1, "destWarpIndex": 0},
+  {"x": 5, "y": 0, "destMap": "BRUNOS_ROOM", "destMapId": 246, "destMapName": "BrunosRoom", "destWarp": 2, "destWarpIndex": 1}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {
+   "index": 1,
+   "const": "LORELEISROOM_LORELEI",
+   "x": 5,
+   "y": 2,
+   "sprite": "SPRITE_LORELEI",
+   "spriteId": 59,
+   "movement": "STAY",
+   "rangeOrDirection": "DOWN",
+   "rangeOrDirectionValue": 208,
+   "behavior": "face_down",
+   "textId": "TEXT_LORELEISROOM_LORELEI",
+   "textIndex": 1,
+   "trainer": {
+    "trainerClass": "OPP_LORELEI",
+    "trainerClassId": 44,
+    "trainerPartyIndex": 1,
+    "header": "LoreleisRoomTrainerHeader0",
+    "eventFlag": "EVENT_BEAT_LORELEIS_ROOM_TRAINER_0",
+    "eventFlagIndex": 2273,
+    "sightRange": 0,
+    "textBefore": "LoreleisRoomLoreleiBeforeBattleText",
+    "textEnd": "LoreleisRoomLoreleiEndBattleText",
+    "textAfter": "LoreleisRoomLoreleiAfterBattleText"
+   }
+  }
+ ],
+ "trainerHeaders": [
+  {"header": "LoreleisRoomTrainerHeader0", "list": "LoreleisRoomTrainerHeaders", "objectIndex": 1, "eventFlag": "EVENT_BEAT_LORELEIS_ROOM_TRAINER_0", "sightRange": 0, "textBefore": "LoreleisRoomLoreleiBeforeBattleText", "textEnd": "LoreleisRoomLoreleiEndBattleText", "textAfter": "LoreleisRoomLoreleiAfterBattleText", "talkObject": 1}
+ ],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_GYM",
+ "wild": null,
+ "townMap": {"x": 0, "y": 2, "group": "POKEMON_LEAGUE_3"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/LoreleisRoom.json",
+ "textPointers": "LoreleisRoom_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/LoreleisRoom.asm",
+  "objects": "data/maps/objects/LoreleisRoom.asm",
+  "blocks": "maps/LoreleisRoom.blk",
+  "script": "scripts/LoreleisRoom.asm"
+ },
+ "lastMapCandidates": ["INDIGO_PLATEAU"],
+ "palette": {"pal": "PAL_PALLET", "rule": "loreleisRoom"}
+}

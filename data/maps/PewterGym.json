@@ -1,0 +1,100 @@
+{
+ "id": 54,
+ "const": "PEWTER_GYM",
+ "name": "PewterGym",
+ "displayName": "PEWTER CITY",
+ "width": 5,
+ "height": 7,
+ "tileset": "GYM",
+ "tilesetId": 7,
+ "tilesetFile": "data/tilesets/Gym.json",
+ "isOutside": false,
+ "borderBlock": 3,
+ "blocks": [8, 10, 10, 10, 9, 12, 11, 5, 11, 13, 14, 18, 19, 11, 15, 14, 18, 19, 11, 15, 12, 7, 5, 6, 13, 5, 17, 5, 16, 5, 5, 5, 4, 5, 5],
+ "connections": {},
+ "warps": [
+  {"x": 4, "y": 13, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 3, "destWarpIndex": 2},
+  {"x": 5, "y": 13, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 3, "destWarpIndex": 2}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {
+   "index": 1,
+   "const": "PEWTERGYM_BROCK",
+   "x": 4,
+   "y": 1,
+   "sprite": "SPRITE_SUPER_NERD",
+   "spriteId": 12,
+   "movement": "STAY",
+   "rangeOrDirection": "DOWN",
+   "rangeOrDirectionValue": 208,
+   "behavior": "face_down",
+   "textId": "TEXT_PEWTERGYM_BROCK",
+   "textIndex": 1,
+   "trainer": {"trainerClass": "OPP_BROCK", "trainerClassId": 34, "trainerPartyIndex": 1, "header": null}
+  },
+  {
+   "index": 2,
+   "const": "PEWTERGYM_COOLTRAINER_M",
+   "x": 3,
+   "y": 6,
+   "sprite": "SPRITE_COOLTRAINER_M",
+   "spriteId": 7,
+   "movement": "STAY",
+   "rangeOrDirection": "RIGHT",
+   "rangeOrDirectionValue": 211,
+   "behavior": "face_right",
+   "textId": "TEXT_PEWTERGYM_COOLTRAINER_M",
+   "textIndex": 2,
+   "trainer": {
+    "trainerClass": "OPP_JR_TRAINER_M",
+    "trainerClassId": 5,
+    "trainerPartyIndex": 1,
+    "header": "PewterGymTrainerHeader0",
+    "eventFlag": "EVENT_BEAT_PEWTER_GYM_TRAINER_0",
+    "eventFlagIndex": 114,
+    "sightRange": 5,
+    "textBefore": "PewterGymCooltrainerMBattleText",
+    "textEnd": "PewterGymCooltrainerMEndBattleText",
+    "textAfter": "PewterGymCooltrainerMAfterBattleText"
+   }
+  },
+  {
+   "index": 3,
+   "const": "PEWTERGYM_GYM_GUIDE",
+   "x": 7,
+   "y": 10,
+   "sprite": "SPRITE_GYM_GUIDE",
+   "spriteId": 36,
+   "movement": "STAY",
+   "rangeOrDirection": "DOWN",
+   "rangeOrDirectionValue": 208,
+   "behavior": "face_down",
+   "textId": "TEXT_PEWTERGYM_GYM_GUIDE",
+   "textIndex": 3
+  }
+ ],
+ "trainerHeaders": [
+  {"header": "PewterGymTrainerHeader0", "list": "PewterGymTrainerHeaders", "objectIndex": 2, "eventFlag": "EVENT_BEAT_PEWTER_GYM_TRAINER_0", "sightRange": 5, "textBefore": "PewterGymCooltrainerMBattleText", "textEnd": "PewterGymCooltrainerMEndBattleText", "textAfter": "PewterGymCooltrainerMAfterBattleText", "talkObject": 2}
+ ],
+ "hiddenObjects": [
+  {"x": 3, "y": 10, "routine": "GymStatues", "arg": "SPRITE_FACING_UP", "argValue": 4, "kind": "event"},
+  {"x": 6, "y": 10, "routine": "GymStatues", "arg": "SPRITE_FACING_UP", "argValue": 4, "kind": "event"}
+ ],
+ "spriteSet": null,
+ "music": "MUSIC_GYM",
+ "wild": null,
+ "townMap": {"x": 2, "y": 3, "group": "PEWTER_CITY"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/PewterGym.json",
+ "textPointers": "PewterGym_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/PewterGym.asm",
+  "objects": "data/maps/objects/PewterGym.asm",
+  "blocks": "maps/PewterGym.blk",
+  "script": "scripts/PewterGym.asm"
+ },
+ "lastMapCandidates": ["PEWTER_CITY"],
+ "palette": {"pal": "PAL_PEWTER", "rule": "lastMap", "viaLastMap": "PEWTER_CITY"}
+}

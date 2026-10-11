@@ -1,0 +1,288 @@
+{
+ "map": "VictoryRoad3F",
+ "const": "VICTORY_ROAD_3F",
+ "textPointerTables": [
+  {
+   "label": "VictoryRoad3F_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_VICTORYROAD3F_COOLTRAINER_M1", "label": "VictoryRoad3FCooltrainerM1Text", "kind": "asm", "handler": "trainer", "trainerHeader": "VictoryRoad3TrainerHeader0"},
+    {"id": 2, "const": "TEXT_VICTORYROAD3F_COOLTRAINER_F1", "label": "VictoryRoad3FCooltrainerF1Text", "kind": "asm", "handler": "trainer", "trainerHeader": "VictoryRoad3TrainerHeader1"},
+    {"id": 3, "const": "TEXT_VICTORYROAD3F_COOLTRAINER_M2", "label": "VictoryRoad3FCooltrainerM2Text", "kind": "asm", "handler": "trainer", "trainerHeader": "VictoryRoad3TrainerHeader2"},
+    {"id": 4, "const": "TEXT_VICTORYROAD3F_COOLTRAINER_F2", "label": "VictoryRoad3FCooltrainerF2Text", "kind": "asm", "handler": "trainer", "trainerHeader": "VictoryRoad3TrainerHeader3"},
+    {"id": 5, "const": "TEXT_VICTORYROAD3F_MAX_REVIVE", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 6, "const": "TEXT_VICTORYROAD3F_TM_EXPLOSION", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 7, "const": "TEXT_VICTORYROAD3F_BOULDER1", "label": "BoulderText", "kind": "text", "handler": "text"},
+    {"id": 8, "const": "TEXT_VICTORYROAD3F_BOULDER2", "label": "BoulderText", "kind": "text", "handler": "text"},
+    {"id": 9, "const": "TEXT_VICTORYROAD3F_BOULDER3", "label": "BoulderText", "kind": "text", "handler": "text"},
+    {"id": 10, "const": "TEXT_VICTORYROAD3F_BOULDER4", "label": "BoulderText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "_BoulderText": {
+   "kind": "text",
+   "src": "data/text/text_1.asm:45",
+   "commands": [
+    {"cmd": "text", "str": "This requires"},
+    {"cmd": "line", "str": "STRENGTH to move!"},
+    {"cmd": "done"}
+   ]
+  },
+  "BoulderText": {
+   "kind": "text",
+   "src": "home/overworld_text.asm:17",
+   "commands": [
+    {"cmd": "text_far", "label": "_BoulderText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PickUpItemText": {
+   "kind": "asm",
+   "src": "home/overworld_text.asm:29",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "VictoryRoad3FCooltrainerM1Text": {
+   "kind": "asm",
+   "src": "scripts/VictoryRoad3F.asm:104",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "VictoryRoad3TrainerHeader0"
+  },
+  "VictoryRoad3FCooltrainerF1Text": {
+   "kind": "asm",
+   "src": "scripts/VictoryRoad3F.asm:110",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "VictoryRoad3TrainerHeader1"
+  },
+  "VictoryRoad3FCooltrainerM2Text": {
+   "kind": "asm",
+   "src": "scripts/VictoryRoad3F.asm:116",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "VictoryRoad3TrainerHeader2"
+  },
+  "VictoryRoad3FCooltrainerF2Text": {
+   "kind": "asm",
+   "src": "scripts/VictoryRoad3F.asm:122",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "VictoryRoad3TrainerHeader3"
+  },
+  "VictoryRoad3FCooltrainerM1BattleText": {
+   "kind": "text",
+   "src": "scripts/VictoryRoad3F.asm:128",
+   "commands": [
+    {"cmd": "text_far", "label": "_VictoryRoad3FCooltrainerM1BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VictoryRoad3FCooltrainerM1EndBattleText": {
+   "kind": "text",
+   "src": "scripts/VictoryRoad3F.asm:132",
+   "commands": [
+    {"cmd": "text_far", "label": "_VictoryRoad3FCooltrainerM1EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VictoryRoad3FCooltrainerM1AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/VictoryRoad3F.asm:136",
+   "commands": [
+    {"cmd": "text_far", "label": "_VictoryRoad3FCooltrainerM1AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VictoryRoad3FCooltrainerF1BattleText": {
+   "kind": "text",
+   "src": "scripts/VictoryRoad3F.asm:140",
+   "commands": [
+    {"cmd": "text_far", "label": "_VictoryRoad3FCooltrainerF1BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VictoryRoad3FCooltrainerF1EndBattleText": {
+   "kind": "text",
+   "src": "scripts/VictoryRoad3F.asm:144",
+   "commands": [
+    {"cmd": "text_far", "label": "_VictoryRoad3FCooltrainerF1EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VictoryRoad3FCooltrainerF1AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/VictoryRoad3F.asm:148",
+   "commands": [
+    {"cmd": "text_far", "label": "_VictoryRoad3FCooltrainerF1AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VictoryRoad3FCooltrainerM2BattleText": {
+   "kind": "text",
+   "src": "scripts/VictoryRoad3F.asm:152",
+   "commands": [
+    {"cmd": "text_far", "label": "_VictoryRoad3FCooltrainerM2BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VictoryRoad3FCooltrainerM2EndBattleText": {
+   "kind": "text",
+   "src": "scripts/VictoryRoad3F.asm:156",
+   "commands": [
+    {"cmd": "text_far", "label": "_VictoryRoad3FCooltrainerM2EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VictoryRoad3FCooltrainerM2AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/VictoryRoad3F.asm:160",
+   "commands": [
+    {"cmd": "text_far", "label": "_VictoryRoad3FCooltrainerM2AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VictoryRoad3FCooltrainerF2BattleText": {
+   "kind": "text",
+   "src": "scripts/VictoryRoad3F.asm:164",
+   "commands": [
+    {"cmd": "text_far", "label": "_VictoryRoad3FCooltrainerF2BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VictoryRoad3FCooltrainerF2EndBattleText": {
+   "kind": "text",
+   "src": "scripts/VictoryRoad3F.asm:168",
+   "commands": [
+    {"cmd": "text_far", "label": "_VictoryRoad3FCooltrainerF2EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VictoryRoad3FCooltrainerF2AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/VictoryRoad3F.asm:172",
+   "commands": [
+    {"cmd": "text_far", "label": "_VictoryRoad3FCooltrainerF2AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_VictoryRoad3FCooltrainerM1BattleText": {
+   "kind": "text",
+   "src": "text/VictoryRoad3F.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "I heard rumors of"},
+    {"cmd": "line", "str": "a child prodigy!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_VictoryRoad3FCooltrainerM1EndBattleText": {
+   "kind": "text",
+   "src": "text/VictoryRoad3F.asm:7",
+   "commands": [
+    {"cmd": "text", "str": "The"},
+    {"cmd": "line", "str": "rumors were true!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_VictoryRoad3FCooltrainerM1AfterBattleText": {
+   "kind": "text",
+   "src": "text/VictoryRoad3F.asm:12",
+   "commands": [
+    {"cmd": "text", "str": "You beat GIOVANNI"},
+    {"cmd": "line", "str": "of TEAM ROCKET?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_VictoryRoad3FCooltrainerF1BattleText": {
+   "kind": "text",
+   "src": "text/VictoryRoad3F.asm:17",
+   "commands": [
+    {"cmd": "text", "str": "I'll show you just"},
+    {"cmd": "line", "str": "how good you are!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_VictoryRoad3FCooltrainerF1EndBattleText": {
+   "kind": "text",
+   "src": "text/VictoryRoad3F.asm:22",
+   "commands": [
+    {"cmd": "text", "str": "I'm"},
+    {"cmd": "line", "str": "furious!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_VictoryRoad3FCooltrainerF1AfterBattleText": {
+   "kind": "text",
+   "src": "text/VictoryRoad3F.asm:27",
+   "commands": [
+    {"cmd": "text", "str": "You showed me just"},
+    {"cmd": "line", "str": "how good I was!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_VictoryRoad3FCooltrainerM2BattleText": {
+   "kind": "text",
+   "src": "text/VictoryRoad3F.asm:32",
+   "commands": [
+    {"cmd": "text", "str": "Only the chosen"},
+    {"cmd": "line", "str": "can pass here!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_VictoryRoad3FCooltrainerM2EndBattleText": {
+   "kind": "text",
+   "src": "text/VictoryRoad3F.asm:37",
+   "commands": [
+    {"cmd": "text", "str": "I"},
+    {"cmd": "line", "str": "don't believe it!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_VictoryRoad3FCooltrainerM2AfterBattleText": {
+   "kind": "text",
+   "src": "text/VictoryRoad3F.asm:42",
+   "commands": [
+    {"cmd": "text", "str": "All trainers here"},
+    {"cmd": "line", "str": "are headed to the"},
+    {"cmd": "cont", "str": "POKéMON LEAGUE!"},
+    {"cmd": "cont", "str": "Be careful!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_VictoryRoad3FCooltrainerF2BattleText": {
+   "kind": "text",
+   "src": "text/VictoryRoad3F.asm:49",
+   "commands": [
+    {"cmd": "text", "str": "Trainers live to"},
+    {"cmd": "line", "str": "seek stronger"},
+    {"cmd": "cont", "str": "opponents!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_VictoryRoad3FCooltrainerF2EndBattleText": {
+   "kind": "text",
+   "src": "text/VictoryRoad3F.asm:55",
+   "commands": [
+    {"cmd": "text", "str": "Oh!"},
+    {"cmd": "line", "str": "So strong!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_VictoryRoad3FCooltrainerF2AfterBattleText": {
+   "kind": "text",
+   "src": "text/VictoryRoad3F.asm:60",
+   "commands": [
+    {"cmd": "text", "str": "By fighting tough"},
+    {"cmd": "line", "str": "battles, you get"},
+    {"cmd": "cont", "str": "stronger!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

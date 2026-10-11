@@ -1,0 +1,49 @@
+{
+ "id": 176,
+ "const": "COPYCATS_HOUSE_2F",
+ "name": "CopycatsHouse2F",
+ "displayName": "SAFFRON CITY",
+ "width": 4,
+ "height": 4,
+ "tileset": "REDS_HOUSE_2",
+ "tilesetId": 4,
+ "tilesetFile": "data/tilesets/RedsHouse2.json",
+ "isOutside": false,
+ "borderBlock": 10,
+ "blocks": [16, 17, 5, 8, 15, 15, 15, 15, 15, 13, 15, 15, 12, 15, 15, 18],
+ "connections": {},
+ "warps": [
+  {"x": 7, "y": 1, "destMap": "COPYCATS_HOUSE_1F", "destMapId": 175, "destMapName": "CopycatsHouse1F", "destWarp": 3, "destWarpIndex": 2}
+ ],
+ "bgEvents": [
+  {"x": 3, "y": 5, "textId": "TEXT_COPYCATSHOUSE2F_SNES", "textIndex": 6},
+  {"x": 0, "y": 1, "textId": "TEXT_COPYCATSHOUSE2F_PC", "textIndex": 7}
+ ],
+ "objectEvents": [
+  {"index": 1, "const": "COPYCATSHOUSE2F_COPYCAT", "x": 4, "y": 3, "sprite": "SPRITE_BRUNETTE_GIRL", "spriteId": 29, "movement": "WALK", "rangeOrDirection": "ANY_DIR", "rangeOrDirectionValue": 0, "behavior": "walk_any", "textId": "TEXT_COPYCATSHOUSE2F_COPYCAT", "textIndex": 1},
+  {"index": 2, "const": "COPYCATSHOUSE2F_DODUO", "x": 4, "y": 6, "sprite": "SPRITE_BIRD", "spriteId": 9, "movement": "WALK", "rangeOrDirection": "LEFT_RIGHT", "rangeOrDirectionValue": 2, "behavior": "walk_left_right", "textId": "TEXT_COPYCATSHOUSE2F_DODUO", "textIndex": 2},
+  {"index": 3, "const": "COPYCATSHOUSE2F_MONSTER", "x": 5, "y": 1, "sprite": "SPRITE_MONSTER", "spriteId": 5, "movement": "STAY", "rangeOrDirection": "DOWN", "rangeOrDirectionValue": 208, "behavior": "face_down", "textId": "TEXT_COPYCATSHOUSE2F_MONSTER", "textIndex": 3},
+  {"index": 4, "const": "COPYCATSHOUSE2F_BIRD", "x": 2, "y": 0, "sprite": "SPRITE_BIRD", "spriteId": 9, "movement": "STAY", "rangeOrDirection": "DOWN", "rangeOrDirectionValue": 208, "behavior": "face_down", "textId": "TEXT_COPYCATSHOUSE2F_BIRD", "textIndex": 4},
+  {"index": 5, "const": "COPYCATSHOUSE2F_FAIRY", "x": 1, "y": 6, "sprite": "SPRITE_FAIRY", "spriteId": 56, "movement": "STAY", "rangeOrDirection": "RIGHT", "rangeOrDirectionValue": 211, "behavior": "face_right", "textId": "TEXT_COPYCATSHOUSE2F_FAIRY", "textIndex": 5}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [
+  {"x": 1, "y": 1, "routine": "HiddenItems", "arg": "NUGGET", "argValue": 49, "kind": "item", "item": "NUGGET", "flagIndex": 20}
+ ],
+ "spriteSet": null,
+ "music": "MUSIC_CITIES1",
+ "wild": null,
+ "townMap": {"x": 10, "y": 5, "group": "SAFFRON_CITY"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/CopycatsHouse2F.json",
+ "textPointers": "CopycatsHouse2F_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/CopycatsHouse2F.asm",
+  "objects": "data/maps/objects/CopycatsHouse2F.asm",
+  "blocks": "maps/RedsHouse2F.blk",
+  "script": "scripts/CopycatsHouse2F.asm"
+ },
+ "lastMapCandidates": ["SAFFRON_CITY"],
+ "palette": {"pal": "PAL_SAFFRON", "rule": "lastMap", "viaLastMap": "SAFFRON_CITY"}
+}

@@ -1,0 +1,58 @@
+{
+  "name": "SFX_BATTLE_2A",
+  "title": "Battle 2A",
+  "kind": "sfx",
+  "bank": 2,
+  "id": 199,
+  "label": "SFX_Battle_2A",
+  "channels": [
+    {
+      "channel": 5,
+      "label": "SFX_Battle_2A_Ch5",
+      "entry": 0,
+      "bytes": 27,
+      "labels": {"SFX_Battle_2A_Ch5": 0},
+      "commands": [
+        {"op": "duty_cycle_pattern", "pattern": [0, 3, 2, 1]},
+        {"op": "square_note", "length": 4, "volume": 15, "fade": 4, "frequency": 1536},
+        {"op": "square_note", "length": 3, "volume": 12, "fade": 4, "frequency": 1280},
+        {"op": "square_note", "length": 5, "volume": 11, "fade": 5, "frequency": 1536},
+        {"op": "square_note", "length": 13, "volume": 14, "fade": 2, "frequency": 1728},
+        {"op": "sound_loop", "count": 3, "target": 0},
+        {"op": "square_note", "length": 8, "volume": 13, "fade": 1, "frequency": 1536},
+        {"op": "sound_ret"}
+      ]
+    },
+    {
+      "channel": 6,
+      "label": "SFX_Battle_2A_Ch6",
+      "entry": 0,
+      "bytes": 23,
+      "labels": {"SFX_Battle_2A_Ch6": 0},
+      "commands": [
+        {"op": "duty_cycle_pattern", "pattern": [2, 0, 3, 1]},
+        {"op": "square_note", "length": 5, "volume": 14, "fade": 4, "frequency": 1504},
+        {"op": "square_note", "length": 4, "volume": 11, "fade": 4, "frequency": 1248},
+        {"op": "square_note", "length": 6, "volume": 10, "fade": 5, "frequency": 1512},
+        {"op": "square_note", "length": 14, "volume": 13, "fade": 1, "frequency": 1696},
+        {"op": "sound_loop", "count": 3, "target": 0},
+        {"op": "sound_ret"}
+      ]
+    },
+    {
+      "channel": 8,
+      "label": "SFX_Battle_2A_Ch8",
+      "entry": 0,
+      "bytes": 17,
+      "labels": {"SFX_Battle_2A_Ch8": 0},
+      "commands": [
+        {"op": "noise_note", "length": 5, "volume": 12, "fade": 3, "value": 51},
+        {"op": "noise_note", "length": 3, "volume": 9, "fade": 2, "value": 67},
+        {"op": "noise_note", "length": 10, "volume": 11, "fade": 5, "value": 51},
+        {"op": "noise_note", "length": 15, "volume": 12, "fade": 3, "value": 50},
+        {"op": "sound_loop", "count": 2, "target": 0},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

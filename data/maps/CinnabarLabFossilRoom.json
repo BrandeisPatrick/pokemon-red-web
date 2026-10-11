@@ -1,0 +1,45 @@
+{
+ "id": 170,
+ "const": "CINNABAR_LAB_FOSSIL_ROOM",
+ "name": "CinnabarLabFossilRoom",
+ "displayName": "CINNABAR ISLAND",
+ "width": 4,
+ "height": 4,
+ "tileset": "LAB",
+ "tilesetId": 20,
+ "tilesetFile": "data/tilesets/Lab.json",
+ "isOutside": false,
+ "borderBlock": 23,
+ "blocks": [18, 19, 22, 2, 11, 11, 7, 7, 8, 8, 7, 15, 7, 12, 7, 7],
+ "connections": {},
+ "warps": [
+  {"x": 2, "y": 7, "destMap": "CINNABAR_LAB", "destMapId": 167, "destMapName": "CinnabarLab", "destWarp": 5, "destWarpIndex": 4},
+  {"x": 3, "y": 7, "destMap": "CINNABAR_LAB", "destMapId": 167, "destMapName": "CinnabarLab", "destWarp": 5, "destWarpIndex": 4}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "CINNABARLABFOSSILROOM_SCIENTIST1", "x": 5, "y": 2, "sprite": "SPRITE_SCIENTIST", "spriteId": 32, "movement": "WALK", "rangeOrDirection": "LEFT_RIGHT", "rangeOrDirectionValue": 2, "behavior": "walk_left_right", "textId": "TEXT_CINNABARLABFOSSILROOM_SCIENTIST1", "textIndex": 1},
+  {"index": 2, "const": "CINNABARLABFOSSILROOM_SCIENTIST2", "x": 7, "y": 6, "sprite": "SPRITE_SCIENTIST", "spriteId": 32, "movement": "STAY", "rangeOrDirection": "UP", "rangeOrDirectionValue": 209, "behavior": "face_up", "textId": "TEXT_CINNABARLABFOSSILROOM_SCIENTIST2", "textIndex": 2}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [
+  {"x": 0, "y": 4, "routine": "OpenPokemonCenterPC", "arg": "SPRITE_FACING_UP", "argValue": 4, "kind": "event"},
+  {"x": 2, "y": 4, "routine": "OpenPokemonCenterPC", "arg": "SPRITE_FACING_UP", "argValue": 4, "kind": "event"}
+ ],
+ "spriteSet": null,
+ "music": "MUSIC_CINNABAR",
+ "wild": null,
+ "townMap": {"x": 2, "y": 15, "group": "CINNABAR_ISLAND"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/CinnabarLabFossilRoom.json",
+ "textPointers": "CinnabarLabFossilRoom_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/CinnabarLabFossilRoom.asm",
+  "objects": "data/maps/objects/CinnabarLabFossilRoom.asm",
+  "blocks": "maps/CinnabarLabFossilRoom.blk",
+  "script": "scripts/CinnabarLabFossilRoom.asm"
+ },
+ "lastMapCandidates": ["CINNABAR_ISLAND"],
+ "palette": {"pal": "PAL_CINNABAR", "rule": "lastMap", "viaLastMap": "CINNABAR_ISLAND"}
+}

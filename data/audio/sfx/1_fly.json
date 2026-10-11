@@ -1,0 +1,36 @@
+{
+  "name": "SFX_FLY",
+  "title": "Fly",
+  "kind": "sfx",
+  "bank": 1,
+  "id": 164,
+  "label": "SFX_Fly_1",
+  "channels": [
+    {
+      "channel": 8,
+      "label": "SFX_Fly_1_Ch8",
+      "entry": 0,
+      "bytes": 49,
+      "labels": {"SFX_Fly_1_Ch8": 0},
+      "commands": [
+        {"op": "noise_note", "length": 2, "volume": 15, "fade": 1, "value": 18},
+        {"op": "noise_note", "length": 2, "volume": 0, "fade": 0, "value": 0},
+        {"op": "noise_note", "length": 2, "volume": 10, "fade": 1, "value": 18},
+        {"op": "noise_note", "length": 2, "volume": 0, "fade": 0, "value": 0},
+        {"op": "noise_note", "length": 2, "volume": 13, "fade": 1, "value": 18},
+        {"op": "noise_note", "length": 2, "volume": 0, "fade": 0, "value": 0},
+        {"op": "noise_note", "length": 2, "volume": 8, "fade": 1, "value": 18},
+        {"op": "noise_note", "length": 2, "volume": 0, "fade": 0, "value": 0},
+        {"op": "noise_note", "length": 2, "volume": 11, "fade": 1, "value": 18},
+        {"op": "noise_note", "length": 2, "volume": 0, "fade": 0, "value": 0},
+        {"op": "noise_note", "length": 2, "volume": 6, "fade": 1, "value": 18},
+        {"op": "noise_note", "length": 2, "volume": 0, "fade": 0, "value": 0},
+        {"op": "noise_note", "length": 2, "volume": 9, "fade": 1, "value": 18},
+        {"op": "noise_note", "length": 2, "volume": 0, "fade": 0, "value": 0},
+        {"op": "noise_note", "length": 2, "volume": 4, "fade": 1, "value": 18},
+        {"op": "noise_note", "length": 2, "volume": 0, "fade": 0, "value": 0},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

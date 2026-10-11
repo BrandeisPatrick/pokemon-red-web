@@ -1,0 +1,46 @@
+{
+ "id": 140,
+ "const": "CELADON_HOTEL",
+ "name": "CeladonHotel",
+ "displayName": "CELADON CITY",
+ "width": 7,
+ "height": 4,
+ "tileset": "POKECENTER",
+ "tilesetId": 6,
+ "tilesetFile": "data/tilesets/Pokecenter.json",
+ "isOutside": false,
+ "borderBlock": 0,
+ "blocks": [12, 12, 12, 12, 12, 12, 14, 7, 7, 7, 7, 7, 7, 7, 8, 15, 15, 15, 15, 15, 15, 14, 10, 11, 14, 15, 15, 14],
+ "connections": {},
+ "warps": [
+  {"x": 3, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 13, "destWarpIndex": 12},
+  {"x": 4, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 13, "destWarpIndex": 12}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "CELADONHOTEL_GRANNY", "x": 3, "y": 1, "sprite": "SPRITE_GRANNY", "spriteId": 40, "movement": "STAY", "rangeOrDirection": "DOWN", "rangeOrDirectionValue": 208, "behavior": "face_down", "textId": "TEXT_CELADONHOTEL_GRANNY", "textIndex": 1},
+  {"index": 2, "const": "CELADONHOTEL_BEAUTY", "x": 2, "y": 4, "sprite": "SPRITE_BEAUTY", "spriteId": 15, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_CELADONHOTEL_BEAUTY", "textIndex": 2},
+  {"index": 3, "const": "CELADONHOTEL_SUPER_NERD", "x": 8, "y": 4, "sprite": "SPRITE_SUPER_NERD", "spriteId": 12, "movement": "WALK", "rangeOrDirection": "LEFT_RIGHT", "rangeOrDirectionValue": 2, "behavior": "walk_left_right", "textId": "TEXT_CELADONHOTEL_SUPER_NERD", "textIndex": 3}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [
+  {"x": 13, "y": 3, "routine": "OpenPokemonCenterPC", "arg": "SPRITE_FACING_UP", "argValue": 4, "kind": "event"},
+  {"x": 0, "y": 4, "routine": "PrintBenchGuyText", "arg": "SPRITE_FACING_LEFT", "argValue": 8, "kind": "event"}
+ ],
+ "spriteSet": null,
+ "music": "MUSIC_CELADON",
+ "wild": null,
+ "townMap": {"x": 7, "y": 5, "group": "CELADON_CITY"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/CeladonHotel.json",
+ "textPointers": "CeladonHotel_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/CeladonHotel.asm",
+  "objects": "data/maps/objects/CeladonHotel.asm",
+  "blocks": "maps/CeladonHotel.blk",
+  "script": "scripts/CeladonHotel.asm"
+ },
+ "lastMapCandidates": ["CELADON_CITY"],
+ "palette": {"pal": "PAL_CELADON", "rule": "lastMap", "viaLastMap": "CELADON_CITY"}
+}

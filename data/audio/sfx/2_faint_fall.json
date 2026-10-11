@@ -1,0 +1,24 @@
+{
+  "name": "SFX_FAINT_FALL",
+  "title": "Faint Fall",
+  "kind": "sfx",
+  "bank": 2,
+  "id": 158,
+  "label": "SFX_Faint_Fall",
+  "channels": [
+    {
+      "channel": 5,
+      "label": "SFX_Faint_Fall_Ch5",
+      "entry": 0,
+      "bytes": 11,
+      "labels": {"SFX_Faint_Fall_Ch5": 0},
+      "commands": [
+        {"op": "duty_cycle", "duty": 1},
+        {"op": "pitch_sweep", "length": 10, "change": -7},
+        {"op": "square_note", "length": 15, "volume": 15, "fade": 2, "frequency": 1920},
+        {"op": "pitch_sweep", "length": 0, "change": 8},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

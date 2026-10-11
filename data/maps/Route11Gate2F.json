@@ -1,0 +1,44 @@
+{
+ "id": 86,
+ "const": "ROUTE_11_GATE_2F",
+ "name": "Route11Gate2F",
+ "displayName": "ROUTE 11",
+ "width": 4,
+ "height": 4,
+ "tileset": "GATE",
+ "tilesetId": 12,
+ "tilesetFile": "data/tilesets/Gate.json",
+ "isOutside": false,
+ "borderBlock": 10,
+ "blocks": [52, 51, 51, 53, 54, 0, 0, 55, 56, 59, 56, 59, 58, 0, 0, 57],
+ "connections": {},
+ "warps": [
+  {"x": 7, "y": 7, "destMap": "ROUTE_11_GATE_1F", "destMapId": 84, "destMapName": "Route11Gate1F", "destWarp": 5, "destWarpIndex": 4}
+ ],
+ "bgEvents": [
+  {"x": 1, "y": 2, "textId": "TEXT_ROUTE11GATE2F_LEFT_BINOCULARS", "textIndex": 3},
+  {"x": 6, "y": 2, "textId": "TEXT_ROUTE11GATE2F_RIGHT_BINOCULARS", "textIndex": 4}
+ ],
+ "objectEvents": [
+  {"index": 1, "const": "ROUTE11GATE2F_YOUNGSTER", "x": 4, "y": 2, "sprite": "SPRITE_YOUNGSTER", "spriteId": 4, "movement": "WALK", "rangeOrDirection": "LEFT_RIGHT", "rangeOrDirectionValue": 2, "behavior": "walk_left_right", "textId": "TEXT_ROUTE11GATE2F_YOUNGSTER", "textIndex": 1},
+  {"index": 2, "const": "ROUTE11GATE2F_OAKS_AIDE", "x": 2, "y": 6, "sprite": "SPRITE_SCIENTIST", "spriteId": 32, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_ROUTE11GATE2F_OAKS_AIDE", "textIndex": 2}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_VERMILION",
+ "wild": null,
+ "townMap": {"x": 13, "y": 9, "group": "ROUTE_11"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/Route11Gate2F.json",
+ "textPointers": "Route11Gate2F_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/Route11Gate2F.asm",
+  "objects": "data/maps/objects/Route11Gate2F.asm",
+  "blocks": "maps/Route11Gate2F.blk",
+  "script": "scripts/Route11Gate2F.asm"
+ },
+ "lastMapCandidates": ["ROUTE_11"],
+ "palette": {"pal": "PAL_ROUTE", "rule": "lastMap", "viaLastMap": "ROUTE_11"}
+}

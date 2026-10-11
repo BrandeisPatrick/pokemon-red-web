@@ -1,0 +1,45 @@
+{
+ "id": 88,
+ "const": "BILLS_HOUSE",
+ "name": "BillsHouse",
+ "displayName": "SEA COTTAGE",
+ "width": 4,
+ "height": 4,
+ "tileset": "INTERIOR",
+ "tilesetId": 16,
+ "tilesetFile": "data/tilesets/Interior.json",
+ "isOutside": false,
+ "borderBlock": 13,
+ "blocks": [4, 5, 6, 7, 8, 9, 10, 11, 1, 2, 14, 14, 3, 12, 3, 3],
+ "connections": {},
+ "warps": [
+  {"x": 2, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 1, "destWarpIndex": 0},
+  {"x": 3, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 1, "destWarpIndex": 0}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "BILLSHOUSE_BILL_POKEMON", "x": 6, "y": 5, "sprite": "SPRITE_MONSTER", "spriteId": 5, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_BILLSHOUSE_BILL_POKEMON", "textIndex": 1, "toggleIndex": 97, "toggleConst": "TOGGLE_BILL_POKEMON", "startsHidden": false},
+  {"index": 2, "const": "BILLSHOUSE_BILL1", "x": 4, "y": 4, "sprite": "SPRITE_SUPER_NERD", "spriteId": 12, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_BILLSHOUSE_BILL_SS_TICKET", "textIndex": 2, "toggleIndex": 98, "toggleConst": "TOGGLE_BILL_1", "startsHidden": true},
+  {"index": 3, "const": "BILLSHOUSE_BILL2", "x": 6, "y": 5, "sprite": "SPRITE_SUPER_NERD", "spriteId": 12, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_BILLSHOUSE_BILL_CHECK_OUT_MY_RARE_POKEMON", "textIndex": 3, "toggleIndex": 99, "toggleConst": "TOGGLE_BILL_2", "startsHidden": true}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [
+  {"x": 1, "y": 4, "routine": "BillsHousePC", "arg": "SPRITE_FACING_UP", "argValue": 4, "kind": "event"}
+ ],
+ "spriteSet": null,
+ "music": "MUSIC_CITIES2",
+ "wild": null,
+ "townMap": {"x": 12, "y": 0, "group": "SEA_COTTAGE"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/BillsHouse.json",
+ "textPointers": "BillsHouse_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/BillsHouse.asm",
+  "objects": "data/maps/objects/BillsHouse.asm",
+  "blocks": "maps/BillsHouse.blk",
+  "script": "scripts/BillsHouse.asm"
+ },
+ "lastMapCandidates": ["ROUTE_25"],
+ "palette": {"pal": "PAL_ROUTE", "rule": "lastMap", "viaLastMap": "ROUTE_25"}
+}

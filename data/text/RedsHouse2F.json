@@ -1,0 +1,8 @@
+{
+ "map": "RedsHouse2F",
+ "const": "REDS_HOUSE_2F",
+ "textPointerTables": [
+  {"label": "RedsHouse2F_TextPointers", "primary": true, "entries": []}
+ ],
+ "texts": {}
+}

@@ -1,0 +1,43 @@
+{
+ "id": 150,
+ "const": "LAVENDER_MART",
+ "name": "LavenderMart",
+ "displayName": "LAVENDER TOWN",
+ "width": 4,
+ "height": 4,
+ "tileset": "MART",
+ "tilesetId": 2,
+ "tilesetFile": "data/tilesets/Mart.json",
+ "isOutside": false,
+ "borderBlock": 0,
+ "blocks": [18, 19, 19, 9, 22, 15, 20, 20, 24, 25, 21, 21, 23, 26, 11, 15],
+ "connections": {},
+ "warps": [
+  {"x": 3, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 4, "destWarpIndex": 3},
+  {"x": 4, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 4, "destWarpIndex": 3}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "LAVENDERMART_CLERK", "x": 0, "y": 5, "sprite": "SPRITE_CLERK", "spriteId": 38, "movement": "STAY", "rangeOrDirection": "RIGHT", "rangeOrDirectionValue": 211, "behavior": "face_right", "textId": "TEXT_LAVENDERMART_CLERK", "textIndex": 1},
+  {"index": 2, "const": "LAVENDERMART_BALDING_GUY", "x": 3, "y": 4, "sprite": "SPRITE_BALDING_GUY", "spriteId": 52, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_LAVENDERMART_BALDING_GUY", "textIndex": 2},
+  {"index": 3, "const": "LAVENDERMART_COOLTRAINER_M", "x": 7, "y": 2, "sprite": "SPRITE_COOLTRAINER_M", "spriteId": 7, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_LAVENDERMART_COOLTRAINER_M", "textIndex": 3}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_POKECENTER",
+ "wild": null,
+ "townMap": {"x": 14, "y": 5, "group": "LAVENDER_TOWN_2"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/LavenderMart.json",
+ "textPointers": "LavenderMart_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/LavenderMart.asm",
+  "objects": "data/maps/objects/LavenderMart.asm",
+  "blocks": "maps/VermilionMart.blk",
+  "script": "scripts/LavenderMart.asm"
+ },
+ "lastMapCandidates": ["LAVENDER_TOWN"],
+ "palette": {"pal": "PAL_LAVENDER", "rule": "lastMap", "viaLastMap": "LAVENDER_TOWN"}
+}

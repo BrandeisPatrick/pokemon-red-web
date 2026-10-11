@@ -1,0 +1,95 @@
+{
+ "map": "SeafoamIslandsB4F",
+ "const": "SEAFOAM_ISLANDS_B4F",
+ "textPointerTables": [
+  {
+   "label": "SeafoamIslandsB4F_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_SEAFOAMISLANDSB4F_BOULDER1", "label": "BoulderText", "kind": "text", "handler": "text"},
+    {"id": 2, "const": "TEXT_SEAFOAMISLANDSB4F_BOULDER2", "label": "BoulderText", "kind": "text", "handler": "text"},
+    {"id": 3, "const": "TEXT_SEAFOAMISLANDSB4F_ARTICUNO", "label": "SeafoamIslandsB4FArticunoText", "kind": "asm", "handler": "trainer", "trainerHeader": "ArticunoTrainerHeader"},
+    {"id": 4, "const": "TEXT_SEAFOAMISLANDSB4F_BOULDERS_SIGN", "label": "SeafoamIslandsB4FBouldersSignText", "kind": "text", "handler": "text"},
+    {"id": 5, "const": "TEXT_SEAFOAMISLANDSB4F_DANGER_SIGN", "label": "SeafoamIslandsB4FDangerSignText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "_BoulderText": {
+   "kind": "text",
+   "src": "data/text/text_1.asm:45",
+   "commands": [
+    {"cmd": "text", "str": "This requires"},
+    {"cmd": "line", "str": "STRENGTH to move!"},
+    {"cmd": "done"}
+   ]
+  },
+  "BoulderText": {
+   "kind": "text",
+   "src": "home/overworld_text.asm:17",
+   "commands": [
+    {"cmd": "text_far", "label": "_BoulderText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SeafoamIslandsB4FArticunoText": {
+   "kind": "asm",
+   "src": "scripts/SeafoamIslandsB4F.asm:152",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "ArticunoTrainerHeader"
+  },
+  "SeafoamIslandsB4FArticunoBattleText": {
+   "kind": "text",
+   "src": "scripts/SeafoamIslandsB4F.asm:160",
+   "commands": [
+    {"cmd": "text_far", "label": "_SeafoamIslandsB4FArticunoBattleText"},
+    {"cmd": "text_asm"}
+   ]
+  },
+  "SeafoamIslandsB4FBouldersSignText": {
+   "kind": "text",
+   "src": "scripts/SeafoamIslandsB4F.asm:168",
+   "commands": [
+    {"cmd": "text_far", "label": "_SeafoamIslandsB4FBouldersSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SeafoamIslandsB4FDangerSignText": {
+   "kind": "text",
+   "src": "scripts/SeafoamIslandsB4F.asm:172",
+   "commands": [
+    {"cmd": "text_far", "label": "_SeafoamIslandsB4FDangerSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_SeafoamIslandsB4FArticunoBattleText": {
+   "kind": "text",
+   "src": "text/SeafoamIslandsB4F.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Gyaoo!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_SeafoamIslandsB4FBouldersSignText": {
+   "kind": "text",
+   "src": "text/SeafoamIslandsB4F.asm:6",
+   "commands": [
+    {"cmd": "text", "str": "Boulders might"},
+    {"cmd": "line", "str": "change the flow"},
+    {"cmd": "cont", "str": "of water!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SeafoamIslandsB4FDangerSignText": {
+   "kind": "text",
+   "src": "text/SeafoamIslandsB4F.asm:12",
+   "commands": [
+    {"cmd": "text", "str": "DANGER"},
+    {"cmd": "line", "str": "Fast current!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

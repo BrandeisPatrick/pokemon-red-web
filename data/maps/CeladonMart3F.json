@@ -1,0 +1,59 @@
+{
+ "id": 124,
+ "const": "CELADON_MART_3F",
+ "name": "CeladonMart3F",
+ "displayName": "CELADON CITY",
+ "width": 10,
+ "height": 4,
+ "tileset": "LOBBY",
+ "tilesetId": 18,
+ "tilesetFile": "data/tilesets/Lobby.json",
+ "isOutside": false,
+ "borderBlock": 15,
+ "blocks": [12, 13, 36, 36, 36, 36, 2, 37, 3, 14, 11, 11, 11, 11, 11, 11, 11, 11, 11, 18, 11, 4, 5, 6, 11, 11, 16, 17, 17, 17, 11, 4, 5, 6, 11, 11, 20, 11, 10, 10],
+ "connections": {},
+ "warps": [
+  {"x": 12, "y": 1, "destMap": "CELADON_MART_4F", "destMapId": 125, "destMapName": "CeladonMart4F", "destWarp": 1, "destWarpIndex": 0},
+  {"x": 16, "y": 1, "destMap": "CELADON_MART_2F", "destMapId": 123, "destMapName": "CeladonMart2F", "destWarp": 2, "destWarpIndex": 1},
+  {"x": 1, "y": 1, "destMap": "CELADON_MART_ELEVATOR", "destMapId": 127, "destMapName": "CeladonMartElevator", "destWarp": 1, "destWarpIndex": 0}
+ ],
+ "bgEvents": [
+  {"x": 2, "y": 4, "textId": "TEXT_CELADONMART3F_SNES1", "textIndex": 6},
+  {"x": 3, "y": 4, "textId": "TEXT_CELADONMART3F_RPG", "textIndex": 7},
+  {"x": 5, "y": 4, "textId": "TEXT_CELADONMART3F_SNES2", "textIndex": 8},
+  {"x": 6, "y": 4, "textId": "TEXT_CELADONMART3F_SPORTS_GAME", "textIndex": 9},
+  {"x": 2, "y": 6, "textId": "TEXT_CELADONMART3F_SNES3", "textIndex": 10},
+  {"x": 3, "y": 6, "textId": "TEXT_CELADONMART3F_PUZZLE_GAME", "textIndex": 11},
+  {"x": 5, "y": 6, "textId": "TEXT_CELADONMART3F_SNES4", "textIndex": 12},
+  {"x": 6, "y": 6, "textId": "TEXT_CELADONMART3F_FIGHTING_GAME", "textIndex": 13},
+  {"x": 14, "y": 1, "textId": "TEXT_CELADONMART3F_CURRENT_FLOOR_SIGN", "textIndex": 14},
+  {"x": 4, "y": 1, "textId": "TEXT_CELADONMART3F_POKEMON_POSTER1", "textIndex": 15},
+  {"x": 6, "y": 1, "textId": "TEXT_CELADONMART3F_POKEMON_POSTER2", "textIndex": 16},
+  {"x": 10, "y": 1, "textId": "TEXT_CELADONMART3F_POKEMON_POSTER3", "textIndex": 17}
+ ],
+ "objectEvents": [
+  {"index": 1, "const": "CELADONMART3F_CLERK", "x": 16, "y": 5, "sprite": "SPRITE_CLERK", "spriteId": 38, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_CELADONMART3F_CLERK", "textIndex": 1},
+  {"index": 2, "const": "CELADONMART3F_GAMEBOY_KID1", "x": 11, "y": 6, "sprite": "SPRITE_GAMEBOY_KID", "spriteId": 55, "movement": "STAY", "rangeOrDirection": "RIGHT", "rangeOrDirectionValue": 211, "behavior": "face_right", "textId": "TEXT_CELADONMART3F_GAMEBOY_KID1", "textIndex": 2},
+  {"index": 3, "const": "CELADONMART3F_GAMEBOY_KID2", "x": 7, "y": 2, "sprite": "SPRITE_GAMEBOY_KID", "spriteId": 55, "movement": "STAY", "rangeOrDirection": "DOWN", "rangeOrDirectionValue": 208, "behavior": "face_down", "textId": "TEXT_CELADONMART3F_GAMEBOY_KID2", "textIndex": 3},
+  {"index": 4, "const": "CELADONMART3F_GAMEBOY_KID3", "x": 8, "y": 2, "sprite": "SPRITE_GAMEBOY_KID", "spriteId": 55, "movement": "STAY", "rangeOrDirection": "DOWN", "rangeOrDirectionValue": 208, "behavior": "face_down", "textId": "TEXT_CELADONMART3F_GAMEBOY_KID3", "textIndex": 4},
+  {"index": 5, "const": "CELADONMART3F_LITTLE_BOY", "x": 2, "y": 5, "sprite": "SPRITE_LITTLE_BOY", "spriteId": 53, "movement": "STAY", "rangeOrDirection": "UP", "rangeOrDirectionValue": 209, "behavior": "face_up", "textId": "TEXT_CELADONMART3F_LITTLE_BOY", "textIndex": 5}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_POKECENTER",
+ "wild": null,
+ "townMap": {"x": 7, "y": 5, "group": "CELADON_CITY"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/CeladonMart3F.json",
+ "textPointers": "CeladonMart3F_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/CeladonMart3F.asm",
+  "objects": "data/maps/objects/CeladonMart3F.asm",
+  "blocks": "maps/CeladonMart3F.blk",
+  "script": "scripts/CeladonMart3F.asm"
+ },
+ "lastMapCandidates": ["CELADON_CITY"],
+ "palette": {"pal": "PAL_CELADON", "rule": "lastMap", "viaLastMap": "CELADON_CITY"}
+}

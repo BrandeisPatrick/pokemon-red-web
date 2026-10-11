@@ -1,0 +1,51 @@
+{
+ "map": "HallOfFame",
+ "const": "HALL_OF_FAME",
+ "textPointerTables": [
+  {
+   "label": "HallOfFame_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_HALLOFFAME_OAK", "label": "HallOfFameOakText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "HallOfFameOakText": {
+   "kind": "text",
+   "src": "scripts/HallOfFame.asm:111",
+   "commands": [
+    {"cmd": "text_far", "label": "_HallOfFameOakText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_HallOfFameOakText": {
+   "kind": "text",
+   "src": "text/HallOfFame.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "OAK: Er-hem!"},
+    {"cmd": "line", "str": "Congratulations"},
+    {"cmd": "cont", "str": "{PLAYER}!"},
+    {"cmd": "para", "str": "This floor is the"},
+    {"cmd": "line", "str": "POKéMON HALL OF"},
+    {"cmd": "cont", "str": "FAME!"},
+    {"cmd": "para", "str": "POKéMON LEAGUE"},
+    {"cmd": "line", "str": "champions are"},
+    {"cmd": "cont", "str": "honored for their"},
+    {"cmd": "cont", "str": "exploits here!"},
+    {"cmd": "para", "str": "Their POKéMON are"},
+    {"cmd": "line", "str": "also recorded in"},
+    {"cmd": "cont", "str": "the HALL OF FAME!"},
+    {"cmd": "para", "str": "{PLAYER}! You have"},
+    {"cmd": "line", "str": "endeavored hard"},
+    {"cmd": "cont", "str": "to become the new"},
+    {"cmd": "cont", "str": "LEAGUE champion!"},
+    {"cmd": "para", "str": "Congratulations,"},
+    {"cmd": "line", "str": "{PLAYER}, you and"},
+    {"cmd": "cont", "str": "your POKéMON are"},
+    {"cmd": "cont", "str": "HALL OF FAMERs!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

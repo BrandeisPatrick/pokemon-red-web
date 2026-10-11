@@ -1,0 +1,257 @@
+{
+ "map": "SilphCo9F",
+ "const": "SILPH_CO_9F",
+ "textPointerTables": [
+  {
+   "label": "SilphCo9F_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_SILPHCO9F_NURSE", "label": "SilphCo9FNurseText", "kind": "asm", "handler": "asm"},
+    {"id": 2, "const": "TEXT_SILPHCO9F_ROCKET1", "label": "SilphCo9FRocket1Text", "kind": "asm", "handler": "trainer", "trainerHeader": "SilphCo9TrainerHeader0"},
+    {"id": 3, "const": "TEXT_SILPHCO9F_SCIENTIST", "label": "SilphCo9FScientistText", "kind": "asm", "handler": "trainer", "trainerHeader": "SilphCo9TrainerHeader1"},
+    {"id": 4, "const": "TEXT_SILPHCO9F_ROCKET2", "label": "SilphCo9FRocket2Text", "kind": "asm", "handler": "trainer", "trainerHeader": "SilphCo9TrainerHeader2"}
+   ]
+  }
+ ],
+ "texts": {
+  "SilphCo9FNurseText": {
+   "kind": "asm",
+   "src": "scripts/SilphCo9F.asm:145",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["SilphCo9FNurseText.YouLookTiredText", "SilphCo9FNurseText.DontGiveUpText", "SilphCo9FNurseText.ThankYouText"]
+  },
+  "SilphCo9FNurseText.YouLookTiredText": {
+   "kind": "text",
+   "src": "scripts/SilphCo9F.asm:164",
+   "commands": [
+    {"cmd": "text_far", "label": "SilphCo9FNurseYouLookTiredText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo9FNurseText.DontGiveUpText": {
+   "kind": "text",
+   "src": "scripts/SilphCo9F.asm:168",
+   "commands": [
+    {"cmd": "text_far", "label": "SilphCo9FNurseDontGiveUpText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo9FNurseText.ThankYouText": {
+   "kind": "text",
+   "src": "scripts/SilphCo9F.asm:172",
+   "commands": [
+    {"cmd": "text_far", "label": "SilphCo9FNurseThankYouText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo9FRocket1Text": {
+   "kind": "asm",
+   "src": "scripts/SilphCo9F.asm:176",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "SilphCo9TrainerHeader0"
+  },
+  "SilphCo9FScientistText": {
+   "kind": "asm",
+   "src": "scripts/SilphCo9F.asm:182",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "SilphCo9TrainerHeader1"
+  },
+  "SilphCo9FRocket2Text": {
+   "kind": "asm",
+   "src": "scripts/SilphCo9F.asm:188",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "SilphCo9TrainerHeader2"
+  },
+  "SilphCo9FRocket1BattleText": {
+   "kind": "text",
+   "src": "scripts/SilphCo9F.asm:194",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo9FRocket1BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo9FRocket1EndBattleText": {
+   "kind": "text",
+   "src": "scripts/SilphCo9F.asm:198",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo9FRocket1EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo9FRocket1AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/SilphCo9F.asm:202",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo9FRocket1AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo9FScientistBattleText": {
+   "kind": "text",
+   "src": "scripts/SilphCo9F.asm:206",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo9FScientistBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo9FScientistEndBattleText": {
+   "kind": "text",
+   "src": "scripts/SilphCo9F.asm:210",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo9FScientistEndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo9FScientistAfterBattleText": {
+   "kind": "text",
+   "src": "scripts/SilphCo9F.asm:214",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo9FScientistAfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo9FRocket2BattleText": {
+   "kind": "text",
+   "src": "scripts/SilphCo9F.asm:218",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo9FRocket2BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo9FRocket2EndBattleText": {
+   "kind": "text",
+   "src": "scripts/SilphCo9F.asm:222",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo9FRocket2EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo9FRocket2AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/SilphCo9F.asm:226",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo9FRocket2AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo9FNurseYouLookTiredText": {
+   "kind": "text",
+   "src": "text/SilphCo9F.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "You look tired!"},
+    {"cmd": "line", "str": "You should take a"},
+    {"cmd": "cont", "str": "quick nap!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "SilphCo9FNurseDontGiveUpText": {
+   "kind": "text",
+   "src": "text/SilphCo9F.asm:8",
+   "commands": [
+    {"cmd": "text", "str": "Don't give up!"},
+    {"cmd": "done"}
+   ]
+  },
+  "SilphCo9FNurseThankYouText": {
+   "kind": "text",
+   "src": "text/SilphCo9F.asm:12",
+   "commands": [
+    {"cmd": "text", "str": "Thank you so"},
+    {"cmd": "line", "str": "much!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SilphCo9FRocket1BattleText": {
+   "kind": "text",
+   "src": "text/SilphCo9F.asm:17",
+   "commands": [
+    {"cmd": "text", "str": "Your POKéMON seem"},
+    {"cmd": "line", "str": "to adore you, kid!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SilphCo9FRocket1EndBattleText": {
+   "kind": "text",
+   "src": "text/SilphCo9F.asm:22",
+   "commands": [
+    {"cmd": "text", "str": "Ghaaah!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_SilphCo9FRocket1AfterBattleText": {
+   "kind": "text",
+   "src": "text/SilphCo9F.asm:26",
+   "commands": [
+    {"cmd": "text", "str": "If I had started"},
+    {"cmd": "line", "str": "as a trainer at"},
+    {"cmd": "cont", "str": "your age..."},
+    {"cmd": "done"}
+   ]
+  },
+  "_SilphCo9FScientistBattleText": {
+   "kind": "text",
+   "src": "text/SilphCo9F.asm:32",
+   "commands": [
+    {"cmd": "text", "str": "Your POKéMON have"},
+    {"cmd": "line", "str": "weak points! I"},
+    {"cmd": "cont", "str": "can nail them!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SilphCo9FScientistEndBattleText": {
+   "kind": "text",
+   "src": "text/SilphCo9F.asm:38",
+   "commands": [
+    {"cmd": "text", "str": "You"},
+    {"cmd": "line", "str": "hammered me!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_SilphCo9FScientistAfterBattleText": {
+   "kind": "text",
+   "src": "text/SilphCo9F.asm:43",
+   "commands": [
+    {"cmd": "text", "str": "Exploiting weak"},
+    {"cmd": "line", "str": "spots does work!"},
+    {"cmd": "cont", "str": "Think about"},
+    {"cmd": "cont", "str": "element types!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SilphCo9FRocket2BattleText": {
+   "kind": "text",
+   "src": "text/SilphCo9F.asm:50",
+   "commands": [
+    {"cmd": "text", "str": "I am one of the 4"},
+    {"cmd": "line", "str": "ROCKET BROTHERS!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SilphCo9FRocket2EndBattleText": {
+   "kind": "text",
+   "src": "text/SilphCo9F.asm:55",
+   "commands": [
+    {"cmd": "text", "str": "Warg!"},
+    {"cmd": "line", "str": "Brothers, I lost!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_SilphCo9FRocket2AfterBattleText": {
+   "kind": "text",
+   "src": "text/SilphCo9F.asm:60",
+   "commands": [
+    {"cmd": "text", "str": "My brothers will"},
+    {"cmd": "line", "str": "avenge me!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

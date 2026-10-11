@@ -1,0 +1,43 @@
+{
+ "id": 91,
+ "const": "VERMILION_MART",
+ "name": "VermilionMart",
+ "displayName": "VERMILION CITY",
+ "width": 4,
+ "height": 4,
+ "tileset": "MART",
+ "tilesetId": 2,
+ "tilesetFile": "data/tilesets/Mart.json",
+ "isOutside": false,
+ "borderBlock": 0,
+ "blocks": [18, 19, 19, 9, 22, 15, 20, 20, 24, 25, 21, 21, 23, 26, 11, 15],
+ "connections": {},
+ "warps": [
+  {"x": 3, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 3, "destWarpIndex": 2},
+  {"x": 4, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 3, "destWarpIndex": 2}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "VERMILIONMART_CLERK", "x": 0, "y": 5, "sprite": "SPRITE_CLERK", "spriteId": 38, "movement": "STAY", "rangeOrDirection": "RIGHT", "rangeOrDirectionValue": 211, "behavior": "face_right", "textId": "TEXT_VERMILIONMART_CLERK", "textIndex": 1},
+  {"index": 2, "const": "VERMILIONMART_COOLTRAINER_M", "x": 5, "y": 6, "sprite": "SPRITE_COOLTRAINER_M", "spriteId": 7, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_VERMILIONMART_COOLTRAINER_M", "textIndex": 2},
+  {"index": 3, "const": "VERMILIONMART_COOLTRAINER_F", "x": 3, "y": 3, "sprite": "SPRITE_COOLTRAINER_F", "spriteId": 6, "movement": "WALK", "rangeOrDirection": "LEFT_RIGHT", "rangeOrDirectionValue": 2, "behavior": "walk_left_right", "textId": "TEXT_VERMILIONMART_COOLTRAINER_F", "textIndex": 3}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_POKECENTER",
+ "wild": null,
+ "townMap": {"x": 10, "y": 9, "group": "VERMILION_CITY"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/VermilionMart.json",
+ "textPointers": "VermilionMart_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/VermilionMart.asm",
+  "objects": "data/maps/objects/VermilionMart.asm",
+  "blocks": "maps/VermilionMart.blk",
+  "script": "scripts/VermilionMart.asm"
+ },
+ "lastMapCandidates": ["VERMILION_CITY"],
+ "palette": {"pal": "PAL_VERMILION", "rule": "lastMap", "viaLastMap": "VERMILION_CITY"}
+}

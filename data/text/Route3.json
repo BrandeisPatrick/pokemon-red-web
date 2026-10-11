@@ -1,0 +1,545 @@
+{
+ "map": "Route3",
+ "const": "ROUTE_3",
+ "textPointerTables": [
+  {
+   "label": "Route3_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_ROUTE3_SUPER_NERD", "label": "Route3SuperNerdText", "kind": "text", "handler": "text"},
+    {"id": 2, "const": "TEXT_ROUTE3_YOUNGSTER1", "label": "Route3Youngster1Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route3TrainerHeader0"},
+    {"id": 3, "const": "TEXT_ROUTE3_YOUNGSTER2", "label": "Route3Youngster2Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route3TrainerHeader1"},
+    {"id": 4, "const": "TEXT_ROUTE3_COOLTRAINER_F1", "label": "Route3CooltrainerF1Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route3TrainerHeader2"},
+    {"id": 5, "const": "TEXT_ROUTE3_YOUNGSTER3", "label": "Route3Youngster3Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route3TrainerHeader3"},
+    {"id": 6, "const": "TEXT_ROUTE3_COOLTRAINER_F2", "label": "Route3CooltrainerF2Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route3TrainerHeader4"},
+    {"id": 7, "const": "TEXT_ROUTE3_YOUNGSTER4", "label": "Route3Youngster4Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route3TrainerHeader5"},
+    {"id": 8, "const": "TEXT_ROUTE3_YOUNGSTER5", "label": "Route3Youngster5Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route3TrainerHeader6"},
+    {"id": 9, "const": "TEXT_ROUTE3_COOLTRAINER_F3", "label": "Route3CooltrainerF3Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route3TrainerHeader7"},
+    {"id": 10, "const": "TEXT_ROUTE3_SIGN", "label": "Route3SignText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "Route3SuperNerdText": {
+   "kind": "text",
+   "src": "scripts/Route3.asm:50",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route3Text1"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route3Youngster1Text": {
+   "kind": "asm",
+   "src": "scripts/Route3.asm:54",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route3TrainerHeader0"
+  },
+  "Route3Youngster1BattleText": {
+   "kind": "text",
+   "src": "scripts/Route3.asm:60",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route3Youngster1BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route3Youngster1EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route3.asm:64",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route3Youngster1EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route3Youngster1AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route3.asm:68",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route3Youngster1AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route3Youngster2Text": {
+   "kind": "asm",
+   "src": "scripts/Route3.asm:72",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route3TrainerHeader1"
+  },
+  "Route3Youngster2BattleText": {
+   "kind": "text",
+   "src": "scripts/Route3.asm:78",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route3Youngster2BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route3Youngster2EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route3.asm:82",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route3Youngster2EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route3Youngster2AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route3.asm:86",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route3Youngster2AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route3CooltrainerF1Text": {
+   "kind": "asm",
+   "src": "scripts/Route3.asm:90",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route3TrainerHeader2"
+  },
+  "Route3CooltrainerF1BattleText": {
+   "kind": "text",
+   "src": "scripts/Route3.asm:96",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route3CooltrainerF1BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route3CooltrainerF1EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route3.asm:100",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route3CooltrainerF1EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route3CooltrainerF1AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route3.asm:104",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route3CooltrainerF1AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route3Youngster3Text": {
+   "kind": "asm",
+   "src": "scripts/Route3.asm:108",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route3TrainerHeader3"
+  },
+  "Route3Youngster3BattleText": {
+   "kind": "text",
+   "src": "scripts/Route3.asm:114",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route3Youngster3BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route3Youngster3EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route3.asm:118",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route3Youngster3EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route3Youngster3AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route3.asm:122",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route3Youngster3AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route3CooltrainerF2Text": {
+   "kind": "asm",
+   "src": "scripts/Route3.asm:126",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route3TrainerHeader4"
+  },
+  "Route3CooltrainerF2BattleText": {
+   "kind": "text",
+   "src": "scripts/Route3.asm:132",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route3CooltrainerF2BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route3CooltrainerF2EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route3.asm:136",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route3CooltrainerF2EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route3CooltrainerF2AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route3.asm:140",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route3CooltrainerF2AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route3Youngster4Text": {
+   "kind": "asm",
+   "src": "scripts/Route3.asm:144",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route3TrainerHeader5"
+  },
+  "Route3Youngster4BattleText": {
+   "kind": "text",
+   "src": "scripts/Route3.asm:150",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route3Youngster4BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route3Youngster4EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route3.asm:154",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route3Youngster4EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route3Youngster4AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route3.asm:158",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route3Youngster4AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route3Youngster5Text": {
+   "kind": "asm",
+   "src": "scripts/Route3.asm:162",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route3TrainerHeader6"
+  },
+  "Route3Youngster5BattleText": {
+   "kind": "text",
+   "src": "scripts/Route3.asm:168",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route3Youngster5BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route3Youngster5EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route3.asm:172",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route3Youngster5EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route3Youngster5AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route3.asm:176",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route3Youngster5AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route3CooltrainerF3Text": {
+   "kind": "asm",
+   "src": "scripts/Route3.asm:180",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route3TrainerHeader7"
+  },
+  "Route3CooltrainerF3BattleText": {
+   "kind": "text",
+   "src": "scripts/Route3.asm:186",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route3CooltrainerF3BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route3CooltrainerF3EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route3.asm:190",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route3CooltrainerF3EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route3CooltrainerF3AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route3.asm:194",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route3CooltrainerF3AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route3SignText": {
+   "kind": "text",
+   "src": "scripts/Route3.asm:198",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route3SignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_Route3Text1": {
+   "kind": "text",
+   "src": "text/Route3.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Whew... I better"},
+    {"cmd": "line", "str": "take a rest..."},
+    {"cmd": "cont", "str": "Groan..."},
+    {"cmd": "para", "str": "That tunnel from"},
+    {"cmd": "line", "str": "CERULEAN takes a"},
+    {"cmd": "cont", "str": "lot out of you!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route3Youngster1BattleText": {
+   "kind": "text",
+   "src": "text/Route3.asm:12",
+   "commands": [
+    {"cmd": "text", "str": "Hey! I met you in"},
+    {"cmd": "line", "str": "VIRIDIAN FOREST!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route3Youngster1EndBattleText": {
+   "kind": "text",
+   "src": "text/Route3.asm:17",
+   "commands": [
+    {"cmd": "text", "str": "You"},
+    {"cmd": "line", "str": "beat me again!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route3Youngster1AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route3.asm:22",
+   "commands": [
+    {"cmd": "text", "str": "There are other"},
+    {"cmd": "line", "str": "kinds of POKéMON"},
+    {"cmd": "cont", "str": "than those found"},
+    {"cmd": "cont", "str": "in the forest!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route3Youngster2BattleText": {
+   "kind": "text",
+   "src": "text/Route3.asm:29",
+   "commands": [
+    {"cmd": "text", "str": "Hi! I like shorts!"},
+    {"cmd": "line", "str": "They're comfy and"},
+    {"cmd": "cont", "str": "easy to wear!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route3Youngster2EndBattleText": {
+   "kind": "text",
+   "src": "text/Route3.asm:35",
+   "commands": [
+    {"cmd": "text", "str": "I don't"},
+    {"cmd": "line", "str": "believe it!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route3Youngster2AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route3.asm:40",
+   "commands": [
+    {"cmd": "text", "str": "Are you storing"},
+    {"cmd": "line", "str": "your POKéMON on"},
+    {"cmd": "cont", "str": "PC? Each BOX can"},
+    {"cmd": "cont", "str": "hold 20 POKéMON!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route3CooltrainerF1BattleText": {
+   "kind": "text",
+   "src": "text/Route3.asm:47",
+   "commands": [
+    {"cmd": "text", "str": "You looked at me,"},
+    {"cmd": "line", "str": "didn't you?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route3CooltrainerF1EndBattleText": {
+   "kind": "text",
+   "src": "text/Route3.asm:52",
+   "commands": [
+    {"cmd": "text", "str": "You're"},
+    {"cmd": "line", "str": "mean!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route3CooltrainerF1AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route3.asm:57",
+   "commands": [
+    {"cmd": "text", "str": "Quit staring if"},
+    {"cmd": "line", "str": "you don't want to"},
+    {"cmd": "cont", "str": "fight!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route3Youngster3BattleText": {
+   "kind": "text",
+   "src": "text/Route3.asm:63",
+   "commands": [
+    {"cmd": "text", "str": "Are you a trainer?"},
+    {"cmd": "line", "str": "Let's fight!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route3Youngster3EndBattleText": {
+   "kind": "text",
+   "src": "text/Route3.asm:68",
+   "commands": [
+    {"cmd": "text", "str": "If I"},
+    {"cmd": "line", "str": "had new POKéMON I"},
+    {"cmd": "cont", "str": "would've won!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route3Youngster3AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route3.asm:74",
+   "commands": [
+    {"cmd": "text", "str": "If a POKéMON BOX"},
+    {"cmd": "line", "str": "on the PC gets"},
+    {"cmd": "cont", "str": "full, just switch"},
+    {"cmd": "cont", "str": "to another BOX!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route3CooltrainerF2BattleText": {
+   "kind": "text",
+   "src": "text/Route3.asm:81",
+   "commands": [
+    {"cmd": "text", "str": "That look you"},
+    {"cmd": "line", "str": "gave me, it's so"},
+    {"cmd": "cont", "str": "intriguing!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route3CooltrainerF2EndBattleText": {
+   "kind": "text",
+   "src": "text/Route3.asm:87",
+   "commands": [
+    {"cmd": "text", "str": "Be nice!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route3CooltrainerF2AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route3.asm:91",
+   "commands": [
+    {"cmd": "text", "str": "Avoid fights by"},
+    {"cmd": "line", "str": "not letting"},
+    {"cmd": "cont", "str": "people see you!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route3Youngster4BattleText": {
+   "kind": "text",
+   "src": "text/Route3.asm:97",
+   "commands": [
+    {"cmd": "text", "str": "Hey! You're not"},
+    {"cmd": "line", "str": "wearing shorts!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route3Youngster4EndBattleText": {
+   "kind": "text",
+   "src": "text/Route3.asm:102",
+   "commands": [
+    {"cmd": "text", "str": "Lost!"},
+    {"cmd": "line", "str": "Lost! Lost!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route3Youngster4AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route3.asm:107",
+   "commands": [
+    {"cmd": "text", "str": "I always wear"},
+    {"cmd": "line", "str": "shorts, even in"},
+    {"cmd": "cont", "str": "winter!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route3Youngster5BattleText": {
+   "kind": "text",
+   "src": "text/Route3.asm:113",
+   "commands": [
+    {"cmd": "text", "str": "You can fight my"},
+    {"cmd": "line", "str": "new POKéMON!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route3Youngster5EndBattleText": {
+   "kind": "text",
+   "src": "text/Route3.asm:118",
+   "commands": [
+    {"cmd": "text", "str": "Done"},
+    {"cmd": "line", "str": "like dinner!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route3Youngster5AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route3.asm:123",
+   "commands": [
+    {"cmd": "text", "str": "Trained POKéMON"},
+    {"cmd": "line", "str": "are stronger than"},
+    {"cmd": "cont", "str": "the wild ones!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route3CooltrainerF3BattleText": {
+   "kind": "text",
+   "src": "text/Route3.asm:129",
+   "commands": [
+    {"cmd": "text", "str": "Eek! Did you"},
+    {"cmd": "line", "str": "touch me?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route3CooltrainerF3EndBattleText": {
+   "kind": "text",
+   "src": "text/Route3.asm:134",
+   "commands": [
+    {"cmd": "text", "str": "That's it?"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route3CooltrainerF3AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route3.asm:138",
+   "commands": [
+    {"cmd": "text", "str": "ROUTE 4 is at the"},
+    {"cmd": "line", "str": "foot of MT.MOON."},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route3SignText": {
+   "kind": "text",
+   "src": "text/Route3.asm:143",
+   "commands": [
+    {"cmd": "text", "str": "ROUTE 3"},
+    {"cmd": "line", "str": "MT.MOON AHEAD"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

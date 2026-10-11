@@ -1,0 +1,22 @@
+{
+  "name": "SFX_INTRO_CRASH",
+  "title": "Intro Crash",
+  "kind": "sfx",
+  "bank": 3,
+  "id": 188,
+  "label": "SFX_Intro_Crash",
+  "channels": [
+    {
+      "channel": 8,
+      "label": "SFX_Intro_Crash_Ch8",
+      "entry": 0,
+      "bytes": 7,
+      "labels": {"SFX_Intro_Crash_Ch8": 0},
+      "commands": [
+        {"op": "noise_note", "length": 2, "volume": 13, "fade": 2, "value": 50},
+        {"op": "noise_note", "length": 15, "volume": 15, "fade": 2, "value": 67},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

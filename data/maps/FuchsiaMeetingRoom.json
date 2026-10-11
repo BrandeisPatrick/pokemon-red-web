@@ -1,0 +1,43 @@
+{
+ "id": 158,
+ "const": "FUCHSIA_MEETING_ROOM",
+ "name": "FuchsiaMeetingRoom",
+ "displayName": "FUCHSIA CITY",
+ "width": 7,
+ "height": 4,
+ "tileset": "LAB",
+ "tilesetId": 20,
+ "tilesetFile": "data/tilesets/Lab.json",
+ "isOutside": false,
+ "borderBlock": 23,
+ "blocks": [6, 6, 1, 3, 1, 53, 1, 7, 7, 56, 57, 7, 15, 7, 52, 7, 54, 55, 55, 55, 55, 13, 7, 12, 7, 7, 7, 14],
+ "connections": {},
+ "warps": [
+  {"x": 4, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 7, "destWarpIndex": 6},
+  {"x": 5, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 7, "destWarpIndex": 6}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "FUCHSIAMEETINGROOM_SAFARI_ZONE_WORKER1", "x": 4, "y": 1, "sprite": "SPRITE_SAFARI_ZONE_WORKER", "spriteId": 35, "movement": "STAY", "rangeOrDirection": "DOWN", "rangeOrDirectionValue": 208, "behavior": "face_down", "textId": "TEXT_FUCHSIAMEETINGROOM_SAFARI_ZONE_WORKER1", "textIndex": 1},
+  {"index": 2, "const": "FUCHSIAMEETINGROOM_SAFARI_ZONE_WORKER2", "x": 0, "y": 2, "sprite": "SPRITE_SAFARI_ZONE_WORKER", "spriteId": 35, "movement": "STAY", "rangeOrDirection": "UP", "rangeOrDirectionValue": 209, "behavior": "face_up", "textId": "TEXT_FUCHSIAMEETINGROOM_SAFARI_ZONE_WORKER2", "textIndex": 2},
+  {"index": 3, "const": "FUCHSIAMEETINGROOM_SAFARI_ZONE_WORKER3", "x": 10, "y": 1, "sprite": "SPRITE_SAFARI_ZONE_WORKER", "spriteId": 35, "movement": "STAY", "rangeOrDirection": "DOWN", "rangeOrDirectionValue": 208, "behavior": "face_down", "textId": "TEXT_FUCHSIAMEETINGROOM_SAFARI_ZONE_WORKER3", "textIndex": 3}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_CITIES2",
+ "wild": null,
+ "townMap": {"x": 8, "y": 13, "group": "FUCHSIA_CITY_2"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/FuchsiaMeetingRoom.json",
+ "textPointers": "FuchsiaMeetingRoom_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/FuchsiaMeetingRoom.asm",
+  "objects": "data/maps/objects/FuchsiaMeetingRoom.asm",
+  "blocks": "maps/FuchsiaMeetingRoom.blk",
+  "script": "scripts/FuchsiaMeetingRoom.asm"
+ },
+ "lastMapCandidates": ["FUCHSIA_CITY"],
+ "palette": {"pal": "PAL_FUCHSIA", "rule": "lastMap", "viaLastMap": "FUCHSIA_CITY"}
+}

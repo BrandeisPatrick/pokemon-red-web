@@ -1,0 +1,1233 @@
+{
+ "version": "red",
+ "note": "Maps not listed have no wild encounters (NothingWildMons). Per step (TryDoWildEncounter, engine/battle/wild_encounters.asm): the tile at screen (9,9) - bottom-right of the half-block the player stands on - must be the tileset grass tile (use grass.rate) or tile $14 water (use water.rate); on indoor maps (map id >= FIRST_INDOOR_MAP) any tile uses grass.rate except in the FOREST tileset. Encounter if hRandomAdd < rate. Slot: first i with hRandomSub <= slotThresholds[i]. The table is the WATER list only if the bottom-left tile (8,9) is also $14, else the GRASS list. Repel: no encounter if the wild level < level of the first party mon. Red-version tables (IF DEF(_RED)).",
+ "slotChances": [51, 51, 39, 25, 25, 25, 13, 13, 11, 3],
+ "slotThresholds": [50, 101, 140, 165, 190, 215, 228, 241, 252, 255],
+ "maps": {
+  "ROUTE_1": {
+   "mapId": 12,
+   "mapName": "Route1",
+   "table": "Route1WildMons",
+   "grass": {
+    "rate": 25,
+    "slots": [
+     {"level": 3, "species": 16, "const": "PIDGEY"},
+     {"level": 3, "species": 19, "const": "RATTATA"},
+     {"level": 3, "species": 19, "const": "RATTATA"},
+     {"level": 2, "species": 19, "const": "RATTATA"},
+     {"level": 2, "species": 16, "const": "PIDGEY"},
+     {"level": 3, "species": 16, "const": "PIDGEY"},
+     {"level": 3, "species": 16, "const": "PIDGEY"},
+     {"level": 4, "species": 19, "const": "RATTATA"},
+     {"level": 4, "species": 16, "const": "PIDGEY"},
+     {"level": 5, "species": 16, "const": "PIDGEY"}
+    ]
+   },
+   "water": {"rate": 0, "slots": []}
+  },
+  "ROUTE_2": {
+   "mapId": 13,
+   "mapName": "Route2",
+   "table": "Route2WildMons",
+   "grass": {
+    "rate": 25,
+    "slots": [
+     {"level": 3, "species": 19, "const": "RATTATA"},
+     {"level": 3, "species": 16, "const": "PIDGEY"},
+     {"level": 4, "species": 16, "const": "PIDGEY"},
+     {"level": 4, "species": 19, "const": "RATTATA"},
+     {"level": 5, "species": 16, "const": "PIDGEY"},
+     {"level": 3, "species": 13, "const": "WEEDLE"},
+     {"level": 2, "species": 19, "const": "RATTATA"},
+     {"level": 5, "species": 19, "const": "RATTATA"},
+     {"level": 4, "species": 13, "const": "WEEDLE"},
+     {"level": 5, "species": 13, "const": "WEEDLE"}
+    ]
+   },
+   "water": {"rate": 0, "slots": []}
+  },
+  "ROUTE_3": {
+   "mapId": 14,
+   "mapName": "Route3",
+   "table": "Route3WildMons",
+   "grass": {
+    "rate": 20,
+    "slots": [
+     {"level": 6, "species": 16, "const": "PIDGEY"},
+     {"level": 5, "species": 21, "const": "SPEAROW"},
+     {"level": 7, "species": 16, "const": "PIDGEY"},
+     {"level": 6, "species": 21, "const": "SPEAROW"},
+     {"level": 7, "species": 21, "const": "SPEAROW"},
+     {"level": 8, "species": 16, "const": "PIDGEY"},
+     {"level": 8, "species": 21, "const": "SPEAROW"},
+     {"level": 3, "species": 39, "const": "JIGGLYPUFF"},
+     {"level": 5, "species": 39, "const": "JIGGLYPUFF"},
+     {"level": 7, "species": 39, "const": "JIGGLYPUFF"}
+    ]
+   },
+   "water": {"rate": 0, "slots": []}
+  },
+  "ROUTE_4": {
+   "mapId": 15,
+   "mapName": "Route4",
+   "table": "Route4WildMons",
+   "grass": {
+    "rate": 20,
+    "slots": [
+     {"level": 10, "species": 19, "const": "RATTATA"},
+     {"level": 10, "species": 21, "const": "SPEAROW"},
+     {"level": 8, "species": 19, "const": "RATTATA"},
+     {"level": 6, "species": 23, "const": "EKANS"},
+     {"level": 8, "species": 21, "const": "SPEAROW"},
+     {"level": 10, "species": 23, "const": "EKANS"},
+     {"level": 12, "species": 19, "const": "RATTATA"},
+     {"level": 12, "species": 21, "const": "SPEAROW"},
+     {"level": 8, "species": 23, "const": "EKANS"},
+     {"level": 12, "species": 23, "const": "EKANS"}
+    ]
+   },
+   "water": {"rate": 0, "slots": []}
+  },
+  "ROUTE_5": {
+   "mapId": 16,
+   "mapName": "Route5",
+   "table": "Route5WildMons",
+   "grass": {
+    "rate": 15,
+    "slots": [
+     {"level": 13, "species": 43, "const": "ODDISH"},
+     {"level": 13, "species": 16, "const": "PIDGEY"},
+     {"level": 15, "species": 16, "const": "PIDGEY"},
+     {"level": 10, "species": 56, "const": "MANKEY"},
+     {"level": 12, "species": 56, "const": "MANKEY"},
+     {"level": 15, "species": 43, "const": "ODDISH"},
+     {"level": 16, "species": 43, "const": "ODDISH"},
+     {"level": 16, "species": 16, "const": "PIDGEY"},
+     {"level": 14, "species": 56, "const": "MANKEY"},
+     {"level": 16, "species": 56, "const": "MANKEY"}
+    ]
+   },
+   "water": {"rate": 0, "slots": []}
+  },
+  "ROUTE_6": {
+   "mapId": 17,
+   "mapName": "Route6",
+   "table": "Route6WildMons",
+   "grass": {
+    "rate": 15,
+    "slots": [
+     {"level": 13, "species": 43, "const": "ODDISH"},
+     {"level": 13, "species": 16, "const": "PIDGEY"},
+     {"level": 15, "species": 16, "const": "PIDGEY"},
+     {"level": 10, "species": 56, "const": "MANKEY"},
+     {"level": 12, "species": 56, "const": "MANKEY"},
+     {"level": 15, "species": 43, "const": "ODDISH"},
+     {"level": 16, "species": 43, "const": "ODDISH"},
+     {"level": 16, "species": 16, "const": "PIDGEY"},
+     {"level": 14, "species": 56, "const": "MANKEY"},
+     {"level": 16, "species": 56, "const": "MANKEY"}
+    ]
+   },
+   "water": {"rate": 0, "slots": []}
+  },
+  "ROUTE_7": {
+   "mapId": 18,
+   "mapName": "Route7",
+   "table": "Route7WildMons",
+   "grass": {
+    "rate": 15,
+    "slots": [
+     {"level": 19, "species": 16, "const": "PIDGEY"},
+     {"level": 19, "species": 43, "const": "ODDISH"},
+     {"level": 17, "species": 56, "const": "MANKEY"},
+     {"level": 22, "species": 43, "const": "ODDISH"},
+     {"level": 22, "species": 16, "const": "PIDGEY"},
+     {"level": 18, "species": 56, "const": "MANKEY"},
+     {"level": 18, "species": 58, "const": "GROWLITHE"},
+     {"level": 20, "species": 58, "const": "GROWLITHE"},
+     {"level": 19, "species": 56, "const": "MANKEY"},
+     {"level": 20, "species": 56, "const": "MANKEY"}
+    ]
+   },
+   "water": {"rate": 0, "slots": []}
+  },
+  "ROUTE_8": {
+   "mapId": 19,
+   "mapName": "Route8",
+   "table": "Route8WildMons",
+   "grass": {
+    "rate": 15,
+    "slots": [
+     {"level": 18, "species": 16, "const": "PIDGEY"},
+     {"level": 18, "species": 56, "const": "MANKEY"},
+     {"level": 17, "species": 23, "const": "EKANS"},
+     {"level": 16, "species": 58, "const": "GROWLITHE"},
+     {"level": 20, "species": 16, "const": "PIDGEY"},
+     {"level": 20, "species": 56, "const": "MANKEY"},
+     {"level": 19, "species": 23, "const": "EKANS"},
+     {"level": 17, "species": 58, "const": "GROWLITHE"},
+     {"level": 15, "species": 58, "const": "GROWLITHE"},
+     {"level": 18, "species": 58, "const": "GROWLITHE"}
+    ]
+   },
+   "water": {"rate": 0, "slots": []}
+  },
+  "ROUTE_9": {
+   "mapId": 20,
+   "mapName": "Route9",
+   "table": "Route9WildMons",
+   "grass": {
+    "rate": 15,
+    "slots": [
+     {"level": 16, "species": 19, "const": "RATTATA"},
+     {"level": 16, "species": 21, "const": "SPEAROW"},
+     {"level": 14, "species": 19, "const": "RATTATA"},
+     {"level": 11, "species": 23, "const": "EKANS"},
+     {"level": 13, "species": 21, "const": "SPEAROW"},
+     {"level": 15, "species": 23, "const": "EKANS"},
+     {"level": 17, "species": 19, "const": "RATTATA"},
+     {"level": 17, "species": 21, "const": "SPEAROW"},
+     {"level": 13, "species": 23, "const": "EKANS"},
+     {"level": 17, "species": 23, "const": "EKANS"}
+    ]
+   },
+   "water": {"rate": 0, "slots": []}
+  },
+  "ROUTE_10": {
+   "mapId": 21,
+   "mapName": "Route10",
+   "table": "Route10WildMons",
+   "grass": {
+    "rate": 15,
+    "slots": [
+     {"level": 16, "species": 100, "const": "VOLTORB"},
+     {"level": 16, "species": 21, "const": "SPEAROW"},
+     {"level": 14, "species": 100, "const": "VOLTORB"},
+     {"level": 11, "species": 23, "const": "EKANS"},
+     {"level": 13, "species": 21, "const": "SPEAROW"},
+     {"level": 15, "species": 23, "const": "EKANS"},
+     {"level": 17, "species": 100, "const": "VOLTORB"},
+     {"level": 17, "species": 21, "const": "SPEAROW"},
+     {"level": 13, "species": 23, "const": "EKANS"},
+     {"level": 17, "species": 23, "const": "EKANS"}
+    ]
+   },
+   "water": {"rate": 0, "slots": []}
+  },
+  "ROUTE_11": {
+   "mapId": 22,
+   "mapName": "Route11",
+   "table": "Route11WildMons",
+   "grass": {
+    "rate": 15,
+    "slots": [
+     {"level": 14, "species": 23, "const": "EKANS"},
+     {"level": 15, "species": 21, "const": "SPEAROW"},
+     {"level": 12, "species": 23, "const": "EKANS"},
+     {"level": 9, "species": 96, "const": "DROWZEE"},
+     {"level": 13, "species": 21, "const": "SPEAROW"},
+     {"level": 13, "species": 96, "const": "DROWZEE"},
+     {"level": 15, "species": 23, "const": "EKANS"},
+     {"level": 17, "species": 21, "const": "SPEAROW"},
+     {"level": 11, "species": 96, "const": "DROWZEE"},
+     {"level": 15, "species": 96, "const": "DROWZEE"}
+    ]
+   },
+   "water": {"rate": 0, "slots": []}
+  },
+  "ROUTE_12": {
+   "mapId": 23,
+   "mapName": "Route12",
+   "table": "Route12WildMons",
+   "grass": {
+    "rate": 15,
+    "slots": [
+     {"level": 24, "species": 43, "const": "ODDISH"},
+     {"level": 25, "species": 16, "const": "PIDGEY"},
+     {"level": 23, "species": 16, "const": "PIDGEY"},
+     {"level": 24, "species": 48, "const": "VENONAT"},
+     {"level": 22, "species": 43, "const": "ODDISH"},
+     {"level": 26, "species": 48, "const": "VENONAT"},
+     {"level": 26, "species": 43, "const": "ODDISH"},
+     {"level": 27, "species": 16, "const": "PIDGEY"},
+     {"level": 28, "species": 44, "const": "GLOOM"},
+     {"level": 30, "species": 44, "const": "GLOOM"}
+    ]
+   },
+   "water": {"rate": 0, "slots": []}
+  },
+  "ROUTE_13": {
+   "mapId": 24,
+   "mapName": "Route13",
+   "table": "Route13WildMons",
+   "grass": {
+    "rate": 20,
+    "slots": [
+     {"level": 24, "species": 43, "const": "ODDISH"},
+     {"level": 25, "species": 16, "const": "PIDGEY"},
+     {"level": 27, "species": 16, "const": "PIDGEY"},
+     {"level": 24, "species": 48, "const": "VENONAT"},
+     {"level": 22, "species": 43, "const": "ODDISH"},
+     {"level": 26, "species": 48, "const": "VENONAT"},
+     {"level": 26, "species": 43, "const": "ODDISH"},
+     {"level": 25, "species": 132, "const": "DITTO"},
+     {"level": 28, "species": 44, "const": "GLOOM"},
+     {"level": 30, "species": 44, "const": "GLOOM"}
+    ]
+   },
+   "water": {"rate": 0, "slots": []}
+  },
+  "ROUTE_14": {
+   "mapId": 25,
+   "mapName": "Route14",
+   "table": "Route14WildMons",
+   "grass": {
+    "rate": 15,
+    "slots": [
+     {"level": 24, "species": 43, "const": "ODDISH"},
+     {"level": 26, "species": 16, "const": "PIDGEY"},
+     {"level": 23, "species": 132, "const": "DITTO"},
+     {"level": 24, "species": 48, "const": "VENONAT"},
+     {"level": 22, "species": 43, "const": "ODDISH"},
+     {"level": 26, "species": 48, "const": "VENONAT"},
+     {"level": 26, "species": 43, "const": "ODDISH"},
+     {"level": 30, "species": 44, "const": "GLOOM"},
+     {"level": 28, "species": 17, "const": "PIDGEOTTO"},
+     {"level": 30, "species": 17, "const": "PIDGEOTTO"}
+    ]
+   },
+   "water": {"rate": 0, "slots": []}
+  },
+  "ROUTE_15": {
+   "mapId": 26,
+   "mapName": "Route15",
+   "table": "Route15WildMons",
+   "grass": {
+    "rate": 15,
+    "slots": [
+     {"level": 24, "species": 43, "const": "ODDISH"},
+     {"level": 26, "species": 132, "const": "DITTO"},
+     {"level": 23, "species": 16, "const": "PIDGEY"},
+     {"level": 26, "species": 48, "const": "VENONAT"},
+     {"level": 22, "species": 43, "const": "ODDISH"},
+     {"level": 28, "species": 48, "const": "VENONAT"},
+     {"level": 26, "species": 43, "const": "ODDISH"},
+     {"level": 30, "species": 44, "const": "GLOOM"},
+     {"level": 28, "species": 17, "const": "PIDGEOTTO"},
+     {"level": 30, "species": 17, "const": "PIDGEOTTO"}
+    ]
+   },
+   "water": {"rate": 0, "slots": []}
+  },
+  "ROUTE_16": {
+   "mapId": 27,
+   "mapName": "Route16",
+   "table": "Route16WildMons",
+   "grass": {
+    "rate": 25,
+    "slots": [
+     {"level": 20, "species": 21, "const": "SPEAROW"},
+     {"level": 22, "species": 21, "const": "SPEAROW"},
+     {"level": 18, "species": 19, "const": "RATTATA"},
+     {"level": 20, "species": 84, "const": "DODUO"},
+     {"level": 20, "species": 19, "const": "RATTATA"},
+     {"level": 18, "species": 84, "const": "DODUO"},
+     {"level": 22, "species": 84, "const": "DODUO"},
+     {"level": 22, "species": 19, "const": "RATTATA"},
+     {"level": 23, "species": 20, "const": "RATICATE"},
+     {"level": 25, "species": 20, "const": "RATICATE"}
+    ]
+   },
+   "water": {"rate": 0, "slots": []}
+  },
+  "ROUTE_17": {
+   "mapId": 28,
+   "mapName": "Route17",
+   "table": "Route17WildMons",
+   "grass": {
+    "rate": 25,
+    "slots": [
+     {"level": 20, "species": 21, "const": "SPEAROW"},
+     {"level": 22, "species": 21, "const": "SPEAROW"},
+     {"level": 25, "species": 20, "const": "RATICATE"},
+     {"level": 24, "species": 84, "const": "DODUO"},
+     {"level": 27, "species": 20, "const": "RATICATE"},
+     {"level": 26, "species": 84, "const": "DODUO"},
+     {"level": 28, "species": 84, "const": "DODUO"},
+     {"level": 29, "species": 20, "const": "RATICATE"},
+     {"level": 25, "species": 22, "const": "FEAROW"},
+     {"level": 27, "species": 22, "const": "FEAROW"}
+    ]
+   },
+   "water": {"rate": 0, "slots": []}
+  },
+  "ROUTE_18": {
+   "mapId": 29,
+   "mapName": "Route18",
+   "table": "Route18WildMons",
+   "grass": {
+    "rate": 25,
+    "slots": [
+     {"level": 20, "species": 21, "const": "SPEAROW"},
+     {"level": 22, "species": 21, "const": "SPEAROW"},
+     {"level": 25, "species": 20, "const": "RATICATE"},
+     {"level": 24, "species": 84, "const": "DODUO"},
+     {"level": 25, "species": 22, "const": "FEAROW"},
+     {"level": 26, "species": 84, "const": "DODUO"},
+     {"level": 28, "species": 84, "const": "DODUO"},
+     {"level": 29, "species": 20, "const": "RATICATE"},
+     {"level": 27, "species": 22, "const": "FEAROW"},
+     {"level": 29, "species": 22, "const": "FEAROW"}
+    ]
+   },
+   "water": {"rate": 0, "slots": []}
+  },
+  "ROUTE_19": {
+   "mapId": 30,
+   "mapName": "Route19",
+   "table": "SeaRoutesWildMons",
+   "grass": {"rate": 0, "slots": []},
+   "water": {
+    "rate": 5,
+    "slots": [
+     {"level": 5, "species": 72, "const": "TENTACOOL"},
+     {"level": 10, "species": 72, "const": "TENTACOOL"},
+     {"level": 15, "species": 72, "const": "TENTACOOL"},
+     {"level": 5, "species": 72, "const": "TENTACOOL"},
+     {"level": 10, "species": 72, "const": "TENTACOOL"},
+     {"level": 15, "species": 72, "const": "TENTACOOL"},
+     {"level": 20, "species": 72, "const": "TENTACOOL"},
+     {"level": 30, "species": 72, "const": "TENTACOOL"},
+     {"level": 35, "species": 72, "const": "TENTACOOL"},
+     {"level": 40, "species": 72, "const": "TENTACOOL"}
+    ]
+   }
+  },
+  "ROUTE_20": {
+   "mapId": 31,
+   "mapName": "Route20",
+   "table": "SeaRoutesWildMons",
+   "grass": {"rate": 0, "slots": []},
+   "water": {
+    "rate": 5,
+    "slots": [
+     {"level": 5, "species": 72, "const": "TENTACOOL"},
+     {"level": 10, "species": 72, "const": "TENTACOOL"},
+     {"level": 15, "species": 72, "const": "TENTACOOL"},
+     {"level": 5, "species": 72, "const": "TENTACOOL"},
+     {"level": 10, "species": 72, "const": "TENTACOOL"},
+     {"level": 15, "species": 72, "const": "TENTACOOL"},
+     {"level": 20, "species": 72, "const": "TENTACOOL"},
+     {"level": 30, "species": 72, "const": "TENTACOOL"},
+     {"level": 35, "species": 72, "const": "TENTACOOL"},
+     {"level": 40, "species": 72, "const": "TENTACOOL"}
+    ]
+   }
+  },
+  "ROUTE_21": {
+   "mapId": 32,
+   "mapName": "Route21",
+   "table": "Route21WildMons",
+   "grass": {
+    "rate": 25,
+    "slots": [
+     {"level": 21, "species": 19, "const": "RATTATA"},
+     {"level": 23, "species": 16, "const": "PIDGEY"},
+     {"level": 30, "species": 20, "const": "RATICATE"},
+     {"level": 23, "species": 19, "const": "RATTATA"},
+     {"level": 21, "species": 16, "const": "PIDGEY"},
+     {"level": 30, "species": 17, "const": "PIDGEOTTO"},
+     {"level": 32, "species": 17, "const": "PIDGEOTTO"},
+     {"level": 28, "species": 114, "const": "TANGELA"},
+     {"level": 30, "species": 114, "const": "TANGELA"},
+     {"level": 32, "species": 114, "const": "TANGELA"}
+    ]
+   },
+   "water": {
+    "rate": 5,
+    "slots": [
+     {"level": 5, "species": 72, "const": "TENTACOOL"},
+     {"level": 10, "species": 72, "const": "TENTACOOL"},
+     {"level": 15, "species": 72, "const": "TENTACOOL"},
+     {"level": 5, "species": 72, "const": "TENTACOOL"},
+     {"level": 10, "species": 72, "const": "TENTACOOL"},
+     {"level": 15, "species": 72, "const": "TENTACOOL"},
+     {"level": 20, "species": 72, "const": "TENTACOOL"},
+     {"level": 30, "species": 72, "const": "TENTACOOL"},
+     {"level": 35, "species": 72, "const": "TENTACOOL"},
+     {"level": 40, "species": 72, "const": "TENTACOOL"}
+    ]
+   }
+  },
+  "ROUTE_22": {
+   "mapId": 33,
+   "mapName": "Route22",
+   "table": "Route22WildMons",
+   "grass": {
+    "rate": 25,
+    "slots": [
+     {"level": 3, "species": 19, "const": "RATTATA"},
+     {"level": 3, "species": 32, "const": "NIDORAN_M"},
+     {"level": 4, "species": 19, "const": "RATTATA"},
+     {"level": 4, "species": 32, "const": "NIDORAN_M"},
+     {"level": 2, "species": 19, "const": "RATTATA"},
+     {"level": 2, "species": 32, "const": "NIDORAN_M"},
+     {"level": 3, "species": 21, "const": "SPEAROW"},
+     {"level": 5, "species": 21, "const": "SPEAROW"},
+     {"level": 3, "species": 29, "const": "NIDORAN_F"},
+     {"level": 4, "species": 29, "const": "NIDORAN_F"}
+    ]
+   },
+   "water": {"rate": 0, "slots": []}
+  },
+  "ROUTE_23": {
+   "mapId": 34,
+   "mapName": "Route23",
+   "table": "Route23WildMons",
+   "grass": {
+    "rate": 10,
+    "slots": [
+     {"level": 26, "species": 23, "const": "EKANS"},
+     {"level": 33, "species": 132, "const": "DITTO"},
+     {"level": 26, "species": 21, "const": "SPEAROW"},
+     {"level": 38, "species": 22, "const": "FEAROW"},
+     {"level": 38, "species": 132, "const": "DITTO"},
+     {"level": 38, "species": 22, "const": "FEAROW"},
+     {"level": 41, "species": 24, "const": "ARBOK"},
+     {"level": 43, "species": 132, "const": "DITTO"},
+     {"level": 41, "species": 22, "const": "FEAROW"},
+     {"level": 43, "species": 22, "const": "FEAROW"}
+    ]
+   },
+   "water": {"rate": 0, "slots": []}
+  },
+  "ROUTE_24": {
+   "mapId": 35,
+   "mapName": "Route24",
+   "table": "Route24WildMons",
+   "grass": {
+    "rate": 25,
+    "slots": [
+     {"level": 7, "species": 13, "const": "WEEDLE"},
+     {"level": 8, "species": 14, "const": "KAKUNA"},
+     {"level": 12, "species": 16, "const": "PIDGEY"},
+     {"level": 12, "species": 43, "const": "ODDISH"},
+     {"level": 13, "species": 43, "const": "ODDISH"},
+     {"level": 10, "species": 63, "const": "ABRA"},
+     {"level": 14, "species": 43, "const": "ODDISH"},
+     {"level": 13, "species": 16, "const": "PIDGEY"},
+     {"level": 8, "species": 63, "const": "ABRA"},
+     {"level": 12, "species": 63, "const": "ABRA"}
+    ]
+   },
+   "water": {"rate": 0, "slots": []}
+  },
+  "ROUTE_25": {
+   "mapId": 36,
+   "mapName": "Route25",
+   "table": "Route25WildMons",
+   "grass": {
+    "rate": 15,
+    "slots": [
+     {"level": 8, "species": 13, "const": "WEEDLE"},
+     {"level": 9, "species": 14, "const": "KAKUNA"},
+     {"level": 13, "species": 16, "const": "PIDGEY"},
+     {"level": 12, "species": 43, "const": "ODDISH"},
+     {"level": 13, "species": 43, "const": "ODDISH"},
+     {"level": 12, "species": 63, "const": "ABRA"},
+     {"level": 14, "species": 43, "const": "ODDISH"},
+     {"level": 10, "species": 63, "const": "ABRA"},
+     {"level": 7, "species": 11, "const": "METAPOD"},
+     {"level": 8, "species": 10, "const": "CATERPIE"}
+    ]
+   },
+   "water": {"rate": 0, "slots": []}
+  },
+  "VIRIDIAN_FOREST": {
+   "mapId": 51,
+   "mapName": "ViridianForest",
+   "table": "ViridianForestWildMons",
+   "grass": {
+    "rate": 8,
+    "slots": [
+     {"level": 4, "species": 13, "const": "WEEDLE"},
+     {"level": 5, "species": 14, "const": "KAKUNA"},
+     {"level": 3, "species": 13, "const": "WEEDLE"},
+     {"level": 5, "species": 13, "const": "WEEDLE"},
+     {"level": 4, "species": 14, "const": "KAKUNA"},
+     {"level": 6, "species": 14, "const": "KAKUNA"},
+     {"level": 4, "species": 11, "const": "METAPOD"},
+     {"level": 3, "species": 10, "const": "CATERPIE"},
+     {"level": 3, "species": 25, "const": "PIKACHU"},
+     {"level": 5, "species": 25, "const": "PIKACHU"}
+    ]
+   },
+   "water": {"rate": 0, "slots": []}
+  },
+  "MT_MOON_1F": {
+   "mapId": 59,
+   "mapName": "MtMoon1F",
+   "table": "MtMoon1FWildMons",
+   "grass": {
+    "rate": 10,
+    "slots": [
+     {"level": 8, "species": 41, "const": "ZUBAT"},
+     {"level": 7, "species": 41, "const": "ZUBAT"},
+     {"level": 9, "species": 41, "const": "ZUBAT"},
+     {"level": 8, "species": 74, "const": "GEODUDE"},
+     {"level": 6, "species": 41, "const": "ZUBAT"},
+     {"level": 10, "species": 41, "const": "ZUBAT"},
+     {"level": 10, "species": 74, "const": "GEODUDE"},
+     {"level": 8, "species": 46, "const": "PARAS"},
+     {"level": 11, "species": 41, "const": "ZUBAT"},
+     {"level": 8, "species": 35, "const": "CLEFAIRY"}
+    ]
+   },
+   "water": {"rate": 0, "slots": []}
+  },
+  "MT_MOON_B1F": {
+   "mapId": 60,
+   "mapName": "MtMoonB1F",
+   "table": "MtMoonB1FWildMons",
+   "grass": {
+    "rate": 10,
+    "slots": [
+     {"level": 8, "species": 41, "const": "ZUBAT"},
+     {"level": 7, "species": 41, "const": "ZUBAT"},
+     {"level": 7, "species": 74, "const": "GEODUDE"},
+     {"level": 8, "species": 74, "const": "GEODUDE"},
+     {"level": 9, "species": 41, "const": "ZUBAT"},
+     {"level": 10, "species": 46, "const": "PARAS"},
+     {"level": 10, "species": 41, "const": "ZUBAT"},
+     {"level": 11, "species": 41, "const": "ZUBAT"},
+     {"level": 9, "species": 35, "const": "CLEFAIRY"},
+     {"level": 9, "species": 74, "const": "GEODUDE"}
+    ]
+   },
+   "water": {"rate": 0, "slots": []}
+  },
+  "MT_MOON_B2F": {
+   "mapId": 61,
+   "mapName": "MtMoonB2F",
+   "table": "MtMoonB2FWildMons",
+   "grass": {
+    "rate": 10,
+    "slots": [
+     {"level": 9, "species": 41, "const": "ZUBAT"},
+     {"level": 9, "species": 74, "const": "GEODUDE"},
+     {"level": 10, "species": 41, "const": "ZUBAT"},
+     {"level": 10, "species": 74, "const": "GEODUDE"},
+     {"level": 11, "species": 41, "const": "ZUBAT"},
+     {"level": 10, "species": 46, "const": "PARAS"},
+     {"level": 12, "species": 46, "const": "PARAS"},
+     {"level": 10, "species": 35, "const": "CLEFAIRY"},
+     {"level": 12, "species": 41, "const": "ZUBAT"},
+     {"level": 12, "species": 35, "const": "CLEFAIRY"}
+    ]
+   },
+   "water": {"rate": 0, "slots": []}
+  },
+  "ROCK_TUNNEL_1F": {
+   "mapId": 82,
+   "mapName": "RockTunnel1F",
+   "table": "RockTunnel1FWildMons",
+   "grass": {
+    "rate": 15,
+    "slots": [
+     {"level": 16, "species": 41, "const": "ZUBAT"},
+     {"level": 17, "species": 41, "const": "ZUBAT"},
+     {"level": 17, "species": 74, "const": "GEODUDE"},
+     {"level": 15, "species": 66, "const": "MACHOP"},
+     {"level": 16, "species": 74, "const": "GEODUDE"},
+     {"level": 18, "species": 41, "const": "ZUBAT"},
+     {"level": 15, "species": 41, "const": "ZUBAT"},
+     {"level": 17, "species": 66, "const": "MACHOP"},
+     {"level": 13, "species": 95, "const": "ONIX"},
+     {"level": 15, "species": 95, "const": "ONIX"}
+    ]
+   },
+   "water": {"rate": 0, "slots": []}
+  },
+  "POWER_PLANT": {
+   "mapId": 83,
+   "mapName": "PowerPlant",
+   "table": "PowerPlantWildMons",
+   "grass": {
+    "rate": 10,
+    "slots": [
+     {"level": 21, "species": 100, "const": "VOLTORB"},
+     {"level": 21, "species": 81, "const": "MAGNEMITE"},
+     {"level": 20, "species": 25, "const": "PIKACHU"},
+     {"level": 24, "species": 25, "const": "PIKACHU"},
+     {"level": 23, "species": 81, "const": "MAGNEMITE"},
+     {"level": 23, "species": 100, "const": "VOLTORB"},
+     {"level": 32, "species": 82, "const": "MAGNETON"},
+     {"level": 35, "species": 82, "const": "MAGNETON"},
+     {"level": 33, "species": 125, "const": "ELECTABUZZ"},
+     {"level": 36, "species": 125, "const": "ELECTABUZZ"}
+    ]
+   },
+   "water": {"rate": 0, "slots": []}
+  },
+  "VICTORY_ROAD_1F": {
+   "mapId": 108,
+   "mapName": "VictoryRoad1F",
+   "table": "VictoryRoad1FWildMons",
+   "grass": {
+    "rate": 15,
+    "slots": [
+     {"level": 24, "species": 66, "const": "MACHOP"},
+     {"level": 26, "species": 74, "const": "GEODUDE"},
+     {"level": 22, "species": 41, "const": "ZUBAT"},
+     {"level": 36, "species": 95, "const": "ONIX"},
+     {"level": 39, "species": 95, "const": "ONIX"},
+     {"level": 42, "species": 95, "const": "ONIX"},
+     {"level": 41, "species": 75, "const": "GRAVELER"},
+     {"level": 41, "species": 42, "const": "GOLBAT"},
+     {"level": 42, "species": 67, "const": "MACHOKE"},
+     {"level": 43, "species": 105, "const": "MAROWAK"}
+    ]
+   },
+   "water": {"rate": 0, "slots": []}
+  },
+  "POKEMON_TOWER_1F": {
+   "mapId": 142,
+   "mapName": "PokemonTower1F",
+   "table": "PokemonTower1FWildMons",
+   "grass": {"rate": 0, "slots": []},
+   "water": {"rate": 0, "slots": []}
+  },
+  "POKEMON_TOWER_2F": {
+   "mapId": 143,
+   "mapName": "PokemonTower2F",
+   "table": "PokemonTower2FWildMons",
+   "grass": {"rate": 0, "slots": []},
+   "water": {"rate": 0, "slots": []}
+  },
+  "POKEMON_TOWER_3F": {
+   "mapId": 144,
+   "mapName": "PokemonTower3F",
+   "table": "PokemonTower3FWildMons",
+   "grass": {
+    "rate": 10,
+    "slots": [
+     {"level": 20, "species": 92, "const": "GASTLY"},
+     {"level": 21, "species": 92, "const": "GASTLY"},
+     {"level": 22, "species": 92, "const": "GASTLY"},
+     {"level": 23, "species": 92, "const": "GASTLY"},
+     {"level": 19, "species": 92, "const": "GASTLY"},
+     {"level": 18, "species": 92, "const": "GASTLY"},
+     {"level": 24, "species": 92, "const": "GASTLY"},
+     {"level": 20, "species": 104, "const": "CUBONE"},
+     {"level": 22, "species": 104, "const": "CUBONE"},
+     {"level": 25, "species": 93, "const": "HAUNTER"}
+    ]
+   },
+   "water": {"rate": 0, "slots": []}
+  },
+  "POKEMON_TOWER_4F": {
+   "mapId": 145,
+   "mapName": "PokemonTower4F",
+   "table": "PokemonTower4FWildMons",
+   "grass": {
+    "rate": 10,
+    "slots": [
+     {"level": 20, "species": 92, "const": "GASTLY"},
+     {"level": 21, "species": 92, "const": "GASTLY"},
+     {"level": 22, "species": 92, "const": "GASTLY"},
+     {"level": 23, "species": 92, "const": "GASTLY"},
+     {"level": 19, "species": 92, "const": "GASTLY"},
+     {"level": 18, "species": 92, "const": "GASTLY"},
+     {"level": 25, "species": 93, "const": "HAUNTER"},
+     {"level": 20, "species": 104, "const": "CUBONE"},
+     {"level": 22, "species": 104, "const": "CUBONE"},
+     {"level": 24, "species": 92, "const": "GASTLY"}
+    ]
+   },
+   "water": {"rate": 0, "slots": []}
+  },
+  "POKEMON_TOWER_5F": {
+   "mapId": 146,
+   "mapName": "PokemonTower5F",
+   "table": "PokemonTower5FWildMons",
+   "grass": {
+    "rate": 10,
+    "slots": [
+     {"level": 20, "species": 92, "const": "GASTLY"},
+     {"level": 21, "species": 92, "const": "GASTLY"},
+     {"level": 22, "species": 92, "const": "GASTLY"},
+     {"level": 23, "species": 92, "const": "GASTLY"},
+     {"level": 19, "species": 92, "const": "GASTLY"},
+     {"level": 18, "species": 92, "const": "GASTLY"},
+     {"level": 25, "species": 93, "const": "HAUNTER"},
+     {"level": 20, "species": 104, "const": "CUBONE"},
+     {"level": 22, "species": 104, "const": "CUBONE"},
+     {"level": 24, "species": 92, "const": "GASTLY"}
+    ]
+   },
+   "water": {"rate": 0, "slots": []}
+  },
+  "POKEMON_TOWER_6F": {
+   "mapId": 147,
+   "mapName": "PokemonTower6F",
+   "table": "PokemonTower6FWildMons",
+   "grass": {
+    "rate": 15,
+    "slots": [
+     {"level": 21, "species": 92, "const": "GASTLY"},
+     {"level": 22, "species": 92, "const": "GASTLY"},
+     {"level": 23, "species": 92, "const": "GASTLY"},
+     {"level": 24, "species": 92, "const": "GASTLY"},
+     {"level": 20, "species": 92, "const": "GASTLY"},
+     {"level": 19, "species": 92, "const": "GASTLY"},
+     {"level": 26, "species": 93, "const": "HAUNTER"},
+     {"level": 22, "species": 104, "const": "CUBONE"},
+     {"level": 24, "species": 104, "const": "CUBONE"},
+     {"level": 28, "species": 93, "const": "HAUNTER"}
+    ]
+   },
+   "water": {"rate": 0, "slots": []}
+  },
+  "POKEMON_TOWER_7F": {
+   "mapId": 148,
+   "mapName": "PokemonTower7F",
+   "table": "PokemonTower7FWildMons",
+   "grass": {
+    "rate": 15,
+    "slots": [
+     {"level": 21, "species": 92, "const": "GASTLY"},
+     {"level": 22, "species": 92, "const": "GASTLY"},
+     {"level": 23, "species": 92, "const": "GASTLY"},
+     {"level": 24, "species": 92, "const": "GASTLY"},
+     {"level": 20, "species": 92, "const": "GASTLY"},
+     {"level": 28, "species": 93, "const": "HAUNTER"},
+     {"level": 22, "species": 104, "const": "CUBONE"},
+     {"level": 24, "species": 104, "const": "CUBONE"},
+     {"level": 28, "species": 93, "const": "HAUNTER"},
+     {"level": 30, "species": 93, "const": "HAUNTER"}
+    ]
+   },
+   "water": {"rate": 0, "slots": []}
+  },
+  "SEAFOAM_ISLANDS_B1F": {
+   "mapId": 159,
+   "mapName": "SeafoamIslandsB1F",
+   "table": "SeafoamIslandsB1FWildMons",
+   "grass": {
+    "rate": 10,
+    "slots": [
+     {"level": 30, "species": 120, "const": "STARYU"},
+     {"level": 30, "species": 116, "const": "HORSEA"},
+     {"level": 32, "species": 90, "const": "SHELLDER"},
+     {"level": 32, "species": 116, "const": "HORSEA"},
+     {"level": 28, "species": 79, "const": "SLOWPOKE"},
+     {"level": 30, "species": 86, "const": "SEEL"},
+     {"level": 30, "species": 79, "const": "SLOWPOKE"},
+     {"level": 28, "species": 86, "const": "SEEL"},
+     {"level": 38, "species": 87, "const": "DEWGONG"},
+     {"level": 37, "species": 117, "const": "SEADRA"}
+    ]
+   },
+   "water": {"rate": 0, "slots": []}
+  },
+  "SEAFOAM_ISLANDS_B2F": {
+   "mapId": 160,
+   "mapName": "SeafoamIslandsB2F",
+   "table": "SeafoamIslandsB2FWildMons",
+   "grass": {
+    "rate": 10,
+    "slots": [
+     {"level": 30, "species": 86, "const": "SEEL"},
+     {"level": 30, "species": 79, "const": "SLOWPOKE"},
+     {"level": 32, "species": 86, "const": "SEEL"},
+     {"level": 32, "species": 79, "const": "SLOWPOKE"},
+     {"level": 28, "species": 116, "const": "HORSEA"},
+     {"level": 30, "species": 120, "const": "STARYU"},
+     {"level": 30, "species": 116, "const": "HORSEA"},
+     {"level": 28, "species": 90, "const": "SHELLDER"},
+     {"level": 30, "species": 42, "const": "GOLBAT"},
+     {"level": 37, "species": 80, "const": "SLOWBRO"}
+    ]
+   },
+   "water": {"rate": 0, "slots": []}
+  },
+  "SEAFOAM_ISLANDS_B3F": {
+   "mapId": 161,
+   "mapName": "SeafoamIslandsB3F",
+   "table": "SeafoamIslandsB3FWildMons",
+   "grass": {
+    "rate": 10,
+    "slots": [
+     {"level": 31, "species": 79, "const": "SLOWPOKE"},
+     {"level": 31, "species": 86, "const": "SEEL"},
+     {"level": 33, "species": 79, "const": "SLOWPOKE"},
+     {"level": 33, "species": 86, "const": "SEEL"},
+     {"level": 29, "species": 116, "const": "HORSEA"},
+     {"level": 31, "species": 90, "const": "SHELLDER"},
+     {"level": 31, "species": 116, "const": "HORSEA"},
+     {"level": 29, "species": 90, "const": "SHELLDER"},
+     {"level": 39, "species": 117, "const": "SEADRA"},
+     {"level": 37, "species": 87, "const": "DEWGONG"}
+    ]
+   },
+   "water": {"rate": 0, "slots": []}
+  },
+  "SEAFOAM_ISLANDS_B4F": {
+   "mapId": 162,
+   "mapName": "SeafoamIslandsB4F",
+   "table": "SeafoamIslandsB4FWildMons",
+   "grass": {
+    "rate": 10,
+    "slots": [
+     {"level": 31, "species": 116, "const": "HORSEA"},
+     {"level": 31, "species": 90, "const": "SHELLDER"},
+     {"level": 33, "species": 116, "const": "HORSEA"},
+     {"level": 33, "species": 90, "const": "SHELLDER"},
+     {"level": 29, "species": 79, "const": "SLOWPOKE"},
+     {"level": 31, "species": 86, "const": "SEEL"},
+     {"level": 31, "species": 79, "const": "SLOWPOKE"},
+     {"level": 29, "species": 86, "const": "SEEL"},
+     {"level": 39, "species": 80, "const": "SLOWBRO"},
+     {"level": 32, "species": 42, "const": "GOLBAT"}
+    ]
+   },
+   "water": {"rate": 0, "slots": []}
+  },
+  "POKEMON_MANSION_1F": {
+   "mapId": 165,
+   "mapName": "PokemonMansion1F",
+   "table": "PokemonMansion1FWildMons",
+   "grass": {
+    "rate": 10,
+    "slots": [
+     {"level": 32, "species": 109, "const": "KOFFING"},
+     {"level": 30, "species": 109, "const": "KOFFING"},
+     {"level": 34, "species": 77, "const": "PONYTA"},
+     {"level": 30, "species": 77, "const": "PONYTA"},
+     {"level": 34, "species": 58, "const": "GROWLITHE"},
+     {"level": 32, "species": 77, "const": "PONYTA"},
+     {"level": 30, "species": 88, "const": "GRIMER"},
+     {"level": 28, "species": 77, "const": "PONYTA"},
+     {"level": 37, "species": 110, "const": "WEEZING"},
+     {"level": 39, "species": 89, "const": "MUK"}
+    ]
+   },
+   "water": {"rate": 0, "slots": []}
+  },
+  "SEAFOAM_ISLANDS_1F": {
+   "mapId": 192,
+   "mapName": "SeafoamIslands1F",
+   "table": "SeafoamIslands1FWildMons",
+   "grass": {
+    "rate": 15,
+    "slots": [
+     {"level": 30, "species": 86, "const": "SEEL"},
+     {"level": 30, "species": 79, "const": "SLOWPOKE"},
+     {"level": 30, "species": 90, "const": "SHELLDER"},
+     {"level": 30, "species": 116, "const": "HORSEA"},
+     {"level": 28, "species": 116, "const": "HORSEA"},
+     {"level": 21, "species": 41, "const": "ZUBAT"},
+     {"level": 29, "species": 42, "const": "GOLBAT"},
+     {"level": 28, "species": 54, "const": "PSYDUCK"},
+     {"level": 28, "species": 90, "const": "SHELLDER"},
+     {"level": 38, "species": 55, "const": "GOLDUCK"}
+    ]
+   },
+   "water": {"rate": 0, "slots": []}
+  },
+  "VICTORY_ROAD_2F": {
+   "mapId": 194,
+   "mapName": "VictoryRoad2F",
+   "table": "VictoryRoad2FWildMons",
+   "grass": {
+    "rate": 10,
+    "slots": [
+     {"level": 22, "species": 66, "const": "MACHOP"},
+     {"level": 24, "species": 74, "const": "GEODUDE"},
+     {"level": 26, "species": 41, "const": "ZUBAT"},
+     {"level": 36, "species": 95, "const": "ONIX"},
+     {"level": 39, "species": 95, "const": "ONIX"},
+     {"level": 42, "species": 95, "const": "ONIX"},
+     {"level": 41, "species": 67, "const": "MACHOKE"},
+     {"level": 40, "species": 42, "const": "GOLBAT"},
+     {"level": 40, "species": 105, "const": "MAROWAK"},
+     {"level": 43, "species": 75, "const": "GRAVELER"}
+    ]
+   },
+   "water": {"rate": 0, "slots": []}
+  },
+  "DIGLETTS_CAVE": {
+   "mapId": 197,
+   "mapName": "DiglettsCave",
+   "table": "DiglettsCaveWildMons",
+   "grass": {
+    "rate": 20,
+    "slots": [
+     {"level": 18, "species": 50, "const": "DIGLETT"},
+     {"level": 19, "species": 50, "const": "DIGLETT"},
+     {"level": 17, "species": 50, "const": "DIGLETT"},
+     {"level": 20, "species": 50, "const": "DIGLETT"},
+     {"level": 16, "species": 50, "const": "DIGLETT"},
+     {"level": 15, "species": 50, "const": "DIGLETT"},
+     {"level": 21, "species": 50, "const": "DIGLETT"},
+     {"level": 22, "species": 50, "const": "DIGLETT"},
+     {"level": 29, "species": 51, "const": "DUGTRIO"},
+     {"level": 31, "species": 51, "const": "DUGTRIO"}
+    ]
+   },
+   "water": {"rate": 0, "slots": []}
+  },
+  "VICTORY_ROAD_3F": {
+   "mapId": 198,
+   "mapName": "VictoryRoad3F",
+   "table": "VictoryRoad3FWildMons",
+   "grass": {
+    "rate": 15,
+    "slots": [
+     {"level": 24, "species": 66, "const": "MACHOP"},
+     {"level": 26, "species": 74, "const": "GEODUDE"},
+     {"level": 22, "species": 41, "const": "ZUBAT"},
+     {"level": 42, "species": 95, "const": "ONIX"},
+     {"level": 40, "species": 49, "const": "VENOMOTH"},
+     {"level": 45, "species": 95, "const": "ONIX"},
+     {"level": 43, "species": 75, "const": "GRAVELER"},
+     {"level": 41, "species": 42, "const": "GOLBAT"},
+     {"level": 42, "species": 67, "const": "MACHOKE"},
+     {"level": 45, "species": 67, "const": "MACHOKE"}
+    ]
+   },
+   "water": {"rate": 0, "slots": []}
+  },
+  "POKEMON_MANSION_2F": {
+   "mapId": 214,
+   "mapName": "PokemonMansion2F",
+   "table": "PokemonMansion2FWildMons",
+   "grass": {
+    "rate": 10,
+    "slots": [
+     {"level": 32, "species": 58, "const": "GROWLITHE"},
+     {"level": 34, "species": 109, "const": "KOFFING"},
+     {"level": 34, "species": 109, "const": "KOFFING"},
+     {"level": 30, "species": 77, "const": "PONYTA"},
+     {"level": 30, "species": 109, "const": "KOFFING"},
+     {"level": 32, "species": 77, "const": "PONYTA"},
+     {"level": 30, "species": 88, "const": "GRIMER"},
+     {"level": 28, "species": 77, "const": "PONYTA"},
+     {"level": 39, "species": 110, "const": "WEEZING"},
+     {"level": 37, "species": 89, "const": "MUK"}
+    ]
+   },
+   "water": {"rate": 0, "slots": []}
+  },
+  "POKEMON_MANSION_3F": {
+   "mapId": 215,
+   "mapName": "PokemonMansion3F",
+   "table": "PokemonMansion3FWildMons",
+   "grass": {
+    "rate": 10,
+    "slots": [
+     {"level": 31, "species": 109, "const": "KOFFING"},
+     {"level": 33, "species": 58, "const": "GROWLITHE"},
+     {"level": 35, "species": 109, "const": "KOFFING"},
+     {"level": 32, "species": 77, "const": "PONYTA"},
+     {"level": 34, "species": 77, "const": "PONYTA"},
+     {"level": 40, "species": 110, "const": "WEEZING"},
+     {"level": 34, "species": 88, "const": "GRIMER"},
+     {"level": 38, "species": 110, "const": "WEEZING"},
+     {"level": 36, "species": 77, "const": "PONYTA"},
+     {"level": 42, "species": 89, "const": "MUK"}
+    ]
+   },
+   "water": {"rate": 0, "slots": []}
+  },
+  "POKEMON_MANSION_B1F": {
+   "mapId": 216,
+   "mapName": "PokemonMansionB1F",
+   "table": "PokemonMansionB1FWildMons",
+   "grass": {
+    "rate": 10,
+    "slots": [
+     {"level": 33, "species": 109, "const": "KOFFING"},
+     {"level": 31, "species": 109, "const": "KOFFING"},
+     {"level": 35, "species": 58, "const": "GROWLITHE"},
+     {"level": 32, "species": 77, "const": "PONYTA"},
+     {"level": 31, "species": 109, "const": "KOFFING"},
+     {"level": 40, "species": 110, "const": "WEEZING"},
+     {"level": 34, "species": 77, "const": "PONYTA"},
+     {"level": 35, "species": 88, "const": "GRIMER"},
+     {"level": 42, "species": 110, "const": "WEEZING"},
+     {"level": 42, "species": 89, "const": "MUK"}
+    ]
+   },
+   "water": {"rate": 0, "slots": []}
+  },
+  "SAFARI_ZONE_EAST": {
+   "mapId": 217,
+   "mapName": "SafariZoneEast",
+   "table": "SafariZoneEastWildMons",
+   "grass": {
+    "rate": 30,
+    "slots": [
+     {"level": 24, "species": 32, "const": "NIDORAN_M"},
+     {"level": 26, "species": 84, "const": "DODUO"},
+     {"level": 22, "species": 46, "const": "PARAS"},
+     {"level": 25, "species": 102, "const": "EXEGGCUTE"},
+     {"level": 33, "species": 33, "const": "NIDORINO"},
+     {"level": 23, "species": 102, "const": "EXEGGCUTE"},
+     {"level": 24, "species": 29, "const": "NIDORAN_F"},
+     {"level": 25, "species": 47, "const": "PARASECT"},
+     {"level": 25, "species": 115, "const": "KANGASKHAN"},
+     {"level": 28, "species": 123, "const": "SCYTHER"}
+    ]
+   },
+   "water": {"rate": 0, "slots": []}
+  },
+  "SAFARI_ZONE_NORTH": {
+   "mapId": 218,
+   "mapName": "SafariZoneNorth",
+   "table": "SafariZoneNorthWildMons",
+   "grass": {
+    "rate": 30,
+    "slots": [
+     {"level": 22, "species": 32, "const": "NIDORAN_M"},
+     {"level": 26, "species": 111, "const": "RHYHORN"},
+     {"level": 23, "species": 46, "const": "PARAS"},
+     {"level": 25, "species": 102, "const": "EXEGGCUTE"},
+     {"level": 30, "species": 33, "const": "NIDORINO"},
+     {"level": 27, "species": 102, "const": "EXEGGCUTE"},
+     {"level": 30, "species": 30, "const": "NIDORINA"},
+     {"level": 32, "species": 49, "const": "VENOMOTH"},
+     {"level": 26, "species": 113, "const": "CHANSEY"},
+     {"level": 28, "species": 128, "const": "TAUROS"}
+    ]
+   },
+   "water": {"rate": 0, "slots": []}
+  },
+  "SAFARI_ZONE_WEST": {
+   "mapId": 219,
+   "mapName": "SafariZoneWest",
+   "table": "SafariZoneWestWildMons",
+   "grass": {
+    "rate": 30,
+    "slots": [
+     {"level": 25, "species": 32, "const": "NIDORAN_M"},
+     {"level": 26, "species": 84, "const": "DODUO"},
+     {"level": 23, "species": 48, "const": "VENONAT"},
+     {"level": 24, "species": 102, "const": "EXEGGCUTE"},
+     {"level": 33, "species": 33, "const": "NIDORINO"},
+     {"level": 26, "species": 102, "const": "EXEGGCUTE"},
+     {"level": 25, "species": 29, "const": "NIDORAN_F"},
+     {"level": 31, "species": 49, "const": "VENOMOTH"},
+     {"level": 26, "species": 128, "const": "TAUROS"},
+     {"level": 28, "species": 115, "const": "KANGASKHAN"}
+    ]
+   },
+   "water": {"rate": 0, "slots": []}
+  },
+  "SAFARI_ZONE_CENTER": {
+   "mapId": 220,
+   "mapName": "SafariZoneCenter",
+   "table": "SafariZoneCenterWildMons",
+   "grass": {
+    "rate": 30,
+    "slots": [
+     {"level": 22, "species": 32, "const": "NIDORAN_M"},
+     {"level": 25, "species": 111, "const": "RHYHORN"},
+     {"level": 22, "species": 48, "const": "VENONAT"},
+     {"level": 24, "species": 102, "const": "EXEGGCUTE"},
+     {"level": 31, "species": 33, "const": "NIDORINO"},
+     {"level": 25, "species": 102, "const": "EXEGGCUTE"},
+     {"level": 31, "species": 30, "const": "NIDORINA"},
+     {"level": 30, "species": 47, "const": "PARASECT"},
+     {"level": 23, "species": 123, "const": "SCYTHER"},
+     {"level": 23, "species": 113, "const": "CHANSEY"}
+    ]
+   },
+   "water": {"rate": 0, "slots": []}
+  },
+  "CERULEAN_CAVE_2F": {
+   "mapId": 226,
+   "mapName": "CeruleanCave2F",
+   "table": "CeruleanCave2FWildMons",
+   "grass": {
+    "rate": 15,
+    "slots": [
+     {"level": 51, "species": 85, "const": "DODRIO"},
+     {"level": 51, "species": 49, "const": "VENOMOTH"},
+     {"level": 51, "species": 64, "const": "KADABRA"},
+     {"level": 52, "species": 112, "const": "RHYDON"},
+     {"level": 52, "species": 105, "const": "MAROWAK"},
+     {"level": 52, "species": 101, "const": "ELECTRODE"},
+     {"level": 56, "species": 113, "const": "CHANSEY"},
+     {"level": 54, "species": 40, "const": "WIGGLYTUFF"},
+     {"level": 55, "species": 132, "const": "DITTO"},
+     {"level": 60, "species": 132, "const": "DITTO"}
+    ]
+   },
+   "water": {"rate": 0, "slots": []}
+  },
+  "CERULEAN_CAVE_B1F": {
+   "mapId": 227,
+   "mapName": "CeruleanCaveB1F",
+   "table": "CeruleanCaveB1FWildMons",
+   "grass": {
+    "rate": 25,
+    "slots": [
+     {"level": 55, "species": 112, "const": "RHYDON"},
+     {"level": 55, "species": 105, "const": "MAROWAK"},
+     {"level": 55, "species": 101, "const": "ELECTRODE"},
+     {"level": 64, "species": 113, "const": "CHANSEY"},
+     {"level": 64, "species": 47, "const": "PARASECT"},
+     {"level": 64, "species": 26, "const": "RAICHU"},
+     {"level": 57, "species": 24, "const": "ARBOK"},
+     {"level": 65, "species": 132, "const": "DITTO"},
+     {"level": 63, "species": 132, "const": "DITTO"},
+     {"level": 67, "species": 132, "const": "DITTO"}
+    ]
+   },
+   "water": {"rate": 0, "slots": []}
+  },
+  "CERULEAN_CAVE_1F": {
+   "mapId": 228,
+   "mapName": "CeruleanCave1F",
+   "table": "CeruleanCave1FWildMons",
+   "grass": {
+    "rate": 10,
+    "slots": [
+     {"level": 46, "species": 42, "const": "GOLBAT"},
+     {"level": 46, "species": 97, "const": "HYPNO"},
+     {"level": 46, "species": 82, "const": "MAGNETON"},
+     {"level": 49, "species": 85, "const": "DODRIO"},
+     {"level": 49, "species": 49, "const": "VENOMOTH"},
+     {"level": 52, "species": 24, "const": "ARBOK"},
+     {"level": 49, "species": 64, "const": "KADABRA"},
+     {"level": 52, "species": 47, "const": "PARASECT"},
+     {"level": 53, "species": 26, "const": "RAICHU"},
+     {"level": 53, "species": 132, "const": "DITTO"}
+    ]
+   },
+   "water": {"rate": 0, "slots": []}
+  },
+  "ROCK_TUNNEL_B1F": {
+   "mapId": 232,
+   "mapName": "RockTunnelB1F",
+   "table": "RockTunnelB1FWildMons",
+   "grass": {
+    "rate": 15,
+    "slots": [
+     {"level": 16, "species": 41, "const": "ZUBAT"},
+     {"level": 17, "species": 41, "const": "ZUBAT"},
+     {"level": 17, "species": 74, "const": "GEODUDE"},
+     {"level": 15, "species": 66, "const": "MACHOP"},
+     {"level": 16, "species": 74, "const": "GEODUDE"},
+     {"level": 18, "species": 41, "const": "ZUBAT"},
+     {"level": 17, "species": 66, "const": "MACHOP"},
+     {"level": 17, "species": 95, "const": "ONIX"},
+     {"level": 13, "species": 95, "const": "ONIX"},
+     {"level": 18, "species": 74, "const": "GEODUDE"}
+    ]
+   },
+   "water": {"rate": 0, "slots": []}
+  }
+ }
+}

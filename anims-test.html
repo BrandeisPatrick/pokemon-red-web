@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Battle animations test</title>
+<style>
+  :root { color-scheme: light dark; --bg: #f4f4f0; --fg: #1d1d1b; --panel: #ffffff; --line: #cfcfc8; --bad: #b3261e; --ok: #1e6b35; --muted: #66665f; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #18181a; --fg: #e8e8e4; --panel: #222225; --line: #3a3a3e; --bad: #ff8a80; --ok: #8be0a4; --muted: #9a9a94; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 16px; background: var(--bg); color: var(--fg); font: 13px/1.4 system-ui, sans-serif; }
+  h1 { font-size: 16px; margin: 0 0 12px; }
+  .wrap { display: flex; flex-wrap: wrap; gap: 16px; align-items: flex-start; }
+  .screen { width: 480px; max-width: 100%; }
+  #screen { display: block; width: 480px; height: 432px; max-width: 100%; background: #000; image-rendering: pixelated; }
+  .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 10px 12px; flex: 1 1 380px; min-width: 300px; }
+  .row { display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: center; margin-bottom: 8px; }
+  label { display: inline-flex; gap: 4px; align-items: center; }
+  select, button { font: inherit; }
+  #anim { width: 100%; }
+  button { padding: 3px 10px; }
+  #status { font-family: ui-monospace, monospace; padding: 6px 0; min-height: 3em; white-space: pre-wrap; }
+  #log { font-family: ui-monospace, monospace; font-size: 12px; height: 220px; overflow: auto; border-top: 1px solid var(--line); margin: 0; padding-top: 6px; white-space: pre-wrap; }
+  .bad { color: var(--bad); }
+  .ok { color: var(--ok); }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+<h1>Battle animations (Gen 1) — test page</h1>
+<div class="wrap">
+  <div class="screen">
+    <canvas id="screen" width="160" height="144"></canvas>
+    <div id="status" class="muted">loading…</div>
+  </div>
+  <div class="panel">
+    <div class="row"><select id="anim" aria-label="Animation"></select></div>
+    <div class="row">
+      <label>Attacker <select id="side"><option value="player">player</option><option value="enemy">enemy</option></select></label>
+      <label>Player <select id="playerMon"></select></label>
+      <label>Enemy <select id="enemyMon"></select></label>
+    </div>
+    <div class="row">
+      <label>wAnimationType <select id="animType">
+        <option value="0">0 none</option><option value="1">1 shake vertical</option><option value="2">2 shake heavy</option>
+        <option value="3">3 shake slow</option><option value="4">4 blink defender</option><option value="5">5 shake light</option><option value="6">6 shake slow 2</option>
+      </select></label>
+      <label>Effectiveness <select id="effect"><option value="10">neutral</option><option value="20">super</option><option value="5">not very</option><option value="0">immune</option></select></label>
+    </div>
+    <div class="row">
+      <label>Ball <select id="ballItem"><option>POKE_BALL</option><option>GREAT_BALL</option><option>ULTRA_BALL</option><option>MASTER_BALL</option><option>SAFARI_BALL</option></select></label>
+      <label>Result <select id="ballResult">
+        <option value="67">caught ($43)</option><option value="99">broke free, 3 shakes ($63)</option><option value="98">broke free, 2 shakes ($62)</option>
+        <option value="97">broke free, 1 shake ($61)</option><option value="32">missed ($20)</option><option value="16">ghost dodges ($10)</option>
+      </select></label>
+      <label><input type="checkbox" id="trainer"> trainer battle</label>
+    </div>
+    <div class="row">
+      <label>Speed <select id="speed"><option value="0.25">¼×</option><option value="1" selected>1×</option><option value="4">4×</option><option value="16">16×</option><option value="max">max</option></select></label>
+      <label>Palette <select id="palette"><option>dmg</option><option>gray</option><option>pocket</option><option>dmgClassic</option></select></label>
+      <label><input type="checkbox" id="sgb"> SGB registers</label>
+      <label><input type="checkbox" id="animsOff"> animations off</label>
+      <label><input type="checkbox" id="keep"> keep screen state</label>
+      <label><input type="checkbox" id="sound"> sound</label>
+    </div>
+    <div class="row">
+      <button id="play">Play</button>
+      <button id="pause">Pause</button>
+      <button id="step">Step 1 frame</button>
+      <button id="stop">Stop</button>
+      <button id="reset">Reset screen</button>
+      <button id="playAll">Play all</button>
+      <label><input type="checkbox" id="bothSides" checked> both sides</label>
+    </div>
+    <pre id="log"></pre>
+  </div>
+</div>
+<script type="module">
+import { FrameBuffer } from './src/engine/framebuffer.js';
+import { Palette } from './src/engine/palette.js';
+import { Assets } from './src/engine/assets.js';
+import { Font } from './src/engine/font.js';
+import { Loop } from './src/engine/loop.js';
+import { loadBattleAnimData, BattleAnimView, playAnimation, listAnimations, NON_MOVE_ANIMS, SEQUENCES } from './src/battle_anims/index.js';
+import { drawMockBattleScreen } from './src/battle_anims/mock_screen.js';
+
+const $ = (id) => document.getElementById(id);
+const logEl = $('log');
+function log(msg, cls = '') {
+  const line = document.createElement('div');
+  if (cls) line.className = cls;
+  line.textContent = msg;
+  logEl.append(line);
+  logEl.scrollTop = logEl.scrollHeight;
+}
+
+const assets = new Assets();
+const [data, font, pokemon, moves, trainerClasses] = await Promise.all([
+  loadBattleAnimData(assets), Font.load(assets), assets.json('data/pokemon.json'),
+  assets.json('data/moves.json'), assets.json('data/trainer_classes.json'),
+]);
+const [redBack, ghostPic] = await Promise.all([assets.image('assets/battle/red_back2x.png'), assets.image('assets/pokemon/front/mon_ghost.png')]);
+
+const palette = new Palette('dmg');
+palette.setMaps([0, 1, 2, 3], [0, 1, 2, 3], [0, 3, 2, 1]); // battle: BGP $E4, OBP0 $E4 (SlidePlayerAndEnemySilhouettesOnScreen), OBP1 $6C
+const fb = new FrameBuffer(160, 144);
+fb.attachCanvas($('screen'), { getViewport: () => ({ width: 480, height: 432 }) });
+
+// ---------------------------------------------------------------- selects
+const moveNames = Object.fromEntries(moves.map((m) => [m.id, m.name]));
+const nonMove = Object.fromEntries(NON_MOVE_ANIMS.map((n) => [n.id, n]));
+const seqInfo = Object.fromEntries(SEQUENCES.map((s) => [s.id, s]));
+const all = listAnimations(data);
+const groups = { move: 'Moves (1-165)', battle: 'Non-move animation ids (166-202)', unused: 'Unused pointer (203)', sequence: 'Battle screen sequences' };
+for (const [kind, label] of Object.entries(groups)) {
+  const g = document.createElement('optgroup');
+  g.label = label;
+  for (const a of all.filter((x) => x.kind === kind)) {
+    const o = document.createElement('option');
+    o.value = String(a.id);
+    o.textContent = typeof a.id === 'number' ? `${a.id} $${a.id.toString(16).toUpperCase()} ${a.name}${kind === 'move' ? '' : ` — ${nonMove[a.id]?.use ?? ''}`}` : `${a.name} — ${seqInfo[a.id].use}`;
+    g.append(o);
+  }
+  $('anim').append(g);
+}
+$('anim').value = '85';
+for (const sel of [$('playerMon'), $('enemyMon')]) {
+  for (const p of pokemon) {
+    const o = document.createElement('option');
+    o.value = String(p.dex);
+    o.textContent = `${p.dex} ${p.name}`;
+    sel.append(o);
+  }
+}
+$('playerMon').value = '25';
+$('enemyMon').value = '4';
+$('palette').addEventListener('change', () => palette.setColors($('palette').value));
+
+// ---------------------------------------------------------------- state
+const state = { view: null, gen: null, item: null, frame: 0, paused: false, queue: [], results: [], sounds: [], screen: 'battle', mons: null, acc: 0, message: '' };
+const picCache = new Map();
+async function monPics(dex) {
+  const p = pokemon.find((m) => m.dex === Number(dex));
+  if (!picCache.has(p.dex)) {
+    const [front, back] = await Promise.all([assets.image(p.sprites.front), assets.image(p.sprites.back2x)]);
+    picCache.set(p.dex, { front, back, name: p.name });
+  }
+  return picCache.get(p.dex);
+}
+const trainerPic = await assets.image(trainerClasses.find((t) => t.const === 'RIVAL1').pic);
+const marowak = await monPics(pokemon.find((p) => p.const === 'MAROWAK').dex);
+
+function displayName(id) {
+  if (typeof id === 'number' && moveNames[id]) return moveNames[id];
+  return String(nonMove[id]?.name ?? id).replace(/_/g, ' ');
+}
+
+function drawScreen(screen) {
+  if (state.screen === 'message') {
+    drawMockBattleScreen(screen, { battleTiles: data.gfx.battleTiles, font: null, message: '' });
+    screen.fillRect(0, 0, 160, 96, 0); // only the message box (intro / trainer slides)
+    return;
+  }
+  const m = state.mons || {};
+  drawMockBattleScreen(screen, {
+    battleTiles: data.gfx.battleTiles, font,
+    enemy: { name: m.enemyName, level: 30 }, player: { name: m.playerName, level: 30, hp: 87, maxHp: 87 },
+    message: state.message,
+  });
+}
+
+/** Fresh (or kept) view with the pics an animation needs. */
+async function prepare(id) {
+  const [pm, em] = await Promise.all([monPics($('playerMon').value), monPics($('enemyMon').value)]);
+  const keep = $('keep').checked && state.view;
+  const view = keep ? state.view : new BattleAnimView(data);
+  const mons = { player: { front: pm.front, back: pm.back }, enemy: { front: em.front, back: em.back } };
+  state.mons = { playerName: pm.name, enemyName: em.name };
+  state.screen = 'battle';
+  const ball = { item: $('ballItem').value, animData: Number($('ballResult').value) };
+  if (!keep) {
+    view.setPic('player', pm.back, 'back');
+    view.setPic('enemy', ball.animData === 0x10 && id === 'TOSS_ANIM' ? ghostPic : em.front, 'front');
+    view.showPic('player');
+    view.showPic('enemy');
+  }
+  switch (id) {
+    case 'SLIDE_SILHOUETTES':
+      state.screen = 'message';
+      mons.player = { back: redBack };
+      if ($('trainer').checked) mons.enemy = { front: trainerPic };
+      break;
+    case 'SLIDE_TRAINER_OFF_PLAYER':
+      state.screen = 'message';
+      view.setPic('player', redBack, 'back');
+      view.showPic('player');
+      break;
+    case 'SLIDE_TRAINER_OFF_ENEMY':
+      state.screen = 'message';
+      view.setPic('enemy', trainerPic, 'front');
+      view.showPic('enemy');
+      break;
+    case 'SCROLL_TRAINER_PIC_IN':
+      state.screen = 'message';
+      view.hidePic('enemy');
+      mons.enemy = { front: trainerPic };
+      break;
+    case 'SEND_OUT_ENEMY_MON': view.hidePic('enemy'); break;
+    case 'SEND_OUT_PLAYER_MON': view.hidePic('player'); break;
+    case 'MAROWAK_UNVEIL':
+      view.setPic('enemy', ghostPic, 'front');
+      view.showPic('enemy');
+      mons.enemy = { front: marowak.front, back: marowak.back };
+      break;
+    case 'HIDE_SUBSTITUTE_SHOW_MON':
+      // put a substitute up first so there is something to hide
+      for (const _ of playAnimation('SUBSTITUTE', { view, attacker: $('side').value, mons })) { /* instant */ }
+      break;
+    default: break;
+  }
+  if (typeof id === 'number' && id >= 0xaa && id <= 0xad) log(`${displayName(id)} is a trade-screen animation (drawn here on the battle screen)`, 'muted');
+  return { view, mons, ball };
+}
+
+function sfxHook(name, o) {
+  state.sounds.push(name === 'CRY' ? `CRY(${o.side})` : name);
+  if (!$('sound').checked || !audio) return;
+  try {
+    if (name === 'CRY') audio.playCry(o.side === 'enemy' ? Number($('enemyMon').value) : Number($('playerMon').value));
+    else audio.playSfx(name, { bank: 2, frequencyModifier: o.pitch, tempoModifier: o.tempo });
+  } catch (e) { log(`sound: ${e.message}`, 'muted'); }
+}
+
+let audio = null;
+$('sound').addEventListener('change', async () => {
+  if (!$('sound').checked || audio) return;
+  try {
+    const mod = await import('./src/audio/audio.js');
+    audio = mod.createAudio();
+    await audio.init();
+    log('audio on');
+  } catch (e) {
+    audio = null;
+    $('sound').checked = false;
+    log(`audio unavailable: ${e.message}`, 'muted');
+  }
+});
+
+/** Close a running animation so its `finally` restores the palette (like Coroutine.cancel()). */
+function abort() {
+  if (state.gen) {
+    try { state.gen.return(); } catch (e) { log(`abort: ${e.message}`, 'bad'); }
+  }
+  state.gen = null;
+  state.item = null;
+}
+
+async function start(id, side) {
+  abort();
+  const { view, mons, ball } = await prepare(id);
+  state.view = view;
+  state.frame = 0;
+  state.sounds = [];
+  state.message = typeof id === 'number' && id <= 165 ? `${side === 'player' ? state.mons.playerName : 'Enemy ' + state.mons.enemyName}\nused ${displayName(id)}!` : displayName(id);
+  if (state.message.length > 40) state.message = displayName(id);
+  state.item = { id, side, t0: performance.now() };
+  view.lastDrawScreen = drawScreen;
+  state.gen = playAnimation(id, {
+    view, attacker: side, mons, palette, sfx: sfxHook, ball, redrawBattleScreen: drawScreen,
+    battleType: $('trainer').checked ? 'trainer' : 'wild',
+    animationType: Number($('animType').value), damageMultiplier: Number($('effect').value),
+    sgb: $('sgb').checked, animations: !$('animsOff').checked,
+  });
+}
+
+function finish(value, error) {
+  const it = state.item;
+  state.gen = null;
+  const res = { id: it.id, name: displayName(it.id), side: it.side, frames: value ? value.frames : state.frame, error: error ? String(error.stack || error) : null, sounds: state.sounds.slice() };
+  state.results.push(res);
+  if (error) {
+    log(`FAIL ${res.name} (${it.id}, ${it.side}) after ${state.frame} frames: ${error.message}`, 'bad');
+    console.error(error);
+  } else if (!state.queue.length || state.queue.total < 30) {
+    log(`${res.name} (${it.id}, ${it.side}): ${res.frames} frames${res.sounds.length ? `, sounds: ${res.sounds.join(' ')}` : ''}`);
+  }
+  state.item = null;
+  if (state.queue.length) next();
+  else if (state.queue.total) {
+    const fails = state.results.filter((r) => r.error);
+    log(`play all: ${state.results.length} animations, ${fails.length} failed, ${Math.round((performance.now() - state.queue.started) / 100) / 10} s`, fails.length ? 'bad' : 'ok');
+    window.animTest.done = true;
+    state.queue.total = 0;
+  }
+}
+
+function next() {
+  const [id, side] = state.queue.shift();
+  start(id, side).catch((e) => finish(null, e));
+}
+
+function stepOnce() {
+  if (!state.gen) return;
+  try {
+    const r = state.gen.next();
+    if (r.done) finish(r.value, null);
+    else state.frame++;
+  } catch (e) {
+    finish(null, e);
+  }
+}
+
+// ---------------------------------------------------------------- loop
+const loop = new Loop({
+  update() {
+    if (!state.gen || state.paused) return;
+    const sp = $('speed').value;
+    if (sp === 'max') {
+      const t0 = performance.now();
+      while (state.gen && performance.now() - t0 < 12) stepOnce();
+      return;
+    }
+    state.acc += Number(sp);
+    while (state.acc >= 1 && state.gen) { state.acc -= 1; stepOnce(); }
+  },
+  render() {
+    if (state.view) state.view.render(fb, drawScreen);
+    else fb.clear(0);
+    fb.present(palette);
+    const it = state.item;
+    const last = state.results.at(-1);
+    $('status').textContent = it
+      ? `${displayName(it.id)} (${it.id}) — attacker ${it.side} — frame ${state.frame}${state.paused ? ' (paused)' : ''}`
+      : last ? `${last.name} (${last.id}) — ${last.side}: ${last.error ? 'FAILED' : `${last.frames} frames`}` : 'ready';
+  },
+});
+loop.start();
+
+// ---------------------------------------------------------------- buttons
+const selectedId = () => { const v = $('anim').value; return /^\d+$/.test(v) ? Number(v) : v; };
+$('play').addEventListener('click', () => { state.queue = []; state.paused = false; start(selectedId(), $('side').value).catch((e) => log(e.stack, 'bad')); });
+$('pause').addEventListener('click', () => { state.paused = !state.paused; });
+$('step').addEventListener('click', () => { state.paused = true; stepOnce(); });
+$('stop').addEventListener('click', () => { state.queue = []; abort(); });
+$('reset').addEventListener('click', async () => {
+  state.queue = [];
+  abort();
+  palette.setMaps([0, 1, 2, 3], [0, 1, 2, 3], [0, 3, 2, 1]); // BGP $E4, OBP0 $E4, OBP1 $6C as in battle
+  const keep = $('keep').checked;
+  $('keep').checked = false;
+  const p = await prepare(0);
+  state.view = p.view;
+  $('keep').checked = keep;
+});
+$('playAll').addEventListener('click', () => playAll($('bothSides').checked));
+
+function playAll(bothSides = true) {
+  state.results = [];
+  state.paused = false;
+  const sides = bothSides ? ['player', 'enemy'] : [$('side').value];
+  const q = [];
+  for (const a of all) for (const s of sides) q.push([a.id, s]);
+  state.queue = q;
+  q.total = q.length;
+  q.started = performance.now();
+  window.animTest.done = false;
+  log(`play all: ${q.length} animations…`);
+  next();
+}
+
+/** Debug hook: start an animation paused and advance it to `frame` (for screenshots / automation). */
+async function gotoFrame(id, side = 'player', frame = 1) {
+  state.queue = [];
+  await start(id, side);
+  state.paused = true;
+  while (state.gen && state.frame < frame) stepOnce();
+  return { frame: state.frame, running: !!state.gen };
+}
+
+window.animTest = { data, state, playAll, start: (id, side = 'player') => start(id, side), goto: gotoFrame, step: (n = 1) => { for (let i = 0; i < n; i++) stepOnce(); return state.frame; }, resume: () => { state.paused = false; }, results: state.results, get done() { return this._done; }, set done(v) { this._done = v; } };
+Object.defineProperty(window.animTest, 'results', { get: () => state.results });
+const v0 = await prepare(85);
+state.view = v0.view;
+log(`loaded ${all.length} animations (${data.animations.length} table ids + ${SEQUENCES.length} sequences)`);
+</script>
+</body>
+</html>

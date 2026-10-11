@@ -1,0 +1,239 @@
+{
+ "map": "SilphCo8F",
+ "const": "SILPH_CO_8F",
+ "textPointerTables": [
+  {
+   "label": "SilphCo8F_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_SILPHCO8F_SILPH_WORKER_M", "label": "SilphCo8FSilphWorkerMText", "kind": "asm", "handler": "asm"},
+    {"id": 2, "const": "TEXT_SILPHCO8F_ROCKET1", "label": "SilphCo8FRocket1Text", "kind": "asm", "handler": "trainer", "trainerHeader": "SilphCo8TrainerHeader0"},
+    {"id": 3, "const": "TEXT_SILPHCO8F_SCIENTIST", "label": "SilphCo8FScientistText", "kind": "asm", "handler": "trainer", "trainerHeader": "SilphCo8TrainerHeader1"},
+    {"id": 4, "const": "TEXT_SILPHCO8F_ROCKET2", "label": "SilphCo8FRocket2Text", "kind": "asm", "handler": "trainer", "trainerHeader": "SilphCo8TrainerHeader2"}
+   ]
+  }
+ ],
+ "texts": {
+  "SilphCo8FSilphWorkerMText": {
+   "kind": "asm",
+   "src": "scripts/SilphCo8F.asm:97",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["SilphCo8FSilphWorkerMText.ThanksForSavingUsText", "SilphCo8FSilphWorkerMText.SilphIsFinishedText"]
+  },
+  "SilphCo8FSilphWorkerMText.SilphIsFinishedText": {
+   "kind": "text",
+   "src": "scripts/SilphCo8F.asm:107",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo8FSilphWorkerMSilphIsFinishedText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo8FSilphWorkerMText.ThanksForSavingUsText": {
+   "kind": "text",
+   "src": "scripts/SilphCo8F.asm:111",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo8FSilphWorkerMThanksForSavingUsText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo8FRocket1Text": {
+   "kind": "asm",
+   "src": "scripts/SilphCo8F.asm:115",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "SilphCo8TrainerHeader0"
+  },
+  "SilphCo8FScientistText": {
+   "kind": "asm",
+   "src": "scripts/SilphCo8F.asm:121",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "SilphCo8TrainerHeader1"
+  },
+  "SilphCo8FRocket2Text": {
+   "kind": "asm",
+   "src": "scripts/SilphCo8F.asm:127",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "SilphCo8TrainerHeader2"
+  },
+  "SilphCo8FRocket1BattleText": {
+   "kind": "text",
+   "src": "scripts/SilphCo8F.asm:133",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo8FRocket1BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo8FRocket1EndBattleText": {
+   "kind": "text",
+   "src": "scripts/SilphCo8F.asm:137",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo8FRocket1EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo8FRocket1AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/SilphCo8F.asm:141",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo8FRocket1AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo8FScientistBattleText": {
+   "kind": "text",
+   "src": "scripts/SilphCo8F.asm:145",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo8FScientistBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo8FScientistEndBattleText": {
+   "kind": "text",
+   "src": "scripts/SilphCo8F.asm:149",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo8FScientistEndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo8FScientistAfterBattleText": {
+   "kind": "text",
+   "src": "scripts/SilphCo8F.asm:153",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo8FScientistAfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo8FRocket2BattleText": {
+   "kind": "text",
+   "src": "scripts/SilphCo8F.asm:157",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo8FRocket2BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo8FRocket2EndBattleText": {
+   "kind": "text",
+   "src": "scripts/SilphCo8F.asm:161",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo8FRocket2EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo8FRocket2AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/SilphCo8F.asm:165",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo8FRocket2AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_SilphCo8FSilphWorkerMSilphIsFinishedText": {
+   "kind": "text",
+   "src": "text/SilphCo8F.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "I wonder if SILPH"},
+    {"cmd": "line", "str": "is finished..."},
+    {"cmd": "done"}
+   ]
+  },
+  "_SilphCo8FSilphWorkerMThanksForSavingUsText": {
+   "kind": "text",
+   "src": "text/SilphCo8F.asm:7",
+   "commands": [
+    {"cmd": "text", "str": "Thanks for saving"},
+    {"cmd": "line", "str": "us!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SilphCo8FRocket1BattleText": {
+   "kind": "text",
+   "src": "text/SilphCo8F.asm:12",
+   "commands": [
+    {"cmd": "text", "str": "That's as far as"},
+    {"cmd": "line", "str": "you'll go!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SilphCo8FRocket1EndBattleText": {
+   "kind": "text",
+   "src": "text/SilphCo8F.asm:17",
+   "commands": [
+    {"cmd": "text", "str": "Not"},
+    {"cmd": "line", "str": "enough grit!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_SilphCo8FRocket1AfterBattleText": {
+   "kind": "text",
+   "src": "text/SilphCo8F.asm:22",
+   "commands": [
+    {"cmd": "text", "str": "If you don't turn"},
+    {"cmd": "line", "str": "back, I'll call"},
+    {"cmd": "cont", "str": "for backup!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SilphCo8FScientistBattleText": {
+   "kind": "text",
+   "src": "text/SilphCo8F.asm:28",
+   "commands": [
+    {"cmd": "text", "str": "You're causing us"},
+    {"cmd": "line", "str": "problems!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SilphCo8FScientistEndBattleText": {
+   "kind": "text",
+   "src": "text/SilphCo8F.asm:33",
+   "commands": [
+    {"cmd": "text", "str": "Huh?"},
+    {"cmd": "line", "str": "I lost?"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_SilphCo8FScientistAfterBattleText": {
+   "kind": "text",
+   "src": "text/SilphCo8F.asm:38",
+   "commands": [
+    {"cmd": "text", "str": "So, what do you"},
+    {"cmd": "line", "str": "think of SILPH"},
+    {"cmd": "cont", "str": "BUILDING's maze?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SilphCo8FRocket2BattleText": {
+   "kind": "text",
+   "src": "text/SilphCo8F.asm:44",
+   "commands": [
+    {"cmd": "text", "str": "I am one of the 4"},
+    {"cmd": "line", "str": "ROCKET BROTHERS!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SilphCo8FRocket2EndBattleText": {
+   "kind": "text",
+   "src": "text/SilphCo8F.asm:49",
+   "commands": [
+    {"cmd": "text", "str": "Whoo!"},
+    {"cmd": "line", "str": "Oh brothers!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_SilphCo8FRocket2AfterBattleText": {
+   "kind": "text",
+   "src": "text/SilphCo8F.asm:54",
+   "commands": [
+    {"cmd": "text", "str": "I'll leave you up"},
+    {"cmd": "line", "str": "to my brothers!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

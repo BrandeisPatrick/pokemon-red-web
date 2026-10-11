@@ -1,0 +1,24 @@
+{
+  "name": "SFX_NOT_VERY_EFFECTIVE",
+  "title": "Not Very Effective",
+  "kind": "sfx",
+  "bank": 2,
+  "id": 167,
+  "label": "SFX_Not_Very_Effective",
+  "channels": [
+    {
+      "channel": 8,
+      "label": "SFX_Not_Very_Effective_Ch8",
+      "entry": 0,
+      "bytes": 13,
+      "labels": {"SFX_Not_Very_Effective_Ch8": 0},
+      "commands": [
+        {"op": "noise_note", "length": 4, "volume": 8, "fade": -7, "value": 85},
+        {"op": "noise_note", "length": 2, "volume": 15, "fade": 4, "value": 68},
+        {"op": "noise_note", "length": 8, "volume": 15, "fade": 4, "value": 34},
+        {"op": "noise_note", "length": 15, "volume": 15, "fade": 2, "value": 33},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

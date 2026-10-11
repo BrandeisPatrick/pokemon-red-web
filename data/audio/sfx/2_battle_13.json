@@ -1,0 +1,24 @@
+{
+  "name": "SFX_BATTLE_13",
+  "title": "Battle 13",
+  "kind": "sfx",
+  "bank": 2,
+  "id": 169,
+  "label": "SFX_Battle_13",
+  "channels": [
+    {
+      "channel": 8,
+      "label": "SFX_Battle_13_Ch8",
+      "entry": 0,
+      "bytes": 13,
+      "labels": {"SFX_Battle_13_Ch8": 0},
+      "commands": [
+        {"op": "noise_note", "length": 8, "volume": 4, "fade": -7, "value": 51},
+        {"op": "noise_note", "length": 4, "volume": 12, "fade": 4, "value": 34},
+        {"op": "noise_note", "length": 6, "volume": 15, "fade": 2, "value": 35},
+        {"op": "noise_note", "length": 15, "volume": 15, "fade": 2, "value": 34},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

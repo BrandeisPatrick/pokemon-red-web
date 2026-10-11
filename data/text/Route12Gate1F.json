@@ -1,0 +1,32 @@
+{
+ "map": "Route12Gate1F",
+ "const": "ROUTE_12_GATE_1F",
+ "textPointerTables": [
+  {
+   "label": "Route12Gate1F_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_ROUTE12GATE1F_GUARD", "label": "Route12Gate1FGuardText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "Route12Gate1FGuardText": {
+   "kind": "text",
+   "src": "scripts/Route12Gate1F.asm:9",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route12Gate1FGuardText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_Route12Gate1FGuardText": {
+   "kind": "text",
+   "src": "text/Route12Gate1F.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "There's a lookout"},
+    {"cmd": "line", "str": "spot upstairs."},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

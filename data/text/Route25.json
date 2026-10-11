@@ -1,0 +1,597 @@
+{
+ "map": "Route25",
+ "const": "ROUTE_25",
+ "textPointerTables": [
+  {
+   "label": "Route25_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_ROUTE25_YOUNGSTER1", "label": "Route25Youngster1Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route25TrainerHeader0"},
+    {"id": 2, "const": "TEXT_ROUTE25_YOUNGSTER2", "label": "Route25Youngster2Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route25TrainerHeader1"},
+    {"id": 3, "const": "TEXT_ROUTE25_COOLTRAINER_M", "label": "Route25CooltrainerMText", "kind": "asm", "handler": "trainer", "trainerHeader": "Route25TrainerHeader2"},
+    {"id": 4, "const": "TEXT_ROUTE25_COOLTRAINER_F1", "label": "Route25CooltrainerF1Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route25TrainerHeader3"},
+    {"id": 5, "const": "TEXT_ROUTE25_YOUNGSTER3", "label": "Route25Youngster3Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route25TrainerHeader4"},
+    {"id": 6, "const": "TEXT_ROUTE25_COOLTRAINER_F2", "label": "Route25CooltrainerF2Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route25TrainerHeader5"},
+    {"id": 7, "const": "TEXT_ROUTE25_HIKER1", "label": "Route25Hiker1Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route25TrainerHeader6"},
+    {"id": 8, "const": "TEXT_ROUTE25_HIKER2", "label": "Route25Hiker2Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route25TrainerHeader7"},
+    {"id": 9, "const": "TEXT_ROUTE25_HIKER3", "label": "Route25Hiker3Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route25TrainerHeader8"},
+    {"id": 10, "const": "TEXT_ROUTE25_TM_SEISMIC_TOSS", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 11, "const": "TEXT_ROUTE25_BILL_SIGN", "label": "Route25BillSignText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "PickUpItemText": {
+   "kind": "asm",
+   "src": "home/overworld_text.asm:29",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "Route25Youngster1Text": {
+   "kind": "asm",
+   "src": "scripts/Route25.asm:81",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route25TrainerHeader0"
+  },
+  "Route25Youngster2Text": {
+   "kind": "asm",
+   "src": "scripts/Route25.asm:87",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route25TrainerHeader1"
+  },
+  "Route25CooltrainerMText": {
+   "kind": "asm",
+   "src": "scripts/Route25.asm:93",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route25TrainerHeader2"
+  },
+  "Route25CooltrainerF1Text": {
+   "kind": "asm",
+   "src": "scripts/Route25.asm:99",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route25TrainerHeader3"
+  },
+  "Route25Youngster3Text": {
+   "kind": "asm",
+   "src": "scripts/Route25.asm:105",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route25TrainerHeader4"
+  },
+  "Route25CooltrainerF2Text": {
+   "kind": "asm",
+   "src": "scripts/Route25.asm:111",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route25TrainerHeader5"
+  },
+  "Route25Hiker1Text": {
+   "kind": "asm",
+   "src": "scripts/Route25.asm:117",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route25TrainerHeader6"
+  },
+  "Route25Hiker2Text": {
+   "kind": "asm",
+   "src": "scripts/Route25.asm:123",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route25TrainerHeader7"
+  },
+  "Route25Hiker3Text": {
+   "kind": "asm",
+   "src": "scripts/Route25.asm:129",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route25TrainerHeader8"
+  },
+  "Route25Youngster1BattleText": {
+   "kind": "text",
+   "src": "scripts/Route25.asm:135",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route25Youngster1BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route25Youngster1EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route25.asm:139",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route25Youngster1EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route25Youngster1AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route25.asm:143",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route25Youngster1AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route25Youngster2BattleText": {
+   "kind": "text",
+   "src": "scripts/Route25.asm:147",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route25Youngster2BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route25Youngster2EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route25.asm:151",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route25Youngster2EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route25Youngster2AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route25.asm:155",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route25Youngster2AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route25CooltrainerMBattleText": {
+   "kind": "text",
+   "src": "scripts/Route25.asm:159",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route25CooltrainerMBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route25CooltrainerMEndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route25.asm:163",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route25CooltrainerMEndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route25CooltrainerMAfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route25.asm:167",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route25CooltrainerMAfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route25CooltrainerF1BattleText": {
+   "kind": "text",
+   "src": "scripts/Route25.asm:171",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route25CooltrainerF1BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route25CooltrainerF1EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route25.asm:175",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route25CooltrainerF1EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route25CooltrainerF1AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route25.asm:179",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route25CooltrainerF1AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route25Youngster3BattleText": {
+   "kind": "text",
+   "src": "scripts/Route25.asm:183",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route25Youngster3BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route25Youngster3EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route25.asm:187",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route25Youngster3EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route25Youngster3AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route25.asm:191",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route25Youngster3AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route25CooltrainerF2BattleText": {
+   "kind": "text",
+   "src": "scripts/Route25.asm:195",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route25CooltrainerF2BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route25CooltrainerF2EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route25.asm:199",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route25CooltrainerF2EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route25CooltrainerF2AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route25.asm:203",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route25CooltrainerF2AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route25Hiker1BattleText": {
+   "kind": "text",
+   "src": "scripts/Route25.asm:207",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route25Hiker1BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route25Hiker1EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route25.asm:211",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route25Hiker1EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route25Hiker1AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route25.asm:215",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route25Hiker1AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route25Hiker2BattleText": {
+   "kind": "text",
+   "src": "scripts/Route25.asm:219",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route25Hiker2BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route25Hiker2EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route25.asm:223",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route25Hiker2EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route25Hiker2AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route25.asm:227",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route25Hiker2AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route25Hiker3BattleText": {
+   "kind": "text",
+   "src": "scripts/Route25.asm:231",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route25Hiker3BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route25Hiker3EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route25.asm:235",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route25Hiker3EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route25Hiker3AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route25.asm:239",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route25Hiker3AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route25BillSignText": {
+   "kind": "text",
+   "src": "scripts/Route25.asm:243",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route25BillSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_Route25Youngster1BattleText": {
+   "kind": "text",
+   "src": "text/Route25.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Local trainers"},
+    {"cmd": "line", "str": "come here to"},
+    {"cmd": "cont", "str": "practice!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route25Youngster1EndBattleText": {
+   "kind": "text",
+   "src": "text/Route25.asm:8",
+   "commands": [
+    {"cmd": "text", "str": "You're"},
+    {"cmd": "line", "str": "decent."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route25Youngster1AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route25.asm:13",
+   "commands": [
+    {"cmd": "text", "str": "All POKéMON have"},
+    {"cmd": "line", "str": "weaknesses. It's"},
+    {"cmd": "cont", "str": "best to raise"},
+    {"cmd": "cont", "str": "different kinds."},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route25Youngster2BattleText": {
+   "kind": "text",
+   "src": "text/Route25.asm:20",
+   "commands": [
+    {"cmd": "text", "str": "Dad took me to a"},
+    {"cmd": "line", "str": "great party on"},
+    {"cmd": "cont", "str": "S.S.ANNE at"},
+    {"cmd": "cont", "str": "VERMILION CITY!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route25Youngster2EndBattleText": {
+   "kind": "text",
+   "src": "text/Route25.asm:27",
+   "commands": [
+    {"cmd": "text", "str": "I'm"},
+    {"cmd": "line", "str": "not mad!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route25Youngster2AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route25.asm:32",
+   "commands": [
+    {"cmd": "text", "str": "On S.S.ANNE, I"},
+    {"cmd": "line", "str": "saw trainers from"},
+    {"cmd": "cont", "str": "around the world."},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route25CooltrainerMBattleText": {
+   "kind": "text",
+   "src": "text/Route25.asm:38",
+   "commands": [
+    {"cmd": "text", "str": "I'm a cool guy."},
+    {"cmd": "line", "str": "I've got a girl"},
+    {"cmd": "cont", "str": "friend!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route25CooltrainerMEndBattleText": {
+   "kind": "text",
+   "src": "text/Route25.asm:44",
+   "commands": [
+    {"cmd": "text", "str": "Aww,"},
+    {"cmd": "line", "str": "darn..."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route25CooltrainerMAfterBattleText": {
+   "kind": "text",
+   "src": "text/Route25.asm:49",
+   "commands": [
+    {"cmd": "text", "str": "Oh well. My girl"},
+    {"cmd": "line", "str": "will cheer me up."},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route25CooltrainerF1BattleText": {
+   "kind": "text",
+   "src": "text/Route25.asm:54",
+   "commands": [
+    {"cmd": "text", "str": "Hi! My boy"},
+    {"cmd": "line", "str": "friend is cool!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route25CooltrainerF1EndBattleText": {
+   "kind": "text",
+   "src": "text/Route25.asm:59",
+   "commands": [
+    {"cmd": "text", "str": "I was in"},
+    {"cmd": "line", "str": "bad condition!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route25CooltrainerF1AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route25.asm:64",
+   "commands": [
+    {"cmd": "text", "str": "I wish my guy was"},
+    {"cmd": "line", "str": "as good as you!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route25Youngster3BattleText": {
+   "kind": "text",
+   "src": "text/Route25.asm:69",
+   "commands": [
+    {"cmd": "text", "str": "I knew I had to"},
+    {"cmd": "line", "str": "fight you!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route25Youngster3EndBattleText": {
+   "kind": "text",
+   "src": "text/Route25.asm:74",
+   "commands": [
+    {"cmd": "text", "str": "I knew"},
+    {"cmd": "line", "str": "I'd lose too!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route25Youngster3AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route25.asm:79",
+   "commands": [
+    {"cmd": "text", "str": "If your POKéMON"},
+    {"cmd": "line", "str": "gets confused or"},
+    {"cmd": "cont", "str": "falls asleep,"},
+    {"cmd": "cont", "str": "switch it!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route25CooltrainerF2BattleText": {
+   "kind": "text",
+   "src": "text/Route25.asm:86",
+   "commands": [
+    {"cmd": "text", "str": "My friend has a"},
+    {"cmd": "line", "str": "cute POKéMON."},
+    {"cmd": "cont", "str": "I'm so jealous!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route25CooltrainerF2EndBattleText": {
+   "kind": "text",
+   "src": "text/Route25.asm:92",
+   "commands": [
+    {"cmd": "text", "str": "I'm"},
+    {"cmd": "line", "str": "not so jealous!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route25CooltrainerF2AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route25.asm:97",
+   "commands": [
+    {"cmd": "text", "str": "You came from MT."},
+    {"cmd": "line", "str": "MOON? May I have"},
+    {"cmd": "cont", "str": "a CLEFAIRY?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route25Hiker1BattleText": {
+   "kind": "text",
+   "src": "text/Route25.asm:103",
+   "commands": [
+    {"cmd": "text", "str": "I just got down"},
+    {"cmd": "line", "str": "from MT.MOON,"},
+    {"cmd": "cont", "str": "but I'm ready!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route25Hiker1EndBattleText": {
+   "kind": "text",
+   "src": "text/Route25.asm:109",
+   "commands": [
+    {"cmd": "text", "str": "You"},
+    {"cmd": "line", "str": "worked hard!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route25Hiker1AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route25.asm:114",
+   "commands": [
+    {"cmd": "text", "str": "Drat!"},
+    {"cmd": "line", "str": "A ZUBAT bit me"},
+    {"cmd": "cont", "str": "back in there."},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route25Hiker2BattleText": {
+   "kind": "text",
+   "src": "text/Route25.asm:120",
+   "commands": [
+    {"cmd": "text", "str": "I'm off to see a"},
+    {"cmd": "line", "str": "POKéMON collector"},
+    {"cmd": "cont", "str": "at the cape!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route25Hiker2EndBattleText": {
+   "kind": "text",
+   "src": "text/Route25.asm:126",
+   "commands": [
+    {"cmd": "text", "str": "You"},
+    {"cmd": "line", "str": "got me."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route25Hiker2AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route25.asm:131",
+   "commands": [
+    {"cmd": "text", "str": "The collector has"},
+    {"cmd": "line", "str": "many rare kinds"},
+    {"cmd": "cont", "str": "of POKéMON."},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route25Hiker3BattleText": {
+   "kind": "text",
+   "src": "text/Route25.asm:137",
+   "commands": [
+    {"cmd": "text", "str": "You're going to"},
+    {"cmd": "line", "str": "see BILL? First,"},
+    {"cmd": "cont", "str": "let's fight!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route25Hiker3EndBattleText": {
+   "kind": "text",
+   "src": "text/Route25.asm:143",
+   "commands": [
+    {"cmd": "text", "str": "You're"},
+    {"cmd": "line", "str": "something."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route25Hiker3AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route25.asm:148",
+   "commands": [
+    {"cmd": "text", "str": "The trail below"},
+    {"cmd": "line", "str": "is a shortcut to"},
+    {"cmd": "cont", "str": "CERULEAN CITY."},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route25BillSignText": {
+   "kind": "text",
+   "src": "text/Route25.asm:154",
+   "commands": [
+    {"cmd": "text", "str": "SEA COTTAGE"},
+    {"cmd": "line", "str": "BILL lives here!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

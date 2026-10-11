@@ -1,0 +1,33 @@
+{
+ "map": "SeafoamIslandsB1F",
+ "const": "SEAFOAM_ISLANDS_B1F",
+ "textPointerTables": [
+  {
+   "label": "SeafoamIslandsB1F_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_SEAFOAMISLANDSB1F_BOULDER1", "label": "BoulderText", "kind": "text", "handler": "text"},
+    {"id": 2, "const": "TEXT_SEAFOAMISLANDSB1F_BOULDER2", "label": "BoulderText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "_BoulderText": {
+   "kind": "text",
+   "src": "data/text/text_1.asm:45",
+   "commands": [
+    {"cmd": "text", "str": "This requires"},
+    {"cmd": "line", "str": "STRENGTH to move!"},
+    {"cmd": "done"}
+   ]
+  },
+  "BoulderText": {
+   "kind": "text",
+   "src": "home/overworld_text.asm:17",
+   "commands": [
+    {"cmd": "text_far", "label": "_BoulderText"},
+    {"cmd": "text_end"}
+   ]
+  }
+ }
+}

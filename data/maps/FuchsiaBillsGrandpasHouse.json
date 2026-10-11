@@ -1,0 +1,43 @@
+{
+ "id": 153,
+ "const": "FUCHSIA_BILLS_GRANDPAS_HOUSE",
+ "name": "FuchsiaBillsGrandpasHouse",
+ "displayName": "FUCHSIA CITY",
+ "width": 4,
+ "height": 4,
+ "tileset": "HOUSE",
+ "tilesetId": 8,
+ "tilesetFile": "data/tilesets/House.json",
+ "isOutside": false,
+ "borderBlock": 10,
+ "blocks": [4, 14, 5, 9, 15, 1, 2, 15, 15, 12, 13, 15, 6, 11, 15, 7],
+ "connections": {},
+ "warps": [
+  {"x": 2, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 2, "destWarpIndex": 1},
+  {"x": 3, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 2, "destWarpIndex": 1}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "FUCHSIABILLSGRANDPASHOUSE_MIDDLE_AGED_WOMAN", "x": 2, "y": 3, "sprite": "SPRITE_MIDDLE_AGED_WOMAN", "spriteId": 28, "movement": "STAY", "rangeOrDirection": "RIGHT", "rangeOrDirectionValue": 211, "behavior": "face_right", "textId": "TEXT_FUCHSIABILLSGRANDPASHOUSE_MIDDLE_AGED_WOMAN", "textIndex": 1},
+  {"index": 2, "const": "FUCHSIABILLSGRANDPASHOUSE_BILLS_GRANDPA", "x": 7, "y": 2, "sprite": "SPRITE_GAMBLER", "spriteId": 11, "movement": "STAY", "rangeOrDirection": "UP", "rangeOrDirectionValue": 209, "behavior": "face_up", "textId": "TEXT_FUCHSIABILLSGRANDPASHOUSE_BILLS_GRANDPA", "textIndex": 2},
+  {"index": 3, "const": "FUCHSIABILLSGRANDPASHOUSE_YOUNGSTER", "x": 5, "y": 5, "sprite": "SPRITE_YOUNGSTER", "spriteId": 4, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_FUCHSIABILLSGRANDPASHOUSE_YOUNGSTER", "textIndex": 3}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_CITIES2",
+ "wild": null,
+ "townMap": {"x": 8, "y": 13, "group": "FUCHSIA_CITY"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/FuchsiaBillsGrandpasHouse.json",
+ "textPointers": "FuchsiaBillsGrandpasHouse_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/FuchsiaBillsGrandpasHouse.asm",
+  "objects": "data/maps/objects/FuchsiaBillsGrandpasHouse.asm",
+  "blocks": "maps/FuchsiaBillsGrandpasHouse.blk",
+  "script": "scripts/FuchsiaBillsGrandpasHouse.asm"
+ },
+ "lastMapCandidates": ["FUCHSIA_CITY"],
+ "palette": {"pal": "PAL_FUCHSIA", "rule": "lastMap", "viaLastMap": "FUCHSIA_CITY"}
+}

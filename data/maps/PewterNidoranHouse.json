@@ -1,0 +1,43 @@
+{
+ "id": 55,
+ "const": "PEWTER_NIDORAN_HOUSE",
+ "name": "PewterNidoranHouse",
+ "displayName": "PEWTER CITY",
+ "width": 4,
+ "height": 4,
+ "tileset": "HOUSE",
+ "tilesetId": 8,
+ "tilesetFile": "data/tilesets/House.json",
+ "isOutside": false,
+ "borderBlock": 10,
+ "blocks": [4, 14, 5, 9, 15, 1, 2, 15, 15, 12, 13, 15, 6, 11, 15, 7],
+ "connections": {},
+ "warps": [
+  {"x": 2, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 4, "destWarpIndex": 3},
+  {"x": 3, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 4, "destWarpIndex": 3}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "PEWTERNIDORANHOUSE_NIDORAN", "x": 4, "y": 5, "sprite": "SPRITE_MONSTER", "spriteId": 5, "movement": "STAY", "rangeOrDirection": "LEFT", "rangeOrDirectionValue": 210, "behavior": "face_left", "textId": "TEXT_PEWTERNIDORANHOUSE_NIDORAN", "textIndex": 1},
+  {"index": 2, "const": "PEWTERNIDORANHOUSE_LITTLE_BOY", "x": 3, "y": 5, "sprite": "SPRITE_LITTLE_BOY", "spriteId": 53, "movement": "STAY", "rangeOrDirection": "RIGHT", "rangeOrDirectionValue": 211, "behavior": "face_right", "textId": "TEXT_PEWTERNIDORANHOUSE_LITTLE_BOY", "textIndex": 2},
+  {"index": 3, "const": "PEWTERNIDORANHOUSE_MIDDLE_AGED_MAN", "x": 1, "y": 2, "sprite": "SPRITE_MIDDLE_AGED_MAN", "spriteId": 10, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_PEWTERNIDORANHOUSE_MIDDLE_AGED_MAN", "textIndex": 3}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_CITIES1",
+ "wild": null,
+ "townMap": {"x": 2, "y": 3, "group": "PEWTER_CITY"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/PewterNidoranHouse.json",
+ "textPointers": "PewterNidoranHouse_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/PewterNidoranHouse.asm",
+  "objects": "data/maps/objects/PewterNidoranHouse.asm",
+  "blocks": "maps/ViridianNicknameHouse.blk",
+  "script": "scripts/PewterNidoranHouse.asm"
+ },
+ "lastMapCandidates": ["PEWTER_CITY"],
+ "palette": {"pal": "PAL_PEWTER", "rule": "lastMap", "viaLastMap": "PEWTER_CITY"}
+}

@@ -1,0 +1,41 @@
+{
+ "id": 189,
+ "const": "ROUTE_12_SUPER_ROD_HOUSE",
+ "name": "Route12SuperRodHouse",
+ "displayName": "ROUTE 12",
+ "width": 4,
+ "height": 4,
+ "tileset": "HOUSE",
+ "tilesetId": 8,
+ "tilesetFile": "data/tilesets/House.json",
+ "isOutside": false,
+ "borderBlock": 10,
+ "blocks": [4, 14, 5, 9, 15, 1, 2, 15, 15, 12, 13, 15, 6, 11, 15, 7],
+ "connections": {},
+ "warps": [
+  {"x": 2, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 4, "destWarpIndex": 3},
+  {"x": 3, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 4, "destWarpIndex": 3}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "ROUTE12SUPERRODHOUSE_FISHING_GURU", "x": 2, "y": 4, "sprite": "SPRITE_FISHING_GURU", "spriteId": 39, "movement": "STAY", "rangeOrDirection": "RIGHT", "rangeOrDirectionValue": 211, "behavior": "face_right", "textId": "TEXT_ROUTE12SUPERRODHOUSE_FISHING_GURU", "textIndex": 1}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_CELADON",
+ "wild": null,
+ "townMap": {"x": 14, "y": 10, "group": "ROUTE_12_2"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/Route12SuperRodHouse.json",
+ "textPointers": "Route12SuperRodHouse_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/Route12SuperRodHouse.asm",
+  "objects": "data/maps/objects/Route12SuperRodHouse.asm",
+  "blocks": "maps/Daycare.blk",
+  "script": "scripts/Route12SuperRodHouse.asm"
+ },
+ "lastMapCandidates": ["ROUTE_12"],
+ "palette": {"pal": "PAL_ROUTE", "rule": "lastMap", "viaLastMap": "ROUTE_12"}
+}

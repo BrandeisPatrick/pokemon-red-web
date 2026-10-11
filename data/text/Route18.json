@@ -1,0 +1,234 @@
+{
+ "map": "Route18",
+ "const": "ROUTE_18",
+ "textPointerTables": [
+  {
+   "label": "Route18_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_ROUTE18_COOLTRAINER_M1", "label": "Route18CooltrainerM1Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route18TrainerHeader0"},
+    {"id": 2, "const": "TEXT_ROUTE18_COOLTRAINER_M2", "label": "Route18CooltrainerM2Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route18TrainerHeader1"},
+    {"id": 3, "const": "TEXT_ROUTE18_COOLTRAINER_M3", "label": "Route18CooltrainerM3Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route18TrainerHeader2"},
+    {"id": 4, "const": "TEXT_ROUTE18_SIGN", "label": "Route18SignText", "kind": "text", "handler": "text"},
+    {"id": 5, "const": "TEXT_ROUTE18_CYCLING_ROAD_SIGN", "label": "Route18CyclingRoadSignText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "Route18CooltrainerM1Text": {
+   "kind": "asm",
+   "src": "scripts/Route18.asm:35",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route18TrainerHeader0"
+  },
+  "Route18CooltrainerM1BattleText": {
+   "kind": "text",
+   "src": "scripts/Route18.asm:41",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route18CooltrainerM1BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route18CooltrainerM1EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route18.asm:45",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route18CooltrainerM1EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route18CooltrainerM1AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route18.asm:49",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route18CooltrainerM1AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route18CooltrainerM2Text": {
+   "kind": "asm",
+   "src": "scripts/Route18.asm:53",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route18TrainerHeader1"
+  },
+  "Route18CooltrainerM2BattleText": {
+   "kind": "text",
+   "src": "scripts/Route18.asm:59",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route18CooltrainerM2BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route18CooltrainerM2EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route18.asm:63",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route18CooltrainerM2EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route18CooltrainerM2AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route18.asm:67",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route18CooltrainerM2AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route18CooltrainerM3Text": {
+   "kind": "asm",
+   "src": "scripts/Route18.asm:71",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route18TrainerHeader2"
+  },
+  "Route18CooltrainerM3BattleText": {
+   "kind": "text",
+   "src": "scripts/Route18.asm:77",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route18CooltrainerM3BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route18CooltrainerM3EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route18.asm:81",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route18CooltrainerM3EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route18CooltrainerM3AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route18.asm:85",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route18CooltrainerM3AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route18SignText": {
+   "kind": "text",
+   "src": "scripts/Route18.asm:89",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route18SignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route18CyclingRoadSignText": {
+   "kind": "text",
+   "src": "scripts/Route18.asm:93",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route18CyclingRoadSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_Route18CooltrainerM1BattleText": {
+   "kind": "text",
+   "src": "text/Route18.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "I always check"},
+    {"cmd": "line", "str": "every grassy area"},
+    {"cmd": "cont", "str": "for new POKéMON."},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route18CooltrainerM1EndBattleText": {
+   "kind": "text",
+   "src": "text/Route18.asm:8",
+   "commands": [
+    {"cmd": "text", "str": "Tch!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route18CooltrainerM1AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route18.asm:12",
+   "commands": [
+    {"cmd": "text", "str": "I wish I had a"},
+    {"cmd": "line", "str": "BIKE!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route18CooltrainerM2BattleText": {
+   "kind": "text",
+   "src": "text/Route18.asm:17",
+   "commands": [
+    {"cmd": "text", "str": "Kurukkoo!"},
+    {"cmd": "line", "str": "How do you like"},
+    {"cmd": "cont", "str": "my bird call?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route18CooltrainerM2EndBattleText": {
+   "kind": "text",
+   "src": "text/Route18.asm:23",
+   "commands": [
+    {"cmd": "text", "str": "I"},
+    {"cmd": "line", "str": "had to bug you!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route18CooltrainerM2AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route18.asm:28",
+   "commands": [
+    {"cmd": "text", "str": "I also collect sea"},
+    {"cmd": "line", "str": "POKéMON on"},
+    {"cmd": "cont", "str": "weekends!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route18CooltrainerM3BattleText": {
+   "kind": "text",
+   "src": "text/Route18.asm:34",
+   "commands": [
+    {"cmd": "text", "str": "This is my turf!"},
+    {"cmd": "line", "str": "Get out of here!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route18CooltrainerM3EndBattleText": {
+   "kind": "text",
+   "src": "text/Route18.asm:39",
+   "commands": [
+    {"cmd": "text", "str": "Darn!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route18CooltrainerM3AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route18.asm:43",
+   "commands": [
+    {"cmd": "text", "str": "This is my fave"},
+    {"cmd": "line", "str": "POKéMON hunting"},
+    {"cmd": "cont", "str": "area!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route18SignText": {
+   "kind": "text",
+   "src": "text/Route18.asm:49",
+   "commands": [
+    {"cmd": "text", "str": "ROUTE 18"},
+    {"cmd": "line", "str": "CELADON CITY -"},
+    {"cmd": "cont", "str": "FUCHSIA CITY"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route18CyclingRoadSignText": {
+   "kind": "text",
+   "src": "text/Route18.asm:55",
+   "commands": [
+    {"cmd": "text", "str": "CYCLING ROAD"},
+    {"cmd": "line", "str": "No pedestrians"},
+    {"cmd": "cont", "str": "permitted!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

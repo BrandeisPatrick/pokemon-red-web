@@ -1,0 +1,354 @@
+{
+ "map": "CeruleanGym",
+ "const": "CERULEAN_GYM",
+ "textPointerTables": [
+  {
+   "label": "CeruleanGym_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_CERULEANGYM_MISTY", "label": "CeruleanGymMistyText", "kind": "asm", "handler": "asm"},
+    {"id": 2, "const": "TEXT_CERULEANGYM_COOLTRAINER_F", "label": "CeruleanGymCooltrainerFText", "kind": "asm", "handler": "trainer", "trainerHeader": "CeruleanGymTrainerHeader0"},
+    {"id": 3, "const": "TEXT_CERULEANGYM_SWIMMER", "label": "CeruleanGymSwimmerText", "kind": "asm", "handler": "trainer", "trainerHeader": "CeruleanGymTrainerHeader1"},
+    {"id": 4, "const": "TEXT_CERULEANGYM_GYM_GUIDE", "label": "CeruleanGymGymGuideText", "kind": "asm", "handler": "asm"},
+    {"id": 5, "const": "TEXT_CERULEANGYM_MISTY_CASCADE_BADGE_INFO", "label": "CeruleanGymMistyCascadeBadgeInfoText", "kind": "text", "handler": "text"},
+    {"id": 6, "const": "TEXT_CERULEANGYM_MISTY_RECEIVED_TM11", "label": "CeruleanGymMistyReceivedTM11Text", "kind": "text", "handler": "text"},
+    {"id": 7, "const": "TEXT_CERULEANGYM_MISTY_TM11_NO_ROOM", "label": "CeruleanGymMistyTM11NoRoomText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "CeruleanGym_Script.CityName": {
+   "kind": "string",
+   "src": "scripts/CeruleanGym.asm:20",
+   "commands": [
+    {"cmd": "str", "str": "CERULEAN CITY"}
+   ]
+  },
+  "CeruleanGym_Script.LeaderName": {
+   "kind": "string",
+   "src": "scripts/CeruleanGym.asm:23",
+   "commands": [
+    {"cmd": "str", "str": "MISTY"}
+   ]
+  },
+  "CeruleanGymMistyText": {
+   "kind": "asm",
+   "src": "scripts/CeruleanGym.asm:93",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["CeruleanGymMistyText.TM11ExplanationText", "CeruleanGymMistyText.PreBattleText", "CeruleanGymMistyReceivedCascadeBadgeText"]
+  },
+  "CeruleanGymMistyText.PreBattleText": {
+   "kind": "text",
+   "src": "scripts/CeruleanGym.asm:128",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanGymMistyPreBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeruleanGymMistyText.TM11ExplanationText": {
+   "kind": "text",
+   "src": "scripts/CeruleanGym.asm:132",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanGymMistyTM11ExplanationText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeruleanGymMistyCascadeBadgeInfoText": {
+   "kind": "text",
+   "src": "scripts/CeruleanGym.asm:136",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanGymMistyCascadeBadgeInfoText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeruleanGymMistyReceivedTM11Text": {
+   "kind": "text",
+   "src": "scripts/CeruleanGym.asm:140",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanGymMistyReceivedTM11Text"},
+    {"cmd": "sound", "sound": "sound_get_item_1"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeruleanGymMistyTM11NoRoomText": {
+   "kind": "text",
+   "src": "scripts/CeruleanGym.asm:145",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanGymMistyTM11NoRoomText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeruleanGymMistyReceivedCascadeBadgeText": {
+   "kind": "text",
+   "src": "scripts/CeruleanGym.asm:149",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanGymMistyReceivedCascadeBadgeText"},
+    {"cmd": "sound", "sound": "sound_get_key_item"},
+    {"cmd": "text_promptbutton"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeruleanGymCooltrainerFText": {
+   "kind": "asm",
+   "src": "scripts/CeruleanGym.asm:155",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "CeruleanGymTrainerHeader0"
+  },
+  "CeruleanGymBattleText1": {
+   "kind": "text",
+   "src": "scripts/CeruleanGym.asm:161",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanGymBattleText1"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeruleanGymEndBattleText1": {
+   "kind": "text",
+   "src": "scripts/CeruleanGym.asm:165",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanGymEndBattleText1"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeruleanGymAfterBattleText1": {
+   "kind": "text",
+   "src": "scripts/CeruleanGym.asm:169",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanGymAfterBattleText1"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeruleanGymSwimmerText": {
+   "kind": "asm",
+   "src": "scripts/CeruleanGym.asm:173",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "CeruleanGymTrainerHeader1"
+  },
+  "CeruleanGymBattleText2": {
+   "kind": "text",
+   "src": "scripts/CeruleanGym.asm:179",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanGymBattleText2"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeruleanGymEndBattleText2": {
+   "kind": "text",
+   "src": "scripts/CeruleanGym.asm:183",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanGymEndBattleText2"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeruleanGymAfterBattleText2": {
+   "kind": "text",
+   "src": "scripts/CeruleanGym.asm:187",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanGymAfterBattleText2"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeruleanGymGymGuideText": {
+   "kind": "asm",
+   "src": "scripts/CeruleanGym.asm:191",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["CeruleanGymGymGuideText.ChampInMakingText", "CeruleanGymGymGuideText.BeatMistyText"]
+  },
+  "CeruleanGymGymGuideText.ChampInMakingText": {
+   "kind": "text",
+   "src": "scripts/CeruleanGym.asm:204",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanGymGymGuideChampInMakingText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeruleanGymGymGuideText.BeatMistyText": {
+   "kind": "text",
+   "src": "scripts/CeruleanGym.asm:208",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanGymGymGuideBeatMistyText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_CeruleanGymMistyPreBattleText": {
+   "kind": "text",
+   "src": "text/CeruleanGym.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Hi, you're a new"},
+    {"cmd": "line", "str": "face!"},
+    {"cmd": "para", "str": "Trainers who want"},
+    {"cmd": "line", "str": "to turn pro have"},
+    {"cmd": "cont", "str": "to have a policy"},
+    {"cmd": "cont", "str": "about POKéMON!"},
+    {"cmd": "para", "str": "What is your"},
+    {"cmd": "line", "str": "approach when you"},
+    {"cmd": "cont", "str": "catch POKéMON?"},
+    {"cmd": "para", "str": "My policy is an"},
+    {"cmd": "line", "str": "all-out offensive"},
+    {"cmd": "cont", "str": "with water-type"},
+    {"cmd": "cont", "str": "POKéMON!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeruleanGymMistyTM11ExplanationText": {
+   "kind": "text",
+   "src": "text/CeruleanGym.asm:21",
+   "commands": [
+    {"cmd": "text", "str": "TM11 teaches"},
+    {"cmd": "line", "str": "BUBBLEBEAM!"},
+    {"cmd": "para", "str": "Use it on an"},
+    {"cmd": "line", "str": "aquatic POKéMON!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeruleanGymMistyCascadeBadgeInfoText": {
+   "kind": "text",
+   "src": "text/CeruleanGym.asm:29",
+   "commands": [
+    {"cmd": "text", "str": "The CASCADEBADGE"},
+    {"cmd": "line", "str": "makes all POKéMON"},
+    {"cmd": "cont", "str": "up to L30 obey!"},
+    {"cmd": "para", "str": "That includes"},
+    {"cmd": "line", "str": "even outsiders!"},
+    {"cmd": "para", "str": "There's more, you"},
+    {"cmd": "line", "str": "can now use CUT"},
+    {"cmd": "cont", "str": "any time!"},
+    {"cmd": "para", "str": "You can CUT down"},
+    {"cmd": "line", "str": "small bushes to"},
+    {"cmd": "cont", "str": "open new paths!"},
+    {"cmd": "para", "str": "You can also have"},
+    {"cmd": "line", "str": "my favorite TM!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeruleanGymMistyReceivedTM11Text": {
+   "kind": "text",
+   "src": "text/CeruleanGym.asm:49",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} received"},
+    {"cmd": "line", "str": "TM11!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_CeruleanGymMistyTM11NoRoomText": {
+   "kind": "text",
+   "src": "text/CeruleanGym.asm:54",
+   "commands": [
+    {"cmd": "text", "str": "You better make"},
+    {"cmd": "line", "str": "room for this!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeruleanGymMistyReceivedCascadeBadgeText": {
+   "kind": "text",
+   "src": "text/CeruleanGym.asm:59",
+   "commands": [
+    {"cmd": "text", "str": "Wow!"},
+    {"cmd": "line", "str": "You're too much!"},
+    {"cmd": "para", "str": "All right!"},
+    {"cmd": "para", "str": "You can have the"},
+    {"cmd": "line", "str": "CASCADEBADGE to"},
+    {"cmd": "cont", "str": "show you beat me!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_CeruleanGymBattleText1": {
+   "kind": "text",
+   "src": "text/CeruleanGym.asm:70",
+   "commands": [
+    {"cmd": "text", "str": "I'm more than good"},
+    {"cmd": "line", "str": "enough for you!"},
+    {"cmd": "para", "str": "MISTY can wait!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeruleanGymEndBattleText1": {
+   "kind": "text",
+   "src": "text/CeruleanGym.asm:77",
+   "commands": [
+    {"cmd": "text", "str": "You"},
+    {"cmd": "line", "str": "overwhelmed me!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_CeruleanGymAfterBattleText1": {
+   "kind": "text",
+   "src": "text/CeruleanGym.asm:82",
+   "commands": [
+    {"cmd": "text", "str": "You have to face"},
+    {"cmd": "line", "str": "other trainers to"},
+    {"cmd": "cont", "str": "find out how good"},
+    {"cmd": "cont", "str": "you really are."},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeruleanGymBattleText2": {
+   "kind": "text",
+   "src": "text/CeruleanGym.asm:89",
+   "commands": [
+    {"cmd": "text", "str": "Splash!"},
+    {"cmd": "para", "str": "I'm first up!"},
+    {"cmd": "line", "str": "Let's do it!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeruleanGymEndBattleText2": {
+   "kind": "text",
+   "src": "text/CeruleanGym.asm:96",
+   "commands": [
+    {"cmd": "text", "str": "That"},
+    {"cmd": "line", "str": "can't be!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_CeruleanGymAfterBattleText2": {
+   "kind": "text",
+   "src": "text/CeruleanGym.asm:101",
+   "commands": [
+    {"cmd": "text", "str": "MISTY is going to"},
+    {"cmd": "line", "str": "keep improving!"},
+    {"cmd": "para", "str": "She won't lose to"},
+    {"cmd": "line", "str": "someone like you!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeruleanGymGymGuideChampInMakingText": {
+   "kind": "text",
+   "src": "text/CeruleanGym.asm:109",
+   "commands": [
+    {"cmd": "text", "str": "Yo! Champ in"},
+    {"cmd": "line", "str": "making!"},
+    {"cmd": "para", "str": "Here's my advice!"},
+    {"cmd": "para", "str": "The LEADER, MISTY,"},
+    {"cmd": "line", "str": "is a pro who uses"},
+    {"cmd": "cont", "str": "water POKéMON!"},
+    {"cmd": "para", "str": "You can drain all"},
+    {"cmd": "line", "str": "their water with"},
+    {"cmd": "cont", "str": "plant POKéMON!"},
+    {"cmd": "para", "str": "Or, zap them with"},
+    {"cmd": "line", "str": "electricity!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeruleanGymGymGuideBeatMistyText": {
+   "kind": "text",
+   "src": "text/CeruleanGym.asm:127",
+   "commands": [
+    {"cmd": "text", "str": "You beat MISTY!"},
+    {"cmd": "line", "str": "What'd I tell ya?"},
+    {"cmd": "para", "str": "You and me kid,"},
+    {"cmd": "line", "str": "we make a pretty"},
+    {"cmd": "cont", "str": "darn good team!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

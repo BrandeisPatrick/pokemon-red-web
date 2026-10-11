@@ -1,0 +1,51 @@
+{
+ "id": 52,
+ "const": "MUSEUM_1F",
+ "name": "Museum1F",
+ "displayName": "PEWTER CITY",
+ "width": 10,
+ "height": 4,
+ "tileset": "MUSEUM",
+ "tilesetId": 10,
+ "tilesetFile": "data/tilesets/Museum.json",
+ "isOutside": false,
+ "borderBlock": 10,
+ "blocks": [60, 60, 60, 80, 80, 67, 77, 77, 77, 77, 64, 65, 83, 0, 0, 76, 78, 0, 79, 0, 68, 69, 87, 0, 71, 74, 84, 96, 0, 0, 72, 73, 91, 82, 70, 11, 116, 9, 11, 116],
+ "connections": {},
+ "warps": [
+  {"x": 10, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 1, "destWarpIndex": 0},
+  {"x": 11, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 1, "destWarpIndex": 0},
+  {"x": 16, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 2, "destWarpIndex": 1},
+  {"x": 17, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 2, "destWarpIndex": 1},
+  {"x": 7, "y": 7, "destMap": "MUSEUM_2F", "destMapId": 53, "destMapName": "Museum2F", "destWarp": 1, "destWarpIndex": 0}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "MUSEUM1F_SCIENTIST1", "x": 12, "y": 4, "sprite": "SPRITE_SCIENTIST", "spriteId": 32, "movement": "STAY", "rangeOrDirection": "LEFT", "rangeOrDirectionValue": 210, "behavior": "face_left", "textId": "TEXT_MUSEUM1F_SCIENTIST1", "textIndex": 1},
+  {"index": 2, "const": "MUSEUM1F_GAMBLER", "x": 1, "y": 4, "sprite": "SPRITE_GAMBLER", "spriteId": 11, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_MUSEUM1F_GAMBLER", "textIndex": 2},
+  {"index": 3, "const": "MUSEUM1F_SCIENTIST2", "x": 15, "y": 2, "sprite": "SPRITE_SCIENTIST", "spriteId": 32, "movement": "STAY", "rangeOrDirection": "DOWN", "rangeOrDirectionValue": 208, "behavior": "face_down", "textId": "TEXT_MUSEUM1F_SCIENTIST2", "textIndex": 3},
+  {"index": 4, "const": "MUSEUM1F_SCIENTIST3", "x": 17, "y": 4, "sprite": "SPRITE_SCIENTIST", "spriteId": 32, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_MUSEUM1F_SCIENTIST3", "textIndex": 4},
+  {"index": 5, "const": "MUSEUM1F_OLD_AMBER", "x": 16, "y": 2, "sprite": "SPRITE_OLD_AMBER", "spriteId": 69, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_MUSEUM1F_OLD_AMBER", "textIndex": 5, "toggleIndex": 52, "toggleConst": "TOGGLE_OLD_AMBER", "startsHidden": false}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [
+  {"x": 2, "y": 3, "routine": "AerodactylFossil", "arg": "SPRITE_FACING_UP", "argValue": 4, "kind": "event"},
+  {"x": 2, "y": 6, "routine": "KabutopsFossil", "arg": "SPRITE_FACING_UP", "argValue": 4, "kind": "event"}
+ ],
+ "spriteSet": null,
+ "music": "MUSIC_CITIES1",
+ "wild": null,
+ "townMap": {"x": 2, "y": 3, "group": "PEWTER_CITY"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/Museum1F.json",
+ "textPointers": "Museum1F_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/Museum1F.asm",
+  "objects": "data/maps/objects/Museum1F.asm",
+  "blocks": "maps/Museum1F.blk",
+  "script": "scripts/Museum1F.asm"
+ },
+ "lastMapCandidates": ["PEWTER_CITY"],
+ "palette": {"pal": "PAL_PEWTER", "rule": "lastMap", "viaLastMap": "PEWTER_CITY"}
+}

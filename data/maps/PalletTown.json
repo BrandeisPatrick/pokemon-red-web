@@ -1,0 +1,83 @@
+{
+ "id": 0,
+ "const": "PALLET_TOWN",
+ "name": "PalletTown",
+ "displayName": "PALLET TOWN",
+ "width": 10,
+ "height": 9,
+ "tileset": "OVERWORLD",
+ "tilesetId": 0,
+ "tilesetFile": "data/tilesets/Overworld.json",
+ "isOutside": true,
+ "borderBlock": 11,
+ "blocks": [82, 79, 82, 82, 79, 11, 80, 82, 82, 80, 78, 1, 56, 57, 1, 1, 56, 57, 1, 77, 78, 8, 60, 61, 1, 8, 60, 61, 1, 77, 78, 1, 1, 1, 1, 1, 1, 1, 1, 77, 78, 1, 119, 86, 1, 12, 13, 14, 1, 77, 78, 1, 116, 116, 1, 16, 58, 0, 1, 77, 78, 1, 1, 1, 1, 119, 86, 119, 49, 77, 78, 10, 29, 30, 49, 116, 116, 10, 49, 77, 80, 10, 101, 100, 97, 97, 97, 97, 97, 79],
+ "connections": {
+  "north": {
+   "map": "ROUTE_1",
+   "mapId": 12,
+   "mapName": "Route1",
+   "offset": 0,
+   "dx": 0,
+   "dy": -18,
+   "copyRect": {"x": 0, "y": 15, "w": 10, "h": 3},
+   "onEnter": {"newY": 35, "xAdd": 0},
+   "macro": {
+    "stripSrc": 150,
+    "stripDest": 3,
+    "stripLength": 10,
+    "connectedWidth": 10,
+    "yAlign": 35,
+    "xAlign": 0,
+    "viewPointer": 289
+   }
+  },
+  "south": {
+   "map": "ROUTE_21",
+   "mapId": 32,
+   "mapName": "Route21",
+   "offset": 0,
+   "dx": 0,
+   "dy": 9,
+   "copyRect": {"x": 0, "y": 0, "w": 10, "h": 3},
+   "onEnter": {"newY": 0, "xAdd": 0},
+   "macro": {"stripSrc": 0, "stripDest": 195, "stripLength": 10, "connectedWidth": 10, "yAlign": 0, "xAlign": 0, "viewPointer": 17}
+  }
+ },
+ "warps": [
+  {"x": 5, "y": 5, "destMap": "REDS_HOUSE_1F", "destMapId": 37, "destMapName": "RedsHouse1F", "destWarp": 1, "destWarpIndex": 0},
+  {"x": 13, "y": 5, "destMap": "BLUES_HOUSE", "destMapId": 39, "destMapName": "BluesHouse", "destWarp": 1, "destWarpIndex": 0},
+  {"x": 12, "y": 11, "destMap": "OAKS_LAB", "destMapId": 40, "destMapName": "OaksLab", "destWarp": 2, "destWarpIndex": 1}
+ ],
+ "bgEvents": [
+  {"x": 13, "y": 13, "textId": "TEXT_PALLETTOWN_OAKSLAB_SIGN", "textIndex": 4},
+  {"x": 7, "y": 9, "textId": "TEXT_PALLETTOWN_SIGN", "textIndex": 5},
+  {"x": 3, "y": 5, "textId": "TEXT_PALLETTOWN_PLAYERSHOUSE_SIGN", "textIndex": 6},
+  {"x": 11, "y": 5, "textId": "TEXT_PALLETTOWN_RIVALSHOUSE_SIGN", "textIndex": 7}
+ ],
+ "objectEvents": [
+  {"index": 1, "const": "PALLETTOWN_OAK", "x": 8, "y": 5, "sprite": "SPRITE_OAK", "spriteId": 3, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_PALLETTOWN_OAK", "textIndex": 1, "toggleIndex": 0, "toggleConst": "TOGGLE_PALLET_TOWN_OAK", "startsHidden": true},
+  {"index": 2, "const": "PALLETTOWN_GIRL", "x": 3, "y": 8, "sprite": "SPRITE_GIRL", "spriteId": 13, "movement": "WALK", "rangeOrDirection": "ANY_DIR", "rangeOrDirectionValue": 0, "behavior": "walk_any", "textId": "TEXT_PALLETTOWN_GIRL", "textIndex": 2},
+  {"index": 3, "const": "PALLETTOWN_FISHER", "x": 11, "y": 14, "sprite": "SPRITE_FISHER", "spriteId": 47, "movement": "WALK", "rangeOrDirection": "ANY_DIR", "rangeOrDirectionValue": 0, "behavior": "walk_any", "textId": "TEXT_PALLETTOWN_FISHER", "textIndex": 3}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": {
+  "type": "fixed",
+  "set": "SPRITESET_PALLET_VIRIDIAN",
+  "sprites": ["SPRITE_BLUE", "SPRITE_YOUNGSTER", "SPRITE_GIRL", "SPRITE_FISHER", "SPRITE_COOLTRAINER_M", "SPRITE_GAMBLER", "SPRITE_SEEL", "SPRITE_OAK", "SPRITE_SWIMMER", "SPRITE_POKE_BALL", "SPRITE_GAMBLER_ASLEEP"]
+ },
+ "music": "MUSIC_PALLET_TOWN",
+ "wild": null,
+ "townMap": {"x": 2, "y": 11, "group": null},
+ "extraWarpCheck": "warpTileInFront",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/PalletTown.json",
+ "textPointers": "PalletTown_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/PalletTown.asm",
+  "objects": "data/maps/objects/PalletTown.asm",
+  "blocks": "maps/PalletTown.blk",
+  "script": "scripts/PalletTown.asm"
+ },
+ "palette": {"pal": "PAL_PALLET", "rule": "town"}
+}

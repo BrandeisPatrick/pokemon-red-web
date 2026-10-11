@@ -1,0 +1,52 @@
+{
+ "note": "Constants from constants/battle_constants.asm plus the exact random thresholds used by the engine (a roll succeeds when Random() < value, i.e. probability value/256).",
+ "MAX_LEVEL": 100,
+ "NUM_MOVES": 4,
+ "BASE_STAT_LEVEL": 7,
+ "MAX_STAT_LEVEL": 13,
+ "MIN_NEUTRAL_DAMAGE": 2,
+ "MAX_NEUTRAL_DAMAGE": 999,
+ "SONICBOOM_DAMAGE": 20,
+ "DRAGON_RAGE_DAMAGE": 40,
+ "MAX_STAT_VALUE": 999,
+ "ATKDEFDV_TRAINER": 152,
+ "SPDSPCDV_TRAINER": 136,
+ "effectiveness": {"SUPER_EFFECTIVE": 20, "MORE_EFFECTIVE": 15, "EFFECTIVE": 10, "NOT_VERY_EFFECTIVE": 5, "NO_EFFECT": 0},
+ "statusBits": {"SLP_MASK": 7, "PSN": 3, "BRN": 4, "FRZ": 5, "PAR": 6},
+ "battleStatus1": {
+  "STORING_ENERGY": 0,
+  "THRASHING_ABOUT": 1,
+  "ATTACKING_MULTIPLE_TIMES": 2,
+  "FLINCHED": 3,
+  "CHARGING_UP": 4,
+  "USING_TRAPPING_MOVE": 5,
+  "INVULNERABLE": 6,
+  "CONFUSED": 7
+ },
+ "battleStatus2": {
+  "USING_X_ACCURACY": 0,
+  "PROTECTED_BY_MIST": 1,
+  "GETTING_PUMPED": 2,
+  "HAS_SUBSTITUTE_UP": 4,
+  "NEEDS_TO_RECHARGE": 5,
+  "USING_RAGE": 6,
+  "SEEDED": 7
+ },
+ "battleStatus3": {"BADLY_POISONED": 0, "HAS_LIGHT_SCREEN_UP": 1, "HAS_REFLECT_UP": 2, "TRANSFORMED": 3},
+ "randomThresholds": {
+  "sideEffect10": 26,
+  "sideEffect30": 77,
+  "poisonSide20": 52,
+  "poisonSide40": 103,
+  "flinch10": 26,
+  "flinch30": 77,
+  "confusionSide": 25,
+  "statDownSide": 85,
+  "aiStatDownFail": 64,
+  "fullParalysis": 63,
+  "confusionSelfHitIfAtLeast": 128,
+  "speedTiePlayerFirst": 128,
+  "randomizeDamageMin": 217,
+  "enemyMoveSlots": [63, 127, 190]
+ }
+}

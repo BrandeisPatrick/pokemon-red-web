@@ -1,0 +1,70 @@
+{
+ "id": 247,
+ "const": "AGATHAS_ROOM",
+ "name": "AgathasRoom",
+ "displayName": "POKéMON LEAGUE",
+ "width": 5,
+ "height": 6,
+ "tileset": "CEMETERY",
+ "tilesetId": 15,
+ "tilesetFile": "data/tilesets/Cemetery.json",
+ "isOutside": false,
+ "borderBlock": 0,
+ "blocks": [71, 71, 54, 71, 71, 103, 54, 54, 78, 101, 82, 78, 54, 101, 82, 101, 103, 54, 101, 101, 82, 75, 54, 101, 82, 103, 82, 54, 104, 104],
+ "connections": {},
+ "warps": [
+  {"x": 4, "y": 11, "destMap": "BRUNOS_ROOM", "destMapId": 246, "destMapName": "BrunosRoom", "destWarp": 3, "destWarpIndex": 2},
+  {"x": 5, "y": 11, "destMap": "BRUNOS_ROOM", "destMapId": 246, "destMapName": "BrunosRoom", "destWarp": 4, "destWarpIndex": 3},
+  {"x": 4, "y": 0, "destMap": "LANCES_ROOM", "destMapId": 113, "destMapName": "LancesRoom", "destWarp": 1, "destWarpIndex": 0},
+  {"x": 5, "y": 0, "destMap": "LANCES_ROOM", "destMapId": 113, "destMapName": "LancesRoom", "destWarp": 1, "destWarpIndex": 0}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {
+   "index": 1,
+   "const": "AGATHASROOM_AGATHA",
+   "x": 5,
+   "y": 2,
+   "sprite": "SPRITE_AGATHA",
+   "spriteId": 57,
+   "movement": "STAY",
+   "rangeOrDirection": "DOWN",
+   "rangeOrDirectionValue": 208,
+   "behavior": "face_down",
+   "textId": "TEXT_AGATHASROOM_AGATHA",
+   "textIndex": 1,
+   "trainer": {
+    "trainerClass": "OPP_AGATHA",
+    "trainerClassId": 46,
+    "trainerPartyIndex": 1,
+    "header": "AgathasRoomTrainerHeader0",
+    "eventFlag": "EVENT_BEAT_AGATHAS_ROOM_TRAINER_0",
+    "eventFlagIndex": 2289,
+    "sightRange": 0,
+    "textBefore": "AgathaBeforeBattleText",
+    "textEnd": "AgathaEndBattleText",
+    "textAfter": "AgathaAfterBattleText"
+   }
+  }
+ ],
+ "trainerHeaders": [
+  {"header": "AgathasRoomTrainerHeader0", "list": "AgathasRoomTrainerHeaders", "objectIndex": 1, "eventFlag": "EVENT_BEAT_AGATHAS_ROOM_TRAINER_0", "sightRange": 0, "textBefore": "AgathaBeforeBattleText", "textEnd": "AgathaEndBattleText", "textAfter": "AgathaAfterBattleText", "talkObject": 1}
+ ],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_POKEMON_TOWER",
+ "wild": null,
+ "townMap": {"x": 0, "y": 2, "group": "POKEMON_LEAGUE_3"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/AgathasRoom.json",
+ "textPointers": "AgathasRoom_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/AgathasRoom.asm",
+  "objects": "data/maps/objects/AgathasRoom.asm",
+  "blocks": "maps/AgathasRoom.blk",
+  "script": "scripts/AgathasRoom.asm"
+ },
+ "lastMapCandidates": ["INDIGO_PLATEAU"],
+ "palette": {"pal": "PAL_GRAYMON", "rule": "cemeteryTileset"}
+}

@@ -1,0 +1,24 @@
+{
+  "name": "SFX_BATTLE_17",
+  "title": "Battle 17",
+  "kind": "sfx",
+  "bank": 2,
+  "id": 173,
+  "label": "SFX_Battle_17",
+  "channels": [
+    {
+      "channel": 8,
+      "label": "SFX_Battle_17_Ch8",
+      "entry": 0,
+      "bytes": 13,
+      "labels": {"SFX_Battle_17_Ch8": 0},
+      "commands": [
+        {"op": "noise_note", "length": 2, "volume": 9, "fade": 4, "value": 51},
+        {"op": "noise_note", "length": 4, "volume": 11, "fade": 4, "value": 34},
+        {"op": "noise_note", "length": 4, "volume": 15, "fade": 1, "value": 68},
+        {"op": "noise_note", "length": 8, "volume": 15, "fade": 1, "value": 85},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

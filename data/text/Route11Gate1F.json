@@ -1,0 +1,40 @@
+{
+ "map": "Route11Gate1F",
+ "const": "ROUTE_11_GATE_1F",
+ "textPointerTables": [
+  {
+   "label": "Route11Gate1F_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_ROUTE11GATE1F_GUARD", "label": "Route11Gate1FGuardText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "Route11Gate1FGuardText": {
+   "kind": "text",
+   "src": "scripts/Route11Gate1F.asm:9",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route11Gate1FGuardText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_Route11Gate1FGuardText": {
+   "kind": "text",
+   "src": "text/Route11Gate1F.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "When you catch"},
+    {"cmd": "line", "str": "lots of POKéMON,"},
+    {"cmd": "cont", "str": "isn't it hard to"},
+    {"cmd": "cont", "str": "think up names?"},
+    {"cmd": "para", "str": "In LAVENDER TOWN,"},
+    {"cmd": "line", "str": "there's a man who"},
+    {"cmd": "cont", "str": "rates POKéMON"},
+    {"cmd": "cont", "str": "nicknames."},
+    {"cmd": "para", "str": "He'll help you"},
+    {"cmd": "line", "str": "rename them too!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

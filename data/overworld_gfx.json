@@ -1,0 +1,138 @@
+{
+ "shadow": {
+  "png": "assets/overworld/shadow.png",
+  "source": "gfx/overworld/shadow.png",
+  "width": 8,
+  "height": 8,
+  "bpp": 1,
+  "use": "ledge-jump shadow. One 8x8 tile drawn as a 16x16 block: TL normal (OBP1), TR x-flip, BL y-flip, BR x+y-flip, at screen (64, 68) i.e. 8 px below the player sprite top, while BIT_LEDGE_OR_FISHING is set.",
+  "ref": "engine/overworld/ledges.asm LoadHoppingShadowOAM"
+ },
+ "smoke": {
+  "png": "assets/overworld/smoke.png",
+  "source": "gfx/overworld/smoke.png",
+  "width": 8,
+  "height": 8,
+  "use": "boulder dust puff (Strength) and S.S. Anne departure smoke; loaded 4x as a 16x16 block",
+  "ref": "engine/overworld/dust_smoke.asm"
+ },
+ "spinners": {
+  "png": "assets/overworld/spinners.png",
+  "source": "gfx/overworld/spinners.png",
+  "width": 32,
+  "height": 8,
+  "use": "4 spinner-arrow tiles (SpinnerArrowAnimTiles) swapped into the tileset while the player is being moved by an arrow tile (FACILITY/GYM; see tileset spinnerArrows)",
+  "ref": "engine/overworld/spinners.asm"
+ },
+ "healMachine": {
+  "png": "assets/overworld/heal_machine.png",
+  "source": "gfx/overworld/heal_machine.png",
+  "width": 8,
+  "height": 16,
+  "use": "Pokemon Center healing machine: flashing monitor + heal ball sprites (2 tiles)",
+  "ref": "engine/overworld/healing_machine.asm"
+ },
+ "battleTransition": {
+  "png": "assets/overworld/battle_transition.png",
+  "source": "gfx/overworld/battle_transition.png",
+  "width": 8,
+  "height": 8,
+  "use": "solid black tile used by battle transitions",
+  "ref": "engine/battle/battle_transitions.asm"
+ },
+ "fishingRod": {
+  "png": "assets/overworld/fishing_rod.png",
+  "source": "gfx/overworld/fishing_rod.png",
+  "width": 8,
+  "height": 24,
+  "use": "fishing animation (player casting pose / rod)",
+  "ref": "engine/overworld/player_animations.asm"
+ },
+ "redFishFront": {
+  "png": "assets/overworld/red_fish_front.png",
+  "source": "gfx/overworld/red_fish_front.png",
+  "width": 16,
+  "height": 8,
+  "use": "fishing animation (player casting pose / rod)",
+  "ref": "engine/overworld/player_animations.asm"
+ },
+ "redFishBack": {
+  "png": "assets/overworld/red_fish_back.png",
+  "source": "gfx/overworld/red_fish_back.png",
+  "width": 16,
+  "height": 8,
+  "use": "fishing animation (player casting pose / rod)",
+  "ref": "engine/overworld/player_animations.asm"
+ },
+ "redFishSide": {
+  "png": "assets/overworld/red_fish_side.png",
+  "source": "gfx/overworld/red_fish_side.png",
+  "width": 16,
+  "height": 8,
+  "use": "fishing animation (player casting pose / rod)",
+  "ref": "engine/overworld/player_animations.asm"
+ },
+ "emote_shock": {
+  "png": "assets/overworld/emotes/shock.png",
+  "source": "gfx/emotes/shock.png",
+  "width": 16,
+  "height": 16,
+  "use": "emotion bubble (shock); 16x16, drawn 16 px above the sprite (screen y = sprite y - 16, same x) for 60 frames, OBP0",
+  "ref": "engine/overworld/emotion_bubbles.asm"
+ },
+ "emote_question": {
+  "png": "assets/overworld/emotes/question.png",
+  "source": "gfx/emotes/question.png",
+  "width": 16,
+  "height": 16,
+  "use": "emotion bubble (question); 16x16, drawn 16 px above the sprite (screen y = sprite y - 16, same x) for 60 frames, OBP0",
+  "ref": "engine/overworld/emotion_bubbles.asm"
+ },
+ "emote_happy": {
+  "png": "assets/overworld/emotes/happy.png",
+  "source": "gfx/emotes/happy.png",
+  "width": 16,
+  "height": 16,
+  "use": "emotion bubble (happy); 16x16, drawn 16 px above the sprite (screen y = sprite y - 16, same x) for 60 frames, OBP0",
+  "ref": "engine/overworld/emotion_bubbles.asm"
+ },
+ "cutLeaf": {
+  "png": "assets/overworld/cut_leaf.png",
+  "source": "gfx/battle/move_anim_1.png tile 6",
+  "width": 8,
+  "height": 8,
+  "use": "cutting tall grass: 4 copies (attrs alternate x-flip / y-flip, OBP1)"
+ },
+ "ledgeJump": {
+  "playerSpriteScreenY": [56, 54, 52, 50, 49, 48, 48, 48, 49, 50, 51, 52, 54, 56, 60, 60],
+  "note": "one entry per overworld loop iteration (2 frames) while jumping; the player moves 2 steps (16 px each) in the jump direction"
+ },
+ "cutAnimation": {
+  "treeTilesFromOverworldTileset": [45, 46, 61, 62],
+  "offsetsFromPlayerSprite": {"down": [8, 36], "up": [8, 4], "left": [-8, 20], "right": [24, 20]},
+  "ref": "engine/overworld/cut.asm InitCutAnimOAM / CutAnimationOffsets (x, y)"
+ },
+ "boulderDust": {
+  "offsetsFromPlayerSprite": {"down": [8, 52], "up": [8, -12], "left": [-24, 20], "right": [40, 20]},
+  "ref": "engine/overworld/cut.asm BoulderDustAnimationOffsets (x, y)"
+ },
+ "flyEnterScreenCoords": {
+  "yx": [
+   [5, 152],
+   [15, 144],
+   [24, 136],
+   [32, 128],
+   [39, 120],
+   [45, 112],
+   [50, 104],
+   [54, 96],
+   [57, 88],
+   [59, 80],
+   [60, 72],
+   [60, 64]
+  ],
+  "ref": "engine/overworld/player_animations.asm"
+ },
+ "tallGrass": "No overlay graphic: when the tile under a sprite (bottom-left tile of its cell) equals the tileset grassTile, the sprite's lower 8 px rows get OAM priority (BG colours 1-3 draw over them).",
+ "doors": "Gen 1 has no door animation graphics: warps fade the palette (GBFadeOutToBlack) and, when arriving on a door tile, the player auto-steps down one cell."
+}

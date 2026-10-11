@@ -1,0 +1,25 @@
+{
+  "name": "SFX_GO_OUTSIDE",
+  "title": "Go Outside",
+  "kind": "sfx",
+  "bank": 3,
+  "id": 181,
+  "label": "SFX_Go_Outside_3",
+  "channels": [
+    {
+      "channel": 8,
+      "label": "SFX_Go_Outside_3_Ch8",
+      "entry": 0,
+      "bytes": 16,
+      "labels": {"SFX_Go_Outside_3_Ch8": 0},
+      "commands": [
+        {"op": "noise_note", "length": 2, "volume": 15, "fade": 1, "value": 84},
+        {"op": "noise_note", "length": 12, "volume": 7, "fade": 1, "value": 35},
+        {"op": "noise_note", "length": 2, "volume": 11, "fade": 1, "value": 84},
+        {"op": "noise_note", "length": 12, "volume": 6, "fade": 1, "value": 35},
+        {"op": "noise_note", "length": 6, "volume": 4, "fade": 1, "value": 84},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

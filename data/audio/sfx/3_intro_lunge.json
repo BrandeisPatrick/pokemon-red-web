@@ -1,0 +1,28 @@
+{
+  "name": "SFX_INTRO_LUNGE",
+  "title": "Intro Lunge",
+  "kind": "sfx",
+  "bank": 3,
+  "id": 184,
+  "label": "SFX_Intro_Lunge",
+  "channels": [
+    {
+      "channel": 8,
+      "label": "SFX_Intro_Lunge_Ch8",
+      "entry": 0,
+      "bytes": 25,
+      "labels": {"SFX_Intro_Lunge_Ch8": 0},
+      "commands": [
+        {"op": "noise_note", "length": 6, "volume": 2, "fade": 0, "value": 16},
+        {"op": "noise_note", "length": 6, "volume": 2, "fade": -7, "value": 64},
+        {"op": "noise_note", "length": 6, "volume": 4, "fade": -7, "value": 65},
+        {"op": "noise_note", "length": 6, "volume": 8, "fade": -7, "value": 65},
+        {"op": "noise_note", "length": 6, "volume": 12, "fade": -7, "value": 66},
+        {"op": "noise_note", "length": 8, "volume": 13, "fade": 7, "value": 66},
+        {"op": "noise_note", "length": 15, "volume": 14, "fade": 7, "value": 67},
+        {"op": "noise_note", "length": 15, "volume": 15, "fade": 2, "value": 67},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+ "map": "IndigoPlateauLobby",
+ "const": "INDIGO_PLATEAU_LOBBY",
+ "textPointerTables": [
+  {
+   "label": "IndigoPlateauLobby_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_INDIGOPLATEAULOBBY_NURSE", "label": "IndigoPlateauLobbyNurseText", "kind": "script", "handler": "script_pokecenter_nurse"},
+    {"id": 2, "const": "TEXT_INDIGOPLATEAULOBBY_GYM_GUIDE", "label": "IndigoPlateauLobbyGymGuideText", "kind": "text", "handler": "text"},
+    {"id": 3, "const": "TEXT_INDIGOPLATEAULOBBY_COOLTRAINER_F", "label": "IndigoPlateauLobbyCooltrainerFText", "kind": "text", "handler": "text"},
+    {"id": 4, "const": "TEXT_INDIGOPLATEAULOBBY_CLERK", "label": "IndigoPlateauLobbyClerkText", "kind": "script", "handler": "script_mart"},
+    {"id": 5, "const": "TEXT_INDIGOPLATEAULOBBY_LINK_RECEPTIONIST", "label": "IndigoPlateauLobbyLinkReceptionistText", "kind": "script", "handler": "script_cable_club_receptionist"}
+   ]
+  }
+ ],
+ "texts": {
+  "IndigoPlateauLobbyClerkText": {
+   "kind": "script",
+   "src": "data/items/marts.asm:50",
+   "commands": [
+    {"cmd": "script", "script": "script_mart", "items": ["ULTRA_BALL", "GREAT_BALL", "FULL_RESTORE", "MAX_POTION", "FULL_HEAL", "REVIVE", "MAX_REPEL"]}
+   ]
+  },
+  "IndigoPlateauLobbyNurseText": {
+   "kind": "script",
+   "src": "scripts/IndigoPlateauLobby.asm:26",
+   "commands": [
+    {"cmd": "script", "script": "script_pokecenter_nurse"}
+   ]
+  },
+  "IndigoPlateauLobbyGymGuideText": {
+   "kind": "text",
+   "src": "scripts/IndigoPlateauLobby.asm:29",
+   "commands": [
+    {"cmd": "text_far", "label": "_IndigoPlateauLobbyGymGuideText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "IndigoPlateauLobbyCooltrainerFText": {
+   "kind": "text",
+   "src": "scripts/IndigoPlateauLobby.asm:33",
+   "commands": [
+    {"cmd": "text_far", "label": "_IndigoPlateauLobbyCooltrainerFText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "IndigoPlateauLobbyLinkReceptionistText": {
+   "kind": "script",
+   "src": "scripts/IndigoPlateauLobby.asm:37",
+   "commands": [
+    {"cmd": "script", "script": "script_cable_club_receptionist"}
+   ]
+  },
+  "_IndigoPlateauLobbyGymGuideText": {
+   "kind": "text",
+   "src": "text/IndigoPlateauLobby.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Yo! Champ in"},
+    {"cmd": "line", "str": "making!"},
+    {"cmd": "para", "str": "At POKéMON LEAGUE,"},
+    {"cmd": "line", "str": "you have to face"},
+    {"cmd": "cont", "str": "the ELITE FOUR in"},
+    {"cmd": "cont", "str": "succession."},
+    {"cmd": "para", "str": "If you lose, you"},
+    {"cmd": "line", "str": "have to start all"},
+    {"cmd": "cont", "str": "over again! This"},
+    {"cmd": "cont", "str": "is it! Go for it!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_IndigoPlateauLobbyCooltrainerFText": {
+   "kind": "text",
+   "src": "text/IndigoPlateauLobby.asm:17",
+   "commands": [
+    {"cmd": "text", "str": "From here on, you"},
+    {"cmd": "line", "str": "face the ELITE"},
+    {"cmd": "cont", "str": "FOUR one by one!"},
+    {"cmd": "para", "str": "If you win, a"},
+    {"cmd": "line", "str": "door opens to the"},
+    {"cmd": "cont", "str": "next trainer!"},
+    {"cmd": "cont", "str": "Good luck!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

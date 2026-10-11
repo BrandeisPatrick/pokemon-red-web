@@ -1,0 +1,38 @@
+{
+  "name": "SFX_SLOTS_NEW_SPIN",
+  "title": "Slots New Spin",
+  "kind": "sfx",
+  "bank": 3,
+  "id": 192,
+  "label": "SFX_Slots_New_Spin",
+  "channels": [
+    {
+      "channel": 5,
+      "label": "SFX_Slots_New_Spin_Ch5",
+      "entry": 0,
+      "bytes": 15,
+      "labels": {"SFX_Slots_New_Spin_Ch5": 0},
+      "commands": [
+        {"op": "duty_cycle", "duty": 3},
+        {"op": "square_note", "length": 5, "volume": 14, "fade": 1, "frequency": 1792},
+        {"op": "square_note", "length": 2, "volume": 14, "fade": 1, "frequency": 1920},
+        {"op": "square_note", "length": 15, "volume": 15, "fade": 1, "frequency": 1984},
+        {"op": "sound_ret"}
+      ]
+    },
+    {
+      "channel": 6,
+      "label": "SFX_Slots_New_Spin_Ch6",
+      "entry": 0,
+      "bytes": 15,
+      "labels": {"SFX_Slots_New_Spin_Ch6": 0},
+      "commands": [
+        {"op": "duty_cycle", "duty": 2},
+        {"op": "square_note", "length": 4, "volume": 12, "fade": 1, "frequency": 1729},
+        {"op": "square_note", "length": 2, "volume": 12, "fade": 1, "frequency": 1857},
+        {"op": "square_note", "length": 15, "volume": 13, "fade": 1, "frequency": 1921},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

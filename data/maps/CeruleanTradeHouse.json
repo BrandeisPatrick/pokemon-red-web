@@ -1,0 +1,42 @@
+{
+ "id": 63,
+ "const": "CERULEAN_TRADE_HOUSE",
+ "name": "CeruleanTradeHouse",
+ "displayName": "CERULEAN CITY",
+ "width": 4,
+ "height": 4,
+ "tileset": "HOUSE",
+ "tilesetId": 8,
+ "tilesetFile": "data/tilesets/House.json",
+ "isOutside": false,
+ "borderBlock": 10,
+ "blocks": [4, 14, 5, 9, 15, 1, 2, 15, 15, 12, 13, 15, 6, 11, 15, 7],
+ "connections": {},
+ "warps": [
+  {"x": 2, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 2, "destWarpIndex": 1},
+  {"x": 3, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 2, "destWarpIndex": 1}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "CERULEANTRADEHOUSE_GRANNY", "x": 5, "y": 4, "sprite": "SPRITE_GRANNY", "spriteId": 40, "movement": "STAY", "rangeOrDirection": "LEFT", "rangeOrDirectionValue": 210, "behavior": "face_left", "textId": "TEXT_CERULEANTRADEHOUSE_GRANNY", "textIndex": 1},
+  {"index": 2, "const": "CERULEANTRADEHOUSE_GAMBLER", "x": 1, "y": 2, "sprite": "SPRITE_GAMBLER", "spriteId": 11, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_CERULEANTRADEHOUSE_GAMBLER", "textIndex": 2}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_CITIES2",
+ "wild": null,
+ "townMap": {"x": 10, "y": 2, "group": "CERULEAN_CITY"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/CeruleanTradeHouse.json",
+ "textPointers": "CeruleanTradeHouse_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/CeruleanTradeHouse.asm",
+  "objects": "data/maps/objects/CeruleanTradeHouse.asm",
+  "blocks": "maps/ViridianNicknameHouse.blk",
+  "script": "scripts/CeruleanTradeHouse.asm"
+ },
+ "lastMapCandidates": ["CERULEAN_CITY"],
+ "palette": {"pal": "PAL_CERULEAN", "rule": "lastMap", "viaLastMap": "CERULEAN_CITY"}
+}

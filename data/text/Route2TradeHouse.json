@@ -1,0 +1,42 @@
+{
+ "map": "Route2TradeHouse",
+ "const": "ROUTE_2_TRADE_HOUSE",
+ "textPointerTables": [
+  {
+   "label": "Route2TradeHouse_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_ROUTE2TRADEHOUSE_SCIENTIST", "label": "Route2TradeHouseScientistText", "kind": "text", "handler": "text"},
+    {"id": 2, "const": "TEXT_ROUTE2TRADEHOUSE_GAMEBOY_KID", "label": "Route2TradeHouseGameboyKidText", "kind": "asm", "handler": "asm"}
+   ]
+  }
+ ],
+ "texts": {
+  "Route2TradeHouseScientistText": {
+   "kind": "text",
+   "src": "scripts/Route2TradeHouse.asm:10",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route2TradeHouseScientistText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route2TradeHouseGameboyKidText": {
+   "kind": "asm",
+   "src": "scripts/Route2TradeHouse.asm:14",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "_Route2TradeHouseScientistText": {
+   "kind": "text",
+   "src": "text/Route2TradeHouse.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "A fainted POKéMON"},
+    {"cmd": "line", "str": "can't fight. But, "},
+    {"cmd": "cont", "str": "it can still use "},
+    {"cmd": "cont", "str": "moves like CUT!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

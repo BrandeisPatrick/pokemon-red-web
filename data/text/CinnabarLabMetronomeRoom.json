@@ -1,0 +1,169 @@
+{
+ "map": "CinnabarLabMetronomeRoom",
+ "const": "CINNABAR_LAB_METRONOME_ROOM",
+ "textPointerTables": [
+  {
+   "label": "CinnabarLabMetronomeRoom_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_CINNABARLABMETRONOMEROOM_SCIENTIST1", "label": "CinnabarLabMetronomeRoomScientist1Text", "kind": "asm", "handler": "asm"},
+    {"id": 2, "const": "TEXT_CINNABARLABMETRONOMEROOM_SCIENTIST2", "label": "CinnabarLabMetronomeRoomScientist2Text", "kind": "text", "handler": "text"},
+    {"id": 3, "const": "TEXT_CINNABARLABMETRONOMEROOM_PC_KEYBOARD", "label": "CinnabarLabMetronomeRoomPCText", "kind": "text", "handler": "text"},
+    {"id": 4, "const": "TEXT_CINNABARLABMETRONOMEROOM_PC_MONITOR", "label": "CinnabarLabMetronomeRoomPCText", "kind": "text", "handler": "text"},
+    {"id": 5, "const": "TEXT_CINNABARLABMETRONOMEROOM_AMBER_PIPE", "label": "CinnabarLabMetronomeRoomAmberPipeText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "CinnabarLabMetronomeRoomScientist1Text": {
+   "kind": "asm",
+   "src": "scripts/CinnabarLabMetronomeRoom.asm:13",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["CinnabarLabMetronomeRoomScientist1Text.Text", "CinnabarLabMetronomeRoomScientist1Text.ReceivedTM35Text", "CinnabarLabMetronomeRoomScientist1Text.TM35NoRoomText", "CinnabarLabMetronomeRoomScientist1Text.TM35ExplanationText"]
+  },
+  "CinnabarLabMetronomeRoomScientist1Text.Text": {
+   "kind": "text",
+   "src": "scripts/CinnabarLabMetronomeRoom.asm:36",
+   "commands": [
+    {"cmd": "text_far", "label": "_CinnabarLabMetronomeRoomScientist1Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CinnabarLabMetronomeRoomScientist1Text.ReceivedTM35Text": {
+   "kind": "text",
+   "src": "scripts/CinnabarLabMetronomeRoom.asm:40",
+   "commands": [
+    {"cmd": "text_far", "label": "_CinnabarLabMetronomeRoomScientist1ReceivedTM35Text"},
+    {"cmd": "sound", "sound": "sound_get_item_1"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CinnabarLabMetronomeRoomScientist1Text.TM35ExplanationText": {
+   "kind": "text",
+   "src": "scripts/CinnabarLabMetronomeRoom.asm:45",
+   "commands": [
+    {"cmd": "text_far", "label": "_CinnabarLabMetronomeRoomScientist1TM35ExplanationText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CinnabarLabMetronomeRoomScientist1Text.TM35NoRoomText": {
+   "kind": "text",
+   "src": "scripts/CinnabarLabMetronomeRoom.asm:49",
+   "commands": [
+    {"cmd": "text_far", "label": "_CinnabarLabMetronomeRoomScientist1TM35NoRoomText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CinnabarLabMetronomeRoomScientist2Text": {
+   "kind": "text",
+   "src": "scripts/CinnabarLabMetronomeRoom.asm:53",
+   "commands": [
+    {"cmd": "text_far", "label": "_CinnabarLabMetronomeRoomScientist2Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CinnabarLabMetronomeRoomPCText": {
+   "kind": "text",
+   "src": "scripts/CinnabarLabMetronomeRoom.asm:57",
+   "commands": [
+    {"cmd": "text_far", "label": "_CinnabarLabMetronomeRoomPCText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CinnabarLabMetronomeRoomAmberPipeText": {
+   "kind": "text",
+   "src": "scripts/CinnabarLabMetronomeRoom.asm:61",
+   "commands": [
+    {"cmd": "text_far", "label": "_CinnabarLabMetronomeRoomAmberPipeText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_CinnabarLabMetronomeRoomScientist1Text": {
+   "kind": "text",
+   "src": "text/CinnabarLabMetronomeRoom.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Tch-tch-tch!"},
+    {"cmd": "line", "str": "I made a cool TM!"},
+    {"cmd": "para", "str": "It can cause all"},
+    {"cmd": "line", "str": "kinds of fun!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_CinnabarLabMetronomeRoomScientist1ReceivedTM35Text": {
+   "kind": "text",
+   "src": "text/CinnabarLabMetronomeRoom.asm:10",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} received "},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_CinnabarLabMetronomeRoomScientist1TM35ExplanationText": {
+   "kind": "text",
+   "src": "text/CinnabarLabMetronomeRoom.asm:17",
+   "commands": [
+    {"cmd": "text", "str": "Tch-tch-tch!"},
+    {"cmd": "line", "str": "That's the sound"},
+    {"cmd": "cont", "str": "of a METRONOME!"},
+    {"cmd": "para", "str": "It tweaks your"},
+    {"cmd": "line", "str": "POKéMON's brain"},
+    {"cmd": "cont", "str": "into using moves"},
+    {"cmd": "cont", "str": "it doesn't know!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CinnabarLabMetronomeRoomScientist1TM35NoRoomText": {
+   "kind": "text",
+   "src": "text/CinnabarLabMetronomeRoom.asm:28",
+   "commands": [
+    {"cmd": "text", "str": "Your pack is"},
+    {"cmd": "line", "str": "crammed full!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CinnabarLabMetronomeRoomScientist2Text": {
+   "kind": "text",
+   "src": "text/CinnabarLabMetronomeRoom.asm:33",
+   "commands": [
+    {"cmd": "text", "str": "EEVEE can evolve"},
+    {"cmd": "line", "str": "into 1 of 3 kinds"},
+    {"cmd": "cont", "str": "of POKéMON."},
+    {"cmd": "done"}
+   ]
+  },
+  "_CinnabarLabMetronomeRoomPCText": {
+   "kind": "text",
+   "src": "text/CinnabarLabMetronomeRoom.asm:39",
+   "commands": [
+    {"cmd": "text", "str": "There's an e-mail"},
+    {"cmd": "line", "str": "message!"},
+    {"cmd": "para", "str": "..."},
+    {"cmd": "para", "str": "The 3 legendary"},
+    {"cmd": "line", "str": "bird POKéMON are"},
+    {"cmd": "cont", "str": "ARTICUNO, ZAPDOS"},
+    {"cmd": "cont", "str": "and MOLTRES."},
+    {"cmd": "para", "str": "Their whereabouts"},
+    {"cmd": "line", "str": "are unknown."},
+    {"cmd": "para", "str": "We plan to explore"},
+    {"cmd": "line", "str": "the cavern close"},
+    {"cmd": "cont", "str": "to CERULEAN."},
+    {"cmd": "para", "str": "From: POKéMON"},
+    {"cmd": "line", "str": "RESEARCH TEAM"},
+    {"cmd": "para", "str": "..."},
+    {"cmd": "done"}
+   ]
+  },
+  "_CinnabarLabMetronomeRoomAmberPipeText": {
+   "kind": "text",
+   "src": "text/CinnabarLabMetronomeRoom.asm:63",
+   "commands": [
+    {"cmd": "text", "str": "An amber pipe!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

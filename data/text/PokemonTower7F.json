@@ -1,0 +1,242 @@
+{
+ "map": "PokemonTower7F",
+ "const": "POKEMON_TOWER_7F",
+ "textPointerTables": [
+  {
+   "label": "PokemonTower7F_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_POKEMONTOWER7F_ROCKET1", "label": "PokemonTower7FRocket1Text", "kind": "asm", "handler": "trainer", "trainerHeader": "PokemonTower7TrainerHeader0"},
+    {"id": 2, "const": "TEXT_POKEMONTOWER7F_ROCKET2", "label": "PokemonTower7FRocket2Text", "kind": "asm", "handler": "trainer", "trainerHeader": "PokemonTower7TrainerHeader1"},
+    {"id": 3, "const": "TEXT_POKEMONTOWER7F_ROCKET3", "label": "PokemonTower7FRocket3Text", "kind": "asm", "handler": "trainer", "trainerHeader": "PokemonTower7TrainerHeader2"},
+    {"id": 4, "const": "TEXT_POKEMONTOWER7F_MR_FUJI", "label": "PokemonTower7FMrFujiText", "kind": "asm", "handler": "asm"}
+   ]
+  }
+ ],
+ "texts": {
+  "PokemonTower7FRocket1Text": {
+   "kind": "asm",
+   "src": "scripts/PokemonTower7F.asm:208",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "PokemonTower7TrainerHeader0"
+  },
+  "PokemonTower7FRocket2Text": {
+   "kind": "asm",
+   "src": "scripts/PokemonTower7F.asm:214",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "PokemonTower7TrainerHeader1"
+  },
+  "PokemonTower7FRocket3Text": {
+   "kind": "asm",
+   "src": "scripts/PokemonTower7F.asm:220",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "PokemonTower7TrainerHeader2"
+  },
+  "PokemonTower7FMrFujiText": {
+   "kind": "asm",
+   "src": "scripts/PokemonTower7F.asm:226",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["PokemonTower7FMrFujiText.RescueText"]
+  },
+  "PokemonTower7FMrFujiText.RescueText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower7F.asm:246",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower7FMrFujiRescueText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower7FRocket1BattleText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower7F.asm:250",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower7FRocket1BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower7FRocket1EndBattleText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower7F.asm:254",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower7FRocket1EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower7FRocket1AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower7F.asm:258",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower7FRocket1AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower7FRocket2BattleText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower7F.asm:262",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower7FRocket2BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower7FRocket2EndBattleText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower7F.asm:266",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower7FRocket2EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower7FRocket2AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower7F.asm:270",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower7FRocket2AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower7FRocket3BattleText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower7F.asm:274",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower7FRocket3BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower7FRocket3EndBattleText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower7F.asm:278",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower7FRocket3EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower7FRocket3AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower7F.asm:282",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower7FRocket3AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_PokemonTower7FMrFujiRescueText": {
+   "kind": "text",
+   "src": "text/PokemonTower7F.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "MR.FUJI: Heh? You"},
+    {"cmd": "line", "str": "came to save me?"},
+    {"cmd": "para", "str": "Thank you. But, I"},
+    {"cmd": "line", "str": "came here of my"},
+    {"cmd": "cont", "str": "own free will."},
+    {"cmd": "para", "str": "I came to calm"},
+    {"cmd": "line", "str": "the soul of"},
+    {"cmd": "cont", "str": "CUBONE's mother."},
+    {"cmd": "para", "str": "I think MAROWAK's"},
+    {"cmd": "line", "str": "spirit has gone"},
+    {"cmd": "cont", "str": "to the afterlife."},
+    {"cmd": "para", "str": "I must thank you"},
+    {"cmd": "line", "str": "for your kind"},
+    {"cmd": "cont", "str": "concern!"},
+    {"cmd": "para", "str": "Follow me to my"},
+    {"cmd": "line", "str": "home, POKéMON"},
+    {"cmd": "cont", "str": "HOUSE at the foot"},
+    {"cmd": "cont", "str": "of this tower."},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonTower7FRocket1BattleText": {
+   "kind": "text",
+   "src": "text/PokemonTower7F.asm:28",
+   "commands": [
+    {"cmd": "text", "str": "What do you want?"},
+    {"cmd": "line", "str": "Why are you here?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonTower7FRocket1EndBattleText": {
+   "kind": "text",
+   "src": "text/PokemonTower7F.asm:33",
+   "commands": [
+    {"cmd": "text", "str": "I give up!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_PokemonTower7FRocket1AfterBattleText": {
+   "kind": "text",
+   "src": "text/PokemonTower7F.asm:37",
+   "commands": [
+    {"cmd": "text", "str": "I'm not going to"},
+    {"cmd": "line", "str": "forget this!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonTower7FRocket2BattleText": {
+   "kind": "text",
+   "src": "text/PokemonTower7F.asm:42",
+   "commands": [
+    {"cmd": "text", "str": "This old guy came"},
+    {"cmd": "line", "str": "and complained"},
+    {"cmd": "cont", "str": "about us harming"},
+    {"cmd": "cont", "str": "useless POKéMON!"},
+    {"cmd": "para", "str": "We're talking it"},
+    {"cmd": "line", "str": "over as adults!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonTower7FRocket2EndBattleText": {
+   "kind": "text",
+   "src": "text/PokemonTower7F.asm:52",
+   "commands": [
+    {"cmd": "text", "str": "Please!"},
+    {"cmd": "line", "str": "No more!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_PokemonTower7FRocket2AfterBattleText": {
+   "kind": "text",
+   "src": "text/PokemonTower7F.asm:57",
+   "commands": [
+    {"cmd": "text", "str": "POKéMON are only"},
+    {"cmd": "line", "str": "good for making"},
+    {"cmd": "cont", "str": "money!"},
+    {"cmd": "para", "str": "Stay out of our"},
+    {"cmd": "line", "str": "business!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonTower7FRocket3BattleText": {
+   "kind": "text",
+   "src": "text/PokemonTower7F.asm:66",
+   "commands": [
+    {"cmd": "text", "str": "You're not saving"},
+    {"cmd": "line", "str": "anyone, kid!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonTower7FRocket3EndBattleText": {
+   "kind": "text",
+   "src": "text/PokemonTower7F.asm:71",
+   "commands": [
+    {"cmd": "text", "str": "Don't"},
+    {"cmd": "line", "str": "fight us ROCKETs!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_PokemonTower7FRocket3AfterBattleText": {
+   "kind": "text",
+   "src": "text/PokemonTower7F.asm:76",
+   "commands": [
+    {"cmd": "text", "str": "You're not getting"},
+    {"cmd": "line", "str": "away with this!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

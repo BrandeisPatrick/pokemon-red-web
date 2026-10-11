@@ -1,0 +1,83 @@
+{
+ "map": "LavenderCuboneHouse",
+ "const": "LAVENDER_CUBONE_HOUSE",
+ "textPointerTables": [
+  {
+   "label": "LavenderCuboneHouse_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_LAVENDERCUBONEHOUSE_CUBONE", "label": "LavenderCuboneHouseCuboneText", "kind": "text", "handler": "text"},
+    {"id": 2, "const": "TEXT_LAVENDERCUBONEHOUSE_BRUNETTE_GIRL", "label": "LavenderCuboneHouseBrunetteGirlText", "kind": "asm", "handler": "asm"}
+   ]
+  }
+ ],
+ "texts": {
+  "LavenderCuboneHouseCuboneText": {
+   "kind": "text",
+   "src": "scripts/LavenderCuboneHouse.asm:11",
+   "commands": [
+    {"cmd": "text_far", "label": "_LavenderCuboneHouseCuboneText"},
+    {"cmd": "text_asm"}
+   ]
+  },
+  "LavenderCuboneHouseBrunetteGirlText": {
+   "kind": "asm",
+   "src": "scripts/LavenderCuboneHouse.asm:18",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["LavenderCuboneHouseBrunetteGirlText.PoorCubonesMotherText", "LavenderCuboneHouseBrunetteGirlText.TheGhostIsGoneText"]
+  },
+  "LavenderCuboneHouseBrunetteGirlText.PoorCubonesMotherText": {
+   "kind": "text",
+   "src": "scripts/LavenderCuboneHouse.asm:31",
+   "commands": [
+    {"cmd": "text_far", "label": "_LavenderCuboneHouseBrunetteGirlPoorCubonesMotherText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "LavenderCuboneHouseBrunetteGirlText.TheGhostIsGoneText": {
+   "kind": "text",
+   "src": "scripts/LavenderCuboneHouse.asm:35",
+   "commands": [
+    {"cmd": "text_far", "label": "_LavenderCuboneHouseBrunetteGirlGhostIsGoneText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_LavenderCuboneHouseCuboneText": {
+   "kind": "text",
+   "src": "text/LavenderCuboneHouse.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "CUBONE: Kyarugoo!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_LavenderCuboneHouseBrunetteGirlPoorCubonesMotherText": {
+   "kind": "text",
+   "src": "text/LavenderCuboneHouse.asm:6",
+   "commands": [
+    {"cmd": "text", "str": "I hate those"},
+    {"cmd": "line", "str": "horrible ROCKETs!"},
+    {"cmd": "para", "str": "That poor CUBONE's"},
+    {"cmd": "line", "str": "mother..."},
+    {"cmd": "para", "str": "It was killed"},
+    {"cmd": "line", "str": "trying to escape"},
+    {"cmd": "cont", "str": "from TEAM ROCKET!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_LavenderCuboneHouseBrunetteGirlGhostIsGoneText": {
+   "kind": "text",
+   "src": "text/LavenderCuboneHouse.asm:18",
+   "commands": [
+    {"cmd": "text", "str": "The GHOST of"},
+    {"cmd": "line", "str": "POKéMON TOWER is"},
+    {"cmd": "cont", "str": "gone!"},
+    {"cmd": "para", "str": "Someone must have"},
+    {"cmd": "line", "str": "soothed its"},
+    {"cmd": "cont", "str": "restless soul!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

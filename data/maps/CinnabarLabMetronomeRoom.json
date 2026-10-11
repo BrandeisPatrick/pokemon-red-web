@@ -1,0 +1,46 @@
+{
+ "id": 169,
+ "const": "CINNABAR_LAB_METRONOME_ROOM",
+ "name": "CinnabarLabMetronomeRoom",
+ "displayName": "CINNABAR ISLAND",
+ "width": 4,
+ "height": 4,
+ "tileset": "LAB",
+ "tilesetId": 20,
+ "tilesetFile": "data/tilesets/Lab.json",
+ "isOutside": false,
+ "borderBlock": 23,
+ "blocks": [4, 4, 5, 6, 7, 7, 7, 7, 8, 7, 7, 6, 7, 12, 7, 7],
+ "connections": {},
+ "warps": [
+  {"x": 2, "y": 7, "destMap": "CINNABAR_LAB", "destMapId": 167, "destMapName": "CinnabarLab", "destWarp": 4, "destWarpIndex": 3},
+  {"x": 3, "y": 7, "destMap": "CINNABAR_LAB", "destMapId": 167, "destMapName": "CinnabarLab", "destWarp": 4, "destWarpIndex": 3}
+ ],
+ "bgEvents": [
+  {"x": 0, "y": 4, "textId": "TEXT_CINNABARLABMETRONOMEROOM_PC_KEYBOARD", "textIndex": 3},
+  {"x": 1, "y": 4, "textId": "TEXT_CINNABARLABMETRONOMEROOM_PC_MONITOR", "textIndex": 4},
+  {"x": 2, "y": 1, "textId": "TEXT_CINNABARLABMETRONOMEROOM_AMBER_PIPE", "textIndex": 5}
+ ],
+ "objectEvents": [
+  {"index": 1, "const": "CINNABARLABMETRONOMEROOM_SCIENTIST1", "x": 7, "y": 2, "sprite": "SPRITE_SCIENTIST", "spriteId": 32, "movement": "STAY", "rangeOrDirection": "DOWN", "rangeOrDirectionValue": 208, "behavior": "face_down", "textId": "TEXT_CINNABARLABMETRONOMEROOM_SCIENTIST1", "textIndex": 1},
+  {"index": 2, "const": "CINNABARLABMETRONOMEROOM_SCIENTIST2", "x": 2, "y": 3, "sprite": "SPRITE_SCIENTIST", "spriteId": 32, "movement": "WALK", "rangeOrDirection": "LEFT_RIGHT", "rangeOrDirectionValue": 2, "behavior": "walk_left_right", "textId": "TEXT_CINNABARLABMETRONOMEROOM_SCIENTIST2", "textIndex": 2}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_CINNABAR",
+ "wild": null,
+ "townMap": {"x": 2, "y": 15, "group": "CINNABAR_ISLAND"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/CinnabarLabMetronomeRoom.json",
+ "textPointers": "CinnabarLabMetronomeRoom_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/CinnabarLabMetronomeRoom.asm",
+  "objects": "data/maps/objects/CinnabarLabMetronomeRoom.asm",
+  "blocks": "maps/CinnabarLabMetronomeRoom.blk",
+  "script": "scripts/CinnabarLabMetronomeRoom.asm"
+ },
+ "lastMapCandidates": ["CINNABAR_ISLAND"],
+ "palette": {"pal": "PAL_CINNABAR", "rule": "lastMap", "viaLastMap": "CINNABAR_ISLAND"}
+}

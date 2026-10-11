@@ -1,0 +1,256 @@
+{
+ "map": "BikeShop",
+ "const": "BIKE_SHOP",
+ "textPointerTables": [
+  {
+   "label": "BikeShop_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_BIKESHOP_CLERK", "label": "BikeShopClerkText", "kind": "asm", "handler": "asm"},
+    {"id": 2, "const": "TEXT_BIKESHOP_MIDDLE_AGED_WOMAN", "label": "BikeShopMiddleAgedWomanText", "kind": "asm", "handler": "asm"},
+    {"id": 3, "const": "TEXT_BIKESHOP_YOUNGSTER", "label": "BikeShopYoungsterText", "kind": "asm", "handler": "asm"}
+   ]
+  }
+ ],
+ "texts": {
+  "BikeShopClerkText": {
+   "kind": "asm",
+   "src": "scripts/BikeShop.asm:11",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["BikeShopClerkHowDoYouLikeYourBicycleText", "BikeShopClerkOhThatsAVoucherText", "BikeShopExchangedVoucherText", "BikeShopBagFullText", "BikeShopClerkWelcomeText", "BikeShopMenuText", "BikeShopMenuPrice", "BikeShopClerkDoYouLikeItText", "BikeShopCantAffordText", "BikeShopComeAgainText"]
+  },
+  "BikeShopMenuText": {
+   "kind": "string",
+   "src": "scripts/BikeShop.asm:83",
+   "commands": [
+    {"cmd": "str", "str": "BICYCLE"},
+    {"cmd": "next", "str": "CANCEL"}
+   ]
+  },
+  "BikeShopMenuPrice": {
+   "kind": "string",
+   "src": "scripts/BikeShop.asm:87",
+   "commands": [
+    {"cmd": "str", "str": "¥1000000"}
+   ]
+  },
+  "BikeShopClerkWelcomeText": {
+   "kind": "text",
+   "src": "scripts/BikeShop.asm:90",
+   "commands": [
+    {"cmd": "text_far", "label": "_BikeShopClerkWelcomeText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "BikeShopClerkDoYouLikeItText": {
+   "kind": "text",
+   "src": "scripts/BikeShop.asm:94",
+   "commands": [
+    {"cmd": "text_far", "label": "_BikeShopClerkDoYouLikeItText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "BikeShopCantAffordText": {
+   "kind": "text",
+   "src": "scripts/BikeShop.asm:98",
+   "commands": [
+    {"cmd": "text_far", "label": "_BikeShopCantAffordText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "BikeShopClerkOhThatsAVoucherText": {
+   "kind": "text",
+   "src": "scripts/BikeShop.asm:102",
+   "commands": [
+    {"cmd": "text_far", "label": "_BikeShopClerkOhThatsAVoucherText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "BikeShopExchangedVoucherText": {
+   "kind": "text",
+   "src": "scripts/BikeShop.asm:106",
+   "commands": [
+    {"cmd": "text_far", "label": "_BikeShopExchangedVoucherText"},
+    {"cmd": "sound", "sound": "sound_get_key_item"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "BikeShopComeAgainText": {
+   "kind": "text",
+   "src": "scripts/BikeShop.asm:111",
+   "commands": [
+    {"cmd": "text_far", "label": "_BikeShopComeAgainText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "BikeShopClerkHowDoYouLikeYourBicycleText": {
+   "kind": "text",
+   "src": "scripts/BikeShop.asm:115",
+   "commands": [
+    {"cmd": "text_far", "label": "_BikeShopClerkHowDoYouLikeYourBicycleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "BikeShopBagFullText": {
+   "kind": "text",
+   "src": "scripts/BikeShop.asm:119",
+   "commands": [
+    {"cmd": "text_far", "label": "_BikeShopBagFullText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "BikeShopMiddleAgedWomanText": {
+   "kind": "asm",
+   "src": "scripts/BikeShop.asm:123",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["BikeShopMiddleAgedWomanText.Text"]
+  },
+  "BikeShopMiddleAgedWomanText.Text": {
+   "kind": "text",
+   "src": "scripts/BikeShop.asm:129",
+   "commands": [
+    {"cmd": "text_far", "label": "_BikeShopMiddleAgedWomanText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "BikeShopYoungsterText": {
+   "kind": "asm",
+   "src": "scripts/BikeShop.asm:133",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["BikeShopYoungsterText.CoolBikeText", "BikeShopYoungsterText.TheseBikesAreExpensiveText"]
+  },
+  "BikeShopYoungsterText.TheseBikesAreExpensiveText": {
+   "kind": "text",
+   "src": "scripts/BikeShop.asm:143",
+   "commands": [
+    {"cmd": "text_far", "label": "_BikeShopYoungsterTheseBikesAreExpensiveText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "BikeShopYoungsterText.CoolBikeText": {
+   "kind": "text",
+   "src": "scripts/BikeShop.asm:147",
+   "commands": [
+    {"cmd": "text_far", "label": "_BikeShopYoungsterCoolBikeText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_BikeShopClerkWelcomeText": {
+   "kind": "text",
+   "src": "text/BikeShop.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Hi! Welcome to"},
+    {"cmd": "line", "str": "our BIKE SHOP."},
+    {"cmd": "para", "str": "Have we got just"},
+    {"cmd": "line", "str": "the BIKE for you!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_BikeShopClerkDoYouLikeItText": {
+   "kind": "text",
+   "src": "text/BikeShop.asm:10",
+   "commands": [
+    {"cmd": "text", "str": "It's a cool BIKE!"},
+    {"cmd": "line", "str": "Do you want it?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_BikeShopCantAffordText": {
+   "kind": "text",
+   "src": "text/BikeShop.asm:15",
+   "commands": [
+    {"cmd": "text", "str": "Sorry! You can't"},
+    {"cmd": "line", "str": "afford it!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_BikeShopClerkOhThatsAVoucherText": {
+   "kind": "text",
+   "src": "text/BikeShop.asm:20",
+   "commands": [
+    {"cmd": "text", "str": "Oh, that's..."},
+    {"cmd": "para", "str": "A BIKE VOUCHER!"},
+    {"cmd": "para", "str": "OK! Here you go!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_BikeShopExchangedVoucherText": {
+   "kind": "text",
+   "src": "text/BikeShop.asm:28",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} exchanged"},
+    {"cmd": "line", "str": "the BIKE VOUCHER"},
+    {"cmd": "cont", "str": "for a BICYCLE."},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_BikeShopComeAgainText": {
+   "kind": "text",
+   "src": "text/BikeShop.asm:34",
+   "commands": [
+    {"cmd": "text", "str": "Come back again"},
+    {"cmd": "line", "str": "some time!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_BikeShopClerkHowDoYouLikeYourBicycleText": {
+   "kind": "text",
+   "src": "text/BikeShop.asm:39",
+   "commands": [
+    {"cmd": "text", "str": "How do you like"},
+    {"cmd": "line", "str": "your new BICYCLE?"},
+    {"cmd": "para", "str": "You can take it"},
+    {"cmd": "line", "str": "on CYCLING ROAD"},
+    {"cmd": "cont", "str": "and in caves!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_BikeShopBagFullText": {
+   "kind": "text",
+   "src": "text/BikeShop.asm:48",
+   "commands": [
+    {"cmd": "text", "str": "You better make"},
+    {"cmd": "line", "str": "room for this!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_BikeShopMiddleAgedWomanText": {
+   "kind": "text",
+   "src": "text/BikeShop.asm:53",
+   "commands": [
+    {"cmd": "text", "str": "A plain city BIKE"},
+    {"cmd": "line", "str": "is good enough"},
+    {"cmd": "cont", "str": "for me!"},
+    {"cmd": "para", "str": "You can't put a"},
+    {"cmd": "line", "str": "shopping basket"},
+    {"cmd": "cont", "str": "on an MTB!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_BikeShopYoungsterTheseBikesAreExpensiveText": {
+   "kind": "text",
+   "src": "text/BikeShop.asm:63",
+   "commands": [
+    {"cmd": "text", "str": "These BIKEs are"},
+    {"cmd": "line", "str": "cool, but they're"},
+    {"cmd": "cont", "str": "way expensive!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_BikeShopYoungsterCoolBikeText": {
+   "kind": "text",
+   "src": "text/BikeShop.asm:69",
+   "commands": [
+    {"cmd": "text", "str": "Wow. Your BIKE is"},
+    {"cmd": "line", "str": "really cool!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

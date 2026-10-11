@@ -1,0 +1,315 @@
+{
+ "map": "CeladonMart3F",
+ "const": "CELADON_MART_3F",
+ "textPointerTables": [
+  {
+   "label": "CeladonMart3F_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_CELADONMART3F_CLERK", "label": "CeladonMart3FClerkText", "kind": "asm", "handler": "asm"},
+    {"id": 2, "const": "TEXT_CELADONMART3F_GAMEBOY_KID1", "label": "CeladonMart3FGameBoyKid1Text", "kind": "text", "handler": "text"},
+    {"id": 3, "const": "TEXT_CELADONMART3F_GAMEBOY_KID2", "label": "CeladonMart3FGameBoyKid2Text", "kind": "text", "handler": "text"},
+    {"id": 4, "const": "TEXT_CELADONMART3F_GAMEBOY_KID3", "label": "CeladonMart3FGameBoyKid3Text", "kind": "text", "handler": "text"},
+    {"id": 5, "const": "TEXT_CELADONMART3F_LITTLE_BOY", "label": "CeladonMart3FLittleBoyText", "kind": "text", "handler": "text"},
+    {"id": 6, "const": "TEXT_CELADONMART3F_SNES1", "label": "CeladonMart3FSNESText", "kind": "text", "handler": "text"},
+    {"id": 7, "const": "TEXT_CELADONMART3F_RPG", "label": "CeladonMart3FRPGText", "kind": "text", "handler": "text"},
+    {"id": 8, "const": "TEXT_CELADONMART3F_SNES2", "label": "CeladonMart3FSNESText", "kind": "text", "handler": "text"},
+    {"id": 9, "const": "TEXT_CELADONMART3F_SPORTS_GAME", "label": "CeladonMart3FSportsGameText", "kind": "text", "handler": "text"},
+    {"id": 10, "const": "TEXT_CELADONMART3F_SNES3", "label": "CeladonMart3FSNESText", "kind": "text", "handler": "text"},
+    {"id": 11, "const": "TEXT_CELADONMART3F_PUZZLE_GAME", "label": "CeladonMart3FPuzzleGameText", "kind": "text", "handler": "text"},
+    {"id": 12, "const": "TEXT_CELADONMART3F_SNES4", "label": "CeladonMart3FSNESText", "kind": "text", "handler": "text"},
+    {"id": 13, "const": "TEXT_CELADONMART3F_FIGHTING_GAME", "label": "CeladonMart3FFightingGameText", "kind": "text", "handler": "text"},
+    {"id": 14, "const": "TEXT_CELADONMART3F_CURRENT_FLOOR_SIGN", "label": "CeladonMart3FCurrentFloorSignText", "kind": "text", "handler": "text"},
+    {"id": 15, "const": "TEXT_CELADONMART3F_POKEMON_POSTER1", "label": "CeladonMart3FPokemonPosterText", "kind": "text", "handler": "text"},
+    {"id": 16, "const": "TEXT_CELADONMART3F_POKEMON_POSTER2", "label": "CeladonMart3FPokemonPosterText", "kind": "text", "handler": "text"},
+    {"id": 17, "const": "TEXT_CELADONMART3F_POKEMON_POSTER3", "label": "CeladonMart3FPokemonPosterText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "CeladonMart3FClerkText": {
+   "kind": "asm",
+   "src": "scripts/CeladonMart3F.asm:25",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["CeladonMart3FClerkText.TM18PreReceiveText", "CeladonMart3FClerkText.ReceivedTM18Text", "CeladonMart3FClerkText.TM18NoRoomText", "CeladonMart3FClerkText.TM18ExplanationText"]
+  },
+  "CeladonMart3FClerkText.TM18PreReceiveText": {
+   "kind": "text",
+   "src": "scripts/CeladonMart3F.asm:46",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonMart3FClerkTM18PreReceiveText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonMart3FClerkText.ReceivedTM18Text": {
+   "kind": "text",
+   "src": "scripts/CeladonMart3F.asm:50",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonMart3FClerkReceivedTM18Text"},
+    {"cmd": "sound", "sound": "sound_get_item_1"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonMart3FClerkText.TM18ExplanationText": {
+   "kind": "text",
+   "src": "scripts/CeladonMart3F.asm:55",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonMart3FClerkTM18ExplanationText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonMart3FClerkText.TM18NoRoomText": {
+   "kind": "text",
+   "src": "scripts/CeladonMart3F.asm:59",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonMart3FClerkTM18NoRoomText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonMart3FGameBoyKid1Text": {
+   "kind": "text",
+   "src": "scripts/CeladonMart3F.asm:63",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonMart3FGameBoyKid1Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonMart3FGameBoyKid2Text": {
+   "kind": "text",
+   "src": "scripts/CeladonMart3F.asm:67",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonMart3FGameBoyKid2Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonMart3FGameBoyKid3Text": {
+   "kind": "text",
+   "src": "scripts/CeladonMart3F.asm:71",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonMart3FGameBoyKid3Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonMart3FLittleBoyText": {
+   "kind": "text",
+   "src": "scripts/CeladonMart3F.asm:75",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonMart3FLittleBoyText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonMart3FSNESText": {
+   "kind": "text",
+   "src": "scripts/CeladonMart3F.asm:79",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonMart3FSNESText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonMart3FRPGText": {
+   "kind": "text",
+   "src": "scripts/CeladonMart3F.asm:83",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonMart3FRPGText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonMart3FSportsGameText": {
+   "kind": "text",
+   "src": "scripts/CeladonMart3F.asm:87",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonMart3FSportsGameText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonMart3FPuzzleGameText": {
+   "kind": "text",
+   "src": "scripts/CeladonMart3F.asm:91",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonMart3FPuzzleGameText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonMart3FFightingGameText": {
+   "kind": "text",
+   "src": "scripts/CeladonMart3F.asm:95",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonMart3FFightingGameText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonMart3FCurrentFloorSignText": {
+   "kind": "text",
+   "src": "scripts/CeladonMart3F.asm:99",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonMart3FCurrentFloorSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonMart3FPokemonPosterText": {
+   "kind": "text",
+   "src": "scripts/CeladonMart3F.asm:103",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonMart3FPokemonPosterText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_CeladonMart3FClerkTM18PreReceiveText": {
+   "kind": "text",
+   "src": "text/CeladonMart3F.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Oh, hi! I finally"},
+    {"cmd": "line", "str": "finished POKéMON!"},
+    {"cmd": "para", "str": "Not done yet?"},
+    {"cmd": "line", "str": "This might be"},
+    {"cmd": "cont", "str": "useful!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_CeladonMart3FClerkReceivedTM18Text": {
+   "kind": "text",
+   "src": "text/CeladonMart3F.asm:11",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} received"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_CeladonMart3FClerkTM18ExplanationText": {
+   "kind": "text",
+   "src": "text/CeladonMart3F.asm:18",
+   "commands": [
+    {"cmd": "text", "str": "TM18 is COUNTER!"},
+    {"cmd": "line", "str": "Not like the one"},
+    {"cmd": "cont", "str": "I'm leaning on,"},
+    {"cmd": "cont", "str": "mind you!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonMart3FClerkTM18NoRoomText": {
+   "kind": "text",
+   "src": "text/CeladonMart3F.asm:25",
+   "commands": [
+    {"cmd": "text", "str": "Your pack is full"},
+    {"cmd": "line", "str": "of items!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonMart3FGameBoyKid1Text": {
+   "kind": "text",
+   "src": "text/CeladonMart3F.asm:30",
+   "commands": [
+    {"cmd": "text", "str": "Captured POKéMON"},
+    {"cmd": "line", "str": "are registered"},
+    {"cmd": "cont", "str": "with an ID No."},
+    {"cmd": "cont", "str": "and OT, the name"},
+    {"cmd": "cont", "str": "of the Original"},
+    {"cmd": "cont", "str": "Trainer that"},
+    {"cmd": "cont", "str": "caught it!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonMart3FGameBoyKid2Text": {
+   "kind": "text",
+   "src": "text/CeladonMart3F.asm:40",
+   "commands": [
+    {"cmd": "text", "str": "All right!"},
+    {"cmd": "para", "str": "My buddy's going"},
+    {"cmd": "line", "str": "to trade me his"},
+    {"cmd": "cont", "str": "KANGASKHAN for my"},
+    {"cmd": "cont", "str": "GRAVELER!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonMart3FGameBoyKid3Text": {
+   "kind": "text",
+   "src": "text/CeladonMart3F.asm:49",
+   "commands": [
+    {"cmd": "text", "str": "Come on GRAVELER!"},
+    {"cmd": "para", "str": "I love GRAVELER!"},
+    {"cmd": "line", "str": "I collect them!"},
+    {"cmd": "para", "str": "Huh?"},
+    {"cmd": "para", "str": "GRAVELER turned"},
+    {"cmd": "line", "str": "into a different"},
+    {"cmd": "cont", "str": "POKéMON!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonMart3FLittleBoyText": {
+   "kind": "text",
+   "src": "text/CeladonMart3F.asm:62",
+   "commands": [
+    {"cmd": "text", "str": "You can identify"},
+    {"cmd": "line", "str": "POKéMON you got"},
+    {"cmd": "cont", "str": "in trades by"},
+    {"cmd": "cont", "str": "their ID Numbers!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonMart3FSNESText": {
+   "kind": "text",
+   "src": "text/CeladonMart3F.asm:69",
+   "commands": [
+    {"cmd": "text", "str": "It's an SNES!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonMart3FRPGText": {
+   "kind": "text",
+   "src": "text/CeladonMart3F.asm:73",
+   "commands": [
+    {"cmd": "text", "str": "An RPG! There's"},
+    {"cmd": "line", "str": "no time for that!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonMart3FSportsGameText": {
+   "kind": "text",
+   "src": "text/CeladonMart3F.asm:78",
+   "commands": [
+    {"cmd": "text", "str": "A sports game!"},
+    {"cmd": "line", "str": "Dad'll like that!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonMart3FPuzzleGameText": {
+   "kind": "text",
+   "src": "text/CeladonMart3F.asm:83",
+   "commands": [
+    {"cmd": "text", "str": "A puzzle game!"},
+    {"cmd": "line", "str": "Looks addictive!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonMart3FFightingGameText": {
+   "kind": "text",
+   "src": "text/CeladonMart3F.asm:88",
+   "commands": [
+    {"cmd": "text", "str": "A fighting game!"},
+    {"cmd": "line", "str": "Looks tough!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonMart3FCurrentFloorSignText": {
+   "kind": "text",
+   "src": "text/CeladonMart3F.asm:93",
+   "commands": [
+    {"cmd": "text", "str": "3F: TV GAME SHOP"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonMart3FPokemonPosterText": {
+   "kind": "text",
+   "src": "text/CeladonMart3F.asm:97",
+   "commands": [
+    {"cmd": "text", "str": "Red and Blue!"},
+    {"cmd": "line", "str": "Both are POKéMON!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

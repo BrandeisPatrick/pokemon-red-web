@@ -1,0 +1,44 @@
+{
+ "id": 50,
+ "const": "VIRIDIAN_FOREST_SOUTH_GATE",
+ "name": "ViridianForestSouthGate",
+ "displayName": "ROUTE 2",
+ "width": 5,
+ "height": 4,
+ "tileset": "FOREST_GATE",
+ "tilesetId": 9,
+ "tilesetFile": "data/tilesets/ForestGate.json",
+ "isOutside": false,
+ "borderBlock": 10,
+ "blocks": [94, 92, 115, 92, 95, 58, 0, 0, 98, 99, 58, 0, 0, 96, 100, 58, 0, 11, 97, 101],
+ "connections": {},
+ "warps": [
+  {"x": 4, "y": 0, "destMap": "VIRIDIAN_FOREST", "destMapId": 51, "destMapName": "ViridianForest", "destWarp": 4, "destWarpIndex": 3},
+  {"x": 5, "y": 0, "destMap": "VIRIDIAN_FOREST", "destMapId": 51, "destMapName": "ViridianForest", "destWarp": 5, "destWarpIndex": 4},
+  {"x": 4, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 6, "destWarpIndex": 5},
+  {"x": 5, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 6, "destWarpIndex": 5}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "VIRIDIANFORESTSOUTHGATE_GIRL", "x": 8, "y": 4, "sprite": "SPRITE_GIRL", "spriteId": 13, "movement": "STAY", "rangeOrDirection": "LEFT", "rangeOrDirectionValue": 210, "behavior": "face_left", "textId": "TEXT_VIRIDIANFORESTSOUTHGATE_GIRL", "textIndex": 1},
+  {"index": 2, "const": "VIRIDIANFORESTSOUTHGATE_LITTLE_GIRL", "x": 2, "y": 4, "sprite": "SPRITE_LITTLE_GIRL", "spriteId": 8, "movement": "WALK", "rangeOrDirection": "UP_DOWN", "rangeOrDirectionValue": 1, "behavior": "walk_up_down", "textId": "TEXT_VIRIDIANFORESTSOUTHGATE_LITTLE_GIRL", "textIndex": 2}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_CITIES1",
+ "wild": null,
+ "townMap": {"x": 2, "y": 6, "group": "ROUTE_2"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/ViridianForestSouthGate.json",
+ "textPointers": "ViridianForestSouthGate_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/ViridianForestSouthGate.asm",
+  "objects": "data/maps/objects/ViridianForestSouthGate.asm",
+  "blocks": "maps/ViridianForestNorthGate.blk",
+  "script": "scripts/ViridianForestSouthGate.asm"
+ },
+ "lastMapCandidates": ["ROUTE_2"],
+ "palette": {"pal": "PAL_ROUTE", "rule": "lastMap", "viaLastMap": "ROUTE_2"}
+}

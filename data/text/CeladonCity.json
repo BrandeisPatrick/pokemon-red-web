@@ -1,0 +1,440 @@
+{
+ "map": "CeladonCity",
+ "const": "CELADON_CITY",
+ "textPointerTables": [
+  {
+   "label": "CeladonCity_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_CELADONCITY_LITTLE_GIRL", "label": "CeladonCityLittleGirlText", "kind": "text", "handler": "text"},
+    {"id": 2, "const": "TEXT_CELADONCITY_GRAMPS1", "label": "CeladonCityGramps1Text", "kind": "text", "handler": "text"},
+    {"id": 3, "const": "TEXT_CELADONCITY_GIRL", "label": "CeladonCityGirlText", "kind": "text", "handler": "text"},
+    {"id": 4, "const": "TEXT_CELADONCITY_GRAMPS2", "label": "CeladonCityGramps2Text", "kind": "text", "handler": "text"},
+    {"id": 5, "const": "TEXT_CELADONCITY_GRAMPS3", "label": "CeladonCityGramps3Text", "kind": "asm", "handler": "asm"},
+    {"id": 6, "const": "TEXT_CELADONCITY_FISHER", "label": "CeladonCityFisherText", "kind": "text", "handler": "text"},
+    {"id": 7, "const": "TEXT_CELADONCITY_POLIWRATH", "label": "CeladonCityPoliwrathText", "kind": "text", "handler": "text"},
+    {"id": 8, "const": "TEXT_CELADONCITY_ROCKET1", "label": "CeladonCityRocket1Text", "kind": "text", "handler": "text"},
+    {"id": 9, "const": "TEXT_CELADONCITY_ROCKET2", "label": "CeladonCityRocket2Text", "kind": "text", "handler": "text"},
+    {"id": 10, "const": "TEXT_CELADONCITY_TRAINER_TIPS1", "label": "CeladonCityTrainerTips1Text", "kind": "text", "handler": "text"},
+    {"id": 11, "const": "TEXT_CELADONCITY_SIGN", "label": "CeladonCitySignText", "kind": "text", "handler": "text"},
+    {"id": 12, "const": "TEXT_CELADONCITY_POKECENTER_SIGN", "label": "PokeCenterSignText", "kind": "text", "handler": "text"},
+    {"id": 13, "const": "TEXT_CELADONCITY_GYM_SIGN", "label": "CeladonCityGymSignText", "kind": "text", "handler": "text"},
+    {"id": 14, "const": "TEXT_CELADONCITY_MANSION_SIGN", "label": "CeladonCityMansionSignText", "kind": "text", "handler": "text"},
+    {"id": 15, "const": "TEXT_CELADONCITY_DEPTSTORE_SIGN", "label": "CeladonCityDeptStoreSignText", "kind": "text", "handler": "text"},
+    {"id": 16, "const": "TEXT_CELADONCITY_TRAINER_TIPS2", "label": "CeladonCityTrainerTips2Text", "kind": "text", "handler": "text"},
+    {"id": 17, "const": "TEXT_CELADONCITY_PRIZEEXCHANGE_SIGN", "label": "CeladonCityPrizeExchangeSignText", "kind": "text", "handler": "text"},
+    {"id": 18, "const": "TEXT_CELADONCITY_GAMECORNER_SIGN", "label": "CeladonCityGameCornerSignText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "_PokeCenterSignText": {
+   "kind": "text",
+   "src": "data/text/text_1.asm:56",
+   "commands": [
+    {"cmd": "text", "str": "Heal Your POKéMON!"},
+    {"cmd": "line", "str": "POKéMON CENTER"},
+    {"cmd": "done"}
+   ]
+  },
+  "PokeCenterSignText": {
+   "kind": "text",
+   "src": "home/overworld_text.asm:25",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokeCenterSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonCityLittleGirlText": {
+   "kind": "text",
+   "src": "scripts/CeladonCity.asm:29",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonCityLittleGirlText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonCityGramps1Text": {
+   "kind": "text",
+   "src": "scripts/CeladonCity.asm:33",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonCityGramps1Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonCityGirlText": {
+   "kind": "text",
+   "src": "scripts/CeladonCity.asm:37",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonCityGirlText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonCityGramps2Text": {
+   "kind": "text",
+   "src": "scripts/CeladonCity.asm:41",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonCityGramps2Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonCityGramps3Text": {
+   "kind": "asm",
+   "src": "scripts/CeladonCity.asm:45",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["CeladonCityGramps3Text.Text", "CeladonCityGramps3Text.TM41NoRoomText", "CeladonCityGramps3Text.ReceivedTM41Text", "CeladonCityGramps3Text.TM41ExplanationText"]
+  },
+  "CeladonCityGramps3Text.Text": {
+   "kind": "text",
+   "src": "scripts/CeladonCity.asm:68",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonCityGramps3Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonCityGramps3Text.ReceivedTM41Text": {
+   "kind": "text",
+   "src": "scripts/CeladonCity.asm:72",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonCityGramps3ReceivedTM41Text"},
+    {"cmd": "sound", "sound": "sound_get_item_1"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonCityGramps3Text.TM41ExplanationText": {
+   "kind": "text",
+   "src": "scripts/CeladonCity.asm:77",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonCityGramps3TM41ExplanationText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonCityGramps3Text.TM41NoRoomText": {
+   "kind": "text",
+   "src": "scripts/CeladonCity.asm:81",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonCityGramps3TM41NoRoomText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonCityFisherText": {
+   "kind": "text",
+   "src": "scripts/CeladonCity.asm:85",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonCityFisherText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonCityPoliwrathText": {
+   "kind": "text",
+   "src": "scripts/CeladonCity.asm:89",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonCityPoliwrathText"},
+    {"cmd": "text_asm"}
+   ]
+  },
+  "CeladonCityRocket1Text": {
+   "kind": "text",
+   "src": "scripts/CeladonCity.asm:96",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonCityRocket1Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonCityRocket2Text": {
+   "kind": "text",
+   "src": "scripts/CeladonCity.asm:100",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonCityRocket2Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonCityTrainerTips1Text": {
+   "kind": "text",
+   "src": "scripts/CeladonCity.asm:104",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonCityTrainerTips1Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonCitySignText": {
+   "kind": "text",
+   "src": "scripts/CeladonCity.asm:108",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonCitySignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonCityGymSignText": {
+   "kind": "text",
+   "src": "scripts/CeladonCity.asm:112",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonCityGymSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonCityMansionSignText": {
+   "kind": "text",
+   "src": "scripts/CeladonCity.asm:116",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonCityMansionSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonCityDeptStoreSignText": {
+   "kind": "text",
+   "src": "scripts/CeladonCity.asm:120",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonCityDeptStoreSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonCityTrainerTips2Text": {
+   "kind": "text",
+   "src": "scripts/CeladonCity.asm:124",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonCityTrainerTips2Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonCityPrizeExchangeSignText": {
+   "kind": "text",
+   "src": "scripts/CeladonCity.asm:128",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonCityPrizeExchangeSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonCityGameCornerSignText": {
+   "kind": "text",
+   "src": "scripts/CeladonCity.asm:132",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonCityGameCornerSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_CeladonCityLittleGirlText": {
+   "kind": "text",
+   "src": "text/CeladonCity.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "I got my KOFFING"},
+    {"cmd": "line", "str": "in CINNABAR!"},
+    {"cmd": "para", "str": "It's nice, but it"},
+    {"cmd": "line", "str": "breathes poison"},
+    {"cmd": "cont", "str": "when it's angry!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonCityGramps1Text": {
+   "kind": "text",
+   "src": "text/CeladonCity.asm:11",
+   "commands": [
+    {"cmd": "text", "str": "Heheh! This GYM"},
+    {"cmd": "line", "str": "is great! It's"},
+    {"cmd": "cont", "str": "full of women!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonCityGirlText": {
+   "kind": "text",
+   "src": "text/CeladonCity.asm:17",
+   "commands": [
+    {"cmd": "text", "str": "The GAME CORNER"},
+    {"cmd": "line", "str": "is bad for our"},
+    {"cmd": "cont", "str": "city's image!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonCityGramps2Text": {
+   "kind": "text",
+   "src": "text/CeladonCity.asm:23",
+   "commands": [
+    {"cmd": "text", "str": "Moan! I blew it"},
+    {"cmd": "line", "str": "all at the slots!"},
+    {"cmd": "para", "str": "I knew I should"},
+    {"cmd": "line", "str": "have cashed in my"},
+    {"cmd": "cont", "str": "coins for prizes!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonCityGramps3Text": {
+   "kind": "text",
+   "src": "text/CeladonCity.asm:32",
+   "commands": [
+    {"cmd": "text", "str": "Hello, there!"},
+    {"cmd": "para", "str": "I've seen you,"},
+    {"cmd": "line", "str": "but I never had a"},
+    {"cmd": "cont", "str": "chance to talk!"},
+    {"cmd": "para", "str": "Here's a gift for"},
+    {"cmd": "line", "str": "dropping by!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_CeladonCityGramps3ReceivedTM41Text": {
+   "kind": "text",
+   "src": "text/CeladonCity.asm:43",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} received"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_CeladonCityGramps3TM41ExplanationText": {
+   "kind": "text",
+   "src": "text/CeladonCity.asm:50",
+   "commands": [
+    {"cmd": "text", "str": "TM41 teaches"},
+    {"cmd": "line", "str": "SOFTBOILED!"},
+    {"cmd": "para", "str": "Only one POKéMON"},
+    {"cmd": "line", "str": "can use it!"},
+    {"cmd": "para", "str": "That POKéMON is"},
+    {"cmd": "line", "str": "CHANSEY!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonCityGramps3TM41NoRoomText": {
+   "kind": "text",
+   "src": "text/CeladonCity.asm:61",
+   "commands": [
+    {"cmd": "text", "str": "Oh, your pack is"},
+    {"cmd": "line", "str": "full of items!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonCityFisherText": {
+   "kind": "text",
+   "src": "text/CeladonCity.asm:66",
+   "commands": [
+    {"cmd": "text", "str": "This is my trusted"},
+    {"cmd": "line", "str": "pal, POLIWRATH!"},
+    {"cmd": "para", "str": "It evolved from"},
+    {"cmd": "line", "str": "POLIWHIRL when I"},
+    {"cmd": "cont", "str": "used WATER STONE!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonCityPoliwrathText": {
+   "kind": "text",
+   "src": "text/CeladonCity.asm:75",
+   "commands": [
+    {"cmd": "text", "str": "POLIWRATH: Ribi"},
+    {"cmd": "line", "str": "ribit!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_CeladonCityRocket1Text": {
+   "kind": "text",
+   "src": "text/CeladonCity.asm:80",
+   "commands": [
+    {"cmd": "text", "str": "What are you"},
+    {"cmd": "line", "str": "staring at?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonCityRocket2Text": {
+   "kind": "text",
+   "src": "text/CeladonCity.asm:85",
+   "commands": [
+    {"cmd": "text", "str": "Keep out of TEAM"},
+    {"cmd": "line", "str": "ROCKET's way!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonCityTrainerTips1Text": {
+   "kind": "text",
+   "src": "text/CeladonCity.asm:90",
+   "commands": [
+    {"cmd": "text", "str": "TRAINER TIPS"},
+    {"cmd": "para", "str": "X ACCURACY boosts"},
+    {"cmd": "line", "str": "the accuracy of"},
+    {"cmd": "cont", "str": "techniques!"},
+    {"cmd": "para", "str": "DIRE HIT jacks up"},
+    {"cmd": "line", "str": "the likelihood of"},
+    {"cmd": "cont", "str": "critical hits!"},
+    {"cmd": "para", "str": "Get your items at"},
+    {"cmd": "line", "str": "CELADON DEPT."},
+    {"cmd": "cont", "str": "STORE!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonCitySignText": {
+   "kind": "text",
+   "src": "text/CeladonCity.asm:106",
+   "commands": [
+    {"cmd": "text", "str": "CELADON CITY"},
+    {"cmd": "line", "str": "The City of"},
+    {"cmd": "cont", "str": "Rainbow Dreams"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonCityGymSignText": {
+   "kind": "text",
+   "src": "text/CeladonCity.asm:112",
+   "commands": [
+    {"cmd": "text", "str": "CELADON CITY"},
+    {"cmd": "line", "str": "POKéMON GYM"},
+    {"cmd": "cont", "str": "LEADER: ERIKA"},
+    {"cmd": "para", "str": "The Nature Loving"},
+    {"cmd": "line", "str": "Princess!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonCityMansionSignText": {
+   "kind": "text",
+   "src": "text/CeladonCity.asm:121",
+   "commands": [
+    {"cmd": "text", "str": "CELADON MANSION"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonCityDeptStoreSignText": {
+   "kind": "text",
+   "src": "text/CeladonCity.asm:125",
+   "commands": [
+    {"cmd": "text", "str": "Find what you"},
+    {"cmd": "line", "str": "need at CELADON"},
+    {"cmd": "cont", "str": "DEPT. STORE!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonCityTrainerTips2Text": {
+   "kind": "text",
+   "src": "text/CeladonCity.asm:131",
+   "commands": [
+    {"cmd": "text", "str": "TRAINER TIPS"},
+    {"cmd": "para", "str": "GUARD SPEC."},
+    {"cmd": "line", "str": "protects POKéMON"},
+    {"cmd": "cont", "str": "against SPECIAL"},
+    {"cmd": "cont", "str": "attacks such as"},
+    {"cmd": "cont", "str": "fire and water!"},
+    {"cmd": "para", "str": "Get your items at"},
+    {"cmd": "line", "str": "CELADON DEPT."},
+    {"cmd": "cont", "str": "STORE!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonCityPrizeExchangeSignText": {
+   "kind": "text",
+   "src": "text/CeladonCity.asm:145",
+   "commands": [
+    {"cmd": "text", "str": "Coins exchanged"},
+    {"cmd": "line", "str": "for prizes!"},
+    {"cmd": "cont", "str": "PRIZE EXCHANGE"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonCityGameCornerSignText": {
+   "kind": "text",
+   "src": "text/CeladonCity.asm:151",
+   "commands": [
+    {"cmd": "text", "str": "ROCKET GAME CORNER"},
+    {"cmd": "line", "str": "The playground"},
+    {"cmd": "cont", "str": "for grown-ups!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

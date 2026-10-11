@@ -1,0 +1,75 @@
+{
+ "id": 12,
+ "const": "ROUTE_1",
+ "name": "Route1",
+ "displayName": "ROUTE 1",
+ "width": 10,
+ "height": 18,
+ "tileset": "OVERWORLD",
+ "tilesetId": 0,
+ "tilesetFile": "data/tilesets/Overworld.json",
+ "isOutside": true,
+ "borderBlock": 11,
+ "blocks": [10, 77, 82, 82, 79, 49, 80, 82, 82, 78, 10, 77, 10, 10, 10, 49, 10, 10, 116, 78, 10, 77, 7, 7, 66, 26, 26, 49, 49, 78, 10, 110, 116, 116, 110, 11, 11, 11, 11, 109, 10, 110, 7, 7, 66, 11, 11, 11, 11, 109, 10, 110, 10, 116, 116, 10, 49, 49, 49, 109, 10, 110, 111, 7, 7, 111, 28, 11, 11, 109, 10, 77, 10, 10, 116, 116, 49, 11, 11, 78, 10, 77, 10, 49, 49, 49, 49, 116, 116, 78, 10, 77, 47, 26, 47, 7, 7, 7, 7, 78, 10, 77, 10, 49, 49, 49, 49, 49, 49, 78, 10, 77, 111, 111, 111, 111, 11, 11, 26, 78, 10, 77, 10, 10, 116, 116, 11, 11, 49, 78, 10, 77, 26, 49, 8, 26, 26, 26, 26, 78, 10, 110, 10, 11, 11, 49, 10, 11, 11, 109, 10, 110, 11, 11, 116, 49, 11, 11, 116, 109, 10, 110, 81, 81, 99, 11, 98, 81, 81, 109, 10, 110, 10, 10, 77, 11, 78, 10, 10, 109],
+ "connections": {
+  "north": {
+   "map": "VIRIDIAN_CITY",
+   "mapId": 1,
+   "mapName": "ViridianCity",
+   "offset": -5,
+   "dx": -5,
+   "dy": -18,
+   "copyRect": {"x": 2, "y": 15, "w": 16, "h": 3},
+   "onEnter": {"newY": 35, "xAdd": 10},
+   "macro": {
+    "stripSrc": 302,
+    "stripDest": 0,
+    "stripLength": 16,
+    "connectedWidth": 20,
+    "yAlign": 35,
+    "xAlign": 10,
+    "viewPointer": 469
+   }
+  },
+  "south": {
+   "map": "PALLET_TOWN",
+   "mapId": 0,
+   "mapName": "PalletTown",
+   "offset": 0,
+   "dx": 0,
+   "dy": 18,
+   "copyRect": {"x": 0, "y": 0, "w": 10, "h": 3},
+   "onEnter": {"newY": 0, "xAdd": 0},
+   "macro": {"stripSrc": 0, "stripDest": 339, "stripLength": 10, "connectedWidth": 10, "yAlign": 0, "xAlign": 0, "viewPointer": 17}
+  }
+ },
+ "warps": [],
+ "bgEvents": [
+  {"x": 9, "y": 27, "textId": "TEXT_ROUTE1_SIGN", "textIndex": 3}
+ ],
+ "objectEvents": [
+  {"index": 1, "const": "ROUTE1_YOUNGSTER1", "x": 5, "y": 24, "sprite": "SPRITE_YOUNGSTER", "spriteId": 4, "movement": "WALK", "rangeOrDirection": "UP_DOWN", "rangeOrDirectionValue": 1, "behavior": "walk_up_down", "textId": "TEXT_ROUTE1_YOUNGSTER1", "textIndex": 1},
+  {"index": 2, "const": "ROUTE1_YOUNGSTER2", "x": 15, "y": 13, "sprite": "SPRITE_YOUNGSTER", "spriteId": 4, "movement": "WALK", "rangeOrDirection": "LEFT_RIGHT", "rangeOrDirectionValue": 2, "behavior": "walk_left_right", "textId": "TEXT_ROUTE1_YOUNGSTER2", "textIndex": 2}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": {
+  "type": "fixed",
+  "set": "SPRITESET_PALLET_VIRIDIAN",
+  "sprites": ["SPRITE_BLUE", "SPRITE_YOUNGSTER", "SPRITE_GIRL", "SPRITE_FISHER", "SPRITE_COOLTRAINER_M", "SPRITE_GAMBLER", "SPRITE_SEEL", "SPRITE_OAK", "SPRITE_SWIMMER", "SPRITE_POKE_BALL", "SPRITE_GAMBLER_ASLEEP"]
+ },
+ "music": "MUSIC_ROUTES1",
+ "wild": {"label": "Route1WildMons", "file": "Route1"},
+ "townMap": {"x": 2, "y": 10, "group": null},
+ "extraWarpCheck": "warpTileInFront",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/Route1.json",
+ "textPointers": "Route1_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/Route1.asm",
+  "objects": "data/maps/objects/Route1.asm",
+  "blocks": "maps/Route1.blk",
+  "script": "scripts/Route1.asm"
+ },
+ "palette": {"pal": "PAL_ROUTE", "rule": "route"}
+}

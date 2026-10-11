@@ -1,0 +1,24 @@
+{
+  "name": "SFX_TELEPORT_ENTER_2",
+  "title": "Teleport Enter 2",
+  "kind": "sfx",
+  "bank": 3,
+  "id": 163,
+  "label": "SFX_Teleport_Enter2_3",
+  "channels": [
+    {
+      "channel": 8,
+      "label": "SFX_Teleport_Enter2_3_Ch8",
+      "entry": 0,
+      "bytes": 13,
+      "labels": {"SFX_Teleport_Enter2_3_Ch8": 0},
+      "commands": [
+        {"op": "noise_note", "length": 2, "volume": 15, "fade": 1, "value": 50},
+        {"op": "noise_note", "length": 2, "volume": 0, "fade": 0, "value": 0},
+        {"op": "noise_note", "length": 2, "volume": 15, "fade": 1, "value": 34},
+        {"op": "noise_note", "length": 1, "volume": 0, "fade": 0, "value": 0},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

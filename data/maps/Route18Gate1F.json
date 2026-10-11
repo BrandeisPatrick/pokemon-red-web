@@ -1,0 +1,44 @@
+{
+ "id": 190,
+ "const": "ROUTE_18_GATE_1F",
+ "name": "Route18Gate1F",
+ "displayName": "ROUTE 18",
+ "width": 4,
+ "height": 5,
+ "tileset": "GATE",
+ "tilesetId": 12,
+ "tilesetFile": "data/tilesets/Gate.json",
+ "isOutside": false,
+ "borderBlock": 10,
+ "blocks": [28, 31, 31, 29, 50, 33, 33, 49, 102, 0, 0, 103, 41, 37, 38, 30, 24, 30, 48, 35],
+ "connections": {},
+ "warps": [
+  {"x": 0, "y": 4, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 1, "destWarpIndex": 0},
+  {"x": 0, "y": 5, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 2, "destWarpIndex": 1},
+  {"x": 7, "y": 4, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 3, "destWarpIndex": 2},
+  {"x": 7, "y": 5, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 4, "destWarpIndex": 3},
+  {"x": 6, "y": 8, "destMap": "ROUTE_18_GATE_2F", "destMapId": 191, "destMapName": "Route18Gate2F", "destWarp": 1, "destWarpIndex": 0}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "ROUTE18GATE1F_GUARD", "x": 4, "y": 1, "sprite": "SPRITE_GUARD", "spriteId": 49, "movement": "STAY", "rangeOrDirection": "DOWN", "rangeOrDirectionValue": 208, "behavior": "face_down", "textId": "TEXT_ROUTE18GATE1F_GUARD", "textIndex": 1}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_CITIES1",
+ "wild": null,
+ "townMap": {"x": 7, "y": 13, "group": "ROUTE_18"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/Route18Gate1F.json",
+ "textPointers": "Route18Gate1F_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/Route18Gate1F.asm",
+  "objects": "data/maps/objects/Route18Gate1F.asm",
+  "blocks": "maps/Route11Gate1F.blk",
+  "script": "scripts/Route18Gate1F.asm"
+ },
+ "lastMapCandidates": ["ROUTE_18"],
+ "palette": {"pal": "PAL_ROUTE", "rule": "lastMap", "viaLastMap": "ROUTE_18"}
+}

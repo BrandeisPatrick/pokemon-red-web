@@ -1,0 +1,399 @@
+{
+ "map": "VermilionCity",
+ "const": "VERMILION_CITY",
+ "textPointerTables": [
+  {
+   "label": "VermilionCity_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_VERMILIONCITY_BEAUTY", "label": "VermilionCityBeautyText", "kind": "text", "handler": "text"},
+    {"id": 2, "const": "TEXT_VERMILIONCITY_GAMBLER1", "label": "VermilionCityGambler1Text", "kind": "asm", "handler": "asm"},
+    {"id": 3, "const": "TEXT_VERMILIONCITY_SAILOR1", "label": "VermilionCitySailor1Text", "kind": "asm", "handler": "asm"},
+    {"id": 4, "const": "TEXT_VERMILIONCITY_GAMBLER2", "label": "VermilionCityGambler2Text", "kind": "text", "handler": "text"},
+    {"id": 5, "const": "TEXT_VERMILIONCITY_MACHOP", "label": "VermilionCityMachopText", "kind": "text", "handler": "text"},
+    {"id": 6, "const": "TEXT_VERMILIONCITY_SAILOR2", "label": "VermilionCitySailor2Text", "kind": "text", "handler": "text"},
+    {"id": 7, "const": "TEXT_VERMILIONCITY_SIGN", "label": "VermilionCitySignText", "kind": "text", "handler": "text"},
+    {"id": 8, "const": "TEXT_VERMILIONCITY_NOTICE_SIGN", "label": "VermilionCityNoticeSignText", "kind": "text", "handler": "text"},
+    {"id": 9, "const": "TEXT_VERMILIONCITY_MART_SIGN", "label": "MartSignText", "kind": "text", "handler": "text"},
+    {"id": 10, "const": "TEXT_VERMILIONCITY_POKECENTER_SIGN", "label": "PokeCenterSignText", "kind": "text", "handler": "text"},
+    {"id": 11, "const": "TEXT_VERMILIONCITY_POKEMON_FAN_CLUB_SIGN", "label": "VermilionCityPokemonFanClubSignText", "kind": "text", "handler": "text"},
+    {"id": 12, "const": "TEXT_VERMILIONCITY_GYM_SIGN", "label": "VermilionCityGymSignText", "kind": "text", "handler": "text"},
+    {"id": 13, "const": "TEXT_VERMILIONCITY_HARBOR_SIGN", "label": "VermilionCityHarborSignText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "_MartSignText": {
+   "kind": "text",
+   "src": "data/text/text_1.asm:50",
+   "commands": [
+    {"cmd": "text", "str": "All your item"},
+    {"cmd": "line", "str": "needs fulfilled!"},
+    {"cmd": "cont", "str": "POKéMON MART"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokeCenterSignText": {
+   "kind": "text",
+   "src": "data/text/text_1.asm:56",
+   "commands": [
+    {"cmd": "text", "str": "Heal Your POKéMON!"},
+    {"cmd": "line", "str": "POKéMON CENTER"},
+    {"cmd": "done"}
+   ]
+  },
+  "MartSignText": {
+   "kind": "text",
+   "src": "home/overworld_text.asm:21",
+   "commands": [
+    {"cmd": "text_far", "label": "_MartSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokeCenterSignText": {
+   "kind": "text",
+   "src": "home/overworld_text.asm:25",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokeCenterSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VermilionCityBeautyText": {
+   "kind": "text",
+   "src": "scripts/VermilionCity.asm:134",
+   "commands": [
+    {"cmd": "text_far", "label": "_VermilionCityBeautyText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VermilionCityGambler1Text": {
+   "kind": "asm",
+   "src": "scripts/VermilionCity.asm:138",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["VermilionCityGambler1Text.DidYouSeeText", "VermilionCityGambler1Text.SSAnneDepartedText"]
+  },
+  "VermilionCityGambler1Text.DidYouSeeText": {
+   "kind": "text",
+   "src": "scripts/VermilionCity.asm:151",
+   "commands": [
+    {"cmd": "text_far", "label": "_VermilionCityGambler1DidYouSeeText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VermilionCityGambler1Text.SSAnneDepartedText": {
+   "kind": "text",
+   "src": "scripts/VermilionCity.asm:155",
+   "commands": [
+    {"cmd": "text_far", "label": "_VermilionCityGambler1SSAnneDepartedText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VermilionCitySailor1Text": {
+   "kind": "asm",
+   "src": "scripts/VermilionCity.asm:159",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["VermilionCitySailor1Text.WelcomeToSSAnneText", "VermilionCitySailor1Text.DoYouHaveATicketText", "VermilionCitySailor1Text.YouNeedATicketText", "VermilionCitySailor1Text.FlashedTicketText", "VermilionCitySailor1Text.ShipSetSailText"]
+  },
+  "VermilionCitySailor1Text.WelcomeToSSAnneText": {
+   "kind": "text",
+   "src": "scripts/VermilionCity.asm:201",
+   "commands": [
+    {"cmd": "text_far", "label": "_VermilionCitySailor1WelcomeToSSAnneText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VermilionCitySailor1Text.DoYouHaveATicketText": {
+   "kind": "text",
+   "src": "scripts/VermilionCity.asm:205",
+   "commands": [
+    {"cmd": "text_far", "label": "_VermilionCitySailor1DoYouHaveATicketText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VermilionCitySailor1Text.FlashedTicketText": {
+   "kind": "text",
+   "src": "scripts/VermilionCity.asm:209",
+   "commands": [
+    {"cmd": "text_far", "label": "_VermilionCitySailor1FlashedTicketText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VermilionCitySailor1Text.YouNeedATicketText": {
+   "kind": "text",
+   "src": "scripts/VermilionCity.asm:213",
+   "commands": [
+    {"cmd": "text_far", "label": "_VermilionCitySailor1YouNeedATicketText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VermilionCitySailor1Text.ShipSetSailText": {
+   "kind": "text",
+   "src": "scripts/VermilionCity.asm:217",
+   "commands": [
+    {"cmd": "text_far", "label": "_VermilionCitySailor1ShipSetSailText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VermilionCityGambler2Text": {
+   "kind": "text",
+   "src": "scripts/VermilionCity.asm:221",
+   "commands": [
+    {"cmd": "text_far", "label": "_VermilionCityGambler2Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VermilionCityMachopText": {
+   "kind": "text",
+   "src": "scripts/VermilionCity.asm:225",
+   "refs": ["VermilionCityMachopText.StompingTheLandFlatText"],
+   "commands": [
+    {"cmd": "text_far", "label": "_VermilionCityMachopText"},
+    {"cmd": "text_asm"}
+   ]
+  },
+  "VermilionCityMachopText.StompingTheLandFlatText": {
+   "kind": "text",
+   "src": "scripts/VermilionCity.asm:234",
+   "commands": [
+    {"cmd": "text_far", "label": "_VermilionCityMachopStompingTheLandFlatText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VermilionCitySailor2Text": {
+   "kind": "text",
+   "src": "scripts/VermilionCity.asm:238",
+   "commands": [
+    {"cmd": "text_far", "label": "_VermilionCitySailor2Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VermilionCitySignText": {
+   "kind": "text",
+   "src": "scripts/VermilionCity.asm:242",
+   "commands": [
+    {"cmd": "text_far", "label": "_VermilionCitySignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VermilionCityNoticeSignText": {
+   "kind": "text",
+   "src": "scripts/VermilionCity.asm:246",
+   "commands": [
+    {"cmd": "text_far", "label": "_VermilionCityNoticeSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VermilionCityPokemonFanClubSignText": {
+   "kind": "text",
+   "src": "scripts/VermilionCity.asm:250",
+   "commands": [
+    {"cmd": "text_far", "label": "_VermilionCityPokemonFanClubSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VermilionCityGymSignText": {
+   "kind": "text",
+   "src": "scripts/VermilionCity.asm:254",
+   "commands": [
+    {"cmd": "text_far", "label": "_VermilionCityGymSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VermilionCityHarborSignText": {
+   "kind": "text",
+   "src": "scripts/VermilionCity.asm:258",
+   "commands": [
+    {"cmd": "text_far", "label": "_VermilionCityHarborSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_VermilionCityBeautyText": {
+   "kind": "text",
+   "src": "text/VermilionCity.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "We're careful"},
+    {"cmd": "line", "str": "about pollution!"},
+    {"cmd": "para", "str": "We've heard GRIMER"},
+    {"cmd": "line", "str": "multiplies in"},
+    {"cmd": "cont", "str": "toxic sludge!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_VermilionCityGambler1DidYouSeeText": {
+   "kind": "text",
+   "src": "text/VermilionCity.asm:11",
+   "commands": [
+    {"cmd": "text", "str": "Did you see S.S."},
+    {"cmd": "line", "str": "ANNE moored in"},
+    {"cmd": "cont", "str": "the harbor?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_VermilionCityGambler1SSAnneDepartedText": {
+   "kind": "text",
+   "src": "text/VermilionCity.asm:17",
+   "commands": [
+    {"cmd": "text", "str": "So, S.S.ANNE has"},
+    {"cmd": "line", "str": "departed!"},
+    {"cmd": "para", "str": "She'll be back in"},
+    {"cmd": "line", "str": "about a year."},
+    {"cmd": "done"}
+   ]
+  },
+  "_VermilionCitySailor1WelcomeToSSAnneText": {
+   "kind": "text",
+   "src": "text/VermilionCity.asm:25",
+   "commands": [
+    {"cmd": "text", "str": "Welcome to S.S."},
+    {"cmd": "line", "str": "ANNE!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_VermilionCitySailor1DoYouHaveATicketText": {
+   "kind": "text",
+   "src": "text/VermilionCity.asm:30",
+   "commands": [
+    {"cmd": "text", "str": "Welcome to S.S."},
+    {"cmd": "line", "str": "ANNE!"},
+    {"cmd": "para", "str": "Excuse me, do you"},
+    {"cmd": "line", "str": "have a ticket?"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_VermilionCitySailor1FlashedTicketText": {
+   "kind": "text",
+   "src": "text/VermilionCity.asm:38",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} flashed"},
+    {"cmd": "line", "str": "the S.S.TICKET!"},
+    {"cmd": "para", "str": "Great! Welcome to"},
+    {"cmd": "line", "str": "S.S.ANNE!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_VermilionCitySailor1YouNeedATicketText": {
+   "kind": "text",
+   "src": "text/VermilionCity.asm:46",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} doesn't"},
+    {"cmd": "line", "str": "have the needed"},
+    {"cmd": "cont", "str": "S.S.TICKET."},
+    {"cmd": "para", "str": "Sorry!"},
+    {"cmd": "para", "str": "You need a ticket"},
+    {"cmd": "line", "str": "to get aboard."},
+    {"cmd": "done"}
+   ]
+  },
+  "_VermilionCitySailor1ShipSetSailText": {
+   "kind": "text",
+   "src": "text/VermilionCity.asm:57",
+   "commands": [
+    {"cmd": "text", "str": "The ship set sail."},
+    {"cmd": "done"}
+   ]
+  },
+  "_VermilionCityGambler2Text": {
+   "kind": "text",
+   "src": "text/VermilionCity.asm:61",
+   "commands": [
+    {"cmd": "text", "str": "I'm putting up a"},
+    {"cmd": "line", "str": "building on this"},
+    {"cmd": "cont", "str": "plot of land."},
+    {"cmd": "para", "str": "My POKéMON is"},
+    {"cmd": "line", "str": "tamping the land."},
+    {"cmd": "done"}
+   ]
+  },
+  "_VermilionCityMachopText": {
+   "kind": "text",
+   "src": "text/VermilionCity.asm:70",
+   "commands": [
+    {"cmd": "text", "str": "MACHOP: Guoh!"},
+    {"cmd": "line", "str": "Gogogoh!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_VermilionCityMachopStompingTheLandFlatText": {
+   "kind": "text",
+   "src": "text/VermilionCity.asm:75",
+   "commands": [
+    {"cmd": "text", "str": ""},
+    {"cmd": "para", "str": "A MACHOP is"},
+    {"cmd": "line", "str": "stomping the land"},
+    {"cmd": "cont", "str": "flat."},
+    {"cmd": "done"}
+   ]
+  },
+  "_VermilionCitySailor2Text": {
+   "kind": "text",
+   "src": "text/VermilionCity.asm:83",
+   "commands": [
+    {"cmd": "text", "str": "S.S.ANNE is a"},
+    {"cmd": "line", "str": "famous luxury"},
+    {"cmd": "cont", "str": "cruise ship."},
+    {"cmd": "para", "str": "We visit VERMILION"},
+    {"cmd": "line", "str": "once a year."},
+    {"cmd": "done"}
+   ]
+  },
+  "_VermilionCitySignText": {
+   "kind": "text",
+   "src": "text/VermilionCity.asm:92",
+   "commands": [
+    {"cmd": "text", "str": "VERMILION CITY"},
+    {"cmd": "line", "str": "The Port of"},
+    {"cmd": "cont", "str": "Exquisite Sunsets"},
+    {"cmd": "done"}
+   ]
+  },
+  "_VermilionCityNoticeSignText": {
+   "kind": "text",
+   "src": "text/VermilionCity.asm:98",
+   "commands": [
+    {"cmd": "text", "str": "NOTICE!"},
+    {"cmd": "para", "str": "ROUTE 12 may be"},
+    {"cmd": "line", "str": "blocked off by a"},
+    {"cmd": "cont", "str": "sleeping POKéMON."},
+    {"cmd": "para", "str": "Detour through"},
+    {"cmd": "line", "str": "ROCK TUNNEL to"},
+    {"cmd": "cont", "str": "LAVENDER TOWN."},
+    {"cmd": "para", "str": "VERMILION POLICE"},
+    {"cmd": "done"}
+   ]
+  },
+  "_VermilionCityPokemonFanClubSignText": {
+   "kind": "text",
+   "src": "text/VermilionCity.asm:112",
+   "commands": [
+    {"cmd": "text", "str": "POKéMON FAN CLUB"},
+    {"cmd": "line", "str": "All POKéMON fans"},
+    {"cmd": "cont", "str": "welcome!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_VermilionCityGymSignText": {
+   "kind": "text",
+   "src": "text/VermilionCity.asm:118",
+   "commands": [
+    {"cmd": "text", "str": "VERMILION CITY"},
+    {"cmd": "line", "str": "POKéMON GYM"},
+    {"cmd": "cont", "str": "LEADER: LT.SURGE"},
+    {"cmd": "para", "str": "The Lightning "},
+    {"cmd": "line", "str": "American!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_VermilionCityHarborSignText": {
+   "kind": "text",
+   "src": "text/VermilionCity.asm:127",
+   "commands": [
+    {"cmd": "text", "str": "VERMILION HARBOR"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

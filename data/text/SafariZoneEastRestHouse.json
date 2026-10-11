@@ -1,0 +1,71 @@
+{
+ "map": "SafariZoneEastRestHouse",
+ "const": "SAFARI_ZONE_EAST_REST_HOUSE",
+ "textPointerTables": [
+  {
+   "label": "SafariZoneEastRestHouse_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_SAFARIZONEEASTRESTHOUSE_SCIENTIST", "label": "SafariZoneEastRestHouseScientistText", "kind": "text", "handler": "text"},
+    {"id": 2, "const": "TEXT_SAFARIZONEEASTRESTHOUSE_ROCKER", "label": "SafariZoneEastRestHouseRockerText", "kind": "text", "handler": "text"},
+    {"id": 3, "const": "TEXT_SAFARIZONEEASTRESTHOUSE_SILPH_WORKER_M", "label": "SafariZoneEastRestHouseSilphWorkerMText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "SafariZoneEastRestHouseScientistText": {
+   "kind": "text",
+   "src": "scripts/SafariZoneEastRestHouse.asm:12",
+   "commands": [
+    {"cmd": "text_far", "label": "_SafariZoneEastRestHouseScientistText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SafariZoneEastRestHouseRockerText": {
+   "kind": "text",
+   "src": "scripts/SafariZoneEastRestHouse.asm:16",
+   "commands": [
+    {"cmd": "text_far", "label": "_SafariZoneEastRestHouseRockerText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SafariZoneEastRestHouseSilphWorkerMText": {
+   "kind": "text",
+   "src": "scripts/SafariZoneEastRestHouse.asm:20",
+   "commands": [
+    {"cmd": "text_far", "label": "_SafariZoneEastRestHouseSilphWorkerMText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_SafariZoneEastRestHouseScientistText": {
+   "kind": "text",
+   "src": "text/SafariZoneEastRestHouse.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "How many did you"},
+    {"cmd": "line", "str": "catch? I'm bushed"},
+    {"cmd": "cont", "str": "from the work!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SafariZoneEastRestHouseRockerText": {
+   "kind": "text",
+   "src": "text/SafariZoneEastRestHouse.asm:8",
+   "commands": [
+    {"cmd": "text", "str": "I caught a"},
+    {"cmd": "line", "str": "CHANSEY!"},
+    {"cmd": "para", "str": "That makes this"},
+    {"cmd": "line", "str": "all worthwhile!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SafariZoneEastRestHouseSilphWorkerMText": {
+   "kind": "text",
+   "src": "text/SafariZoneEastRestHouse.asm:16",
+   "commands": [
+    {"cmd": "text", "str": "Whew! I'm tired"},
+    {"cmd": "line", "str": "from all the fun!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

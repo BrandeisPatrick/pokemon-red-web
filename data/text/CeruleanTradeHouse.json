@@ -1,0 +1,44 @@
+{
+ "map": "CeruleanTradeHouse",
+ "const": "CERULEAN_TRADE_HOUSE",
+ "textPointerTables": [
+  {
+   "label": "CeruleanTradeHouse_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_CERULEANTRADEHOUSE_GRANNY", "label": "CeruleanTradeHouseGrannyText", "kind": "text", "handler": "text"},
+    {"id": 2, "const": "TEXT_CERULEANTRADEHOUSE_GAMBLER", "label": "CeruleanTradeHouseGamblerText", "kind": "asm", "handler": "asm"}
+   ]
+  }
+ ],
+ "texts": {
+  "CeruleanTradeHouseGrannyText": {
+   "kind": "text",
+   "src": "scripts/CeruleanTradeHouse.asm:10",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanTradeHouseGrannyText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeruleanTradeHouseGamblerText": {
+   "kind": "asm",
+   "src": "scripts/CeruleanTradeHouse.asm:14",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "_CeruleanTradeHouseGrannyText": {
+   "kind": "text",
+   "src": "text/CeruleanTradeHouse.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "My husband likes"},
+    {"cmd": "line", "str": "trading POKéMON."},
+    {"cmd": "para", "str": "If you are a"},
+    {"cmd": "line", "str": "collector, would"},
+    {"cmd": "cont", "str": "you please trade"},
+    {"cmd": "cont", "str": "with him?"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

@@ -1,0 +1,43 @@
+{
+ "id": 172,
+ "const": "CINNABAR_MART",
+ "name": "CinnabarMart",
+ "displayName": "CINNABAR ISLAND",
+ "width": 4,
+ "height": 4,
+ "tileset": "MART",
+ "tilesetId": 2,
+ "tilesetFile": "data/tilesets/Mart.json",
+ "isOutside": false,
+ "borderBlock": 0,
+ "blocks": [18, 19, 19, 9, 22, 15, 20, 20, 24, 25, 21, 21, 23, 26, 11, 15],
+ "connections": {},
+ "warps": [
+  {"x": 3, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 5, "destWarpIndex": 4},
+  {"x": 4, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 5, "destWarpIndex": 4}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "CINNABARMART_CLERK", "x": 0, "y": 5, "sprite": "SPRITE_CLERK", "spriteId": 38, "movement": "STAY", "rangeOrDirection": "RIGHT", "rangeOrDirectionValue": 211, "behavior": "face_right", "textId": "TEXT_CINNABARMART_CLERK", "textIndex": 1},
+  {"index": 2, "const": "CINNABARMART_SILPH_WORKER_F", "x": 6, "y": 2, "sprite": "SPRITE_SILPH_WORKER_F", "spriteId": 27, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_CINNABARMART_SILPH_WORKER_F", "textIndex": 2},
+  {"index": 3, "const": "CINNABARMART_SCIENTIST", "x": 3, "y": 4, "sprite": "SPRITE_SCIENTIST", "spriteId": 32, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_CINNABARMART_SCIENTIST", "textIndex": 3}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_POKECENTER",
+ "wild": null,
+ "townMap": {"x": 2, "y": 15, "group": "CINNABAR_ISLAND"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/CinnabarMart.json",
+ "textPointers": "CinnabarMart_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/CinnabarMart.asm",
+  "objects": "data/maps/objects/CinnabarMart.asm",
+  "blocks": "maps/PewterMart.blk",
+  "script": "scripts/CinnabarMart.asm"
+ },
+ "lastMapCandidates": ["CINNABAR_ISLAND"],
+ "palette": {"pal": "PAL_CINNABAR", "rule": "lastMap", "viaLastMap": "CINNABAR_ISLAND"}
+}

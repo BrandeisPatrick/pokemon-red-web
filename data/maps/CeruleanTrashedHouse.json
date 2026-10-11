@@ -1,0 +1,45 @@
+{
+ "id": 62,
+ "const": "CERULEAN_TRASHED_HOUSE",
+ "name": "CeruleanTrashedHouse",
+ "displayName": "CERULEAN CITY",
+ "width": 4,
+ "height": 4,
+ "tileset": "HOUSE",
+ "tilesetId": 8,
+ "tilesetFile": "data/tilesets/House.json",
+ "isOutside": false,
+ "borderBlock": 10,
+ "blocks": [26, 31, 22, 23, 30, 28, 29, 27, 15, 32, 33, 15, 6, 11, 27, 34],
+ "connections": {},
+ "warps": [
+  {"x": 2, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 1, "destWarpIndex": 0},
+  {"x": 3, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 1, "destWarpIndex": 0},
+  {"x": 3, "y": 0, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 8, "destWarpIndex": 7}
+ ],
+ "bgEvents": [
+  {"x": 3, "y": 0, "textId": "TEXT_CERULEANTRASHEDHOUSE_WALL_HOLE", "textIndex": 3}
+ ],
+ "objectEvents": [
+  {"index": 1, "const": "CERULEANTRASHEDHOUSE_FISHING_GURU", "x": 2, "y": 1, "sprite": "SPRITE_FISHING_GURU", "spriteId": 39, "movement": "STAY", "rangeOrDirection": "DOWN", "rangeOrDirectionValue": 208, "behavior": "face_down", "textId": "TEXT_CERULEANTRASHEDHOUSE_FISHING_GURU", "textIndex": 1},
+  {"index": 2, "const": "CERULEANTRASHEDHOUSE_GIRL", "x": 5, "y": 6, "sprite": "SPRITE_GIRL", "spriteId": 13, "movement": "WALK", "rangeOrDirection": "LEFT_RIGHT", "rangeOrDirectionValue": 2, "behavior": "walk_left_right", "textId": "TEXT_CERULEANTRASHEDHOUSE_GIRL", "textIndex": 2}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_CITIES2",
+ "wild": null,
+ "townMap": {"x": 10, "y": 2, "group": "CERULEAN_CITY"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/CeruleanTrashedHouse.json",
+ "textPointers": "CeruleanTrashedHouse_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/CeruleanTrashedHouse.asm",
+  "objects": "data/maps/objects/CeruleanTrashedHouse.asm",
+  "blocks": "maps/CeruleanTrashedHouse.blk",
+  "script": "scripts/CeruleanTrashedHouse.asm"
+ },
+ "lastMapCandidates": ["CERULEAN_CITY"],
+ "palette": {"pal": "PAL_CERULEAN", "rule": "lastMap", "viaLastMap": "CERULEAN_CITY"}
+}

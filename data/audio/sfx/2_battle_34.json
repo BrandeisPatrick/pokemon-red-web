@@ -1,0 +1,52 @@
+{
+  "name": "SFX_BATTLE_34",
+  "title": "Battle 34",
+  "kind": "sfx",
+  "bank": 2,
+  "id": 225,
+  "label": "SFX_Battle_34",
+  "channels": [
+    {
+      "channel": 5,
+      "label": "SFX_Battle_34_Ch5",
+      "entry": 0,
+      "bytes": 15,
+      "labels": {"SFX_Battle_34_Ch5": 0},
+      "commands": [
+        {"op": "duty_cycle_pattern", "pattern": [3, 2, 3, 1]},
+        {"op": "square_note", "length": 8, "volume": 15, "fade": -7, "frequency": 1016},
+        {"op": "square_note", "length": 15, "volume": 15, "fade": -7, "frequency": 1024},
+        {"op": "square_note", "length": 15, "volume": 15, "fade": 3, "frequency": 1024},
+        {"op": "sound_ret"}
+      ]
+    },
+    {
+      "channel": 6,
+      "label": "SFX_Battle_34_Ch6",
+      "entry": 0,
+      "bytes": 15,
+      "labels": {"SFX_Battle_34_Ch6": 0},
+      "commands": [
+        {"op": "duty_cycle_pattern", "pattern": [2, 3, 1, 0]},
+        {"op": "square_note", "length": 8, "volume": 14, "fade": -7, "frequency": 960},
+        {"op": "square_note", "length": 15, "volume": 14, "fade": -7, "frequency": 960},
+        {"op": "square_note", "length": 15, "volume": 14, "fade": 3, "frequency": 960},
+        {"op": "sound_ret"}
+      ]
+    },
+    {
+      "channel": 8,
+      "label": "SFX_Battle_34_Ch8",
+      "entry": 0,
+      "bytes": 13,
+      "labels": {"SFX_Battle_34_Ch8": 0},
+      "commands": [
+        {"op": "noise_note", "length": 4, "volume": 15, "fade": -7, "value": 81},
+        {"op": "noise_note", "length": 8, "volume": 15, "fade": -7, "value": 84},
+        {"op": "noise_note", "length": 15, "volume": 15, "fade": -7, "value": 85},
+        {"op": "noise_note", "length": 15, "volume": 15, "fade": 3, "value": 86},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+ "map": "UndergroundPathRoute8",
+ "const": "UNDERGROUND_PATH_ROUTE_8",
+ "textPointerTables": [
+  {
+   "label": "UndergroundPathRoute8_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_UNDERGROUNDPATHROUTE8_GIRL", "label": "UndergroundPathRoute8GirlText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "UndergroundPathRoute8GirlText": {
+   "kind": "text",
+   "src": "scripts/UndergroundPathRoute8.asm:11",
+   "commands": [
+    {"cmd": "text_far", "label": "_UndergroundPathRoute8GirlText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_UndergroundPathRoute8GirlText": {
+   "kind": "text",
+   "src": "text/UndergroundPathRoute8.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "The dept. store"},
+    {"cmd": "line", "str": "in CELADON has a"},
+    {"cmd": "cont", "str": "great selection!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

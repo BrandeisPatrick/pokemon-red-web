@@ -1,0 +1,33 @@
+{
+ "map": "UndergroundPathRoute7",
+ "const": "UNDERGROUND_PATH_ROUTE_7",
+ "textPointerTables": [
+  {
+   "label": "UndergroundPathRoute7_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_UNDERGROUNDPATHROUTE7_MIDDLE_AGED_MAN", "label": "UndergroundPathRoute7MiddleAgedManText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "UndergroundPathRoute7MiddleAgedManText": {
+   "kind": "text",
+   "src": "scripts/UndergroundPathRoute7.asm:11",
+   "commands": [
+    {"cmd": "text_far", "label": "_UndergroundPathRoute7MiddleAgedManText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_UndergroundPathRoute7MiddleAgedManText": {
+   "kind": "text",
+   "src": "text/UndergroundPathRoute7.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "I heard a sleepy"},
+    {"cmd": "line", "str": "POKéMON appeared"},
+    {"cmd": "cont", "str": "near CELADON CITY."},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

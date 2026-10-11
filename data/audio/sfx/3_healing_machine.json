@@ -1,0 +1,27 @@
+{
+  "name": "SFX_HEALING_MACHINE",
+  "title": "Healing Machine",
+  "kind": "sfx",
+  "bank": 3,
+  "id": 158,
+  "label": "SFX_Healing_Machine_3",
+  "channels": [
+    {
+      "channel": 5,
+      "label": "SFX_Healing_Machine_3_Ch5",
+      "entry": 0,
+      "bytes": 21,
+      "labels": {"SFX_Healing_Machine_3_Ch5": 0},
+      "commands": [
+        {"op": "duty_cycle", "duty": 2},
+        {"op": "pitch_sweep", "length": 2, "change": -4},
+        {"op": "square_note", "length": 4, "volume": 15, "fade": 2, "frequency": 1280},
+        {"op": "pitch_sweep", "length": 2, "change": 2},
+        {"op": "square_note", "length": 2, "volume": 15, "fade": 1, "frequency": 1280},
+        {"op": "pitch_sweep", "length": 0, "change": 8},
+        {"op": "square_note", "length": 1, "volume": 0, "fade": 0, "frequency": 0},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

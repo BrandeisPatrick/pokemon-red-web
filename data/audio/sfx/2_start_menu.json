@@ -1,0 +1,22 @@
+{
+  "name": "SFX_START_MENU",
+  "title": "Start Menu",
+  "kind": "sfx",
+  "bank": 2,
+  "id": 143,
+  "label": "SFX_Start_Menu_2",
+  "channels": [
+    {
+      "channel": 8,
+      "label": "SFX_Start_Menu_2_Ch8",
+      "entry": 0,
+      "bytes": 7,
+      "labels": {"SFX_Start_Menu_2_Ch8": 0},
+      "commands": [
+        {"op": "noise_note", "length": 1, "volume": 14, "fade": 2, "value": 51},
+        {"op": "noise_note", "length": 8, "volume": 14, "fade": 1, "value": 34},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

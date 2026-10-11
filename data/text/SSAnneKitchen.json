@@ -1,0 +1,212 @@
+{
+ "map": "SSAnneKitchen",
+ "const": "SS_ANNE_KITCHEN",
+ "textPointerTables": [
+  {
+   "label": "SSAnneKitchen_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_SSANNEKITCHEN_COOK1", "label": "SSAnneKitchenCook1Text", "kind": "text", "handler": "text"},
+    {"id": 2, "const": "TEXT_SSANNEKITCHEN_COOK2", "label": "SSAnneKitchenCook2Text", "kind": "text", "handler": "text"},
+    {"id": 3, "const": "TEXT_SSANNEKITCHEN_COOK3", "label": "SSAnneKitchenCook3Text", "kind": "text", "handler": "text"},
+    {"id": 4, "const": "TEXT_SSANNEKITCHEN_COOK4", "label": "SSAnneKitchenCook4Text", "kind": "text", "handler": "text"},
+    {"id": 5, "const": "TEXT_SSANNEKITCHEN_COOK5", "label": "SSAnneKitchenCook5Text", "kind": "text", "handler": "text"},
+    {"id": 6, "const": "TEXT_SSANNEKITCHEN_COOK6", "label": "SSAnneKitchenCook6Text", "kind": "text", "handler": "text"},
+    {"id": 7, "const": "TEXT_SSANNEKITCHEN_COOK7", "label": "SSAnneKitchenCook7Text", "kind": "asm", "handler": "asm"}
+   ]
+  }
+ ],
+ "texts": {
+  "SSAnneKitchenCook1Text": {
+   "kind": "text",
+   "src": "scripts/SSAnneKitchen.asm:16",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnneKitchenCook1Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnneKitchenCook2Text": {
+   "kind": "text",
+   "src": "scripts/SSAnneKitchen.asm:20",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnneKitchenCook2Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnneKitchenCook3Text": {
+   "kind": "text",
+   "src": "scripts/SSAnneKitchen.asm:24",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnneKitchenCook3Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnneKitchenCook4Text": {
+   "kind": "text",
+   "src": "scripts/SSAnneKitchen.asm:28",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnneKitchenCook4Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnneKitchenCook5Text": {
+   "kind": "text",
+   "src": "scripts/SSAnneKitchen.asm:32",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnneKitchenCook5Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnneKitchenCook6Text": {
+   "kind": "text",
+   "src": "scripts/SSAnneKitchen.asm:36",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnneKitchenCook6Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnneKitchenCook7Text": {
+   "kind": "asm",
+   "src": "scripts/SSAnneKitchen.asm:40",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["SSAnneKitchenCook7Text.MainCourseIsText", "SSAnneKitchenCook7Text.SalmonDuSaladText", "SSAnneKitchenCook7Text.EelsAuBarbecueText", "SSAnneKitchenCook7Text.PrimeBeefSteakText"]
+  },
+  "SSAnneKitchenCook7Text.MainCourseIsText": {
+   "kind": "text",
+   "src": "scripts/SSAnneKitchen.asm:60",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnneKitchenCook7MainCourseIsText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnneKitchenCook7Text.SalmonDuSaladText": {
+   "kind": "text",
+   "src": "scripts/SSAnneKitchen.asm:64",
+   "commands": [
+    {"cmd": "text_far", "label": "SSAnneKitchenCook7SalmonDuSaladText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnneKitchenCook7Text.EelsAuBarbecueText": {
+   "kind": "text",
+   "src": "scripts/SSAnneKitchen.asm:68",
+   "commands": [
+    {"cmd": "text_far", "label": "SSAnneKitchenCook7EelsAuBarbecueText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnneKitchenCook7Text.PrimeBeefSteakText": {
+   "kind": "text",
+   "src": "scripts/SSAnneKitchen.asm:72",
+   "commands": [
+    {"cmd": "text_far", "label": "SSAnneKitchenCook7PrimeBeefSteakText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_SSAnneKitchenCook1Text": {
+   "kind": "text",
+   "src": "text/SSAnneKitchen.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "You, mon petit!"},
+    {"cmd": "line", "str": "We're busy here!"},
+    {"cmd": "cont", "str": "Out of the way!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SSAnneKitchenCook2Text": {
+   "kind": "text",
+   "src": "text/SSAnneKitchen.asm:8",
+   "commands": [
+    {"cmd": "text", "str": "I saw an odd ball"},
+    {"cmd": "line", "str": "in the trash."},
+    {"cmd": "done"}
+   ]
+  },
+  "_SSAnneKitchenCook3Text": {
+   "kind": "text",
+   "src": "text/SSAnneKitchen.asm:13",
+   "commands": [
+    {"cmd": "text", "str": "I'm so busy I'm"},
+    {"cmd": "line", "str": "getting dizzy!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SSAnneKitchenCook4Text": {
+   "kind": "text",
+   "src": "text/SSAnneKitchen.asm:18",
+   "commands": [
+    {"cmd": "text", "str": "Hum-de-hum-de-"},
+    {"cmd": "line", "str": "ho..."},
+    {"cmd": "para", "str": "I peel spuds"},
+    {"cmd": "line", "str": "every day!"},
+    {"cmd": "cont", "str": "Hum-hum..."},
+    {"cmd": "done"}
+   ]
+  },
+  "_SSAnneKitchenCook5Text": {
+   "kind": "text",
+   "src": "text/SSAnneKitchen.asm:27",
+   "commands": [
+    {"cmd": "text", "str": "Did you hear about"},
+    {"cmd": "line", "str": "SNORLAX?"},
+    {"cmd": "para", "str": "All it does is"},
+    {"cmd": "line", "str": "eat and sleep!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SSAnneKitchenCook6Text": {
+   "kind": "text",
+   "src": "text/SSAnneKitchen.asm:35",
+   "commands": [
+    {"cmd": "text", "str": "Snivel...Sniff..."},
+    {"cmd": "para", "str": "I only get to"},
+    {"cmd": "line", "str": "peel onions..."},
+    {"cmd": "cont", "str": "Snivel..."},
+    {"cmd": "done"}
+   ]
+  },
+  "_SSAnneKitchenCook7MainCourseIsText": {
+   "kind": "text",
+   "src": "text/SSAnneKitchen.asm:43",
+   "commands": [
+    {"cmd": "text", "str": "Er-hem! Indeed I"},
+    {"cmd": "line", "str": "am le CHEF!"},
+    {"cmd": "para", "str": "Le main course is"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "SSAnneKitchenCook7SalmonDuSaladText": {
+   "kind": "text",
+   "src": "text/SSAnneKitchen.asm:50",
+   "commands": [
+    {"cmd": "text", "str": "Salmon du Salad!"},
+    {"cmd": "para", "str": "Les guests may"},
+    {"cmd": "line", "str": "gripe it's fish"},
+    {"cmd": "cont", "str": "again, however!"},
+    {"cmd": "done"}
+   ]
+  },
+  "SSAnneKitchenCook7EelsAuBarbecueText": {
+   "kind": "text",
+   "src": "text/SSAnneKitchen.asm:58",
+   "commands": [
+    {"cmd": "text", "str": "Eels au Barbecue!"},
+    {"cmd": "para", "str": "Les guests will"},
+    {"cmd": "line", "str": "mutiny, I fear."},
+    {"cmd": "done"}
+   ]
+  },
+  "SSAnneKitchenCook7PrimeBeefSteakText": {
+   "kind": "text",
+   "src": "text/SSAnneKitchen.asm:65",
+   "commands": [
+    {"cmd": "text", "str": "Prime Beef Steak!"},
+    {"cmd": "para", "str": "But, have I enough"},
+    {"cmd": "line", "str": "fillets du beef?"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

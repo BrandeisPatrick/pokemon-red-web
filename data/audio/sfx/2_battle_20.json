@@ -1,0 +1,22 @@
+{
+  "name": "SFX_BATTLE_20",
+  "title": "Battle 20",
+  "kind": "sfx",
+  "bank": 2,
+  "id": 183,
+  "label": "SFX_Battle_20",
+  "channels": [
+    {
+      "channel": 8,
+      "label": "SFX_Battle_20_Ch8",
+      "entry": 0,
+      "bytes": 7,
+      "labels": {"SFX_Battle_20_Ch8": 0},
+      "commands": [
+        {"op": "noise_note", "length": 12, "volume": 15, "fade": 1, "value": 84},
+        {"op": "noise_note", "length": 8, "volume": 15, "fade": 1, "value": 100},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

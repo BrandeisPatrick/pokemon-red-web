@@ -1,0 +1,298 @@
+{
+ "map": "PokemonTower5F",
+ "const": "POKEMON_TOWER_5F",
+ "textPointerTables": [
+  {
+   "label": "PokemonTower5F_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_POKEMONTOWER5F_CHANNELER1", "label": "PokemonTower5FChanneler1Text", "kind": "text", "handler": "text"},
+    {"id": 2, "const": "TEXT_POKEMONTOWER5F_CHANNELER2", "label": "PokemonTower5FChanneler2Text", "kind": "asm", "handler": "trainer", "trainerHeader": "PokemonTower5TrainerHeader0"},
+    {"id": 3, "const": "TEXT_POKEMONTOWER5F_CHANNELER3", "label": "PokemonTower5FChanneler3Text", "kind": "asm", "handler": "trainer", "trainerHeader": "PokemonTower5TrainerHeader1"},
+    {"id": 4, "const": "TEXT_POKEMONTOWER5F_CHANNELER4", "label": "PokemonTower5FChanneler4Text", "kind": "asm", "handler": "trainer", "trainerHeader": "PokemonTower5TrainerHeader2"},
+    {"id": 5, "const": "TEXT_POKEMONTOWER5F_CHANNELER5", "label": "PokemonTower5FChanneler5Text", "kind": "asm", "handler": "trainer", "trainerHeader": "PokemonTower5TrainerHeader3"},
+    {"id": 6, "const": "TEXT_POKEMONTOWER5F_NUGGET", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 7, "const": "TEXT_POKEMONTOWER5F_PURIFIEDZONE", "label": "PokemonTower5FPurifiedZoneText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "PickUpItemText": {
+   "kind": "asm",
+   "src": "home/overworld_text.asm:29",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "PokemonTower5FChanneler1Text": {
+   "kind": "text",
+   "src": "scripts/PokemonTower5F.asm:75",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower5FChanneler1Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower5FChanneler2Text": {
+   "kind": "asm",
+   "src": "scripts/PokemonTower5F.asm:79",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "PokemonTower5TrainerHeader0"
+  },
+  "PokemonTower5FChanneler2BattleText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower5F.asm:85",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower5FChanneler2BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower5FChanneler2EndBattleText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower5F.asm:89",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower5FChanneler2EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower5FChanneler2AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower5F.asm:93",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower5FChanneler2AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower5FChanneler3Text": {
+   "kind": "asm",
+   "src": "scripts/PokemonTower5F.asm:97",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "PokemonTower5TrainerHeader1"
+  },
+  "PokemonTower5FChanneler3BattleText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower5F.asm:103",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower5FChanneler3BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower5FChanneler3EndBattleText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower5F.asm:107",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower5FChanneler3EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower5FChanneler3AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower5F.asm:111",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower5FChanneler3AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower5FChanneler4Text": {
+   "kind": "asm",
+   "src": "scripts/PokemonTower5F.asm:115",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "PokemonTower5TrainerHeader2"
+  },
+  "PokemonTower5FChanneler4BattleText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower5F.asm:121",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower5FChanneler4BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower5FChanneler4EndBattleText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower5F.asm:125",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower5FChanneler4EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower5FChanneler4AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower5F.asm:129",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower5FChanneler4AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower5FChanneler5Text": {
+   "kind": "asm",
+   "src": "scripts/PokemonTower5F.asm:133",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "PokemonTower5TrainerHeader3"
+  },
+  "PokemonTower5FChanneler5BattleText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower5F.asm:139",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower5FChanneler5BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower5FChanneler5EndBattleText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower5F.asm:143",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower5FChanneler5EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower5FChanneler5AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower5F.asm:147",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower5FChanneler5AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower5FPurifiedZoneText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower5F.asm:151",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower5FPurifiedZoneText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_PokemonTower5FChanneler1Text": {
+   "kind": "text",
+   "src": "text/PokemonTower5F.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Come, child! I"},
+    {"cmd": "line", "str": "sealed this space"},
+    {"cmd": "cont", "str": "with white magic!"},
+    {"cmd": "para", "str": "You can rest here!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonTower5FChanneler2BattleText": {
+   "kind": "text",
+   "src": "text/PokemonTower5F.asm:10",
+   "commands": [
+    {"cmd": "text", "str": "Give...me..."},
+    {"cmd": "line", "str": "your...soul..."},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonTower5FChanneler2EndBattleText": {
+   "kind": "text",
+   "src": "text/PokemonTower5F.asm:15",
+   "commands": [
+    {"cmd": "text", "str": "Gasp!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_PokemonTower5FChanneler2AfterBattleText": {
+   "kind": "text",
+   "src": "text/PokemonTower5F.asm:19",
+   "commands": [
+    {"cmd": "text", "str": "I was under"},
+    {"cmd": "line", "str": "possession!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonTower5FChanneler3BattleText": {
+   "kind": "text",
+   "src": "text/PokemonTower5F.asm:24",
+   "commands": [
+    {"cmd": "text", "str": "You...shall..."},
+    {"cmd": "line", "str": "join...us..."},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonTower5FChanneler3EndBattleText": {
+   "kind": "text",
+   "src": "text/PokemonTower5F.asm:29",
+   "commands": [
+    {"cmd": "text", "str": "What"},
+    {"cmd": "line", "str": "a nightmare!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_PokemonTower5FChanneler3AfterBattleText": {
+   "kind": "text",
+   "src": "text/PokemonTower5F.asm:34",
+   "commands": [
+    {"cmd": "text", "str": "I was possessed!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonTower5FChanneler4BattleText": {
+   "kind": "text",
+   "src": "text/PokemonTower5F.asm:38",
+   "commands": [
+    {"cmd": "text", "str": "Zombies!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonTower5FChanneler4EndBattleText": {
+   "kind": "text",
+   "src": "text/PokemonTower5F.asm:42",
+   "commands": [
+    {"cmd": "text", "str": "Ha?"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_PokemonTower5FChanneler4AfterBattleText": {
+   "kind": "text",
+   "src": "text/PokemonTower5F.asm:46",
+   "commands": [
+    {"cmd": "text", "str": "I regained my"},
+    {"cmd": "line", "str": "senses!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonTower5FChanneler5BattleText": {
+   "kind": "text",
+   "src": "text/PokemonTower5F.asm:51",
+   "commands": [
+    {"cmd": "text", "str": "Urgah..."},
+    {"cmd": "line", "str": "Urff...."},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonTower5FChanneler5EndBattleText": {
+   "kind": "text",
+   "src": "text/PokemonTower5F.asm:56",
+   "commands": [
+    {"cmd": "text", "str": "Whoo!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_PokemonTower5FChanneler5AfterBattleText": {
+   "kind": "text",
+   "src": "text/PokemonTower5F.asm:60",
+   "commands": [
+    {"cmd": "text", "str": "I fell to evil"},
+    {"cmd": "line", "str": "spirits despite"},
+    {"cmd": "cont", "str": "my training!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonTower5FPurifiedZoneText": {
+   "kind": "text",
+   "src": "text/PokemonTower5F.asm:66",
+   "commands": [
+    {"cmd": "text", "str": "Entered purified,"},
+    {"cmd": "line", "str": "protected zone!"},
+    {"cmd": "para", "str": "{PLAYER}'s POKéMON"},
+    {"cmd": "line", "str": "are fully healed!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

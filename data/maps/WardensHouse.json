@@ -1,0 +1,46 @@
+{
+ "id": 155,
+ "const": "WARDENS_HOUSE",
+ "name": "WardensHouse",
+ "displayName": "FUCHSIA CITY",
+ "width": 5,
+ "height": 4,
+ "tileset": "LAB",
+ "tilesetId": 20,
+ "tilesetFile": "data/tilesets/Lab.json",
+ "isOutside": false,
+ "borderBlock": 23,
+ "blocks": [1, 1, 1, 1, 1, 41, 7, 32, 29, 30, 7, 7, 7, 7, 7, 13, 7, 12, 7, 14],
+ "connections": {},
+ "warps": [
+  {"x": 4, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 4, "destWarpIndex": 3},
+  {"x": 5, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 4, "destWarpIndex": 3}
+ ],
+ "bgEvents": [
+  {"x": 4, "y": 3, "textId": "TEXT_WARDENSHOUSE_DISPLAY_LEFT", "textIndex": 4},
+  {"x": 5, "y": 3, "textId": "TEXT_WARDENSHOUSE_DISPLAY_RIGHT", "textIndex": 5}
+ ],
+ "objectEvents": [
+  {"index": 1, "const": "WARDENSHOUSE_WARDEN", "x": 2, "y": 3, "sprite": "SPRITE_WARDEN", "spriteId": 45, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_WARDENSHOUSE_WARDEN", "textIndex": 1},
+  {"index": 2, "const": "WARDENSHOUSE_RARE_CANDY", "x": 8, "y": 3, "sprite": "SPRITE_POKE_BALL", "spriteId": 61, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_WARDENSHOUSE_RARE_CANDY", "textIndex": 2, "item": "RARE_CANDY", "itemId": 40, "toggleIndex": 71, "toggleConst": "TOGGLE_WARDENS_HOUSE_ITEM", "startsHidden": false},
+  {"index": 3, "const": "WARDENSHOUSE_BOULDER", "x": 8, "y": 4, "sprite": "SPRITE_BOULDER", "spriteId": 63, "movement": "STAY", "rangeOrDirection": "BOULDER_MOVEMENT_BYTE_2", "rangeOrDirectionValue": 16, "behavior": "turn_randomly", "textId": "TEXT_WARDENSHOUSE_BOULDER", "textIndex": 3}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_CITIES2",
+ "wild": null,
+ "townMap": {"x": 8, "y": 13, "group": "FUCHSIA_CITY"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/WardensHouse.json",
+ "textPointers": "WardensHouse_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/WardensHouse.asm",
+  "objects": "data/maps/objects/WardensHouse.asm",
+  "blocks": "maps/WardensHouse.blk",
+  "script": "scripts/WardensHouse.asm"
+ },
+ "lastMapCandidates": ["FUCHSIA_CITY"],
+ "palette": {"pal": "PAL_FUCHSIA", "rule": "lastMap", "viaLastMap": "FUCHSIA_CITY"}
+}

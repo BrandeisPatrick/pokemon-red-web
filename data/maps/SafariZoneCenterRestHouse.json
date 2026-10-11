@@ -1,0 +1,42 @@
+{
+ "id": 221,
+ "const": "SAFARI_ZONE_CENTER_REST_HOUSE",
+ "name": "SafariZoneCenterRestHouse",
+ "displayName": "SAFARI ZONE",
+ "width": 4,
+ "height": 4,
+ "tileset": "GATE",
+ "tilesetId": 12,
+ "tilesetFile": "data/tilesets/Gate.json",
+ "isOutside": false,
+ "borderBlock": 10,
+ "blocks": [3, 7, 77, 77, 59, 56, 0, 0, 59, 56, 17, 33, 0, 11, 8, 1],
+ "connections": {},
+ "warps": [
+  {"x": 2, "y": 7, "destMap": "SAFARI_ZONE_CENTER", "destMapId": 220, "destMapName": "SafariZoneCenter", "destWarp": 9, "destWarpIndex": 8},
+  {"x": 3, "y": 7, "destMap": "SAFARI_ZONE_CENTER", "destMapId": 220, "destMapName": "SafariZoneCenter", "destWarp": 9, "destWarpIndex": 8}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "SAFARIZONECENTERRESTHOUSE_GIRL", "x": 3, "y": 2, "sprite": "SPRITE_GIRL", "spriteId": 13, "movement": "STAY", "rangeOrDirection": "DOWN", "rangeOrDirectionValue": 208, "behavior": "face_down", "textId": "TEXT_SAFARIZONECENTERRESTHOUSE_GIRL", "textIndex": 1},
+  {"index": 2, "const": "SAFARIZONECENTERRESTHOUSE_SCIENTIST", "x": 1, "y": 4, "sprite": "SPRITE_SCIENTIST", "spriteId": 32, "movement": "WALK", "rangeOrDirection": "UP_DOWN", "rangeOrDirectionValue": 1, "behavior": "walk_up_down", "textId": "TEXT_SAFARIZONECENTERRESTHOUSE_SCIENTIST", "textIndex": 2}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_SAFARI_ZONE",
+ "wild": null,
+ "townMap": {"x": 8, "y": 12, "group": "SAFARI_ZONE_2"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/SafariZoneCenterRestHouse.json",
+ "textPointers": "SafariZoneCenterRestHouse_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/SafariZoneCenterRestHouse.asm",
+  "objects": "data/maps/objects/SafariZoneCenterRestHouse.asm",
+  "blocks": "maps/SafariZoneCenterRestHouse.blk",
+  "script": "scripts/SafariZoneCenterRestHouse.asm"
+ },
+ "lastMapCandidates": ["FUCHSIA_CITY"],
+ "palette": {"pal": "PAL_FUCHSIA", "rule": "lastMap", "viaLastMap": "FUCHSIA_CITY"}
+}

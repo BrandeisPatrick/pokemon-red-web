@@ -1,0 +1,467 @@
+{
+ "map": "MtMoonB2F",
+ "const": "MT_MOON_B2F",
+ "textPointerTables": [
+  {
+   "label": "MtMoonB2F_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_MTMOONB2F_SUPER_NERD", "label": "MtMoonB2FSuperNerdText", "kind": "asm", "handler": "asm"},
+    {"id": 2, "const": "TEXT_MTMOONB2F_ROCKET1", "label": "MtMoonB2FRocket1Text", "kind": "asm", "handler": "trainer", "trainerHeader": "MtMoon3TrainerHeader0"},
+    {"id": 3, "const": "TEXT_MTMOONB2F_ROCKET2", "label": "MtMoonB2FRocket2Text", "kind": "asm", "handler": "trainer", "trainerHeader": "MtMoon3TrainerHeader1"},
+    {"id": 4, "const": "TEXT_MTMOONB2F_ROCKET3", "label": "MtMoonB2FRocket3Text", "kind": "asm", "handler": "trainer", "trainerHeader": "MtMoon3TrainerHeader2"},
+    {"id": 5, "const": "TEXT_MTMOONB2F_ROCKET4", "label": "MtMoonB2FRocket4Text", "kind": "asm", "handler": "trainer", "trainerHeader": "MtMoon3TrainerHeader3"},
+    {"id": 6, "const": "TEXT_MTMOONB2F_DOME_FOSSIL", "label": "MtMoonB2FDomeFossilText", "kind": "asm", "handler": "asm"},
+    {"id": 7, "const": "TEXT_MTMOONB2F_HELIX_FOSSIL", "label": "MtMoonB2FHelixFossilText", "kind": "asm", "handler": "asm"},
+    {"id": 8, "const": "TEXT_MTMOONB2F_HP_UP", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 9, "const": "TEXT_MTMOONB2F_TM_MEGA_PUNCH", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 10, "const": "TEXT_MTMOONB2F_SUPER_NERD_THEN_THIS_IS_MINE", "label": "MtMoonB2FSuperNerdThenThisIsMineText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "PickUpItemText": {
+   "kind": "asm",
+   "src": "home/overworld_text.asm:29",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "MtMoonB2FSuperNerdText": {
+   "kind": "asm",
+   "src": "scripts/MtMoonB2F.asm:184",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["MtMoonB2fSuperNerdEachTakeOneText", "MtMoonB2FSuperNerdTheyreBothMineText", "MtMoonB2FSuperNerdOkIllShareText", "MtMoonB2FSuperNerdTheresAPokemonLabText"]
+  },
+  "MtMoonB2FRocket1Text": {
+   "kind": "asm",
+   "src": "scripts/MtMoonB2F.asm:216",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "MtMoon3TrainerHeader0"
+  },
+  "MtMoonB2FRocket2Text": {
+   "kind": "asm",
+   "src": "scripts/MtMoonB2F.asm:222",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "MtMoon3TrainerHeader1"
+  },
+  "MtMoonB2FRocket3Text": {
+   "kind": "asm",
+   "src": "scripts/MtMoonB2F.asm:228",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "MtMoon3TrainerHeader2"
+  },
+  "MtMoonB2FRocket4Text": {
+   "kind": "asm",
+   "src": "scripts/MtMoonB2F.asm:234",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "MtMoon3TrainerHeader3"
+  },
+  "MtMoonB2FDomeFossilText": {
+   "kind": "asm",
+   "src": "scripts/MtMoonB2F.asm:240",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["MtMoonB2FDomeFossilText.YouWantText"]
+  },
+  "MtMoonB2FDomeFossilText.YouWantText": {
+   "kind": "text",
+   "src": "scripts/MtMoonB2F.asm:264",
+   "commands": [
+    {"cmd": "text_far", "label": "_MtMoonB2FDomeFossilYouWantText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "MtMoonB2FHelixFossilText": {
+   "kind": "asm",
+   "src": "scripts/MtMoonB2F.asm:268",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["MtMoonB2FHelixFossilText.YouWantText"]
+  },
+  "MtMoonB2FHelixFossilText.YouWantText": {
+   "kind": "text",
+   "src": "scripts/MtMoonB2F.asm:292",
+   "commands": [
+    {"cmd": "text_far", "label": "_MtMoonB2FHelixFossilYouWantText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "MtMoonB2FReceivedFossilText.Text": {
+   "kind": "text",
+   "src": "scripts/MtMoonB2F.asm:300",
+   "commands": [
+    {"cmd": "text_far", "label": "_MtMoonB2FReceivedFossilText"},
+    {"cmd": "sound", "sound": "sound_get_key_item"},
+    {"cmd": "text_waitbutton"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "MtMoonB2FYouHaveNoRoomText.Text": {
+   "kind": "text",
+   "src": "scripts/MtMoonB2F.asm:311",
+   "commands": [
+    {"cmd": "text_far", "label": "_MtMoonB2FYouHaveNoRoomText"},
+    {"cmd": "text_waitbutton"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "MtMoonB2FSuperNerdTheyreBothMineText": {
+   "kind": "text",
+   "src": "scripts/MtMoonB2F.asm:316",
+   "commands": [
+    {"cmd": "text_far", "label": "_MtMoonB2FSuperNerdTheyreBothMineText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "MtMoonB2FSuperNerdOkIllShareText": {
+   "kind": "text",
+   "src": "scripts/MtMoonB2F.asm:320",
+   "commands": [
+    {"cmd": "text_far", "label": "_MtMoonB2FSuperNerdOkIllShareText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "MtMoonB2fSuperNerdEachTakeOneText": {
+   "kind": "text",
+   "src": "scripts/MtMoonB2F.asm:324",
+   "commands": [
+    {"cmd": "text_far", "label": "_MtMoonB2fSuperNerdEachTakeOneText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "MtMoonB2FSuperNerdTheresAPokemonLabText": {
+   "kind": "text",
+   "src": "scripts/MtMoonB2F.asm:328",
+   "commands": [
+    {"cmd": "text_far", "label": "_MtMoonB2FSuperNerdTheresAPokemonLabText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "MtMoonB2FSuperNerdThenThisIsMineText": {
+   "kind": "text",
+   "src": "scripts/MtMoonB2F.asm:332",
+   "commands": [
+    {"cmd": "text_far", "label": "_MtMoonB2FSuperNerdThenThisIsMineText"},
+    {"cmd": "sound", "sound": "sound_get_key_item"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "MtMoonB2FRocket1BattleText": {
+   "kind": "text",
+   "src": "scripts/MtMoonB2F.asm:337",
+   "commands": [
+    {"cmd": "text_far", "label": "_MtMoonB2FRocket1BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "MtMoonB2FRocket1EndBattleText": {
+   "kind": "text",
+   "src": "scripts/MtMoonB2F.asm:341",
+   "commands": [
+    {"cmd": "text_far", "label": "_MtMoonB2FRocket1EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "MtMoonB2FRocket1AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/MtMoonB2F.asm:345",
+   "commands": [
+    {"cmd": "text_far", "label": "_MtMoonB2FRocket1AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "MtMoonB2FRocket2BattleText": {
+   "kind": "text",
+   "src": "scripts/MtMoonB2F.asm:349",
+   "commands": [
+    {"cmd": "text_far", "label": "_MtMoonB2FRocket2BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "MtMoonB2FRocket2EndBattleText": {
+   "kind": "text",
+   "src": "scripts/MtMoonB2F.asm:353",
+   "commands": [
+    {"cmd": "text_far", "label": "_MtMoonB2FRocket2EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "MtMoonB2FRocket2AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/MtMoonB2F.asm:357",
+   "commands": [
+    {"cmd": "text_far", "label": "_MtMoonB2FRocket2AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "MtMoonB2FRocket3BattleText": {
+   "kind": "text",
+   "src": "scripts/MtMoonB2F.asm:361",
+   "commands": [
+    {"cmd": "text_far", "label": "_MtMoonB2FRocket3BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "MtMoonB2FRocket3EndBattleText": {
+   "kind": "text",
+   "src": "scripts/MtMoonB2F.asm:365",
+   "commands": [
+    {"cmd": "text_far", "label": "_MtMoonB2FRocket3EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "MtMoonB2FRocket3AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/MtMoonB2F.asm:369",
+   "commands": [
+    {"cmd": "text_far", "label": "_MtMoonB2FRocket3AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "MtMoonB2FRocket4BattleText": {
+   "kind": "text",
+   "src": "scripts/MtMoonB2F.asm:373",
+   "commands": [
+    {"cmd": "text_far", "label": "_MtMoonB2FRocket4BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "MtMoonB2FRocket4EndBattleText": {
+   "kind": "text",
+   "src": "scripts/MtMoonB2F.asm:377",
+   "commands": [
+    {"cmd": "text_far", "label": "_MtMoonB2FRocket4EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "MtMoonB2FRocket4AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/MtMoonB2F.asm:381",
+   "commands": [
+    {"cmd": "text_far", "label": "_MtMoonB2FRocket4AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_MtMoonB2FDomeFossilYouWantText": {
+   "kind": "text",
+   "src": "text/MtMoonB2F.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "You want the"},
+    {"cmd": "line", "str": "DOME FOSSIL?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_MtMoonB2FHelixFossilYouWantText": {
+   "kind": "text",
+   "src": "text/MtMoonB2F.asm:7",
+   "commands": [
+    {"cmd": "text", "str": "You want the"},
+    {"cmd": "line", "str": "HELIX FOSSIL?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_MtMoonB2FReceivedFossilText": {
+   "kind": "text",
+   "src": "text/MtMoonB2F.asm:12",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} got the"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_MtMoonB2FYouHaveNoRoomText": {
+   "kind": "text",
+   "src": "text/MtMoonB2F.asm:19",
+   "commands": [
+    {"cmd": "text", "str": "Look, you've got"},
+    {"cmd": "line", "str": "no room for this."},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_MtMoonB2FSuperNerdTheyreBothMineText": {
+   "kind": "text",
+   "src": "text/MtMoonB2F.asm:24",
+   "commands": [
+    {"cmd": "text", "str": "Hey, stop!"},
+    {"cmd": "para", "str": "I found these"},
+    {"cmd": "line", "str": "fossils! They're"},
+    {"cmd": "cont", "str": "both mine!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_MtMoonB2FSuperNerdOkIllShareText": {
+   "kind": "text",
+   "src": "text/MtMoonB2F.asm:32",
+   "commands": [
+    {"cmd": "text", "str": "OK!"},
+    {"cmd": "line", "str": "I'll share!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_MtMoonB2fSuperNerdEachTakeOneText": {
+   "kind": "text",
+   "src": "text/MtMoonB2F.asm:37",
+   "commands": [
+    {"cmd": "text", "str": "We'll each take"},
+    {"cmd": "line", "str": "one!"},
+    {"cmd": "cont", "str": "No being greedy!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_MtMoonB2FSuperNerdTheresAPokemonLabText": {
+   "kind": "text",
+   "src": "text/MtMoonB2F.asm:43",
+   "commands": [
+    {"cmd": "text", "str": "Far away, on"},
+    {"cmd": "line", "str": "CINNABAR ISLAND,"},
+    {"cmd": "cont", "str": "there's a POKéMON"},
+    {"cmd": "cont", "str": "LAB."},
+    {"cmd": "para", "str": "They do research"},
+    {"cmd": "line", "str": "on regenerating"},
+    {"cmd": "cont", "str": "fossils."},
+    {"cmd": "done"}
+   ]
+  },
+  "_MtMoonB2FSuperNerdThenThisIsMineText": {
+   "kind": "text",
+   "src": "text/MtMoonB2F.asm:54",
+   "commands": [
+    {"cmd": "text", "str": "All right. Then"},
+    {"cmd": "line", "str": "this is mine!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_MtMoonB2FRocket1BattleText": {
+   "kind": "text",
+   "src": "text/MtMoonB2F.asm:59",
+   "commands": [
+    {"cmd": "text", "str": "TEAM ROCKET will"},
+    {"cmd": "line", "str": "find the fossils,"},
+    {"cmd": "cont", "str": "revive and sell"},
+    {"cmd": "cont", "str": "them for cash!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_MtMoonB2FRocket1EndBattleText": {
+   "kind": "text",
+   "src": "text/MtMoonB2F.asm:66",
+   "commands": [
+    {"cmd": "text", "str": "Urgh!"},
+    {"cmd": "line", "str": "Now I'm mad!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_MtMoonB2FRocket1AfterBattleText": {
+   "kind": "text",
+   "src": "text/MtMoonB2F.asm:71",
+   "commands": [
+    {"cmd": "text", "str": "You made me mad!"},
+    {"cmd": "line", "str": "TEAM ROCKET will"},
+    {"cmd": "cont", "str": "blacklist you!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_MtMoonB2FRocket2BattleText": {
+   "kind": "text",
+   "src": "text/MtMoonB2F.asm:77",
+   "commands": [
+    {"cmd": "text", "str": "We, TEAM ROCKET,"},
+    {"cmd": "line", "str": "are POKéMON"},
+    {"cmd": "cont", "str": "gangsters!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_MtMoonB2FRocket2EndBattleText": {
+   "kind": "text",
+   "src": "text/MtMoonB2F.asm:83",
+   "commands": [
+    {"cmd": "text", "str": "I blew"},
+    {"cmd": "line", "str": "it!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_MtMoonB2FRocket2AfterBattleText": {
+   "kind": "text",
+   "src": "text/MtMoonB2F.asm:88",
+   "commands": [
+    {"cmd": "text", "str": "Darn it all! My"},
+    {"cmd": "line", "str": "associates won't"},
+    {"cmd": "cont", "str": "stand for this!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_MtMoonB2FRocket3BattleText": {
+   "kind": "text",
+   "src": "text/MtMoonB2F.asm:94",
+   "commands": [
+    {"cmd": "text", "str": "We're pulling a"},
+    {"cmd": "line", "str": "big job here!"},
+    {"cmd": "cont", "str": "Get lost, kid!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_MtMoonB2FRocket3EndBattleText": {
+   "kind": "text",
+   "src": "text/MtMoonB2F.asm:100",
+   "commands": [
+    {"cmd": "text", "str": "So, you"},
+    {"cmd": "line", "str": "are good."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_MtMoonB2FRocket3AfterBattleText": {
+   "kind": "text",
+   "src": "text/MtMoonB2F.asm:105",
+   "commands": [
+    {"cmd": "text", "str": "If you find a"},
+    {"cmd": "line", "str": "fossil, give it"},
+    {"cmd": "cont", "str": "to me and scram!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_MtMoonB2FRocket4BattleText": {
+   "kind": "text",
+   "src": "text/MtMoonB2F.asm:111",
+   "commands": [
+    {"cmd": "text", "str": "Little kids"},
+    {"cmd": "line", "str": "should leave"},
+    {"cmd": "cont", "str": "grown-ups alone!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_MtMoonB2FRocket4EndBattleText": {
+   "kind": "text",
+   "src": "text/MtMoonB2F.asm:117",
+   "commands": [
+    {"cmd": "text", "str": "I'm"},
+    {"cmd": "line", "str": "steamed!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_MtMoonB2FRocket4AfterBattleText": {
+   "kind": "text",
+   "src": "text/MtMoonB2F.asm:122",
+   "commands": [
+    {"cmd": "text", "str": "POKéMON lived"},
+    {"cmd": "line", "str": "here long before"},
+    {"cmd": "cont", "str": "people came."},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

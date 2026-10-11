@@ -1,0 +1,51 @@
+{
+ "id": 217,
+ "const": "SAFARI_ZONE_EAST",
+ "name": "SafariZoneEast",
+ "displayName": "SAFARI ZONE",
+ "width": 15,
+ "height": 13,
+ "tileset": "FOREST",
+ "tilesetId": 3,
+ "tilesetFile": "data/tilesets/Forest.json",
+ "isOutside": false,
+ "borderBlock": 0,
+ "blocks": [72, 125, 125, 125, 5, 5, 5, 5, 5, 5, 125, 5, 5, 5, 73, 76, 124, 124, 27, 37, 1, 1, 1, 36, 27, 35, 1, 1, 1, 7, 86, 27, 27, 33, 27, 60, 61, 61, 61, 62, 37, 1, 1, 1, 7, 72, 125, 125, 125, 125, 68, 71, 69, 83, 70, 37, 37, 36, 36, 126, 127, 35, 40, 40, 34, 27, 27, 2, 44, 41, 44, 41, 25, 28, 126, 6, 40, 1, 1, 32, 80, 81, 81, 81, 82, 27, 27, 27, 33, 126, 6, 40, 1, 1, 40, 1, 1, 1, 85, 60, 61, 61, 61, 62, 2, 127, 37, 40, 40, 36, 80, 81, 81, 79, 68, 63, 67, 71, 70, 2, 76, 124, 124, 44, 27, 84, 45, 45, 45, 45, 64, 66, 44, 27, 126, 2, 2, 2, 127, 44, 60, 61, 61, 61, 61, 74, 66, 27, 27, 126, 125, 125, 125, 127, 44, 68, 71, 69, 69, 69, 71, 70, 1, 34, 126, 86, 44, 51, 76, 124, 124, 124, 124, 127, 37, 1, 1, 1, 36, 126, 124, 124, 124, 124, 124, 124, 124, 4, 4, 4, 4, 4, 4, 124, 77],
+ "connections": {},
+ "warps": [
+  {"x": 0, "y": 4, "destMap": "SAFARI_ZONE_NORTH", "destMapId": 218, "destMapName": "SafariZoneNorth", "destWarp": 7, "destWarpIndex": 6},
+  {"x": 0, "y": 5, "destMap": "SAFARI_ZONE_NORTH", "destMapId": 218, "destMapName": "SafariZoneNorth", "destWarp": 8, "destWarpIndex": 7},
+  {"x": 0, "y": 22, "destMap": "SAFARI_ZONE_CENTER", "destMapId": 220, "destMapName": "SafariZoneCenter", "destWarp": 7, "destWarpIndex": 6},
+  {"x": 0, "y": 23, "destMap": "SAFARI_ZONE_CENTER", "destMapId": 220, "destMapName": "SafariZoneCenter", "destWarp": 7, "destWarpIndex": 6},
+  {"x": 25, "y": 9, "destMap": "SAFARI_ZONE_EAST_REST_HOUSE", "destMapId": 224, "destMapName": "SafariZoneEastRestHouse", "destWarp": 1, "destWarpIndex": 0}
+ ],
+ "bgEvents": [
+  {"x": 26, "y": 10, "textId": "TEXT_SAFARIZONEEAST_REST_HOUSE_SIGN", "textIndex": 5},
+  {"x": 6, "y": 4, "textId": "TEXT_SAFARIZONEEAST_TRAINER_TIPS", "textIndex": 6},
+  {"x": 5, "y": 23, "textId": "TEXT_SAFARIZONEEAST_SIGN", "textIndex": 7}
+ ],
+ "objectEvents": [
+  {"index": 1, "const": "SAFARIZONEEAST_FULL_RESTORE", "x": 21, "y": 10, "sprite": "SPRITE_POKE_BALL", "spriteId": 61, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_SAFARIZONEEAST_FULL_RESTORE", "textIndex": 1, "item": "FULL_RESTORE", "itemId": 16, "toggleIndex": 195, "toggleConst": "TOGGLE_SAFARI_ZONE_EAST_ITEM_1", "startsHidden": false},
+  {"index": 2, "const": "SAFARIZONEEAST_MAX_RESTORE", "x": 3, "y": 7, "sprite": "SPRITE_POKE_BALL", "spriteId": 61, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_SAFARIZONEEAST_MAX_RESTORE", "textIndex": 2, "item": "MAX_POTION", "itemId": 17, "toggleIndex": 196, "toggleConst": "TOGGLE_SAFARI_ZONE_EAST_ITEM_2", "startsHidden": false},
+  {"index": 3, "const": "SAFARIZONEEAST_CARBOS", "x": 20, "y": 13, "sprite": "SPRITE_POKE_BALL", "spriteId": 61, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_SAFARIZONEEAST_CARBOS", "textIndex": 3, "item": "CARBOS", "itemId": 38, "toggleIndex": 197, "toggleConst": "TOGGLE_SAFARI_ZONE_EAST_ITEM_3", "startsHidden": false},
+  {"index": 4, "const": "SAFARIZONEEAST_TM_EGG_BOMB", "x": 15, "y": 12, "sprite": "SPRITE_POKE_BALL", "spriteId": 61, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_SAFARIZONEEAST_TM_EGG_BOMB", "textIndex": 4, "item": "TM_EGG_BOMB", "itemId": 237, "toggleIndex": 198, "toggleConst": "TOGGLE_SAFARI_ZONE_EAST_ITEM_4", "startsHidden": false}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_SAFARI_ZONE",
+ "wild": {"label": "SafariZoneEastWildMons", "file": "SafariZoneEast"},
+ "townMap": {"x": 8, "y": 12, "group": "SAFARI_ZONE_2"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/SafariZoneEast.json",
+ "textPointers": "SafariZoneEast_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/SafariZoneEast.asm",
+  "objects": "data/maps/objects/SafariZoneEast.asm",
+  "blocks": "maps/SafariZoneEast.blk",
+  "script": "scripts/SafariZoneEast.asm"
+ },
+ "lastMapCandidates": ["FUCHSIA_CITY"],
+ "palette": {"pal": "PAL_FUCHSIA", "rule": "lastMap", "viaLastMap": "FUCHSIA_CITY"}
+}

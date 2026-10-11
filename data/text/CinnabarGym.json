@@ -1,0 +1,666 @@
+{
+ "map": "CinnabarGym",
+ "const": "CINNABAR_GYM",
+ "textPointerTables": [
+  {
+   "label": "CinnabarGym_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_CINNABARGYM_BLAINE", "label": "CinnabarGymBlaineText", "kind": "asm", "handler": "asm"},
+    {"id": 2, "const": "TEXT_CINNABARGYM_SUPER_NERD1", "label": "CinnabarGymSuperNerd1", "kind": "asm", "handler": "asm"},
+    {"id": 3, "const": "TEXT_CINNABARGYM_SUPER_NERD2", "label": "CinnabarGymSuperNerd2", "kind": "asm", "handler": "asm"},
+    {"id": 4, "const": "TEXT_CINNABARGYM_SUPER_NERD3", "label": "CinnabarGymSuperNerd3", "kind": "asm", "handler": "asm"},
+    {"id": 5, "const": "TEXT_CINNABARGYM_SUPER_NERD4", "label": "CinnabarGymSuperNerd4", "kind": "asm", "handler": "asm"},
+    {"id": 6, "const": "TEXT_CINNABARGYM_SUPER_NERD5", "label": "CinnabarGymSuperNerd5", "kind": "asm", "handler": "asm"},
+    {"id": 7, "const": "TEXT_CINNABARGYM_SUPER_NERD6", "label": "CinnabarGymSuperNerd6", "kind": "asm", "handler": "asm"},
+    {"id": 8, "const": "TEXT_CINNABARGYM_SUPER_NERD7", "label": "CinnabarGymSuperNerd7", "kind": "asm", "handler": "asm"},
+    {"id": 9, "const": "TEXT_CINNABARGYM_GYM_GUIDE", "label": "CinnabarGymGymGuideText", "kind": "asm", "handler": "asm"},
+    {"id": 10, "const": "TEXT_CINNABARGYM_BLAINE_VOLCANO_BADGE_INFO", "label": "CinnabarGymBlaineVolcanoBadgeInfoText", "kind": "text", "handler": "text"},
+    {"id": 11, "const": "TEXT_CINNABARGYM_BLAINE_RECEIVED_TM38", "label": "CinnabarGymBlaineReceivedTM38Text", "kind": "text", "handler": "text"},
+    {"id": 12, "const": "TEXT_CINNABARGYM_BLAINE_TM38_NO_ROOM", "label": "CinnabarGymBlaineTM38NoRoomText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "CinnabarGymSetMapAndTiles.CityName": {
+   "kind": "string",
+   "src": "scripts/CinnabarGym.asm:27",
+   "commands": [
+    {"cmd": "str", "str": "CINNABAR ISLAND"}
+   ]
+  },
+  "CinnabarGymSetMapAndTiles.LeaderName": {
+   "kind": "string",
+   "src": "scripts/CinnabarGym.asm:30",
+   "commands": [
+    {"cmd": "str", "str": "BLAINE"}
+   ]
+  },
+  "CinnabarGymBlaineText": {
+   "kind": "asm",
+   "src": "scripts/CinnabarGym.asm:213",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["CinnabarGymBlaineText.PostBattleAdviceText", "CinnabarGymBlaineText.PreBattleText", "CinnabarGymBlaineText.ReceivedVolcanoBadgeText"]
+  },
+  "CinnabarGymBlaineText.PreBattleText": {
+   "kind": "text",
+   "src": "scripts/CinnabarGym.asm:236",
+   "commands": [
+    {"cmd": "text_far", "label": "_CinnabarGymBlainePreBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CinnabarGymBlaineText.ReceivedVolcanoBadgeText": {
+   "kind": "text",
+   "src": "scripts/CinnabarGym.asm:240",
+   "commands": [
+    {"cmd": "text_far", "label": "_CinnabarGymBlaineReceivedVolcanoBadgeText"},
+    {"cmd": "sound", "sound": "sound_get_key_item"},
+    {"cmd": "text_waitbutton"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CinnabarGymBlaineText.PostBattleAdviceText": {
+   "kind": "text",
+   "src": "scripts/CinnabarGym.asm:246",
+   "commands": [
+    {"cmd": "text_far", "label": "_CinnabarGymBlainePostBattleAdviceText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CinnabarGymBlaineVolcanoBadgeInfoText": {
+   "kind": "text",
+   "src": "scripts/CinnabarGym.asm:250",
+   "commands": [
+    {"cmd": "text_far", "label": "_CinnabarGymBlaineVolcanoBadgeInfoText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CinnabarGymBlaineReceivedTM38Text": {
+   "kind": "text",
+   "src": "scripts/CinnabarGym.asm:254",
+   "commands": [
+    {"cmd": "text_far", "label": "_CinnabarGymBlaineReceivedTM38Text"},
+    {"cmd": "sound", "sound": "sound_get_item_1"},
+    {"cmd": "text_far", "label": "_CinnabarGymBlaineTM38ExplanationText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CinnabarGymBlaineTM38NoRoomText": {
+   "kind": "text",
+   "src": "scripts/CinnabarGym.asm:260",
+   "commands": [
+    {"cmd": "text_far", "label": "_CinnabarGymBlaineTM38NoRoomText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CinnabarGymSuperNerd1": {
+   "kind": "asm",
+   "src": "scripts/CinnabarGym.asm:264",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["CinnabarGymSuperNerd1.BattleText", "CinnabarGymSuperNerd1.EndBattleText", "CinnabarGymSuperNerd1.AfterBattleText"]
+  },
+  "CinnabarGymSuperNerd1.BattleText": {
+   "kind": "text",
+   "src": "scripts/CinnabarGym.asm:280",
+   "commands": [
+    {"cmd": "text_far", "label": "_CinnabarGymSuperNerd1BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CinnabarGymSuperNerd1.EndBattleText": {
+   "kind": "text",
+   "src": "scripts/CinnabarGym.asm:284",
+   "commands": [
+    {"cmd": "text_far", "label": "_CinnabarGymSuperNerd1EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CinnabarGymSuperNerd1.AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/CinnabarGym.asm:288",
+   "commands": [
+    {"cmd": "text_far", "label": "_CinnabarGymSuperNerd1AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CinnabarGymSuperNerd2": {
+   "kind": "asm",
+   "src": "scripts/CinnabarGym.asm:292",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["CinnabarGymSuperNerd2.BattleText", "CinnabarGymSuperNerd2.EndBattleText", "CinnabarGymSuperNerd2.AfterBattleText"]
+  },
+  "CinnabarGymSuperNerd2.BattleText": {
+   "kind": "text",
+   "src": "scripts/CinnabarGym.asm:308",
+   "commands": [
+    {"cmd": "text_far", "label": "_CinnabarGymSuperNerd2BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CinnabarGymSuperNerd2.EndBattleText": {
+   "kind": "text",
+   "src": "scripts/CinnabarGym.asm:312",
+   "commands": [
+    {"cmd": "text_far", "label": "_CinnabarGymSuperNerd2EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CinnabarGymSuperNerd2.AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/CinnabarGym.asm:316",
+   "commands": [
+    {"cmd": "text_far", "label": "_CinnabarGymSuperNerd2AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CinnabarGymSuperNerd3": {
+   "kind": "asm",
+   "src": "scripts/CinnabarGym.asm:320",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["CinnabarGymSuperNerd3.BattleText", "CinnabarGymSuperNerd3.EndBattleText", "CinnabarGymSuperNerd3.AfterBattleText"]
+  },
+  "CinnabarGymSuperNerd3.BattleText": {
+   "kind": "text",
+   "src": "scripts/CinnabarGym.asm:336",
+   "commands": [
+    {"cmd": "text_far", "label": "_CinnabarGymSuperNerd3BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CinnabarGymSuperNerd3.EndBattleText": {
+   "kind": "text",
+   "src": "scripts/CinnabarGym.asm:340",
+   "commands": [
+    {"cmd": "text_far", "label": "_CinnabarGymSuperNerd3EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CinnabarGymSuperNerd3.AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/CinnabarGym.asm:344",
+   "commands": [
+    {"cmd": "text_far", "label": "_CinnabarGymSuperNerd3AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CinnabarGymSuperNerd4": {
+   "kind": "asm",
+   "src": "scripts/CinnabarGym.asm:348",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["CinnabarGymSuperNerd4.BattleText", "CinnabarGymSuperNerd4.EndBattleText", "CinnabarGymSuperNerd4.AfterBattleText"]
+  },
+  "CinnabarGymSuperNerd4.BattleText": {
+   "kind": "text",
+   "src": "scripts/CinnabarGym.asm:364",
+   "commands": [
+    {"cmd": "text_far", "label": "_CinnabarGymSuperNerd4BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CinnabarGymSuperNerd4.EndBattleText": {
+   "kind": "text",
+   "src": "scripts/CinnabarGym.asm:368",
+   "commands": [
+    {"cmd": "text_far", "label": "_CinnabarGymSuperNerd4EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CinnabarGymSuperNerd4.AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/CinnabarGym.asm:372",
+   "commands": [
+    {"cmd": "text_far", "label": "_CinnabarGymSuperNerd4AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CinnabarGymSuperNerd5": {
+   "kind": "asm",
+   "src": "scripts/CinnabarGym.asm:376",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["CinnabarGymSuperNerd5.BattleText", "CinnabarGymSuperNerd5.EndBattleText", "CinnabarGymSuperNerd5.AfterBattleText"]
+  },
+  "CinnabarGymSuperNerd5.BattleText": {
+   "kind": "text",
+   "src": "scripts/CinnabarGym.asm:392",
+   "commands": [
+    {"cmd": "text_far", "label": "_CinnabarGymSuperNerd5BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CinnabarGymSuperNerd5.EndBattleText": {
+   "kind": "text",
+   "src": "scripts/CinnabarGym.asm:396",
+   "commands": [
+    {"cmd": "text_far", "label": "_CinnabarGymSuperNerd5EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CinnabarGymSuperNerd5.AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/CinnabarGym.asm:400",
+   "commands": [
+    {"cmd": "text_far", "label": "_CinnabarGymSuperNerd5AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CinnabarGymSuperNerd6": {
+   "kind": "asm",
+   "src": "scripts/CinnabarGym.asm:404",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["CinnabarGymSuperNerd6.BattleText", "CinnabarGymSuperNerd6.EndBattleText", "CinnabarGymSuperNerd6.AfterBattleText"]
+  },
+  "CinnabarGymSuperNerd6.BattleText": {
+   "kind": "text",
+   "src": "scripts/CinnabarGym.asm:420",
+   "commands": [
+    {"cmd": "text_far", "label": "_CinnabarGymSuperNerd6BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CinnabarGymSuperNerd6.EndBattleText": {
+   "kind": "text",
+   "src": "scripts/CinnabarGym.asm:424",
+   "commands": [
+    {"cmd": "text_far", "label": "_CinnabarGymSuperNerd6EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CinnabarGymSuperNerd6.AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/CinnabarGym.asm:428",
+   "commands": [
+    {"cmd": "text_far", "label": "_CinnabarGymSuperNerd6AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CinnabarGymSuperNerd7": {
+   "kind": "asm",
+   "src": "scripts/CinnabarGym.asm:432",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["CinnabarGymSuperNerd7.BattleText", "CinnabarGymSuperNerd7.EndBattleText", "CinnabarGymSuperNerd7.AfterBattleText"]
+  },
+  "CinnabarGymSuperNerd7.BattleText": {
+   "kind": "text",
+   "src": "scripts/CinnabarGym.asm:448",
+   "commands": [
+    {"cmd": "text_far", "label": "_CinnabarGymSuperNerd7BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CinnabarGymSuperNerd7.EndBattleText": {
+   "kind": "text",
+   "src": "scripts/CinnabarGym.asm:452",
+   "commands": [
+    {"cmd": "text_far", "label": "_CinnabarGymSuperNerd7EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CinnabarGymSuperNerd7.AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/CinnabarGym.asm:456",
+   "commands": [
+    {"cmd": "text_far", "label": "_CinnabarGymSuperNerd7AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CinnabarGymGymGuideText": {
+   "kind": "asm",
+   "src": "scripts/CinnabarGym.asm:460",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["CinnabarGymGymGuideText.ChampInMakingText", "CinnabarGymGymGuideText.BeatBlaineText"]
+  },
+  "CinnabarGymGymGuideText.ChampInMakingText": {
+   "kind": "text",
+   "src": "scripts/CinnabarGym.asm:472",
+   "commands": [
+    {"cmd": "text_far", "label": "_CinnabarGymGymGuideChampInMakingText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CinnabarGymGymGuideText.BeatBlaineText": {
+   "kind": "text",
+   "src": "scripts/CinnabarGym.asm:476",
+   "commands": [
+    {"cmd": "text_far", "label": "_CinnabarGymGymGuideBeatBlaineText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_CinnabarGymBlainePreBattleText": {
+   "kind": "text",
+   "src": "text/CinnabarGym.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Hah!"},
+    {"cmd": "para", "str": "I am BLAINE! I"},
+    {"cmd": "line", "str": "am the LEADER of"},
+    {"cmd": "cont", "str": "CINNABAR GYM!"},
+    {"cmd": "para", "str": "My fiery POKéMON"},
+    {"cmd": "line", "str": "will incinerate"},
+    {"cmd": "cont", "str": "all challengers!"},
+    {"cmd": "para", "str": "Hah! You better"},
+    {"cmd": "line", "str": "have BURN HEAL!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CinnabarGymBlaineReceivedVolcanoBadgeText": {
+   "kind": "text",
+   "src": "text/CinnabarGym.asm:17",
+   "commands": [
+    {"cmd": "text", "str": "I have"},
+    {"cmd": "line", "str": "burnt out!"},
+    {"cmd": "para", "str": "You have earned"},
+    {"cmd": "line", "str": "the VOLCANOBADGE!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_CinnabarGymBlainePostBattleAdviceText": {
+   "kind": "text",
+   "src": "text/CinnabarGym.asm:25",
+   "commands": [
+    {"cmd": "text", "str": "FIRE BLAST is the"},
+    {"cmd": "line", "str": "ultimate fire"},
+    {"cmd": "cont", "str": "technique!"},
+    {"cmd": "para", "str": "Don't waste it on"},
+    {"cmd": "line", "str": "water POKéMON!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CinnabarGymBlaineVolcanoBadgeInfoText": {
+   "kind": "text",
+   "src": "text/CinnabarGym.asm:34",
+   "commands": [
+    {"cmd": "text", "str": "Hah!"},
+    {"cmd": "para", "str": "The VOLCANOBADGE"},
+    {"cmd": "line", "str": "heightens the"},
+    {"cmd": "cont", "str": "SPECIAL abilities"},
+    {"cmd": "cont", "str": "of your POKéMON!"},
+    {"cmd": "para", "str": "Here, you can"},
+    {"cmd": "line", "str": "have this too!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CinnabarGymBlaineReceivedTM38Text": {
+   "kind": "text",
+   "src": "text/CinnabarGym.asm:46",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} received"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_CinnabarGymBlaineTM38ExplanationText": {
+   "kind": "text",
+   "src": "text/CinnabarGym.asm:53",
+   "commands": [
+    {"cmd": "text", "str": ""},
+    {"cmd": "para", "str": "TM38 contains"},
+    {"cmd": "line", "str": "FIRE BLAST!"},
+    {"cmd": "para", "str": "Teach it to fire-"},
+    {"cmd": "line", "str": "type POKéMON!"},
+    {"cmd": "para", "str": "CHARMELEON or"},
+    {"cmd": "line", "str": "PONYTA would be"},
+    {"cmd": "cont", "str": "good bets!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CinnabarGymBlaineTM38NoRoomText": {
+   "kind": "text",
+   "src": "text/CinnabarGym.asm:67",
+   "commands": [
+    {"cmd": "text", "str": "Make room for my"},
+    {"cmd": "line", "str": "gift!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CinnabarGymSuperNerd1BattleText": {
+   "kind": "text",
+   "src": "text/CinnabarGym.asm:72",
+   "commands": [
+    {"cmd": "text", "str": "Do you know how"},
+    {"cmd": "line", "str": "hot POKéMON fire"},
+    {"cmd": "cont", "str": "breath can get?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CinnabarGymSuperNerd1EndBattleText": {
+   "kind": "text",
+   "src": "text/CinnabarGym.asm:78",
+   "commands": [
+    {"cmd": "text", "str": "Yow!"},
+    {"cmd": "line", "str": "Hot, hot, hot!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_CinnabarGymSuperNerd1AfterBattleText": {
+   "kind": "text",
+   "src": "text/CinnabarGym.asm:83",
+   "commands": [
+    {"cmd": "text", "str": "Fire, or to be"},
+    {"cmd": "line", "str": "more precise,"},
+    {"cmd": "cont", "str": "combustion..."},
+    {"cmd": "para", "str": "Blah, blah, blah,"},
+    {"cmd": "line", "str": "blah..."},
+    {"cmd": "done"}
+   ]
+  },
+  "_CinnabarGymSuperNerd2BattleText": {
+   "kind": "text",
+   "src": "text/CinnabarGym.asm:92",
+   "commands": [
+    {"cmd": "text", "str": "I was a thief, but"},
+    {"cmd": "line", "str": "I became straight"},
+    {"cmd": "cont", "str": "as a trainer!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CinnabarGymSuperNerd2EndBattleText": {
+   "kind": "text",
+   "src": "text/CinnabarGym.asm:98",
+   "commands": [
+    {"cmd": "text", "str": "I"},
+    {"cmd": "line", "str": "surrender!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_CinnabarGymSuperNerd2AfterBattleText": {
+   "kind": "text",
+   "src": "text/CinnabarGym.asm:103",
+   "commands": [
+    {"cmd": "text", "str": "I can't help"},
+    {"cmd": "line", "str": "stealing other"},
+    {"cmd": "cont", "str": "people's POKéMON!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CinnabarGymSuperNerd3BattleText": {
+   "kind": "text",
+   "src": "text/CinnabarGym.asm:109",
+   "commands": [
+    {"cmd": "text", "str": "You can't win!"},
+    {"cmd": "line", "str": "I have studied"},
+    {"cmd": "cont", "str": "POKéMON totally!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CinnabarGymSuperNerd3EndBattleText": {
+   "kind": "text",
+   "src": "text/CinnabarGym.asm:115",
+   "commands": [
+    {"cmd": "text", "str": "Waah!"},
+    {"cmd": "line", "str": "My studies!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_CinnabarGymSuperNerd3AfterBattleText": {
+   "kind": "text",
+   "src": "text/CinnabarGym.asm:120",
+   "commands": [
+    {"cmd": "text", "str": "My theories are"},
+    {"cmd": "line", "str": "too complicated"},
+    {"cmd": "cont", "str": "for you!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CinnabarGymSuperNerd4BattleText": {
+   "kind": "text",
+   "src": "text/CinnabarGym.asm:126",
+   "commands": [
+    {"cmd": "text", "str": "I just like using"},
+    {"cmd": "line", "str": "fire POKéMON!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CinnabarGymSuperNerd4EndBattleText": {
+   "kind": "text",
+   "src": "text/CinnabarGym.asm:131",
+   "commands": [
+    {"cmd": "text", "str": "Too hot"},
+    {"cmd": "line", "str": "to handle!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_CinnabarGymSuperNerd4AfterBattleText": {
+   "kind": "text",
+   "src": "text/CinnabarGym.asm:136",
+   "commands": [
+    {"cmd": "text", "str": "I wish there was"},
+    {"cmd": "line", "str": "a thief POKéMON!"},
+    {"cmd": "cont", "str": "I'd use that!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CinnabarGymSuperNerd5BattleText": {
+   "kind": "text",
+   "src": "text/CinnabarGym.asm:142",
+   "commands": [
+    {"cmd": "text", "str": "I know why BLAINE"},
+    {"cmd": "line", "str": "became a trainer!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CinnabarGymSuperNerd5EndBattleText": {
+   "kind": "text",
+   "src": "text/CinnabarGym.asm:147",
+   "commands": [
+    {"cmd": "text", "str": "Ow!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_CinnabarGymSuperNerd5AfterBattleText": {
+   "kind": "text",
+   "src": "text/CinnabarGym.asm:151",
+   "commands": [
+    {"cmd": "text", "str": "BLAINE was lost"},
+    {"cmd": "line", "str": "in the mountains"},
+    {"cmd": "cont", "str": "when a fiery bird"},
+    {"cmd": "cont", "str": "POKéMON appeared."},
+    {"cmd": "para", "str": "Its light enabled"},
+    {"cmd": "line", "str": "BLAINE to find"},
+    {"cmd": "cont", "str": "his way down!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CinnabarGymSuperNerd6BattleText": {
+   "kind": "text",
+   "src": "text/CinnabarGym.asm:162",
+   "commands": [
+    {"cmd": "text", "str": "I've been to many"},
+    {"cmd": "line", "str": "GYMs, but this is"},
+    {"cmd": "cont", "str": "my favorite!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CinnabarGymSuperNerd6EndBattleText": {
+   "kind": "text",
+   "src": "text/CinnabarGym.asm:168",
+   "commands": [
+    {"cmd": "text", "str": "Yowza!"},
+    {"cmd": "line", "str": "Too hot!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_CinnabarGymSuperNerd6AfterBattleText": {
+   "kind": "text",
+   "src": "text/CinnabarGym.asm:173",
+   "commands": [
+    {"cmd": "text", "str": "Us fire POKéMON"},
+    {"cmd": "line", "str": "fans like PONYTA"},
+    {"cmd": "cont", "str": "and NINETALES!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CinnabarGymSuperNerd7BattleText": {
+   "kind": "text",
+   "src": "text/CinnabarGym.asm:179",
+   "commands": [
+    {"cmd": "text", "str": "Fire is weak"},
+    {"cmd": "line", "str": "against H2O!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CinnabarGymSuperNerd7EndBattleText": {
+   "kind": "text",
+   "src": "text/CinnabarGym.asm:184",
+   "commands": [
+    {"cmd": "text", "str": "Oh!"},
+    {"cmd": "line", "str": "Snuffed out!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_CinnabarGymSuperNerd7AfterBattleText": {
+   "kind": "text",
+   "src": "text/CinnabarGym.asm:189",
+   "commands": [
+    {"cmd": "text", "str": "Water beats fire!"},
+    {"cmd": "line", "str": "But, fire melts"},
+    {"cmd": "cont", "str": "ice POKéMON!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CinnabarGymGymGuideChampInMakingText": {
+   "kind": "text",
+   "src": "text/CinnabarGym.asm:195",
+   "commands": [
+    {"cmd": "text", "str": "Yo! Champ in"},
+    {"cmd": "line", "str": "making!"},
+    {"cmd": "para", "str": "The hot-headed"},
+    {"cmd": "line", "str": "BLAINE is a fire"},
+    {"cmd": "cont", "str": "POKéMON pro!"},
+    {"cmd": "para", "str": "Douse his spirits"},
+    {"cmd": "line", "str": "with water!"},
+    {"cmd": "para", "str": "You better take"},
+    {"cmd": "line", "str": "some BURN HEALs!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CinnabarGymGymGuideBeatBlaineText": {
+   "kind": "text",
+   "src": "text/CinnabarGym.asm:210",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER}! You beat"},
+    {"cmd": "line", "str": "that fire brand!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

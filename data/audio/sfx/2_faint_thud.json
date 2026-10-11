@@ -1,0 +1,35 @@
+{
+  "name": "SFX_FAINT_THUD",
+  "title": "Faint Thud",
+  "kind": "sfx",
+  "bank": 2,
+  "id": 149,
+  "label": "SFX_Faint_Thud",
+  "channels": [
+    {
+      "channel": 5,
+      "label": "SFX_Faint_Thud_Ch5",
+      "entry": 0,
+      "bytes": 7,
+      "labels": {"SFX_Faint_Thud_Ch5": 0},
+      "commands": [
+        {"op": "square_note", "length": 15, "volume": 13, "fade": 1, "frequency": 512},
+        {"op": "pitch_sweep", "length": 0, "change": 8},
+        {"op": "sound_ret"}
+      ]
+    },
+    {
+      "channel": 8,
+      "label": "SFX_Faint_Thud_Ch8",
+      "entry": 0,
+      "bytes": 10,
+      "labels": {"SFX_Faint_Thud_Ch8": 0},
+      "commands": [
+        {"op": "noise_note", "length": 4, "volume": 15, "fade": 5, "value": 51},
+        {"op": "noise_note", "length": 8, "volume": 15, "fade": 4, "value": 34},
+        {"op": "noise_note", "length": 15, "volume": 15, "fade": 2, "value": 33},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

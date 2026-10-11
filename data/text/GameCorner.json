@@ -1,0 +1,656 @@
+{
+ "map": "GameCorner",
+ "const": "GAME_CORNER",
+ "textPointerTables": [
+  {
+   "label": "GameCorner_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_GAMECORNER_BEAUTY1", "label": "GameCornerBeauty1Text", "kind": "text", "handler": "text"},
+    {"id": 2, "const": "TEXT_GAMECORNER_CLERK1", "label": "GameCornerClerk1Text", "kind": "asm", "handler": "asm"},
+    {"id": 3, "const": "TEXT_GAMECORNER_MIDDLE_AGED_MAN1", "label": "GameCornerMiddleAgedMan1Text", "kind": "text", "handler": "text"},
+    {"id": 4, "const": "TEXT_GAMECORNER_BEAUTY2", "label": "GameCornerBeauty2Text", "kind": "text", "handler": "text"},
+    {"id": 5, "const": "TEXT_GAMECORNER_FISHING_GURU", "label": "GameCornerFishingGuruText", "kind": "asm", "handler": "asm"},
+    {"id": 6, "const": "TEXT_GAMECORNER_MIDDLE_AGED_WOMAN", "label": "GameCornerMiddleAgedWomanText", "kind": "text", "handler": "text"},
+    {"id": 7, "const": "TEXT_GAMECORNER_GYM_GUIDE", "label": "GameCornerGymGuideText", "kind": "asm", "handler": "asm"},
+    {"id": 8, "const": "TEXT_GAMECORNER_GAMBLER", "label": "GameCornerGamblerText", "kind": "text", "handler": "text"},
+    {"id": 9, "const": "TEXT_GAMECORNER_CLERK2", "label": "GameCornerClerk2Text", "kind": "asm", "handler": "asm"},
+    {"id": 10, "const": "TEXT_GAMECORNER_GENTLEMAN", "label": "GameCornerGentlemanText", "kind": "asm", "handler": "asm"},
+    {"id": 11, "const": "TEXT_GAMECORNER_ROCKET", "label": "GameCornerRocketText", "kind": "asm", "handler": "asm"},
+    {"id": 12, "const": "TEXT_GAMECORNER_POSTER", "label": "GameCornerPosterText", "kind": "asm", "handler": "asm"},
+    {"id": 13, "const": "TEXT_GAMECORNER_ROCKET_AFTER_BATTLE", "label": "GameCornerRocketAfterBattleText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "GameCornerBeauty1Text": {
+   "kind": "text",
+   "src": "scripts/GameCorner.asm:137",
+   "commands": [
+    {"cmd": "text_far", "label": "_GameCornerBeauty1Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "GameCornerClerk1Text": {
+   "kind": "asm",
+   "src": "scripts/GameCorner.asm:141",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["GameCornerClerk1Text.DoYouNeedSomeGameCoins", "GameCornerClerk1Text.CantAffordTheCoins", "GameCornerClerk1Text.ThanksHereAre50Coins", "GameCornerClerk1Text.PleaseComePlaySometime", "GameCornerClerk1Text.CoinCaseIsFull", "GameCornerClerk1Text.DontHaveCoinCase"]
+  },
+  "GameCornerClerk1Text.DoYouNeedSomeGameCoins": {
+   "kind": "text",
+   "src": "scripts/GameCorner.asm:206",
+   "commands": [
+    {"cmd": "text_far", "label": "_GameCornerClerk1DoYouNeedSomeGameCoinsText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "GameCornerClerk1Text.ThanksHereAre50Coins": {
+   "kind": "text",
+   "src": "scripts/GameCorner.asm:210",
+   "commands": [
+    {"cmd": "text_far", "label": "_GameCornerClerk1ThanksHereAre50CoinsText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "GameCornerClerk1Text.PleaseComePlaySometime": {
+   "kind": "text",
+   "src": "scripts/GameCorner.asm:214",
+   "commands": [
+    {"cmd": "text_far", "label": "_GameCornerClerk1PleaseComePlaySometimeText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "GameCornerClerk1Text.CantAffordTheCoins": {
+   "kind": "text",
+   "src": "scripts/GameCorner.asm:218",
+   "commands": [
+    {"cmd": "text_far", "label": "_GameCornerClerk1CantAffordTheCoinsText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "GameCornerClerk1Text.CoinCaseIsFull": {
+   "kind": "text",
+   "src": "scripts/GameCorner.asm:222",
+   "commands": [
+    {"cmd": "text_far", "label": "_GameCornerClerk1CoinCaseIsFullText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "GameCornerClerk1Text.DontHaveCoinCase": {
+   "kind": "text",
+   "src": "scripts/GameCorner.asm:226",
+   "commands": [
+    {"cmd": "text_far", "label": "_GameCornerClerk1DontHaveCoinCaseText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "GameCornerMiddleAgedMan1Text": {
+   "kind": "text",
+   "src": "scripts/GameCorner.asm:230",
+   "commands": [
+    {"cmd": "text_far", "label": "_GameCornerMiddleAgedMan1Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "GameCornerBeauty2Text": {
+   "kind": "text",
+   "src": "scripts/GameCorner.asm:234",
+   "commands": [
+    {"cmd": "text_far", "label": "_GameCornerBeauty2Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "GameCornerFishingGuruText": {
+   "kind": "asm",
+   "src": "scripts/GameCorner.asm:238",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["GameCornerFishingGuruText.WantToPlayText", "GameCornerFishingGuruText.Received10CoinsText", "GameCornerFishingGuruText.WinsComeAndGoText", "GameCornerFishingGuruText.DontNeedMyCoinsText", "GameCornerOopsForgotCoinCaseText"]
+  },
+  "GameCornerFishingGuruText.WantToPlayText": {
+   "kind": "text",
+   "src": "scripts/GameCorner.asm:275",
+   "commands": [
+    {"cmd": "text_far", "label": "_GameCornerFishingGuruWantToPlayText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "GameCornerFishingGuruText.Received10CoinsText": {
+   "kind": "text",
+   "src": "scripts/GameCorner.asm:279",
+   "commands": [
+    {"cmd": "text_far", "label": "_GameCornerFishingGuruReceived10CoinsText"},
+    {"cmd": "sound", "sound": "sound_get_item_1"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "GameCornerFishingGuruText.DontNeedMyCoinsText": {
+   "kind": "text",
+   "src": "scripts/GameCorner.asm:284",
+   "commands": [
+    {"cmd": "text_far", "label": "_GameCornerFishingGuruDontNeedMyCoinsText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "GameCornerFishingGuruText.WinsComeAndGoText": {
+   "kind": "text",
+   "src": "scripts/GameCorner.asm:288",
+   "commands": [
+    {"cmd": "text_far", "label": "_GameCornerFishingGuruWinsComeAndGoText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "GameCornerMiddleAgedWomanText": {
+   "kind": "text",
+   "src": "scripts/GameCorner.asm:292",
+   "commands": [
+    {"cmd": "text_far", "label": "_GameCornerMiddleAgedWomanText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "GameCornerGymGuideText": {
+   "kind": "asm",
+   "src": "scripts/GameCorner.asm:296",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["GameCornerGymGuideChampInMakingText", "GameCornerGymGuideTheyOfferRarePokemonText"]
+  },
+  "GameCornerGymGuideChampInMakingText": {
+   "kind": "text",
+   "src": "scripts/GameCorner.asm:306",
+   "commands": [
+    {"cmd": "text_far", "label": "_GameCornerGymGuideChampInMakingText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "GameCornerGymGuideTheyOfferRarePokemonText": {
+   "kind": "text",
+   "src": "scripts/GameCorner.asm:310",
+   "commands": [
+    {"cmd": "text_far", "label": "_GameCornerGymGuideTheyOfferRarePokemonText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "GameCornerGamblerText": {
+   "kind": "text",
+   "src": "scripts/GameCorner.asm:314",
+   "commands": [
+    {"cmd": "text_far", "label": "_GameCornerGamblerText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "GameCornerClerk2Text": {
+   "kind": "asm",
+   "src": "scripts/GameCorner.asm:318",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["GameCornerClerk2Text.WantSomeCoinsText", "GameCornerClerk2Text.Received20CoinsText", "GameCornerClerk2Text.INeedMoreCoinsText", "GameCornerClerk2Text.YouHaveLotsOfCoinsText", "GameCornerOopsForgotCoinCaseText"]
+  },
+  "GameCornerClerk2Text.WantSomeCoinsText": {
+   "kind": "text",
+   "src": "scripts/GameCorner.asm:353",
+   "commands": [
+    {"cmd": "text_far", "label": "_GameCornerClerk2WantSomeCoinsText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "GameCornerClerk2Text.Received20CoinsText": {
+   "kind": "text",
+   "src": "scripts/GameCorner.asm:357",
+   "commands": [
+    {"cmd": "text_far", "label": "_GameCornerClerk2Received20CoinsText"},
+    {"cmd": "sound", "sound": "sound_get_item_1"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "GameCornerClerk2Text.YouHaveLotsOfCoinsText": {
+   "kind": "text",
+   "src": "scripts/GameCorner.asm:362",
+   "commands": [
+    {"cmd": "text_far", "label": "_GameCornerClerk2YouHaveLotsOfCoinsText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "GameCornerClerk2Text.INeedMoreCoinsText": {
+   "kind": "text",
+   "src": "scripts/GameCorner.asm:366",
+   "commands": [
+    {"cmd": "text_far", "label": "_GameCornerClerk2INeedMoreCoinsText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "GameCornerGentlemanText": {
+   "kind": "asm",
+   "src": "scripts/GameCorner.asm:370",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["GameCornerGentlemanText.ThrowingMeOffText", "GameCornerGentlemanText.Received20CoinsText", "GameCornerGentlemanText.CloselyWatchTheReelsText", "GameCornerGentlemanText.YouGotYourOwnCoinsText", "GameCornerOopsForgotCoinCaseText"]
+  },
+  "GameCornerGentlemanText.ThrowingMeOffText": {
+   "kind": "text",
+   "src": "scripts/GameCorner.asm:405",
+   "commands": [
+    {"cmd": "text_far", "label": "_GameCornerGentlemanThrowingMeOffText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "GameCornerGentlemanText.Received20CoinsText": {
+   "kind": "text",
+   "src": "scripts/GameCorner.asm:409",
+   "commands": [
+    {"cmd": "text_far", "label": "_GameCornerGentlemanReceived20CoinsText"},
+    {"cmd": "sound", "sound": "sound_get_item_1"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "GameCornerGentlemanText.YouGotYourOwnCoinsText": {
+   "kind": "text",
+   "src": "scripts/GameCorner.asm:414",
+   "commands": [
+    {"cmd": "text_far", "label": "_GameCornerGentlemanYouGotYourOwnCoinsText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "GameCornerGentlemanText.CloselyWatchTheReelsText": {
+   "kind": "text",
+   "src": "scripts/GameCorner.asm:418",
+   "commands": [
+    {"cmd": "text_far", "label": "_GameCornerGentlemanCloselyWatchTheReelsText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "GameCornerRocketText": {
+   "kind": "asm",
+   "src": "scripts/GameCorner.asm:422",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["GameCornerRocketText.ImGuardingThisPosterText", "GameCornerRocketText.BattleEndText"]
+  },
+  "GameCornerRocketText.ImGuardingThisPosterText": {
+   "kind": "text",
+   "src": "scripts/GameCorner.asm:444",
+   "commands": [
+    {"cmd": "text_far", "label": "_GameCornerRocketImGuardingThisPosterText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "GameCornerRocketText.BattleEndText": {
+   "kind": "text",
+   "src": "scripts/GameCorner.asm:448",
+   "commands": [
+    {"cmd": "text_far", "label": "_GameCornerRocketBattleEndText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "GameCornerRocketAfterBattleText": {
+   "kind": "text",
+   "src": "scripts/GameCorner.asm:452",
+   "commands": [
+    {"cmd": "text_far", "label": "_GameCornerRocketAfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "GameCornerPosterText": {
+   "kind": "asm",
+   "src": "scripts/GameCorner.asm:456",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["GameCornerPosterText.SwitchBehindPosterText"]
+  },
+  "GameCornerPosterText.SwitchBehindPosterText": {
+   "kind": "text",
+   "src": "scripts/GameCorner.asm:473",
+   "commands": [
+    {"cmd": "text_far", "label": "_GameCornerPosterSwitchBehindPosterText"},
+    {"cmd": "text_asm"}
+   ]
+  },
+  "GameCornerOopsForgotCoinCaseText": {
+   "kind": "text",
+   "src": "scripts/GameCorner.asm:481",
+   "commands": [
+    {"cmd": "text_far", "label": "_GameCornerOopsForgotCoinCaseText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "GameCornerMoneyText": {
+   "kind": "string",
+   "src": "scripts/GameCorner.asm:521",
+   "commands": [
+    {"cmd": "str", "str": "MONEY"}
+   ]
+  },
+  "GameCornerCoinText": {
+   "kind": "string",
+   "src": "scripts/GameCorner.asm:524",
+   "commands": [
+    {"cmd": "str", "str": "COIN"}
+   ]
+  },
+  "GameCornerBlankText1": {
+   "kind": "string",
+   "src": "scripts/GameCorner.asm:527",
+   "commands": [
+    {"cmd": "str", "str": "       "}
+   ]
+  },
+  "GameCornerBlankText2": {
+   "kind": "string",
+   "src": "scripts/GameCorner.asm:530",
+   "commands": [
+    {"cmd": "str", "str": "       "}
+   ]
+  },
+  "_GameCornerBeauty1Text": {
+   "kind": "text",
+   "src": "text/GameCorner.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Welcome!"},
+    {"cmd": "para", "str": "You can exchange"},
+    {"cmd": "line", "str": "your coins for"},
+    {"cmd": "cont", "str": "fabulous prizes"},
+    {"cmd": "cont", "str": "next door."},
+    {"cmd": "done"}
+   ]
+  },
+  "_GameCornerClerk1DoYouNeedSomeGameCoinsText": {
+   "kind": "text",
+   "src": "text/GameCorner.asm:11",
+   "commands": [
+    {"cmd": "text", "str": "Welcome to ROCKET"},
+    {"cmd": "line", "str": "GAME CORNER!"},
+    {"cmd": "para", "str": "Do you need some"},
+    {"cmd": "line", "str": "game coins?"},
+    {"cmd": "para", "str": "It's ¥1000 for 50"},
+    {"cmd": "line", "str": "coins. Would you"},
+    {"cmd": "cont", "str": "like some?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_GameCornerClerk1ThanksHereAre50CoinsText": {
+   "kind": "text",
+   "src": "text/GameCorner.asm:23",
+   "commands": [
+    {"cmd": "text", "str": "Thanks! Here are"},
+    {"cmd": "line", "str": "your 50 coins!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_GameCornerClerk1PleaseComePlaySometimeText": {
+   "kind": "text",
+   "src": "text/GameCorner.asm:28",
+   "commands": [
+    {"cmd": "text", "str": "No? Please come"},
+    {"cmd": "line", "str": "play sometime!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_GameCornerClerk1CantAffordTheCoinsText": {
+   "kind": "text",
+   "src": "text/GameCorner.asm:33",
+   "commands": [
+    {"cmd": "text", "str": "You can't afford"},
+    {"cmd": "line", "str": "the coins!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_GameCornerClerk1CoinCaseIsFullText": {
+   "kind": "text",
+   "src": "text/GameCorner.asm:38",
+   "commands": [
+    {"cmd": "text", "str": "Oops! Your COIN"},
+    {"cmd": "line", "str": "CASE is full."},
+    {"cmd": "done"}
+   ]
+  },
+  "_GameCornerClerk1DontHaveCoinCaseText": {
+   "kind": "text",
+   "src": "text/GameCorner.asm:43",
+   "commands": [
+    {"cmd": "text", "str": "You don't have a"},
+    {"cmd": "line", "str": "COIN CASE!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_GameCornerMiddleAgedMan1Text": {
+   "kind": "text",
+   "src": "text/GameCorner.asm:48",
+   "commands": [
+    {"cmd": "text", "str": "Keep this quiet."},
+    {"cmd": "para", "str": "It's rumored that"},
+    {"cmd": "line", "str": "this place is run"},
+    {"cmd": "cont", "str": "by TEAM ROCKET."},
+    {"cmd": "done"}
+   ]
+  },
+  "_GameCornerBeauty2Text": {
+   "kind": "text",
+   "src": "text/GameCorner.asm:56",
+   "commands": [
+    {"cmd": "text", "str": "I think these"},
+    {"cmd": "line", "str": "machines have"},
+    {"cmd": "cont", "str": "different odds."},
+    {"cmd": "done"}
+   ]
+  },
+  "_GameCornerFishingGuruWantToPlayText": {
+   "kind": "text",
+   "src": "text/GameCorner.asm:62",
+   "commands": [
+    {"cmd": "text", "str": "Kid, do you want"},
+    {"cmd": "line", "str": "to play?"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_GameCornerFishingGuruReceived10CoinsText": {
+   "kind": "text",
+   "src": "text/GameCorner.asm:67",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} received"},
+    {"cmd": "line", "str": "10 coins!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_GameCornerFishingGuruDontNeedMyCoinsText": {
+   "kind": "text",
+   "src": "text/GameCorner.asm:72",
+   "commands": [
+    {"cmd": "text", "str": "You don't need my"},
+    {"cmd": "line", "str": "coins!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_GameCornerFishingGuruWinsComeAndGoText": {
+   "kind": "text",
+   "src": "text/GameCorner.asm:77",
+   "commands": [
+    {"cmd": "text", "str": "Wins seem to come"},
+    {"cmd": "line", "str": "and go."},
+    {"cmd": "done"}
+   ]
+  },
+  "_GameCornerMiddleAgedWomanText": {
+   "kind": "text",
+   "src": "text/GameCorner.asm:82",
+   "commands": [
+    {"cmd": "text", "str": "I'm having a"},
+    {"cmd": "line", "str": "wonderful time!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_GameCornerGymGuideChampInMakingText": {
+   "kind": "text",
+   "src": "text/GameCorner.asm:87",
+   "commands": [
+    {"cmd": "text", "str": "Hey!"},
+    {"cmd": "para", "str": "You have better"},
+    {"cmd": "line", "str": "things to do,"},
+    {"cmd": "cont", "str": "champ in making!"},
+    {"cmd": "para", "str": "CELADON GYM's"},
+    {"cmd": "line", "str": "LEADER is ERIKA!"},
+    {"cmd": "cont", "str": "She uses grass-"},
+    {"cmd": "cont", "str": "type POKéMON!"},
+    {"cmd": "para", "str": "She might appear"},
+    {"cmd": "line", "str": "docile, but don't"},
+    {"cmd": "cont", "str": "be fooled!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_GameCornerGymGuideTheyOfferRarePokemonText": {
+   "kind": "text",
+   "src": "text/GameCorner.asm:104",
+   "commands": [
+    {"cmd": "text", "str": "They offer rare"},
+    {"cmd": "line", "str": "POKéMON that can"},
+    {"cmd": "cont", "str": "be exchanged for"},
+    {"cmd": "cont", "str": "your coins."},
+    {"cmd": "para", "str": "But, I just can't"},
+    {"cmd": "line", "str": "seem to win!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_GameCornerGamblerText": {
+   "kind": "text",
+   "src": "text/GameCorner.asm:114",
+   "commands": [
+    {"cmd": "text", "str": "Games are scary!"},
+    {"cmd": "line", "str": "It's so easy to"},
+    {"cmd": "cont", "str": "get hooked!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_GameCornerClerk2WantSomeCoinsText": {
+   "kind": "text",
+   "src": "text/GameCorner.asm:120",
+   "commands": [
+    {"cmd": "text", "str": "What's up? Want"},
+    {"cmd": "line", "str": "some coins?"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_GameCornerClerk2Received20CoinsText": {
+   "kind": "text",
+   "src": "text/GameCorner.asm:125",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} received"},
+    {"cmd": "line", "str": "20 coins!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_GameCornerClerk2YouHaveLotsOfCoinsText": {
+   "kind": "text",
+   "src": "text/GameCorner.asm:130",
+   "commands": [
+    {"cmd": "text", "str": "You have lots of"},
+    {"cmd": "line", "str": "coins!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_GameCornerClerk2INeedMoreCoinsText": {
+   "kind": "text",
+   "src": "text/GameCorner.asm:135",
+   "commands": [
+    {"cmd": "text", "str": "Darn! I need more"},
+    {"cmd": "line", "str": "coins for the"},
+    {"cmd": "cont", "str": "POKéMON I want!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_GameCornerGentlemanThrowingMeOffText": {
+   "kind": "text",
+   "src": "text/GameCorner.asm:141",
+   "commands": [
+    {"cmd": "text", "str": "Hey, what? You're"},
+    {"cmd": "line", "str": "throwing me off!"},
+    {"cmd": "cont", "str": "Here are some"},
+    {"cmd": "cont", "str": "coins, shoo!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_GameCornerGentlemanReceived20CoinsText": {
+   "kind": "text",
+   "src": "text/GameCorner.asm:148",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} received"},
+    {"cmd": "line", "str": "20 coins!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_GameCornerGentlemanYouGotYourOwnCoinsText": {
+   "kind": "text",
+   "src": "text/GameCorner.asm:153",
+   "commands": [
+    {"cmd": "text", "str": "You've got your"},
+    {"cmd": "line", "str": "own coins!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_GameCornerGentlemanCloselyWatchTheReelsText": {
+   "kind": "text",
+   "src": "text/GameCorner.asm:158",
+   "commands": [
+    {"cmd": "text", "str": "The trick is to"},
+    {"cmd": "line", "str": "watch the reels"},
+    {"cmd": "cont", "str": "closely!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_GameCornerRocketImGuardingThisPosterText": {
+   "kind": "text",
+   "src": "text/GameCorner.asm:164",
+   "commands": [
+    {"cmd": "text", "str": "I'm guarding this"},
+    {"cmd": "line", "str": "poster!"},
+    {"cmd": "cont", "str": "Go away, or else!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_GameCornerRocketBattleEndText": {
+   "kind": "text",
+   "src": "text/GameCorner.asm:170",
+   "commands": [
+    {"cmd": "text", "str": "Dang!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_GameCornerRocketAfterBattleText": {
+   "kind": "text",
+   "src": "text/GameCorner.asm:174",
+   "commands": [
+    {"cmd": "text", "str": "Our hideout might"},
+    {"cmd": "line", "str": "be discovered! I"},
+    {"cmd": "cont", "str": "better tell BOSS!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_GameCornerPosterSwitchBehindPosterText": {
+   "kind": "text",
+   "src": "text/GameCorner.asm:180",
+   "commands": [
+    {"cmd": "text", "str": "Hey!"},
+    {"cmd": "para", "str": "A switch behind"},
+    {"cmd": "line", "str": "the poster!?"},
+    {"cmd": "cont", "str": "Let's push it!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_GameCornerOopsForgotCoinCaseText": {
+   "kind": "text",
+   "src": "text/GameCorner.asm:188",
+   "commands": [
+    {"cmd": "text", "str": "Oops! Forgot the"},
+    {"cmd": "line", "str": "COIN CASE!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

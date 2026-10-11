@@ -1,0 +1,438 @@
+{
+ "map": "Route10",
+ "const": "ROUTE_10",
+ "textPointerTables": [
+  {
+   "label": "Route10_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_ROUTE10_SUPER_NERD1", "label": "Route10SuperNerd1Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route10TrainerHeader0"},
+    {"id": 2, "const": "TEXT_ROUTE10_HIKER1", "label": "Route10Hiker1Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route10TrainerHeader1"},
+    {"id": 3, "const": "TEXT_ROUTE10_SUPER_NERD2", "label": "Route10SuperNerd2Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route10TrainerHeader2"},
+    {"id": 4, "const": "TEXT_ROUTE10_COOLTRAINER_F1", "label": "Route10CooltrainerF1Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route10TrainerHeader3"},
+    {"id": 5, "const": "TEXT_ROUTE10_HIKER2", "label": "Route10Hiker2Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route10TrainerHeader4"},
+    {"id": 6, "const": "TEXT_ROUTE10_COOLTRAINER_F2", "label": "Route10CooltrainerF2Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route10TrainerHeader5"},
+    {"id": 7, "const": "TEXT_ROUTE10_ROCKTUNNEL_NORTH_SIGN", "label": "Route10RockTunnelSignText", "kind": "text", "handler": "text"},
+    {"id": 8, "const": "TEXT_ROUTE10_POKECENTER_SIGN", "label": "PokeCenterSignText", "kind": "text", "handler": "text"},
+    {"id": 9, "const": "TEXT_ROUTE10_ROCKTUNNEL_SOUTH_SIGN", "label": "Route10RockTunnelSignText", "kind": "text", "handler": "text"},
+    {"id": 10, "const": "TEXT_ROUTE10_POWERPLANT_SIGN", "label": "Route10PowerPlantSignText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "_PokeCenterSignText": {
+   "kind": "text",
+   "src": "data/text/text_1.asm:56",
+   "commands": [
+    {"cmd": "text", "str": "Heal Your POKéMON!"},
+    {"cmd": "line", "str": "POKéMON CENTER"},
+    {"cmd": "done"}
+   ]
+  },
+  "PokeCenterSignText": {
+   "kind": "text",
+   "src": "home/overworld_text.asm:25",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokeCenterSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route10SuperNerd1Text": {
+   "kind": "asm",
+   "src": "scripts/Route10.asm:46",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route10TrainerHeader0"
+  },
+  "Route10SuperNerd1BattleText": {
+   "kind": "text",
+   "src": "scripts/Route10.asm:52",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route10SuperNerd1BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route10SuperNerd1EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route10.asm:56",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route10SuperNerd1EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route10SuperNerd1AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route10.asm:60",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route10SuperNerd1AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route10Hiker1Text": {
+   "kind": "asm",
+   "src": "scripts/Route10.asm:64",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route10TrainerHeader1"
+  },
+  "Route10Hiker1BattleText": {
+   "kind": "text",
+   "src": "scripts/Route10.asm:70",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route10Hiker1BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route10Hiker1EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route10.asm:74",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route10Hiker1EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route10Hiker1AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route10.asm:78",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route10Hiker1AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route10SuperNerd2Text": {
+   "kind": "asm",
+   "src": "scripts/Route10.asm:82",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route10TrainerHeader2"
+  },
+  "Route10SuperNerd2BattleText": {
+   "kind": "text",
+   "src": "scripts/Route10.asm:88",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route10SuperNerd2BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route10SuperNerd2EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route10.asm:92",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route10SuperNerd2EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route10SuperNerd2AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route10.asm:96",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route10SuperNerd2AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route10CooltrainerF1Text": {
+   "kind": "asm",
+   "src": "scripts/Route10.asm:100",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route10TrainerHeader3"
+  },
+  "Route10CooltrainerF1BattleText": {
+   "kind": "text",
+   "src": "scripts/Route10.asm:106",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route10CooltrainerF1BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route10CooltrainerF1EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route10.asm:110",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route10CooltrainerF1EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route10CooltrainerF1AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route10.asm:114",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route10CooltrainerF1AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route10Hiker2Text": {
+   "kind": "asm",
+   "src": "scripts/Route10.asm:118",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route10TrainerHeader4"
+  },
+  "Route10Hiker2BattleText": {
+   "kind": "text",
+   "src": "scripts/Route10.asm:124",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route10Hiker2BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route10Hiker2EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route10.asm:128",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route10Hiker2EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route10Hiker2AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route10.asm:132",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route10Hiker2AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route10CooltrainerF2Text": {
+   "kind": "asm",
+   "src": "scripts/Route10.asm:136",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route10TrainerHeader5"
+  },
+  "Route10CooltrainerF2BattleText": {
+   "kind": "text",
+   "src": "scripts/Route10.asm:142",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route10CooltrainerF2BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route10CooltrainerF2EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route10.asm:146",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route10CooltrainerF2EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route10CooltrainerF2AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route10.asm:150",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route10CooltrainerF2AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route10RockTunnelSignText": {
+   "kind": "text",
+   "src": "scripts/Route10.asm:154",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route10RockTunnelSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route10PowerPlantSignText": {
+   "kind": "text",
+   "src": "scripts/Route10.asm:158",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route10PowerPlantSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_Route10SuperNerd1BattleText": {
+   "kind": "text",
+   "src": "text/Route10.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Wow, are you a"},
+    {"cmd": "line", "str": "POKéMANIAC too?"},
+    {"cmd": "cont", "str": "Want to see my"},
+    {"cmd": "cont", "str": "collection?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route10SuperNerd1EndBattleText": {
+   "kind": "text",
+   "src": "text/Route10.asm:9",
+   "commands": [
+    {"cmd": "text", "str": "Humph."},
+    {"cmd": "line", "str": "I'm not angry!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route10SuperNerd1AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route10.asm:14",
+   "commands": [
+    {"cmd": "text", "str": "I have more rare"},
+    {"cmd": "line", "str": "POKéMON at home!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route10Hiker1BattleText": {
+   "kind": "text",
+   "src": "text/Route10.asm:19",
+   "commands": [
+    {"cmd": "text", "str": "Ha-hahah-ah-ha!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route10Hiker1EndBattleText": {
+   "kind": "text",
+   "src": "text/Route10.asm:23",
+   "commands": [
+    {"cmd": "text", "str": "Ha-haha!"},
+    {"cmd": "line", "str": "Not laughing!"},
+    {"cmd": "cont", "str": "Ha-hay fever!"},
+    {"cmd": "cont", "str": "Haha-ha-choo!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route10Hiker1AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route10.asm:30",
+   "commands": [
+    {"cmd": "text", "str": "Haha-ha-choo!"},
+    {"cmd": "line", "str": "Ha-choo!"},
+    {"cmd": "cont", "str": "Snort! Snivel!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route10SuperNerd2BattleText": {
+   "kind": "text",
+   "src": "text/Route10.asm:36",
+   "commands": [
+    {"cmd": "text", "str": "Hi kid, want to"},
+    {"cmd": "line", "str": "see my POKéMON?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route10SuperNerd2EndBattleText": {
+   "kind": "text",
+   "src": "text/Route10.asm:41",
+   "commands": [
+    {"cmd": "text", "str": "Oh no!"},
+    {"cmd": "line", "str": "My POKéMON!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route10SuperNerd2AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route10.asm:46",
+   "commands": [
+    {"cmd": "text", "str": "I don't like you"},
+    {"cmd": "line", "str": "for beating me!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route10CooltrainerF1BattleText": {
+   "kind": "text",
+   "src": "text/Route10.asm:51",
+   "commands": [
+    {"cmd": "text", "str": "I've been to a"},
+    {"cmd": "line", "str": "POKéMON GYM a few"},
+    {"cmd": "cont", "str": "times. But, I"},
+    {"cmd": "cont", "str": "lost each time."},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route10CooltrainerF1EndBattleText": {
+   "kind": "text",
+   "src": "text/Route10.asm:58",
+   "commands": [
+    {"cmd": "text", "str": "Ohh!"},
+    {"cmd": "line", "str": "Blew it again!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route10CooltrainerF1AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route10.asm:63",
+   "commands": [
+    {"cmd": "text", "str": "I noticed some"},
+    {"cmd": "line", "str": "POKéMANIACs"},
+    {"cmd": "cont", "str": "prowling around."},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route10Hiker2BattleText": {
+   "kind": "text",
+   "src": "text/Route10.asm:69",
+   "commands": [
+    {"cmd": "text", "str": "Ah! This mountain"},
+    {"cmd": "line", "str": "air is delicious!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route10Hiker2EndBattleText": {
+   "kind": "text",
+   "src": "text/Route10.asm:74",
+   "commands": [
+    {"cmd": "text", "str": "That"},
+    {"cmd": "line", "str": "cleared my head!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route10Hiker2AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route10.asm:79",
+   "commands": [
+    {"cmd": "text", "str": "I feel bloated on"},
+    {"cmd": "line", "str": "mountain air!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route10CooltrainerF2BattleText": {
+   "kind": "text",
+   "src": "text/Route10.asm:84",
+   "commands": [
+    {"cmd": "text", "str": "I'm feeling a bit"},
+    {"cmd": "line", "str": "faint from this"},
+    {"cmd": "cont", "str": "tough hike."},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route10CooltrainerF2EndBattleText": {
+   "kind": "text",
+   "src": "text/Route10.asm:90",
+   "commands": [
+    {"cmd": "text", "str": "I'm"},
+    {"cmd": "line", "str": "not up to it!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route10CooltrainerF2AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route10.asm:95",
+   "commands": [
+    {"cmd": "text", "str": "The POKéMON here"},
+    {"cmd": "line", "str": "are so chunky!"},
+    {"cmd": "cont", "str": "There should be a"},
+    {"cmd": "cont", "str": "pink one with a"},
+    {"cmd": "cont", "str": "floral pattern!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route10RockTunnelSignText": {
+   "kind": "text",
+   "src": "text/Route10.asm:103",
+   "commands": [
+    {"cmd": "text", "str": "ROCK TUNNEL"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route10PowerPlantSignText": {
+   "kind": "text",
+   "src": "text/Route10.asm:107",
+   "commands": [
+    {"cmd": "text", "str": "POWER PLANT"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

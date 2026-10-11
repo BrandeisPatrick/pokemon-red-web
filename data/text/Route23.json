@@ -1,0 +1,200 @@
+{
+ "map": "Route23",
+ "const": "ROUTE_23",
+ "textPointerTables": [
+  {
+   "label": "Route23_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_ROUTE23_GUARD1", "label": "Route23Guard1Text", "kind": "asm", "handler": "asm"},
+    {"id": 2, "const": "TEXT_ROUTE23_GUARD2", "label": "Route23Guard2Text", "kind": "asm", "handler": "asm"},
+    {"id": 3, "const": "TEXT_ROUTE23_SWIMMER1", "label": "Route23Swimmer1Text", "kind": "asm", "handler": "asm"},
+    {"id": 4, "const": "TEXT_ROUTE23_SWIMMER2", "label": "Route23Swimmer2Text", "kind": "asm", "handler": "asm"},
+    {"id": 5, "const": "TEXT_ROUTE23_GUARD3", "label": "Route23Guard3Text", "kind": "asm", "handler": "asm"},
+    {"id": 6, "const": "TEXT_ROUTE23_GUARD4", "label": "Route23Guard4Text", "kind": "asm", "handler": "asm"},
+    {"id": 7, "const": "TEXT_ROUTE23_GUARD5", "label": "Route23Guard5Text", "kind": "asm", "handler": "asm"},
+    {"id": 8, "const": "TEXT_ROUTE23_VICTORY_ROAD_GATE_SIGN", "label": "Route23VictoryRoadGateSignText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "EarthBadgeText": {
+   "kind": "string",
+   "src": "scripts/Route23.asm:103",
+   "commands": [
+    {"cmd": "str", "str": "EARTHBADGE"}
+   ]
+  },
+  "VolcanoBadgeText": {
+   "kind": "string",
+   "src": "scripts/Route23.asm:106",
+   "commands": [
+    {"cmd": "str", "str": "VOLCANOBADGE"}
+   ]
+  },
+  "MarshBadgeText": {
+   "kind": "string",
+   "src": "scripts/Route23.asm:109",
+   "commands": [
+    {"cmd": "str", "str": "MARSHBADGE"}
+   ]
+  },
+  "SoulBadgeText": {
+   "kind": "string",
+   "src": "scripts/Route23.asm:112",
+   "commands": [
+    {"cmd": "str", "str": "SOULBADGE"}
+   ]
+  },
+  "RainbowBadgeText": {
+   "kind": "string",
+   "src": "scripts/Route23.asm:115",
+   "commands": [
+    {"cmd": "str", "str": "RAINBOWBADGE"}
+   ]
+  },
+  "ThunderBadgeText": {
+   "kind": "string",
+   "src": "scripts/Route23.asm:118",
+   "commands": [
+    {"cmd": "str", "str": "THUNDERBADGE"}
+   ]
+  },
+  "CascadeBadgeText": {
+   "kind": "string",
+   "src": "scripts/Route23.asm:121",
+   "commands": [
+    {"cmd": "str", "str": "CASCADEBADGE"}
+   ]
+  },
+  "Route23Guard1Text": {
+   "kind": "asm",
+   "src": "scripts/Route23.asm:154",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "Route23Guard2Text": {
+   "kind": "asm",
+   "src": "scripts/Route23.asm:160",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "Route23Swimmer1Text": {
+   "kind": "asm",
+   "src": "scripts/Route23.asm:166",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "Route23Swimmer2Text": {
+   "kind": "asm",
+   "src": "scripts/Route23.asm:172",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "Route23Guard3Text": {
+   "kind": "asm",
+   "src": "scripts/Route23.asm:178",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "Route23Guard4Text": {
+   "kind": "asm",
+   "src": "scripts/Route23.asm:184",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "Route23Guard5Text": {
+   "kind": "asm",
+   "src": "scripts/Route23.asm:190",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "Route23YouDontHaveTheBadgeYetText": {
+   "kind": "text",
+   "src": "scripts/Route23.asm:230",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route23YouDontHaveTheBadgeYetText"},
+    {"cmd": "text_asm"}
+   ]
+  },
+  "Route23OhThatIsTheBadgeText": {
+   "kind": "text",
+   "src": "scripts/Route23.asm:238",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route23OhThatIsTheBadgeText"},
+    {"cmd": "sound", "sound": "sound_get_item_1"},
+    {"cmd": "text_far", "label": "_Route23GoRightAheadText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route23VictoryRoadGateSignText": {
+   "kind": "text",
+   "src": "scripts/Route23.asm:244",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route23VictoryRoadGateSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_Route23YouDontHaveTheBadgeYetText": {
+   "kind": "text",
+   "src": "text/Route23.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "You can pass here"},
+    {"cmd": "line", "str": "only if you have"},
+    {"cmd": "cont", "str": "the "},
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "para", "str": "You don't have the"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": " yet!"},
+    {"cmd": "para", "str": "You have to have"},
+    {"cmd": "line", "str": "it to get to"},
+    {"cmd": "cont", "str": "POKéMON LEAGUE!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_Route23OhThatIsTheBadgeText": {
+   "kind": "text",
+   "src": "text/Route23.asm:19",
+   "commands": [
+    {"cmd": "text", "str": "You can pass here"},
+    {"cmd": "line", "str": "only if you have"},
+    {"cmd": "cont", "str": "the "},
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "para", "str": "Oh! That is the"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_Route23GoRightAheadText": {
+   "kind": "text",
+   "src": "text/Route23.asm:32",
+   "commands": [
+    {"cmd": "text", "str": ""},
+    {"cmd": "para", "str": "OK then! Please,"},
+    {"cmd": "line", "str": "go right ahead!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route23VictoryRoadGateSignText": {
+   "kind": "text",
+   "src": "text/Route23.asm:39",
+   "commands": [
+    {"cmd": "text", "str": "VICTORY ROAD GATE"},
+    {"cmd": "line", "str": "- POKéMON LEAGUE"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

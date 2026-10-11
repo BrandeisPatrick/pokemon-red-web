@@ -1,0 +1,104 @@
+{
+ "map": "Route5Gate",
+ "const": "ROUTE_5_GATE",
+ "textPointerTables": [
+  {
+   "label": "Route5Gate_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_ROUTE5GATE_GUARD", "label": "SaffronGateGuardText", "kind": "asm", "handler": "asm"},
+    {"id": 2, "const": "TEXT_ROUTE5GATE_GUARD_GEE_IM_THIRSTY", "label": "SaffronGateGuardGeeImThirstyText", "kind": "text", "handler": "text"},
+    {"id": 3, "const": "TEXT_ROUTE5GATE_GUARD_GIVE_DRINK", "label": "SaffronGateGuardGiveDrinkText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "SaffronGateGuardText": {
+   "kind": "asm",
+   "src": "scripts/Route5Gate.asm:71",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["SaffronGateGuardGeeImThirstyText", "SaffronGateGuardGiveDrinkText", "SaffronGateGuardThanksForTheDrinkText"]
+  },
+  "SaffronGateGuardGeeImThirstyText": {
+   "kind": "text",
+   "src": "scripts/Route5Gate.asm:99",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronGateGuardGeeImThirstyText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronGateGuardGiveDrinkText": {
+   "kind": "text",
+   "src": "scripts/Route5Gate.asm:103",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronGateGuardImParchedText"},
+    {"cmd": "sound", "sound": "sound_get_key_item"},
+    {"cmd": "text_far", "label": "_SaffronGateGuardYouCanGoOnThroughText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SaffronGateGuardThanksForTheDrinkText": {
+   "kind": "text",
+   "src": "scripts/Route5Gate.asm:109",
+   "commands": [
+    {"cmd": "text_far", "label": "_SaffronGateGuardThanksForTheDrinkText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_SaffronGateGuardGeeImThirstyText": {
+   "kind": "text",
+   "src": "text/SaffronGates.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "I'm on guard duty."},
+    {"cmd": "line", "str": "Gee, I'm thirsty,"},
+    {"cmd": "cont", "str": "though!"},
+    {"cmd": "para", "str": "Oh wait there,"},
+    {"cmd": "line", "str": "the road's closed."},
+    {"cmd": "done"}
+   ]
+  },
+  "_SaffronGateGuardImParchedText": {
+   "kind": "text",
+   "src": "text/SaffronGates.asm:11",
+   "commands": [
+    {"cmd": "text", "str": "Whoa, boy!"},
+    {"cmd": "line", "str": "I'm parched!"},
+    {"cmd": "cont", "str": "..."},
+    {"cmd": "cont", "str": "Huh? I can have"},
+    {"cmd": "cont", "str": "this drink?"},
+    {"cmd": "cont", "str": "Gee, thanks!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_SaffronGateGuardYouCanGoOnThroughText": {
+   "kind": "text",
+   "src": "text/SaffronGates.asm:20",
+   "commands": [
+    {"cmd": "text", "str": ""},
+    {"cmd": "para", "str": "..."},
+    {"cmd": "line", "str": "Glug glug..."},
+    {"cmd": "cont", "str": "..."},
+    {"cmd": "cont", "str": "Gulp..."},
+    {"cmd": "cont", "str": "If you want to go"},
+    {"cmd": "cont", "str": "to SAFFRON CITY..."},
+    {"cmd": "cont", "str": "..."},
+    {"cmd": "cont", "str": "You can go on"},
+    {"cmd": "cont", "str": "through. I'll"},
+    {"cmd": "cont", "str": "share this with"},
+    {"cmd": "cont", "str": "the other guards!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SaffronGateGuardThanksForTheDrinkText": {
+   "kind": "text",
+   "src": "text/SaffronGates.asm:36",
+   "commands": [
+    {"cmd": "text", "str": "Hi, thanks for"},
+    {"cmd": "line", "str": "the cool drinks!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

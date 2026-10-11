@@ -1,0 +1,21 @@
+{
+  "name": "SFX_NOISE_INSTRUMENT06",
+  "title": "Noise Instrument 06",
+  "kind": "sfx",
+  "bank": 3,
+  "id": 6,
+  "label": "SFX_Noise_Instrument06_3",
+  "channels": [
+    {
+      "channel": 8,
+      "label": "SFX_Noise_Instrument06_3_Ch8",
+      "entry": 0,
+      "bytes": 4,
+      "labels": {"SFX_Noise_Instrument06_3_Ch8": 0},
+      "commands": [
+        {"op": "noise_note", "length": 0, "volume": 5, "fade": 1, "value": 42},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

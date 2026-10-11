@@ -1,0 +1,70 @@
+{
+ "map": "RockTunnelPokecenter",
+ "const": "ROCK_TUNNEL_POKECENTER",
+ "textPointerTables": [
+  {
+   "label": "RockTunnelPokecenter_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_ROCKTUNNELPOKECENTER_NURSE", "label": "RockTunnelPokecenterNurseText", "kind": "script", "handler": "script_pokecenter_nurse"},
+    {"id": 2, "const": "TEXT_ROCKTUNNELPOKECENTER_GENTLEMAN", "label": "RockTunnelPokecenterGentlemanText", "kind": "text", "handler": "text"},
+    {"id": 3, "const": "TEXT_ROCKTUNNELPOKECENTER_FISHER", "label": "RockTunnelPokecenterFisherText", "kind": "text", "handler": "text"},
+    {"id": 4, "const": "TEXT_ROCKTUNNELPOKECENTER_LINK_RECEPTIONIST", "label": "RockTunnelPokecenterLinkReceptionistText", "kind": "script", "handler": "script_cable_club_receptionist"}
+   ]
+  }
+ ],
+ "texts": {
+  "RockTunnelPokecenterNurseText": {
+   "kind": "script",
+   "src": "scripts/RockTunnelPokecenter.asm:13",
+   "commands": [
+    {"cmd": "script", "script": "script_pokecenter_nurse"}
+   ]
+  },
+  "RockTunnelPokecenterGentlemanText": {
+   "kind": "text",
+   "src": "scripts/RockTunnelPokecenter.asm:16",
+   "commands": [
+    {"cmd": "text_far", "label": "_RockTunnelPokecenterGentlemanText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "RockTunnelPokecenterFisherText": {
+   "kind": "text",
+   "src": "scripts/RockTunnelPokecenter.asm:20",
+   "commands": [
+    {"cmd": "text_far", "label": "_RockTunnelPokecenterFisherText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "RockTunnelPokecenterLinkReceptionistText": {
+   "kind": "script",
+   "src": "scripts/RockTunnelPokecenter.asm:24",
+   "commands": [
+    {"cmd": "script", "script": "script_cable_club_receptionist"}
+   ]
+  },
+  "_RockTunnelPokecenterGentlemanText": {
+   "kind": "text",
+   "src": "text/RockTunnelPokecenter.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "The element types"},
+    {"cmd": "line", "str": "of POKéMON make"},
+    {"cmd": "cont", "str": "them stronger"},
+    {"cmd": "cont", "str": "than some types"},
+    {"cmd": "cont", "str": "and weaker than"},
+    {"cmd": "cont", "str": "others!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_RockTunnelPokecenterFisherText": {
+   "kind": "text",
+   "src": "text/RockTunnelPokecenter.asm:11",
+   "commands": [
+    {"cmd": "text", "str": "I sold a useless"},
+    {"cmd": "line", "str": "NUGGET for ¥5000!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

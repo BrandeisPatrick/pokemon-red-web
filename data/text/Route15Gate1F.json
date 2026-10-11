@@ -1,0 +1,34 @@
+{
+ "map": "Route15Gate1F",
+ "const": "ROUTE_15_GATE_1F",
+ "textPointerTables": [
+  {
+   "label": "Route15Gate1F_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_ROUTE15GATE1F_GUARD", "label": "Route15Gate1FGuardText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "Route15Gate1FGuardText": {
+   "kind": "text",
+   "src": "scripts/Route15Gate1F.asm:9",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route15Gate1FGuardText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_Route15Gate1FGuardText": {
+   "kind": "text",
+   "src": "text/Route15Gate1F.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Are you working"},
+    {"cmd": "line", "str": "on a POKéDEX?"},
+    {"cmd": "para", "str": "PROF.OAK's AIDE"},
+    {"cmd": "line", "str": "came by here."},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

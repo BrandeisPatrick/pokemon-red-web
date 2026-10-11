@@ -1,0 +1,168 @@
+{
+ "map": "SSAnneCaptainsRoom",
+ "const": "SS_ANNE_CAPTAINS_ROOM",
+ "textPointerTables": [
+  {
+   "label": "SSAnneCaptainsRoom_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_SSANNECAPTAINSROOM_CAPTAIN", "label": "SSAnneCaptainsRoomCaptainText", "kind": "asm", "handler": "asm"},
+    {"id": 2, "const": "TEXT_SSANNECAPTAINSROOM_TRASH", "label": "SSAnneCaptainsRoomTrashText", "kind": "text", "handler": "text"},
+    {"id": 3, "const": "TEXT_SSANNECAPTAINSROOM_SEASICK_BOOK", "label": "SSAnneCaptainsRoomSeasickBookText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "SSAnneCaptainsRoomCaptainText": {
+   "kind": "asm",
+   "src": "scripts/SSAnneCaptainsRoom.asm:19",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["SSAnneCaptainsRoomRubCaptainsBackText", "SSAnneCaptainsRoomCaptainIFeelMuchBetterText", "SSAnneCaptainsRoomCaptainReceivedHM01Text", "SSAnneCaptainsRoomCaptainHM01NoRoomText", "SSAnneCaptainsRoomCaptainNotSickAnymoreText"]
+  },
+  "SSAnneCaptainsRoomRubCaptainsBackText": {
+   "kind": "text",
+   "src": "scripts/SSAnneCaptainsRoom.asm:46",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnneCaptainsRoomRubCaptainsBackText"},
+    {"cmd": "text_asm"}
+   ]
+  },
+  "SSAnneCaptainsRoomCaptainIFeelMuchBetterText": {
+   "kind": "text",
+   "src": "scripts/SSAnneCaptainsRoom.asm:72",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnneCaptainsRoomCaptainIFeelMuchBetterText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnneCaptainsRoomCaptainReceivedHM01Text": {
+   "kind": "text",
+   "src": "scripts/SSAnneCaptainsRoom.asm:76",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnneCaptainsRoomCaptainReceivedHM01Text"},
+    {"cmd": "sound", "sound": "sound_get_key_item"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnneCaptainsRoomCaptainNotSickAnymoreText": {
+   "kind": "text",
+   "src": "scripts/SSAnneCaptainsRoom.asm:81",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnneCaptainsRoomCaptainNotSickAnymoreText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnneCaptainsRoomCaptainHM01NoRoomText": {
+   "kind": "text",
+   "src": "scripts/SSAnneCaptainsRoom.asm:85",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnneCaptainsRoomCaptainHM01NoRoomText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnneCaptainsRoomTrashText": {
+   "kind": "text",
+   "src": "scripts/SSAnneCaptainsRoom.asm:89",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnneCaptainsRoomTrashText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnneCaptainsRoomSeasickBookText": {
+   "kind": "text",
+   "src": "scripts/SSAnneCaptainsRoom.asm:93",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnneCaptainsRoomSeasickBookText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_SSAnneCaptainsRoomRubCaptainsBackText": {
+   "kind": "text",
+   "src": "text/SSAnneCaptainsRoom.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "CAPTAIN: Ooargh..."},
+    {"cmd": "line", "str": "I feel hideous..."},
+    {"cmd": "cont", "str": "Urrp! Seasick..."},
+    {"cmd": "para", "str": "{PLAYER} rubbed"},
+    {"cmd": "line", "str": "the CAPTAIN's"},
+    {"cmd": "cont", "str": "back!"},
+    {"cmd": "para", "str": "Rub-rub..."},
+    {"cmd": "line", "str": "Rub-rub..."},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_SSAnneCaptainsRoomCaptainIFeelMuchBetterText": {
+   "kind": "text",
+   "src": "text/SSAnneCaptainsRoom.asm:15",
+   "commands": [
+    {"cmd": "text", "str": "CAPTAIN: Whew!"},
+    {"cmd": "line", "str": "Thank you! I"},
+    {"cmd": "cont", "str": "feel much better!"},
+    {"cmd": "para", "str": "You want to see"},
+    {"cmd": "line", "str": "my CUT technique?"},
+    {"cmd": "para", "str": "I could show you"},
+    {"cmd": "line", "str": "if I wasn't ill..."},
+    {"cmd": "para", "str": "I know! You can"},
+    {"cmd": "line", "str": "have this!"},
+    {"cmd": "para", "str": "Teach it to your"},
+    {"cmd": "line", "str": "POKéMON and you"},
+    {"cmd": "cont", "str": "can see it CUT"},
+    {"cmd": "cont", "str": "any time!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_SSAnneCaptainsRoomCaptainReceivedHM01Text": {
+   "kind": "text",
+   "src": "text/SSAnneCaptainsRoom.asm:35",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} got"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_SSAnneCaptainsRoomCaptainNotSickAnymoreText": {
+   "kind": "text",
+   "src": "text/SSAnneCaptainsRoom.asm:42",
+   "commands": [
+    {"cmd": "text", "str": "CAPTAIN: Whew!"},
+    {"cmd": "para", "str": "Now that I'm not"},
+    {"cmd": "line", "str": "sick any more, I"},
+    {"cmd": "cont", "str": "guess it's time."},
+    {"cmd": "done"}
+   ]
+  },
+  "_SSAnneCaptainsRoomCaptainHM01NoRoomText": {
+   "kind": "text",
+   "src": "text/SSAnneCaptainsRoom.asm:50",
+   "commands": [
+    {"cmd": "text", "str": "Oh no! You have"},
+    {"cmd": "line", "str": "no room for this!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SSAnneCaptainsRoomTrashText": {
+   "kind": "text",
+   "src": "text/SSAnneCaptainsRoom.asm:55",
+   "commands": [
+    {"cmd": "text", "str": "Yuck! Shouldn't"},
+    {"cmd": "line", "str": "have looked!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SSAnneCaptainsRoomSeasickBookText": {
+   "kind": "text",
+   "src": "text/SSAnneCaptainsRoom.asm:60",
+   "commands": [
+    {"cmd": "text", "str": "How to Conquer"},
+    {"cmd": "line", "str": "Seasickness..."},
+    {"cmd": "cont", "str": "The CAPTAIN's"},
+    {"cmd": "cont", "str": "reading this!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

@@ -1,0 +1,46 @@
+{
+  "name": "SFX_SS_ANNE_HORN",
+  "title": "SS Anne Horn",
+  "kind": "sfx",
+  "bank": 3,
+  "id": 169,
+  "label": "SFX_SS_Anne_Horn_3",
+  "channels": [
+    {
+      "channel": 5,
+      "label": "SFX_SS_Anne_Horn_3_Ch5",
+      "entry": 0,
+      "bytes": 31,
+      "labels": {"SFX_SS_Anne_Horn_3_Ch5": 0},
+      "commands": [
+        {"op": "duty_cycle", "duty": 2},
+        {"op": "square_note", "length": 15, "volume": 15, "fade": 0, "frequency": 1280},
+        {"op": "square_note", "length": 4, "volume": 0, "fade": 0, "frequency": 0},
+        {"op": "square_note", "length": 15, "volume": 15, "fade": 0, "frequency": 1280},
+        {"op": "square_note", "length": 15, "volume": 15, "fade": 0, "frequency": 1280},
+        {"op": "square_note", "length": 15, "volume": 15, "fade": 0, "frequency": 1280},
+        {"op": "square_note", "length": 15, "volume": 15, "fade": 0, "frequency": 1280},
+        {"op": "square_note", "length": 15, "volume": 15, "fade": 2, "frequency": 1280},
+        {"op": "sound_ret"}
+      ]
+    },
+    {
+      "channel": 6,
+      "label": "SFX_SS_Anne_Horn_3_Ch6",
+      "entry": 0,
+      "bytes": 31,
+      "labels": {"SFX_SS_Anne_Horn_3_Ch6": 0},
+      "commands": [
+        {"op": "duty_cycle", "duty": 3},
+        {"op": "square_note", "length": 15, "volume": 15, "fade": 0, "frequency": 1154},
+        {"op": "square_note", "length": 4, "volume": 0, "fade": 0, "frequency": 0},
+        {"op": "square_note", "length": 15, "volume": 15, "fade": 0, "frequency": 1154},
+        {"op": "square_note", "length": 15, "volume": 15, "fade": 0, "frequency": 1154},
+        {"op": "square_note", "length": 15, "volume": 15, "fade": 0, "frequency": 1154},
+        {"op": "square_note", "length": 15, "volume": 15, "fade": 0, "frequency": 1154},
+        {"op": "square_note", "length": 15, "volume": 15, "fade": 2, "frequency": 1154},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

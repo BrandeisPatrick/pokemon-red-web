@@ -1,0 +1,43 @@
+{
+ "id": 180,
+ "const": "SAFFRON_MART",
+ "name": "SaffronMart",
+ "displayName": "SAFFRON CITY",
+ "width": 4,
+ "height": 4,
+ "tileset": "MART",
+ "tilesetId": 2,
+ "tilesetFile": "data/tilesets/Mart.json",
+ "isOutside": false,
+ "borderBlock": 0,
+ "blocks": [18, 19, 19, 9, 22, 15, 20, 20, 24, 25, 21, 21, 23, 26, 11, 15],
+ "connections": {},
+ "warps": [
+  {"x": 3, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 5, "destWarpIndex": 4},
+  {"x": 4, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 5, "destWarpIndex": 4}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "SAFFRONMART_CLERK", "x": 0, "y": 5, "sprite": "SPRITE_CLERK", "spriteId": 38, "movement": "STAY", "rangeOrDirection": "RIGHT", "rangeOrDirectionValue": 211, "behavior": "face_right", "textId": "TEXT_SAFFRONMART_CLERK", "textIndex": 1},
+  {"index": 2, "const": "SAFFRONMART_SUPER_NERD", "x": 4, "y": 2, "sprite": "SPRITE_SUPER_NERD", "spriteId": 12, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_SAFFRONMART_SUPER_NERD", "textIndex": 2},
+  {"index": 3, "const": "SAFFRONMART_COOLTRAINER_F", "x": 6, "y": 5, "sprite": "SPRITE_COOLTRAINER_F", "spriteId": 6, "movement": "WALK", "rangeOrDirection": "ANY_DIR", "rangeOrDirectionValue": 0, "behavior": "walk_any", "textId": "TEXT_SAFFRONMART_COOLTRAINER_F", "textIndex": 3}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_POKECENTER",
+ "wild": null,
+ "townMap": {"x": 10, "y": 5, "group": "SAFFRON_CITY"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/SaffronMart.json",
+ "textPointers": "SaffronMart_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/SaffronMart.asm",
+  "objects": "data/maps/objects/SaffronMart.asm",
+  "blocks": "maps/VermilionMart.blk",
+  "script": "scripts/SaffronMart.asm"
+ },
+ "lastMapCandidates": ["SAFFRON_CITY"],
+ "palette": {"pal": "PAL_SAFFRON", "rule": "lastMap", "viaLastMap": "SAFFRON_CITY"}
+}

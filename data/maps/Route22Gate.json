@@ -1,0 +1,43 @@
+{
+ "id": 193,
+ "const": "ROUTE_22_GATE",
+ "name": "Route22Gate",
+ "displayName": "ROUTE 22",
+ "width": 5,
+ "height": 4,
+ "tileset": "GATE",
+ "tilesetId": 12,
+ "tilesetFile": "data/tilesets/Gate.json",
+ "isOutside": false,
+ "borderBlock": 10,
+ "blocks": [3, 46, 40, 47, 3, 0, 0, 4, 0, 0, 0, 0, 4, 0, 0, 0, 44, 4, 45, 0],
+ "connections": {},
+ "warps": [
+  {"x": 4, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 1, "destWarpIndex": 0},
+  {"x": 5, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 1, "destWarpIndex": 0},
+  {"x": 4, "y": 0, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 1, "destWarpIndex": 0},
+  {"x": 5, "y": 0, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 2, "destWarpIndex": 1}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "ROUTE22GATE_GUARD", "x": 6, "y": 2, "sprite": "SPRITE_GUARD", "spriteId": 49, "movement": "STAY", "rangeOrDirection": "LEFT", "rangeOrDirectionValue": 210, "behavior": "face_left", "textId": "TEXT_ROUTE22GATE_GUARD", "textIndex": 1}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_DUNGEON2",
+ "wild": null,
+ "townMap": {"x": 0, "y": 7, "group": "ROUTE_22"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": ["ROUTE_22", "ROUTE_23"],
+ "textFile": "data/text/Route22Gate.json",
+ "textPointers": "Route22Gate_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/Route22Gate.asm",
+  "objects": "data/maps/objects/Route22Gate.asm",
+  "blocks": "maps/Route22Gate.blk",
+  "script": "scripts/Route22Gate.asm"
+ },
+ "lastMapCandidates": ["ROUTE_22", "ROUTE_23"],
+ "palette": {"pal": "PAL_ROUTE", "rule": "lastMap", "viaLastMap": "ROUTE_22"}
+}

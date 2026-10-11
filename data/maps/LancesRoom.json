@@ -1,0 +1,69 @@
+{
+ "id": 113,
+ "const": "LANCES_ROOM",
+ "name": "LancesRoom",
+ "displayName": "POKéMON LEAGUE",
+ "width": 13,
+ "height": 13,
+ "tileset": "DOJO",
+ "tilesetId": 5,
+ "tilesetFile": "data/tilesets/Dojo.json",
+ "isOutside": false,
+ "borderBlock": 3,
+ "blocks": [73, 1, 49, 50, 1, 74, 3, 3, 3, 73, 49, 50, 74, 75, 50, 5, 5, 49, 76, 3, 3, 3, 75, 5, 5, 76, 75, 50, 5, 5, 49, 76, 3, 3, 3, 75, 5, 5, 76, 75, 50, 5, 5, 49, 76, 3, 3, 3, 82, 49, 50, 111, 75, 50, 5, 5, 49, 76, 3, 3, 3, 3, 3, 3, 3, 75, 50, 5, 5, 49, 76, 3, 3, 3, 3, 3, 3, 3, 82, 86, 114, 115, 78, 111, 3, 3, 3, 3, 3, 3, 3, 3, 75, 5, 5, 76, 3, 3, 3, 73, 1, 1, 1, 74, 3, 75, 5, 5, 76, 3, 3, 3, 75, 5, 5, 5, 112, 3, 75, 5, 5, 76, 3, 3, 3, 75, 83, 70, 70, 111, 3, 75, 5, 5, 76, 3, 3, 3, 75, 76, 3, 3, 3, 3, 75, 5, 5, 85, 72, 72, 72, 91, 76, 3, 3, 3, 3, 82, 70, 70, 70, 70, 70, 70, 70, 111, 3, 3, 3],
+ "connections": {},
+ "warps": [
+  {"x": 24, "y": 16, "destMap": "AGATHAS_ROOM", "destMapId": 247, "destMapName": "AgathasRoom", "destWarp": 3, "destWarpIndex": 2},
+  {"x": 5, "y": 0, "destMap": "CHAMPIONS_ROOM", "destMapId": 120, "destMapName": "ChampionsRoom", "destWarp": 1, "destWarpIndex": 0},
+  {"x": 6, "y": 0, "destMap": "CHAMPIONS_ROOM", "destMapId": 120, "destMapName": "ChampionsRoom", "destWarp": 1, "destWarpIndex": 0}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {
+   "index": 1,
+   "const": "LANCESROOM_LANCE",
+   "x": 6,
+   "y": 1,
+   "sprite": "SPRITE_LANCE",
+   "spriteId": 30,
+   "movement": "STAY",
+   "rangeOrDirection": "DOWN",
+   "rangeOrDirectionValue": 208,
+   "behavior": "face_down",
+   "textId": "TEXT_LANCESROOM_LANCE",
+   "textIndex": 1,
+   "trainer": {
+    "trainerClass": "OPP_LANCE",
+    "trainerClassId": 47,
+    "trainerPartyIndex": 1,
+    "header": "LancesRoomTrainerHeader0",
+    "eventFlag": "EVENT_BEAT_LANCES_ROOM_TRAINER_0",
+    "eventFlagIndex": 2297,
+    "sightRange": 0,
+    "textBefore": "LancesRoomLanceBeforeBattleText",
+    "textEnd": "LancesRoomLanceEndBattleText",
+    "textAfter": "LancesRoomLanceAfterBattleText"
+   }
+  }
+ ],
+ "trainerHeaders": [
+  {"header": "LancesRoomTrainerHeader0", "list": "LancesRoomTrainerHeaders", "objectIndex": 1, "eventFlag": "EVENT_BEAT_LANCES_ROOM_TRAINER_0", "sightRange": 0, "textBefore": "LancesRoomLanceBeforeBattleText", "textEnd": "LancesRoomLanceEndBattleText", "textAfter": "LancesRoomLanceAfterBattleText", "talkObject": 1}
+ ],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_INDIGO_PLATEAU",
+ "wild": null,
+ "townMap": {"x": 0, "y": 2, "group": "POKEMON_LEAGUE"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/LancesRoom.json",
+ "textPointers": "LancesRoom_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/LancesRoom.asm",
+  "objects": "data/maps/objects/LancesRoom.asm",
+  "blocks": "maps/LancesRoom.blk",
+  "script": "scripts/LancesRoom.asm"
+ },
+ "lastMapCandidates": ["INDIGO_PLATEAU"],
+ "palette": {"pal": "PAL_INDIGO", "rule": "lastMap", "viaLastMap": "INDIGO_PLATEAU"}
+}

@@ -1,0 +1,30 @@
+{
+  "name": "SFX_WITHDRAW_DEPOSIT",
+  "title": "Withdraw Deposit",
+  "kind": "sfx",
+  "bank": 3,
+  "id": 171,
+  "label": "SFX_Withdraw_Deposit_3",
+  "channels": [
+    {
+      "channel": 5,
+      "label": "SFX_Withdraw_Deposit_3_Ch5",
+      "entry": 0,
+      "bytes": 29,
+      "labels": {"SFX_Withdraw_Deposit_3_Ch5": 0},
+      "commands": [
+        {"op": "duty_cycle", "duty": 1},
+        {"op": "pitch_sweep", "length": 3, "change": -2},
+        {"op": "square_note", "length": 4, "volume": 15, "fade": 2, "frequency": 1280},
+        {"op": "pitch_sweep", "length": 2, "change": 2},
+        {"op": "square_note", "length": 4, "volume": 14, "fade": 2, "frequency": 1280},
+        {"op": "pitch_sweep", "length": 3, "change": -2},
+        {"op": "square_note", "length": 4, "volume": 15, "fade": 2, "frequency": 1792},
+        {"op": "pitch_sweep", "length": 2, "change": 2},
+        {"op": "square_note", "length": 15, "volume": 14, "fade": 2, "frequency": 1792},
+        {"op": "pitch_sweep", "length": 0, "change": 8},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

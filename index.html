@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!-- Phones: no zoom, content under the notch (the layout reads env(safe-area-inset-*)), see docs/mobile.md -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <title>Pokémon Red in your browser</title>
+  <meta name="description" content="Pokémon Red (Game Boy, 1996) rebuilt from scratch in JavaScript. Plays in the browser, no emulator.">
+  <meta name="theme-color" content="#111111">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Pokémon Red">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="assets/icons/icon-180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/icon-192.png">
+  <script>
+    // Phone mode before first paint, so the page never flashes the desktop layout. Same rule as
+    // detectTouch() in src/mobile/layout.js: ?touch=1 forces it on, ?touch=0 off, otherwise a coarse pointer.
+    (function () {
+      var m = /[?&]touch(?:=([^&#]*))?(?:&|#|$)/.exec(location.search);
+      var on = m ? !/^(0|false|off|no)$/i.test(m[1] || '') : !!(window.matchMedia && matchMedia('(pointer: coarse)').matches);
+      if (on) document.documentElement.classList.add('touch');
+    })();
+  </script>
+  <style>
+    html, body { margin: 0; height: 100%; background: #111; overflow: hidden; }
+    body { display: flex; align-items: center; justify-content: center; }
+    #screen {
+      display: block;
+      image-rendering: pixelated;
+      image-rendering: crisp-edges;
+      outline: none;
+    }
+    .boot-error {
+      position: fixed; left: 16px; right: 16px; bottom: 16px; margin: 0; padding: 12px; z-index: 30;
+      color: #f88; background: #200; font: 13px/1.4 ui-monospace, monospace; white-space: pre-wrap;
+    }
+
+    /* ------------------------------------------------------------------------------------------
+       Phone mode (html.touch: coarse pointer or ?touch=1). Everything below is inert on desktop.
+       The numbers (canvas position, control positions and sizes) are set inline by
+       src/mobile/layout.js; this is only the look and the touch behaviour. See docs/mobile.md.
+       ------------------------------------------------------------------------------------------ */
+    html.touch {
+      height: 100vh; height: 100dvh;
+      overflow: hidden;
+      overscroll-behavior: none;            /* no rubber band / pull-to-refresh / swipe-back */
+      touch-action: none;                   /* no pan, pinch or double-tap zoom anywhere */
+      -webkit-tap-highlight-color: transparent;
+    }
+    html.touch body {
+      position: fixed; top: 0; right: 0; bottom: 0; left: 0; display: block;
+      width: 100%; height: 100vh; height: 100dvh;
+      overflow: hidden;
+      overscroll-behavior: none;
+      touch-action: none;
+      -webkit-user-select: none; user-select: none;
+      -webkit-touch-callout: none;          /* no long-press callout */
+    }
+    html.touch #screen { position: absolute; left: 0; top: 0; }   /* placed on the device-pixel grid by layout.js */
+
+    .touch-controls {
+      --tc-face: #30303a; --tc-face-hi: #40404c; --tc-edge: #15151a;
+      --tc-lit: rgba(255, 255, 255, .22); --tc-glyph: #8b8b98; --tc-glyph-on: #f4f4f8;
+      --tc-btn: #a3224b; --tc-btn-hi: #d2487a; --tc-btn-lo: #701533;
+      position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 10;
+      pointer-events: none; visibility: hidden;          /* shown once layout.js has placed the controls */
+      touch-action: none;
+      -webkit-user-select: none; user-select: none;
+      -webkit-touch-callout: none;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    .touch-controls.ready { visibility: visible; }
+    .touch-controls > * { position: absolute; box-sizing: border-box; pointer-events: auto; touch-action: none; }
+
+    /* D-pad: a plus made of two bars; the touch surface is the whole square, the arm under the thumb lights up */
+    .tc-dpad { filter: drop-shadow(0 3px 5px rgba(0, 0, 0, .6)); }
+    .tc-bar, .tc-arm { position: absolute; display: block; border-radius: calc(var(--dpad, 150px) * .075); }
+    .tc-bar { background: var(--tc-face); box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1); }
+    .tc-h { left: 0; right: 0; top: 33.333%; bottom: 33.333%; }
+    .tc-v { top: 0; bottom: 0; left: 33.333%; right: 33.333%; }
+    .tc-hub {
+      position: absolute; display: block; left: 38%; top: 38%; width: 24%; height: 24%; border-radius: 50%;
+      background: radial-gradient(circle at 50% 38%, #25252c, var(--tc-face-hi));
+      box-shadow: inset 0 1px 3px rgba(0, 0, 0, .55);
+    }
+    .tc-arm { background: transparent; transition: background-color 60ms linear; }
+    .tc-arm.tc-up { left: 33.333%; right: 33.333%; top: 0; height: 33.333%; }
+    .tc-arm.tc-down { left: 33.333%; right: 33.333%; bottom: 0; height: 33.333%; }
+    .tc-arm.tc-left { top: 33.333%; bottom: 33.333%; left: 0; width: 33.333%; }
+    .tc-arm.tc-right { top: 33.333%; bottom: 33.333%; right: 0; width: 33.333%; }
+    .tc-glyph { position: absolute; display: block; top: 27%; right: 27%; bottom: 27%; left: 27%; background: var(--tc-glyph); clip-path: polygon(50% 8%, 94% 92%, 6% 92%); }
+    .tc-right .tc-glyph { transform: rotate(90deg); }
+    .tc-down .tc-glyph { transform: rotate(180deg); }
+    .tc-left .tc-glyph { transform: rotate(270deg); }
+    .tc-dpad[data-dir="up"] .tc-up, .tc-dpad[data-dir="down"] .tc-down,
+    .tc-dpad[data-dir="left"] .tc-left, .tc-dpad[data-dir="right"] .tc-right { background: var(--tc-lit); }
+    .tc-dpad[data-dir="up"] .tc-up .tc-glyph, .tc-dpad[data-dir="down"] .tc-down .tc-glyph,
+    .tc-dpad[data-dir="left"] .tc-left .tc-glyph, .tc-dpad[data-dir="right"] .tc-right .tc-glyph { background: var(--tc-glyph-on); }
+
+    /* A / B */
+    .tc-btn {
+      display: flex; align-items: center; justify-content: center; border-radius: 50%;
+      color: rgba(255, 255, 255, .94); text-shadow: 0 1px 2px rgba(0, 0, 0, .45);
+      font: 800 calc(var(--btn, 76px) * .4)/1 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      background: radial-gradient(circle at 34% 28%, var(--tc-btn-hi), var(--tc-btn) 58%, var(--tc-btn-lo));
+      box-shadow: 0 4px 0 #4d0d23, 0 8px 10px rgba(0, 0, 0, .55), inset 0 1px 1px rgba(255, 255, 255, .38);
+      transition: transform 50ms ease-out, box-shadow 50ms ease-out, filter 50ms linear;
+    }
+    .tc-btn.on {
+      transform: translateY(3px) scale(.96); filter: brightness(.88);
+      box-shadow: 0 1px 0 #4d0d23, 0 2px 4px rgba(0, 0, 0, .5), inset 0 2px 8px rgba(0, 0, 0, .35);
+    }
+
+    /* START / SELECT */
+    .tc-pill {
+      display: flex; align-items: center; justify-content: center; border-radius: 999px;
+      color: #c6c6cf; font: 700 11px/1 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; letter-spacing: .14em;
+      background: linear-gradient(#4d4d58, #353540);
+      box-shadow: 0 2px 0 var(--tc-edge), 0 4px 6px rgba(0, 0, 0, .45), inset 0 1px 0 rgba(255, 255, 255, .14);
+      transition: transform 50ms ease-out, box-shadow 50ms ease-out, background 50ms linear;
+    }
+    .tc-pill::before { content: ""; position: absolute; top: -6px; right: -4px; bottom: -6px; left: -4px; }   /* a bigger hit area than the pill */
+    .tc-pill.on {
+      transform: translateY(2px); color: #fff; background: linear-gradient(#3c3c46, #2e2e37);
+      box-shadow: 0 0 0 var(--tc-edge), inset 0 2px 5px rgba(0, 0, 0, .4);
+    }
+
+    /* Fullscreen button (Android / desktop; not created on iOS) */
+    .tc-fs {
+      display: flex; align-items: center; justify-content: center; padding: 0; margin: 0; border: 0; border-radius: 10px;
+      -webkit-appearance: none; appearance: none; background: rgba(255, 255, 255, .09); color: rgba(255, 255, 255, .72);
+    }
+    .tc-fs svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .tc-fs .ico-exit, .tc-fs[data-fs="on"] .ico-enter { display: none; }
+    .tc-fs[data-fs="on"] .ico-exit { display: inline; }
+      /* Desktop-only controls hint under the screen; hidden on touch devices (they get the on-screen pad). */
+    .hint { position: fixed; left: 0; right: 0; bottom: 10px; margin: 0; text-align: center; color: #8a8f98; font: 12px/1.5 -apple-system, system-ui, sans-serif; pointer-events: none; }
+    .hint b { color: #c9ced6; font-weight: 600; }
+    @media (pointer: coarse) { .hint { display: none; } }
+  </style>
+</head>
+<body>
+  <canvas id="screen" width="160" height="144" aria-label="Pokémon Red game screen. Arrows or WASD move, Z or Enter is A, X or Backspace is B, Shift is START, Tab is SELECT."></canvas>
+  <noscript><p style="color:#ccc;font:14px sans-serif">This recreation of Pokémon Red needs JavaScript (ES modules) and must be served over HTTP: run <code>python3 -m http.server 8080</code> in the project folder and open http://localhost:8080/.</p></noscript>
+  <p class="hint">Pokémon Red, rebuilt from scratch in JavaScript (no emulator). <b>Arrows</b> move · <b>Z</b>/<b>Enter</b> A · <b>X</b> B · <b>Shift</b> START · <b>Tab</b> SELECT · click or press a key for sound</p>
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>

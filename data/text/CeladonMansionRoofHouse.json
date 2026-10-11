@@ -1,0 +1,45 @@
+{
+ "map": "CeladonMansionRoofHouse",
+ "const": "CELADON_MANSION_ROOF_HOUSE",
+ "textPointerTables": [
+  {
+   "label": "CeladonMansionRoofHouse_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_CELADONMANSION_ROOF_HOUSE_HIKER", "label": "CeladonMansionRoofHouseHikerText", "kind": "text", "handler": "text"},
+    {"id": 2, "const": "TEXT_CELADONMANSION_ROOF_HOUSE_EEVEE_POKEBALL", "label": "CeladonMansionRoofHouseEeveePokeballText", "kind": "asm", "handler": "asm"}
+   ]
+  }
+ ],
+ "texts": {
+  "CeladonMansionRoofHouseHikerText": {
+   "kind": "text",
+   "src": "scripts/CeladonMansionRoofHouse.asm:10",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonMansionRoofHouseHikerText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonMansionRoofHouseEeveePokeballText": {
+   "kind": "asm",
+   "src": "scripts/CeladonMansionRoofHouse.asm:14",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "_CeladonMansionRoofHouseHikerText": {
+   "kind": "text",
+   "src": "text/CeladonMansionRoofHouse.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "I know everything"},
+    {"cmd": "line", "str": "about the world"},
+    {"cmd": "cont", "str": "of POKéMON in"},
+    {"cmd": "cont", "str": "your GAME BOY!"},
+    {"cmd": "para", "str": "Get together with"},
+    {"cmd": "line", "str": "your friends and"},
+    {"cmd": "cont", "str": "trade POKéMON!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

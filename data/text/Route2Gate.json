@@ -1,0 +1,61 @@
+{
+ "map": "Route2Gate",
+ "const": "ROUTE_2_GATE",
+ "textPointerTables": [
+  {
+   "label": "Route2Gate_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_ROUTE2GATE_OAKS_AIDE", "label": "Route2GateOaksAideText", "kind": "asm", "handler": "asm"},
+    {"id": 2, "const": "TEXT_ROUTE2GATE_YOUNGSTER", "label": "Route2GateYoungsterText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "Route2GateOaksAideText": {
+   "kind": "asm",
+   "src": "scripts/Route2Gate.asm:10",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["Route2GateOaksAideText.FlashExplanationText"]
+  },
+  "Route2GateOaksAideText.FlashExplanationText": {
+   "kind": "text",
+   "src": "scripts/Route2Gate.asm:35",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route2GateOaksAideFlashExplanationText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route2GateYoungsterText": {
+   "kind": "text",
+   "src": "scripts/Route2Gate.asm:39",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route2GateYoungsterText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_Route2GateOaksAideFlashExplanationText": {
+   "kind": "text",
+   "src": "text/Route2Gate.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "The HM FLASH"},
+    {"cmd": "line", "str": "lights even the"},
+    {"cmd": "cont", "str": "darkest dungeons."},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route2GateYoungsterText": {
+   "kind": "text",
+   "src": "text/Route2Gate.asm:8",
+   "commands": [
+    {"cmd": "text", "str": "Once a POKéMON"},
+    {"cmd": "line", "str": "learns FLASH, you"},
+    {"cmd": "cont", "str": "can get through"},
+    {"cmd": "cont", "str": "ROCK TUNNEL."},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

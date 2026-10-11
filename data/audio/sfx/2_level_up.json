@@ -1,0 +1,93 @@
+{
+  "name": "SFX_LEVEL_UP",
+  "title": "Level Up",
+  "kind": "sfx",
+  "bank": 2,
+  "id": 134,
+  "label": "SFX_Level_Up",
+  "channels": [
+    {
+      "channel": 5,
+      "label": "SFX_Level_Up_Ch5",
+      "entry": 0,
+      "bytes": 27,
+      "labels": {"SFX_Level_Up_Ch5": 0},
+      "commands": [
+        {"op": "execute_music"},
+        {"op": "tempo", "tempo": 256},
+        {"op": "volume", "left": 7, "right": 7},
+        {"op": "duty_cycle", "duty": 2},
+        {"op": "toggle_perfect_pitch"},
+        {"op": "note_type", "speed": 6, "volume": 11, "fade": 4},
+        {"op": "octave", "octave": 4},
+        {"op": "note", "pitch": 5, "length": 4},
+        {"op": "note_type", "speed": 4, "volume": 11, "fade": 2},
+        {"op": "note", "pitch": 0, "length": 2},
+        {"op": "note", "pitch": 5, "length": 2},
+        {"op": "note", "pitch": 0, "length": 2},
+        {"op": "note_type", "speed": 6, "volume": 11, "fade": 3},
+        {"op": "note", "pitch": 3, "length": 2},
+        {"op": "note", "pitch": 3, "length": 2},
+        {"op": "note", "pitch": 4, "length": 2},
+        {"op": "note_type", "speed": 6, "volume": 11, "fade": 4},
+        {"op": "note", "pitch": 5, "length": 8},
+        {"op": "sound_ret"}
+      ]
+    },
+    {
+      "channel": 6,
+      "label": "SFX_Level_Up_Ch6",
+      "entry": 0,
+      "bytes": 24,
+      "labels": {"SFX_Level_Up_Ch6": 0},
+      "commands": [
+        {"op": "execute_music"},
+        {"op": "vibrato", "delay": 4, "depth": 2, "rate": 2},
+        {"op": "duty_cycle", "duty": 2},
+        {"op": "note_type", "speed": 6, "volume": 12, "fade": 4},
+        {"op": "octave", "octave": 4},
+        {"op": "note", "pitch": 9, "length": 4},
+        {"op": "note_type", "speed": 4, "volume": 12, "fade": 2},
+        {"op": "note", "pitch": 9, "length": 2},
+        {"op": "note", "pitch": 9, "length": 2},
+        {"op": "note", "pitch": 9, "length": 2},
+        {"op": "note_type", "speed": 6, "volume": 12, "fade": 4},
+        {"op": "note", "pitch": 10, "length": 2},
+        {"op": "note", "pitch": 10, "length": 2},
+        {"op": "note", "pitch": 10, "length": 2},
+        {"op": "note_type", "speed": 6, "volume": 12, "fade": 4},
+        {"op": "note", "pitch": 9, "length": 8},
+        {"op": "sound_ret"}
+      ]
+    },
+    {
+      "channel": 7,
+      "label": "SFX_Level_Up_Ch7",
+      "entry": 0,
+      "bytes": 23,
+      "labels": {"SFX_Level_Up_Ch7": 0},
+      "commands": [
+        {"op": "execute_music"},
+        {"op": "note_type", "speed": 6, "volume": 1, "wave": 0},
+        {"op": "octave", "octave": 5},
+        {"op": "note", "pitch": 9, "length": 4},
+        {"op": "note_type", "speed": 4, "volume": 1, "wave": 0},
+        {"op": "note", "pitch": 5, "length": 1},
+        {"op": "rest", "length": 1},
+        {"op": "note", "pitch": 5, "length": 1},
+        {"op": "rest", "length": 1},
+        {"op": "note", "pitch": 5, "length": 1},
+        {"op": "rest", "length": 1},
+        {"op": "note_type", "speed": 6, "volume": 1, "wave": 0},
+        {"op": "note", "pitch": 7, "length": 1},
+        {"op": "rest", "length": 1},
+        {"op": "note", "pitch": 3, "length": 1},
+        {"op": "rest", "length": 1},
+        {"op": "note", "pitch": 7, "length": 1},
+        {"op": "rest", "length": 1},
+        {"op": "note", "pitch": 9, "length": 8},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

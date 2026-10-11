@@ -1,0 +1,265 @@
+{
+ "map": "PokemonTower6F",
+ "const": "POKEMON_TOWER_6F",
+ "textPointerTables": [
+  {
+   "label": "PokemonTower6F_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_POKEMONTOWER6F_CHANNELER1", "label": "PokemonTower6FChanneler1Text", "kind": "asm", "handler": "trainer", "trainerHeader": "PokemonTower6TrainerHeader0"},
+    {"id": 2, "const": "TEXT_POKEMONTOWER6F_CHANNELER2", "label": "PokemonTower6FChanneler2Text", "kind": "asm", "handler": "trainer", "trainerHeader": "PokemonTower6TrainerHeader1"},
+    {"id": 3, "const": "TEXT_POKEMONTOWER6F_CHANNELER3", "label": "PokemonTower6FChanneler3Text", "kind": "asm", "handler": "trainer", "trainerHeader": "PokemonTower6TrainerHeader2"},
+    {"id": 4, "const": "TEXT_POKEMONTOWER6F_RARE_CANDY", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 5, "const": "TEXT_POKEMONTOWER6F_X_ACCURACY", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 6, "const": "TEXT_POKEMONTOWER6F_BEGONE", "label": "PokemonTower6FBeGoneText", "kind": "text", "handler": "text"},
+    {"id": 7, "const": "TEXT_POKEMONTOWER6F_MAROWAK_DEPARTED", "label": "PokemonTower6FMarowakDepartedText", "kind": "asm", "handler": "asm"}
+   ]
+  }
+ ],
+ "texts": {
+  "PickUpItemText": {
+   "kind": "asm",
+   "src": "home/overworld_text.asm:29",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "PokemonTower6FChanneler1Text": {
+   "kind": "asm",
+   "src": "scripts/PokemonTower6F.asm:120",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "PokemonTower6TrainerHeader0"
+  },
+  "PokemonTower6FChanneler2Text": {
+   "kind": "asm",
+   "src": "scripts/PokemonTower6F.asm:126",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "PokemonTower6TrainerHeader1"
+  },
+  "PokemonTower6FChanneler3Text": {
+   "kind": "asm",
+   "src": "scripts/PokemonTower6F.asm:132",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "PokemonTower6TrainerHeader2"
+  },
+  "PokemonTower6FMarowakDepartedText": {
+   "kind": "asm",
+   "src": "scripts/PokemonTower6F.asm:138",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["PokemonTower6FGhostWasCubonesMotherText", "PokemonTower6FSoulWasCalmedText"]
+  },
+  "PokemonTower6FGhostWasCubonesMotherText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower6F.asm:151",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower6FGhostWasCubonesMotherText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower6FSoulWasCalmedText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower6F.asm:155",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower6FSoulWasCalmedText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower6FChanneler1BattleText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower6F.asm:159",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower6FChanneler1BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower6FChanneler1EndBattleText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower6F.asm:163",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower6FChanneler1EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower6FChanneler1AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower6F.asm:167",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower6FChanneler1AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower6FChanneler2BattleText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower6F.asm:171",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower6FChanneler2BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower6FChanneler2EndBattleText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower6F.asm:175",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower6FChanneler2EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower6FChanneler2AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower6F.asm:179",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower6FChanneler2AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower6FChanneler3BattleText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower6F.asm:183",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower6FChanneler3BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower6FChanneler3EndBattleText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower6F.asm:187",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower6FChanneler3EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower6FChanneler3AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower6F.asm:191",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower6FChanneler3AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower6FBeGoneText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower6F.asm:195",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower6FBeGoneText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_PokemonTower6FGhostWasCubonesMotherText": {
+   "kind": "text",
+   "src": "text/PokemonTower6F.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "The GHOST was the"},
+    {"cmd": "line", "str": "restless soul of"},
+    {"cmd": "cont", "str": "CUBONE's mother!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonTower6FSoulWasCalmedText": {
+   "kind": "text",
+   "src": "text/PokemonTower6F.asm:8",
+   "commands": [
+    {"cmd": "text", "str": "The mother's soul"},
+    {"cmd": "line", "str": "was calmed."},
+    {"cmd": "para", "str": "It departed to"},
+    {"cmd": "line", "str": "the afterlife!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonTower6FChanneler1BattleText": {
+   "kind": "text",
+   "src": "text/PokemonTower6F.asm:16",
+   "commands": [
+    {"cmd": "text", "str": "Give...me..."},
+    {"cmd": "line", "str": "blood..."},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonTower6FChanneler1EndBattleText": {
+   "kind": "text",
+   "src": "text/PokemonTower6F.asm:21",
+   "commands": [
+    {"cmd": "text", "str": "Groan!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_PokemonTower6FChanneler1AfterBattleText": {
+   "kind": "text",
+   "src": "text/PokemonTower6F.asm:25",
+   "commands": [
+    {"cmd": "text", "str": "I feel anemic and"},
+    {"cmd": "line", "str": "weak..."},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonTower6FChanneler2BattleText": {
+   "kind": "text",
+   "src": "text/PokemonTower6F.asm:30",
+   "commands": [
+    {"cmd": "text", "str": "Urff... Kwaah!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonTower6FChanneler2EndBattleText": {
+   "kind": "text",
+   "src": "text/PokemonTower6F.asm:34",
+   "commands": [
+    {"cmd": "text", "str": "Some-"},
+    {"cmd": "line", "str": "thing fell out!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_PokemonTower6FChanneler2AfterBattleText": {
+   "kind": "text",
+   "src": "text/PokemonTower6F.asm:39",
+   "commands": [
+    {"cmd": "text", "str": "Hair didn't fall"},
+    {"cmd": "line", "str": "out! It was an"},
+    {"cmd": "cont", "str": "evil spirit!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonTower6FChanneler3BattleText": {
+   "kind": "text",
+   "src": "text/PokemonTower6F.asm:45",
+   "commands": [
+    {"cmd": "text", "str": "Ke..ke...ke..."},
+    {"cmd": "line", "str": "ke..ke...ke!!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonTower6FChanneler3EndBattleText": {
+   "kind": "text",
+   "src": "text/PokemonTower6F.asm:50",
+   "commands": [
+    {"cmd": "text", "str": "Keee!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_PokemonTower6FChanneler3AfterBattleText": {
+   "kind": "text",
+   "src": "text/PokemonTower6F.asm:54",
+   "commands": [
+    {"cmd": "text", "str": "What's going on"},
+    {"cmd": "line", "str": "here?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonTower6FBeGoneText": {
+   "kind": "text",
+   "src": "text/PokemonTower6F.asm:59",
+   "commands": [
+    {"cmd": "text", "str": "Be gone..."},
+    {"cmd": "line", "str": "Intruders..."},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

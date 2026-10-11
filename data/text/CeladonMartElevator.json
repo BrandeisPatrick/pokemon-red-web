@@ -1,0 +1,22 @@
+{
+ "map": "CeladonMartElevator",
+ "const": "CELADON_MART_ELEVATOR",
+ "textPointerTables": [
+  {
+   "label": "CeladonMartElevator_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_CELADONMARTELEVATOR", "label": "CeladonMartElevatorText", "kind": "asm", "handler": "asm"}
+   ]
+  }
+ ],
+ "texts": {
+  "CeladonMartElevatorText": {
+   "kind": "asm",
+   "src": "scripts/CeladonMartElevator.asm:69",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  }
+ }
+}

@@ -1,0 +1,52 @@
+{
+ "map": "SafariZoneCenterRestHouse",
+ "const": "SAFARI_ZONE_CENTER_REST_HOUSE",
+ "textPointerTables": [
+  {
+   "label": "SafariZoneCenterRestHouse_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_SAFARIZONECENTERRESTHOUSE_GIRL", "label": "SafariZoneCenterRestHouseGirlText", "kind": "text", "handler": "text"},
+    {"id": 2, "const": "TEXT_SAFARIZONECENTERRESTHOUSE_SCIENTIST", "label": "SafariZoneCenterRestHouseScientistText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "SafariZoneCenterRestHouseGirlText": {
+   "kind": "text",
+   "src": "scripts/SafariZoneCenterRestHouse.asm:10",
+   "commands": [
+    {"cmd": "text_far", "label": "_SafariZoneCenterRestHouseGirlText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SafariZoneCenterRestHouseScientistText": {
+   "kind": "text",
+   "src": "scripts/SafariZoneCenterRestHouse.asm:14",
+   "commands": [
+    {"cmd": "text_far", "label": "_SafariZoneCenterRestHouseScientistText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_SafariZoneCenterRestHouseGirlText": {
+   "kind": "text",
+   "src": "text/SafariZoneCenterRestHouse.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "SARA: Where did"},
+    {"cmd": "line", "str": "my boy friend,"},
+    {"cmd": "cont", "str": "ERIK, go?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SafariZoneCenterRestHouseScientistText": {
+   "kind": "text",
+   "src": "text/SafariZoneCenterRestHouse.asm:8",
+   "commands": [
+    {"cmd": "text", "str": "I'm catching"},
+    {"cmd": "line", "str": "POKéMON to take"},
+    {"cmd": "cont", "str": "home as gifts!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

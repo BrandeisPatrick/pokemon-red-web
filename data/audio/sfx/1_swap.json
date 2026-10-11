@@ -1,0 +1,35 @@
+{
+  "name": "SFX_SWAP",
+  "title": "Swap",
+  "kind": "sfx",
+  "bank": 1,
+  "id": 174,
+  "label": "SFX_Swap_1",
+  "channels": [
+    {
+      "channel": 5,
+      "label": "SFX_Swap_1_Ch5",
+      "entry": 0,
+      "bytes": 7,
+      "labels": {"SFX_Swap_1_Ch5": 0},
+      "commands": [
+        {"op": "duty_cycle", "duty": 2},
+        {"op": "square_note", "length": 8, "volume": 14, "fade": 1, "frequency": 1856},
+        {"op": "sound_ret"}
+      ]
+    },
+    {
+      "channel": 6,
+      "label": "SFX_Swap_1_Ch6",
+      "entry": 0,
+      "bytes": 11,
+      "labels": {"SFX_Swap_1_Ch6": 0},
+      "commands": [
+        {"op": "duty_cycle", "duty": 2},
+        {"op": "square_note", "length": 2, "volume": 0, "fade": 8, "frequency": 0},
+        {"op": "square_note", "length": 8, "volume": 11, "fade": 1, "frequency": 1857},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

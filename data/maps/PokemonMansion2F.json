@@ -1,0 +1,119 @@
+{
+ "id": 214,
+ "const": "POKEMON_MANSION_2F",
+ "name": "PokemonMansion2F",
+ "displayName": "<PK><MN> MANSION",
+ "width": 15,
+ "height": 14,
+ "tileset": "FACILITY",
+ "tilesetId": 22,
+ "tilesetFile": "data/tilesets/Facility.json",
+ "isOutside": false,
+ "borderBlock": 1,
+ "blocks": [104, 101, 101, 106, 66, 65, 65, 66, 65, 65, 65, 64, 97, 101, 105, 92, 6, 14, 14, 86, 14, 14, 70, 14, 71, 14, 112, 14, 7, 93, 92, 14, 14, 14, 14, 14, 14, 86, 88, 14, 87, 6, 56, 14, 70, 68, 14, 67, 67, 90, 14, 14, 14, 14, 14, 14, 49, 6, 6, 70, 80, 73, 73, 73, 74, 14, 9, 96, 99, 14, 103, 6, 65, 101, 105, 68, 119, 111, 110, 14, 14, 9, 100, 14, 14, 14, 56, 14, 14, 70, 68, 14, 14, 90, 56, 83, 73, 6, 6, 88, 14, 56, 14, 87, 81, 107, 97, 42, 93, 56, 70, 6, 6, 6, 14, 14, 6, 110, 14, 70, 68, 14, 49, 6, 6, 70, 14, 108, 1, 31, 31, 31, 31, 31, 79, 107, 97, 97, 66, 14, 70, 14, 108, 1, 1, 1, 1, 1, 1, 1, 68, 14, 14, 86, 14, 86, 14, 108, 1, 1, 1, 1, 1, 1, 1, 68, 71, 71, 14, 14, 83, 14, 108, 1, 1, 1, 1, 1, 1, 1, 68, 14, 14, 90, 14, 70, 14, 108, 1, 1, 1, 1, 1, 1, 1, 72, 73, 73, 74, 73, 74, 31, 109, 1, 1, 1, 1, 1, 1, 1],
+ "connections": {},
+ "warps": [
+  {"x": 5, "y": 10, "destMap": "POKEMON_MANSION_1F", "destMapId": 165, "destMapName": "PokemonMansion1F", "destWarp": 5, "destWarpIndex": 4},
+  {"x": 7, "y": 10, "destMap": "POKEMON_MANSION_3F", "destMapId": 215, "destMapName": "PokemonMansion3F", "destWarp": 1, "destWarpIndex": 0},
+  {"x": 25, "y": 14, "destMap": "POKEMON_MANSION_3F", "destMapId": 215, "destMapName": "PokemonMansion3F", "destWarp": 3, "destWarpIndex": 2},
+  {"x": 6, "y": 1, "destMap": "POKEMON_MANSION_3F", "destMapId": 215, "destMapName": "PokemonMansion3F", "destWarp": 2, "destWarpIndex": 1}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {
+   "index": 1,
+   "const": "POKEMONMANSION2F_SUPER_NERD",
+   "x": 3,
+   "y": 17,
+   "sprite": "SPRITE_SUPER_NERD",
+   "spriteId": 12,
+   "movement": "WALK",
+   "rangeOrDirection": "LEFT_RIGHT",
+   "rangeOrDirectionValue": 2,
+   "behavior": "walk_left_right",
+   "textId": "TEXT_POKEMONMANSION2F_SUPER_NERD",
+   "textIndex": 1,
+   "trainer": {
+    "trainerClass": "OPP_BURGLAR",
+    "trainerClassId": 11,
+    "trainerPartyIndex": 7,
+    "header": "Mansion2TrainerHeader0",
+    "eventFlag": "EVENT_BEAT_MANSION_2_TRAINER_0",
+    "eventFlagIndex": 2049,
+    "sightRange": 0,
+    "textBefore": "PokemonMansion2FSuperNerdBattleText",
+    "textEnd": "PokemonMansion2FSuperNerdEndBattleText",
+    "textAfter": "PokemonMansion2FSuperNerdAfterBattleText"
+   }
+  },
+  {
+   "index": 2,
+   "const": "POKEMONMANSION2F_CALCIUM",
+   "x": 28,
+   "y": 7,
+   "sprite": "SPRITE_POKE_BALL",
+   "spriteId": 61,
+   "movement": "STAY",
+   "rangeOrDirection": "NONE",
+   "rangeOrDirectionValue": 255,
+   "behavior": "turn_randomly",
+   "textId": "TEXT_POKEMONMANSION2F_CALCIUM",
+   "textIndex": 2,
+   "item": "CALCIUM",
+   "itemId": 39,
+   "toggleIndex": 187,
+   "toggleConst": "TOGGLE_POKEMON_MANSION_2F_ITEM",
+   "startsHidden": false
+  },
+  {
+   "index": 3,
+   "const": "POKEMONMANSION2F_DIARY1",
+   "x": 18,
+   "y": 2,
+   "sprite": "SPRITE_POKEDEX",
+   "spriteId": 65,
+   "movement": "STAY",
+   "rangeOrDirection": "NONE",
+   "rangeOrDirectionValue": 255,
+   "behavior": "turn_randomly",
+   "textId": "TEXT_POKEMONMANSION2F_DIARY1",
+   "textIndex": 3
+  },
+  {
+   "index": 4,
+   "const": "POKEMONMANSION2F_DIARY2",
+   "x": 3,
+   "y": 22,
+   "sprite": "SPRITE_POKEDEX",
+   "spriteId": 65,
+   "movement": "STAY",
+   "rangeOrDirection": "NONE",
+   "rangeOrDirectionValue": 255,
+   "behavior": "turn_randomly",
+   "textId": "TEXT_POKEMONMANSION2F_DIARY2",
+   "textIndex": 4
+  }
+ ],
+ "trainerHeaders": [
+  {"header": "Mansion2TrainerHeader0", "list": "Mansion2TrainerHeaders", "objectIndex": 1, "eventFlag": "EVENT_BEAT_MANSION_2_TRAINER_0", "sightRange": 0, "textBefore": "PokemonMansion2FSuperNerdBattleText", "textEnd": "PokemonMansion2FSuperNerdEndBattleText", "textAfter": "PokemonMansion2FSuperNerdAfterBattleText", "talkObject": 1}
+ ],
+ "hiddenObjects": [
+  {"x": 2, "y": 11, "routine": "Mansion2Script_Switches", "arg": "SPRITE_FACING_UP", "argValue": 4, "kind": "event"}
+ ],
+ "spriteSet": null,
+ "music": "MUSIC_CINNABAR_MANSION",
+ "wild": {"label": "PokemonMansion2FWildMons", "file": "PokemonMansion2F"},
+ "townMap": {"x": 2, "y": 15, "group": "POKEMON_MANSION_2"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/PokemonMansion2F.json",
+ "textPointers": "PokemonMansion2F_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/PokemonMansion2F.asm",
+  "objects": "data/maps/objects/PokemonMansion2F.asm",
+  "blocks": "maps/PokemonMansion2F.blk",
+  "script": "scripts/PokemonMansion2F.asm"
+ },
+ "lastMapCandidates": ["CINNABAR_ISLAND"],
+ "palette": {"pal": "PAL_CINNABAR", "rule": "lastMap", "viaLastMap": "CINNABAR_ISLAND"}
+}

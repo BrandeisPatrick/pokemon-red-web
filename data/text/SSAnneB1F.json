@@ -1,0 +1,8 @@
+{
+ "map": "SSAnneB1F",
+ "const": "SS_ANNE_B1F",
+ "textPointerTables": [
+  {"label": "SSAnneB1F_TextPointers", "primary": true, "entries": []}
+ ],
+ "texts": {}
+}

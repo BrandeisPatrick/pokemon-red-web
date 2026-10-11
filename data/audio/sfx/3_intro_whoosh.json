@@ -1,0 +1,25 @@
+{
+  "name": "SFX_INTRO_WHOOSH",
+  "title": "Intro Whoosh",
+  "kind": "sfx",
+  "bank": 3,
+  "id": 189,
+  "label": "SFX_Intro_Whoosh",
+  "channels": [
+    {
+      "channel": 8,
+      "label": "SFX_Intro_Whoosh_Ch8",
+      "entry": 0,
+      "bytes": 16,
+      "labels": {"SFX_Intro_Whoosh_Ch8": 0},
+      "commands": [
+        {"op": "noise_note", "length": 4, "volume": 2, "fade": -4, "value": 32},
+        {"op": "noise_note", "length": 3, "volume": 10, "fade": 0, "value": 32},
+        {"op": "noise_note", "length": 3, "volume": 11, "fade": 0, "value": 33},
+        {"op": "noise_note", "length": 3, "volume": 12, "fade": 0, "value": 34},
+        {"op": "noise_note", "length": 15, "volume": 13, "fade": 2, "value": 36},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

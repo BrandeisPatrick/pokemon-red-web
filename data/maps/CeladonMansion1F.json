@@ -1,0 +1,49 @@
+{
+ "id": 128,
+ "const": "CELADON_MANSION_1F",
+ "name": "CeladonMansion1F",
+ "displayName": "CELADON CITY",
+ "width": 4,
+ "height": 6,
+ "tileset": "MANSION",
+ "tilesetId": 19,
+ "tilesetFile": "data/tilesets/Mansion.json",
+ "isOutside": false,
+ "borderBlock": 15,
+ "blocks": [15, 1, 2, 3, 36, 42, 6, 7, 11, 11, 4, 7, 16, 11, 8, 7, 12, 12, 13, 7, 7, 7, 62, 7],
+ "connections": {},
+ "warps": [
+  {"x": 4, "y": 11, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 3, "destWarpIndex": 2},
+  {"x": 5, "y": 11, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 3, "destWarpIndex": 2},
+  {"x": 4, "y": 0, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 5, "destWarpIndex": 4},
+  {"x": 7, "y": 1, "destMap": "CELADON_MANSION_2F", "destMapId": 129, "destMapName": "CeladonMansion2F", "destWarp": 2, "destWarpIndex": 1},
+  {"x": 2, "y": 1, "destMap": "CELADON_MANSION_2F", "destMapId": 129, "destMapName": "CeladonMansion2F", "destWarp": 3, "destWarpIndex": 2}
+ ],
+ "bgEvents": [
+  {"x": 4, "y": 9, "textId": "TEXT_CELADONMANSION1F_MANAGERS_SUITE_SIGN", "textIndex": 5}
+ ],
+ "objectEvents": [
+  {"index": 1, "const": "CELADONMANSION1F_MEOWTH", "x": 0, "y": 5, "sprite": "SPRITE_MONSTER", "spriteId": 5, "movement": "STAY", "rangeOrDirection": "RIGHT", "rangeOrDirectionValue": 211, "behavior": "face_right", "textId": "TEXT_CELADONMANSION1F_MEOWTH", "textIndex": 1},
+  {"index": 2, "const": "CELADONMANSION1F_GRANNY", "x": 1, "y": 5, "sprite": "SPRITE_GRANNY", "spriteId": 40, "movement": "STAY", "rangeOrDirection": "DOWN", "rangeOrDirectionValue": 208, "behavior": "face_down", "textId": "TEXT_CELADONMANSION1F_GRANNY", "textIndex": 2},
+  {"index": 3, "const": "CELADONMANSION1F_CLEFAIRY", "x": 1, "y": 8, "sprite": "SPRITE_FAIRY", "spriteId": 56, "movement": "WALK", "rangeOrDirection": "LEFT_RIGHT", "rangeOrDirectionValue": 2, "behavior": "walk_left_right", "textId": "TEXT_CELADONMANSION1F_CLEFAIRY", "textIndex": 3},
+  {"index": 4, "const": "CELADONMANSION1F_NIDORANF", "x": 4, "y": 4, "sprite": "SPRITE_MONSTER", "spriteId": 5, "movement": "WALK", "rangeOrDirection": "UP_DOWN", "rangeOrDirectionValue": 1, "behavior": "walk_up_down", "textId": "TEXT_CELADONMANSION1F_NIDORANF", "textIndex": 4}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_CELADON",
+ "wild": null,
+ "townMap": {"x": 7, "y": 5, "group": "CELADON_CITY"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/CeladonMansion1F.json",
+ "textPointers": "CeladonMansion1F_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/CeladonMansion1F.asm",
+  "objects": "data/maps/objects/CeladonMansion1F.asm",
+  "blocks": "maps/CeladonMansion1F.blk",
+  "script": "scripts/CeladonMansion1F.asm"
+ },
+ "lastMapCandidates": ["CELADON_CITY"],
+ "palette": {"pal": "PAL_CELADON", "rule": "lastMap", "viaLastMap": "CELADON_CITY"}
+}

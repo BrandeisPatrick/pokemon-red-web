@@ -1,0 +1,97 @@
+{
+ "map": "ViridianNicknameHouse",
+ "const": "VIRIDIAN_NICKNAME_HOUSE",
+ "textPointerTables": [
+  {
+   "label": "ViridianNicknameHouse_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_VIRIDIANNICKNAMEHOUSE_BALDING_GUY", "label": "ViridianNicknameHouseBaldingGuyText", "kind": "text", "handler": "text"},
+    {"id": 2, "const": "TEXT_VIRIDIANNICKNAMEHOUSE_LITTLE_GIRL", "label": "ViridianNicknameHouseLittleGirlText", "kind": "text", "handler": "text"},
+    {"id": 3, "const": "TEXT_VIRIDIANNICKNAMEHOUSE_SPEAROW", "label": "ViridianNicknameHouseSpearowText", "kind": "asm", "handler": "asm"},
+    {"id": 4, "const": "TEXT_VIRIDIANNICKNAMEHOUSE_SPEARY_SIGN", "label": "ViridianNicknameHouseSpearySignText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "ViridianNicknameHouseBaldingGuyText": {
+   "kind": "text",
+   "src": "scripts/ViridianNicknameHouse.asm:12",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianNicknameHouseBaldingGuyText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianNicknameHouseLittleGirlText": {
+   "kind": "text",
+   "src": "scripts/ViridianNicknameHouse.asm:16",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianNicknameHouseLittleGirlText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianNicknameHouseSpearowText": {
+   "kind": "asm",
+   "src": "scripts/ViridianNicknameHouse.asm:20",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["ViridianNicknameHouseSpearowText.Text"]
+  },
+  "ViridianNicknameHouseSpearowText.Text": {
+   "kind": "text",
+   "src": "scripts/ViridianNicknameHouse.asm:29",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianNicknameHouseSpearowText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianNicknameHouseSpearySignText": {
+   "kind": "text",
+   "src": "scripts/ViridianNicknameHouse.asm:33",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianNicknameHouseSpearySignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_ViridianNicknameHouseBaldingGuyText": {
+   "kind": "text",
+   "src": "text/ViridianNicknameHouse.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Coming up with"},
+    {"cmd": "line", "str": "nicknames is fun,"},
+    {"cmd": "cont", "str": "but hard."},
+    {"cmd": "para", "str": "Simple names are"},
+    {"cmd": "line", "str": "the easiest to"},
+    {"cmd": "cont", "str": "remember."},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianNicknameHouseLittleGirlText": {
+   "kind": "text",
+   "src": "text/ViridianNicknameHouse.asm:12",
+   "commands": [
+    {"cmd": "text", "str": "My Daddy loves"},
+    {"cmd": "line", "str": "POKéMON too."},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianNicknameHouseSpearowText": {
+   "kind": "text",
+   "src": "text/ViridianNicknameHouse.asm:17",
+   "commands": [
+    {"cmd": "text", "str": "SPEARY: Tetweet!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianNicknameHouseSpearySignText": {
+   "kind": "text",
+   "src": "text/ViridianNicknameHouse.asm:21",
+   "commands": [
+    {"cmd": "text", "str": "SPEAROW"},
+    {"cmd": "line", "str": "Name: SPEARY"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

@@ -1,0 +1,75 @@
+{
+ "map": "CinnabarPokecenter",
+ "const": "CINNABAR_POKECENTER",
+ "textPointerTables": [
+  {
+   "label": "CinnabarPokecenter_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_CINNABARPOKECENTER_NURSE", "label": "CinnabarPokecenterNurseText", "kind": "script", "handler": "script_pokecenter_nurse"},
+    {"id": 2, "const": "TEXT_CINNABARPOKECENTER_COOLTRAINER_F", "label": "CinnabarPokecenterCooltrainerFText", "kind": "text", "handler": "text"},
+    {"id": 3, "const": "TEXT_CINNABARPOKECENTER_GENTLEMAN", "label": "CinnabarPokecenterGentlemanText", "kind": "text", "handler": "text"},
+    {"id": 4, "const": "TEXT_CINNABARPOKECENTER_LINK_RECEPTIONIST", "label": "CinnabarPokecenterLinkReceptionistText", "kind": "script", "handler": "script_cable_club_receptionist"}
+   ]
+  }
+ ],
+ "texts": {
+  "CinnabarPokecenterNurseText": {
+   "kind": "script",
+   "src": "scripts/CinnabarPokecenter.asm:13",
+   "commands": [
+    {"cmd": "script", "script": "script_pokecenter_nurse"}
+   ]
+  },
+  "CinnabarPokecenterCooltrainerFText": {
+   "kind": "text",
+   "src": "scripts/CinnabarPokecenter.asm:16",
+   "commands": [
+    {"cmd": "text_far", "label": "_CinnabarPokecenterCooltrainerFText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CinnabarPokecenterGentlemanText": {
+   "kind": "text",
+   "src": "scripts/CinnabarPokecenter.asm:20",
+   "commands": [
+    {"cmd": "text_far", "label": "_CinnabarPokecenterGentlemanText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CinnabarPokecenterLinkReceptionistText": {
+   "kind": "script",
+   "src": "scripts/CinnabarPokecenter.asm:24",
+   "commands": [
+    {"cmd": "script", "script": "script_cable_club_receptionist"}
+   ]
+  },
+  "_CinnabarPokecenterCooltrainerFText": {
+   "kind": "text",
+   "src": "text/CinnabarPokecenter.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "You can cancel"},
+    {"cmd": "line", "str": "evolution."},
+    {"cmd": "para", "str": "When a POKéMON is"},
+    {"cmd": "line", "str": "evolving, you can"},
+    {"cmd": "cont", "str": "stop it and leave"},
+    {"cmd": "cont", "str": "it the way it is."},
+    {"cmd": "done"}
+   ]
+  },
+  "_CinnabarPokecenterGentlemanText": {
+   "kind": "text",
+   "src": "text/CinnabarPokecenter.asm:12",
+   "commands": [
+    {"cmd": "text", "str": "Do you have any"},
+    {"cmd": "line", "str": "friends?"},
+    {"cmd": "para", "str": "POKéMON you get"},
+    {"cmd": "line", "str": "in trades grow"},
+    {"cmd": "cont", "str": "very quickly."},
+    {"cmd": "para", "str": "I think it's"},
+    {"cmd": "line", "str": "worth a try!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

@@ -1,0 +1,180 @@
+{
+ "map": "CeladonDiner",
+ "const": "CELADON_DINER",
+ "textPointerTables": [
+  {
+   "label": "CeladonDiner_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_CELADONDINER_COOK", "label": "CeladonDinerCookText", "kind": "text", "handler": "text"},
+    {"id": 2, "const": "TEXT_CELADONDINER_MIDDLE_AGED_WOMAN", "label": "CeladonDinerMiddleAgedWomanText", "kind": "text", "handler": "text"},
+    {"id": 3, "const": "TEXT_CELADONDINER_MIDDLE_AGED_MAN", "label": "CeladonDinerMiddleAgedManText", "kind": "text", "handler": "text"},
+    {"id": 4, "const": "TEXT_CELADONDINER_FISHER", "label": "CeladonDinerFisherText", "kind": "text", "handler": "text"},
+    {"id": 5, "const": "TEXT_CELADONDINER_GYM_GUIDE", "label": "CeladonDinerGymGuideText", "kind": "asm", "handler": "asm"}
+   ]
+  }
+ ],
+ "texts": {
+  "CeladonDinerCookText": {
+   "kind": "text",
+   "src": "scripts/CeladonDiner.asm:14",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonDinerCookText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonDinerMiddleAgedWomanText": {
+   "kind": "text",
+   "src": "scripts/CeladonDiner.asm:18",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonDinerMiddleAgedWomanText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonDinerMiddleAgedManText": {
+   "kind": "text",
+   "src": "scripts/CeladonDiner.asm:22",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonDinerMiddleAgedManText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonDinerFisherText": {
+   "kind": "text",
+   "src": "scripts/CeladonDiner.asm:26",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonDinerFisherText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonDinerGymGuideText": {
+   "kind": "asm",
+   "src": "scripts/CeladonDiner.asm:30",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["CeladonDinerGymGuideText.ImFlatOutBustedText", "CeladonDinerGymGuideText.ReceivedCoinCaseText", "CeladonDinerGymGuideText.CoinCaseNoRoomText", "CeladonDinerGymGuideText.WinItBackText"]
+  },
+  "CeladonDinerGymGuideText.ImFlatOutBustedText": {
+   "kind": "text",
+   "src": "scripts/CeladonDiner.asm:53",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonDinerGymGuideImFlatOutBustedText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonDinerGymGuideText.ReceivedCoinCaseText": {
+   "kind": "text",
+   "src": "scripts/CeladonDiner.asm:57",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonDinerGymGuideReceivedCoinCaseText"},
+    {"cmd": "sound", "sound": "sound_get_key_item"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonDinerGymGuideText.CoinCaseNoRoomText": {
+   "kind": "text",
+   "src": "scripts/CeladonDiner.asm:62",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonDinerGymGuideCoinCaseNoRoomText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonDinerGymGuideText.WinItBackText": {
+   "kind": "text",
+   "src": "scripts/CeladonDiner.asm:66",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonDinerGymGuideWinItBackText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_CeladonDinerCookText": {
+   "kind": "text",
+   "src": "text/CeladonDiner.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Hi!"},
+    {"cmd": "para", "str": "We're taking a"},
+    {"cmd": "line", "str": "break now."},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonDinerMiddleAgedWomanText": {
+   "kind": "text",
+   "src": "text/CeladonDiner.asm:9",
+   "commands": [
+    {"cmd": "text", "str": "My POKéMON are"},
+    {"cmd": "line", "str": "weak, so I often"},
+    {"cmd": "cont", "str": "have to go to the"},
+    {"cmd": "cont", "str": "DRUG STORE."},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonDinerMiddleAgedManText": {
+   "kind": "text",
+   "src": "text/CeladonDiner.asm:16",
+   "commands": [
+    {"cmd": "text", "str": "Psst! There's a"},
+    {"cmd": "line", "str": "basement under"},
+    {"cmd": "cont", "str": "the GAME CORNER."},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonDinerFisherText": {
+   "kind": "text",
+   "src": "text/CeladonDiner.asm:22",
+   "commands": [
+    {"cmd": "text", "str": "Munch..."},
+    {"cmd": "para", "str": "The man at that"},
+    {"cmd": "line", "str": "table lost it all"},
+    {"cmd": "cont", "str": "at the slots."},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonDinerGymGuideImFlatOutBustedText": {
+   "kind": "text",
+   "src": "text/CeladonDiner.asm:30",
+   "commands": [
+    {"cmd": "text", "str": "Go ahead! Laugh!"},
+    {"cmd": "para", "str": "I'm flat out"},
+    {"cmd": "line", "str": "busted!"},
+    {"cmd": "para", "str": "No more slots for"},
+    {"cmd": "line", "str": "me! I'm going"},
+    {"cmd": "cont", "str": "straight!"},
+    {"cmd": "para", "str": "Here! I won't be"},
+    {"cmd": "line", "str": "needing this any-"},
+    {"cmd": "cont", "str": "more!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_CeladonDinerGymGuideReceivedCoinCaseText": {
+   "kind": "text",
+   "src": "text/CeladonDiner.asm:45",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} received"},
+    {"cmd": "line", "str": "a "},
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_CeladonDinerGymGuideCoinCaseNoRoomText": {
+   "kind": "text",
+   "src": "text/CeladonDiner.asm:52",
+   "commands": [
+    {"cmd": "text", "str": "Make room for"},
+    {"cmd": "line", "str": "this!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonDinerGymGuideWinItBackText": {
+   "kind": "text",
+   "src": "text/CeladonDiner.asm:57",
+   "commands": [
+    {"cmd": "text", "str": "I always thought"},
+    {"cmd": "line", "str": "I was going to"},
+    {"cmd": "cont", "str": "win it back..."},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

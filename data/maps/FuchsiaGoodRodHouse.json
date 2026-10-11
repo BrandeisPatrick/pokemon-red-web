@@ -1,0 +1,42 @@
+{
+ "id": 164,
+ "const": "FUCHSIA_GOOD_ROD_HOUSE",
+ "name": "FuchsiaGoodRodHouse",
+ "displayName": "FUCHSIA CITY",
+ "width": 4,
+ "height": 4,
+ "tileset": "SHIP",
+ "tilesetId": 13,
+ "tilesetFile": "data/tilesets/Ship.json",
+ "isOutside": false,
+ "borderBlock": 12,
+ "blocks": [61, 9, 61, 61, 11, 11, 7, 6, 11, 11, 11, 44, 11, 27, 11, 53],
+ "connections": {},
+ "warps": [
+  {"x": 2, "y": 0, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 9, "destWarpIndex": 8},
+  {"x": 2, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 8, "destWarpIndex": 7},
+  {"x": 3, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 8, "destWarpIndex": 7}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "FUCHSIAGOODRODHOUSE_FISHING_GURU", "x": 5, "y": 3, "sprite": "SPRITE_FISHING_GURU", "spriteId": 39, "movement": "STAY", "rangeOrDirection": "RIGHT", "rangeOrDirectionValue": 211, "behavior": "face_right", "textId": "TEXT_FUCHSIAGOODRODHOUSE_FISHING_GURU", "textIndex": 1}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_CITIES2",
+ "wild": null,
+ "townMap": {"x": 8, "y": 13, "group": "FUCHSIA_CITY_3"},
+ "extraWarpCheck": "warpTileInFront",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/FuchsiaGoodRodHouse.json",
+ "textPointers": "FuchsiaGoodRodHouse_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/FuchsiaGoodRodHouse.asm",
+  "objects": "data/maps/objects/FuchsiaGoodRodHouse.asm",
+  "blocks": "maps/FuchsiaGoodRodHouse.blk",
+  "script": "scripts/FuchsiaGoodRodHouse.asm"
+ },
+ "lastMapCandidates": ["FUCHSIA_CITY"],
+ "palette": {"pal": "PAL_FUCHSIA", "rule": "lastMap", "viaLastMap": "FUCHSIA_CITY"}
+}

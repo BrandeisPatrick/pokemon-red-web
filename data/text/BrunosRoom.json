@@ -1,0 +1,105 @@
+{
+ "map": "BrunosRoom",
+ "const": "BRUNOS_ROOM",
+ "textPointerTables": [
+  {
+   "label": "BrunosRoom_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_BRUNOSROOM_BRUNO", "label": "BrunosRoomBrunoText", "kind": "asm", "handler": "trainer", "trainerHeader": "BrunosRoomTrainerHeader0"},
+    {"id": 2, "const": "TEXT_BRUNOSROOM_BRUNO_DONT_RUN_AWAY", "label": "BrunosRoomBrunoDontRunAwayText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "BrunosRoomBrunoText": {
+   "kind": "asm",
+   "src": "scripts/BrunosRoom.asm:129",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "BrunosRoomTrainerHeader0"
+  },
+  "BrunoBeforeBattleText": {
+   "kind": "text",
+   "src": "scripts/BrunosRoom.asm:135",
+   "commands": [
+    {"cmd": "text_far", "label": "_BrunoBeforeBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "BrunoEndBattleText": {
+   "kind": "text",
+   "src": "scripts/BrunosRoom.asm:139",
+   "commands": [
+    {"cmd": "text_far", "label": "_BrunoEndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "BrunoAfterBattleText": {
+   "kind": "text",
+   "src": "scripts/BrunosRoom.asm:143",
+   "commands": [
+    {"cmd": "text_far", "label": "_BrunoAfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "BrunosRoomBrunoDontRunAwayText": {
+   "kind": "text",
+   "src": "scripts/BrunosRoom.asm:147",
+   "commands": [
+    {"cmd": "text_far", "label": "_BrunosRoomBrunoDontRunAwayText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_BrunoBeforeBattleText": {
+   "kind": "text",
+   "src": "text/BrunosRoom.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "I am BRUNO of"},
+    {"cmd": "line", "str": "the ELITE FOUR!"},
+    {"cmd": "para", "str": "Through rigorous"},
+    {"cmd": "line", "str": "training, people"},
+    {"cmd": "cont", "str": "and POKéMON can"},
+    {"cmd": "cont", "str": "become stronger!"},
+    {"cmd": "para", "str": "I've weight"},
+    {"cmd": "line", "str": "trained with"},
+    {"cmd": "cont", "str": "my POKéMON!"},
+    {"cmd": "para", "str": "{PLAYER}!"},
+    {"cmd": "para", "str": "We will grind you"},
+    {"cmd": "line", "str": "down with our"},
+    {"cmd": "cont", "str": "superior power!"},
+    {"cmd": "para", "str": "Hoo hah!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_BrunoEndBattleText": {
+   "kind": "text",
+   "src": "text/BrunosRoom.asm:24",
+   "commands": [
+    {"cmd": "text", "str": "Why?"},
+    {"cmd": "line", "str": "How could I lose?"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_BrunoAfterBattleText": {
+   "kind": "text",
+   "src": "text/BrunosRoom.asm:29",
+   "commands": [
+    {"cmd": "text", "str": "My job is done!"},
+    {"cmd": "line", "str": "Go face your next"},
+    {"cmd": "cont", "str": "challenge!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_BrunosRoomBrunoDontRunAwayText": {
+   "kind": "text",
+   "src": "text/BrunosRoom.asm:35",
+   "commands": [
+    {"cmd": "text", "str": "Someone's voice:"},
+    {"cmd": "line", "str": "Don't run away!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

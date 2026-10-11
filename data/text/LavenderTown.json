@@ -1,0 +1,234 @@
+{
+ "map": "LavenderTown",
+ "const": "LAVENDER_TOWN",
+ "textPointerTables": [
+  {
+   "label": "LavenderTown_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_LAVENDERTOWN_LITTLE_GIRL", "label": "LavenderTownLittleGirlText", "kind": "asm", "handler": "asm"},
+    {"id": 2, "const": "TEXT_LAVENDERTOWN_COOLTRAINER_M", "label": "LavenderTownCooltrainerMText", "kind": "text", "handler": "text"},
+    {"id": 3, "const": "TEXT_LAVENDERTOWN_SUPER_NERD", "label": "LavenderTownSuperNerdText", "kind": "text", "handler": "text"},
+    {"id": 4, "const": "TEXT_LAVENDERTOWN_SIGN", "label": "LavenderTownSignText", "kind": "text", "handler": "text"},
+    {"id": 5, "const": "TEXT_LAVENDERTOWN_SILPH_SCOPE_SIGN", "label": "LavenderTownSilphScopeSignText", "kind": "text", "handler": "text"},
+    {"id": 6, "const": "TEXT_LAVENDERTOWN_MART_SIGN", "label": "MartSignText", "kind": "text", "handler": "text"},
+    {"id": 7, "const": "TEXT_LAVENDERTOWN_POKECENTER_SIGN", "label": "PokeCenterSignText", "kind": "text", "handler": "text"},
+    {"id": 8, "const": "TEXT_LAVENDERTOWN_POKEMON_HOUSE_SIGN", "label": "LavenderTownPokemonHouseSignText", "kind": "text", "handler": "text"},
+    {"id": 9, "const": "TEXT_LAVENDERTOWN_POKEMON_TOWER_SIGN", "label": "LavenderTownPokemonTowerSignText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "_MartSignText": {
+   "kind": "text",
+   "src": "data/text/text_1.asm:50",
+   "commands": [
+    {"cmd": "text", "str": "All your item"},
+    {"cmd": "line", "str": "needs fulfilled!"},
+    {"cmd": "cont", "str": "POKéMON MART"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokeCenterSignText": {
+   "kind": "text",
+   "src": "data/text/text_1.asm:56",
+   "commands": [
+    {"cmd": "text", "str": "Heal Your POKéMON!"},
+    {"cmd": "line", "str": "POKéMON CENTER"},
+    {"cmd": "done"}
+   ]
+  },
+  "MartSignText": {
+   "kind": "text",
+   "src": "home/overworld_text.asm:21",
+   "commands": [
+    {"cmd": "text_far", "label": "_MartSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokeCenterSignText": {
+   "kind": "text",
+   "src": "home/overworld_text.asm:25",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokeCenterSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "LavenderTownLittleGirlText": {
+   "kind": "asm",
+   "src": "scripts/LavenderTown.asm:17",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["LavenderTownLittleGirlText.DoYouBelieveInGhostsText", "LavenderTownLittleGirlText.HaHaGuessNotText", "LavenderTownLittleGirlText.SoThereAreBelieversText"]
+  },
+  "LavenderTownLittleGirlText.DoYouBelieveInGhostsText": {
+   "kind": "text",
+   "src": "scripts/LavenderTown.asm:31",
+   "commands": [
+    {"cmd": "text_far", "label": "_LavenderTownLittleGirlDoYouBelieveInGhostsText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "LavenderTownLittleGirlText.SoThereAreBelieversText": {
+   "kind": "text",
+   "src": "scripts/LavenderTown.asm:35",
+   "commands": [
+    {"cmd": "text_far", "label": "_LavenderTownLittleGirlSoThereAreBelieversText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "LavenderTownLittleGirlText.HaHaGuessNotText": {
+   "kind": "text",
+   "src": "scripts/LavenderTown.asm:39",
+   "commands": [
+    {"cmd": "text_far", "label": "_LavenderTownLittleGirlHaHaGuessNotText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "LavenderTownCooltrainerMText": {
+   "kind": "text",
+   "src": "scripts/LavenderTown.asm:43",
+   "commands": [
+    {"cmd": "text_far", "label": "_LavenderTownCooltrainerMText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "LavenderTownSuperNerdText": {
+   "kind": "text",
+   "src": "scripts/LavenderTown.asm:47",
+   "commands": [
+    {"cmd": "text_far", "label": "_LavenderTownSuperNerdText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "LavenderTownSignText": {
+   "kind": "text",
+   "src": "scripts/LavenderTown.asm:51",
+   "commands": [
+    {"cmd": "text_far", "label": "_LavenderTownSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "LavenderTownSilphScopeSignText": {
+   "kind": "text",
+   "src": "scripts/LavenderTown.asm:55",
+   "commands": [
+    {"cmd": "text_far", "label": "_LavenderTownSilphScopeSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "LavenderTownPokemonHouseSignText": {
+   "kind": "text",
+   "src": "scripts/LavenderTown.asm:59",
+   "commands": [
+    {"cmd": "text_far", "label": "_LavenderTownPokemonHouseSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "LavenderTownPokemonTowerSignText": {
+   "kind": "text",
+   "src": "scripts/LavenderTown.asm:63",
+   "commands": [
+    {"cmd": "text_far", "label": "_LavenderTownPokemonTowerSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_LavenderTownLittleGirlDoYouBelieveInGhostsText": {
+   "kind": "text",
+   "src": "text/LavenderTown.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Do you believe in"},
+    {"cmd": "line", "str": "GHOSTs?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_LavenderTownLittleGirlSoThereAreBelieversText": {
+   "kind": "text",
+   "src": "text/LavenderTown.asm:7",
+   "commands": [
+    {"cmd": "text", "str": "Really? So there"},
+    {"cmd": "line", "str": "are believers..."},
+    {"cmd": "done"}
+   ]
+  },
+  "_LavenderTownLittleGirlHaHaGuessNotText": {
+   "kind": "text",
+   "src": "text/LavenderTown.asm:12",
+   "commands": [
+    {"cmd": "text", "str": "Hahaha, I guess"},
+    {"cmd": "line", "str": "not."},
+    {"cmd": "para", "str": "That white hand"},
+    {"cmd": "line", "str": "on your shoulder,"},
+    {"cmd": "cont", "str": "it's not real."},
+    {"cmd": "done"}
+   ]
+  },
+  "_LavenderTownCooltrainerMText": {
+   "kind": "text",
+   "src": "text/LavenderTown.asm:21",
+   "commands": [
+    {"cmd": "text", "str": "This town is known"},
+    {"cmd": "line", "str": "as the grave site"},
+    {"cmd": "cont", "str": "of POKéMON."},
+    {"cmd": "para", "str": "Memorial services"},
+    {"cmd": "line", "str": "are held in"},
+    {"cmd": "cont", "str": "POKéMON TOWER."},
+    {"cmd": "done"}
+   ]
+  },
+  "_LavenderTownSuperNerdText": {
+   "kind": "text",
+   "src": "text/LavenderTown.asm:31",
+   "commands": [
+    {"cmd": "text", "str": "GHOSTs appeared"},
+    {"cmd": "line", "str": "in POKéMON TOWER."},
+    {"cmd": "para", "str": "I think they're"},
+    {"cmd": "line", "str": "the spirits of"},
+    {"cmd": "cont", "str": "POKéMON that the"},
+    {"cmd": "cont", "str": "ROCKETs killed."},
+    {"cmd": "done"}
+   ]
+  },
+  "_LavenderTownSignText": {
+   "kind": "text",
+   "src": "text/LavenderTown.asm:41",
+   "commands": [
+    {"cmd": "text", "str": "LAVENDER TOWN"},
+    {"cmd": "line", "str": "The Noble Purple"},
+    {"cmd": "cont", "str": "Town"},
+    {"cmd": "done"}
+   ]
+  },
+  "_LavenderTownSilphScopeSignText": {
+   "kind": "text",
+   "src": "text/LavenderTown.asm:47",
+   "commands": [
+    {"cmd": "text", "str": "New SILPH SCOPE!"},
+    {"cmd": "para", "str": "Make the Invisible"},
+    {"cmd": "line", "str": "Plain to See!"},
+    {"cmd": "para", "str": "SILPH CO."},
+    {"cmd": "done"}
+   ]
+  },
+  "_LavenderTownPokemonHouseSignText": {
+   "kind": "text",
+   "src": "text/LavenderTown.asm:56",
+   "commands": [
+    {"cmd": "text", "str": "LAVENDER VOLUNTEER"},
+    {"cmd": "line", "str": "POKéMON HOUSE"},
+    {"cmd": "done"}
+   ]
+  },
+  "_LavenderTownPokemonTowerSignText": {
+   "kind": "text",
+   "src": "text/LavenderTown.asm:61",
+   "commands": [
+    {"cmd": "text", "str": "May the Souls of"},
+    {"cmd": "line", "str": "POKéMON Rest Easy"},
+    {"cmd": "cont", "str": "POKéMON TOWER"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

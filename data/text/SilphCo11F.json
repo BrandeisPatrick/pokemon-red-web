@@ -1,0 +1,355 @@
+{
+ "map": "SilphCo11F",
+ "const": "SILPH_CO_11F",
+ "textPointerTables": [
+  {
+   "label": "SilphCo11F_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_SILPHCO11F_SILPH_PRESIDENT", "label": "SilphCo11FSilphPresidentText", "kind": "asm", "handler": "asm"},
+    {"id": 2, "const": "TEXT_SILPHCO11F_BEAUTY", "label": "SilphCo11FBeautyText", "kind": "text", "handler": "text"},
+    {"id": 3, "const": "TEXT_SILPHCO11F_GIOVANNI", "label": "SilphCo11FGiovanniText", "kind": "text", "handler": "text"},
+    {"id": 4, "const": "TEXT_SILPHCO11F_ROCKET1", "label": "SilphCo11FRocket1Text", "kind": "asm", "handler": "trainer", "trainerHeader": "SilphCo11TrainerHeader0"},
+    {"id": 5, "const": "TEXT_SILPHCO11F_ROCKET2", "label": "SilphCo11FRocket2Text", "kind": "asm", "handler": "trainer", "trainerHeader": "SilphCo11TrainerHeader1"},
+    {"id": 6, "const": "TEXT_SILPHCO11F_GIOVANNI_YOU_RUINED_OUR_PLANS", "label": "SilphCo11FGiovanniYouRuinedOurPlansText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "SilphCo11FSilphPresidentText": {
+   "kind": "asm",
+   "src": "scripts/SilphCo11F.asm:294",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["SilphCo11FSilphPresidentText.Text", "SilphCo11FSilphPresidentText.ReceivedMasterBallText", "SilphCo11FSilphPresidentText.NoRoomText", "SilphCo11FSilphPresidentText.MasterBallDescriptionText"]
+  },
+  "SilphCo11FSilphPresidentText.Text": {
+   "kind": "text",
+   "src": "scripts/SilphCo11F.asm:317",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo11FSilphPresidentText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo11FSilphPresidentText.ReceivedMasterBallText": {
+   "kind": "text",
+   "src": "scripts/SilphCo11F.asm:321",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo11FSilphPresidentReceivedMasterBallText"},
+    {"cmd": "sound", "sound": "sound_get_key_item"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo11FSilphPresidentText.MasterBallDescriptionText": {
+   "kind": "text",
+   "src": "scripts/SilphCo11F.asm:326",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo11FSilphPresidentMasterBallDescriptionText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo11FSilphPresidentText.NoRoomText": {
+   "kind": "text",
+   "src": "scripts/SilphCo11F.asm:330",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo11FSilphPresidentNoRoomText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo11FBeautyText": {
+   "kind": "text",
+   "src": "scripts/SilphCo11F.asm:334",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo11FBeautyText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo11FGiovanniText": {
+   "kind": "text",
+   "src": "scripts/SilphCo11F.asm:338",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo11FGiovanniText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo11FGiovanniILostAgainText": {
+   "kind": "text",
+   "src": "scripts/SilphCo11F.asm:342",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo11FGiovanniILostAgainText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo11FGiovanniYouRuinedOurPlansText": {
+   "kind": "text",
+   "src": "scripts/SilphCo11F.asm:346",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo11FGiovanniYouRuinedOurPlansText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo11FRocket1Text": {
+   "kind": "asm",
+   "src": "scripts/SilphCo11F.asm:350",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "SilphCo11TrainerHeader0"
+  },
+  "SilphCo11FRocket1BattleText": {
+   "kind": "text",
+   "src": "scripts/SilphCo11F.asm:356",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo11FRocket1BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo11FRocket1EndBattleText": {
+   "kind": "text",
+   "src": "scripts/SilphCo11F.asm:360",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo11FRocket1EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo11FRocket1AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/SilphCo11F.asm:364",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo11FRocket1AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo11FRocket2Text": {
+   "kind": "asm",
+   "src": "scripts/SilphCo11F.asm:368",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "SilphCo11TrainerHeader1"
+  },
+  "SilphCo11FRocket2BattleText": {
+   "kind": "text",
+   "src": "scripts/SilphCo11F.asm:374",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo11FRocket2BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo11FRocket2EndBattleText": {
+   "kind": "text",
+   "src": "scripts/SilphCo11F.asm:378",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo11FRocket2EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo11FRocket2AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/SilphCo11F.asm:382",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo11FRocket2AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo11FPorygonText": {
+   "kind": "asm",
+   "src": "scripts/SilphCo11F.asm:386",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["SilphCo11FPorygonText.Text"]
+  },
+  "SilphCo11FPorygonText.Text": {
+   "kind": "text",
+   "src": "scripts/SilphCo11F.asm:394",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo11FPorygonText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_SilphCo11FSilphPresidentText": {
+   "kind": "text",
+   "src": "text/SilphCo11F.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "PRESIDENT: Thank"},
+    {"cmd": "line", "str": "you for saving"},
+    {"cmd": "cont", "str": "SILPH!"},
+    {"cmd": "para", "str": "I will never"},
+    {"cmd": "line", "str": "forget you saved"},
+    {"cmd": "cont", "str": "us in our moment"},
+    {"cmd": "cont", "str": "of peril!"},
+    {"cmd": "para", "str": "I have to thank"},
+    {"cmd": "line", "str": "you in some way!"},
+    {"cmd": "para", "str": "Because I am rich,"},
+    {"cmd": "line", "str": "I can give you"},
+    {"cmd": "cont", "str": "anything!"},
+    {"cmd": "para", "str": "Here, maybe this"},
+    {"cmd": "line", "str": "will do!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_SilphCo11FSilphPresidentReceivedMasterBallText": {
+   "kind": "text",
+   "src": "text/SilphCo11F.asm:23",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} got a"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_SilphCo11FSilphPresidentMasterBallDescriptionText": {
+   "kind": "text",
+   "src": "text/SilphCo11F.asm:30",
+   "commands": [
+    {"cmd": "text", "str": "PRESIDENT: You"},
+    {"cmd": "line", "str": "can't buy that"},
+    {"cmd": "cont", "str": "anywhere!"},
+    {"cmd": "para", "str": "It's our secret"},
+    {"cmd": "line", "str": "prototype MASTER"},
+    {"cmd": "cont", "str": "BALL!"},
+    {"cmd": "para", "str": "It will catch any"},
+    {"cmd": "line", "str": "POKéMON without"},
+    {"cmd": "cont", "str": "fail!"},
+    {"cmd": "para", "str": "You should be"},
+    {"cmd": "line", "str": "quiet about using"},
+    {"cmd": "cont", "str": "it, though."},
+    {"cmd": "done"}
+   ]
+  },
+  "_SilphCo11FSilphPresidentNoRoomText": {
+   "kind": "text",
+   "src": "text/SilphCo11F.asm:48",
+   "commands": [
+    {"cmd": "text", "str": "You have no"},
+    {"cmd": "line", "str": "room for this."},
+    {"cmd": "done"}
+   ]
+  },
+  "_SilphCo11FBeautyText": {
+   "kind": "text",
+   "src": "text/SilphCo11F.asm:53",
+   "commands": [
+    {"cmd": "text", "str": "SECRETARY: Thank"},
+    {"cmd": "line", "str": "you for rescuing"},
+    {"cmd": "cont", "str": "all of us!"},
+    {"cmd": "para", "str": "We admire your"},
+    {"cmd": "line", "str": "courage."},
+    {"cmd": "done"}
+   ]
+  },
+  "_SilphCo11FGiovanniText": {
+   "kind": "text",
+   "src": "text/SilphCo11F.asm:62",
+   "commands": [
+    {"cmd": "text", "str": "Ah {PLAYER}!"},
+    {"cmd": "line", "str": "So we meet again!"},
+    {"cmd": "para", "str": "The PRESIDENT and"},
+    {"cmd": "line", "str": "I are discussing"},
+    {"cmd": "cont", "str": "a vital business"},
+    {"cmd": "cont", "str": "proposition."},
+    {"cmd": "para", "str": "Keep your nose"},
+    {"cmd": "line", "str": "out of grown-up"},
+    {"cmd": "cont", "str": "matters..."},
+    {"cmd": "para", "str": "Or, experience a"},
+    {"cmd": "line", "str": "world of pain!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SilphCo11FGiovanniILostAgainText": {
+   "kind": "text",
+   "src": "text/SilphCo11F.asm:79",
+   "commands": [
+    {"cmd": "text", "str": "Arrgh!!"},
+    {"cmd": "line", "str": "I lost again!?"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_SilphCo11FGiovanniYouRuinedOurPlansText": {
+   "kind": "text",
+   "src": "text/SilphCo11F.asm:84",
+   "commands": [
+    {"cmd": "text", "str": "Blast it all!"},
+    {"cmd": "line", "str": "You ruined our"},
+    {"cmd": "cont", "str": "plans for SILPH!"},
+    {"cmd": "para", "str": "But, TEAM ROCKET"},
+    {"cmd": "line", "str": "will never fall!"},
+    {"cmd": "para", "str": "{PLAYER}! Never"},
+    {"cmd": "line", "str": "forget that all"},
+    {"cmd": "cont", "str": "POKéMON exist"},
+    {"cmd": "cont", "str": "for TEAM ROCKET!"},
+    {"cmd": "para", "str": "I must go, but I"},
+    {"cmd": "line", "str": "shall return!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SilphCo11FRocket1BattleText": {
+   "kind": "text",
+   "src": "text/SilphCo11F.asm:101",
+   "commands": [
+    {"cmd": "text", "str": "Stop right there!"},
+    {"cmd": "line", "str": "Don't you move!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SilphCo11FRocket1EndBattleText": {
+   "kind": "text",
+   "src": "text/SilphCo11F.asm:106",
+   "commands": [
+    {"cmd": "text", "str": "Don't..."},
+    {"cmd": "line", "str": "Please!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_SilphCo11FRocket1AfterBattleText": {
+   "kind": "text",
+   "src": "text/SilphCo11F.asm:111",
+   "commands": [
+    {"cmd": "text", "str": "So, you want to"},
+    {"cmd": "line", "str": "see my BOSS?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SilphCo11FRocket2BattleText": {
+   "kind": "text",
+   "src": "text/SilphCo11F.asm:116",
+   "commands": [
+    {"cmd": "text", "str": "Halt! Do you have"},
+    {"cmd": "line", "str": "an appointment"},
+    {"cmd": "cont", "str": "with my BOSS?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SilphCo11FRocket2EndBattleText": {
+   "kind": "text",
+   "src": "text/SilphCo11F.asm:122",
+   "commands": [
+    {"cmd": "text", "str": "Gaah!"},
+    {"cmd": "line", "str": "Demolished!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_SilphCo11FRocket2AfterBattleText": {
+   "kind": "text",
+   "src": "text/SilphCo11F.asm:127",
+   "commands": [
+    {"cmd": "text", "str": "Watch your step,"},
+    {"cmd": "line", "str": "my BOSS likes his"},
+    {"cmd": "cont", "str": "POKéMON tough!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SilphCo11FPorygonText": {
+   "kind": "text",
+   "src": "text/SilphCo11F.asm:133",
+   "commands": [
+    {"cmd": "text", "str": "The monitor has"},
+    {"cmd": "line", "str": "POKéMON on it!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

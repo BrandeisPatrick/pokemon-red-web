@@ -1,0 +1,69 @@
+{
+ "map": "CeladonPokecenter",
+ "const": "CELADON_POKECENTER",
+ "textPointerTables": [
+  {
+   "label": "CeladonPokecenter_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_CELADONPOKECENTER_NURSE", "label": "CeladonPokecenterNurseText", "kind": "script", "handler": "script_pokecenter_nurse"},
+    {"id": 2, "const": "TEXT_CELADONPOKECENTER_GENTLEMAN", "label": "CeladonPokecenterGentlemanText", "kind": "text", "handler": "text"},
+    {"id": 3, "const": "TEXT_CELADONPOKECENTER_BEAUTY", "label": "CeladonPokecenterBeautyText", "kind": "text", "handler": "text"},
+    {"id": 4, "const": "TEXT_CELADONPOKECENTER_LINK_RECEPTIONIST", "label": "CeladonPokecenterLinkReceptionistText", "kind": "script", "handler": "script_cable_club_receptionist"}
+   ]
+  }
+ ],
+ "texts": {
+  "CeladonPokecenterLinkReceptionistText": {
+   "kind": "script",
+   "src": "scripts/CeladonPokecenter.asm:13",
+   "commands": [
+    {"cmd": "script", "script": "script_cable_club_receptionist"}
+   ]
+  },
+  "CeladonPokecenterNurseText": {
+   "kind": "script",
+   "src": "scripts/CeladonPokecenter.asm:16",
+   "commands": [
+    {"cmd": "script", "script": "script_pokecenter_nurse"}
+   ]
+  },
+  "CeladonPokecenterGentlemanText": {
+   "kind": "text",
+   "src": "scripts/CeladonPokecenter.asm:19",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonPokecenterGentlemanText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonPokecenterBeautyText": {
+   "kind": "text",
+   "src": "scripts/CeladonPokecenter.asm:23",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonPokecenterBeautyText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_CeladonPokecenterGentlemanText": {
+   "kind": "text",
+   "src": "text/CeladonPokecenter.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "POKé FLUTE awakens"},
+    {"cmd": "line", "str": "POKéMON with a"},
+    {"cmd": "cont", "str": "sound that only"},
+    {"cmd": "cont", "str": "they can hear!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonPokecenterBeautyText": {
+   "kind": "text",
+   "src": "text/CeladonPokecenter.asm:9",
+   "commands": [
+    {"cmd": "text", "str": "I rode uphill on"},
+    {"cmd": "line", "str": "CYCLING ROAD from"},
+    {"cmd": "cont", "str": "FUCHSIA!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

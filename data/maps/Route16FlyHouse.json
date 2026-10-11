@@ -1,0 +1,42 @@
+{
+ "id": 188,
+ "const": "ROUTE_16_FLY_HOUSE",
+ "name": "Route16FlyHouse",
+ "displayName": "ROUTE 16",
+ "width": 4,
+ "height": 4,
+ "tileset": "HOUSE",
+ "tilesetId": 8,
+ "tilesetFile": "data/tilesets/House.json",
+ "isOutside": false,
+ "borderBlock": 10,
+ "blocks": [4, 14, 5, 9, 15, 1, 2, 15, 15, 12, 13, 15, 6, 11, 15, 7],
+ "connections": {},
+ "warps": [
+  {"x": 2, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 9, "destWarpIndex": 8},
+  {"x": 3, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 9, "destWarpIndex": 8}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "ROUTE16FLYHOUSE_BRUNETTE_GIRL", "x": 2, "y": 3, "sprite": "SPRITE_BRUNETTE_GIRL", "spriteId": 29, "movement": "STAY", "rangeOrDirection": "RIGHT", "rangeOrDirectionValue": 211, "behavior": "face_right", "textId": "TEXT_ROUTE16FLYHOUSE_BRUNETTE_GIRL", "textIndex": 1},
+  {"index": 2, "const": "ROUTE16FLYHOUSE_FEAROW", "x": 6, "y": 4, "sprite": "SPRITE_BIRD", "spriteId": 9, "movement": "WALK", "rangeOrDirection": "ANY_DIR", "rangeOrDirectionValue": 0, "behavior": "walk_any", "textId": "TEXT_ROUTE16FLYHOUSE_FEAROW", "textIndex": 2}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_CELADON",
+ "wild": null,
+ "townMap": {"x": 4, "y": 5, "group": "ROUTE_16"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/Route16FlyHouse.json",
+ "textPointers": "Route16FlyHouse_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/Route16FlyHouse.asm",
+  "objects": "data/maps/objects/Route16FlyHouse.asm",
+  "blocks": "maps/ViridianNicknameHouse.blk",
+  "script": "scripts/Route16FlyHouse.asm"
+ },
+ "lastMapCandidates": ["ROUTE_16"],
+ "palette": {"pal": "PAL_ROUTE", "rule": "lastMap", "viaLastMap": "ROUTE_16"}
+}

@@ -1,0 +1,84 @@
+{
+ "map": "PewterPokecenter",
+ "const": "PEWTER_POKECENTER",
+ "textPointerTables": [
+  {
+   "label": "PewterPokecenter_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_PEWTERPOKECENTER_NURSE", "label": "PewterPokecenterNurseText", "kind": "script", "handler": "script_pokecenter_nurse"},
+    {"id": 2, "const": "TEXT_PEWTERPOKECENTER_GENTLEMAN", "label": "PewterPokecenterGentlemanText", "kind": "text", "handler": "text"},
+    {"id": 3, "const": "TEXT_PEWTERPOKECENTER_JIGGLYPUFF", "label": "PewterPokecenterJigglypuffText", "kind": "asm", "handler": "asm"},
+    {"id": 4, "const": "TEXT_PEWTERPOKECENTER_LINK_RECEPTIONIST", "label": "PewterPokecenterLinkReceptionistText", "kind": "script", "handler": "script_cable_club_receptionist"}
+   ]
+  }
+ ],
+ "texts": {
+  "PewterPokecenterNurseText": {
+   "kind": "script",
+   "src": "scripts/PewterPokecenter.asm:13",
+   "commands": [
+    {"cmd": "script", "script": "script_pokecenter_nurse"}
+   ]
+  },
+  "PewterPokecenterGentlemanText": {
+   "kind": "text",
+   "src": "scripts/PewterPokecenter.asm:16",
+   "commands": [
+    {"cmd": "text_far", "label": "_PewterPokecenterGentlemanText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PewterPokecenterJigglypuffText": {
+   "kind": "asm",
+   "src": "scripts/PewterPokecenter.asm:20",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["PewterPokecenterJigglypuffText.Text"]
+  },
+  "PewterPokecenterJigglypuffText.Text": {
+   "kind": "text",
+   "src": "scripts/PewterPokecenter.asm:76",
+   "commands": [
+    {"cmd": "text_far", "label": "_PewterPokecenterJigglypuffText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PewterPokecenterJigglypuffText.FacingDirectionsEnd": {
+   "kind": "script",
+   "src": "scripts/PewterPokecenter.asm:87",
+   "commands": [
+    {"cmd": "script", "script": "script_cable_club_receptionist"}
+   ]
+  },
+  "PewterPokecenterLinkReceptionistText": {
+   "kind": "script",
+   "src": "scripts/PewterPokecenter.asm:87",
+   "commands": [
+    {"cmd": "script", "script": "script_cable_club_receptionist"}
+   ]
+  },
+  "_PewterPokecenterGentlemanText": {
+   "kind": "text",
+   "src": "text/PewterPokecenter.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "What!?"},
+    {"cmd": "para", "str": "TEAM ROCKET is"},
+    {"cmd": "line", "str": "at MT.MOON? Huh?"},
+    {"cmd": "cont", "str": "I'm on the phone!"},
+    {"cmd": "para", "str": "Scram!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PewterPokecenterJigglypuffText": {
+   "kind": "text",
+   "src": "text/PewterPokecenter.asm:12",
+   "commands": [
+    {"cmd": "text", "str": "JIGGLYPUFF: Puu"},
+    {"cmd": "line", "str": "pupuu!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

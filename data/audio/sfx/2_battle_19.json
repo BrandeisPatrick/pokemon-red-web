@@ -1,0 +1,23 @@
+{
+  "name": "SFX_BATTLE_19",
+  "title": "Battle 19",
+  "kind": "sfx",
+  "bank": 2,
+  "id": 175,
+  "label": "SFX_Battle_19",
+  "channels": [
+    {
+      "channel": 8,
+      "label": "SFX_Battle_19_Ch8",
+      "entry": 0,
+      "bytes": 10,
+      "labels": {"SFX_Battle_19_Ch8": 0},
+      "commands": [
+        {"op": "noise_note", "length": 2, "volume": 8, "fade": 4, "value": 67},
+        {"op": "noise_note", "length": 2, "volume": 12, "fade": 4, "value": 34},
+        {"op": "noise_note", "length": 8, "volume": 15, "fade": 2, "value": 52},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

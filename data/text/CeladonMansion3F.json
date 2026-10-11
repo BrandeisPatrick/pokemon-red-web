@@ -1,0 +1,202 @@
+{
+ "map": "CeladonMansion3F",
+ "const": "CELADON_MANSION_3F",
+ "textPointerTables": [
+  {
+   "label": "CeladonMansion3F_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_CELADONMANSION3F_PROGRAMMER", "label": "CeladonMansion3FProgrammerText", "kind": "text", "handler": "text"},
+    {"id": 2, "const": "TEXT_CELADONMANSION3F_GRAPHIC_ARTIST", "label": "CeladonMansion3FGraphicArtistText", "kind": "text", "handler": "text"},
+    {"id": 3, "const": "TEXT_CELADONMANSION3F_WRITER", "label": "CeladonMansion3FWriterText", "kind": "text", "handler": "text"},
+    {"id": 4, "const": "TEXT_CELADONMANSION3F_GAME_DESIGNER", "label": "CeladonMansion3FGameDesignerText", "kind": "asm", "handler": "asm"},
+    {"id": 5, "const": "TEXT_CELADONMANSION3F_GAME_PROGRAM_PC", "label": "CeladonMansion3FGameProgramPCText", "kind": "text", "handler": "text"},
+    {"id": 6, "const": "TEXT_CELADONMANSION3F_PLAYING_GAME_PC", "label": "CeladonMansion3FPlayingGamePCText", "kind": "text", "handler": "text"},
+    {"id": 7, "const": "TEXT_CELADONMANSION3F_GAME_SCRIPT_PC", "label": "CeladonMansion3FGameScriptPCText", "kind": "text", "handler": "text"},
+    {"id": 8, "const": "TEXT_CELADONMANSION3F_DEV_ROOM_SIGN", "label": "CeladonMansion3FDevRoomSignText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "CeladonMansion3FProgrammerText": {
+   "kind": "text",
+   "src": "scripts/CeladonMansion3F.asm:16",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonMansion3FProgrammerText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonMansion3FGraphicArtistText": {
+   "kind": "text",
+   "src": "scripts/CeladonMansion3F.asm:20",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonMansion3FGraphicArtistText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonMansion3FWriterText": {
+   "kind": "text",
+   "src": "scripts/CeladonMansion3F.asm:24",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonMansion3FWriterText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonMansion3FGameDesignerText": {
+   "kind": "asm",
+   "src": "scripts/CeladonMansion3F.asm:28",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["CeladonMansion3FGameDesignerText.Text", "CeladonMansion3FGameDesignerText.CompletedDexText"]
+  },
+  "CeladonMansion3FGameDesignerText.Text": {
+   "kind": "text",
+   "src": "scripts/CeladonMansion3F.asm:44",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonMansion3FGameDesignerText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonMansion3FGameDesignerText.CompletedDexText": {
+   "kind": "text",
+   "src": "scripts/CeladonMansion3F.asm:48",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonMansion3FGameDesignerCompletedDexText"},
+    {"cmd": "text_promptbutton"},
+    {"cmd": "text_asm"}
+   ]
+  },
+  "CeladonMansion3FGameProgramPCText": {
+   "kind": "text",
+   "src": "scripts/CeladonMansion3F.asm:57",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonMansion3FGameProgramPCText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonMansion3FPlayingGamePCText": {
+   "kind": "text",
+   "src": "scripts/CeladonMansion3F.asm:61",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonMansion3FPlayingGamePCText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonMansion3FGameScriptPCText": {
+   "kind": "text",
+   "src": "scripts/CeladonMansion3F.asm:65",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonMansion3FGameScriptPCText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeladonMansion3FDevRoomSignText": {
+   "kind": "text",
+   "src": "scripts/CeladonMansion3F.asm:69",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeladonMansion3FDevRoomSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_CeladonMansion3FProgrammerText": {
+   "kind": "text",
+   "src": "text/CeladonMansion3F.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Me? I'm the"},
+    {"cmd": "line", "str": "programmer!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonMansion3FGraphicArtistText": {
+   "kind": "text",
+   "src": "text/CeladonMansion3F.asm:7",
+   "commands": [
+    {"cmd": "text", "str": "I'm the graphic"},
+    {"cmd": "line", "str": "artist!"},
+    {"cmd": "cont", "str": "I drew you!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonMansion3FWriterText": {
+   "kind": "text",
+   "src": "text/CeladonMansion3F.asm:13",
+   "commands": [
+    {"cmd": "text", "str": "I wrote the story!"},
+    {"cmd": "line", "str": "Isn't ERIKA cute?"},
+    {"cmd": "para", "str": "I like MISTY a"},
+    {"cmd": "line", "str": "lot too!"},
+    {"cmd": "para", "str": "Oh, and SABRINA,"},
+    {"cmd": "line", "str": "I like her!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonMansion3FGameDesignerText": {
+   "kind": "text",
+   "src": "text/CeladonMansion3F.asm:24",
+   "commands": [
+    {"cmd": "text", "str": "Is that right?"},
+    {"cmd": "para", "str": "I'm the game"},
+    {"cmd": "line", "str": "designer!"},
+    {"cmd": "para", "str": "Filling up your"},
+    {"cmd": "line", "str": "POKéDEX is tough,"},
+    {"cmd": "cont", "str": "but don't quit!"},
+    {"cmd": "para", "str": "When you finish,"},
+    {"cmd": "line", "str": "come tell me!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonMansion3FGameDesignerCompletedDexText": {
+   "kind": "text",
+   "src": "text/CeladonMansion3F.asm:38",
+   "commands": [
+    {"cmd": "text", "str": "Wow! Excellent!"},
+    {"cmd": "line", "str": "You completed"},
+    {"cmd": "cont", "str": "your POKéDEX!"},
+    {"cmd": "cont", "str": "Congratulations!"},
+    {"cmd": "cont", "str": "..."},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_CeladonMansion3FGameProgramPCText": {
+   "kind": "text",
+   "src": "text/CeladonMansion3F.asm:46",
+   "commands": [
+    {"cmd": "text", "str": "It's the game"},
+    {"cmd": "line", "str": "program! Messing"},
+    {"cmd": "cont", "str": "with it could bug"},
+    {"cmd": "cont", "str": "out the game!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonMansion3FPlayingGamePCText": {
+   "kind": "text",
+   "src": "text/CeladonMansion3F.asm:53",
+   "commands": [
+    {"cmd": "text", "str": "Someone's playing"},
+    {"cmd": "line", "str": "a game instead of"},
+    {"cmd": "cont", "str": "working!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonMansion3FGameScriptPCText": {
+   "kind": "text",
+   "src": "text/CeladonMansion3F.asm:59",
+   "commands": [
+    {"cmd": "text", "str": "It's the script!"},
+    {"cmd": "line", "str": "Better not look"},
+    {"cmd": "cont", "str": "at the ending!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeladonMansion3FDevRoomSignText": {
+   "kind": "text",
+   "src": "text/CeladonMansion3F.asm:65",
+   "commands": [
+    {"cmd": "text", "str": "GAME FREAK"},
+    {"cmd": "line", "str": "Development Room"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

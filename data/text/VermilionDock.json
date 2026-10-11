@@ -1,0 +1,31 @@
+{
+ "map": "VermilionDock",
+ "const": "VERMILION_DOCK",
+ "textPointerTables": [
+  {
+   "label": "VermilionDock_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_VERMILIONDOCK_UNUSED", "label": "VermilionDockUnusedText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "VermilionDockUnusedText": {
+   "kind": "text",
+   "src": "scripts/VermilionDock.asm:216",
+   "commands": [
+    {"cmd": "text_far", "label": "_VermilionDockUnusedText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_VermilionDockUnusedText": {
+   "kind": "text",
+   "src": "text/VermilionDock.asm:2",
+   "commands": [
+    {"cmd": "text", "str": ""},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

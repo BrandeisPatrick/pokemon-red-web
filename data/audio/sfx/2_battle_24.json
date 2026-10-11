@@ -1,0 +1,36 @@
+{
+  "name": "SFX_BATTLE_24",
+  "title": "Battle 24",
+  "kind": "sfx",
+  "bank": 2,
+  "id": 187,
+  "label": "SFX_Battle_24",
+  "channels": [
+    {
+      "channel": 5,
+      "label": "SFX_Battle_24_Ch5",
+      "entry": 0,
+      "bytes": 11,
+      "labels": {"SFX_Battle_24_Ch5": 0},
+      "commands": [
+        {"op": "duty_cycle", "duty": 1},
+        {"op": "pitch_sweep", "length": 9, "change": 7},
+        {"op": "square_note", "length": 15, "volume": 15, "fade": 2, "frequency": 1792},
+        {"op": "pitch_sweep", "length": 0, "change": 8},
+        {"op": "sound_ret"}
+      ]
+    },
+    {
+      "channel": 8,
+      "label": "SFX_Battle_24_Ch8",
+      "entry": 0,
+      "bytes": 7,
+      "labels": {"SFX_Battle_24_Ch8": 0},
+      "commands": [
+        {"op": "noise_note", "length": 15, "volume": 3, "fade": -7, "value": 34},
+        {"op": "noise_note", "length": 15, "volume": 15, "fade": 2, "value": 33},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

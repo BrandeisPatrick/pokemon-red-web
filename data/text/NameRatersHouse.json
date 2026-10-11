@@ -1,0 +1,163 @@
+{
+ "map": "NameRatersHouse",
+ "const": "NAME_RATERS_HOUSE",
+ "textPointerTables": [
+  {
+   "label": "NameRatersHouse_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_NAMERATERSHOUSE_NAME_RATER", "label": "NameRatersHouseNameRaterText", "kind": "asm", "handler": "asm"}
+   ]
+  }
+ ],
+ "texts": {
+  "NameRatersHouseNameRaterText": {
+   "kind": "asm",
+   "src": "scripts/NameRatersHouse.asm:46",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["NameRatersHouseNameRaterText.WantMeToRateText", "NameRatersHouseNameRaterText.WhichPokemonText", "NameRatersHouseNameRaterText.ATrulyImpeccableNameText", "NameRatersHouseNameRaterText.GiveItANiceNameText", "NameRatersHouseNameRaterText.WhatShouldWeNameItText", "NameRatersHouseNameRaterText.PokemonHasBeenRenamedText", "NameRatersHouseNameRaterText.ComeAnyTimeYouLikeText"]
+  },
+  "NameRatersHouseNameRaterText.WantMeToRateText": {
+   "kind": "text",
+   "src": "scripts/NameRatersHouse.asm:84",
+   "commands": [
+    {"cmd": "text_far", "label": "_NameRatersHouseNameRaterWantMeToRateText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "NameRatersHouseNameRaterText.WhichPokemonText": {
+   "kind": "text",
+   "src": "scripts/NameRatersHouse.asm:88",
+   "commands": [
+    {"cmd": "text_far", "label": "_NameRatersHouseNameRaterWhichPokemonText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "NameRatersHouseNameRaterText.GiveItANiceNameText": {
+   "kind": "text",
+   "src": "scripts/NameRatersHouse.asm:92",
+   "commands": [
+    {"cmd": "text_far", "label": "_NameRatersHouseNameRaterGiveItANiceNameText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "NameRatersHouseNameRaterText.WhatShouldWeNameItText": {
+   "kind": "text",
+   "src": "scripts/NameRatersHouse.asm:96",
+   "commands": [
+    {"cmd": "text_far", "label": "_NameRatersHouseNameRaterWhatShouldWeNameItText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "NameRatersHouseNameRaterText.PokemonHasBeenRenamedText": {
+   "kind": "text",
+   "src": "scripts/NameRatersHouse.asm:100",
+   "commands": [
+    {"cmd": "text_far", "label": "_NameRatersHouseNameRaterPokemonHasBeenRenamedText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "NameRatersHouseNameRaterText.ComeAnyTimeYouLikeText": {
+   "kind": "text",
+   "src": "scripts/NameRatersHouse.asm:104",
+   "commands": [
+    {"cmd": "text_far", "label": "_NameRatersHouseNameRaterComeAnyTimeYouLikeText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "NameRatersHouseNameRaterText.ATrulyImpeccableNameText": {
+   "kind": "text",
+   "src": "scripts/NameRatersHouse.asm:108",
+   "commands": [
+    {"cmd": "text_far", "label": "_NameRatersHouseNameRaterATrulyImpeccableNameText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_NameRatersHouseNameRaterWantMeToRateText": {
+   "kind": "text",
+   "src": "text/NameRatersHouse.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Hello, hello!"},
+    {"cmd": "line", "str": "I am the official"},
+    {"cmd": "cont", "str": "NAME RATER!"},
+    {"cmd": "para", "str": "Want me to rate"},
+    {"cmd": "line", "str": "the nicknames of"},
+    {"cmd": "cont", "str": "your POKéMON?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_NameRatersHouseNameRaterWhichPokemonText": {
+   "kind": "text",
+   "src": "text/NameRatersHouse.asm:12",
+   "commands": [
+    {"cmd": "text", "str": "Which POKéMON"},
+    {"cmd": "line", "str": "should I look at?"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_NameRatersHouseNameRaterGiveItANiceNameText": {
+   "kind": "text",
+   "src": "text/NameRatersHouse.asm:17",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": ", is it?"},
+    {"cmd": "line", "str": "That is a decent"},
+    {"cmd": "cont", "str": "nickname!"},
+    {"cmd": "para", "str": "But, would you"},
+    {"cmd": "line", "str": "like me to give"},
+    {"cmd": "cont", "str": "it a nicer name?"},
+    {"cmd": "para", "str": "How about it?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_NameRatersHouseNameRaterWhatShouldWeNameItText": {
+   "kind": "text",
+   "src": "text/NameRatersHouse.asm:30",
+   "commands": [
+    {"cmd": "text", "str": "Fine! What should"},
+    {"cmd": "line", "str": "we name it?"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_NameRatersHouseNameRaterPokemonHasBeenRenamedText": {
+   "kind": "text",
+   "src": "text/NameRatersHouse.asm:35",
+   "commands": [
+    {"cmd": "text", "str": "OK! This POKéMON"},
+    {"cmd": "line", "str": "has been renamed"},
+    {"cmd": "cont", "str": ""},
+    {"cmd": "text_ram", "ram": "wBuffer"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "para", "str": "That's a better"},
+    {"cmd": "line", "str": "name than before!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_NameRatersHouseNameRaterComeAnyTimeYouLikeText": {
+   "kind": "text",
+   "src": "text/NameRatersHouse.asm:46",
+   "commands": [
+    {"cmd": "text", "str": "Fine! Come any"},
+    {"cmd": "line", "str": "time you like!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_NameRatersHouseNameRaterATrulyImpeccableNameText": {
+   "kind": "text",
+   "src": "text/NameRatersHouse.asm:51",
+   "commands": [
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": ", is it?"},
+    {"cmd": "line", "str": "That is a truly"},
+    {"cmd": "cont", "str": "impeccable name!"},
+    {"cmd": "para", "str": "Take good care of"},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wNameBuffer"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "id": 181,
+ "const": "SILPH_CO_1F",
+ "name": "SilphCo1F",
+ "displayName": "SAFFRON CITY",
+ "width": 15,
+ "height": 9,
+ "tileset": "FACILITY",
+ "tilesetId": 22,
+ "tilesetFile": "data/tilesets/Facility.json",
+ "isOutside": false,
+ "borderBlock": 46,
+ "blocks": [60, 61, 61, 127, 61, 61, 61, 61, 61, 61, 124, 61, 61, 125, 62, 126, 34, 34, 35, 14, 14, 29, 14, 14, 29, 14, 14, 14, 9, 70, 68, 14, 14, 14, 14, 30, 91, 28, 30, 91, 28, 14, 14, 14, 70, 68, 13, 14, 14, 32, 91, 91, 91, 91, 91, 91, 57, 14, 9, 70, 68, 14, 14, 14, 14, 26, 91, 24, 26, 91, 24, 14, 14, 14, 70, 68, 13, 14, 14, 14, 14, 25, 14, 14, 25, 14, 14, 14, 9, 70, 68, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 70, 68, 11, 11, 11, 14, 14, 14, 14, 14, 14, 14, 11, 11, 11, 70, 72, 73, 73, 73, 88, 44, 87, 73, 73, 73, 73, 73, 73, 73, 74],
+ "connections": {},
+ "warps": [
+  {"x": 10, "y": 17, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 6, "destWarpIndex": 5},
+  {"x": 11, "y": 17, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 6, "destWarpIndex": 5},
+  {"x": 26, "y": 0, "destMap": "SILPH_CO_2F", "destMapId": 207, "destMapName": "SilphCo2F", "destWarp": 1, "destWarpIndex": 0},
+  {"x": 20, "y": 0, "destMap": "SILPH_CO_ELEVATOR", "destMapId": 236, "destMapName": "SilphCoElevator", "destWarp": 1, "destWarpIndex": 0},
+  {"x": 16, "y": 10, "destMap": "SILPH_CO_3F", "destMapId": 208, "destMapName": "SilphCo3F", "destWarp": 7, "destWarpIndex": 6}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "SILPHCO1F_LINK_RECEPTIONIST", "x": 4, "y": 2, "sprite": "SPRITE_LINK_RECEPTIONIST", "spriteId": 42, "movement": "STAY", "rangeOrDirection": "DOWN", "rangeOrDirectionValue": 208, "behavior": "face_down", "textId": "TEXT_SILPHCO1F_LINK_RECEPTIONIST", "textIndex": 1, "toggleIndex": 76, "toggleConst": "TOGGLE_SILPH_CO_1F_RECEPTIONIST", "startsHidden": true}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_SILPH_CO",
+ "wild": null,
+ "townMap": {"x": 10, "y": 5, "group": "SAFFRON_CITY"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/SilphCo1F.json",
+ "textPointers": "SilphCo1F_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/SilphCo1F.asm",
+  "objects": "data/maps/objects/SilphCo1F.asm",
+  "blocks": "maps/SilphCo1F.blk",
+  "script": "scripts/SilphCo1F.asm"
+ },
+ "lastMapCandidates": ["SAFFRON_CITY"],
+ "palette": {"pal": "PAL_SAFFRON", "rule": "lastMap", "viaLastMap": "SAFFRON_CITY"}
+}

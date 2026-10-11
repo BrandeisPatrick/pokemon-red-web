@@ -1,0 +1,41 @@
+{
+ "id": 196,
+ "const": "VERMILION_TRADE_HOUSE",
+ "name": "VermilionTradeHouse",
+ "displayName": "VERMILION CITY",
+ "width": 4,
+ "height": 4,
+ "tileset": "HOUSE",
+ "tilesetId": 8,
+ "tilesetFile": "data/tilesets/House.json",
+ "isOutside": false,
+ "borderBlock": 10,
+ "blocks": [4, 14, 5, 9, 15, 1, 2, 15, 15, 12, 13, 15, 6, 11, 15, 7],
+ "connections": {},
+ "warps": [
+  {"x": 2, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 8, "destWarpIndex": 7},
+  {"x": 3, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 8, "destWarpIndex": 7}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "VERMILIONTRADEHOUSE_LITTLE_GIRL", "x": 3, "y": 5, "sprite": "SPRITE_LITTLE_GIRL", "spriteId": 8, "movement": "STAY", "rangeOrDirection": "UP", "rangeOrDirectionValue": 209, "behavior": "face_up", "textId": "TEXT_VERMILIONTRADEHOUSE_LITTLE_GIRL", "textIndex": 1}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_VERMILION",
+ "wild": null,
+ "townMap": {"x": 10, "y": 9, "group": "VERMILION_CITY_3"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/VermilionTradeHouse.json",
+ "textPointers": "VermilionTradeHouse_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/VermilionTradeHouse.asm",
+  "objects": "data/maps/objects/VermilionTradeHouse.asm",
+  "blocks": "maps/VermilionTradeHouse.blk",
+  "script": "scripts/VermilionTradeHouse.asm"
+ },
+ "lastMapCandidates": ["VERMILION_CITY"],
+ "palette": {"pal": "PAL_VERMILION", "rule": "lastMap", "viaLastMap": "VERMILION_CITY"}
+}

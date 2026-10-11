@@ -1,0 +1,41 @@
+{
+ "id": 38,
+ "const": "REDS_HOUSE_2F",
+ "name": "RedsHouse2F",
+ "displayName": "PALLET TOWN",
+ "width": 4,
+ "height": 4,
+ "tileset": "REDS_HOUSE_2",
+ "tilesetId": 4,
+ "tilesetFile": "data/tilesets/RedsHouse2.json",
+ "isOutside": false,
+ "borderBlock": 10,
+ "blocks": [16, 17, 5, 8, 15, 15, 15, 15, 15, 13, 15, 15, 12, 15, 15, 18],
+ "connections": {},
+ "warps": [
+  {"x": 7, "y": 1, "destMap": "REDS_HOUSE_1F", "destMapId": 37, "destMapName": "RedsHouse1F", "destWarp": 3, "destWarpIndex": 2}
+ ],
+ "bgEvents": [],
+ "objectEvents": [],
+ "trainerHeaders": [],
+ "hiddenObjects": [
+  {"x": 0, "y": 1, "routine": "OpenRedsPC", "arg": "SPRITE_FACING_UP", "argValue": 4, "kind": "event"},
+  {"x": 3, "y": 5, "routine": "PrintRedSNESText", "arg": "ANY_FACING", "argValue": 208, "kind": "event"}
+ ],
+ "spriteSet": null,
+ "music": "MUSIC_PALLET_TOWN",
+ "wild": null,
+ "townMap": {"x": 2, "y": 11, "group": "PALLET_TOWN"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/RedsHouse2F.json",
+ "textPointers": "RedsHouse2F_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/RedsHouse2F.asm",
+  "objects": "data/maps/objects/RedsHouse2F.asm",
+  "blocks": "maps/RedsHouse2F.blk",
+  "script": "scripts/RedsHouse2F.asm"
+ },
+ "lastMapCandidates": ["PALLET_TOWN"],
+ "palette": {"pal": "PAL_PALLET", "rule": "lastMap", "viaLastMap": "PALLET_TOWN"}
+}

@@ -1,0 +1,43 @@
+{
+ "id": 70,
+ "const": "ROUTE_5_GATE",
+ "name": "Route5Gate",
+ "displayName": "ROUTE 5",
+ "width": 4,
+ "height": 3,
+ "tileset": "GATE",
+ "tilesetId": 12,
+ "tilesetFile": "data/tilesets/Gate.json",
+ "isOutside": false,
+ "borderBlock": 10,
+ "blocks": [22, 107, 106, 23, 2, 9, 8, 1, 24, 108, 105, 25],
+ "connections": {},
+ "warps": [
+  {"x": 3, "y": 5, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 3, "destWarpIndex": 2},
+  {"x": 4, "y": 5, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 3, "destWarpIndex": 2},
+  {"x": 3, "y": 0, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 2, "destWarpIndex": 1},
+  {"x": 4, "y": 0, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 1, "destWarpIndex": 0}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "ROUTE5GATE_GUARD", "x": 1, "y": 3, "sprite": "SPRITE_GUARD", "spriteId": 49, "movement": "STAY", "rangeOrDirection": "RIGHT", "rangeOrDirectionValue": 211, "behavior": "face_right", "textId": "TEXT_ROUTE5GATE_GUARD", "textIndex": 1}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_CITIES1",
+ "wild": null,
+ "townMap": {"x": 10, "y": 4, "group": "ROUTE_5"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/Route5Gate.json",
+ "textPointers": "Route5Gate_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/Route5Gate.asm",
+  "objects": "data/maps/objects/Route5Gate.asm",
+  "blocks": "maps/Route5Gate.blk",
+  "script": "scripts/Route5Gate.asm"
+ },
+ "lastMapCandidates": ["ROUTE_5"],
+ "palette": {"pal": "PAL_ROUTE", "rule": "lastMap", "viaLastMap": "ROUTE_5"}
+}

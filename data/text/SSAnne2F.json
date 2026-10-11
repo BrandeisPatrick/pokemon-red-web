@@ -1,0 +1,137 @@
+{
+ "map": "SSAnne2F",
+ "const": "SS_ANNE_2F",
+ "textPointerTables": [
+  {
+   "label": "SSAnne2F_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_SSANNE2F_WAITER", "label": "SSAnne2FWaiterText", "kind": "text", "handler": "text"},
+    {"id": 2, "const": "TEXT_SSANNE2F_RIVAL", "label": "SSAnne2FRivalText", "kind": "asm", "handler": "asm"},
+    {"id": 3, "const": "TEXT_SSANNE2F_RIVAL_CUT_MASTER", "label": "SSAnne2FRivalCutMasterText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "SSAnne2FWaiterText": {
+   "kind": "text",
+   "src": "scripts/SSAnne2F.asm:187",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnne2FWaiterText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnne2FRivalText": {
+   "kind": "asm",
+   "src": "scripts/SSAnne2F.asm:191",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["SSAnne2FRivalText.Text", "SSAnne2FRivalDefeatedText", "SSAnne2FRivalVictoryText"]
+  },
+  "SSAnne2FRivalText.Text": {
+   "kind": "text",
+   "src": "scripts/SSAnne2F.asm:203",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnne2FRivalText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnne2FRivalDefeatedText": {
+   "kind": "text",
+   "src": "scripts/SSAnne2F.asm:207",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnne2FRivalDefeatedText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnne2FRivalVictoryText": {
+   "kind": "text",
+   "src": "scripts/SSAnne2F.asm:211",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnne2FRivalVictoryText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SSAnne2FRivalCutMasterText": {
+   "kind": "text",
+   "src": "scripts/SSAnne2F.asm:215",
+   "commands": [
+    {"cmd": "text_far", "label": "_SSAnne2FRivalCutMasterText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_SSAnne2FWaiterText": {
+   "kind": "text",
+   "src": "text/SSAnne2F.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "This ship, she is"},
+    {"cmd": "line", "str": "a luxury liner"},
+    {"cmd": "cont", "str": "for trainers!"},
+    {"cmd": "para", "str": "At every port, we"},
+    {"cmd": "line", "str": "hold parties with"},
+    {"cmd": "cont", "str": "invited trainers!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SSAnne2FRivalText": {
+   "kind": "text",
+   "src": "text/SSAnne2F.asm:12",
+   "commands": [
+    {"cmd": "text", "str": "{RIVAL}: Bonjour!"},
+    {"cmd": "line", "str": "{PLAYER}!"},
+    {"cmd": "para", "str": "Imagine seeing"},
+    {"cmd": "line", "str": "you here!"},
+    {"cmd": "para", "str": "{PLAYER}, were you"},
+    {"cmd": "line", "str": "really invited?"},
+    {"cmd": "para", "str": "So how's your"},
+    {"cmd": "line", "str": "POKéDEX coming?"},
+    {"cmd": "para", "str": "I already caught"},
+    {"cmd": "line", "str": "40 kinds, pal!"},
+    {"cmd": "para", "str": "Different kinds"},
+    {"cmd": "line", "str": "are everywhere!"},
+    {"cmd": "para", "str": "Crawl around in"},
+    {"cmd": "line", "str": "grassy areas!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SSAnne2FRivalDefeatedText": {
+   "kind": "text",
+   "src": "text/SSAnne2F.asm:35",
+   "commands": [
+    {"cmd": "text", "str": "Humph!"},
+    {"cmd": "para", "str": "At least you're"},
+    {"cmd": "line", "str": "raising your"},
+    {"cmd": "cont", "str": "POKéMON!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_SSAnne2FRivalVictoryText": {
+   "kind": "text",
+   "src": "text/SSAnne2F.asm:43",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER}! What are"},
+    {"cmd": "line", "str": "you, seasick?"},
+    {"cmd": "para", "str": "You should shape"},
+    {"cmd": "line", "str": "up, pal!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_SSAnne2FRivalCutMasterText": {
+   "kind": "text",
+   "src": "text/SSAnne2F.asm:51",
+   "commands": [
+    {"cmd": "text", "str": "{RIVAL}: I heard"},
+    {"cmd": "line", "str": "there was a CUT"},
+    {"cmd": "cont", "str": "master on board."},
+    {"cmd": "para", "str": "But, he was just a"},
+    {"cmd": "line", "str": "seasick, old man!"},
+    {"cmd": "para", "str": "But, CUT itself is"},
+    {"cmd": "line", "str": "really useful!"},
+    {"cmd": "para", "str": "You should go see"},
+    {"cmd": "line", "str": "him! Smell ya!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

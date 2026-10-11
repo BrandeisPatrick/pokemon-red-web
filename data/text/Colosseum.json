@@ -1,0 +1,31 @@
+{
+ "map": "Colosseum",
+ "const": "COLOSSEUM",
+ "textPointerTables": [
+  {
+   "label": "Colosseum_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_COLOSSEUM_OPPONENT", "label": "ColosseumOpponentText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "_ColosseumOpponentText": {
+   "kind": "text",
+   "src": "data/text/text_3.asm:329",
+   "commands": [
+    {"cmd": "text", "str": "!"},
+    {"cmd": "done"}
+   ]
+  },
+  "ColosseumOpponentText": {
+   "kind": "text",
+   "src": "scripts/Colosseum.asm:10",
+   "commands": [
+    {"cmd": "text_far", "label": "_ColosseumOpponentText"},
+    {"cmd": "text_end"}
+   ]
+  }
+ }
+}

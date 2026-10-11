@@ -1,0 +1,25 @@
+{
+  "name": "SFX_BATTLE_23",
+  "title": "Battle 23",
+  "kind": "sfx",
+  "bank": 2,
+  "id": 186,
+  "label": "SFX_Battle_23",
+  "channels": [
+    {
+      "channel": 8,
+      "label": "SFX_Battle_23_Ch8",
+      "entry": 0,
+      "bytes": 16,
+      "labels": {"SFX_Battle_23_Ch8": 0},
+      "commands": [
+        {"op": "noise_note", "length": 2, "volume": 15, "fade": 2, "value": 67},
+        {"op": "noise_note", "length": 4, "volume": 11, "fade": 5, "value": 50},
+        {"op": "noise_note", "length": 9, "volume": 8, "fade": 6, "value": 49},
+        {"op": "noise_note", "length": 7, "volume": 6, "fade": 4, "value": 0},
+        {"op": "noise_note", "length": 15, "volume": 15, "fade": 2, "value": 85},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

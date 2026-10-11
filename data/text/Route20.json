@@ -1,0 +1,634 @@
+{
+ "map": "Route20",
+ "const": "ROUTE_20",
+ "textPointerTables": [
+  {
+   "label": "Route20_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_ROUTE20_SWIMMER1", "label": "Route20Swimmer1Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route20TrainerHeader0"},
+    {"id": 2, "const": "TEXT_ROUTE20_SWIMMER2", "label": "Route20Swimmer2Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route20TrainerHeader1"},
+    {"id": 3, "const": "TEXT_ROUTE20_SWIMMER3", "label": "Route20Swimmer3Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route20TrainerHeader2"},
+    {"id": 4, "const": "TEXT_ROUTE20_SWIMMER4", "label": "Route20Swimmer4Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route20TrainerHeader3"},
+    {"id": 5, "const": "TEXT_ROUTE20_SWIMMER5", "label": "Route20Swimmer5Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route20TrainerHeader4"},
+    {"id": 6, "const": "TEXT_ROUTE20_SWIMMER6", "label": "Route20Swimmer6Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route20TrainerHeader5"},
+    {"id": 7, "const": "TEXT_ROUTE20_COOLTRAINER_M", "label": "Route20CooltrainerMText", "kind": "asm", "handler": "trainer", "trainerHeader": "Route20TrainerHeader6"},
+    {"id": 8, "const": "TEXT_ROUTE20_SWIMMER7", "label": "Route20Swimmer7Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route20TrainerHeader7"},
+    {"id": 9, "const": "TEXT_ROUTE20_SWIMMER8", "label": "Route20Swimmer8Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route20TrainerHeader8"},
+    {"id": 10, "const": "TEXT_ROUTE20_SWIMMER9", "label": "Route20Swimmer9Text", "kind": "asm", "handler": "trainer", "trainerHeader": "Route20TrainerHeader9"},
+    {"id": 11, "const": "TEXT_ROUTE20_SEAFOAM_ISLANDS_WEST_SIGN", "label": "Route20SeafoamIslandsSignText", "kind": "text", "handler": "text"},
+    {"id": 12, "const": "TEXT_ROUTE20_SEAFOAM_ISLANDS_EAST_SIGN", "label": "Route20SeafoamIslandsSignText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "Route20Swimmer1Text": {
+   "kind": "asm",
+   "src": "scripts/Route20.asm:105",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route20TrainerHeader0"
+  },
+  "Route20Swimmer2Text": {
+   "kind": "asm",
+   "src": "scripts/Route20.asm:111",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route20TrainerHeader1"
+  },
+  "Route20Swimmer3Text": {
+   "kind": "asm",
+   "src": "scripts/Route20.asm:117",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route20TrainerHeader2"
+  },
+  "Route20Swimmer4Text": {
+   "kind": "asm",
+   "src": "scripts/Route20.asm:123",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route20TrainerHeader3"
+  },
+  "Route20Swimmer5Text": {
+   "kind": "asm",
+   "src": "scripts/Route20.asm:129",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route20TrainerHeader4"
+  },
+  "Route20Swimmer6Text": {
+   "kind": "asm",
+   "src": "scripts/Route20.asm:135",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route20TrainerHeader5"
+  },
+  "Route20CooltrainerMText": {
+   "kind": "asm",
+   "src": "scripts/Route20.asm:141",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route20TrainerHeader6"
+  },
+  "Route20Swimmer7Text": {
+   "kind": "asm",
+   "src": "scripts/Route20.asm:147",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route20TrainerHeader7"
+  },
+  "Route20Swimmer8Text": {
+   "kind": "asm",
+   "src": "scripts/Route20.asm:153",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route20TrainerHeader8"
+  },
+  "Route20Swimmer9Text": {
+   "kind": "asm",
+   "src": "scripts/Route20.asm:159",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "Route20TrainerHeader9"
+  },
+  "Route20Swimmer1BattleText": {
+   "kind": "text",
+   "src": "scripts/Route20.asm:165",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route20Swimmer1BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route20Swimmer1EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route20.asm:169",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route20Swimmer1EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route20Swimmer1AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route20.asm:173",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route20Swimmer1AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route20Swimmer2BattleText": {
+   "kind": "text",
+   "src": "scripts/Route20.asm:177",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route20Swimmer2BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route20Swimmer2EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route20.asm:181",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route20Swimmer2EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route20Swimmer2AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route20.asm:185",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route20Swimmer2AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route20Swimmer3BattleText": {
+   "kind": "text",
+   "src": "scripts/Route20.asm:189",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route20Swimmer3BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route20Swimmer3EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route20.asm:193",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route20Swimmer3EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route20Swimmer3AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route20.asm:197",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route20Swimmer3AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route20Swimmer4BattleText": {
+   "kind": "text",
+   "src": "scripts/Route20.asm:201",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route20Swimmer4BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route20Swimmer4EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route20.asm:205",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route20Swimmer4EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route20Swimmer4AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route20.asm:209",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route20Swimmer4AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route20Swimmer5BattleText": {
+   "kind": "text",
+   "src": "scripts/Route20.asm:213",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route20Swimmer5BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route20Swimmer5EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route20.asm:217",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route20Swimmer5EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route20Swimmer5AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route20.asm:221",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route20Swimmer5AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route20Swimmer6BattleText": {
+   "kind": "text",
+   "src": "scripts/Route20.asm:225",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route20Swimmer6BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route20Swimmer6EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route20.asm:229",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route20Swimmer6EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route20Swimmer6AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route20.asm:233",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route20Swimmer6AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route20CooltrainerMBattleText": {
+   "kind": "text",
+   "src": "scripts/Route20.asm:237",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route20CooltrainerMBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route20CooltrainerMEndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route20.asm:241",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route20CooltrainerMEndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route20CooltrainerMAfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route20.asm:245",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route20CooltrainerMAfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route20Swimmer7BattleText": {
+   "kind": "text",
+   "src": "scripts/Route20.asm:249",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route20Swimmer7BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route20Swimmer7EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route20.asm:253",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route20Swimmer7EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route20Swimmer7AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route20.asm:257",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route20Swimmer7AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route20Swimmer8BattleText": {
+   "kind": "text",
+   "src": "scripts/Route20.asm:261",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route20Swimmer8BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route20Swimmer8EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route20.asm:265",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route20Swimmer8EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route20Swimmer8AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route20.asm:269",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route20Swimmer8AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route20Swimmer9BattleText": {
+   "kind": "text",
+   "src": "scripts/Route20.asm:273",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route20Swimmer9BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route20Swimmer9EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route20.asm:277",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route20Swimmer9EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route20Swimmer9AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route20.asm:281",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route20Swimmer9AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route20SeafoamIslandsSignText": {
+   "kind": "text",
+   "src": "scripts/Route20.asm:285",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route20SeafoamIslandsSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_Route20Swimmer1BattleText": {
+   "kind": "text",
+   "src": "text/Route20.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "The water is"},
+    {"cmd": "line", "str": "shallow here."},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route20Swimmer1EndBattleText": {
+   "kind": "text",
+   "src": "text/Route20.asm:7",
+   "commands": [
+    {"cmd": "text", "str": "Splash!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route20Swimmer1AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route20.asm:11",
+   "commands": [
+    {"cmd": "text", "str": "I wish I could"},
+    {"cmd": "line", "str": "ride my POKéMON."},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route20Swimmer2BattleText": {
+   "kind": "text",
+   "src": "text/Route20.asm:16",
+   "commands": [
+    {"cmd": "text", "str": "SEAFOAM is a"},
+    {"cmd": "line", "str": "quiet getaway!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route20Swimmer2EndBattleText": {
+   "kind": "text",
+   "src": "text/Route20.asm:21",
+   "commands": [
+    {"cmd": "text", "str": "Quit it!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route20Swimmer2AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route20.asm:25",
+   "commands": [
+    {"cmd": "text", "str": "There's a huge"},
+    {"cmd": "line", "str": "cavern underneath"},
+    {"cmd": "cont", "str": "this island."},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route20Swimmer3BattleText": {
+   "kind": "text",
+   "src": "text/Route20.asm:31",
+   "commands": [
+    {"cmd": "text", "str": "I love floating"},
+    {"cmd": "line", "str": "with the fishes!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route20Swimmer3EndBattleText": {
+   "kind": "text",
+   "src": "text/Route20.asm:36",
+   "commands": [
+    {"cmd": "text", "str": "Yowch!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route20Swimmer3AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route20.asm:40",
+   "commands": [
+    {"cmd": "text", "str": "Want to float"},
+    {"cmd": "line", "str": "with me?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route20Swimmer4BattleText": {
+   "kind": "text",
+   "src": "text/Route20.asm:45",
+   "commands": [
+    {"cmd": "text", "str": "Are you on"},
+    {"cmd": "line", "str": "vacation too?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route20Swimmer4EndBattleText": {
+   "kind": "text",
+   "src": "text/Route20.asm:50",
+   "commands": [
+    {"cmd": "text", "str": "No"},
+    {"cmd": "line", "str": "mercy at all!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route20Swimmer4AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route20.asm:55",
+   "commands": [
+    {"cmd": "text", "str": "SEAFOAM used to"},
+    {"cmd": "line", "str": "be one island!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route20Swimmer5BattleText": {
+   "kind": "text",
+   "src": "text/Route20.asm:60",
+   "commands": [
+    {"cmd": "text", "str": "Check out my buff"},
+    {"cmd": "line", "str": "physique!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route20Swimmer5EndBattleText": {
+   "kind": "text",
+   "src": "text/Route20.asm:65",
+   "commands": [
+    {"cmd": "text", "str": "Wimpy!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route20Swimmer5AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route20.asm:69",
+   "commands": [
+    {"cmd": "text", "str": "I should've been"},
+    {"cmd": "line", "str": "buffing up my"},
+    {"cmd": "cont", "str": "POKéMON, not me!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route20Swimmer6BattleText": {
+   "kind": "text",
+   "src": "text/Route20.asm:75",
+   "commands": [
+    {"cmd": "text", "str": "Why are you"},
+    {"cmd": "line", "str": "riding a POKéMON?"},
+    {"cmd": "cont", "str": "Can't you swim?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route20Swimmer6EndBattleText": {
+   "kind": "text",
+   "src": "text/Route20.asm:81",
+   "commands": [
+    {"cmd": "text", "str": "Ouch!"},
+    {"cmd": "line", "str": "Torpedoed!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route20Swimmer6AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route20.asm:86",
+   "commands": [
+    {"cmd": "text", "str": "Riding a POKéMON"},
+    {"cmd": "line", "str": "sure looks fun!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route20CooltrainerMBattleText": {
+   "kind": "text",
+   "src": "text/Route20.asm:91",
+   "commands": [
+    {"cmd": "text", "str": "I rode my bird"},
+    {"cmd": "line", "str": "POKéMON here!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route20CooltrainerMEndBattleText": {
+   "kind": "text",
+   "src": "text/Route20.asm:96",
+   "commands": [
+    {"cmd": "text", "str": "Oh"},
+    {"cmd": "line", "str": "no!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route20CooltrainerMAfterBattleText": {
+   "kind": "text",
+   "src": "text/Route20.asm:101",
+   "commands": [
+    {"cmd": "text", "str": "My birds can't"},
+    {"cmd": "line", "str": "FLY me back!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route20Swimmer7BattleText": {
+   "kind": "text",
+   "src": "text/Route20.asm:106",
+   "commands": [
+    {"cmd": "text", "str": "My boy friend gave"},
+    {"cmd": "line", "str": "me big pearls!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route20Swimmer7EndBattleText": {
+   "kind": "text",
+   "src": "text/Route20.asm:111",
+   "commands": [
+    {"cmd": "text", "str": "Don't"},
+    {"cmd": "line", "str": "touch my pearls!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route20Swimmer7AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route20.asm:116",
+   "commands": [
+    {"cmd": "text", "str": "Will my pearls"},
+    {"cmd": "line", "str": "grow bigger"},
+    {"cmd": "cont", "str": "inside CLOYSTER?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route20Swimmer8BattleText": {
+   "kind": "text",
+   "src": "text/Route20.asm:122",
+   "commands": [
+    {"cmd": "text", "str": "I swam here from"},
+    {"cmd": "line", "str": "CINNABAR ISLAND!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route20Swimmer8EndBattleText": {
+   "kind": "text",
+   "src": "text/Route20.asm:127",
+   "commands": [
+    {"cmd": "text", "str": "I'm"},
+    {"cmd": "line", "str": "so disappointed!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route20Swimmer8AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route20.asm:132",
+   "commands": [
+    {"cmd": "text", "str": "POKéMON have"},
+    {"cmd": "line", "str": "taken over an"},
+    {"cmd": "cont", "str": "abandoned mansion"},
+    {"cmd": "cont", "str": "on CINNABAR!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route20Swimmer9BattleText": {
+   "kind": "text",
+   "src": "text/Route20.asm:139",
+   "commands": [
+    {"cmd": "text", "str": "CINNABAR, in the"},
+    {"cmd": "line", "str": "west, has a LAB"},
+    {"cmd": "cont", "str": "for POKéMON."},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route20Swimmer9EndBattleText": {
+   "kind": "text",
+   "src": "text/Route20.asm:145",
+   "commands": [
+    {"cmd": "text", "str": "Wait!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route20Swimmer9AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route20.asm:149",
+   "commands": [
+    {"cmd": "text", "str": "CINNABAR is a "},
+    {"cmd": "line", "str": "volcanic island!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route20SeafoamIslandsSignText": {
+   "kind": "text",
+   "src": "text/Route20.asm:154",
+   "commands": [
+    {"cmd": "text", "str": "SEAFOAM ISLANDS"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

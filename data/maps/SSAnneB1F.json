@@ -1,0 +1,43 @@
+{
+ "id": 98,
+ "const": "SS_ANNE_B1F",
+ "name": "SSAnneB1F",
+ "displayName": "S.S.ANNE",
+ "width": 15,
+ "height": 4,
+ "tileset": "SHIP",
+ "tilesetId": 13,
+ "tilesetFile": "data/tilesets/Ship.json",
+ "isOutside": false,
+ "borderBlock": 12,
+ "blocks": [12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 18, 5, 5, 25, 5, 25, 5, 25, 5, 25, 5, 25, 5, 5, 17, 14, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 52, 13, 12, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 12],
+ "connections": {},
+ "warps": [
+  {"x": 23, "y": 3, "destMap": "SS_ANNE_B1F_ROOMS", "destMapId": 104, "destMapName": "SSAnneB1FRooms", "destWarp": 9, "destWarpIndex": 8},
+  {"x": 19, "y": 3, "destMap": "SS_ANNE_B1F_ROOMS", "destMapId": 104, "destMapName": "SSAnneB1FRooms", "destWarp": 7, "destWarpIndex": 6},
+  {"x": 15, "y": 3, "destMap": "SS_ANNE_B1F_ROOMS", "destMapId": 104, "destMapName": "SSAnneB1FRooms", "destWarp": 5, "destWarpIndex": 4},
+  {"x": 11, "y": 3, "destMap": "SS_ANNE_B1F_ROOMS", "destMapId": 104, "destMapName": "SSAnneB1FRooms", "destWarp": 3, "destWarpIndex": 2},
+  {"x": 7, "y": 3, "destMap": "SS_ANNE_B1F_ROOMS", "destMapId": 104, "destMapName": "SSAnneB1FRooms", "destWarp": 1, "destWarpIndex": 0},
+  {"x": 27, "y": 5, "destMap": "SS_ANNE_1F", "destMapId": 95, "destMapName": "SSAnne1F", "destWarp": 10, "destWarpIndex": 9}
+ ],
+ "bgEvents": [],
+ "objectEvents": [],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_SS_ANNE",
+ "wild": null,
+ "townMap": {"x": 9, "y": 10, "group": "SS_ANNE"},
+ "extraWarpCheck": "warpTileInFront",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/SSAnneB1F.json",
+ "textPointers": "SSAnneB1F_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/SSAnneB1F.asm",
+  "objects": "data/maps/objects/SSAnneB1F.asm",
+  "blocks": "maps/SSAnneB1F.blk",
+  "script": "scripts/SSAnneB1F.asm"
+ },
+ "lastMapCandidates": ["VERMILION_CITY"],
+ "palette": {"pal": "PAL_VERMILION", "rule": "lastMap", "viaLastMap": "VERMILION_CITY"}
+}

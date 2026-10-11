@@ -1,0 +1,434 @@
+{
+ "map": "VermilionGym",
+ "const": "VERMILION_GYM",
+ "textPointerTables": [
+  {
+   "label": "VermilionGym_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_VERMILIONGYM_LT_SURGE", "label": "VermilionGymLTSurgeText", "kind": "asm", "handler": "asm"},
+    {"id": 2, "const": "TEXT_VERMILIONGYM_GENTLEMAN", "label": "VermilionGymGentlemanText", "kind": "asm", "handler": "trainer", "trainerHeader": "VermilionGymTrainerHeader0"},
+    {"id": 3, "const": "TEXT_VERMILIONGYM_SUPER_NERD", "label": "VermilionGymSuperNerdText", "kind": "asm", "handler": "trainer", "trainerHeader": "VermilionGymTrainerHeader1"},
+    {"id": 4, "const": "TEXT_VERMILIONGYM_SAILOR", "label": "VermilionGymSailorText", "kind": "asm", "handler": "trainer", "trainerHeader": "VermilionGymTrainerHeader2"},
+    {"id": 5, "const": "TEXT_VERMILIONGYM_GYM_GUIDE", "label": "VermilionGymGymGuideText", "kind": "asm", "handler": "asm"},
+    {"id": 6, "const": "TEXT_VERMILIONGYM_LT_SURGE_THUNDER_BADGE_INFO", "label": "VermilionGymLTSurgeThunderBadgeInfoText", "kind": "text", "handler": "text"},
+    {"id": 7, "const": "TEXT_VERMILIONGYM_LT_SURGE_RECEIVED_TM24", "label": "VermilionGymLTSurgeReceivedTM24Text", "kind": "text", "handler": "text"},
+    {"id": 8, "const": "TEXT_VERMILIONGYM_LT_SURGE_TM24_NO_ROOM", "label": "VermilionGymLTSurgeTM24NoRoomText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "VermilionGym_Script.CityName": {
+   "kind": "string",
+   "src": "scripts/VermilionGym.asm:25",
+   "commands": [
+    {"cmd": "str", "str": "VERMILION CITY"}
+   ]
+  },
+  "VermilionGym_Script.LeaderName": {
+   "kind": "string",
+   "src": "scripts/VermilionGym.asm:28",
+   "commands": [
+    {"cmd": "str", "str": "LT.SURGE"}
+   ]
+  },
+  "VermilionGymLTSurgeText": {
+   "kind": "asm",
+   "src": "scripts/VermilionGym.asm:115",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["VermilionGymLTSurgeText.PostBattleAdviceText", "VermilionGymLTSurgeText.PreBattleText", "VermilionGymLTSurgeReceivedThunderBadgeText"]
+  },
+  "VermilionGymLTSurgeText.PreBattleText": {
+   "kind": "text",
+   "src": "scripts/VermilionGym.asm:151",
+   "commands": [
+    {"cmd": "text_far", "label": "_VermilionGymLTSurgePreBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VermilionGymLTSurgeText.PostBattleAdviceText": {
+   "kind": "text",
+   "src": "scripts/VermilionGym.asm:155",
+   "commands": [
+    {"cmd": "text_far", "label": "_VermilionGymLTSurgePostBattleAdviceText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VermilionGymLTSurgeThunderBadgeInfoText": {
+   "kind": "text",
+   "src": "scripts/VermilionGym.asm:159",
+   "commands": [
+    {"cmd": "text_far", "label": "_VermilionGymLTSurgeThunderBadgeInfoText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VermilionGymLTSurgeReceivedTM24Text": {
+   "kind": "text",
+   "src": "scripts/VermilionGym.asm:163",
+   "commands": [
+    {"cmd": "text_far", "label": "_VermilionGymLTSurgeReceivedTM24Text"},
+    {"cmd": "sound", "sound": "sound_get_key_item"},
+    {"cmd": "text_far", "label": "_TM24ExplanationText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VermilionGymLTSurgeTM24NoRoomText": {
+   "kind": "text",
+   "src": "scripts/VermilionGym.asm:169",
+   "commands": [
+    {"cmd": "text_far", "label": "_VermilionGymLTSurgeTM24NoRoomText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VermilionGymLTSurgeReceivedThunderBadgeText": {
+   "kind": "text",
+   "src": "scripts/VermilionGym.asm:173",
+   "commands": [
+    {"cmd": "text_far", "label": "_VermilionGymLTSurgeReceivedThunderBadgeText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VermilionGymGentlemanText": {
+   "kind": "asm",
+   "src": "scripts/VermilionGym.asm:177",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "VermilionGymTrainerHeader0"
+  },
+  "VermilionGymGentlemanBattleText": {
+   "kind": "text",
+   "src": "scripts/VermilionGym.asm:183",
+   "commands": [
+    {"cmd": "text_far", "label": "_VermilionGymGentlemanBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VermilionGymGentlemanEndBattleText": {
+   "kind": "text",
+   "src": "scripts/VermilionGym.asm:187",
+   "commands": [
+    {"cmd": "text_far", "label": "_VermilionGymGentlemanEndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VermilionGymGentlemanAfterBattleText": {
+   "kind": "text",
+   "src": "scripts/VermilionGym.asm:191",
+   "commands": [
+    {"cmd": "text_far", "label": "_VermilionGymGentlemanAfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VermilionGymSuperNerdText": {
+   "kind": "asm",
+   "src": "scripts/VermilionGym.asm:195",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "VermilionGymTrainerHeader1"
+  },
+  "VermilionGymSuperNerdBattleText": {
+   "kind": "text",
+   "src": "scripts/VermilionGym.asm:201",
+   "commands": [
+    {"cmd": "text_far", "label": "_VermilionGymSuperNerdBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VermilionGymSuperNerdEndBattleText": {
+   "kind": "text",
+   "src": "scripts/VermilionGym.asm:205",
+   "commands": [
+    {"cmd": "text_far", "label": "_VermilionGymSuperNerdEndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VermilionGymSuperNerdAfterBattleText": {
+   "kind": "text",
+   "src": "scripts/VermilionGym.asm:209",
+   "commands": [
+    {"cmd": "text_far", "label": "_VermilionGymSuperNerdAfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VermilionGymSailorText": {
+   "kind": "asm",
+   "src": "scripts/VermilionGym.asm:213",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "VermilionGymTrainerHeader2"
+  },
+  "VermilionGymSailorBattleText": {
+   "kind": "text",
+   "src": "scripts/VermilionGym.asm:219",
+   "commands": [
+    {"cmd": "text_far", "label": "_VermilionGymSailorBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VermilionGymSailorEndBattleText": {
+   "kind": "text",
+   "src": "scripts/VermilionGym.asm:223",
+   "commands": [
+    {"cmd": "text_far", "label": "_VermilionGymSailorEndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VermilionGymSailorAfterBattleText": {
+   "kind": "text",
+   "src": "scripts/VermilionGym.asm:227",
+   "commands": [
+    {"cmd": "text_far", "label": "_VermilionGymSailorAfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VermilionGymGymGuideText": {
+   "kind": "asm",
+   "src": "scripts/VermilionGym.asm:231",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["VermilionGymGymGuideText.ChampInMakingText", "VermilionGymGymGuideText.BeatLTSurgeText"]
+  },
+  "VermilionGymGymGuideText.ChampInMakingText": {
+   "kind": "text",
+   "src": "scripts/VermilionGym.asm:245",
+   "commands": [
+    {"cmd": "text_far", "label": "_VermilionGymGymGuideChampInMakingText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VermilionGymGymGuideText.BeatLTSurgeText": {
+   "kind": "text",
+   "src": "scripts/VermilionGym.asm:249",
+   "commands": [
+    {"cmd": "text_far", "label": "_VermilionGymGymGuideBeatLTSurgeText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_VermilionGymLTSurgePreBattleText": {
+   "kind": "text",
+   "src": "text/VermilionGym.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Hey, kid! What do"},
+    {"cmd": "line", "str": "you think you're"},
+    {"cmd": "cont", "str": "doing here?"},
+    {"cmd": "para", "str": "You won't live"},
+    {"cmd": "line", "str": "long in combat!"},
+    {"cmd": "cont", "str": "That's for sure!"},
+    {"cmd": "para", "str": "I tell you kid,"},
+    {"cmd": "line", "str": "electric POKéMON"},
+    {"cmd": "cont", "str": "saved me during"},
+    {"cmd": "cont", "str": "the war!"},
+    {"cmd": "para", "str": "They zapped my"},
+    {"cmd": "line", "str": "enemies into"},
+    {"cmd": "cont", "str": "paralysis!"},
+    {"cmd": "para", "str": "The same as I'll"},
+    {"cmd": "line", "str": "do to you!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_VermilionGymLTSurgePostBattleAdviceText": {
+   "kind": "text",
+   "src": "text/VermilionGym_2.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "A little word of"},
+    {"cmd": "line", "str": "advice, kid!"},
+    {"cmd": "para", "str": "Electricity is"},
+    {"cmd": "line", "str": "sure powerful!"},
+    {"cmd": "para", "str": "But, it's useless"},
+    {"cmd": "line", "str": "against ground-"},
+    {"cmd": "cont", "str": "type POKéMON!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_VermilionGymLTSurgeThunderBadgeInfoText": {
+   "kind": "text",
+   "src": "text/VermilionGym_2.asm:14",
+   "commands": [
+    {"cmd": "text", "str": "The THUNDERBADGE"},
+    {"cmd": "line", "str": "cranks up your"},
+    {"cmd": "cont", "str": "POKéMON's SPEED!"},
+    {"cmd": "para", "str": "It also lets your"},
+    {"cmd": "line", "str": "POKéMON FLY any"},
+    {"cmd": "cont", "str": "time, kid!"},
+    {"cmd": "para", "str": "You're special,"},
+    {"cmd": "line", "str": "kid! Take this!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_VermilionGymLTSurgeReceivedTM24Text": {
+   "kind": "text",
+   "src": "text/VermilionGym_2.asm:27",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} received "},
+    {"cmd": "line", "str": ""},
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_TM24ExplanationText": {
+   "kind": "text",
+   "src": "text/VermilionGym_2.asm:34",
+   "commands": [
+    {"cmd": "text", "str": ""},
+    {"cmd": "para", "str": "TM24 contains"},
+    {"cmd": "line", "str": "THUNDERBOLT!"},
+    {"cmd": "para", "str": "Teach it to an"},
+    {"cmd": "line", "str": "electric POKéMON!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_VermilionGymLTSurgeTM24NoRoomText": {
+   "kind": "text",
+   "src": "text/VermilionGym_2.asm:44",
+   "commands": [
+    {"cmd": "text", "str": "Yo kid, make room"},
+    {"cmd": "line", "str": "in your pack!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_VermilionGymLTSurgeReceivedThunderBadgeText": {
+   "kind": "text",
+   "src": "text/VermilionGym_2.asm:49",
+   "commands": [
+    {"cmd": "text", "str": "Whoa!"},
+    {"cmd": "para", "str": "You're the real"},
+    {"cmd": "line", "str": "deal, kid!"},
+    {"cmd": "para", "str": "Fine then, take"},
+    {"cmd": "line", "str": "the THUNDERBADGE!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_VermilionGymGentlemanBattleText": {
+   "kind": "text",
+   "src": "text/VermilionGym_2.asm:59",
+   "commands": [
+    {"cmd": "text", "str": "When I was in the"},
+    {"cmd": "line", "str": "Army, LT.SURGE"},
+    {"cmd": "cont", "str": "was my strict CO!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_VermilionGymGentlemanEndBattleText": {
+   "kind": "text",
+   "src": "text/VermilionGym_2.asm:65",
+   "commands": [
+    {"cmd": "text", "str": "Stop!"},
+    {"cmd": "line", "str": "You're very good!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_VermilionGymGentlemanAfterBattleText": {
+   "kind": "text",
+   "src": "text/VermilionGym_2.asm:70",
+   "commands": [
+    {"cmd": "text", "str": "The door won't"},
+    {"cmd": "line", "str": "open?"},
+    {"cmd": "para", "str": "LT.SURGE always"},
+    {"cmd": "line", "str": "was cautious!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_VermilionGymSuperNerdBattleText": {
+   "kind": "text",
+   "src": "text/VermilionGym_2.asm:78",
+   "commands": [
+    {"cmd": "text", "str": "I'm a lightweight,"},
+    {"cmd": "line", "str": "but I'm good with"},
+    {"cmd": "cont", "str": "electricity!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_VermilionGymSuperNerdEndBattleText": {
+   "kind": "text",
+   "src": "text/VermilionGym_2.asm:84",
+   "commands": [
+    {"cmd": "text", "str": "Fried!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_VermilionGymSuperNerdAfterBattleText": {
+   "kind": "text",
+   "src": "text/VermilionGym_2.asm:88",
+   "commands": [
+    {"cmd": "text", "str": "OK, I'll talk!"},
+    {"cmd": "para", "str": "LT.SURGE said he"},
+    {"cmd": "line", "str": "hid door switches"},
+    {"cmd": "cont", "str": "inside something!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_VermilionGymSailorBattleText": {
+   "kind": "text",
+   "src": "text/VermilionGym_2.asm:96",
+   "commands": [
+    {"cmd": "text", "str": "This is no place"},
+    {"cmd": "line", "str": "for kids!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_VermilionGymSailorEndBattleText": {
+   "kind": "text",
+   "src": "text/VermilionGym_2.asm:101",
+   "commands": [
+    {"cmd": "text", "str": "Wow!"},
+    {"cmd": "line", "str": "Surprised me!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_VermilionGymSailorAfterBattleText": {
+   "kind": "text",
+   "src": "text/VermilionGym_2.asm:106",
+   "commands": [
+    {"cmd": "text", "str": "LT.SURGE set up"},
+    {"cmd": "line", "str": "double locks!"},
+    {"cmd": "cont", "str": "Here's a hint!"},
+    {"cmd": "para", "str": "When you open the"},
+    {"cmd": "line", "str": "1st lock, the 2nd"},
+    {"cmd": "cont", "str": "lock is right"},
+    {"cmd": "cont", "str": "next to it!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_VermilionGymGymGuideChampInMakingText": {
+   "kind": "text",
+   "src": "text/VermilionGym_2.asm:117",
+   "commands": [
+    {"cmd": "text", "str": "Yo! Champ in"},
+    {"cmd": "line", "str": "making!"},
+    {"cmd": "para", "str": "LT.SURGE has a"},
+    {"cmd": "line", "str": "nickname. People"},
+    {"cmd": "cont", "str": "refer to him as"},
+    {"cmd": "cont", "str": "the Lightning"},
+    {"cmd": "cont", "str": "American!"},
+    {"cmd": "para", "str": "He's an expert on"},
+    {"cmd": "line", "str": "electric POKéMON!"},
+    {"cmd": "para", "str": "Birds and water"},
+    {"cmd": "line", "str": "POKéMON are at"},
+    {"cmd": "cont", "str": "risk! Beware of"},
+    {"cmd": "cont", "str": "paralysis too!"},
+    {"cmd": "para", "str": "LT.SURGE is very"},
+    {"cmd": "line", "str": "cautious!"},
+    {"cmd": "para", "str": "You'll have to"},
+    {"cmd": "line", "str": "break a code to"},
+    {"cmd": "cont", "str": "get to him!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_VermilionGymGymGuideBeatLTSurgeText": {
+   "kind": "text",
+   "src": "text/VermilionGym_2.asm:143",
+   "commands": [
+    {"cmd": "text", "str": "Whew! That match"},
+    {"cmd": "line", "str": "was electric!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

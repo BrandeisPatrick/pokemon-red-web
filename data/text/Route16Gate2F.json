@@ -1,0 +1,123 @@
+{
+ "map": "Route16Gate2F",
+ "const": "ROUTE_16_GATE_2F",
+ "textPointerTables": [
+  {
+   "label": "Route16Gate2F_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_ROUTE16GATE2F_LITTLE_BOY", "label": "Route16Gate2FLittleBoyText", "kind": "asm", "handler": "asm"},
+    {"id": 2, "const": "TEXT_ROUTE16GATE2F_LITTLE_GIRL", "label": "Route16Gate2FLittleGirlText", "kind": "asm", "handler": "asm"},
+    {"id": 3, "const": "TEXT_ROUTE16GATE2F_LEFT_BINOCULARS", "label": "Route16Gate2FLeftBinocularsText", "kind": "asm", "handler": "asm"},
+    {"id": 4, "const": "TEXT_ROUTE16GATE2F_RIGHT_BINOCULARS", "label": "Route16Gate2FRightBinocularsText", "kind": "asm", "handler": "asm"}
+   ]
+  }
+ ],
+ "texts": {
+  "Route16Gate2FLittleBoyText": {
+   "kind": "asm",
+   "src": "scripts/Route16Gate2F.asm:12",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["Route16Gate2FLittleBoyText.Text"]
+  },
+  "Route16Gate2FLittleBoyText.Text": {
+   "kind": "text",
+   "src": "scripts/Route16Gate2F.asm:18",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route16Gate2FLittleBoyText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route16Gate2FLittleGirlText": {
+   "kind": "asm",
+   "src": "scripts/Route16Gate2F.asm:22",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["Route16Gate2FLittleGirlText.Text"]
+  },
+  "Route16Gate2FLittleGirlText.Text": {
+   "kind": "text",
+   "src": "scripts/Route16Gate2F.asm:28",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route16Gate2FLittleGirlText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route16Gate2FLeftBinocularsText": {
+   "kind": "asm",
+   "src": "scripts/Route16Gate2F.asm:32",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["Route16Gate2FLeftBinocularsText.Text"]
+  },
+  "Route16Gate2FLeftBinocularsText.Text": {
+   "kind": "text",
+   "src": "scripts/Route16Gate2F.asm:37",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route16Gate2FLeftBinocularsText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route16Gate2FRightBinocularsText": {
+   "kind": "asm",
+   "src": "scripts/Route16Gate2F.asm:41",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["Route16Gate2FRightBinocularsText.Text"]
+  },
+  "Route16Gate2FRightBinocularsText.Text": {
+   "kind": "text",
+   "src": "scripts/Route16Gate2F.asm:46",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route16Gate2FRightBinocularsText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_Route16Gate2FLittleBoyText": {
+   "kind": "text",
+   "src": "text/Route16Gate2F.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "I'm going for a"},
+    {"cmd": "line", "str": "ride with my girl"},
+    {"cmd": "cont", "str": "friend!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route16Gate2FLittleGirlText": {
+   "kind": "text",
+   "src": "text/Route16Gate2F.asm:8",
+   "commands": [
+    {"cmd": "text", "str": "We're going"},
+    {"cmd": "line", "str": "riding together!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route16Gate2FLeftBinocularsText": {
+   "kind": "text",
+   "src": "text/Route16Gate2F.asm:13",
+   "commands": [
+    {"cmd": "text", "str": "Looked into the"},
+    {"cmd": "line", "str": "binoculars."},
+    {"cmd": "para", "str": "It's CELADON DEPT."},
+    {"cmd": "line", "str": "STORE!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route16Gate2FRightBinocularsText": {
+   "kind": "text",
+   "src": "text/Route16Gate2F.asm:21",
+   "commands": [
+    {"cmd": "text", "str": "Looked into the"},
+    {"cmd": "line", "str": "binoculars."},
+    {"cmd": "para", "str": "There's a long"},
+    {"cmd": "line", "str": "path over water!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

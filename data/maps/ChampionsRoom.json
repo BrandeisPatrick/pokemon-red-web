@@ -1,0 +1,44 @@
+{
+ "id": 120,
+ "const": "CHAMPIONS_ROOM",
+ "name": "ChampionsRoom",
+ "displayName": "POKéMON LEAGUE",
+ "width": 4,
+ "height": 4,
+ "tileset": "GYM",
+ "tilesetId": 7,
+ "tilesetFile": "data/tilesets/Gym.json",
+ "isOutside": false,
+ "borderBlock": 3,
+ "blocks": [73, 49, 50, 74, 75, 5, 5, 76, 75, 5, 5, 76, 82, 49, 50, 111],
+ "connections": {},
+ "warps": [
+  {"x": 3, "y": 7, "destMap": "LANCES_ROOM", "destMapId": 113, "destMapName": "LancesRoom", "destWarp": 2, "destWarpIndex": 1},
+  {"x": 4, "y": 7, "destMap": "LANCES_ROOM", "destMapId": 113, "destMapName": "LancesRoom", "destWarp": 3, "destWarpIndex": 2},
+  {"x": 3, "y": 0, "destMap": "HALL_OF_FAME", "destMapId": 118, "destMapName": "HallOfFame", "destWarp": 1, "destWarpIndex": 0},
+  {"x": 4, "y": 0, "destMap": "HALL_OF_FAME", "destMapId": 118, "destMapName": "HallOfFame", "destWarp": 1, "destWarpIndex": 0}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "CHAMPIONSROOM_RIVAL", "x": 4, "y": 2, "sprite": "SPRITE_BLUE", "spriteId": 2, "movement": "STAY", "rangeOrDirection": "DOWN", "rangeOrDirectionValue": 208, "behavior": "face_down", "textId": "TEXT_CHAMPIONSROOM_RIVAL", "textIndex": 1},
+  {"index": 2, "const": "CHAMPIONSROOM_OAK", "x": 3, "y": 7, "sprite": "SPRITE_OAK", "spriteId": 3, "movement": "STAY", "rangeOrDirection": "UP", "rangeOrDirectionValue": 209, "behavior": "face_up", "textId": "TEXT_CHAMPIONSROOM_OAK", "textIndex": 2, "toggleIndex": 214, "toggleConst": "TOGGLE_CHAMPIONS_ROOM_OAK", "startsHidden": true}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_INDIGO_PLATEAU",
+ "wild": null,
+ "townMap": {"x": 0, "y": 2, "group": "POKEMON_LEAGUE_2"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/ChampionsRoom.json",
+ "textPointers": "ChampionsRoom_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/ChampionsRoom.asm",
+  "objects": "data/maps/objects/ChampionsRoom.asm",
+  "blocks": "maps/ChampionsRoom.blk",
+  "script": "scripts/ChampionsRoom.asm"
+ },
+ "lastMapCandidates": ["INDIGO_PLATEAU"],
+ "palette": {"pal": "PAL_INDIGO", "rule": "lastMap", "viaLastMap": "INDIGO_PLATEAU"}
+}

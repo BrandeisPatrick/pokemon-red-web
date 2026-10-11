@@ -1,0 +1,80 @@
+{
+  "name": "SFX_BATTLE_36",
+  "title": "Battle 36",
+  "kind": "sfx",
+  "bank": 2,
+  "id": 230,
+  "label": "SFX_Battle_36",
+  "channels": [
+    {
+      "channel": 5,
+      "label": "SFX_Battle_36_Ch5",
+      "entry": 0,
+      "bytes": 63,
+      "labels": {"SFX_Battle_36_Ch5": 0, "SFX_Battle_36_Ch5.loop1": 12},
+      "commands": [
+        {"op": "duty_cycle", "duty": 0},
+        {"op": "square_note", "length": 2, "volume": 15, "fade": 1, "frequency": 1920},
+        {"op": "square_note", "length": 2, "volume": 15, "fade": 1, "frequency": 1792},
+        {"op": "square_note", "length": 2, "volume": 15, "fade": 1, "frequency": 1936},
+        {"op": "square_note", "length": 2, "volume": 15, "fade": 1, "frequency": 1792},
+        {"op": "square_note", "length": 2, "volume": 15, "fade": 1, "frequency": 1952},
+        {"op": "square_note", "length": 2, "volume": 15, "fade": 1, "frequency": 1792},
+        {"op": "square_note", "length": 2, "volume": 15, "fade": 1, "frequency": 1968},
+        {"op": "square_note", "length": 2, "volume": 15, "fade": 1, "frequency": 1792},
+        {"op": "square_note", "length": 2, "volume": 15, "fade": 1, "frequency": 1984},
+        {"op": "square_note", "length": 2, "volume": 15, "fade": 1, "frequency": 1792},
+        {"op": "square_note", "length": 2, "volume": 15, "fade": 1, "frequency": 2000},
+        {"op": "square_note", "length": 2, "volume": 15, "fade": 1, "frequency": 1792},
+        {"op": "square_note", "length": 2, "volume": 15, "fade": 1, "frequency": 2016},
+        {"op": "sound_loop", "count": 12, "target": 12},
+        {"op": "square_note", "length": 15, "volume": 15, "fade": 1, "frequency": 1792},
+        {"op": "sound_ret"}
+      ]
+    },
+    {
+      "channel": 6,
+      "label": "SFX_Battle_36_Ch6",
+      "entry": 5,
+      "bytes": 80,
+      "labels": {"SFX_Battle_36_Ch5.loop1": 0, "SFX_Battle_36_Ch6": 5},
+      "commands": [
+        {"op": "square_note", "length": 2, "volume": 15, "fade": 1, "frequency": 1792},
+        {"op": "square_note", "length": 2, "volume": 15, "fade": 1, "frequency": 2016},
+        {"op": "sound_loop", "count": 12, "target": 0},
+        {"op": "square_note", "length": 15, "volume": 15, "fade": 1, "frequency": 1792},
+        {"op": "sound_ret"},
+        {"op": "duty_cycle_pattern", "pattern": [2, 3, 0, 3]},
+        {"op": "square_note", "length": 2, "volume": 15, "fade": 1, "frequency": 1921},
+        {"op": "square_note", "length": 2, "volume": 15, "fade": 1, "frequency": 1793},
+        {"op": "square_note", "length": 2, "volume": 15, "fade": 1, "frequency": 1937},
+        {"op": "square_note", "length": 2, "volume": 15, "fade": 1, "frequency": 1793},
+        {"op": "square_note", "length": 2, "volume": 15, "fade": 1, "frequency": 1953},
+        {"op": "square_note", "length": 2, "volume": 15, "fade": 1, "frequency": 1793},
+        {"op": "square_note", "length": 2, "volume": 15, "fade": 1, "frequency": 1969},
+        {"op": "square_note", "length": 2, "volume": 15, "fade": 1, "frequency": 1793},
+        {"op": "square_note", "length": 2, "volume": 15, "fade": 1, "frequency": 1985},
+        {"op": "square_note", "length": 2, "volume": 15, "fade": 1, "frequency": 1793},
+        {"op": "square_note", "length": 2, "volume": 15, "fade": 1, "frequency": 2001},
+        {"op": "square_note", "length": 2, "volume": 15, "fade": 1, "frequency": 1793},
+        {"op": "square_note", "length": 2, "volume": 15, "fade": 1, "frequency": 2017},
+        {"op": "sound_loop", "count": 12, "target": 0},
+        {"op": "square_note", "length": 15, "volume": 15, "fade": 1, "frequency": 1793},
+        {"op": "sound_ret"}
+      ]
+    },
+    {
+      "channel": 8,
+      "label": "SFX_Battle_36_Ch8",
+      "entry": 0,
+      "bytes": 11,
+      "labels": {"SFX_Battle_36_Ch8": 0},
+      "commands": [
+        {"op": "noise_note", "length": 1, "volume": 13, "fade": 1, "value": 73},
+        {"op": "noise_note", "length": 1, "volume": 13, "fade": 1, "value": 41},
+        {"op": "sound_loop", "count": 26, "target": 0},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

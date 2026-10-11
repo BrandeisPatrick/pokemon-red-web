@@ -1,0 +1,137 @@
+{
+ "map": "VermilionOldRodHouse",
+ "const": "VERMILION_OLD_ROD_HOUSE",
+ "textPointerTables": [
+  {
+   "label": "VermilionOldRodHouse_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_VERMILIONOLDRODHOUSE_FISHING_GURU", "label": "VermilionOldRodHouseFishingGuruText", "kind": "asm", "handler": "asm"}
+   ]
+  }
+ ],
+ "texts": {
+  "VermilionOldRodHouseFishingGuruText": {
+   "kind": "asm",
+   "src": "scripts/VermilionOldRodHouse.asm:9",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["VermilionOldRodHouseFishingGuruText.DoYouLikeToFishText", "VermilionOldRodHouseFishingGuruText.TakeThisText", "VermilionOldRodHouseFishingGuruText.NoRoomText", "VermilionOldRodHouseFishingGuruText.ThatsSoDisappointingText", "VermilionOldRodHouseFishingGuruText.HowAreTheFishBitingText"]
+  },
+  "VermilionOldRodHouseFishingGuruText.DoYouLikeToFishText": {
+   "kind": "text",
+   "src": "scripts/VermilionOldRodHouse.asm:39",
+   "commands": [
+    {"cmd": "text_far", "label": "_VermilionOldRodHouseFishingGuruDoYouLikeToFishText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VermilionOldRodHouseFishingGuruText.TakeThisText": {
+   "kind": "text",
+   "src": "scripts/VermilionOldRodHouse.asm:43",
+   "commands": [
+    {"cmd": "text_far", "label": "_VermilionOldRodHouseFishingGuruTakeThisText"},
+    {"cmd": "sound", "sound": "sound_get_item_1"},
+    {"cmd": "text_far", "label": "_VermilionOldRodHouseFishingGuruFishingIsAWayOfLifeText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VermilionOldRodHouseFishingGuruText.ThatsSoDisappointingText": {
+   "kind": "text",
+   "src": "scripts/VermilionOldRodHouse.asm:49",
+   "commands": [
+    {"cmd": "text_far", "label": "_VermilionOldRodHouseFishingGuruThatsSoDisappointingText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VermilionOldRodHouseFishingGuruText.HowAreTheFishBitingText": {
+   "kind": "text",
+   "src": "scripts/VermilionOldRodHouse.asm:53",
+   "commands": [
+    {"cmd": "text_far", "label": "_VermilionOldRodHouseFishingGuruHowAreTheFishBitingText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "VermilionOldRodHouseFishingGuruText.NoRoomText": {
+   "kind": "text",
+   "src": "scripts/VermilionOldRodHouse.asm:57",
+   "commands": [
+    {"cmd": "text_far", "label": "_VermilionOldRodHouseFishingGuruNoRoomText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_VermilionOldRodHouseFishingGuruDoYouLikeToFishText": {
+   "kind": "text",
+   "src": "text/VermilionOldRodHouse.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "I'm the FISHING"},
+    {"cmd": "line", "str": "GURU!"},
+    {"cmd": "para", "str": "I simply Looove"},
+    {"cmd": "line", "str": "fishing!"},
+    {"cmd": "para", "str": "Do you like to"},
+    {"cmd": "line", "str": "fish?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_VermilionOldRodHouseFishingGuruTakeThisText": {
+   "kind": "text",
+   "src": "text/VermilionOldRodHouse.asm:13",
+   "commands": [
+    {"cmd": "text", "str": "Grand! I like"},
+    {"cmd": "line", "str": "your style!"},
+    {"cmd": "para", "str": "Take this and"},
+    {"cmd": "line", "str": "fish, young one!"},
+    {"cmd": "para", "str": "{PLAYER} received"},
+    {"cmd": "line", "str": "an "},
+    {"cmd": "text_ram", "ram": "wStringBuffer"},
+    {"cmd": "text", "str": "!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_VermilionOldRodHouseFishingGuruFishingIsAWayOfLifeText": {
+   "kind": "text",
+   "src": "text/VermilionOldRodHouse.asm:26",
+   "commands": [
+    {"cmd": "text", "str": ""},
+    {"cmd": "para", "str": "Fishing is a way"},
+    {"cmd": "line", "str": "of life!"},
+    {"cmd": "para", "str": "From the seas to"},
+    {"cmd": "line", "str": "rivers, go out"},
+    {"cmd": "cont", "str": "and land the big"},
+    {"cmd": "cont", "str": "one, young one!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_VermilionOldRodHouseFishingGuruThatsSoDisappointingText": {
+   "kind": "text",
+   "src": "text/VermilionOldRodHouse.asm:38",
+   "commands": [
+    {"cmd": "text", "str": "Oh... That's so"},
+    {"cmd": "line", "str": "disappointing..."},
+    {"cmd": "done"}
+   ]
+  },
+  "_VermilionOldRodHouseFishingGuruHowAreTheFishBitingText": {
+   "kind": "text",
+   "src": "text/VermilionOldRodHouse.asm:43",
+   "commands": [
+    {"cmd": "text", "str": "Hello there,"},
+    {"cmd": "line", "str": "{PLAYER}!"},
+    {"cmd": "para", "str": "How are the fish"},
+    {"cmd": "line", "str": "biting?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_VermilionOldRodHouseFishingGuruNoRoomText": {
+   "kind": "text",
+   "src": "text/VermilionOldRodHouse.asm:51",
+   "commands": [
+    {"cmd": "text", "str": "Oh no!"},
+    {"cmd": "para", "str": "You have no room"},
+    {"cmd": "line", "str": "for my gift!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

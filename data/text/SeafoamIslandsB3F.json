@@ -1,0 +1,37 @@
+{
+ "map": "SeafoamIslandsB3F",
+ "const": "SEAFOAM_ISLANDS_B3F",
+ "textPointerTables": [
+  {
+   "label": "SeafoamIslandsB3F_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_SEAFOAMISLANDSB3F_BOULDER1", "label": "BoulderText", "kind": "text", "handler": "text"},
+    {"id": 2, "const": "TEXT_SEAFOAMISLANDSB3F_BOULDER2", "label": "BoulderText", "kind": "text", "handler": "text"},
+    {"id": 3, "const": "TEXT_SEAFOAMISLANDSB3F_BOULDER3", "label": "BoulderText", "kind": "text", "handler": "text"},
+    {"id": 4, "const": "TEXT_SEAFOAMISLANDSB3F_BOULDER4", "label": "BoulderText", "kind": "text", "handler": "text"},
+    {"id": 5, "const": "TEXT_SEAFOAMISLANDSB3F_BOULDER5", "label": "BoulderText", "kind": "text", "handler": "text"},
+    {"id": 6, "const": "TEXT_SEAFOAMISLANDSB3F_BOULDER6", "label": "BoulderText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "_BoulderText": {
+   "kind": "text",
+   "src": "data/text/text_1.asm:45",
+   "commands": [
+    {"cmd": "text", "str": "This requires"},
+    {"cmd": "line", "str": "STRENGTH to move!"},
+    {"cmd": "done"}
+   ]
+  },
+  "BoulderText": {
+   "kind": "text",
+   "src": "home/overworld_text.asm:17",
+   "commands": [
+    {"cmd": "text_far", "label": "_BoulderText"},
+    {"cmd": "text_end"}
+   ]
+  }
+ }
+}

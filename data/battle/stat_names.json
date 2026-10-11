@@ -1,0 +1,6 @@
+{
+ "statModNames": ["ATTACK", "DEFENSE", "SPEED", "SPECIAL", "ACCURACY", "EVADE"],
+ "statModNamesNote": "StatModTextStrings: index = (effect - ATTACK_UP1_EFFECT) etc.; used by PrintStatText for \"<MON>'s <STAT> rose/fell!\". Order ATTACK, DEFENSE, SPEED, SPECIAL, ACCURACY, EVADE.",
+ "vitaminStats": ["HEALTH", "ATTACK", "DEFENSE", "SPEED", "SPECIAL"],
+ "vitaminStatsNote": "VitaminStats: used by ItemUseVitamin for \"<MON>'s <STAT> rose.\""
+}

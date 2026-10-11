@@ -1,0 +1,242 @@
+{
+ "map": "CeruleanBadgeHouse",
+ "const": "CERULEAN_BADGE_HOUSE",
+ "textPointerTables": [
+  {
+   "label": "CeruleanBadgeHouse_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_CERULEANBADGEHOUSE_MIDDLE_AGED_MAN", "label": "CeruleanBadgeHouseMiddleAgedManText", "kind": "asm", "handler": "asm"}
+   ]
+  }
+ ],
+ "texts": {
+  "CeruleanBadgeHouseMiddleAgedManText": {
+   "kind": "asm",
+   "src": "scripts/CeruleanBadgeHouse.asm:13",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["CeruleanBadgeHouseMiddleAgedManText.Text", "CeruleanBadgeHouseMiddleAgedManText.WhichBadgeText", "CeruleanBadgeHouseMiddleAgedManText.VisitAnyTimeText"]
+  },
+  "CeruleanBadgeHouseMiddleAgedManText.Text": {
+   "kind": "text",
+   "src": "scripts/CeruleanBadgeHouse.asm:70",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanBadgeHouseMiddleAgedManText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeruleanBadgeHouseMiddleAgedManText.WhichBadgeText": {
+   "kind": "text",
+   "src": "scripts/CeruleanBadgeHouse.asm:74",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanBadgeHouseMiddleAgedManWhichBadgeText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeruleanBadgeHouseMiddleAgedManText.VisitAnyTimeText": {
+   "kind": "text",
+   "src": "scripts/CeruleanBadgeHouse.asm:78",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanBadgeHouseMiddleAgedManVisitAnyTimeText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeruleanBadgeHouseBoulderBadgeText": {
+   "kind": "text",
+   "src": "scripts/CeruleanBadgeHouse.asm:94",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanBadgeHouseBoulderBadgeText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeruleanBadgeHouseCascadeBadgeText": {
+   "kind": "text",
+   "src": "scripts/CeruleanBadgeHouse.asm:98",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanBadgeHouseCascadeBadgeText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeruleanBadgeHouseThunderBadgeText": {
+   "kind": "text",
+   "src": "scripts/CeruleanBadgeHouse.asm:102",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanBadgeHouseThunderBadgeText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeruleanBadgeHouseRainbowBadgeText": {
+   "kind": "text",
+   "src": "scripts/CeruleanBadgeHouse.asm:106",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanBadgeHouseRainbowBadgeText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeruleanBadgeHouseSoulBadgeText": {
+   "kind": "text",
+   "src": "scripts/CeruleanBadgeHouse.asm:110",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanBadgeHouseSoulBadgeText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeruleanBadgeHouseMarshBadgeText": {
+   "kind": "text",
+   "src": "scripts/CeruleanBadgeHouse.asm:114",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanBadgeHouseMarshBadgeText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeruleanBadgeHouseVolcanoBadgeText": {
+   "kind": "text",
+   "src": "scripts/CeruleanBadgeHouse.asm:118",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanBadgeHouseVolcanoBadgeText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "CeruleanBadgeHouseEarthBadgeText": {
+   "kind": "text",
+   "src": "scripts/CeruleanBadgeHouse.asm:122",
+   "commands": [
+    {"cmd": "text_far", "label": "_CeruleanBadgeHouseEarthBadgeText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_CeruleanBadgeHouseMiddleAgedManText": {
+   "kind": "text",
+   "src": "text/CeruleanBadgeHouse.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "POKéMON BADGEs"},
+    {"cmd": "line", "str": "are owned only by"},
+    {"cmd": "cont", "str": "skilled trainers."},
+    {"cmd": "para", "str": "I see you have"},
+    {"cmd": "line", "str": "at least one."},
+    {"cmd": "para", "str": "Those BADGEs have"},
+    {"cmd": "line", "str": "amazing secrets!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_CeruleanBadgeHouseMiddleAgedManWhichBadgeText": {
+   "kind": "text",
+   "src": "text/CeruleanBadgeHouse.asm:14",
+   "commands": [
+    {"cmd": "text", "str": "Now then..."},
+    {"cmd": "para", "str": "Which of the 8"},
+    {"cmd": "line", "str": "BADGEs should I"},
+    {"cmd": "cont", "str": "describe?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeruleanBadgeHouseMiddleAgedManVisitAnyTimeText": {
+   "kind": "text",
+   "src": "text/CeruleanBadgeHouse.asm:22",
+   "commands": [
+    {"cmd": "text", "str": "Come visit me any"},
+    {"cmd": "line", "str": "time you wish."},
+    {"cmd": "done"}
+   ]
+  },
+  "_CeruleanBadgeHouseBoulderBadgeText": {
+   "kind": "text",
+   "src": "text/CeruleanBadgeHouse.asm:27",
+   "commands": [
+    {"cmd": "text", "str": "The ATTACK of all"},
+    {"cmd": "line", "str": "POKéMON increases"},
+    {"cmd": "cont", "str": "a little bit."},
+    {"cmd": "para", "str": "It also lets you"},
+    {"cmd": "line", "str": "use FLASH any"},
+    {"cmd": "cont", "str": "time you desire."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_CeruleanBadgeHouseCascadeBadgeText": {
+   "kind": "text",
+   "src": "text/CeruleanBadgeHouse.asm:37",
+   "commands": [
+    {"cmd": "text", "str": "POKéMON up to L30"},
+    {"cmd": "line", "str": "will obey you."},
+    {"cmd": "para", "str": "Any higher, they"},
+    {"cmd": "line", "str": "become unruly!"},
+    {"cmd": "para", "str": "It also lets you"},
+    {"cmd": "line", "str": "use CUT outside"},
+    {"cmd": "cont", "str": "of battle."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_CeruleanBadgeHouseThunderBadgeText": {
+   "kind": "text",
+   "src": "text/CeruleanBadgeHouse.asm:49",
+   "commands": [
+    {"cmd": "text", "str": "The SPEED of all"},
+    {"cmd": "line", "str": "POKéMON increases"},
+    {"cmd": "cont", "str": "a little bit."},
+    {"cmd": "para", "str": "It also lets you"},
+    {"cmd": "line", "str": "use FLY outside"},
+    {"cmd": "cont", "str": "of battle."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_CeruleanBadgeHouseRainbowBadgeText": {
+   "kind": "text",
+   "src": "text/CeruleanBadgeHouse.asm:59",
+   "commands": [
+    {"cmd": "text", "str": "POKéMON up to L50"},
+    {"cmd": "line", "str": "will obey you."},
+    {"cmd": "para", "str": "Any higher, they"},
+    {"cmd": "line", "str": "become unruly!"},
+    {"cmd": "para", "str": "It also lets you"},
+    {"cmd": "line", "str": "use STRENGTH out-"},
+    {"cmd": "cont", "str": "side of battle."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_CeruleanBadgeHouseSoulBadgeText": {
+   "kind": "text",
+   "src": "text/CeruleanBadgeHouse.asm:71",
+   "commands": [
+    {"cmd": "text", "str": "The DEFENSE of all"},
+    {"cmd": "line", "str": "POKéMON increases"},
+    {"cmd": "cont", "str": "a little bit."},
+    {"cmd": "para", "str": "It also lets you"},
+    {"cmd": "line", "str": "use SURF outside"},
+    {"cmd": "cont", "str": "of battle."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_CeruleanBadgeHouseMarshBadgeText": {
+   "kind": "text",
+   "src": "text/CeruleanBadgeHouse.asm:81",
+   "commands": [
+    {"cmd": "text", "str": "POKéMON up to L70"},
+    {"cmd": "line", "str": "will obey you."},
+    {"cmd": "para", "str": "Any higher, they"},
+    {"cmd": "line", "str": "become unruly!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_CeruleanBadgeHouseVolcanoBadgeText": {
+   "kind": "text",
+   "src": "text/CeruleanBadgeHouse.asm:89",
+   "commands": [
+    {"cmd": "text", "str": "Your POKéMON's"},
+    {"cmd": "line", "str": "SPECIAL abilities"},
+    {"cmd": "cont", "str": "increase a bit."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_CeruleanBadgeHouseEarthBadgeText": {
+   "kind": "text",
+   "src": "text/CeruleanBadgeHouse.asm:95",
+   "commands": [
+    {"cmd": "text", "str": "All POKéMON will"},
+    {"cmd": "line", "str": "obey you!"},
+    {"cmd": "prompt"}
+   ]
+  }
+ }
+}

@@ -1,0 +1,191 @@
+{
+ "map": "SilphCo3F",
+ "const": "SILPH_CO_3F",
+ "textPointerTables": [
+  {
+   "label": "SilphCo3F_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_SILPHCO3F_SILPH_WORKER_M", "label": "SilphCo3FSilphWorkerMText", "kind": "asm", "handler": "asm"},
+    {"id": 2, "const": "TEXT_SILPHCO3F_ROCKET", "label": "SilphCo3FRocketText", "kind": "asm", "handler": "trainer", "trainerHeader": "SilphCo3TrainerHeader0"},
+    {"id": 3, "const": "TEXT_SILPHCO3F_SCIENTIST", "label": "SilphCo3FScientistText", "kind": "asm", "handler": "trainer", "trainerHeader": "SilphCo3TrainerHeader1"},
+    {"id": 4, "const": "TEXT_SILPHCO3F_HYPER_POTION", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"}
+   ]
+  }
+ ],
+ "texts": {
+  "PickUpItemText": {
+   "kind": "asm",
+   "src": "home/overworld_text.asm:29",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "SilphCo3FSilphWorkerMText": {
+   "kind": "asm",
+   "src": "scripts/SilphCo3F.asm:75",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["SilphCo3FSilphWorkerMText.YouSavedUsText", "SilphCo3FSilphWorkerMText.WhatShouldIDoText"]
+  },
+  "SilphCo3FSilphWorkerMText.WhatShouldIDoText": {
+   "kind": "text",
+   "src": "scripts/SilphCo3F.asm:85",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo3FSilphWorkerMWhatShouldIDoText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo3FSilphWorkerMText.YouSavedUsText": {
+   "kind": "text",
+   "src": "scripts/SilphCo3F.asm:89",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo3FSilphWorkerMYouSavedUsText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo3FRocketText": {
+   "kind": "asm",
+   "src": "scripts/SilphCo3F.asm:93",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "SilphCo3TrainerHeader0"
+  },
+  "SilphCo3FRocketBattleText": {
+   "kind": "text",
+   "src": "scripts/SilphCo3F.asm:99",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo3FRocketBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo3FRocketEndBattleText": {
+   "kind": "text",
+   "src": "scripts/SilphCo3F.asm:103",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo3FRocketEndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo3FRocketAfterBattleText": {
+   "kind": "text",
+   "src": "scripts/SilphCo3F.asm:107",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo3FRocketAfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo3FScientistText": {
+   "kind": "asm",
+   "src": "scripts/SilphCo3F.asm:111",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "trainerHeader": "SilphCo3TrainerHeader1"
+  },
+  "SilphCo3FScientistBattleText": {
+   "kind": "text",
+   "src": "scripts/SilphCo3F.asm:117",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo3FScientistBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo3FScientistEndBattleText": {
+   "kind": "text",
+   "src": "scripts/SilphCo3F.asm:121",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo3FScientistEndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "SilphCo3FScientistAfterBattleText": {
+   "kind": "text",
+   "src": "scripts/SilphCo3F.asm:125",
+   "commands": [
+    {"cmd": "text_far", "label": "_SilphCo3FScientistAfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_SilphCo3FSilphWorkerMWhatShouldIDoText": {
+   "kind": "text",
+   "src": "text/SilphCo3F.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "I work for SILPH."},
+    {"cmd": "line", "str": "What should I do?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SilphCo3FSilphWorkerMYouSavedUsText": {
+   "kind": "text",
+   "src": "text/SilphCo3F.asm:7",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER}! You and"},
+    {"cmd": "line", "str": "your POKéMON"},
+    {"cmd": "cont", "str": "saved us!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SilphCo3FRocketBattleText": {
+   "kind": "text",
+   "src": "text/SilphCo3F.asm:13",
+   "commands": [
+    {"cmd": "text", "str": "Quit messing with"},
+    {"cmd": "line", "str": "us, kid!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SilphCo3FRocketEndBattleText": {
+   "kind": "text",
+   "src": "text/SilphCo3F.asm:18",
+   "commands": [
+    {"cmd": "text", "str": "I give"},
+    {"cmd": "line", "str": "up!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_SilphCo3FRocketAfterBattleText": {
+   "kind": "text",
+   "src": "text/SilphCo3F.asm:23",
+   "commands": [
+    {"cmd": "text", "str": "A hint? You can"},
+    {"cmd": "line", "str": "open doors with a"},
+    {"cmd": "cont", "str": "CARD KEY!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SilphCo3FScientistBattleText": {
+   "kind": "text",
+   "src": "text/SilphCo3F.asm:29",
+   "commands": [
+    {"cmd": "text", "str": "I support TEAM"},
+    {"cmd": "line", "str": "ROCKET more than"},
+    {"cmd": "cont", "str": "I support SILPH!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_SilphCo3FScientistEndBattleText": {
+   "kind": "text",
+   "src": "text/SilphCo3F.asm:35",
+   "commands": [
+    {"cmd": "text", "str": "You"},
+    {"cmd": "line", "str": "really got me!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_SilphCo3FScientistAfterBattleText": {
+   "kind": "text",
+   "src": "text/SilphCo3F.asm:40",
+   "commands": [
+    {"cmd": "text", "str": "Humph..."},
+    {"cmd": "para", "str": "TEAM ROCKET said"},
+    {"cmd": "line", "str": "that if I helped"},
+    {"cmd": "cont", "str": "them, they'd let"},
+    {"cmd": "cont", "str": "me study POKéMON!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

@@ -1,0 +1,43 @@
+{
+ "id": 56,
+ "const": "PEWTER_MART",
+ "name": "PewterMart",
+ "displayName": "PEWTER CITY",
+ "width": 4,
+ "height": 4,
+ "tileset": "MART",
+ "tilesetId": 2,
+ "tilesetFile": "data/tilesets/Mart.json",
+ "isOutside": false,
+ "borderBlock": 0,
+ "blocks": [18, 19, 19, 9, 22, 15, 20, 20, 24, 25, 21, 21, 23, 26, 11, 15],
+ "connections": {},
+ "warps": [
+  {"x": 3, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 5, "destWarpIndex": 4},
+  {"x": 4, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 5, "destWarpIndex": 4}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "PEWTERMART_CLERK", "x": 0, "y": 5, "sprite": "SPRITE_CLERK", "spriteId": 38, "movement": "STAY", "rangeOrDirection": "RIGHT", "rangeOrDirectionValue": 211, "behavior": "face_right", "textId": "TEXT_PEWTERMART_CLERK", "textIndex": 1},
+  {"index": 2, "const": "PEWTERMART_YOUNGSTER", "x": 3, "y": 3, "sprite": "SPRITE_YOUNGSTER", "spriteId": 4, "movement": "WALK", "rangeOrDirection": "UP_DOWN", "rangeOrDirectionValue": 1, "behavior": "walk_up_down", "textId": "TEXT_PEWTERMART_YOUNGSTER", "textIndex": 2},
+  {"index": 3, "const": "PEWTERMART_SUPER_NERD", "x": 5, "y": 5, "sprite": "SPRITE_SUPER_NERD", "spriteId": 12, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_PEWTERMART_SUPER_NERD", "textIndex": 3}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_POKECENTER",
+ "wild": null,
+ "townMap": {"x": 2, "y": 3, "group": "PEWTER_CITY"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/PewterMart.json",
+ "textPointers": "PewterMart_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/PewterMart.asm",
+  "objects": "data/maps/objects/PewterMart.asm",
+  "blocks": "maps/PewterMart.blk",
+  "script": "scripts/PewterMart.asm"
+ },
+ "lastMapCandidates": ["PEWTER_CITY"],
+ "palette": {"pal": "PAL_PEWTER", "rule": "lastMap", "viaLastMap": "PEWTER_CITY"}
+}

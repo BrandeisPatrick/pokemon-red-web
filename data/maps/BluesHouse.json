@@ -1,0 +1,47 @@
+{
+ "id": 39,
+ "const": "BLUES_HOUSE",
+ "name": "BluesHouse",
+ "displayName": "PALLET TOWN",
+ "width": 4,
+ "height": 4,
+ "tileset": "HOUSE",
+ "tilesetId": 8,
+ "tilesetFile": "data/tilesets/House.json",
+ "isOutside": false,
+ "borderBlock": 10,
+ "blocks": [4, 14, 5, 9, 15, 1, 2, 15, 15, 12, 13, 15, 6, 11, 15, 7],
+ "connections": {},
+ "warps": [
+  {"x": 2, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 2, "destWarpIndex": 1},
+  {"x": 3, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 2, "destWarpIndex": 1}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "BLUESHOUSE_DAISY1", "x": 2, "y": 3, "sprite": "SPRITE_DAISY", "spriteId": 17, "movement": "STAY", "rangeOrDirection": "RIGHT", "rangeOrDirectionValue": 211, "behavior": "face_right", "textId": "TEXT_BLUESHOUSE_DAISY_SITTING", "textIndex": 1, "toggleIndex": 39, "toggleConst": "TOGGLE_DAISY_SITTING", "startsHidden": false},
+  {"index": 2, "const": "BLUESHOUSE_DAISY2", "x": 6, "y": 4, "sprite": "SPRITE_DAISY", "spriteId": 17, "movement": "WALK", "rangeOrDirection": "UP_DOWN", "rangeOrDirectionValue": 1, "behavior": "walk_up_down", "textId": "TEXT_BLUESHOUSE_DAISY_WALKING", "textIndex": 2, "item": "0", "itemId": 0, "toggleIndex": 40, "toggleConst": "TOGGLE_DAISY_WALKING", "startsHidden": true},
+  {"index": 3, "const": "BLUESHOUSE_TOWN_MAP", "x": 3, "y": 3, "sprite": "SPRITE_POKEDEX", "spriteId": 65, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_BLUESHOUSE_TOWN_MAP", "textIndex": 3, "item": "0", "itemId": 0, "toggleIndex": 41, "toggleConst": "TOGGLE_TOWN_MAP", "startsHidden": false}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [
+  {"x": 0, "y": 1, "routine": "PrintBookcaseText", "arg": "SPRITE_FACING_UP", "argValue": 4, "kind": "event"},
+  {"x": 1, "y": 1, "routine": "PrintBookcaseText", "arg": "SPRITE_FACING_UP", "argValue": 4, "kind": "event"},
+  {"x": 7, "y": 1, "routine": "PrintBookcaseText", "arg": "SPRITE_FACING_UP", "argValue": 4, "kind": "event"}
+ ],
+ "spriteSet": null,
+ "music": "MUSIC_PALLET_TOWN",
+ "wild": null,
+ "townMap": {"x": 2, "y": 11, "group": "PALLET_TOWN"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/BluesHouse.json",
+ "textPointers": "BluesHouse_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/BluesHouse.asm",
+  "objects": "data/maps/objects/BluesHouse.asm",
+  "blocks": "maps/BluesHouse.blk",
+  "script": "scripts/BluesHouse.asm"
+ },
+ "lastMapCandidates": ["PALLET_TOWN"],
+ "palette": {"pal": "PAL_PALLET", "rule": "lastMap", "viaLastMap": "PALLET_TOWN"}
+}

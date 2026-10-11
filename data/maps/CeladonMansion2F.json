@@ -1,0 +1,45 @@
+{
+ "id": 129,
+ "const": "CELADON_MANSION_2F",
+ "name": "CeladonMansion2F",
+ "displayName": "CELADON CITY",
+ "width": 4,
+ "height": 6,
+ "tileset": "MANSION",
+ "tilesetId": 19,
+ "tilesetFile": "data/tilesets/Mansion.json",
+ "isOutside": false,
+ "borderBlock": 15,
+ "blocks": [15, 20, 21, 25, 17, 17, 26, 7, 39, 11, 4, 7, 43, 18, 19, 7, 47, 12, 13, 7, 7, 7, 7, 7],
+ "connections": {},
+ "warps": [
+  {"x": 6, "y": 1, "destMap": "CELADON_MANSION_3F", "destMapId": 130, "destMapName": "CeladonMansion3F", "destWarp": 1, "destWarpIndex": 0},
+  {"x": 7, "y": 1, "destMap": "CELADON_MANSION_1F", "destMapId": 128, "destMapName": "CeladonMansion1F", "destWarp": 4, "destWarpIndex": 3},
+  {"x": 2, "y": 1, "destMap": "CELADON_MANSION_1F", "destMapId": 128, "destMapName": "CeladonMansion1F", "destWarp": 5, "destWarpIndex": 4},
+  {"x": 4, "y": 1, "destMap": "CELADON_MANSION_3F", "destMapId": 130, "destMapName": "CeladonMansion3F", "destWarp": 4, "destWarpIndex": 3}
+ ],
+ "bgEvents": [
+  {"x": 4, "y": 9, "textId": "TEXT_CELADONMANSION2F_MEETING_ROOM_SIGN", "textIndex": 1}
+ ],
+ "objectEvents": [],
+ "trainerHeaders": [],
+ "hiddenObjects": [
+  {"x": 0, "y": 5, "routine": "OpenPokemonCenterPC", "arg": "SPRITE_FACING_UP", "argValue": 4, "kind": "event"}
+ ],
+ "spriteSet": null,
+ "music": "MUSIC_CELADON",
+ "wild": null,
+ "townMap": {"x": 7, "y": 5, "group": "CELADON_CITY"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/CeladonMansion2F.json",
+ "textPointers": "CeladonMansion2F_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/CeladonMansion2F.asm",
+  "objects": "data/maps/objects/CeladonMansion2F.asm",
+  "blocks": "maps/CeladonMansion2F.blk",
+  "script": "scripts/CeladonMansion2F.asm"
+ },
+ "lastMapCandidates": ["CELADON_CITY"],
+ "palette": {"pal": "PAL_CELADON", "rule": "lastMap", "viaLastMap": "CELADON_CITY"}
+}

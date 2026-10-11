@@ -1,0 +1,57 @@
+{
+ "id": 9,
+ "const": "INDIGO_PLATEAU",
+ "name": "IndigoPlateau",
+ "displayName": "INDIGO PLATEAU",
+ "width": 10,
+ "height": 9,
+ "tileset": "PLATEAU",
+ "tilesetId": 23,
+ "tilesetFile": "data/tilesets/Plateau.json",
+ "isOutside": true,
+ "borderBlock": 14,
+ "blocks": [24, 26, 26, 33, 23, 23, 34, 26, 26, 27, 28, 39, 28, 24, 26, 26, 27, 31, 39, 31, 1, 1, 1, 28, 29, 30, 31, 1, 1, 1, 41, 41, 41, 1, 67, 66, 1, 42, 42, 42, 44, 44, 44, 40, 67, 66, 40, 43, 43, 43, 41, 41, 41, 1, 67, 66, 1, 42, 42, 42, 44, 44, 44, 40, 67, 66, 40, 43, 43, 43, 41, 41, 41, 1, 67, 66, 1, 42, 42, 42, 44, 44, 44, 40, 67, 66, 40, 43, 43, 43],
+ "connections": {
+  "south": {
+   "map": "ROUTE_23",
+   "mapId": 34,
+   "mapName": "Route23",
+   "offset": 0,
+   "dx": 0,
+   "dy": 9,
+   "copyRect": {"x": 0, "y": 0, "w": 10, "h": 3},
+   "onEnter": {"newY": 0, "xAdd": 0},
+   "macro": {"stripSrc": 0, "stripDest": 195, "stripLength": 10, "connectedWidth": 10, "yAlign": 0, "xAlign": 0, "viewPointer": 17}
+  }
+ },
+ "warps": [
+  {"x": 9, "y": 5, "destMap": "INDIGO_PLATEAU_LOBBY", "destMapId": 174, "destMapName": "IndigoPlateauLobby", "destWarp": 1, "destWarpIndex": 0},
+  {"x": 10, "y": 5, "destMap": "INDIGO_PLATEAU_LOBBY", "destMapId": 174, "destMapName": "IndigoPlateauLobby", "destWarp": 1, "destWarpIndex": 0}
+ ],
+ "bgEvents": [],
+ "objectEvents": [],
+ "trainerHeaders": [],
+ "hiddenObjects": [
+  {"x": 8, "y": 13, "routine": "PrintIndigoPlateauHQText", "arg": "$ff", "argValue": 255, "kind": "event"},
+  {"x": 11, "y": 13, "routine": "PrintIndigoPlateauHQText", "arg": "SPRITE_FACING_DOWN", "argValue": 0, "kind": "event"}
+ ],
+ "spriteSet": {
+  "type": "fixed",
+  "set": "SPRITESET_INDIGO",
+  "sprites": ["SPRITE_YOUNGSTER", "SPRITE_GYM_GUIDE", "SPRITE_MONSTER", "SPRITE_BLUE", "SPRITE_COOLTRAINER_F", "SPRITE_COOLTRAINER_M", "SPRITE_SWIMMER", "SPRITE_GUARD", "SPRITE_GAMBLER", "SPRITE_POKE_BALL", "SPRITE_UNUSED_GAMBLER_ASLEEP_2"]
+ },
+ "music": "MUSIC_INDIGO_PLATEAU",
+ "wild": null,
+ "townMap": {"x": 0, "y": 2, "group": null},
+ "extraWarpCheck": "warpTileInFront",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/IndigoPlateau.json",
+ "textPointers": "IndigoPlateau_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/IndigoPlateau.asm",
+  "objects": "data/maps/objects/IndigoPlateau.asm",
+  "blocks": "maps/IndigoPlateau.blk",
+  "script": "scripts/IndigoPlateau.asm"
+ },
+ "palette": {"pal": "PAL_INDIGO", "rule": "town"}
+}

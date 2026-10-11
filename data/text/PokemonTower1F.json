@@ -1,0 +1,110 @@
+{
+ "map": "PokemonTower1F",
+ "const": "POKEMON_TOWER_1F",
+ "textPointerTables": [
+  {
+   "label": "PokemonTower1F_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_POKEMONTOWER1F_RECEPTIONIST", "label": "PokemonTower1FReceptionistText", "kind": "text", "handler": "text"},
+    {"id": 2, "const": "TEXT_POKEMONTOWER1F_MIDDLE_AGED_WOMAN", "label": "PokemonTower1FMiddleAgedWomanText", "kind": "text", "handler": "text"},
+    {"id": 3, "const": "TEXT_POKEMONTOWER1F_BALDING_GUY", "label": "PokemonTower1FBaldingGuyText", "kind": "text", "handler": "text"},
+    {"id": 4, "const": "TEXT_POKEMONTOWER1F_GIRL", "label": "PokemonTower1FGirlText", "kind": "text", "handler": "text"},
+    {"id": 5, "const": "TEXT_POKEMONTOWER1F_CHANNELER", "label": "PokemonTower1FChannelerText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "PokemonTower1FReceptionistText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower1F.asm:13",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower1FReceptionistText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower1FMiddleAgedWomanText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower1F.asm:17",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower1FMiddleAgedWomanText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower1FBaldingGuyText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower1F.asm:21",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower1FBaldingGuyText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower1FGirlText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower1F.asm:25",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower1FGirlText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokemonTower1FChannelerText": {
+   "kind": "text",
+   "src": "scripts/PokemonTower1F.asm:29",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokemonTower1FChannelerText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_PokemonTower1FReceptionistText": {
+   "kind": "text",
+   "src": "text/PokemonTower1F.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "POKéMON TOWER was"},
+    {"cmd": "line", "str": "erected in the"},
+    {"cmd": "cont", "str": "memory of POKéMON"},
+    {"cmd": "cont", "str": "that had died."},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonTower1FMiddleAgedWomanText": {
+   "kind": "text",
+   "src": "text/PokemonTower1F.asm:9",
+   "commands": [
+    {"cmd": "text", "str": "Did you come to"},
+    {"cmd": "line", "str": "pay respects?"},
+    {"cmd": "cont", "str": "Bless you!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonTower1FBaldingGuyText": {
+   "kind": "text",
+   "src": "text/PokemonTower1F.asm:15",
+   "commands": [
+    {"cmd": "text", "str": "I came to pray"},
+    {"cmd": "line", "str": "for my CLEFAIRY."},
+    {"cmd": "para", "str": "Sniff! I can't"},
+    {"cmd": "line", "str": "stop crying..."},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonTower1FGirlText": {
+   "kind": "text",
+   "src": "text/PokemonTower1F.asm:23",
+   "commands": [
+    {"cmd": "text", "str": "My GROWLITHE..."},
+    {"cmd": "line", "str": "Why did you die?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokemonTower1FChannelerText": {
+   "kind": "text",
+   "src": "text/PokemonTower1F.asm:28",
+   "commands": [
+    {"cmd": "text", "str": "I am a CHANNELER!"},
+    {"cmd": "line", "str": "There are spirits"},
+    {"cmd": "cont", "str": "up to mischief!"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

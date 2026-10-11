@@ -1,0 +1,25 @@
+{
+  "name": "SFX_BATTLE_21",
+  "title": "Battle 21",
+  "kind": "sfx",
+  "bank": 2,
+  "id": 184,
+  "label": "SFX_Battle_21",
+  "channels": [
+    {
+      "channel": 8,
+      "label": "SFX_Battle_21_Ch8",
+      "entry": 0,
+      "bytes": 16,
+      "labels": {"SFX_Battle_21_Ch8": 0},
+      "commands": [
+        {"op": "noise_note", "length": 2, "volume": 15, "fade": 1, "value": 51},
+        {"op": "noise_note", "length": 2, "volume": 12, "fade": 1, "value": 50},
+        {"op": "noise_note", "length": 2, "volume": 10, "fade": 1, "value": 49},
+        {"op": "noise_note", "length": 15, "volume": 8, "fade": 2, "value": 50},
+        {"op": "noise_note", "length": 8, "volume": 15, "fade": 1, "value": 52},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

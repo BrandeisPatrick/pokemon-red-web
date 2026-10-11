@@ -1,0 +1,53 @@
+{
+  "name": "SFX_BATTLE_27",
+  "title": "Battle 27",
+  "kind": "sfx",
+  "bank": 2,
+  "id": 191,
+  "label": "SFX_Battle_27",
+  "channels": [
+    {
+      "channel": 5,
+      "label": "SFX_Battle_27_Ch5",
+      "entry": 0,
+      "bytes": 19,
+      "labels": {"SFX_Battle_27_Ch5": 0, "SFX_Battle_27_Ch5.loop1": 2},
+      "commands": [
+        {"op": "duty_cycle", "duty": 2},
+        {"op": "square_note", "length": 15, "volume": 3, "fade": -7, "frequency": 1984},
+        {"op": "square_note", "length": 15, "volume": 13, "fade": -7, "frequency": 1984},
+        {"op": "sound_loop", "count": 4, "target": 2},
+        {"op": "square_note", "length": 15, "volume": 13, "fade": 1, "frequency": 1984},
+        {"op": "sound_ret"}
+      ]
+    },
+    {
+      "channel": 6,
+      "label": "SFX_Battle_27_Ch6",
+      "entry": 0,
+      "bytes": 19,
+      "labels": {"SFX_Battle_27_Ch6": 0, "SFX_Battle_27_Ch6.loop1": 2},
+      "commands": [
+        {"op": "duty_cycle_pattern", "pattern": [2, 3, 0, 3]},
+        {"op": "square_note", "length": 15, "volume": 2, "fade": -7, "frequency": 1992},
+        {"op": "square_note", "length": 15, "volume": 12, "fade": -7, "frequency": 1991},
+        {"op": "sound_loop", "count": 4, "target": 2},
+        {"op": "square_note", "length": 15, "volume": 12, "fade": 1, "frequency": 1992},
+        {"op": "sound_ret"}
+      ]
+    },
+    {
+      "channel": 8,
+      "label": "SFX_Battle_27_Ch8",
+      "entry": 0,
+      "bytes": 11,
+      "labels": {"SFX_Battle_27_Ch8": 0},
+      "commands": [
+        {"op": "noise_note", "length": 3, "volume": 9, "fade": 7, "value": 18},
+        {"op": "noise_note", "length": 3, "volume": 10, "fade": 1, "value": 17},
+        {"op": "sound_loop", "count": 10, "target": 0},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

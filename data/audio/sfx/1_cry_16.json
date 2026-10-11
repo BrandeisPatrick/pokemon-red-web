@@ -1,0 +1,51 @@
+{
+  "name": "SFX_CRY_16",
+  "title": "Cry 16",
+  "kind": "sfx",
+  "bank": 1,
+  "id": 86,
+  "label": "SFX_Cry16_1",
+  "channels": [
+    {
+      "channel": 5,
+      "label": "SFX_Cry16_1_Ch5",
+      "entry": 0,
+      "bytes": 15,
+      "labels": {"SFX_Cry16_1_Ch5": 0},
+      "commands": [
+        {"op": "duty_cycle_pattern", "pattern": [3, 3, 0, 0]},
+        {"op": "square_note", "length": 15, "volume": 13, "fade": 7, "frequency": 1920},
+        {"op": "square_note", "length": 4, "volume": 14, "fade": 6, "frequency": 1952},
+        {"op": "square_note", "length": 15, "volume": 13, "fade": 2, "frequency": 1856},
+        {"op": "sound_ret"}
+      ]
+    },
+    {
+      "channel": 6,
+      "label": "SFX_Cry16_1_Ch6",
+      "entry": 0,
+      "bytes": 15,
+      "labels": {"SFX_Cry16_1_Ch6": 0},
+      "commands": [
+        {"op": "duty_cycle_pattern", "pattern": [1, 1, 2, 2]},
+        {"op": "square_note", "length": 15, "volume": 12, "fade": 7, "frequency": 1875},
+        {"op": "square_note", "length": 5, "volume": 11, "fade": 6, "frequency": 1906},
+        {"op": "square_note", "length": 15, "volume": 12, "fade": 2, "frequency": 1809},
+        {"op": "sound_ret"}
+      ]
+    },
+    {
+      "channel": 8,
+      "label": "SFX_Cry16_1_Ch8",
+      "entry": 0,
+      "bytes": 10,
+      "labels": {"SFX_Cry16_1_Ch8": 0},
+      "commands": [
+        {"op": "noise_note", "length": 13, "volume": 15, "fade": 6, "value": 76},
+        {"op": "noise_note", "length": 4, "volume": 14, "fade": 6, "value": 60},
+        {"op": "noise_note", "length": 15, "volume": 15, "fade": 2, "value": 76},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

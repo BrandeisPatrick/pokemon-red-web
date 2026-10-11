@@ -1,0 +1,27 @@
+{
+  "name": "SFX_SAFARI_ZONE_PA",
+  "title": "Safari Zone PA",
+  "kind": "sfx",
+  "bank": 1,
+  "id": 185,
+  "label": "SFX_Safari_Zone_PA",
+  "channels": [
+    {
+      "channel": 5,
+      "label": "SFX_Safari_Zone_PA_Ch5",
+      "entry": 0,
+      "bytes": 27,
+      "labels": {"SFX_Safari_Zone_PA_Ch5": 0},
+      "commands": [
+        {"op": "duty_cycle", "duty": 2},
+        {"op": "square_note", "length": 15, "volume": 15, "fade": 3, "frequency": 1840},
+        {"op": "square_note", "length": 8, "volume": 6, "fade": 5, "frequency": 1840},
+        {"op": "square_note", "length": 15, "volume": 15, "fade": 4, "frequency": 1792},
+        {"op": "square_note", "length": 15, "volume": 7, "fade": 4, "frequency": 1792},
+        {"op": "square_note", "length": 15, "volume": 4, "fade": 4, "frequency": 1792},
+        {"op": "square_note", "length": 15, "volume": 2, "fade": 4, "frequency": 1792},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

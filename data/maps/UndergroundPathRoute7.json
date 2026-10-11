@@ -1,0 +1,42 @@
+{
+ "id": 77,
+ "const": "UNDERGROUND_PATH_ROUTE_7",
+ "name": "UndergroundPathRoute7",
+ "displayName": "ROUTE 7",
+ "width": 4,
+ "height": 4,
+ "tileset": "GATE",
+ "tilesetId": 12,
+ "tilesetFile": "data/tilesets/Gate.json",
+ "isOutside": false,
+ "borderBlock": 10,
+ "blocks": [6, 3, 3, 7, 17, 21, 20, 16, 8, 0, 5, 9, 14, 15, 12, 13],
+ "connections": {},
+ "warps": [
+  {"x": 3, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 5, "destWarpIndex": 4},
+  {"x": 4, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 5, "destWarpIndex": 4},
+  {"x": 4, "y": 4, "destMap": "UNDERGROUND_PATH_WEST_EAST", "destMapId": 121, "destMapName": "UndergroundPathWestEast", "destWarp": 1, "destWarpIndex": 0}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "UNDERGROUNDPATHROUTE7_MIDDLE_AGED_MAN", "x": 2, "y": 4, "sprite": "SPRITE_MIDDLE_AGED_MAN", "spriteId": 10, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_UNDERGROUNDPATHROUTE7_MIDDLE_AGED_MAN", "textIndex": 1}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_CITIES1",
+ "wild": null,
+ "townMap": {"x": 9, "y": 5, "group": "ROUTE_7"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": ["ROUTE_7"],
+ "textFile": "data/text/UndergroundPathRoute7.json",
+ "textPointers": "UndergroundPathRoute7_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/UndergroundPathRoute7.asm",
+  "objects": "data/maps/objects/UndergroundPathRoute7.asm",
+  "blocks": "maps/UndergroundPathRoute5.blk",
+  "script": "scripts/UndergroundPathRoute7.asm"
+ },
+ "lastMapCandidates": ["ROUTE_7"],
+ "palette": {"pal": "PAL_ROUTE", "rule": "lastMap", "viaLastMap": "ROUTE_7"}
+}

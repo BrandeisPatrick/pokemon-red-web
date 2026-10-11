@@ -1,0 +1,37 @@
+{
+  "name": "SFX_PURCHASE",
+  "title": "Purchase",
+  "kind": "sfx",
+  "bank": 1,
+  "id": 178,
+  "label": "SFX_Purchase_1",
+  "channels": [
+    {
+      "channel": 5,
+      "label": "SFX_Purchase_1_Ch5",
+      "entry": 0,
+      "bytes": 11,
+      "labels": {"SFX_Purchase_1_Ch5": 0},
+      "commands": [
+        {"op": "duty_cycle", "duty": 2},
+        {"op": "square_note", "length": 4, "volume": 14, "fade": 1, "frequency": 1792},
+        {"op": "square_note", "length": 8, "volume": 15, "fade": 2, "frequency": 2016},
+        {"op": "sound_ret"}
+      ]
+    },
+    {
+      "channel": 6,
+      "label": "SFX_Purchase_1_Ch6",
+      "entry": 0,
+      "bytes": 15,
+      "labels": {"SFX_Purchase_1_Ch6": 0},
+      "commands": [
+        {"op": "duty_cycle", "duty": 2},
+        {"op": "square_note", "length": 1, "volume": 0, "fade": 8, "frequency": 0},
+        {"op": "square_note", "length": 4, "volume": 9, "fade": 1, "frequency": 1729},
+        {"op": "square_note", "length": 8, "volume": 10, "fade": 2, "frequency": 1953},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+ "id": 137,
+ "const": "GAME_CORNER_PRIZE_ROOM",
+ "name": "GameCornerPrizeRoom",
+ "displayName": "CELADON CITY",
+ "width": 5,
+ "height": 4,
+ "tileset": "LOBBY",
+ "tilesetId": 18,
+ "tilesetFile": "data/tilesets/Lobby.json",
+ "isOutside": false,
+ "borderBlock": 15,
+ "blocks": [63, 64, 64, 64, 63, 62, 62, 62, 62, 62, 32, 32, 32, 32, 32, 27, 27, 61, 27, 27],
+ "connections": {},
+ "warps": [
+  {"x": 4, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 10, "destWarpIndex": 9},
+  {"x": 5, "y": 7, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 10, "destWarpIndex": 9}
+ ],
+ "bgEvents": [
+  {"x": 2, "y": 2, "textId": "TEXT_GAMECORNERPRIZEROOM_PRIZE_VENDOR_1", "textIndex": 3},
+  {"x": 4, "y": 2, "textId": "TEXT_GAMECORNERPRIZEROOM_PRIZE_VENDOR_2", "textIndex": 4},
+  {"x": 6, "y": 2, "textId": "TEXT_GAMECORNERPRIZEROOM_PRIZE_VENDOR_3", "textIndex": 5}
+ ],
+ "objectEvents": [
+  {"index": 1, "const": "GAMECORNERPRIZEROOM_BALDING_GUY", "x": 1, "y": 4, "sprite": "SPRITE_BALDING_GUY", "spriteId": 52, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_GAMECORNERPRIZEROOM_BALDING_GUY", "textIndex": 1},
+  {"index": 2, "const": "GAMECORNERPRIZEROOM_GAMBLER", "x": 7, "y": 3, "sprite": "SPRITE_GAMBLER", "spriteId": 11, "movement": "WALK", "rangeOrDirection": "LEFT_RIGHT", "rangeOrDirectionValue": 2, "behavior": "walk_left_right", "textId": "TEXT_GAMECORNERPRIZEROOM_GAMBLER", "textIndex": 2}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_CELADON",
+ "wild": null,
+ "townMap": {"x": 7, "y": 5, "group": "CELADON_CITY"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/GameCornerPrizeRoom.json",
+ "textPointers": "GameCornerPrizeRoom_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/GameCornerPrizeRoom.asm",
+  "objects": "data/maps/objects/GameCornerPrizeRoom.asm",
+  "blocks": "maps/GameCornerPrizeRoom.blk",
+  "script": "scripts/GameCornerPrizeRoom.asm"
+ },
+ "lastMapCandidates": ["CELADON_CITY"],
+ "palette": {"pal": "PAL_CELADON", "rule": "lastMap", "viaLastMap": "CELADON_CITY"}
+}

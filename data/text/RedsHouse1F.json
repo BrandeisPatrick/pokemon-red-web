@@ -1,0 +1,128 @@
+{
+ "map": "RedsHouse1F",
+ "const": "REDS_HOUSE_1F",
+ "textPointerTables": [
+  {
+   "label": "RedsHouse1F_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_REDSHOUSE1F_MOM", "label": "RedsHouse1FMomText", "kind": "asm", "handler": "asm"},
+    {"id": 2, "const": "TEXT_REDSHOUSE1F_TV", "label": "RedsHouse1FTVText", "kind": "asm", "handler": "asm"}
+   ]
+  }
+ ],
+ "texts": {
+  "RedsHouse1FMomText": {
+   "kind": "asm",
+   "src": "scripts/RedsHouse1F.asm:10",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["RedsHouse1FMomText.WakeUpText"]
+  },
+  "RedsHouse1FMomText.WakeUpText": {
+   "kind": "text",
+   "src": "scripts/RedsHouse1F.asm:23",
+   "commands": [
+    {"cmd": "text_far", "label": "_RedsHouse1FMomWakeUpText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "RedsHouse1FMomYouShouldRestText": {
+   "kind": "text",
+   "src": "scripts/RedsHouse1F.asm:47",
+   "commands": [
+    {"cmd": "text_far", "label": "_RedsHouse1FMomYouShouldRestText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "RedsHouse1FMomLookingGreatText": {
+   "kind": "text",
+   "src": "scripts/RedsHouse1F.asm:50",
+   "commands": [
+    {"cmd": "text_far", "label": "_RedsHouse1FMomLookingGreatText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "RedsHouse1FTVText": {
+   "kind": "asm",
+   "src": "scripts/RedsHouse1F.asm:54",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["RedsHouse1FTVText.WrongSideText", "RedsHouse1FTVText.StandByMeMovieText"]
+  },
+  "RedsHouse1FTVText.StandByMeMovieText": {
+   "kind": "text",
+   "src": "scripts/RedsHouse1F.asm:65",
+   "commands": [
+    {"cmd": "text_far", "label": "_RedsHouse1FTVStandByMeMovieText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "RedsHouse1FTVText.WrongSideText": {
+   "kind": "text",
+   "src": "scripts/RedsHouse1F.asm:69",
+   "commands": [
+    {"cmd": "text_far", "label": "_RedsHouse1FTVWrongSideText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_RedsHouse1FMomWakeUpText": {
+   "kind": "text",
+   "src": "text/RedsHouse1F.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "MOM: Right."},
+    {"cmd": "line", "str": "All boys leave"},
+    {"cmd": "cont", "str": "home some day."},
+    {"cmd": "cont", "str": "It said so on TV."},
+    {"cmd": "para", "str": "PROF.OAK, next"},
+    {"cmd": "line", "str": "door, is looking"},
+    {"cmd": "cont", "str": "for you."},
+    {"cmd": "done"}
+   ]
+  },
+  "_RedsHouse1FMomYouShouldRestText": {
+   "kind": "text",
+   "src": "text/RedsHouse1F.asm:13",
+   "commands": [
+    {"cmd": "text", "str": "MOM: {PLAYER}!"},
+    {"cmd": "line", "str": "You should take a"},
+    {"cmd": "cont", "str": "quick rest."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_RedsHouse1FMomLookingGreatText": {
+   "kind": "text",
+   "src": "text/RedsHouse1F.asm:19",
+   "commands": [
+    {"cmd": "text", "str": "MOM: Oh good!"},
+    {"cmd": "line", "str": "You and your"},
+    {"cmd": "cont", "str": "POKéMON are"},
+    {"cmd": "cont", "str": "looking great!"},
+    {"cmd": "cont", "str": "Take care now!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_RedsHouse1FTVStandByMeMovieText": {
+   "kind": "text",
+   "src": "text/RedsHouse1F.asm:27",
+   "commands": [
+    {"cmd": "text", "str": "There's a movie"},
+    {"cmd": "line", "str": "on TV. Four boys"},
+    {"cmd": "cont", "str": "are walking on"},
+    {"cmd": "cont", "str": "railroad tracks."},
+    {"cmd": "para", "str": "I better go too."},
+    {"cmd": "done"}
+   ]
+  },
+  "_RedsHouse1FTVWrongSideText": {
+   "kind": "text",
+   "src": "text/RedsHouse1F.asm:36",
+   "commands": [
+    {"cmd": "text", "str": "Oops, wrong side."},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

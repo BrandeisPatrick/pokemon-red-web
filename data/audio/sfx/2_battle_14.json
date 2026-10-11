@@ -1,0 +1,24 @@
+{
+  "name": "SFX_BATTLE_14",
+  "title": "Battle 14",
+  "kind": "sfx",
+  "bank": 2,
+  "id": 170,
+  "label": "SFX_Battle_14",
+  "channels": [
+    {
+      "channel": 8,
+      "label": "SFX_Battle_14_Ch8",
+      "entry": 0,
+      "bytes": 13,
+      "labels": {"SFX_Battle_14_Ch8": 0},
+      "commands": [
+        {"op": "noise_note", "length": 8, "volume": 15, "fade": -7, "value": 50},
+        {"op": "noise_note", "length": 8, "volume": 15, "fade": 4, "value": 67},
+        {"op": "noise_note", "length": 8, "volume": 15, "fade": 2, "value": 84},
+        {"op": "noise_note", "length": 8, "volume": 15, "fade": 1, "value": 101},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

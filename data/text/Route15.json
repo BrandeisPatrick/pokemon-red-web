@@ -1,0 +1,647 @@
+{
+ "map": "Route15",
+ "const": "ROUTE_15",
+ "textPointerTables": [
+  {
+   "label": "Route15_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_ROUTE15_COOLTRAINER_F1", "label": "Route15CooltrainerF1Text", "kind": "asm", "handler": "asm"},
+    {"id": 2, "const": "TEXT_ROUTE15_COOLTRAINER_F2", "label": "Route15CooltrainerF2Text", "kind": "asm", "handler": "asm"},
+    {"id": 3, "const": "TEXT_ROUTE15_COOLTRAINER_M1", "label": "Route15CooltrainerM1Text", "kind": "asm", "handler": "asm"},
+    {"id": 4, "const": "TEXT_ROUTE15_COOLTRAINER_M2", "label": "Route15CooltrainerM2Text", "kind": "asm", "handler": "asm"},
+    {"id": 5, "const": "TEXT_ROUTE15_BEAUTY1", "label": "Route15Beauty1Text", "kind": "asm", "handler": "asm"},
+    {"id": 6, "const": "TEXT_ROUTE15_BEAUTY2", "label": "Route15Beauty2Text", "kind": "asm", "handler": "asm"},
+    {"id": 7, "const": "TEXT_ROUTE15_BIKER1", "label": "Route15Biker1Text", "kind": "asm", "handler": "asm"},
+    {"id": 8, "const": "TEXT_ROUTE15_BIKER2", "label": "Route15Biker2Text", "kind": "asm", "handler": "asm"},
+    {"id": 9, "const": "TEXT_ROUTE15_COOLTRAINER_F3", "label": "Route15CooltrainerF3Text", "kind": "asm", "handler": "asm"},
+    {"id": 10, "const": "TEXT_ROUTE15_COOLTRAINER_F4", "label": "Route15CooltrainerF4Text", "kind": "asm", "handler": "asm"},
+    {"id": 11, "const": "TEXT_ROUTE15_TM_RAGE", "label": "PickUpItemText", "kind": "asm", "handler": "itemBall"},
+    {"id": 12, "const": "TEXT_ROUTE15_SIGN", "label": "Route15SignText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "PickUpItemText": {
+   "kind": "asm",
+   "src": "home/overworld_text.asm:29",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "Route15CooltrainerF1Text": {
+   "kind": "asm",
+   "src": "scripts/Route15.asm:56",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "Route15CooltrainerF2Text": {
+   "kind": "asm",
+   "src": "scripts/Route15.asm:61",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "Route15CooltrainerM1Text": {
+   "kind": "asm",
+   "src": "scripts/Route15.asm:66",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "Route15CooltrainerM2Text": {
+   "kind": "asm",
+   "src": "scripts/Route15.asm:71",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "Route15Beauty1Text": {
+   "kind": "asm",
+   "src": "scripts/Route15.asm:76",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "Route15Beauty2Text": {
+   "kind": "asm",
+   "src": "scripts/Route15.asm:81",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "Route15Biker1Text": {
+   "kind": "asm",
+   "src": "scripts/Route15.asm:86",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "Route15Biker2Text": {
+   "kind": "asm",
+   "src": "scripts/Route15.asm:91",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "Route15CooltrainerF3Text": {
+   "kind": "asm",
+   "src": "scripts/Route15.asm:96",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "Route15CooltrainerF4Text": {
+   "kind": "asm",
+   "src": "scripts/Route15.asm:101",
+   "commands": [
+    {"cmd": "text_asm"}
+   ]
+  },
+  "Route15CooltrainerF1BattleText": {
+   "kind": "text",
+   "src": "scripts/Route15.asm:108",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route15CooltrainerF1BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route15CooltrainerF1EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route15.asm:112",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route15CooltrainerF1EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route15CooltrainerF1AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route15.asm:116",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route15CooltrainerF1AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route15CooltrainerF2BattleText": {
+   "kind": "text",
+   "src": "scripts/Route15.asm:120",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route15CooltrainerF2BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route15CooltrainerF2EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route15.asm:124",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route15CooltrainerF2EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route15CooltrainerF2AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route15.asm:128",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route15CooltrainerF2AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route15CooltrainerM1BattleText": {
+   "kind": "text",
+   "src": "scripts/Route15.asm:132",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route15CooltrainerM1BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route15CooltrainerM1EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route15.asm:136",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route15CooltrainerM1EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route15CooltrainerM1AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route15.asm:140",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route15CooltrainerM1AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route15CooltrainerM2BattleText": {
+   "kind": "text",
+   "src": "scripts/Route15.asm:144",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route15CooltrainerM2BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route15CooltrainerM2EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route15.asm:148",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route15CooltrainerM2EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route15CooltrainerM2AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route15.asm:152",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route15CooltrainerM2AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route15Beauty1BattleText": {
+   "kind": "text",
+   "src": "scripts/Route15.asm:156",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route15Beauty1BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route15Beauty1EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route15.asm:160",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route15Beauty1EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route15Beauty1AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route15.asm:164",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route15Beauty1AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route15Beauty2BattleText": {
+   "kind": "text",
+   "src": "scripts/Route15.asm:168",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route15Beauty2BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route15Beauty2EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route15.asm:172",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route15Beauty2EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route15Beauty2AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route15.asm:176",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route15Beauty2AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route15Biker1BattleText": {
+   "kind": "text",
+   "src": "scripts/Route15.asm:180",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route15Biker1BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route15Biker1EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route15.asm:184",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route15Biker1EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route15Biker1AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route15.asm:188",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route15Biker1AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route15Biker2BattleText": {
+   "kind": "text",
+   "src": "scripts/Route15.asm:192",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route15Biker2BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route15Biker2EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route15.asm:196",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route15Biker2EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route15Biker2AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route15.asm:200",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route15Biker2AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route15CooltrainerF3BattleText": {
+   "kind": "text",
+   "src": "scripts/Route15.asm:204",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route15CooltrainerF3BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route15CooltrainerF3EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route15.asm:208",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route15CooltrainerF3EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route15CooltrainerF3AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route15.asm:212",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route15CooltrainerF3AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route15CooltrainerF4BattleText": {
+   "kind": "text",
+   "src": "scripts/Route15.asm:216",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route15CooltrainerF4BattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route15CooltrainerF4EndBattleText": {
+   "kind": "text",
+   "src": "scripts/Route15.asm:220",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route15CooltrainerF4EndBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route15CooltrainerF4AfterBattleText": {
+   "kind": "text",
+   "src": "scripts/Route15.asm:224",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route15CooltrainerF4AfterBattleText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "Route15SignText": {
+   "kind": "text",
+   "src": "scripts/Route15.asm:228",
+   "commands": [
+    {"cmd": "text_far", "label": "_Route15SignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_Route15CooltrainerF1BattleText": {
+   "kind": "text",
+   "src": "text/Route15.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Let me try out the"},
+    {"cmd": "line", "str": "POKéMON I just"},
+    {"cmd": "cont", "str": "got in a trade!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route15CooltrainerF1EndBattleText": {
+   "kind": "text",
+   "src": "text/Route15.asm:8",
+   "commands": [
+    {"cmd": "text", "str": "Not"},
+    {"cmd": "line", "str": "good enough!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route15CooltrainerF1AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route15.asm:13",
+   "commands": [
+    {"cmd": "text", "str": "You can't change"},
+    {"cmd": "line", "str": "the nickname of"},
+    {"cmd": "cont", "str": "any POKéMON you"},
+    {"cmd": "cont", "str": "get in a trade."},
+    {"cmd": "para", "str": "Only the Original"},
+    {"cmd": "line", "str": "Trainer can."},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route15CooltrainerF2BattleText": {
+   "kind": "text",
+   "src": "text/Route15.asm:23",
+   "commands": [
+    {"cmd": "text", "str": "You look gentle,"},
+    {"cmd": "line", "str": "so I think I can"},
+    {"cmd": "cont", "str": "beat you!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route15CooltrainerF2EndBattleText": {
+   "kind": "text",
+   "src": "text/Route15.asm:29",
+   "commands": [
+    {"cmd": "text", "str": "No,"},
+    {"cmd": "line", "str": "wrong!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route15CooltrainerF2AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route15.asm:34",
+   "commands": [
+    {"cmd": "text", "str": "I'm afraid of"},
+    {"cmd": "line", "str": "BIKERs, they look"},
+    {"cmd": "cont", "str": "so ugly and mean!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route15CooltrainerM1BattleText": {
+   "kind": "text",
+   "src": "text/Route15.asm:40",
+   "commands": [
+    {"cmd": "text", "str": "When I whistle, I"},
+    {"cmd": "line", "str": "can summon bird"},
+    {"cmd": "cont", "str": "POKéMON!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route15CooltrainerM1EndBattleText": {
+   "kind": "text",
+   "src": "text/Route15.asm:46",
+   "commands": [
+    {"cmd": "text", "str": "Ow!"},
+    {"cmd": "line", "str": "That's tragic!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route15CooltrainerM1AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route15.asm:51",
+   "commands": [
+    {"cmd": "text", "str": "Maybe I'm not cut"},
+    {"cmd": "line", "str": "out for battles."},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route15CooltrainerM2BattleText": {
+   "kind": "text",
+   "src": "text/Route15.asm:56",
+   "commands": [
+    {"cmd": "text", "str": "Hmm? My birds are"},
+    {"cmd": "line", "str": "shivering! You're"},
+    {"cmd": "cont", "str": "good, aren't you?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route15CooltrainerM2EndBattleText": {
+   "kind": "text",
+   "src": "text/Route15.asm:62",
+   "commands": [
+    {"cmd": "text", "str": "Just"},
+    {"cmd": "line", "str": "as I thought!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route15CooltrainerM2AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route15.asm:67",
+   "commands": [
+    {"cmd": "text", "str": "Did you know moves"},
+    {"cmd": "line", "str": "like EARTHQUAKE"},
+    {"cmd": "cont", "str": "don't have any"},
+    {"cmd": "cont", "str": "effect on birds?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route15Beauty1BattleText": {
+   "kind": "text",
+   "src": "text/Route15.asm:74",
+   "commands": [
+    {"cmd": "text", "str": "Oh, you're a"},
+    {"cmd": "line", "str": "little cutie!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route15Beauty1EndBattleText": {
+   "kind": "text",
+   "src": "text/Route15.asm:79",
+   "commands": [
+    {"cmd": "text", "str": "You looked"},
+    {"cmd": "line", "str": "so cute too!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route15Beauty1AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route15.asm:84",
+   "commands": [
+    {"cmd": "text", "str": "I forgive you!"},
+    {"cmd": "line", "str": "I can take it!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route15Beauty2BattleText": {
+   "kind": "text",
+   "src": "text/Route15.asm:89",
+   "commands": [
+    {"cmd": "text", "str": "I raise POKéMON"},
+    {"cmd": "line", "str": "because I live"},
+    {"cmd": "cont", "str": "alone!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route15Beauty2EndBattleText": {
+   "kind": "text",
+   "src": "text/Route15.asm:95",
+   "commands": [
+    {"cmd": "text", "str": "I didn't"},
+    {"cmd": "line", "str": "ask for this!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route15Beauty2AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route15.asm:100",
+   "commands": [
+    {"cmd": "text", "str": "I just like going"},
+    {"cmd": "line", "str": "home to be with"},
+    {"cmd": "cont", "str": "my POKéMON!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route15Biker1BattleText": {
+   "kind": "text",
+   "src": "text/Route15.asm:106",
+   "commands": [
+    {"cmd": "text", "str": "Hey kid! C'mon!"},
+    {"cmd": "line", "str": "I just got these!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route15Biker1EndBattleText": {
+   "kind": "text",
+   "src": "text/Route15.asm:111",
+   "commands": [
+    {"cmd": "text", "str": "Why"},
+    {"cmd": "line", "str": "not?"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route15Biker1AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route15.asm:116",
+   "commands": [
+    {"cmd": "text", "str": "You only live"},
+    {"cmd": "line", "str": "once, so I live"},
+    {"cmd": "cont", "str": "as an outlaw!"},
+    {"cmd": "cont", "str": "TEAM ROCKET RULES!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route15Biker2BattleText": {
+   "kind": "text",
+   "src": "text/Route15.asm:123",
+   "commands": [
+    {"cmd": "text", "str": "Fork over all your"},
+    {"cmd": "line", "str": "cash when you"},
+    {"cmd": "cont", "str": "lose to me, kid!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route15Biker2EndBattleText": {
+   "kind": "text",
+   "src": "text/Route15.asm:129",
+   "commands": [
+    {"cmd": "text", "str": "That"},
+    {"cmd": "line", "str": "can't be true!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route15Biker2AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route15.asm:134",
+   "commands": [
+    {"cmd": "text", "str": "I was just joking"},
+    {"cmd": "line", "str": "about the money!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route15CooltrainerF3BattleText": {
+   "kind": "text",
+   "src": "text/Route15.asm:139",
+   "commands": [
+    {"cmd": "text", "str": "What's cool?"},
+    {"cmd": "line", "str": "Trading POKéMON!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route15CooltrainerF3EndBattleText": {
+   "kind": "text",
+   "src": "text/Route15.asm:144",
+   "commands": [
+    {"cmd": "text", "str": "I"},
+    {"cmd": "line", "str": "said trade!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route15CooltrainerF3AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route15.asm:149",
+   "commands": [
+    {"cmd": "text", "str": "I trade POKéMON"},
+    {"cmd": "line", "str": "with my friends!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route15CooltrainerF4BattleText": {
+   "kind": "text",
+   "src": "text/Route15.asm:154",
+   "commands": [
+    {"cmd": "text", "str": "Want to play with"},
+    {"cmd": "line", "str": "my POKéMON?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_Route15CooltrainerF4EndBattleText": {
+   "kind": "text",
+   "src": "text/Route15.asm:159",
+   "commands": [
+    {"cmd": "text", "str": "I was"},
+    {"cmd": "line", "str": "too impatient!"},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_Route15CooltrainerF4AfterBattleText": {
+   "kind": "text",
+   "src": "text/Route15.asm:164",
+   "commands": [
+    {"cmd": "text", "str": "I'll go train with"},
+    {"cmd": "line", "str": "weaker people."},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_Route15SignText": {
+   "kind": "text",
+   "src": "text/Route15.asm:169",
+   "commands": [
+    {"cmd": "text", "str": "ROUTE 15"},
+    {"cmd": "line", "str": "West to FUCHSIA"},
+    {"cmd": "cont", "str": "CITY"},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

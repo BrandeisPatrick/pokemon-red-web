@@ -1,0 +1,47 @@
+{
+ "id": 192,
+ "const": "SEAFOAM_ISLANDS_1F",
+ "name": "SeafoamIslands1F",
+ "displayName": "SEAFOAM ISLANDS",
+ "width": 15,
+ "height": 9,
+ "tileset": "CAVERN",
+ "tilesetId": 17,
+ "tilesetFile": "data/tilesets/Cavern.json",
+ "isOutside": false,
+ "borderBlock": 125,
+ "blocks": [46, 46, 46, 46, 46, 46, 46, 46, 46, 46, 46, 46, 46, 46, 46, 46, 20, 21, 21, 21, 21, 21, 21, 21, 21, 21, 22, 40, 1, 46, 46, 24, 25, 60, 25, 44, 29, 29, 29, 29, 45, 30, 1, 1, 46, 46, 24, 25, 25, 25, 26, 1, 1, 120, 1, 109, 1, 119, 1, 46, 46, 24, 25, 25, 25, 26, 1, 1, 1, 1, 109, 1, 1, 1, 46, 46, 28, 29, 41, 29, 30, 1, 1, 1, 1, 76, 94, 94, 94, 46, 46, 1, 1, 1, 1, 1, 1, 1, 1, 1, 109, 1, 1, 1, 46, 46, 1, 1, 1, 1, 1, 1, 1, 1, 1, 109, 40, 1, 1, 46, 46, 46, 36, 46, 46, 46, 46, 46, 46, 46, 46, 46, 46, 36, 46],
+ "connections": {},
+ "warps": [
+  {"x": 4, "y": 17, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 1, "destWarpIndex": 0},
+  {"x": 5, "y": 17, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 1, "destWarpIndex": 0},
+  {"x": 26, "y": 17, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 2, "destWarpIndex": 1},
+  {"x": 27, "y": 17, "destMap": "LAST_MAP", "destMapId": -1, "destMapName": null, "destWarp": 2, "destWarpIndex": 1},
+  {"x": 7, "y": 5, "destMap": "SEAFOAM_ISLANDS_B1F", "destMapId": 159, "destMapName": "SeafoamIslandsB1F", "destWarp": 2, "destWarpIndex": 1},
+  {"x": 25, "y": 3, "destMap": "SEAFOAM_ISLANDS_B1F", "destMapId": 159, "destMapName": "SeafoamIslandsB1F", "destWarp": 7, "destWarpIndex": 6},
+  {"x": 23, "y": 15, "destMap": "SEAFOAM_ISLANDS_B1F", "destMapId": 159, "destMapName": "SeafoamIslandsB1F", "destWarp": 5, "destWarpIndex": 4}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "SEAFOAMISLANDS1F_BOULDER1", "x": 18, "y": 10, "sprite": "SPRITE_BOULDER", "spriteId": 63, "movement": "STAY", "rangeOrDirection": "BOULDER_MOVEMENT_BYTE_2", "rangeOrDirectionValue": 16, "behavior": "turn_randomly", "textId": "TEXT_SEAFOAMISLANDS1F_BOULDER1", "textIndex": 1, "toggleIndex": 215, "toggleConst": "TOGGLE_SEAFOAM_ISLANDS_1F_BOULDER_1", "startsHidden": false},
+  {"index": 2, "const": "SEAFOAMISLANDS1F_BOULDER2", "x": 26, "y": 7, "sprite": "SPRITE_BOULDER", "spriteId": 63, "movement": "STAY", "rangeOrDirection": "BOULDER_MOVEMENT_BYTE_2", "rangeOrDirectionValue": 16, "behavior": "turn_randomly", "textId": "TEXT_SEAFOAMISLANDS1F_BOULDER2", "textIndex": 2, "toggleIndex": 216, "toggleConst": "TOGGLE_SEAFOAM_ISLANDS_1F_BOULDER_2", "startsHidden": false}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_DUNGEON2",
+ "wild": {"label": "SeafoamIslands1FWildMons", "file": "SeafoamIslands1F"},
+ "townMap": {"x": 5, "y": 15, "group": "SEAFOAM_ISLANDS_2"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/SeafoamIslands1F.json",
+ "textPointers": "SeafoamIslands1F_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/SeafoamIslands1F.asm",
+  "objects": "data/maps/objects/SeafoamIslands1F.asm",
+  "blocks": "maps/SeafoamIslands1F.blk",
+  "script": "scripts/SeafoamIslands1F.asm"
+ },
+ "lastMapCandidates": ["ROUTE_20"],
+ "palette": {"pal": "PAL_CAVE", "rule": "cavernTileset"}
+}

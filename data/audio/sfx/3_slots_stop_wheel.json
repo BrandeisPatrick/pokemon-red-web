@@ -1,0 +1,24 @@
+{
+  "name": "SFX_SLOTS_STOP_WHEEL",
+  "title": "Slots Stop Wheel",
+  "kind": "sfx",
+  "bank": 3,
+  "id": 190,
+  "label": "SFX_Slots_Stop_Wheel",
+  "channels": [
+    {
+      "channel": 5,
+      "label": "SFX_Slots_Stop_Wheel_Ch5",
+      "entry": 0,
+      "bytes": 15,
+      "labels": {"SFX_Slots_Stop_Wheel_Ch5": 0},
+      "commands": [
+        {"op": "duty_cycle", "duty": 2},
+        {"op": "square_note", "length": 1, "volume": 15, "fade": 2, "frequency": 1696},
+        {"op": "square_note", "length": 1, "volume": 15, "fade": 2, "frequency": 1760},
+        {"op": "square_note", "length": 8, "volume": 15, "fade": 1, "frequency": 1792},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}

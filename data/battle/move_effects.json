@@ -1,0 +1,497 @@
+{
+ "note": "Move effect constants (constants/move_effect_constants.asm) with the MoveEffectPointerTable handler.",
+ "effects": [
+  {"id": 0, "const": "NO_ADDITIONAL_EFFECT", "handler": null, "description": "Deals damage, nothing else."},
+  {
+   "id": 1,
+   "const": "EFFECT_01",
+   "handler": "SleepEffect",
+   "description": "Unused; dispatches to SleepEffect (listed with the sleep effects in the AI tables)."
+  },
+  {
+   "id": 2,
+   "const": "POISON_SIDE_EFFECT1",
+   "handler": "PoisonEffect",
+   "description": "Damage + 52/256 (~20%) chance to poison. No effect on Poison types, statused targets or a Substitute."
+  },
+  {
+   "id": 3,
+   "const": "DRAIN_HP_EFFECT",
+   "handler": "DrainHPEffect",
+   "description": "Damage; user regains half the damage dealt (minimum 1)."
+  },
+  {
+   "id": 4,
+   "const": "BURN_SIDE_EFFECT1",
+   "handler": "FreezeBurnParalyzeEffect",
+   "description": "Damage + 26/256 (~10%) chance to burn (not if the target shares the move type or is statused). Hitting a frozen target with a Fire move that can burn thaws it."
+  },
+  {
+   "id": 5,
+   "const": "FREEZE_SIDE_EFFECT1",
+   "handler": "FreezeBurnParalyzeEffect",
+   "description": "Damage + 26/256 (~10%) chance to freeze (not Ice types). Freezing clears the target's Hyper Beam recharge (enemy side only)."
+  },
+  {
+   "id": 6,
+   "const": "PARALYZE_SIDE_EFFECT1",
+   "handler": "FreezeBurnParalyzeEffect",
+   "description": "Damage + 26/256 (~10%) chance to paralyze (not if the target shares the move type). Speed is quartered."
+  },
+  {
+   "id": 7,
+   "const": "EXPLODE_EFFECT",
+   "handler": "ExplodeEffect",
+   "description": "User faints after the attack (even if it misses). The target's Defense is halved (min 1) in the damage formula."
+  },
+  {
+   "id": 8,
+   "const": "DREAM_EATER_EFFECT",
+   "handler": "DrainHPEffect",
+   "description": "Fails unless the target is asleep; user regains half the damage dealt."
+  },
+  {
+   "id": 9,
+   "const": "MIRROR_MOVE_EFFECT",
+   "handler": null,
+   "description": "Uses the move the opponent last used (fails if none, or if that was Mirror Move)."
+  },
+  {
+   "id": 10,
+   "const": "ATTACK_UP1_EFFECT",
+   "handler": "StatModifierUpEffect",
+   "description": "Raises the user's Attack by 1 stage (max +6)."
+  },
+  {
+   "id": 11,
+   "const": "DEFENSE_UP1_EFFECT",
+   "handler": "StatModifierUpEffect",
+   "description": "Raises the user's Defense by 1 stage."
+  },
+  {
+   "id": 12,
+   "const": "SPEED_UP1_EFFECT",
+   "handler": "StatModifierUpEffect",
+   "description": "Raises the user's Speed by 1 stage."
+  },
+  {
+   "id": 13,
+   "const": "SPECIAL_UP1_EFFECT",
+   "handler": "StatModifierUpEffect",
+   "description": "Raises the user's Special by 1 stage."
+  },
+  {
+   "id": 14,
+   "const": "ACCURACY_UP1_EFFECT",
+   "handler": "StatModifierUpEffect",
+   "description": "Raises the user's accuracy by 1 stage."
+  },
+  {
+   "id": 15,
+   "const": "EVASION_UP1_EFFECT",
+   "handler": "StatModifierUpEffect",
+   "description": "Raises the user's evasion by 1 stage."
+  },
+  {
+   "id": 16,
+   "const": "PAY_DAY_EFFECT",
+   "handler": "PayDayEffect",
+   "description": "Damage; scatters 2 x user level in money, paid out after a win."
+  },
+  {
+   "id": 17,
+   "const": "SWIFT_EFFECT",
+   "handler": null,
+   "description": "Damage; MoveHitTest returns before any check, so it never misses - not even a target in the invulnerable turn of Fly/Dig."
+  },
+  {
+   "id": 18,
+   "const": "ATTACK_DOWN1_EFFECT",
+   "handler": "StatModifierDownEffect",
+   "description": "Lowers the target's Attack by 1 stage (min -6). Accuracy-checked; blocked by Mist/Substitute; the AI's version has an extra 64/256 fail chance."
+  },
+  {
+   "id": 19,
+   "const": "DEFENSE_DOWN1_EFFECT",
+   "handler": "StatModifierDownEffect",
+   "description": "Lowers the target's Defense by 1 stage (see ATTACK_DOWN1_EFFECT)."
+  },
+  {
+   "id": 20,
+   "const": "SPEED_DOWN1_EFFECT",
+   "handler": "StatModifierDownEffect",
+   "description": "Lowers the target's Speed by 1 stage (see ATTACK_DOWN1_EFFECT)."
+  },
+  {
+   "id": 21,
+   "const": "SPECIAL_DOWN1_EFFECT",
+   "handler": "StatModifierDownEffect",
+   "description": "Lowers the target's Special by 1 stage (see ATTACK_DOWN1_EFFECT)."
+  },
+  {
+   "id": 22,
+   "const": "ACCURACY_DOWN1_EFFECT",
+   "handler": "StatModifierDownEffect",
+   "description": "Lowers the target's accuracy by 1 stage (see ATTACK_DOWN1_EFFECT)."
+  },
+  {
+   "id": 23,
+   "const": "EVASION_DOWN1_EFFECT",
+   "handler": "StatModifierDownEffect",
+   "description": "Lowers the target's evasion by 1 stage (see ATTACK_DOWN1_EFFECT)."
+  },
+  {
+   "id": 24,
+   "const": "CONVERSION_EFFECT",
+   "handler": "ConversionEffect",
+   "description": "User's types become the target's types (fails if the target is in Fly/Dig)."
+  },
+  {
+   "id": 25,
+   "const": "HAZE_EFFECT",
+   "handler": "HazeEffect",
+   "description": "Resets every stat stage on both sides; cures the target's non-volatile status (a sleeping/frozen target loses its turn); clears confusion, Leech Seed, Mist, Focus Energy, X Accuracy, Toxic, Reflect, Light Screen and Disable on both sides."
+  },
+  {
+   "id": 26,
+   "const": "BIDE_EFFECT",
+   "handler": "BideEffect",
+   "description": "Stores energy for 2-3 turns, then deals twice the damage taken meanwhile."
+  },
+  {
+   "id": 27,
+   "const": "THRASH_PETAL_DANCE_EFFECT",
+   "handler": "ThrashPetalDanceEffect",
+   "description": "Attacks for 2-3 turns in a row, then the user becomes confused for 2-5 turns."
+  },
+  {
+   "id": 28,
+   "const": "SWITCH_AND_TELEPORT_EFFECT",
+   "handler": "SwitchAndTeleportEffect",
+   "description": "Ends a wild battle. Fails in trainer battles. If the user is lower level than the target: succeeds when rand(0..userLv+targetLv) >= targetLv/4."
+  },
+  {
+   "id": 29,
+   "const": "TWO_TO_FIVE_ATTACKS_EFFECT",
+   "handler": "TwoToFiveAttacksEffect",
+   "description": "Hits 2-5 times (2:3/8, 3:3/8, 4:1/8, 5:1/8); damage is computed once and reused."
+  },
+  {
+   "id": 30,
+   "const": "EFFECT_1E",
+   "handler": "TwoToFiveAttacksEffect",
+   "description": "Unused alias of TWO_TO_FIVE_ATTACKS_EFFECT."
+  },
+  {
+   "id": 31,
+   "const": "FLINCH_SIDE_EFFECT1",
+   "handler": "FlinchSideEffect",
+   "description": "Damage + 26/256 (~10%) chance to flinch (only matters if the user moved first)."
+  },
+  {
+   "id": 32,
+   "const": "SLEEP_EFFECT",
+   "handler": "SleepEffect",
+   "description": "Puts the target to sleep for 1-7 turns. Fails on an already statused target; always lands on a target recharging from Hyper Beam."
+  },
+  {
+   "id": 33,
+   "const": "POISON_SIDE_EFFECT2",
+   "handler": "PoisonEffect",
+   "description": "Damage + 103/256 (~40%) chance to poison."
+  },
+  {
+   "id": 34,
+   "const": "BURN_SIDE_EFFECT2",
+   "handler": "FreezeBurnParalyzeEffect",
+   "description": "Damage + 77/256 (~30%) chance to burn."
+  },
+  {
+   "id": 35,
+   "const": "FREEZE_SIDE_EFFECT2",
+   "handler": "FreezeBurnParalyzeEffect",
+   "description": "Unused (30% freeze; Blizzard in JP Red/Green)."
+  },
+  {
+   "id": 36,
+   "const": "PARALYZE_SIDE_EFFECT2",
+   "handler": "FreezeBurnParalyzeEffect",
+   "description": "Damage + 77/256 (~30%) chance to paralyze."
+  },
+  {
+   "id": 37,
+   "const": "FLINCH_SIDE_EFFECT2",
+   "handler": "FlinchSideEffect",
+   "description": "Damage + 77/256 (~30%) chance to flinch."
+  },
+  {
+   "id": 38,
+   "const": "OHKO_EFFECT",
+   "handler": "OneHitKOEffect",
+   "description": "One-hit KO (damage 65535). Fails if the user's current Speed is lower than the target's; accuracy check still applies."
+  },
+  {
+   "id": 39,
+   "const": "CHARGE_EFFECT",
+   "handler": "ChargeEffect",
+   "description": "Charges on the first turn, attacks on the second (Dig: invulnerable while underground)."
+  },
+  {
+   "id": 40,
+   "const": "SUPER_FANG_EFFECT",
+   "handler": null,
+   "description": "Deals half the target's current HP (minimum 1). In SetDamageEffects: skips the damage formula and the type chart (hits Ghost types); the accuracy check applies."
+  },
+  {
+   "id": 41,
+   "const": "SPECIAL_DAMAGE_EFFECT",
+   "handler": null,
+   "description": "Fixed damage: Seismic Toss/Night Shade = user level; Sonic Boom = 20; Dragon Rage = 40; Psywave = random in [1, 1.5*level) for the player, [0, 1.5*level) for the enemy. Skips the type chart (Seismic Toss hits Ghosts, Night Shade hits Normals); accuracy check applies."
+  },
+  {
+   "id": 42,
+   "const": "TRAPPING_EFFECT",
+   "handler": "TrappingEffect",
+   "description": "Binds the target for 2-5 turns (3/8, 3/8, 1/8, 1/8); the target cannot act; later hits repeat the first hit's damage."
+  },
+  {
+   "id": 43,
+   "const": "FLY_EFFECT",
+   "handler": "ChargeEffect",
+   "description": "Flies up on turn 1 (invulnerable to most moves), attacks on turn 2."
+  },
+  {
+   "id": 44,
+   "const": "ATTACK_TWICE_EFFECT",
+   "handler": "TwoToFiveAttacksEffect",
+   "description": "Hits exactly twice."
+  },
+  {
+   "id": 45,
+   "const": "JUMP_KICK_EFFECT",
+   "handler": null,
+   "description": "If it misses, the user takes 1 HP crash damage (intended damage/8, but the damage is already 0 after a miss)."
+  },
+  {
+   "id": 46,
+   "const": "MIST_EFFECT",
+   "handler": "MistEffect",
+   "description": "Protects the user's side from stat-lowering moves."
+  },
+  {
+   "id": 47,
+   "const": "FOCUS_ENERGY_EFFECT",
+   "handler": "FocusEnergyEffect",
+   "description": "Sets the \"getting pumped\" flag - which, because of a bug, divides the critical-hit chance by 4 instead of raising it."
+  },
+  {
+   "id": 48,
+   "const": "RECOIL_EFFECT",
+   "handler": "RecoilEffect",
+   "description": "User takes 1/4 of the damage dealt as recoil (Struggle: 1/2), minimum 1."
+  },
+  {
+   "id": 49,
+   "const": "CONFUSION_EFFECT",
+   "handler": "ConfusionEffect",
+   "description": "Confuses the target for 2-5 turns (fails if already confused or behind a Substitute)."
+  },
+  {
+   "id": 50,
+   "const": "ATTACK_UP2_EFFECT",
+   "handler": "StatModifierUpEffect",
+   "description": "Raises the user's Attack by 2 stages."
+  },
+  {
+   "id": 51,
+   "const": "DEFENSE_UP2_EFFECT",
+   "handler": "StatModifierUpEffect",
+   "description": "Raises the user's Defense by 2 stages."
+  },
+  {
+   "id": 52,
+   "const": "SPEED_UP2_EFFECT",
+   "handler": "StatModifierUpEffect",
+   "description": "Raises the user's Speed by 2 stages."
+  },
+  {
+   "id": 53,
+   "const": "SPECIAL_UP2_EFFECT",
+   "handler": "StatModifierUpEffect",
+   "description": "Raises the user's Special by 2 stages."
+  },
+  {
+   "id": 54,
+   "const": "ACCURACY_UP2_EFFECT",
+   "handler": "StatModifierUpEffect",
+   "description": "Raises the user's accuracy by 2 stages."
+  },
+  {
+   "id": 55,
+   "const": "EVASION_UP2_EFFECT",
+   "handler": "StatModifierUpEffect",
+   "description": "Raises the user's evasion by 2 stages."
+  },
+  {
+   "id": 56,
+   "const": "HEAL_EFFECT",
+   "handler": "HealEffect",
+   "description": "Recover/Softboiled heal half max HP; Rest heals fully, cures status and sleeps 2 turns. Fails at full HP (bug: also fails when maxHP - HP is exactly 255 or 511)."
+  },
+  {
+   "id": 57,
+   "const": "TRANSFORM_EFFECT",
+   "handler": "TransformEffect",
+   "description": "User copies the target's species, types, DVs, Attack/Defense/Speed/Special, stat stages and moves (5 PP each)."
+  },
+  {
+   "id": 58,
+   "const": "ATTACK_DOWN2_EFFECT",
+   "handler": "StatModifierDownEffect",
+   "description": "Lowers the target's Attack by 2 stages."
+  },
+  {
+   "id": 59,
+   "const": "DEFENSE_DOWN2_EFFECT",
+   "handler": "StatModifierDownEffect",
+   "description": "Lowers the target's Defense by 2 stages."
+  },
+  {
+   "id": 60,
+   "const": "SPEED_DOWN2_EFFECT",
+   "handler": "StatModifierDownEffect",
+   "description": "Lowers the target's Speed by 2 stages."
+  },
+  {
+   "id": 61,
+   "const": "SPECIAL_DOWN2_EFFECT",
+   "handler": "StatModifierDownEffect",
+   "description": "Lowers the target's Special by 2 stages."
+  },
+  {
+   "id": 62,
+   "const": "ACCURACY_DOWN2_EFFECT",
+   "handler": "StatModifierDownEffect",
+   "description": "Lowers the target's accuracy by 2 stages."
+  },
+  {
+   "id": 63,
+   "const": "EVASION_DOWN2_EFFECT",
+   "handler": "StatModifierDownEffect",
+   "description": "Lowers the target's evasion by 2 stages."
+  },
+  {
+   "id": 64,
+   "const": "LIGHT_SCREEN_EFFECT",
+   "handler": "ReflectLightScreenEffect",
+   "description": "Doubles the user's Special against special-type moves until it switches out (ignored by critical hits)."
+  },
+  {
+   "id": 65,
+   "const": "REFLECT_EFFECT",
+   "handler": "ReflectLightScreenEffect",
+   "description": "Doubles the user's Defense against physical-type moves until it switches out (ignored by critical hits)."
+  },
+  {
+   "id": 66,
+   "const": "POISON_EFFECT",
+   "handler": "PoisonEffect",
+   "description": "Poisons the target (Toxic: badly poisoned, damage N/16 rising each turn). Fails on Poison types/statused targets/Substitute."
+  },
+  {
+   "id": 67,
+   "const": "PARALYZE_EFFECT",
+   "handler": "ParalyzeEffect",
+   "description": "Paralyzes the target (Electric-type paralysis moves do not affect Ground types)."
+  },
+  {
+   "id": 68,
+   "const": "ATTACK_DOWN_SIDE_EFFECT",
+   "handler": "StatModifierDownEffect",
+   "description": "Damage + 85/256 (~33%) chance to lower the target's Attack 1 stage."
+  },
+  {
+   "id": 69,
+   "const": "DEFENSE_DOWN_SIDE_EFFECT",
+   "handler": "StatModifierDownEffect",
+   "description": "Damage + 85/256 (~33%) chance to lower the target's Defense 1 stage."
+  },
+  {
+   "id": 70,
+   "const": "SPEED_DOWN_SIDE_EFFECT",
+   "handler": "StatModifierDownEffect",
+   "description": "Damage + 85/256 (~33%) chance to lower the target's Speed 1 stage."
+  },
+  {
+   "id": 71,
+   "const": "SPECIAL_DOWN_SIDE_EFFECT",
+   "handler": "StatModifierDownEffect",
+   "description": "Damage + 85/256 (~33%) chance to lower the target's Special 1 stage."
+  },
+  {"id": 72, "const": null, "unused": true, "handler": "StatModifierDownEffect"},
+  {"id": 73, "const": null, "unused": true, "handler": "StatModifierDownEffect"},
+  {"id": 74, "const": null, "unused": true, "handler": "StatModifierDownEffect"},
+  {"id": 75, "const": null, "unused": true, "handler": "StatModifierDownEffect"},
+  {
+   "id": 76,
+   "const": "CONFUSION_SIDE_EFFECT",
+   "handler": "ConfusionSideEffect",
+   "description": "Damage + 25/256 (~10%) chance to confuse."
+  },
+  {
+   "id": 77,
+   "const": "TWINEEDLE_EFFECT",
+   "handler": "TwoToFiveAttacksEffect",
+   "description": "Hits twice; afterwards behaves as POISON_SIDE_EFFECT1 (52/256 poison)."
+  },
+  {"id": 78, "const": null, "unused": true, "handler": "NULL"},
+  {
+   "id": 79,
+   "const": "SUBSTITUTE_EFFECT",
+   "handler": "SubstituteEffect",
+   "description": "User pays 1/4 of max HP to make a Substitute with that much HP (bug: can leave the user at 0 HP)."
+  },
+  {
+   "id": 80,
+   "const": "HYPER_BEAM_EFFECT",
+   "handler": "HyperBeamEffect",
+   "description": "User must recharge next turn - unless the attack missed or knocked out the target."
+  },
+  {
+   "id": 81,
+   "const": "RAGE_EFFECT",
+   "handler": "RageEffect",
+   "description": "User is locked into Rage; each time it is hit its Attack rises 1 stage."
+  },
+  {
+   "id": 82,
+   "const": "MIMIC_EFFECT",
+   "handler": "MimicEffect",
+   "description": "Replaces Mimic with one of the target's moves until the battle ends (player picks; AI picks at random)."
+  },
+  {
+   "id": 83,
+   "const": "METRONOME_EFFECT",
+   "handler": null,
+   "description": "Uses a random move: any move id 1-164 except Metronome."
+  },
+  {
+   "id": 84,
+   "const": "LEECH_SEED_EFFECT",
+   "handler": "LeechSeedEffect",
+   "description": "Seeds the target (not Grass types): each turn 1/16 max HP is drained to the opponent (multiplied by the Toxic counter - Leech Seed/Toxic glitch)."
+  },
+  {
+   "id": 85,
+   "const": "SPLASH_EFFECT",
+   "handler": "SplashEffect",
+   "description": "No effect (\"No effect!\")."
+  },
+  {
+   "id": 86,
+   "const": "DISABLE_EFFECT",
+   "handler": "DisableEffect",
+   "description": "Disables a random move of the target for 1-8 turns (fails if one is already disabled)."
+  }
+ ]
+}

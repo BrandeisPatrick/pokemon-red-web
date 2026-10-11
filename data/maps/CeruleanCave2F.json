@@ -1,0 +1,47 @@
+{
+ "id": 226,
+ "const": "CERULEAN_CAVE_2F",
+ "name": "CeruleanCave2F",
+ "displayName": "CERULEAN CAVE",
+ "width": 15,
+ "height": 9,
+ "tileset": "CAVERN",
+ "tilesetId": 17,
+ "tilesetFile": "data/tilesets/Cavern.json",
+ "isOutside": false,
+ "borderBlock": 125,
+ "blocks": [125, 8, 5, 14, 40, 8, 5, 5, 5, 9, 14, 4, 7, 8, 40, 40, 6, 5, 5, 5, 6, 6, 6, 9, 15, 13, 13, 7, 10, 15, 15, 5, 5, 5, 6, 5, 14, 5, 7, 8, 14, 11, 13, 4, 6, 8, 5, 5, 15, 5, 5, 10, 125, 7, 40, 11, 35, 8, 14, 4, 14, 8, 5, 5, 5, 5, 14, 12, 5, 5, 5, 6, 6, 9, 5, 7, 40, 6, 5, 5, 9, 7, 5, 5, 5, 5, 14, 9, 7, 7, 12, 9, 8, 5, 9, 11, 7, 15, 6, 5, 5, 9, 7, 7, 12, 8, 7, 14, 125, 4, 7, 15, 6, 5, 5, 8, 7, 7, 4, 13, 6, 5, 5, 13, 4, 12, 14, 5, 5, 5, 6, 5, 5, 14, 11],
+ "connections": {},
+ "warps": [
+  {"x": 29, "y": 1, "destMap": "CERULEAN_CAVE_1F", "destMapId": 228, "destMapName": "CeruleanCave1F", "destWarp": 3, "destWarpIndex": 2},
+  {"x": 22, "y": 6, "destMap": "CERULEAN_CAVE_1F", "destMapId": 228, "destMapName": "CeruleanCave1F", "destWarp": 4, "destWarpIndex": 3},
+  {"x": 19, "y": 7, "destMap": "CERULEAN_CAVE_1F", "destMapId": 228, "destMapName": "CeruleanCave1F", "destWarp": 5, "destWarpIndex": 4},
+  {"x": 9, "y": 1, "destMap": "CERULEAN_CAVE_1F", "destMapId": 228, "destMapName": "CeruleanCave1F", "destWarp": 6, "destWarpIndex": 5},
+  {"x": 1, "y": 3, "destMap": "CERULEAN_CAVE_1F", "destMapId": 228, "destMapName": "CeruleanCave1F", "destWarp": 7, "destWarpIndex": 6},
+  {"x": 3, "y": 11, "destMap": "CERULEAN_CAVE_1F", "destMapId": 228, "destMapName": "CeruleanCave1F", "destWarp": 8, "destWarpIndex": 7}
+ ],
+ "bgEvents": [],
+ "objectEvents": [
+  {"index": 1, "const": "CERULEANCAVE2F_PP_UP", "x": 29, "y": 9, "sprite": "SPRITE_POKE_BALL", "spriteId": 61, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_CERULEANCAVE2F_PP_UP", "textIndex": 1, "item": "PP_UP", "itemId": 79, "toggleIndex": 206, "toggleConst": "TOGGLE_CERULEAN_CAVE_2F_ITEM_1", "startsHidden": false},
+  {"index": 2, "const": "CERULEANCAVE2F_ULTRA_BALL", "x": 4, "y": 15, "sprite": "SPRITE_POKE_BALL", "spriteId": 61, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_CERULEANCAVE2F_ULTRA_BALL", "textIndex": 2, "item": "ULTRA_BALL", "itemId": 2, "toggleIndex": 207, "toggleConst": "TOGGLE_CERULEAN_CAVE_2F_ITEM_2", "startsHidden": false},
+  {"index": 3, "const": "CERULEANCAVE2F_FULL_RESTORE", "x": 13, "y": 6, "sprite": "SPRITE_POKE_BALL", "spriteId": 61, "movement": "STAY", "rangeOrDirection": "NONE", "rangeOrDirectionValue": 255, "behavior": "turn_randomly", "textId": "TEXT_CERULEANCAVE2F_FULL_RESTORE", "textIndex": 3, "item": "FULL_RESTORE", "itemId": 16, "toggleIndex": 208, "toggleConst": "TOGGLE_CERULEAN_CAVE_2F_ITEM_3", "startsHidden": false}
+ ],
+ "trainerHeaders": [],
+ "hiddenObjects": [],
+ "spriteSet": null,
+ "music": "MUSIC_DUNGEON1",
+ "wild": {"label": "CeruleanCave2FWildMons", "file": "CeruleanCave2F"},
+ "townMap": {"x": 9, "y": 1, "group": "CERULEAN_CAVE"},
+ "extraWarpCheck": "facingEdgeOfMap",
+ "scriptSetsLastMap": [],
+ "textFile": "data/text/CeruleanCave2F.json",
+ "textPointers": "CeruleanCave2F_TextPointers",
+ "sources": {
+  "header": "data/maps/headers/CeruleanCave2F.asm",
+  "objects": "data/maps/objects/CeruleanCave2F.asm",
+  "blocks": "maps/CeruleanCave2F.blk",
+  "script": "scripts/CeruleanCave2F.asm"
+ },
+ "lastMapCandidates": ["CERULEAN_CITY"],
+ "palette": {"pal": "PAL_CAVE", "rule": "cavernTileset"}
+}

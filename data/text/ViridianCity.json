@@ -1,0 +1,544 @@
+{
+ "map": "ViridianCity",
+ "const": "VIRIDIAN_CITY",
+ "textPointerTables": [
+  {
+   "label": "ViridianCity_TextPointers",
+   "primary": true,
+   "entries": [
+    {"id": 1, "const": "TEXT_VIRIDIANCITY_YOUNGSTER1", "label": "ViridianCityYoungster1Text", "kind": "text", "handler": "text"},
+    {"id": 2, "const": "TEXT_VIRIDIANCITY_GAMBLER1", "label": "ViridianCityGambler1Text", "kind": "asm", "handler": "asm"},
+    {"id": 3, "const": "TEXT_VIRIDIANCITY_YOUNGSTER2", "label": "ViridianCityYoungster2Text", "kind": "asm", "handler": "asm"},
+    {"id": 4, "const": "TEXT_VIRIDIANCITY_GIRL", "label": "ViridianCityGirlText", "kind": "asm", "handler": "asm"},
+    {"id": 5, "const": "TEXT_VIRIDIANCITY_OLD_MAN_SLEEPY", "label": "ViridianCityOldManSleepyText", "kind": "asm", "handler": "asm"},
+    {"id": 6, "const": "TEXT_VIRIDIANCITY_FISHER", "label": "ViridianCityFisherText", "kind": "asm", "handler": "asm"},
+    {"id": 7, "const": "TEXT_VIRIDIANCITY_OLD_MAN", "label": "ViridianCityOldManText", "kind": "asm", "handler": "asm"},
+    {"id": 8, "const": "TEXT_VIRIDIANCITY_SIGN", "label": "ViridianCitySignText", "kind": "text", "handler": "text"},
+    {"id": 9, "const": "TEXT_VIRIDIANCITY_TRAINER_TIPS1", "label": "ViridianCityTrainerTips1Text", "kind": "text", "handler": "text"},
+    {"id": 10, "const": "TEXT_VIRIDIANCITY_TRAINER_TIPS2", "label": "ViridianCityTrainerTips2Text", "kind": "text", "handler": "text"},
+    {"id": 11, "const": "TEXT_VIRIDIANCITY_MART_SIGN", "label": "MartSignText", "kind": "text", "handler": "text"},
+    {"id": 12, "const": "TEXT_VIRIDIANCITY_POKECENTER_SIGN", "label": "PokeCenterSignText", "kind": "text", "handler": "text"},
+    {"id": 13, "const": "TEXT_VIRIDIANCITY_GYM_SIGN", "label": "ViridianCityGymSignText", "kind": "text", "handler": "text"},
+    {"id": 14, "const": "TEXT_VIRIDIANCITY_GYM_LOCKED", "label": "ViridianCityGymLockedText", "kind": "text", "handler": "text"},
+    {"id": 15, "const": "TEXT_VIRIDIANCITY_OLD_MAN_YOU_NEED_TO_WEAKEN_THE_TARGET", "label": "ViridianCityOldManYouNeedToWeakenTheTargetText", "kind": "text", "handler": "text"}
+   ]
+  }
+ ],
+ "texts": {
+  "_MartSignText": {
+   "kind": "text",
+   "src": "data/text/text_1.asm:50",
+   "commands": [
+    {"cmd": "text", "str": "All your item"},
+    {"cmd": "line", "str": "needs fulfilled!"},
+    {"cmd": "cont", "str": "POKéMON MART"},
+    {"cmd": "done"}
+   ]
+  },
+  "_PokeCenterSignText": {
+   "kind": "text",
+   "src": "data/text/text_1.asm:56",
+   "commands": [
+    {"cmd": "text", "str": "Heal Your POKéMON!"},
+    {"cmd": "line", "str": "POKéMON CENTER"},
+    {"cmd": "done"}
+   ]
+  },
+  "MartSignText": {
+   "kind": "text",
+   "src": "home/overworld_text.asm:21",
+   "commands": [
+    {"cmd": "text_far", "label": "_MartSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "PokeCenterSignText": {
+   "kind": "text",
+   "src": "home/overworld_text.asm:25",
+   "commands": [
+    {"cmd": "text_far", "label": "_PokeCenterSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianCityYoungster1Text": {
+   "kind": "text",
+   "src": "scripts/ViridianCity.asm:147",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianCityYoungster1Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianCityGambler1Text": {
+   "kind": "asm",
+   "src": "scripts/ViridianCity.asm:151",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["ViridianCityGambler1Text.GymLeaderReturnedText", "ViridianCityGambler1Text.GymAlwaysClosedText"]
+  },
+  "ViridianCityGambler1Text.GymAlwaysClosedText": {
+   "kind": "text",
+   "src": "scripts/ViridianCity.asm:164",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianCityGambler1GymAlwaysClosedText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianCityGambler1Text.GymLeaderReturnedText": {
+   "kind": "text",
+   "src": "scripts/ViridianCity.asm:168",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianCityGambler1GymLeaderReturnedText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianCityYoungster2Text": {
+   "kind": "asm",
+   "src": "scripts/ViridianCity.asm:172",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["ViridianCityYoungster2Text.YouWantToKnowAboutText", "ViridianCityYoungster2Text.CaterpieAndWeedleDescriptionText", "ViridianCityYoungster2Text.OkThenText"]
+  },
+  "ViridianCityYoungster2Text.YouWantToKnowAboutText": {
+   "kind": "text",
+   "src": "scripts/ViridianCity.asm:189",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianCityYoungster2YouWantToKnowAboutText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianCityYoungster2Text.OkThenText": {
+   "kind": "text",
+   "src": "scripts/ViridianCity.asm:193",
+   "commands": [
+    {"cmd": "text_far", "label": "ViridianCityYoungster2OkThenText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianCityYoungster2Text.CaterpieAndWeedleDescriptionText": {
+   "kind": "text",
+   "src": "scripts/ViridianCity.asm:197",
+   "commands": [
+    {"cmd": "text_far", "label": "ViridianCityYoungster2CaterpieAndWeedleDescriptionText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianCityGirlText": {
+   "kind": "asm",
+   "src": "scripts/ViridianCity.asm:201",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["ViridianCityGirlText.HasntHadHisCoffeeYetText", "ViridianCityGirlText.WhenIGoShopText"]
+  },
+  "ViridianCityGirlText.HasntHadHisCoffeeYetText": {
+   "kind": "text",
+   "src": "scripts/ViridianCity.asm:214",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianCityGirlHasntHadHisCoffeeYetText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianCityGirlText.WhenIGoShopText": {
+   "kind": "text",
+   "src": "scripts/ViridianCity.asm:218",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianCityGirlWhenIGoShopText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianCityOldManSleepyText": {
+   "kind": "asm",
+   "src": "scripts/ViridianCity.asm:222",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["ViridianCityOldManSleepyText.PrivatePropertyText"]
+  },
+  "ViridianCityOldManSleepyText.PrivatePropertyText": {
+   "kind": "text",
+   "src": "scripts/ViridianCity.asm:231",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianCityOldManSleepyPrivatePropertyText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianCityFisherText": {
+   "kind": "asm",
+   "src": "scripts/ViridianCity.asm:235",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["ViridianCityFisherText.YouCanHaveThisText", "ViridianCityFisherText.ReceivedTM42Text", "ViridianCityFisherText.TM42NoRoomText", "ViridianCityFisherText.TM42ExplanationText"]
+  },
+  "ViridianCityFisherText.YouCanHaveThisText": {
+   "kind": "text",
+   "src": "scripts/ViridianCity.asm:258",
+   "commands": [
+    {"cmd": "text_far", "label": "ViridianCityFisherYouCanHaveThisText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianCityFisherText.ReceivedTM42Text": {
+   "kind": "text",
+   "src": "scripts/ViridianCity.asm:262",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianCityFisherReceivedTM42Text"},
+    {"cmd": "sound", "sound": "sound_get_item_2"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianCityFisherText.TM42ExplanationText": {
+   "kind": "text",
+   "src": "scripts/ViridianCity.asm:267",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianCityFisherTM42ExplanationText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianCityFisherText.TM42NoRoomText": {
+   "kind": "text",
+   "src": "scripts/ViridianCity.asm:271",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianCityFisherTM42NoRoomText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianCityOldManText": {
+   "kind": "asm",
+   "src": "scripts/ViridianCity.asm:275",
+   "commands": [
+    {"cmd": "text_asm"}
+   ],
+   "refs": ["ViridianCityOldManText.HadMyCoffeeNowText", "ViridianCityOldManText.KnowHowToCatchPokemonText", "ViridianCityOldManText.TimeIsMoneyText"]
+  },
+  "ViridianCityOldManText.HadMyCoffeeNowText": {
+   "kind": "text",
+   "src": "scripts/ViridianCity.asm:296",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianCityOldManHadMyCoffeeNowText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianCityOldManText.KnowHowToCatchPokemonText": {
+   "kind": "text",
+   "src": "scripts/ViridianCity.asm:300",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianCityOldManKnowHowToCatchPokemonText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianCityOldManText.TimeIsMoneyText": {
+   "kind": "text",
+   "src": "scripts/ViridianCity.asm:304",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianCityOldManTimeIsMoneyText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianCityOldManYouNeedToWeakenTheTargetText": {
+   "kind": "text",
+   "src": "scripts/ViridianCity.asm:308",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianCityOldManYouNeedToWeakenTheTargetText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianCitySignText": {
+   "kind": "text",
+   "src": "scripts/ViridianCity.asm:312",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianCitySignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianCityTrainerTips1Text": {
+   "kind": "text",
+   "src": "scripts/ViridianCity.asm:316",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianCityTrainerTips1Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianCityTrainerTips2Text": {
+   "kind": "text",
+   "src": "scripts/ViridianCity.asm:320",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianCityTrainerTips2Text"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianCityGymSignText": {
+   "kind": "text",
+   "src": "scripts/ViridianCity.asm:324",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianCityGymSignText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "ViridianCityGymLockedText": {
+   "kind": "text",
+   "src": "scripts/ViridianCity.asm:328",
+   "commands": [
+    {"cmd": "text_far", "label": "_ViridianCityGymLockedText"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_ViridianCityYoungster1Text": {
+   "kind": "text",
+   "src": "text/ViridianCity.asm:2",
+   "commands": [
+    {"cmd": "text", "str": "Those POKé BALLs"},
+    {"cmd": "line", "str": "at your waist!"},
+    {"cmd": "cont", "str": "You have POKéMON!"},
+    {"cmd": "para", "str": "It's great that"},
+    {"cmd": "line", "str": "you can carry and"},
+    {"cmd": "cont", "str": "use POKéMON any"},
+    {"cmd": "cont", "str": "time, anywhere!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianCityGambler1GymAlwaysClosedText": {
+   "kind": "text",
+   "src": "text/ViridianCity.asm:13",
+   "commands": [
+    {"cmd": "text", "str": "This POKéMON GYM"},
+    {"cmd": "line", "str": "is always closed."},
+    {"cmd": "para", "str": "I wonder who the"},
+    {"cmd": "line", "str": "LEADER is?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianCityGambler1GymLeaderReturnedText": {
+   "kind": "text",
+   "src": "text/ViridianCity.asm:21",
+   "commands": [
+    {"cmd": "text", "str": "VIRIDIAN GYM's"},
+    {"cmd": "line", "str": "LEADER returned!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianCityYoungster2YouWantToKnowAboutText": {
+   "kind": "text",
+   "src": "text/ViridianCity.asm:26",
+   "commands": [
+    {"cmd": "text", "str": "You want to know"},
+    {"cmd": "line", "str": "about the 2 kinds"},
+    {"cmd": "cont", "str": "of caterpillar"},
+    {"cmd": "cont", "str": "POKéMON?"},
+    {"cmd": "done"}
+   ]
+  },
+  "ViridianCityYoungster2OkThenText": {
+   "kind": "text",
+   "src": "text/ViridianCity.asm:33",
+   "commands": [
+    {"cmd": "text", "str": "Oh, OK then!"},
+    {"cmd": "done"}
+   ]
+  },
+  "ViridianCityYoungster2CaterpieAndWeedleDescriptionText": {
+   "kind": "text",
+   "src": "text/ViridianCity.asm:37",
+   "commands": [
+    {"cmd": "text", "str": "CATERPIE has no"},
+    {"cmd": "line", "str": "poison, but"},
+    {"cmd": "cont", "str": "WEEDLE does."},
+    {"cmd": "para", "str": "Watch out for its"},
+    {"cmd": "line", "str": "POISON STING!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianCityGirlHasntHadHisCoffeeYetText": {
+   "kind": "text",
+   "src": "text/ViridianCity.asm:46",
+   "commands": [
+    {"cmd": "text", "str": "Oh Grandpa! Don't"},
+    {"cmd": "line", "str": "be so mean!"},
+    {"cmd": "cont", "str": "He hasn't had his"},
+    {"cmd": "cont", "str": "coffee yet."},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianCityGirlWhenIGoShopText": {
+   "kind": "text",
+   "src": "text/ViridianCity.asm:53",
+   "commands": [
+    {"cmd": "text", "str": "When I go shop in"},
+    {"cmd": "line", "str": "PEWTER CITY, I"},
+    {"cmd": "cont", "str": "have to take the"},
+    {"cmd": "cont", "str": "winding trail in"},
+    {"cmd": "cont", "str": "VIRIDIAN FOREST."},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianCityOldManSleepyPrivatePropertyText": {
+   "kind": "text",
+   "src": "text/ViridianCity.asm:61",
+   "commands": [
+    {"cmd": "text", "str": "You can't go"},
+    {"cmd": "line", "str": "through here!"},
+    {"cmd": "para", "str": "This is private"},
+    {"cmd": "line", "str": "property!"},
+    {"cmd": "done"}
+   ]
+  },
+  "ViridianCityFisherYouCanHaveThisText": {
+   "kind": "text",
+   "src": "text/ViridianCity.asm:69",
+   "commands": [
+    {"cmd": "text", "str": "Yawn!"},
+    {"cmd": "line", "str": "I must have dozed"},
+    {"cmd": "cont", "str": "off in the sun."},
+    {"cmd": "para", "str": "I had this dream"},
+    {"cmd": "line", "str": "about a DROWZEE"},
+    {"cmd": "cont", "str": "eating my dream."},
+    {"cmd": "cont", "str": "What's this?"},
+    {"cmd": "cont", "str": "Where did this TM"},
+    {"cmd": "cont", "str": "come from?"},
+    {"cmd": "para", "str": "This is spooky!"},
+    {"cmd": "line", "str": "Here, you can"},
+    {"cmd": "cont", "str": "have this TM."},
+    {"cmd": "prompt"}
+   ]
+  },
+  "_ViridianCityFisherReceivedTM42Text": {
+   "kind": "text",
+   "src": "text/ViridianCity.asm:86",
+   "commands": [
+    {"cmd": "text", "str": "{PLAYER} received"},
+    {"cmd": "line", "str": "TM42!"},
+    {"cmd": "text_end"}
+   ]
+  },
+  "_ViridianCityFisherTM42ExplanationText": {
+   "kind": "text",
+   "src": "text/ViridianCity.asm:91",
+   "commands": [
+    {"cmd": "text", "str": "TM42 contains"},
+    {"cmd": "line", "str": "DREAM EATER..."},
+    {"cmd": "cont", "str": "...Snore..."},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianCityFisherTM42NoRoomText": {
+   "kind": "text",
+   "src": "text/ViridianCity.asm:97",
+   "commands": [
+    {"cmd": "text", "str": "You have too much"},
+    {"cmd": "line", "str": "stuff already."},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianCityOldManHadMyCoffeeNowText": {
+   "kind": "text",
+   "src": "text/ViridianCity.asm:102",
+   "commands": [
+    {"cmd": "text", "str": "Ahh, I've had my"},
+    {"cmd": "line", "str": "coffee now and I"},
+    {"cmd": "cont", "str": "feel great!"},
+    {"cmd": "para", "str": "Sure you can go"},
+    {"cmd": "line", "str": "through!"},
+    {"cmd": "para", "str": "Are you in a"},
+    {"cmd": "line", "str": "hurry?"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianCityOldManKnowHowToCatchPokemonText": {
+   "kind": "text",
+   "src": "text/ViridianCity.asm:114",
+   "commands": [
+    {"cmd": "text", "str": "I see you're using"},
+    {"cmd": "line", "str": "a POKéDEX."},
+    {"cmd": "para", "str": "When you catch a"},
+    {"cmd": "line", "str": "POKéMON, POKéDEX"},
+    {"cmd": "cont", "str": "is automatically"},
+    {"cmd": "cont", "str": "updated."},
+    {"cmd": "para", "str": "What? Don't you"},
+    {"cmd": "line", "str": "know how to catch"},
+    {"cmd": "cont", "str": "POKéMON?"},
+    {"cmd": "para", "str": "I'll show you"},
+    {"cmd": "line", "str": "how to then."},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianCityOldManTimeIsMoneyText": {
+   "kind": "text",
+   "src": "text/ViridianCity.asm:131",
+   "commands": [
+    {"cmd": "text", "str": "Time is money..."},
+    {"cmd": "line", "str": "Go along then."},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianCityOldManYouNeedToWeakenTheTargetText": {
+   "kind": "text",
+   "src": "text/ViridianCity.asm:136",
+   "commands": [
+    {"cmd": "text", "str": "First, you need"},
+    {"cmd": "line", "str": "to weaken the"},
+    {"cmd": "cont", "str": "target POKéMON."},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianCitySignText": {
+   "kind": "text",
+   "src": "text/ViridianCity.asm:142",
+   "commands": [
+    {"cmd": "text", "str": "VIRIDIAN CITY "},
+    {"cmd": "line", "str": "The Eternally"},
+    {"cmd": "cont", "str": "Green Paradise"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianCityTrainerTips1Text": {
+   "kind": "text",
+   "src": "text/ViridianCity.asm:148",
+   "commands": [
+    {"cmd": "text", "str": "TRAINER TIPS"},
+    {"cmd": "para", "str": "Catch POKéMON"},
+    {"cmd": "line", "str": "and expand your"},
+    {"cmd": "cont", "str": "collection!"},
+    {"cmd": "para", "str": "The more you have,"},
+    {"cmd": "line", "str": "the easier it is"},
+    {"cmd": "cont", "str": "to fight!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianCityTrainerTips2Text": {
+   "kind": "text",
+   "src": "text/ViridianCity.asm:160",
+   "commands": [
+    {"cmd": "text", "str": "TRAINER TIPS"},
+    {"cmd": "para", "str": "The battle moves"},
+    {"cmd": "line", "str": "of POKéMON are"},
+    {"cmd": "cont", "str": "limited by their"},
+    {"cmd": "cont", "str": "POWER POINTs, PP."},
+    {"cmd": "para", "str": "To replenish PP,"},
+    {"cmd": "line", "str": "rest your tired"},
+    {"cmd": "cont", "str": "POKéMON at a"},
+    {"cmd": "cont", "str": "POKéMON CENTER!"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianCityGymSignText": {
+   "kind": "text",
+   "src": "text/ViridianCity.asm:174",
+   "commands": [
+    {"cmd": "text", "str": "VIRIDIAN CITY"},
+    {"cmd": "line", "str": "POKéMON GYM"},
+    {"cmd": "done"}
+   ]
+  },
+  "_ViridianCityGymLockedText": {
+   "kind": "text",
+   "src": "text/ViridianCity.asm:179",
+   "commands": [
+    {"cmd": "text", "str": "The GYM's doors"},
+    {"cmd": "line", "str": "are locked..."},
+    {"cmd": "done"}
+   ]
+  }
+ }
+}

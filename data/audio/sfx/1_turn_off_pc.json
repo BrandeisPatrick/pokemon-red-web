@@ -1,0 +1,25 @@
+{
+  "name": "SFX_TURN_OFF_PC",
+  "title": "Turn Off PC",
+  "kind": "sfx",
+  "bank": 1,
+  "id": 154,
+  "label": "SFX_Turn_Off_PC_1",
+  "channels": [
+    {
+      "channel": 5,
+      "label": "SFX_Turn_Off_PC_1_Ch5",
+      "entry": 0,
+      "bytes": 19,
+      "labels": {"SFX_Turn_Off_PC_1_Ch5": 0},
+      "commands": [
+        {"op": "duty_cycle", "duty": 2},
+        {"op": "square_note", "length": 4, "volume": 15, "fade": 0, "frequency": 1536},
+        {"op": "square_note", "length": 4, "volume": 15, "fade": 0, "frequency": 1024},
+        {"op": "square_note", "length": 4, "volume": 15, "fade": 0, "frequency": 512},
+        {"op": "square_note", "length": 1, "volume": 0, "fade": 0, "frequency": 0},
+        {"op": "sound_ret"}
+      ]
+    }
+  ]
+}
