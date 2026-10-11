@@ -237,8 +237,19 @@ export function createTouchControls(input, { document: doc = globalThis.document
  */
 export function installTouchGuards({ document: doc = globalThis.document } = {}) {
   const stop = (e) => { if (e.cancelable !== false) e.preventDefault(); };
+  // iOS/iPadOS Safari ignores user-scalable=no and zooms on a double tap; the zoom is decided on
+  // the second tap's touchend, so cancel a touchend that follows another within 350 ms. Pointer
+  // events (which drive the pad) have already fired by then, so the controls are unaffected.
+  let lastTouchEnd = 0;
+  const noDoubleTap = (e) => {
+    const now = Date.now();
+    if (now - lastTouchEnd <= 350 && e.cancelable !== false) e.preventDefault();
+    lastTouchEnd = now;
+  };
   /** @type {Array<[string, (e: Event) => void, object]>} */
   const listeners = [
+    ['touchend', noDoubleTap, { passive: false }],
+    ['dblclick', stop, { passive: false }],
     ['gesturestart', stop, { passive: false }],
     ['gesturechange', stop, { passive: false }],
     ['gestureend', stop, { passive: false }],
