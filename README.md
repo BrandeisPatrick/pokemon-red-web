@@ -22,6 +22,8 @@
   <img src="assets/readme/pokedex.png" width="240" alt="The Pokédex">
 </p>
 
+<p align="center"><a href="https://brandeispatrick.github.io/pokemon-red-web/assets/readme/trailer.mp4">▶ Watch a 17-second clip with the original music</a></p>
+
 ## What you get
 
 - **The whole game.** Every town, route, cave and building of Kanto. Eight gyms, Team Rocket,
